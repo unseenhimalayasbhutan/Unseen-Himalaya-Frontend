@@ -103,7 +103,6 @@ const getImageSrc = (src: string): string => {
 export function JourneysSection() {
   const [activeDestination, setActiveDestination] = useState(0);
   const [activePackage, setActivePackage] = useState(0);
-  const selectedPackage = packages[activePackage] ?? packages[0];
 
   return (
     <section className="journey-section uh-journeys-section">

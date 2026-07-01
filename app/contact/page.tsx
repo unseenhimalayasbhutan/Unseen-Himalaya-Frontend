@@ -1,6 +1,3 @@
-"use client";
-
-import type { FormEvent } from "react";
 import Link from "next/link";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
@@ -8,24 +5,13 @@ import { CtaSection } from "../components/CtaSection";
 import {
   ArrowRight,
   CheckCircle,
-  Clock,
   Mail,
-  MapPin,
   MessageCircle,
   Phone,
-  Send,
-  ShieldCheck,
   Sparkles,
   type LucideIcon,
 } from "lucide-react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTiktok,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
-import type { IconType } from "react-icons";
+import { FaWhatsapp } from "react-icons/fa";
 import { siteConfig } from "../siteConfig";
 
 type ContactCard = {
@@ -36,53 +22,12 @@ type ContactCard = {
   href: string;
 };
 
-type SocialLink = {
-  icon: IconType;
-  label: string;
-  href: string;
-  description: string;
-};
-
-type BusinessHour = {
-  day: string;
-  time: string;
-};
-
 export default function Contact() {
-  const handleInquirySubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-
-    const form = new FormData(event.currentTarget);
-    const name = String(form.get("name") || "").trim();
-    const email = String(form.get("email") || "").trim();
-    const phone = String(form.get("phone") || "").trim();
-    const month = String(form.get("month") || "").trim();
-    const interest = String(form.get("interest") || "").trim();
-    const message = String(form.get("message") || "").trim();
-
-    const subject = `Bhutan trip inquiry from ${name}`;
-    const body = [
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `WhatsApp / Phone: ${phone || "Not provided"}`,
-      `Travel Month: ${month || "Not provided"}`,
-      `Travel Style: ${interest || "Not selected"}`,
-      "",
-      "Message:",
-      message || "No additional message provided.",
-    ].join("\n");
-
-    window.location.href = `${siteConfig.contact.emailHref}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-  };
-
   return (
     <>
       <Header />
 
       <main className="contact-pro-page">
-        {/* Hero */}
         <section className="contact-pro-hero">
           <div className="contact-pro-hero-bg" aria-hidden="true" />
           <div className="container">
@@ -147,7 +92,6 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Quick Contact Cards */}
         <section className="contact-pro-section contact-pro-section-white">
           <div className="container">
             <div className="contact-pro-section-header contact-pro-section-header-center">
@@ -175,13 +119,6 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Main Contact Area */}
-
-
-        
-
-        {/* Map / Location Placeholder */}
-              {/* CTA */}
         <section className="contact-pro-cta">
           <div className="container">
             <div className="contact-pro-cta-card">
@@ -249,53 +186,5 @@ const contactCards: ContactCard[] = [
     title: siteConfig.contact.phoneDisplay,
     description: "Call us during business hours in Bhutan.",
     href: contactLinks.phone,
-  },
-];
-
-const businessHours: BusinessHour[] = [
-  {
-    day: "Monday - Friday",
-    time: "9:00 AM - 5:00 PM",
-  },
-  {
-    day: "Saturday",
-    time: "10:00 AM - 2:00 PM",
-  },
-  {
-    day: "Sunday",
-    time: "Closed",
-  },
-];
-
-const socialLinks: SocialLink[] = [
-  {
-    icon: FaWhatsapp,
-    label: "WhatsApp",
-    href: contactLinks.whatsapp,
-    description: "Chat directly with our travel team.",
-  },
-  {
-    icon: FaFacebook,
-    label: "Facebook",
-    href: "#",
-    description: "Follow updates, photos, and travel ideas.",
-  },
-  {
-    icon: FaInstagram,
-    label: "Instagram",
-    href: "#",
-    description: "See Bhutan visuals, reels, and journey inspiration.",
-  },
-  {
-    icon: FaYoutube,
-    label: "YouTube",
-    href: "#",
-    description: "Watch Bhutan travel videos and destination highlights.",
-  },
-  {
-    icon: FaTiktok,
-    label: "TikTok",
-    href: "#",
-    description: "Short Bhutan clips, tips, and travel moments.",
   },
 ];

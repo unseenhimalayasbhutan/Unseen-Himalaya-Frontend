@@ -5,8 +5,6 @@ import Link from "next/link";
 import {
   ChevronRightIcon,
   MapPinIcon,
-  PlusCircleIcon,
-  SettingsIcon,
   Wand2Icon,
 } from "lucide-react";
 
@@ -52,15 +50,9 @@ export default function OptionalToursPage() {
   const [activeCategoryId, setActiveCategoryId] = useState(categories[0].id);
   const [selectedAddOnIds, setSelectedAddOnIds] = useState<string[]>([]);
 
-  const allAddOns = categories.flatMap((category) => category.items);
-
   const activeCategory =
     categories.find((category) => category.id === activeCategoryId) ||
     categories[0];
-
-  const selectedAddOns = allAddOns.filter((item) =>
-    selectedAddOnIds.includes(item.id)
-  );
 
   const toggleAddOn = (id: string) => {
     setSelectedAddOnIds((current) =>
