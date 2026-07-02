@@ -16,10 +16,10 @@ export const pageSeo = {
     keywords: ["about Bhutan", "Bhutan culture", "Bhutan travel guide"],
   },
   "/about-us": {
-    title: "About Our Bhutan Travel Team",
+    title: "About Unseen Himalayas Bhutan | Licensed Bhutan DMC & Tour Operator",
     description:
-      "Meet Unseen Himalayas, a Bhutan-based travel team creating personal, responsible, and locally guided journeys.",
-    keywords: ["Bhutan tour operator", "Bhutan travel company", "local Bhutan experts"],
+      "Meet Unseen Himalayas Bhutan, a licensed Bhutan DMC and tour operator creating personal, responsible, and locally guided journeys.",
+    keywords: ["Unseen Himalayas Bhutan", "licensed Bhutan DMC", "Bhutan tour operator", "Bhutan travel company", "local Bhutan experts"],
   },
   "/best-time": {
     title: "Best Time to Visit Bhutan",
@@ -40,16 +40,16 @@ export const pageSeo = {
     keywords: ["Bhutan trekking", "Bhutan hiking tours", "Himalayan trek Bhutan"],
   },
   "/contact": {
-    title: "Plan Your Bhutan Trip",
+    title: "Contact Unseen Himalayas Bhutan | Licensed Bhutan Tour Operator",
     description:
-      "Contact our Bhutan travel specialists to plan a private itinerary, cultural tour, festival journey, or trekking adventure.",
-    keywords: ["plan Bhutan trip", "Bhutan travel inquiry", "contact Bhutan tour operator"],
+      "Contact Unseen Himalayas Bhutan to plan a private itinerary, cultural tour, festival journey, trekking adventure, or Bhutan DMC partnership.",
+    keywords: ["contact Unseen Himalayas Bhutan", "licensed Bhutan tour operator", "plan Bhutan trip", "Bhutan travel inquiry", "contact Bhutan tour operator"],
   },
   "/cultural-tours": {
-    title: "Bhutan Cultural Tours",
+    title: "Bhutan Cultural Tours | Private Bhutan Heritage Tours | Unseen Himalayas Bhutan",
     description:
-      "Experience Bhutan's monasteries, dzongs, villages, crafts, cuisine, and living traditions on a private cultural tour.",
-    keywords: ["Bhutan cultural tours", "Bhutan culture trip", "Bhutan monastery tour"],
+      "Experience Bhutan's monasteries, dzongs, villages, crafts, cuisine, festivals, and living traditions on a private Bhutan heritage tour.",
+    keywords: ["Bhutan cultural tours", "private Bhutan heritage tours", "Bhutan culture trip", "Bhutan monastery tour", "Unseen Himalayas Bhutan"],
   },
   "/currency": {
     title: "Bhutan Currency & Travel Money Guide",
@@ -70,10 +70,10 @@ export const pageSeo = {
     keywords: ["Bhutan facts", "facts about Bhutan", "Bhutan national symbols"],
   },
   "/faq": {
-    title: "Bhutan Travel FAQ",
+    title: "Bhutan Travel FAQ 2026 | Visa, SDF, Guide & Tour Questions",
     description:
       "Get answers about Bhutan visas, costs, flights, guides, packing, connectivity, food, altitude, and trip planning.",
-    keywords: ["Bhutan travel FAQ", "Bhutan trip questions", "Bhutan visa FAQ"],
+    keywords: ["Bhutan travel FAQ 2026", "Bhutan visa FAQ", "Bhutan SDF", "Bhutan guide requirement", "Bhutan trip questions"],
   },
   "/festival-tours": {
     title: "Bhutan Festival Tours",
@@ -96,8 +96,8 @@ export const pageSeo = {
   "/legal-documents": {
     title: "Legal Documents",
     description:
-      "View Unseen Himalayas legal travel documents, including technical clearance and business license information for Bhutan tour operations.",
-    keywords: ["Unseen Himalayas legal documents", "Bhutan tour operator license", "Bhutan travel company documents"],
+      "View Unseen Himalayas Bhutan legal travel documents, including technical clearance and business license information for Bhutan tour operations.",
+    keywords: ["Unseen Himalayas Bhutan legal documents", "Bhutan tour operator license", "Bhutan travel company documents"],
   },
   "/optional-tours": {
     title: "Bhutan Optional Tours & Experiences",
@@ -108,8 +108,8 @@ export const pageSeo = {
   "/privacy-policy": {
     title: "Privacy Policy",
     description:
-      "Read how Unseen Himalayas handles personal information submitted through our Bhutan travel website and inquiry channels.",
-    keywords: ["Unseen Himalayas privacy policy"],
+      "Read how Unseen Himalayas Bhutan handles personal information submitted through our Bhutan travel website and inquiry channels.",
+    keywords: ["Unseen Himalayas Bhutan privacy policy"],
   },
   "/seasons": {
     title: "Bhutan Seasons & Weather",
@@ -120,8 +120,8 @@ export const pageSeo = {
   "/terms": {
     title: "Travel Terms & Conditions",
     description:
-      "Review the booking, payment, cancellation, responsibility, and travel terms for journeys arranged by Unseen Himalayas.",
-    keywords: ["Unseen Himalayas terms", "Bhutan tour booking terms"],
+      "Review the booking, payment, cancellation, responsibility, and travel terms for journeys arranged by Unseen Himalayas Bhutan.",
+    keywords: ["Unseen Himalayas Bhutan terms", "Bhutan tour booking terms"],
   },
   "/why-visit": {
     title: "Why Visit Bhutan",
@@ -135,9 +135,14 @@ export type SeoPath = keyof typeof pageSeo;
 
 export function createPageMetadata(path: SeoPath): Metadata {
   const page = pageSeo[path];
+  const fullTitle = page.title.includes(siteConfig.name)
+    ? page.title
+    : `${page.title} | ${siteConfig.name}`;
 
   return {
-    title: page.title,
+    title: {
+      absolute: fullTitle,
+    },
     description: page.description,
     keywords: page.keywords,
     alternates: { canonical: path },
@@ -146,7 +151,7 @@ export function createPageMetadata(path: SeoPath): Metadata {
       locale: siteConfig.locale,
       url: path,
       siteName: siteConfig.name,
-      title: `${page.title} | ${siteConfig.name}`,
+      title: fullTitle,
       description: page.description,
       images: [
         {
@@ -159,7 +164,7 @@ export function createPageMetadata(path: SeoPath): Metadata {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${page.title} | ${siteConfig.name}`,
+      title: fullTitle,
       description: page.description,
       images: [siteConfig.defaultImage],
     },

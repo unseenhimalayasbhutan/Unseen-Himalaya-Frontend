@@ -115,7 +115,7 @@ export const termsAndConditions = [
   "Itinerary timing may change due to weather, road conditions, government rules, flight delays, or guest safety.",
   "Guests are responsible for valid passports, travel insurance, and personal medication.",
   "Hotel room category and bed type are subject to availability at confirmation.",
-  "Unseen Himalayas will provide suitable alternatives if a listed service becomes unavailable after confirmation.",
+  "Unseen Himalayas Bhutan will provide suitable alternatives if a listed service becomes unavailable after confirmation.",
 ];
 
 export const itineraries: ItineraryRoute[] = [
@@ -131,7 +131,7 @@ export const itineraries: ItineraryRoute[] = [
       "src": "",
       "alt": "3-Day Paro & Thimphu Essentials image",
       "label": "3-Day Paro & Thimphu Essentials Image",
-      "copyrightName": "Unseen Himalayas"
+      "copyrightName": "Unseen Himalayas Bhutan"
     },
     "tags": [
       "Tiger’s Nest",

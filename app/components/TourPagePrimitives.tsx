@@ -30,7 +30,7 @@ export function TourImageSlot({
       </div>
 
       <figcaption className="tour-pro-image-credit">
-        © {image.copyrightName || "Unseen Himalayas"}
+        © {image.copyrightName || "Unseen Himalayas Bhutan"}
       </figcaption>
     </figure>
   );

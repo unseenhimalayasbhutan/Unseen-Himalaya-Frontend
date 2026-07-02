@@ -637,7 +637,7 @@ export default function WhyVisitBhutanPage() {
     src: "/images/why-visit/tigers-nest.jpg",
     alt: "Tiger's Nest Monastery in Bhutan",
     label: "Tiger's Nest Image",
-    credit: "Unseen Himalayas / Photographer Name",
+    credit: "Unseen Himalayas Bhutan / Photographer Name",
     creditHref: "https://example.com/photo-source",
     creditPosition: "overlay",
   }

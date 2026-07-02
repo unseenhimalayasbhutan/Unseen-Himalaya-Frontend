@@ -1,12 +1,18 @@
 export const siteConfig = {
-  name: "Unseen Himalayas",
+  name: "Unseen Himalayas Bhutan",
+  alternateName: "Unseen Himalayas",
   url:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://unseenhimalaya.com",
+    "https://www.theunseenhimalayas.com",
   description:
-    "Private Bhutan tours, cultural journeys, festival trips, and Himalayan trekking designed by Bhutan-based travel specialists.",
+    "Unseen Himalayas is a licensed Bhutan-based destination management company offering private Bhutan tours, cultural journeys, festival tours, hotel reservations, guides, transportation, and tailor-made travel experiences.",
   locale: "en_US",
   defaultImage: "/cover2.png",
+  address: {
+    streetAddress: "Theengh's Apartments, Babesa",
+    addressLocality: "Thimphu",
+    addressCountry: "BT",
+  },
   contact: {
     email: "unseenhimalayasbhutan@gmail.com",
     emailHref: "mailto:unseenhimalayasbhutan@gmail.com",

@@ -525,7 +525,7 @@ const categories: AddOnCategory[] = [
     src: "/zip.jpg",
     alt: "Zipline activity in Lam Pelri",
     label: "Zipline Image",
-    copyrightName: "Unseen Himalayas",
+    copyrightName: "Unseen Himalayas Bhutan",
   },
 },
 
@@ -581,7 +581,7 @@ const categories: AddOnCategory[] = [
           src: "aa.png",
           alt: "Premium vehicle",
           label: "Premium Vehicle Image",
-          copyrightName: "Unseen Himalayas",
+          copyrightName: "Unseen Himalayas Bhutan",
         },
       },
       {

@@ -35,7 +35,7 @@ export default function Contact() {
               <div className="contact-pro-hero-content">
                 <div className="contact-pro-eyebrow">
                   <Sparkles aria-hidden />
-                  <span>Contact Unseen Himalayas</span>
+                  <span>Contact Unseen Himalayas Bhutan</span>
                 </div>
 
                 <h1 className="contact-pro-hero-title">

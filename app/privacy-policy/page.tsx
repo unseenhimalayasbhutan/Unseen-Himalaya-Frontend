@@ -220,7 +220,7 @@ const policySections: PolicySection[] = [
     eyebrow: "Reservations",
     title: "Booking Policy",
     description:
-      "All reservations are subject to availability and written confirmation by Unseen Himalayas.",
+      "All reservations are subject to availability and written confirmation by Unseen Himalayas Bhutan.",
     points: [
       "A booking is considered confirmed only after receipt of the required deposit or full payment.",
       "Submitting an inquiry, requesting an itinerary, or receiving a quotation does not automatically confirm a booking.",
@@ -267,7 +267,7 @@ const policySections: PolicySection[] = [
       "Approved refunds will be processed after deducting applicable cancellation charges, supplier penalties, banking fees, payment charges, and administrative costs.",
       "No refunds will be provided for unused services, no-shows, missed transfers, late arrivals, early departures, unused meals, or voluntary itinerary changes by the guest.",
       "Refund processing time may depend on banks, payment channels, suppliers, and documentation requirements.",
-      "Any refund approval must be confirmed in writing by Unseen Himalayas.",
+      "Any refund approval must be confirmed in writing by Unseen Himalayas Bhutan.",
     ],
   },
   {
@@ -294,7 +294,7 @@ const policySections: PolicySection[] = [
     points: [
       "Travel insurance should cover medical emergencies, evacuation, trip cancellation, baggage loss, flight disruption, personal liability, and emergency assistance.",
       "Guests should ensure their insurance covers the activities included in their itinerary, such as hiking, high-altitude travel, rafting, biking, or soft adventure experiences.",
-      "Unseen Himalayas is not responsible for losses that could reasonably be covered by travel insurance.",
+      "Unseen Himalayas Bhutan is not responsible for losses that could reasonably be covered by travel insurance.",
       "Guests may be asked to provide insurance details for certain journeys, activities, or remote travel routes.",
     ],
   },
@@ -309,7 +309,7 @@ const policySections: PolicySection[] = [
       "Guests are responsible for ensuring they are medically fit to travel.",
       "Guests must disclose relevant medical conditions, allergies, mobility concerns, dietary requirements, or special assistance needs before departure.",
       "Guests should carry personal medication, prescriptions, and any required medical documentation.",
-      "Unseen Himalayas may adjust itinerary pacing, activities, or routing if safety, weather, road conditions, health concerns, or operational issues require changes.",
+      "Unseen Himalayas Bhutan may adjust itinerary pacing, activities, or routing if safety, weather, road conditions, health concerns, or operational issues require changes.",
     ],
   },
   {
@@ -320,7 +320,7 @@ const policySections: PolicySection[] = [
     description:
       "Bhutan travel may require operational adjustments due to weather, roads, festivals, flights, safety, government rules, or supplier availability.",
     points: [
-      "Unseen Himalayas reserves the right to modify itineraries, accommodations, transportation, guides, and activities when necessary.",
+      "Unseen Himalayas Bhutan reserves the right to modify itineraries, accommodations, transportation, guides, and activities when necessary.",
       "Changes may be made due to weather conditions, road conditions, operational requirements, safety concerns, government directives, supplier issues, or circumstances beyond reasonable control.",
       "Where possible, suitable alternatives will be arranged to maintain the overall quality and purpose of the journey.",
       "Guests will be informed of major changes as soon as reasonably possible.",
@@ -332,9 +332,9 @@ const policySections: PolicySection[] = [
     eyebrow: "Force Majeure",
     title: "Force Majeure Policy",
     description:
-      "Some events are beyond the reasonable control of Unseen Himalayas and may affect travel plans.",
+      "Some events are beyond the reasonable control of Unseen Himalayas Bhutan and may affect travel plans.",
     points: [
-      "Unseen Himalayas shall not be liable for delays, interruptions, cancellations, losses, or additional costs caused by force majeure events.",
+      "Unseen Himalayas Bhutan shall not be liable for delays, interruptions, cancellations, losses, or additional costs caused by force majeure events.",
       "Force majeure may include natural disasters, severe weather, pandemics, government restrictions, political unrest, road closures, transportation disruption, flight disruption, strikes, or other events beyond reasonable control.",
       "If such events occur, the company will make reasonable efforts to assist guests and suggest alternatives where possible.",
       "Additional costs caused by force majeure events may be the responsibility of the guest unless covered by supplier policies or insurance.",
@@ -360,7 +360,7 @@ const policySections: PolicySection[] = [
     eyebrow: "Complaints",
     title: "Complaint Resolution Policy",
     description:
-      "Unseen Himalayas aims to resolve concerns quickly and fairly when they are reported in a timely manner.",
+      "Unseen Himalayas Bhutan aims to resolve concerns quickly and fairly when they are reported in a timely manner.",
     points: [
       "Complaints should be reported immediately during the tour whenever possible so the guide or office can assist while the guest is still traveling.",
       "Written complaints must be submitted within 14 days of tour completion for review and resolution.",
@@ -379,7 +379,7 @@ const policySections: PolicySection[] = [
       "Guests are encouraged to respect Bhutanese culture, traditions, local communities, wildlife, sacred sites, heritage places, and the natural environment.",
       "Guests must follow temple etiquette, local customs, dress expectations, photography rules, waste guidelines, and guide instructions.",
       "Conduct that negatively impacts local communities, wildlife, heritage sites, religious places, the environment, or the law of the country will not be tolerated.",
-      "Unseen Himalayas may take appropriate action if guest behaviour risks safety, legal compliance, community respect, or the quality of the travel experience.",
+      "Unseen Himalayas Bhutan may take appropriate action if guest behaviour risks safety, legal compliance, community respect, or the quality of the travel experience.",
     ],
   },
 ];

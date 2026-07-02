@@ -43,7 +43,7 @@ function ImageSlot({
   src,
   alt,
   label,
-  copyrightName = "Unseen Himalayas",
+  copyrightName = "Unseen Himalayas Bhutan",
 }: ImageItem) {
   const resolvedSrc = src.trim() || getFallbackImage(label);
 
@@ -372,7 +372,7 @@ export default function SeasonsPage() {
   src: "/images/seasons/spring-rhododendron.jpg"
 
   Copyright example:
-  copyrightName: "Unseen Himalayas"
+  copyrightName: "Unseen Himalayas Bhutan"
   copyrightName: "Passang Tenzin"
 */
 

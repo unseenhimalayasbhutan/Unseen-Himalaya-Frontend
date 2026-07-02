@@ -115,7 +115,7 @@ export function WhyChooseUs() {
 
           <div className="why-showcase uh-whychoose-showcase">
             <div className="showcase-left uh-whychoose-preview">
-              <div className="showcase-badge">Unseen Himalayas</div>
+              <div className="showcase-badge">Unseen Himalayas Bhutan</div>
 
               <div className="uh-whychoose-preview-panels">
                 {features.map((feature, index) => (

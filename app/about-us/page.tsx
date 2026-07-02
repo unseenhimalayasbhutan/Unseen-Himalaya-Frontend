@@ -33,7 +33,7 @@ export default function AboutPage() {
             <div className="about-pro-hero-grid">
               <div className="about-pro-hero-content">
                 <div className="about-pro-eyebrow">
-                  <span>About Unseen Himalayas</span>
+                  <span>About Unseen Himalayas Bhutan</span>
                 </div>
 
                 <h1 className="about-pro-hero-title">
@@ -42,7 +42,7 @@ export default function AboutPage() {
                 </h1>
 
                 <p className="about-pro-hero-description">
-                  Unseen Himalayas specializes in curated travel experiences
+                  Unseen Himalayas Bhutan specializes in curated travel experiences
                   across Bhutan. Backed by 4 years of experience in the tourism industry, we bring in in-depth local knowledge and reliable services.We are also committed to
                   showcasing Bhutan&apos;s rich culture, landscapes, spirituality,
                   hospitality, and local way of life through professional travel
@@ -102,7 +102,7 @@ export default function AboutPage() {
                 <span> Professional local support.</span>
               </h2>
               <p>
-                Unseen Himalayas is a Bhutan-based destination management
+                Unseen Himalayas Bhutan is a Bhutan-based destination management
                 company specializing in curated travel experiences across
                 Bhutan. Our company focuses on creating meaningful travel
                 experiences for international travelers, travel partners, and
@@ -232,11 +232,11 @@ export default function AboutPage() {
                 </div>
 
                 <h2 className="about-pro-section-title">
-                  Unseen Himalayas company profile.
+                  Unseen Himalayas Bhutan company profile.
                 </h2>
 
                 <p className="about-pro-section-text">
-                  Thank you for considering Unseen Himalayas as your trusted
+                  Thank you for considering Unseen Himalayas Bhutan as your trusted
                   travel partner in Bhutan. We look forward to building a
                   long-term and mutually beneficial collaboration while
                   delivering memorable experiences to travelers visiting Bhutan.
@@ -271,7 +271,7 @@ export default function AboutPage() {
           <div className="container">
             <div className="about-pro-cta-card">
               <div>
-                <p className="about-pro-cta-kicker">Partner With Unseen Himalayas</p>
+                <p className="about-pro-cta-kicker">Partner With Unseen Himalayas Bhutan</p>
                 <h2>Let&apos;s build memorable Bhutan journeys together.</h2>
                 <p>
                   Whether you are a traveler, travel partner, or travel agents,
@@ -428,7 +428,7 @@ const featurePoints = [
 const companyInfo: CompanyInfoItem[] = [
   {
     label: "Company Name",
-    value: "Unseen Himalayas",
+    value: "Unseen Himalayas Bhutan",
   },
   {
     label: "Business Registration No.",

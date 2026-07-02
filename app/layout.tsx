@@ -6,8 +6,8 @@ import { siteConfig } from "./siteConfig";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Bhutan Tours & Travel | Unseen Himalayas",
-    template: "%s | Unseen Himalayas",
+    default: "Unseen Himalayas Bhutan | Licensed Bhutan Tour Operator & DMC",
+    template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
@@ -29,20 +29,20 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     url: "/",
     siteName: siteConfig.name,
-    title: "Bhutan Tours & Travel | Unseen Himalayas",
+    title: "Unseen Himalayas Bhutan | Licensed Bhutan Tour Operator & DMC",
     description: siteConfig.description,
     images: [
       {
         url: siteConfig.defaultImage,
         width: 1200,
         height: 630,
-        alt: "Bhutan journey with Unseen Himalayas",
+        alt: "Bhutan journey with Unseen Himalayas Bhutan",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bhutan Tours & Travel | Unseen Himalayas",
+    title: "Unseen Himalayas Bhutan | Licensed Bhutan Tour Operator & DMC",
     description: siteConfig.description,
     images: [siteConfig.defaultImage],
   },
@@ -60,11 +60,20 @@ export default function RootLayout({
   const travelAgencyJsonLd = {
     "@context": "https://schema.org",
     "@type": "TravelAgency",
+    "@id": `${siteConfig.url}/#travelagency`,
     name: siteConfig.name,
+    alternateName: siteConfig.alternateName,
     url: siteConfig.url,
+    logo: new URL("/logo.png", siteConfig.url).toString(),
     description: siteConfig.description,
-    email: siteConfig.contact.email,
     telephone: siteConfig.contact.phoneDisplay,
+    email: siteConfig.contact.email,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.address.streetAddress,
+      addressLocality: siteConfig.address.addressLocality,
+      addressCountry: siteConfig.address.addressCountry,
+    },
     areaServed: {
       "@type": "Country",
       name: "Bhutan",

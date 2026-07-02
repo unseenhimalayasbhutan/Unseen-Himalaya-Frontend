@@ -146,7 +146,7 @@ export default function TermsPage() {
                   Website information is for general planning only. The final
                   confirmed tour arrangement is based on the written quotation,
                   invoice, payment confirmation, supplier availability, and any
-                  booking agreement shared by Unseen Himalayas.
+                  booking agreement shared by Unseen Himalayas Bhutan.
                 </p>
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function TermsPage() {
           <div className="container legal-pro-contact-card">
             <div>
               <span>Questions about these terms?</span>
-              <h2>Contact Unseen Himalayas before confirming your booking.</h2>
+              <h2>Contact Unseen Himalayas Bhutan before confirming your booking.</h2>
               <p>
                 For booking questions, website terms, travel clarification, or
                 quotation details, contact us by email.
@@ -206,7 +206,7 @@ const termsSections: TermsSection[] = [
     eyebrow: "Website Use",
     title: "Use of Website Information",
     description:
-      "The Unseen Himalayas website provides general travel information, itinerary ideas, destination details, and inquiry options for guests interested in visiting Bhutan.",
+      "The Unseen Himalayas Bhutan website provides general travel information, itinerary ideas, destination details, and inquiry options for guests interested in visiting Bhutan.",
     points: [
       "Website content is provided for planning and general information only.",
       "Itineraries, prices, hotel categories, travel times, festival dates, entry requirements, and availability may change without prior notice.",
@@ -220,12 +220,12 @@ const termsSections: TermsSection[] = [
     eyebrow: "Quotations",
     title: "Quotations, Inquiries, and Booking Confirmation",
     description:
-      "Submitting an inquiry through the website does not automatically create a confirmed booking. A booking is confirmed only after Unseen Himalayas confirms availability, issues written terms, and receives the required payment.",
+      "Submitting an inquiry through the website does not automatically create a confirmed booking. A booking is confirmed only after Unseen Himalayas Bhutan confirms availability, issues written terms, and receives the required payment.",
     points: [
       "All quotations are subject to hotel, guide, vehicle, flight, permit, and supplier availability at the time of confirmation.",
       "A quotation may include or exclude SDF, visa fee, meals, entrance fees, domestic flights, taxes, special permits, or optional experiences depending on the final written offer.",
       "Guests should carefully review the itinerary, inclusions, exclusions, payment schedule, cancellation terms, and guest details before confirming.",
-      "Any verbal discussion, WhatsApp message, or email exchange becomes binding only when confirmed clearly in writing by Unseen Himalayas.",
+      "Any verbal discussion, WhatsApp message, or email exchange becomes binding only when confirmed clearly in writing by Unseen Himalayas Bhutan.",
     ],
   },
   {
@@ -267,7 +267,7 @@ const termsSections: TermsSection[] = [
       "Cancellation charges may apply from hotels, airlines, guides, transport providers, government offices, payment gateways, and other suppliers.",
       "Date changes are subject to availability and any price difference charged by suppliers.",
       "No-show, early departure, late arrival, unused meals, missed sightseeing, or unused services may not be refundable.",
-      "Unseen Himalayas may propose suitable alternatives if a confirmed service becomes unavailable due to circumstances outside its control.",
+      "Unseen Himalayas Bhutan may propose suitable alternatives if a confirmed service becomes unavailable due to circumstances outside its control.",
     ],
   },
   {
@@ -295,7 +295,7 @@ const termsSections: TermsSection[] = [
       "Guests must provide accurate passport details, arrival information, dietary requirements, rooming details, and any relevant travel needs.",
       "Guests are responsible for valid passports, travel insurance, personal medication, health conditions, and emergency contact information.",
       "Guests must respect Bhutanese laws, temple etiquette, local customs, hotel rules, environmental guidelines, and instructions from the guide.",
-      "Unseen Himalayas may not be responsible for losses caused by incorrect guest information, invalid documents, personal negligence, or failure to follow guidance.",
+      "Unseen Himalayas Bhutan may not be responsible for losses caused by incorrect guest information, invalid documents, personal negligence, or failure to follow guidance.",
     ],
   },
   {
@@ -306,7 +306,7 @@ const termsSections: TermsSection[] = [
     description:
       "Some services are provided by independent suppliers such as hotels, airlines, restaurants, activity providers, guides, drivers, payment processors, and government offices.",
     points: [
-      "Unseen Himalayas carefully coordinates suppliers but may not directly control every third-party service, schedule, policy, or operational decision.",
+      "Unseen Himalayas Bhutan carefully coordinates suppliers but may not directly control every third-party service, schedule, policy, or operational decision.",
       "Hotel rooms, bed types, views, adjoining rooms, special meals, and upgrades are subject to hotel availability.",
       "Flights, permits, government fees, bank processing, and supplier rules may be governed by the relevant provider’s own terms.",
       "Any complaint related to third-party service should be reported immediately during the tour so the company can assist where possible.",
@@ -318,11 +318,11 @@ const termsSections: TermsSection[] = [
     eyebrow: "Liability",
     title: "Limitation of Liability",
     description:
-      "Unseen Himalayas will make reasonable efforts to provide services professionally, but some travel risks and external factors are outside the company’s control.",
+      "Unseen Himalayas Bhutan will make reasonable efforts to provide services professionally, but some travel risks and external factors are outside the company’s control.",
     points: [
       "The company is not responsible for losses caused by weather, natural events, road closures, flight delays, government actions, illness, accidents, strikes, supplier failure, or force majeure events beyond reasonable control.",
       "Guests are strongly advised to arrange suitable travel insurance covering medical treatment, cancellation, emergency evacuation, baggage, and personal liability.",
-      "The company’s responsibility is limited to services directly confirmed and paid for through Unseen Himalayas.",
+      "The company’s responsibility is limited to services directly confirmed and paid for through Unseen Himalayas Bhutan.",
       "Nothing in these terms is intended to exclude liability where exclusion is not permitted by applicable law.",
     ],
   },
@@ -332,12 +332,12 @@ const termsSections: TermsSection[] = [
     eyebrow: "Content",
     title: "Website Content and Intellectual Property",
     description:
-      "The text, layout, branding, logo, design, itineraries, images, and website materials belong to Unseen Himalayas or are used with permission where applicable.",
+      "The text, layout, branding, logo, design, itineraries, images, and website materials belong to Unseen Himalayas Bhutan or are used with permission where applicable.",
     points: [
       "Website content may not be copied, reproduced, republished, sold, or used commercially without written permission.",
       "Travel partners, guests, and website users may share website links for inquiry or planning purposes.",
       "Images, names, route descriptions, and branding should not be presented as another company’s product.",
-      "If any image or content credit needs correction, contact Unseen Himalayas for review.",
+      "If any image or content credit needs correction, contact Unseen Himalayas Bhutan for review.",
     ],
   },
   {
@@ -346,12 +346,12 @@ const termsSections: TermsSection[] = [
     eyebrow: "Contact",
     title: "Privacy, Communication, and Contact",
     description:
-      "When guests contact Unseen Himalayas, they may share personal details required for inquiry handling, quotation preparation, visa guidance, and booking coordination.",
+      "When guests contact Unseen Himalayas Bhutan, they may share personal details required for inquiry handling, quotation preparation, visa guidance, and booking coordination.",
     points: [
       "Personal information shared through forms, email, WhatsApp, or direct communication is used to respond to inquiries and arrange travel services.",
       "Guests should avoid sending unnecessary sensitive information unless required for travel planning or booking.",
       "Questions about bookings, website content, or these terms can be sent to the official contact email.",
-      "Unseen Himalayas may update these terms from time to time to reflect business, legal, supplier, or operational changes.",
+      "Unseen Himalayas Bhutan may update these terms from time to time to reflect business, legal, supplier, or operational changes.",
     ],
   },
 ];

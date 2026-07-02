@@ -3,11 +3,11 @@ import { siteConfig } from "../siteConfig";
 
 export function CtaSection() {
   const whatsappMessage =
-    "Hello Unseen Himalayas, I would like to plan a Bhutan trip. Please help me with a custom itinerary.";
+    "Hello Unseen Himalayas Bhutan, I would like to plan a Bhutan trip. Please help me with a custom itinerary.";
 
   const emailSubject = "Bhutan Custom Itinerary Request";
   const emailBody =
-    "Hello Unseen Himalayas,\n\nI would like to plan a Bhutan trip. Please help me with a custom itinerary.\n\nThank you.";
+    "Hello Unseen Himalayas Bhutan,\n\nI would like to plan a Bhutan trip. Please help me with a custom itinerary.\n\nThank you.";
 
   return (
     <section className="cta-contact-section">

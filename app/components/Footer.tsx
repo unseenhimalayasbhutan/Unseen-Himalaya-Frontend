@@ -73,11 +73,11 @@ export function Footer() {
               <Link
                 href="/"
                 className="site-footer-logo"
-                aria-label="Unseen Himalayas home page"
+                aria-label="Unseen Himalayas Bhutan home page"
               >
                 <Image
                   src="/logo-transparent.png"
-                  alt="Unseen Himalayas Logo"
+                  alt="Unseen Himalayas Bhutan Logo"
                   width={96}
                   height={96}
                   className="site-footer-logo-image"
@@ -85,9 +85,9 @@ export function Footer() {
               </Link>
 
               <p>
-                Authentic Bhutan journeys crafted with local expertise, cultural
-                respect, and meaningful experiences beyond the usual guidebook
-                route.
+                Authentic Bhutan journeys crafted by a licensed Bhutan tour
+                operator and DMC with local expertise, cultural respect, and
+                meaningful experiences beyond the usual guidebook route.
               </p>
 
               <div className="site-footer-social" aria-label="Social media links">
@@ -161,14 +161,15 @@ export function Footer() {
               </div>
               <h3>Certified Operator</h3>
               <p>
-                Licensed Bhutan tour support with local guidance and professional
-                travel coordination.
+                Licensed Bhutan tour operator and Bhutan-based destination
+                management company with local guidance and professional travel
+                coordination.
               </p>
             </div>
           </div>
 
           <div className="site-footer-bottom">
-            <p>© 2026 Unseen Himalayas. All rights reserved.</p>
+            <p>© 2026 Unseen Himalayas Bhutan. All rights reserved.</p>
             <div>
               <Link href="/privacy-policy">Privacy Policy</Link>
               <span aria-hidden>•</span>

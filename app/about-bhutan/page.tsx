@@ -81,7 +81,7 @@ function ImageSlot({
   return (
     <figure className={`about-bhutan-image ${className}`.trim()}>
       <img src={resolvedSrc} alt={image.alt} loading="lazy" />
-      <figcaption>Copyright {image.copyrightName || "Unseen Himalayas"}</figcaption>
+      <figcaption>Copyright {image.copyrightName || "Unseen Himalayas Bhutan"}</figcaption>
     </figure>
   );
 }
@@ -637,7 +637,7 @@ const detailSections: DetailSection[] = [
     points: [
       "Gross National Happiness connects development with culture, environmental care, good governance, and quality of life.",
       "Visitors experience this through slower travel, community encounters, protected landscapes, and meaningful interpretation.",
-      "For Unseen Himalayas, GNH is a principle for designing thoughtful itineraries rather than a slogan.",
+      "For Unseen Himalayas Bhutan, GNH is a principle for designing thoughtful itineraries rather than a slogan.",
     ],
   },
   {

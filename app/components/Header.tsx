@@ -120,7 +120,7 @@ const navLinks = [
       {
         label: "About Us",
         href: "/about-us",
-        description: "Learn more about Unseen Himalayas",
+        description: "Learn more about Unseen Himalayas Bhutan",
       },
       {
         label: "Contact Us",
@@ -472,12 +472,12 @@ export function Header() {
           <Link
             href="/"
             className="logo"
-            aria-label="Unseen Himalayas home page"
+            aria-label="Unseen Himalayas Bhutan home page"
             onClick={closeMobileMenu}
           >
             <Image
               src="/logo-transparent.png"
-              alt="Unseen Himalayas Logo"
+              alt="Unseen Himalayas Bhutan Logo"
               width={70}
               height={70}
               priority
@@ -597,12 +597,12 @@ export function Header() {
           <Link
             href="/"
             className="mobile-menu-logo"
-            aria-label="Unseen Himalayas home page"
+            aria-label="Unseen Himalayas Bhutan home page"
             onClick={closeMobileMenu}
           >
             <Image
               src="/logo-transparent.png"
-              alt="Unseen Himalayas Logo"
+              alt="Unseen Himalayas Bhutan Logo"
               width={64}
               height={64}
               className="mobile-logo-image"

@@ -17,11 +17,8 @@ export function HeroSection() {
         
 
         <h1>
-          Discover
-          <br />
-          the
-           
-           Unseen Himalayas
+          Unseen Himalayas Bhutan
+          <span>Licensed Bhutan Tour Operator &amp; DMC</span>
         </h1>
 
         <p>

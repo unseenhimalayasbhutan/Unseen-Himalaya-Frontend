@@ -59,7 +59,7 @@ function ImageSlot({ image, className = "" }: { image: ImageAsset; className?: s
       <div className="tour-pro-image-frame">
         <img src={resolvedSrc} alt={image.alt} className="tour-pro-image" loading="lazy" />
       </div>
-      <figcaption className="tour-pro-image-credit">© {image.copyrightName || "Unseen Himalayas"}</figcaption>
+      <figcaption className="tour-pro-image-credit">© {image.copyrightName || "Unseen Himalayas Bhutan"}</figcaption>
     </figure>
   );
 }
@@ -204,8 +204,8 @@ function SectionHeader({ eyebrow, title, subtitle, align = "center", tone = "lig
 const heroImage: ImageAsset = { src: "/By Marcus Westberg _Thimphu_2023_44.jpg", alt: "Scenic Bhutan landscape", label: "Hero Bhutan Image", copyrightName: "Carissa Nimah" };
 const identityImage: ImageAsset = { src: "/Paro Dzong lit twilight  DOT AA Original Bhutan Travels.jpg", alt: "Bhutanese dzong, monastery, or cultural scene", label: "Culture / Dzong Image", copyrightName: "Teo Chin Leong" };
 const foodImage: ImageAsset = { src: "/Bumdeling 090723 by Amp Sripimanwat-140.jpg", alt: "Traditional Bhutanese food", label: "Food Image", copyrightName: "Carissa Nimah" };
-const paroAirportImage: ImageAsset = { src: "/air_paro.png", alt: "Paro International Airport and mountain valley approach", label: "Paro International Airport Image", copyrightName: "Unseen Himalayas" };
-const gmcImage: ImageAsset = { src: "/aaa.png", alt: "Gelephu Mindfulness City vision and southern Bhutan landscape", label: "Gelephu Mindfulness City Image", copyrightName: "Unseen Himalayas" };
+const paroAirportImage: ImageAsset = { src: "/air_paro.png", alt: "Paro International Airport and mountain valley approach", label: "Paro International Airport Image", copyrightName: "Unseen Himalayas Bhutan" };
+const gmcImage: ImageAsset = { src: "/aaa.png", alt: "Gelephu Mindfulness City vision and southern Bhutan landscape", label: "Gelephu Mindfulness City Image", copyrightName: "Unseen Himalayas Bhutan" };
 
 const heroTrust = ["Democracy and royal transition", "Paro Airport gateway", "Culture, nature, and GNH"];
 const quickStats: StatItem[] = [
@@ -261,7 +261,7 @@ const paroAirportFacts: DetailCard[] = [
 ];
 const nationalSymbols: SymbolItem[] = [
   { id: "takin", icon: Mountain, title: "National Animal", value: "Takin", description: "The takin is a rare and unusual Himalayan animal linked with Bhutanese folklore and mountain ecology.", points: ["A unique-looking Himalayan animal strongly associated with Bhutan.", "Connected with Bhutanese folklore and mountain ecology.", "Often introduced at the Takin Preserve in Thimphu.", "A memorable symbol because it feels unlike ordinary national animals."], image: { src: "/Takins.jpg", alt: "Bhutan takin image", label: "Takin Image", copyrightName: "Carissa Nimah" } },
-  { id: "raven", icon: Sparkles, title: "National Bird", value: "Raven", description: "The raven is connected with Bhutan’s protective deities and royal symbolism.", points: ["Associated with protective spiritual symbolism.", "Connected with Bhutan’s monarchy through the Raven Crown.", "Links spiritual belief and state identity.", "A powerful symbol for explaining Bhutan’s sacred worldview."], image: { src: "/raven.jpg", alt: "Raven or Raven Crown image", label: "Raven Image", copyrightName: "Unseen Himalayas" } },
+  { id: "raven", icon: Sparkles, title: "National Bird", value: "Raven", description: "The raven is connected with Bhutan’s protective deities and royal symbolism.", points: ["Associated with protective spiritual symbolism.", "Connected with Bhutan’s monarchy through the Raven Crown.", "Links spiritual belief and state identity.", "A powerful symbol for explaining Bhutan’s sacred worldview."], image: { src: "/raven.jpg", alt: "Raven or Raven Crown image", label: "Raven Image", copyrightName: "Unseen Himalayas Bhutan" } },
   { id: "blue-poppy", icon: Leaf, title: "National Flower", value: "Blue Poppy", description: "The blue poppy is a rare Himalayan flower associated with high mountain environments.", points: ["Linked with high-altitude Himalayan environments.", "A reminder of fragile mountain biodiversity.", "Represents rarity, natural elegance, and conservation value.", "Useful for travelers interested in flora and soft nature experiences."], image: { src: "/MarcusWestbergBhutanHiRes-10.jpg", alt: "Blue poppy flower image", label: "Blue Poppy Image", copyrightName: "Scarlette DG" } },
   { id: "cypress", icon: TreePine, title: "National Tree", value: "Cypress", description: "The cypress is associated with religious places and rugged landscapes.", points: ["Often seen near sacred places and mountain landscapes.", "Associated with strength and spiritual presence.", "Connects Bhutan’s natural and religious identity.", "A quiet but important symbol of Bhutanese landscape character."], image: { src: "/Haa by Marcus Westberg30.jpg", alt: "Bhutan cypress tree image", label: "Cypress Image", copyrightName: "Carissa Nimah" } },
   { id: "archery-symbol", icon: Compass, title: "National Sport", value: "Archery", description: "Archery brings communities together through competition, song, laughter, and celebration.", points: ["A social event as much as a sport.", "Often includes songs, jokes, cheering, and community gathering.", "Traditional and modern bow styles are both seen.", "A strong optional add-on for culture-focused itineraries."], image: { src: "/Trashi Yangtse 090723 by Amp Sripimanwat-219.jpg", alt: "Bhutan archery image", label: "Archery Symbol Image", copyrightName: "Carissa Nimah" } },

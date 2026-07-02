@@ -368,7 +368,7 @@ export default function GNHPhilosophiesPage() {
 
   Example:
   src: "/images/gnh/bhutan-community.jpg",
-  credit: "Unseen Himalayas / Photographer Name",
+  credit: "Unseen Himalayas Bhutan / Photographer Name",
   creditHref: "https://example.com/photo-source",
   creditPosition: "overlay", // use "below" to show credit under image
 */
@@ -377,7 +377,7 @@ const heroImage: PageImage = {
   src: "/gnh.jpg",
   alt: "Bhutan landscape representing Gross National Happiness",
   label: "Hero Image",
-  credit: "Unseen Himalayas / Photographer Name",
+  credit: "Unseen Himalayas Bhutan / Photographer Name",
   creditHref: "",
   creditPosition: "overlay",
 };

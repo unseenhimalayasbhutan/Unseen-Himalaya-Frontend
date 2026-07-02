@@ -595,14 +595,14 @@ const festivalTerms = [
   "Itinerary timing may change due to weather, road conditions, festival crowd movement, flight timing, race rules, or guest safety.",
   "When festivals overlap, guests may need to choose one festival experience from the same date range.",
   "Tour of the Dragon support depends on official race regulations, road permissions, and organizer instructions.",
-  "Unseen Himalayas will provide suitable routing alternatives if a listed service becomes unavailable after confirmation.",
+  "Unseen Himalayas Bhutan will provide suitable routing alternatives if a listed service becomes unavailable after confirmation.",
 ];
 
 const heroImage: ImageAsset = {
   src: "",
   alt: "Bhutan festival hero",
   label: "Festival Hero Image",
-  copyrightName: "Unseen Himalayas",
+  copyrightName: "Unseen Himalayas Bhutan",
 };
 
 const heroTrust = [
@@ -730,7 +730,7 @@ const featuredFestivals: FestivalItem[] = [
       src: "/ChhukhaTshechu.jpg",
       alt: "Chhukha Tshechu festival tour image",
       label: "Chhukha Tshechu Image",
-      copyrightName: "Unseen Himalayas",
+      copyrightName: "Unseen Himalayas Bhutan",
     },
   },
   {
@@ -1177,7 +1177,7 @@ const festivalPackages: FestivalPackage[] = [
       src: "",
       alt: "Tour of the Dragon 7-day race tour image",
       label: "Tour of the Dragon 7-Day Image",
-      copyrightName: "Unseen Himalayas",
+      copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
       {
@@ -1275,7 +1275,7 @@ const festivalPackages: FestivalPackage[] = [
       src: "",
       alt: "Tour of the Dragon 9-day balanced race tour image",
       label: "Tour of the Dragon 9-Day Image",
-      copyrightName: "Unseen Himalayas",
+      copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
       {
@@ -1407,7 +1407,7 @@ const festivalPackages: FestivalPackage[] = [
       src: "",
       alt: "Tour of the Dragon 11-day acclimatization tour image",
       label: "Tour of the Dragon 11-Day Image",
-      copyrightName: "Unseen Himalayas",
+      copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
       {
@@ -1675,7 +1675,7 @@ const festivalPackages: FestivalPackage[] = [
       src: "",
       alt: "5-day Chhukha Tshechu land-entry tour image",
       label: "5-Day Chhukha Tshechu Image",
-      copyrightName: "Unseen Himalayas",
+      copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
       {
@@ -1742,7 +1742,7 @@ const festivalPackages: FestivalPackage[] = [
       src: "/66bf02f4ff8c371f83c79a4f_66bef5aab388dabf85692211_Paro-Taktsang-1.jpeg",
       alt: "7-day Chhukha Tshechu with Tiger's Nest image",
       label: "7-Day Chhukha Tshechu Image",
-      copyrightName: "Unseen Himalayas",
+      copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
       {
