@@ -124,7 +124,7 @@ export default function FestivalToursPage() {
 
               <p>
                 Choose the original September festival circuits, Tour of the
-                Dragon race packages, October tshechu tours, or November Black
+                Cycling race packages, October tshechu tours, or November Black
                 Necked Crane Festival journeys.
               </p>
 
@@ -173,7 +173,7 @@ export default function FestivalToursPage() {
           <div className="container">
             <SectionHeader
               eyebrow="Festival Itinerary Library"
-              title="Choose a September festival circuit, Tour of the Dragon package, October tshechu route, or November Black Necked crane festival journey."
+              title="Choose a September festival circuit, Bhutan Scenic Cycling Tour package, October tshechu route, or November Black Necked crane festival journey."
               subtitle="Filter by duration, select a route, and view the full day-by-day journey."
             />
 
@@ -576,7 +576,7 @@ const festivalPackageFilters: FestivalFilter[] = [
 
 const festivalQuickStats = [
   { value: "Sep-Nov", label: "Event Season" },
-  { value: "Dragon", label: "Race Packages" },
+  { value: "Cycling", label: "Race Packages" },
   { value: "4-12", label: "Day Route Options" },
   { value: "14", label: "Curated Packages" },
 ];
@@ -594,7 +594,7 @@ const festivalTerms = [
   "The final quotation will confirm whether SDF, visa fee, domestic flight, meals, entrance fees, race support, and taxes are included or excluded.",
   "Itinerary timing may change due to weather, road conditions, festival crowd movement, flight timing, race rules, or guest safety.",
   "When festivals overlap, guests may need to choose one festival experience from the same date range.",
-  "Tour of the Dragon support depends on official race regulations, road permissions, and organizer instructions.",
+  "Bhutan Scenic Cycling Tour support depends on official race regulations, road permissions, and organizer instructions.",
   "Unseen Himalayas Bhutan will provide suitable routing alternatives if a listed service becomes unavailable after confirmation.",
 ];
 
@@ -607,7 +607,7 @@ const heroImage: ImageAsset = {
 
 const heroTrust = [
   "Original festival routes",
-  "Tour of the Dragon 2026 cycling packages",
+  "Bhutan Scenic Cycling Tour 2026 cycling packages",
   "October and November festival tours for international and regional guests",
 ];
 
@@ -676,7 +676,7 @@ const featuredFestivals: FestivalItem[] = [
     },
   },
   {
-    name: "Tour of the Dragon",
+    name: "Bhutan Scenic Cycling Tour",
     category: "Cycling Race Event",
     date: "September 2026",
     location: "Bumthang to Thimphu",
@@ -688,11 +688,11 @@ const featuredFestivals: FestivalItem[] = [
       "Thimphu finish",
       "Optional Taktsang",
     ],
-    slug: "tour-of-the-dragon",
+    slug: "bhutan-scenic-cycling-tour",
     image: {
       src: "/p5pb29093445.jpg",
-      alt: "Tour of the Dragon cycling race in Bhutan",
-      label: "Tour of the Dragon Image",
+      alt: "Bhutan Scenic Cycling Tour cycling race in Bhutan",
+      label: "Bhutan Scenic Cycling Tour Image",
       copyrightName: "Martin Bissig / bissig.ch",
     },
   },
@@ -1160,23 +1160,23 @@ const festivalPackages: FestivalPackage[] = [
     ],
   },
   {
-    title: "Tour of the Dragon 2026 – 7-Day Race Tour",
+    title: "Bhutan Scenic Cycling Tour 2026 – 7-Day Race Tour",
     duration: "7 Days / 6 Nights",
     dates: "2-8 September 2026",
     coverage: "Paro • Thimphu • Trongsa • Bumthang • Thimphu • Paro",
     bestFor: "Riders with limited time",
     summary:
-      "A compact race-focused itinerary with arrival recovery, acclimatization, bike preparation, race registration, Tour of the Dragon race day, recovery, and departure via Paro.",
+      "A compact race-focused itinerary with arrival recovery, acclimatization, bike preparation, race registration, Bhutan Scenic Cycling Tour race day, recovery, and departure via Paro.",
     festivals: [
-      "Tour of the Dragon",
+      "Bhutan Scenic Cycling Tour",
       "Cycling Race",
       "Bumthang to Thimphu",
       "Recovery Day",
     ],
     image: {
       src: "/cycling.jpg",
-      alt: "Tour of the Dragon 7-day race tour image",
-      label: "Tour of the Dragon 7-Day Image",
+      alt: "Bhutan Scenic Cycling Tour 7-day race tour image",
+      label: "Bhutan Scenic Cycling Tour 7-Day Image",
       copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
@@ -1217,7 +1217,7 @@ const festivalPackages: FestivalPackage[] = [
         title: "5 Sept | Trongsa – Bumthang",
         activities: [
           "Drive to Bumthang via Yotong La Pass",
-          "Tour of the Dragon registration and race briefing",
+          "Bhutan Scenic Cycling Tour registration and race briefing",
           "Final bike inspection and race preparation",
           "Early rest before race day",
           "Overnight in Bumthang",
@@ -1225,10 +1225,10 @@ const festivalPackages: FestivalPackage[] = [
       },
       {
         day: "05",
-        title: "6 Sept | Tour of the Dragon Race",
+        title: "6 Sept | Bhutan Scenic Cycling Tour Race",
         activities: [
           "Early morning transfer to the starting point",
-          "Participate in the Tour of the Dragon mountain bike race from Bumthang to Thimphu",
+          "Participate in the Bhutan Scenic Cycling Tour mountain bike race from Bumthang to Thimphu",
           "Race support and assistance provided throughout the day",
           "Finish-line celebration upon arrival in Thimphu",
           "Overnight in Thimphu",
@@ -1258,7 +1258,7 @@ const festivalPackages: FestivalPackage[] = [
     ],
   },
   {
-    title: "Tour of the Dragon 2026 – 9-Day Balanced Race Tour",
+    title: "Bhutan Scenic Cycling Tour 2026 – 9-Day Balanced Race Tour",
     duration: "9 Days / 8 Nights",
     dates: "1-9 September 2026",
     coverage: "Paro • Thimphu • Punakha • Trongsa • Bumthang • Thimphu • Paro",
@@ -1266,15 +1266,15 @@ const festivalPackages: FestivalPackage[] = [
     summary:
       "A strong 9-day package with arrival, acclimatization, bike preparation, sightseeing, race day, recovery, Paro sightseeing, and optional Tiger’s Nest or soft recovery day.",
     festivals: [
-      "Tour of the Dragon",
+      "Bhutan Scenic Cycling Tour",
       "Acclimatization",
       "Race Support",
       "Optional Tiger’s Nest",
     ],
     image: {
       src: "cycle.jpg",
-      alt: "Tour of the Dragon 9-day balanced race tour image",
-      label: "Tour of the Dragon 9-Day Image",
+      alt: "Bhutan Scenic Cycling Tour 9-day balanced race tour image",
+      label: "Bhutan Scenic Cycling Tour 9-Day Image",
       copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
@@ -1336,7 +1336,7 @@ const festivalPackages: FestivalPackage[] = [
         activities: [
           "Very early wake-up and light pre-race meal",
           "Transfer to race start point in Bumthang",
-          "Participate in Tour of the Dragon Race from Bumthang to Thimphu",
+          "Participate in Bhutan Scenic Cycling Tour Race from Bumthang to Thimphu",
           "Support vehicle follows as per race rules and road permissions",
           "Support points planned around Bumthang, Trongsa, Pelela, Wangdue/Punakha, Dochula, and Thimphu finish",
           "Post-race transfer to hotel, recovery meal, and rest",
@@ -1390,23 +1390,23 @@ const festivalPackages: FestivalPackage[] = [
     ],
   },
   {
-    title: "Tour of the Dragon 2026 – 11-Day Acclimatization Tour",
+    title: "Bhutan Scenic Cycling Tour 2026 – 11-Day Acclimatization Tour",
     duration: "11 Days / 10 Nights",
-    dates: "Tour of the Dragon 2026 period",
+    dates: "Bhutan Scenic Cycling Tour 2026 period",
     coverage: "Paro • Thimphu • Punakha • Trongsa • Bumthang • Thimphu • Paro",
     bestFor: "Riders needing extra preparation",
     summary:
-      "An extended Tour of the Dragon package with additional acclimatization, training rides, central Bhutan transfer, race participation, recovery, Paro sightseeing, and optional Tiger’s Nest.",
+      "An extended Bhutan Scenic Cycling Tour package with additional acclimatization, training rides, central Bhutan transfer, race participation, recovery, Paro sightseeing, and optional Tiger’s Nest.",
     festivals: [
-      "Tour of the Dragon",
+      "Bhutan Scenic Cycling Tour",
       "Training Rides",
       "Race Briefing",
       "Tiger’s Nest Option",
     ],
     image: {
       src: "/1765.jpg",
-      alt: "Tour of the Dragon 11-day acclimatization tour image",
-      label: "Tour of the Dragon 11-Day Image",
+      alt: "Bhutan Scenic Cycling Tour 11-day acclimatization tour image",
+      label: "Bhutan Scenic Cycling Tour 11-Day Image",
       copyrightName: "Unseen Himalayas Bhutan",
     },
     days: [
@@ -1469,7 +1469,7 @@ const festivalPackages: FestivalPackage[] = [
         title: "Trongsa – Bumthang",
         activities: [
           "Drive to Bumthang via Yotong La Pass",
-          "Tour of the Dragon registration and rider briefing",
+          "Bhutan Scenic Cycling Tour registration and rider briefing",
           "Final bike inspection and equipment check",
           "Early rest before race day",
           "Overnight in Bumthang",
@@ -1477,10 +1477,10 @@ const festivalPackages: FestivalPackage[] = [
       },
       {
         day: "07",
-        title: "Tour of the Dragon Race",
+        title: "Bhutan Scenic Cycling Tour Race",
         activities: [
           "Early morning transfer to the start line",
-          "Participate in the Tour of the Dragon mountain bike race from Bumthang to Thimphu",
+          "Participate in the Bhutan Scenic Cycling Tour mountain bike race from Bumthang to Thimphu",
           "Race support provided throughout the event",
           "Finish-line celebration upon arrival in Thimphu",
           "Overnight in Thimphu",
