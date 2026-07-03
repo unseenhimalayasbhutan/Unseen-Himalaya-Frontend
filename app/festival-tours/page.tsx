@@ -1174,7 +1174,7 @@ const festivalPackages: FestivalPackage[] = [
       "Recovery Day",
     ],
     image: {
-      src: "",
+      src: "/cycling.jpg",
       alt: "Tour of the Dragon 7-day race tour image",
       label: "Tour of the Dragon 7-Day Image",
       copyrightName: "Unseen Himalayas Bhutan",
@@ -1272,7 +1272,7 @@ const festivalPackages: FestivalPackage[] = [
       "Optional Tiger’s Nest",
     ],
     image: {
-      src: "",
+      src: "cycle.jpg",
       alt: "Tour of the Dragon 9-day balanced race tour image",
       label: "Tour of the Dragon 9-Day Image",
       copyrightName: "Unseen Himalayas Bhutan",
@@ -1404,7 +1404,7 @@ const festivalPackages: FestivalPackage[] = [
       "Tiger’s Nest Option",
     ],
     image: {
-      src: "",
+      src: "/1765.jpg",
       alt: "Tour of the Dragon 11-day acclimatization tour image",
       label: "Tour of the Dragon 11-Day Image",
       copyrightName: "Unseen Himalayas Bhutan",

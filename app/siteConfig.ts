@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Unseen Himalayas Bhutan",
-  alternateName: "Unseen Himalayas",
+  alternateName: "Unseen Himalayas ",
   url:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
     "https://www.theunseenhimalayas.com",
