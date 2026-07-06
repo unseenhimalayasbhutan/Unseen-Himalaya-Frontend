@@ -805,20 +805,20 @@ const festivalPackages: FestivalPackage[] = [
       },
       {
         day: "04",
-        title: "20 Sept | Wangdue Tshechu to Thimphu",
+        title: "20 Sept | Wangdue Tshechu to Paro",
         activities: [
           "Morning final hours of Wangdue Tshechu, selected performances",
-          "Drive back to Thimphu",
-          "Evening leisure in Thimphu, cafes or craft bazaar",
-          "Overnight in Thimphu",
+          "Drive back to Paro",
+          "Visit Tamchog Lhakhang if timing allows",
+          "Evening leisure in Paro, cafes or craft bazaar",
+          "Overnight in Paro",
         ],
       },
       {
         day: "05",
-        title: "21 Sept | Thimphu to Paro Departure",
+        title: "21 Sept | Paro Departure",
         activities: [
-          "Early morning drive to Paro",
-          "Visit Tamchog Lhakhang if flight timing allows",
+          "Breakfast at hotel",          
           "Airport drop at Paro International Airport",
         ],
       },

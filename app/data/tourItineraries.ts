@@ -265,8 +265,8 @@ export const itineraries: ItineraryRoute[] = [
           "Visit Punakha Dzong",
           "Short hike to Khamsum Yulley Namgyel Chorten",
           "Walk through paddy fields and valley viewpoints",
-          "Visit Wolokha Nunnery",
-          "Optional rafting on Punakha River",
+          "Visit Bhutan’s longest Suspension Bridge or Wolokha Nunnery",
+          "River Rafting on the Punakha River (Additional Cost)",
           "Drive to Paro",
           "Check-in at hotel",
           "Overnight stay in Paro"
@@ -279,7 +279,7 @@ export const itineraries: ItineraryRoute[] = [
           "Stop at cafeteria viewpoint",
           "Visit Kyichu Lhakhang",
           "Explore Paro town & shopping",
-          "Optional hot stone bath & farmhouse dinner",
+          "Optional hot stone bath & farmhouse dinner (additional cost)",
           "Overnight stay in Paro"
         ]
       },
@@ -322,7 +322,7 @@ export const itineraries: ItineraryRoute[] = [
           "Scenic drive to Thimphu (approx. 1.5 hrs)",
           "Drive along Paro River via Chuzom",
           "En-route stop at Tachogang Lhakhang & suspension bridge",
-          "Visit Tashichho Dzong (evening visit, subject to access)",
+          "Visit Tashichho Dzong (evening visit) ",
           "Leisure walk in Thimphu city & local markets",
           "Overnight stay in Thimphu (2,400 m)"
         ]
@@ -401,7 +401,7 @@ export const itineraries: ItineraryRoute[] = [
           "Drive past National Memorial Chorten",
           "Scenic drive to Punakha via Dochula Pass",
           "Stop at Dochula Pass (108 chortens & Himalayan views)",
-          "Visit Lamperi Botanical Garden",
+          "Visit Lamperi Botanical Garden (Zip Line Adventure)",
           "Visit Punakha Dzong",
           "Walk across Punakha Suspension Bridge",
           "Overnight stay in Punakha (1,350 m)"
@@ -410,9 +410,9 @@ export const itineraries: ItineraryRoute[] = [
       {
         "title": "Day 03: Punakha – Drive to Paro",
         "activities": [
-          "Drive back to Paro via Dochula Pass & Chuzom",
           "Visit Chimmi Lhakhang (Fertility Temple)",
           "Gentle village walk through Mesina village",
+          "Drive back to Paro via Dochula Pass & Chuzom",
           "Visit Rinpung Dzong (Paro Dzong)",
           "Visit Ta Dzong – National Museum",
           "Outdoor cultural activities (traditional dress, archery, darts)",
@@ -566,7 +566,8 @@ export const itineraries: ItineraryRoute[] = [
           "Arrival at Paro International Airport",
           "Traditional welcome with khaddar",
           "Scenic drive to Thimphu (approx. 1.5 hrs)",
-          "En route stop at Tachogang Lhakhang (optional)",
+          "Drive along Paro River via Chuzom",
+          "En route stop at Tachogang Lhakhang (evening visit)",
           "Visit Tashichho Dzong (time permitting)",
           "Evening leisure walk in Thimphu city (optional)",
           "Overnight stay in Thimphu (2,400 m)"
@@ -575,25 +576,26 @@ export const itineraries: ItineraryRoute[] = [
       {
         "title": "Day 02: Thimphu Sightseeing",
         "activities": [
-          "Visit School of Arts & Crafts",
-          "Visit Folk Heritage Museum",
-          "Visit National Textile Museum",
+          "Observe traditional arts & crafts at School of Arts & Crafts",
+          "Explore Folk Heritage Museum (traditional Bhutanese lifestyle)",
+          "Visit National Textile Museum (weaving heritage & textiles)",
+          "Drive past National Memorial Chorten.",
           "Visit Buddha Dordenma viewpoint",
-          "Visit National Memorial Chorten",
-          "Visit Weekend Market (Wed–Mon)",
-          "Visit Changlimithang Archery Ground (if match available)",
+          "Explore Centenary Weekend Market (Wed–Mon)",
+          "Visit Changlimithang Archery Ground (live match if available)",
           "Overnight stay in Thimphu"
         ]
       },
       {
         "title": "Day 03: Thimphu – Punakha",
         "activities": [
-          "Drive to Punakha via Dochula Pass",
+          "Scenic drive to Punakha via Dochula Pass",
           "Stop at Dochula Pass (Himalayan views & 108 chortens)",
-          "Visit Lamperi Botanical Garden (seasonal)",
-          "Visit Punakha Dzong",
-          "Visit Punakha Suspension Bridge",
-          "Visit Sangchhen Dorji Lhuendrup Nunnery",
+          "Visit Lamperi Botanical Garden (seasonal rhododendrons & forest walk)",
+          "Visit Punakha Dzong (river confluence fortress)",
+          "Walk across Punakha Suspension Bridge",
+          "Visit Khamsum Yulley Namgyel Chorten.",
+          "River Rafting on the Punakha River. (Additional Cost)",
           "Overnight stay in Punakha (1,350 m)"
         ]
       },
@@ -651,73 +653,77 @@ export const itineraries: ItineraryRoute[] = [
     ],
     "days": [
       {
-        "title": "Day 01: Arrival in Paro – Transfer to Thimphu (1.5 hrs)",
+        "title": "Day 01: Arrival in Paro – Transfer to Thimphu",
         "activities": [
           "Arrival at Paro International Airport",
-          "Meet & greet by HBT representative with khaddar welcome",
-          "Drive to Thimphu via Paro River and Chuzom junction",
-          "Scenic drive through Bondey, Shaba, Isina villages",
-          "En route stop at Tachogang Lhakhang (optional walk)",
-          "Visit Tashichho Dzong (time permitting)",
-          "Evening Thimphu city walk (optional)",
-          "Overnight stay in Thimphu (2,400m)"
+          "Traditional welcome with khaddar",
+          "Scenic drive to Thimphu (approx. 1.5 hrs)",
+          "Drive along Paro River via Chuzom",
+          "En-route stop at Tachogang Lhakhang & suspension bridge",
+          "Visit Tashichho Dzong (evening visit)",
+          "Leisure walk in Thimphu city & local markets",
+          "Overnight stay in Thimphu (2,400 m)"
         ]
       },
       {
         "title": "Day 02: Thimphu Sightseeing",
         "activities": [
-          "Visit Folk Heritage Museum",
-          "Visit National Textile Museum",
+          "Explore Folk Heritage Museum (traditional Bhutanese lifestyle)",
+          "Visit National Textile Museum (weaving heritage & textiles)",
           "Visit Buddha Dordenma viewpoint",
-          "Visit National Memorial Chorten",
-          "Visit Simtokha Dzong (oldest fortress)",
+          "Drive past National Memorial Chorten",
+          "Visit Simtokha Dzong (oldest fortress in Bhutan)",
           "Visit Paper Factory (traditional handmade paper)",
-          "Visit Centenary Farmers’ Market (Wed–Mon, closed Tuesday)",
+          "Explore Centenary Farmers’ Market (Wed–Mon, closed Tuesday)",
           "Visit Changlimithang Archery Ground (live match if available)",
-          "Overnight stay in Thimphu"
+          "Overnight stay in Thimphu (2,400 m)"
         ]
       },
       {
-        "title": "Day 03: Thimphu – Punakha (3 hrs drive)",
+        "title": "Day 03: Thimphu – Drive to Punakha",
         "activities": [
-          "Drive via Dochula Pass (108 chortens & Himalayan views)",
+          "Scenic drive to Punakha via Dochula Pass",
+          "Stop at Dochula Pass (108 chortens & Himalayan views)",
           "Stop at Lamperi Botanical Garden (seasonal rhododendrons & birds)",
           "Visit Punakha Dzong (river confluence fortress)",
-          "Visit Punakha Suspension Bridge",
-          "Overnight stay in Punakha (1,350m)"
+          "Walk across Punakha Suspension Bridge",
+          "River rafting on the Punakha River (additional cost)",
+          "Overnight stay in Punakha (1,350 m)"
         ]
       },
       {
         "title": "Day 04: Punakha – Phobjikha (Gangtey)",
         "activities": [
-          "Visit Chimi Lhakhang (fertility temple, village hike)",
-          "Drive via Wangdue & scenic mountain landscapes",
-          "Arrive Phobjikha Valley (black-necked crane region)",
+          "Visit Chimmi Lhakhang (Fertility Temple)",
+          "Gentle village walk through Sopsokha / Metsina Village",
+          "Scenic drive via Wangdue & mountain landscapes",
+          "Arrive in Phobjikha Valley (black-necked crane region)",
           "Visit Gangtey Monastery (Gangtey Gompa)",
           "Walk Gangtey Nature Trail",
           "Visit Crane Information Center (RSPN)",
           "Farmhouse visit with traditional dinner",
-          "Overnight stay in Phobjikha (2,900m)"
+          "Overnight stay in Phobjikha (2,900 m)"
         ]
       },
       {
-        "title": "Day 05: Phobjikha – Paro (5 hrs drive)",
+        "title": "Day 05: Phobjikha – Drive to Paro",
         "activities": [
-          "Scenic drive back via Pelela, Wangdue & Dochula Pass",
-          "Visit Paro Dzong (Rinpung Dzong)",
+          "Scenic drive back via Pelela Pass, Wangdue & Dochula Pass",
+          "Visit Rinpung Dzong (Paro Dzong)",
           "Visit Ta Dzong – National Museum",
-          "Traditional dress experience (Gho/Kira) & archery activity",
+          "Outdoor cultural activities (traditional dress, archery, darts)",
           "Explore Paro town & handicraft shops",
-          "Overnight stay in Paro (2,200m)"
+          "Overnight stay in Paro (2,200 m)"
         ]
       },
       {
         "title": "Day 06: Paro Sightseeing",
         "activities": [
           "Hike to Taktsang Monastery (Tiger’s Nest)",
+          "Stop at cafeteria viewpoint",
           "Visit Kyichu Lhakhang (one of Bhutan’s oldest temples)",
-          "Optional hot stone bath & farmhouse dinner (extra cost)",
-          "Overnight stay in Paro"
+          "Optional hot stone bath & farmhouse dinner (additional cost)",
+          "Overnight stay in Paro (2,200 m)"
         ]
       },
       {
@@ -751,84 +757,89 @@ export const itineraries: ItineraryRoute[] = [
       "Gangtey",
       "Thimphu"
     ],
-    "days": [
-      {
-        "title": "Day 01: Arrive Paro – Transfer to Thimphu",
-        "activities": [
-          "Arrival at Paro International Airport",
-          "Meet & greet with guide and traditional khaddar welcome",
-          "Drive to Thimphu (approx. 1.5 hrs)",
-          "En route visit Takin viewpoint (Bhutan’s national animal)",
-          "Check-in to hotel and leisure time",
-          "Overnight stay in Thimphu"
-        ]
-      },
-      {
-        "title": "Day 02: Thimphu Sightseeing",
-        "activities": [
-          "Visit Folk Heritage Museum",
-          "Visit National Textile Museum",
-          "Visit Tashichho Dzong (main administrative fortress)",
-          "Visit National Memorial Chorten",
-          "Visit Paper Factory (traditional handmade paper)",
-          "Visit Simtokha Dzong (oldest fortress in Bhutan)",
-          "Visit Centenary Farmers’ Market (weekend market)",
-          "Overnight stay in Thimphu"
-        ]
-      },
-      {
-        "title": "Day 03: Thimphu – Punakha",
-        "activities": [
-          "Drive to Punakha via Dochula Pass",
-          "Stop at Dochula Pass (108 chortens & Himalayan views)",
-          "Visit Punakha Dzong (river confluence fortress)",
-          "Visit Khamsum Yulley Namgyal Chorten (scenic hike)",
-          "Overnight stay in Punakha"
-        ]
-      },
-      {
-        "title": "Day 04: Punakha – Gangtey",
-        "activities": [
-          "Visit Chimi Lhakhang (fertility temple, village walk)",
-          "Brief stop at Wangdue Phodrang town & Dzong view",
-          "Drive to Gangtey / Phobjikha Valley",
-          "Overnight stay in Gangtey"
-        ]
-      },
-      {
-        "title": "Day 05: Gangtey Sightseeing",
-        "activities": [
-          "Explore Phobjikha Valley (black-necked crane habitat)",
-          "Visit Gangtey Monastery (17th century)",
-          "Nature walk in Phobjikha valley",
-          "Overnight stay in Gangtey"
-        ]
-      },
-      {
-        "title": "Day 06: Gangtey – Paro",
-        "activities": [
-          "Drive to Paro via scenic western & central Bhutan landscapes",
-          "Check-in to hotel in Paro",
-          "Leisure evening in Paro town (optional)",
-          "Overnight stay in Paro"
-        ]
-      },
-      {
-        "title": "Day 07: Paro Sightseeing – Tiger’s Nest Hike",
-        "activities": [
-          "Hike to Taktsang Monastery (Tiger’s Nest)",
-          "Cafeteria viewpoint stop (scenic break point)",
-          "Visit Kyichu Lhakhang (oldest temple in Bhutan)",
-          "Overnight stay in Paro"
-        ]
-      },
-      {
-        "title": "Day 08: Departure from Paro",
-        "activities": [
-          "Breakfast at hotel",
-          "Transfer to Paro International Airport",
-          "Departure from Bhutan with memories of the Himalayas"
-        ]
+"days": [
+  {
+    "title": "Day 01: Arrival in Paro – Transfer to Thimphu",
+    "activities": [
+      "Arrival at Paro International Airport",
+      "Traditional welcome with khaddar",
+      "Scenic drive to Thimphu (approx. 1.5 hrs)",
+      "Drive along Paro River via Chuzom",
+      "En-route stop at Tachogang Lhakhang & suspension bridge",
+      "Visit Tashichho Dzong (evening visit)",
+      "Leisure walk in Thimphu city & local markets",
+      "Overnight stay in Thimphu (2,400 m)"
+    ]
+  },
+  {
+    "title": "Day 02: Thimphu Sightseeing",
+    "activities": [
+      "Explore Folk Heritage Museum (traditional Bhutanese lifestyle)",
+      "Visit National Textile Museum (weaving heritage & textiles)",
+      "Visit Tashichho Dzong (main administrative fortress)",
+      "Drive past National Memorial Chorten",
+      "Visit Buddha Dordenma viewpoint",
+      "Visit Simtokha Dzong (oldest fortress in Bhutan)",
+      "Explore Centenary Farmers’ Market (weekend market)",
+      "Overnight stay in Thimphu (2,400 m)"
+    ]
+  },
+  {
+    "title": "Day 03: Thimphu – Drive to Punakha",
+    "activities": [
+      "Scenic drive to Punakha via Dochula Pass",
+      "Stop at Dochula Pass (108 chortens & Himalayan views)",
+      "Visit Punakha Dzong (river confluence fortress)",
+      "Explore Bhutan’s Longest Suspension Bridge",
+      "Hike to Khamsum Yulley Namgyal Chorten (scenic valley hike)",
+      "River rafting on the Punakha River (additional cost)",
+      "Overnight stay in Punakha (1,350 m)"
+    ]
+  },
+  {
+    "title": "Day 04: Punakha – Drive to Gangtey",
+    "activities": [
+      "Visit Chimmi Lhakhang (Fertility Temple)",
+      "Gentle village walk through Sopsokha / Metsina Village",
+      "Brief stop at Wangdue Phodrang town & Dzong viewpoint",
+      "Scenic drive to Gangtey / Phobjikha Valley",
+      "Overnight stay in Gangtey (2,900 m)"
+    ]
+  },
+  {
+    "title": "Day 05: Gangtey Sightseeing",
+    "activities": [
+      "Explore Phobjikha Valley (black-necked crane habitat)",
+      "Visit Gangtey Monastery (17th-century monastery)",
+      "Nature walk in Phobjikha Valley (open valley trails & crane habitat)",
+      "Overnight stay in Gangtey (2,900 m)"
+    ]
+  },
+  {
+    "title": "Day 06: Gangtey – Drive to Paro",
+    "activities": [
+      "Scenic drive to Paro via western & central Bhutan landscapes",
+      "Check-in to hotel in Paro",
+      "Leisure evening in Paro town (optional)",
+      "Overnight stay in Paro (2,200 m)"
+    ]
+  },
+  {
+    "title": "Day 07: Paro Sightseeing – Tiger’s Nest Hike",
+    "activities": [
+      "Hike to Taktsang Monastery (Tiger’s Nest)",
+      "Stop at cafeteria viewpoint",
+      "Visit Kyichu Lhakhang (one of Bhutan’s oldest temples)",
+      "Overnight stay in Paro (2,200 m)"
+    ]
+  },
+  {
+    "title": "Day 08: Departure from Bhutan",
+    "activities": [
+      "Breakfast at hotel",
+      "Transfer to Paro International Airport",
+      "Departure with memories of Bhutan"
+    ]
       }
     ]
   },
@@ -853,92 +864,95 @@ export const itineraries: ItineraryRoute[] = [
       "Gangtey",
       "Thimphu"
     ],
-    "days": [
-      {
-        "title": "Day 01: Arrival in Paro – Transfer to Thimphu (1.5 hrs)",
-        "activities": [
-          "Arrival at Paro International Airport",
-          "Meet & greet by HBT representative with khaddar welcome",
-          "Drive to Thimphu via Paro River and Chuzom",
-          "Scenic route through Bondey, Shaba, Isina villages",
-          "En route stop at Tachogang Lhakhang (optional walk)",
-          "Visit Tashichho Dzong (time permitting)",
-          "Evening Thimphu city walk (optional)",
-          "Overnight stay in Thimphu (2,400m)"
-        ]
-      },
-      {
-        "title": "Day 02: Thimphu Sightseeing",
-        "activities": [
-          "Visit School of Arts & Crafts",
-          "Visit Folk Heritage Museum",
-          "Visit National Textile Museum",
-          "Visit Buddha Dordenma viewpoint",
-          "Visit National Memorial Chorten",
-          "Visit Simtokha Dzong (oldest fortress in Bhutan)",
-          "Visit Centenary Farmers’ Market (Wed–Mon, closed Tuesday)",
-          "Visit Changlimithang Archery Ground (live match if available)",
-          "Overnight stay in Thimphu"
-        ]
-      },
-      {
-        "title": "Day 03: Thimphu – Punakha (3 hrs drive)",
-        "activities": [
-          "Drive via Dochula Pass (108 chortens & Himalayan views)",
-          "Stop at Lamperi Botanical Garden (seasonal rhododendrons & birds)",
-          "Visit Chimi Lhakhang (fertility temple, village hike)",
-          "Visit Punakha Dzong (river confluence fortress)",
-          "Overnight stay in Punakha (1,350m)"
-        ]
-      },
-      {
-        "title": "Day 04: Punakha Sightseeing",
-        "activities": [
-          "Hike to Khamsum Yulley Namgyal Chorten (45 mins uphill)",
-          "Visit Punakha Suspension Bridge",
-          "Visit Sangchhen Dorji Lhuendrup Nunnery",
-          "Leisure time in Punakha Valley",
-          "Overnight stay in Punakha"
-        ]
-      },
-      {
-        "title": "Day 05: Punakha – Phobjikha (3 hrs drive)",
-        "activities": [
-          "Scenic drive via Wangdue, Pelela Pass & forested landscapes",
-          "Visit Gangtey Monastery (Gangtey Gompa)",
-          "Walk Gangtey Nature Trail",
-          "Visit Crane Information Center (RSPN)",
-          "Farmhouse visit with local dinner experience",
-          "Overnight stay in Phobjikha (2,900m)"
-        ]
-      },
-      {
-        "title": "Day 06: Phobjikha – Paro (5 hrs drive)",
-        "activities": [
-          "Scenic drive back via Wangdue, Dochula & Chuzom",
-          "Visit Paro Dzong (Rinpung Dzong)",
-          "Visit Ta Dzong – National Museum",
-          "Traditional dress (Gho/Kira) & archery experience",
-          "Explore Paro town & handicraft shops",
-          "Overnight stay in Paro (2,200m)"
-        ]
-      },
-      {
-        "title": "Day 07: Paro Sightseeing",
-        "activities": [
-          "Hike to Taktsang Monastery (Tiger’s Nest)",
-          "Visit Kyichu Lhakhang (ancient sacred temple)",
-          "Optional hot stone bath & farmhouse dinner (extra cost)",
-          "Overnight stay in Paro"
-        ]
-      },
-      {
-        "title": "Day 08: Departure from Bhutan",
-        "activities": [
-          "Breakfast at hotel",
-          "Transfer to Paro International Airport",
-          "Departure with memories of Bhutan"
-        ]
+   "days": [
+  {
+    "title": "Day 01: Arrival in Paro – Transfer to Thimphu",
+    "activities": [
+      "Arrival at Paro International Airport",
+      "Traditional welcome with khaddar",
+      "Scenic drive to Thimphu (approx. 1.5 hrs)",
+      "Drive along Paro River via Chuzom",
+      "En-route stop at Tachogang Lhakhang & suspension bridge",
+      "Visit Tashichho Dzong (evening visit)",
+      "Leisure walk in Thimphu city & local markets",
+      "Overnight stay in Thimphu (2,400 m)"
+    ]
+  },
+  {
+    "title": "Day 02: Thimphu Sightseeing",
+    "activities": [
+      "Observe traditional arts & crafts at School of Arts & Crafts",
+      "Explore Folk Heritage Museum (traditional Bhutanese lifestyle)",
+      "Visit National Textile Museum (weaving heritage & textiles)",
+      "Visit Buddha Dordenma viewpoint",
+      "Drive past National Memorial Chorten",
+      "Visit Simtokha Dzong (oldest fortress in Bhutan)",
+      "Explore Centenary Farmers’ Market (Wed–Mon, closed Tuesday)",
+      "Visit Changlimithang Archery Ground (live match if available)",
+      "Overnight stay in Thimphu (2,400 m)"
+    ]
+  },
+  {
+    "title": "Day 03: Thimphu – Drive to Punakha",
+    "activities": [
+      "Scenic drive to Punakha via Dochula Pass",
+      "Stop at Dochula Pass (108 chortens & Himalayan views)",
+      "Stop at Lamperi Botanical Garden (Rhododendrons, Birds & Zip Line Adventure)",
+      "Visit Chimmi Lhakhang (Fertility Temple)",
+      "Gentle village walk through Sopsokha / Metsina Village",
+      "Visit Punakha Dzong (river confluence fortress)",
+      "Overnight stay in Punakha (1,350 m)"
+    ]
+  },
+  {
+    "title": "Day 04: Punakha Sightseeing",
+    "activities": [
+      "Hike to Khamsum Yulley Namgyal Chorten (45 mins uphill)",
+      "Walk across Punakha Suspension Bridge",
+      "River rafting on the Punakha River (additional cost)",
+      "Visit Sangchhen Dorji Lhuendrup Nunnery (valley viewpoint, if time permits)",
+      "Leisure time in Punakha Valley",
+      "Overnight stay in Punakha (1,350 m)"
+    ]
+  },
+  {
+    "title": "Day 05: Punakha – Drive to Phobjikha",
+    "activities": [
+      "Scenic drive via Wangdue, Pelela Pass & forested landscapes",
+      "Visit Gangtey Monastery (Gangtey Gompa)",
+      "Walk Gangtey Nature Trail",
+      "Visit Crane Information Center (RSPN)",
+      "Farmhouse visit with local dinner experience",
+      "Overnight stay in Phobjikha (2,900 m)"
+    ]
+  },
+  {
+    "title": "Day 06: Phobjikha – Drive to Paro",
+    "activities": [
+      "Scenic drive back via Wangdue, Dochula Pass & Chuzom",
+      "Visit Rinpung Dzong (Paro Dzong)",
+      "Visit Ta Dzong – National Museum",
+      "Outdoor cultural activities (traditional dress, archery, darts)",
+      "Explore Paro town & handicraft shops",
+      "Overnight stay in Paro (2,200 m)"
+    ]
+  },
+  {
+    "title": "Day 07: Paro Sightseeing",
+    "activities": [
+      "Hike to Taktsang Monastery (Tiger’s Nest)",
+      "Visit Kyichu Lhakhang (ancient sacred temple)",
+      "Optional hot stone bath & farmhouse dinner (additional cost)",
+      "Overnight stay in Paro (2,200 m)"
+    ]
+  },
+  {
+    "title": "Day 08: Departure from Bhutan",
+    "activities": [
+      "Breakfast at hotel",
+      "Transfer to Paro International Airport",
+      "Departure with memories of Bhutan"
+    ]
       }
     ]
   }
