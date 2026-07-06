@@ -51,6 +51,12 @@ export const pageSeo = {
       "Experience Bhutan's monasteries, dzongs, villages, crafts, cuisine, festivals, and living traditions on a private Bhutan heritage tour.",
     keywords: ["Bhutan cultural tours", "private Bhutan heritage tours", "Bhutan culture trip", "Bhutan monastery tour", "Unseen Himalayas Bhutan"],
   },
+  "/cycling-tours": {
+    title: "Bhutan Cycling Tours",
+    description:
+      "Explore guided Bhutan cycling tours from short Thimphu and Paro rides to active western Bhutan journeys through Punakha, Phobjikha, and Gangtey.",
+    keywords: ["Bhutan cycling tours", "Bhutan bike tours", "cycling in Bhutan"],
+  },
   "/currency": {
     title: "Bhutan Currency & Travel Money Guide",
     description:

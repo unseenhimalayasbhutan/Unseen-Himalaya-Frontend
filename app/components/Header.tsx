@@ -43,6 +43,11 @@ const navLinks = [
         href: "/bhutan-tours",
         description: "Scenic routes for photographers",
       },
+      {
+        label: "Cycling Tours",
+        href: "/cycling-tours",
+        description: "Active Bhutan cycling itineraries",
+      },
       
       {
         label: "Customizable Tours",
