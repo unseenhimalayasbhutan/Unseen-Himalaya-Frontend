@@ -48,6 +48,11 @@ const navLinks = [
         href: "/cycling-tours",
         description: "Active Bhutan cycling itineraries",
       },
+      {
+        label: "Tourist entering via land entry points",
+        href: "/land-entry-tours",
+        description: "Phuentsholing-entry Bhutan itineraries",
+      },
       
       {
         label: "Customizable Tours",

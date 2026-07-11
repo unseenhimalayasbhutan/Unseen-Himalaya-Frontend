@@ -17,6 +17,15 @@ import {
 } from "../data/festivalPackages";
 import { tourExclusions, tourInclusions } from "../data/tourItineraries";
 
+const removedFestivalPackageTitles = new Set([
+  "5-Day Chhukha Tshechu Land-Entry Festival Tour",
+  "7-Day Chhukha Tshechu Festival Tour",
+]);
+
+const visibleFestivalPackages = festivalPackages.filter(
+  (pkg) => !removedFestivalPackageTitles.has(pkg.title)
+);
+
 type FestivalItem = {
   name: string;
   category: string;
@@ -51,16 +60,16 @@ const sortFestivalPackages = (packages: FestivalPackage[]) =>
 export default function FestivalToursPage() {
   const [activeDuration, setActiveDuration] = useState("all");
   const [activePackageTitle, setActivePackageTitle] = useState(
-    () => sortFestivalPackages(festivalPackages)[0]?.title || ""
+    () => sortFestivalPackages(visibleFestivalPackages)[0]?.title || ""
   );
 
   const filteredPackages = useMemo(() => {
     if (activeDuration === "all") {
-      return sortFestivalPackages(festivalPackages);
+      return sortFestivalPackages(visibleFestivalPackages);
     }
 
     return sortFestivalPackages(
-      festivalPackages.filter(
+      visibleFestivalPackages.filter(
         (pkg) => getFestivalPackageId(pkg.duration) === activeDuration
       )
     );
@@ -69,9 +78,9 @@ export default function FestivalToursPage() {
   const handleDurationChange = (durationId: string) => {
     const nextPackages =
       durationId === "all"
-        ? sortFestivalPackages(festivalPackages)
+        ? sortFestivalPackages(visibleFestivalPackages)
         : sortFestivalPackages(
-            festivalPackages.filter(
+            visibleFestivalPackages.filter(
               (pkg) => getFestivalPackageId(pkg.duration) === durationId
             )
           );
@@ -562,7 +571,7 @@ const festivalPackageFilters: FestivalFilter[] = [
 const festivalQuickStats = [
   { value: "Oct-Nov", label: "Festival Season" },
   { value: "4-15", label: "Day Route Options" },
-  { value: "10", label: "Curated Packages" },
+  { value: "8", label: "Curated Packages" },
   { value: "Bumthang", label: "Central Festival Circuit" },
 ];
 

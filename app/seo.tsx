@@ -57,6 +57,16 @@ export const pageSeo = {
       "Explore guided Bhutan cycling tours from short Thimphu and Paro rides to active western Bhutan journeys through Punakha, Phobjikha, and Gangtey.",
     keywords: ["Bhutan cycling tours", "Bhutan bike tours", "cycling in Bhutan"],
   },
+  "/land-entry-tours": {
+    title: "Bhutan Land-Entry Tours",
+    description:
+      "Explore Bhutan tour itineraries for travelers entering by land through Phuentsholing, with routes through Thimphu, Punakha, Gangtey, and Paro.",
+    keywords: [
+      "Bhutan land entry tours",
+      "Phuentsholing entry Bhutan tour",
+      "Bhutan overland itinerary",
+    ],
+  },
   "/currency": {
     title: "Bhutan Currency & Travel Money Guide",
     description:

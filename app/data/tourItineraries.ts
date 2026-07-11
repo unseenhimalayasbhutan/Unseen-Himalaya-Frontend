@@ -604,6 +604,7 @@ export const itineraries: ItineraryRoute[] = [
         "activities": [
           "Drive to Paro via Dochula Pass",
           "Visit Chimi Lhakhang (Fertility Temple)",
+          "Gentle village walk through Sopsokha / Metsina village",
           "Visit Rinpung Dzong (Paro Dzong)",
           "Visit Ta Dzong – National Museum",
           "Experience traditional dress & archery activity",
