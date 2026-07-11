@@ -225,7 +225,7 @@ export default function CulturalToursPage() {
           </div>
         </section>
 
-        <section className="tour-pro-section tour-pro-section-white cultural-pro-booking-section uh-festival-booking-clarity-section">
+        <section className="tour-pro-section tour-pro-section-white uh-bhutan-booking-clarity-section">
           <div className="container">
             <SectionHeader
               eyebrow="Booking Clarity"
@@ -233,25 +233,24 @@ export default function CulturalToursPage() {
               subtitle="A separate section for the practical details guests and partners should understand before confirming a cultural tour."
             />
 
-            <div className="uh-festival-booking-clarity-shell cultural-pro-booking-shell">
-              <div className="uh-festival-booking-clarity-overview">
-                <div className="uh-festival-booking-clarity-copy">
+            <div className="uh-bhutan-booking-clarity-shell">
+              <div className="uh-bhutan-booking-clarity-overview">
+                <div className="uh-bhutan-booking-clarity-copy">
                   <span>Before confirmation</span>
-                  <h3>Clear terms make cultural travel smoother.</h3>
+
                   <p>
-                    Cultural routes can be adjusted by pace, hotel category,
-                    optional experiences, guide focus, and travel season. This
-                    section separates the practical terms from the itinerary so
-                    guests can clearly see what is included, excluded, and
-                    reconfirmed before booking.
+                    Every itinerary can be customized. This section separates the
+                    business details from the day-by-day itinerary so clients can
+                    clearly see what is included, what is excluded, and what must
+                    be confirmed before travel.
                   </p>
                 </div>
               </div>
 
-              <div className="uh-festival-booking-clarity-grid cultural-pro-booking-grid">
-                <article className="uh-festival-booking-clarity-card uh-festival-booking-clarity-card-primary cultural-pro-booking-card cultural-pro-booking-card-primary">
-                  <div className="uh-festival-booking-clarity-card-head cultural-pro-booking-card-head">
-                    <div className="uh-festival-booking-clarity-icon">
+              <div className="uh-bhutan-booking-clarity-grid">
+                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-primary">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
                       <CheckCircle aria-hidden="true" />
                     </div>
 
@@ -271,10 +270,10 @@ export default function CulturalToursPage() {
                   </ul>
                 </article>
 
-                <article className="uh-festival-booking-clarity-card cultural-pro-booking-card">
-                  <div className="uh-festival-booking-clarity-card-head cultural-pro-booking-card-head">
-                    <div className="uh-festival-booking-clarity-icon">
-                      <ShieldCheck aria-hidden="true" />
+                <article className="uh-bhutan-booking-clarity-card">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <ChevronRight aria-hidden="true" />
                     </div>
 
                     <div>
@@ -293,9 +292,9 @@ export default function CulturalToursPage() {
                   </ul>
                 </article>
 
-                <article className="uh-festival-booking-clarity-card cultural-pro-booking-card">
-                  <div className="uh-festival-booking-clarity-card-head cultural-pro-booking-card-head">
-                    <div className="uh-festival-booking-clarity-icon">
+                <article className="uh-bhutan-booking-clarity-card">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
                       <CalendarDays aria-hidden="true" />
                     </div>
 
@@ -315,9 +314,9 @@ export default function CulturalToursPage() {
                   </ul>
                 </article>
 
-                <article className="uh-festival-booking-clarity-card uh-festival-booking-clarity-card-dark cultural-pro-booking-card">
-                  <div className="uh-festival-booking-clarity-card-head cultural-pro-booking-card-head">
-                    <div className="uh-festival-booking-clarity-icon">
+                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-dark">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
                       <ShieldCheck aria-hidden="true" />
                     </div>
 

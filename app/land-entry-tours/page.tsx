@@ -8,24 +8,18 @@ import {
   ChevronRight,
   Clock,
   MapPin,
-  ShieldCheck,
   Users,
 } from "lucide-react";
 
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
+import { BookingClaritySection } from "../components/BookingClaritySection";
 import {
   TourImageSlot as ImageSlot,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
 import { landEntryItineraries as landEntryRoutes } from "../data/landEntryItineraries";
-import {
-  reservationAndCancellation,
-  termsAndConditions,
-  tourExclusions,
-  tourInclusions,
-} from "../data/tourItineraries";
 
 type LandEntryValue = {
   title: string;
@@ -227,57 +221,7 @@ export default function LandEntryToursPage() {
           </div>
         </section>
 
-        <section className="tour-pro-section tour-pro-section-white cultural-pro-booking-section uh-festival-booking-clarity-section">
-          <div className="container">
-            <SectionHeader
-              eyebrow="Booking Clarity"
-              title="Land-entry inclusions, exclusions, reservation policies, and terms & conditions."
-              subtitle="Border-entry routes require current entry guidance, transfer timing, hotel confirmation, and route checks before final confirmation."
-            />
-
-            <div className="uh-festival-booking-clarity-shell cultural-pro-booking-shell">
-              <div className="uh-festival-booking-clarity-overview">
-                <div className="uh-festival-booking-clarity-copy">
-                  <span>Before confirmation</span>
-                  <h3>Entry timing and road movement are planned together.</h3>
-                  <p>
-                    Land-entry itineraries can be shaped around guest arrival
-                    time, border formalities, preferred hotel category, road
-                    conditions, and sightseeing priorities. Final route details
-                    should be reconfirmed before travel.
-                  </p>
-                </div>
-              </div>
-
-              <div className="uh-festival-booking-clarity-grid cultural-pro-booking-grid">
-                <BookingCard
-                  title="Tour Inclusions"
-                  label="Included Services"
-                  items={tourInclusions}
-                  primary
-                />
-
-                <BookingCard
-                  title="Tour Exclusions"
-                  label="Not Included"
-                  items={tourExclusions}
-                />
-
-                <BookingCard
-                  title="Reservation & Cancellation"
-                  label="Booking Notes"
-                  items={reservationAndCancellation}
-                />
-
-                <BookingCard
-                  title="Terms & Conditions"
-                  label="Important Terms"
-                  items={termsAndConditions}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+        <BookingClaritySection subtitle="A separate section for the practical details guests and partners should understand before confirming a land-entry tour." />
       </main>
 
       <Footer />
@@ -390,48 +334,6 @@ function RoutePanel({
           </div>
         </aside>
       </div>
-    </article>
-  );
-}
-
-function BookingCard({
-  title,
-  label,
-  items,
-  primary = false,
-}: {
-  title: string;
-  label: string;
-  items: string[];
-  primary?: boolean;
-}) {
-  return (
-    <article
-      className={`uh-festival-booking-clarity-card cultural-pro-booking-card ${
-        primary
-          ? "uh-festival-booking-clarity-card-primary cultural-pro-booking-card-primary"
-          : ""
-      }`}
-    >
-      <div className="uh-festival-booking-clarity-card-head cultural-pro-booking-card-head">
-        <div className="uh-festival-booking-clarity-icon">
-          {primary ? <CheckCircle aria-hidden="true" /> : <ShieldCheck aria-hidden="true" />}
-        </div>
-
-        <div>
-          <span>{label}</span>
-          <h4>{title}</h4>
-        </div>
-      </div>
-
-      <ul>
-        {items.map((item) => (
-          <li key={item}>
-            <CheckCircle aria-hidden="true" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
     </article>
   );
 }

@@ -2,7 +2,15 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { CheckCircle, ChevronRight, Clock, MapPin, Users } from "lucide-react";
+import {
+  CalendarDays,
+  CheckCircle,
+  ChevronRight,
+  Clock,
+  MapPin,
+  ShieldCheck,
+  Users,
+} from "lucide-react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
@@ -289,39 +297,39 @@ export default function FestivalToursPage() {
 
         <section
           id="festival-booking-clarity"
-          className="tour-pro-section tour-pro-section-white uh-festival-booking-clarity-section"
+          className="tour-pro-section tour-pro-section-white uh-bhutan-booking-clarity-section"
         >
           <div className="container">
             <SectionHeader
               eyebrow="Booking Clarity"
-              title="Festival inclusions, exclusions, reservation rules, and terms."
+              title="Tour inclusions, exclusions, reservation policies, and terms & conditions."
               subtitle="A separate section for the practical details guests and partners should understand before confirming a festival tour."
             />
 
-            <div className="uh-festival-booking-clarity-shell">
-              <div className="uh-festival-booking-clarity-overview">
-                <div className="uh-festival-booking-clarity-copy">
+            <div className="uh-bhutan-booking-clarity-shell">
+              <div className="uh-bhutan-booking-clarity-overview">
+                <div className="uh-bhutan-booking-clarity-copy">
                   <span>Before confirmation</span>
-                  <h3>Clear terms make festival travel smoother.</h3>
+
                   <p>
-                    Festival and event tours need early hotel planning, route
-                    coordination, date checks, race support planning, and
-                    supplier confirmation. This section separates the business
-                    terms from the itinerary so clients can understand exactly
-                    what is included, what is excluded, and what must be
-                    reconfirmed.
+                    Every itinerary can be customized. This section separates the
+                    business details from the day-by-day itinerary so clients can
+                    clearly see what is included, what is excluded, and what must
+                    be confirmed before travel.
                   </p>
                 </div>
               </div>
 
-              <div className="uh-festival-booking-clarity-grid">
-                <article className="uh-festival-booking-clarity-card uh-festival-booking-clarity-card-primary">
-                  <div className="uh-festival-booking-clarity-card-head">
-                    <div className="uh-festival-booking-clarity-icon" />
+              <div className="uh-bhutan-booking-clarity-grid">
+                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-primary">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <CheckCircle aria-hidden="true" />
+                    </div>
 
                     <div>
                       <span>Included Services</span>
-                      <h4>Inclusions</h4>
+                      <h4>Tour Inclusions</h4>
                     </div>
                   </div>
 
@@ -335,13 +343,15 @@ export default function FestivalToursPage() {
                   </ul>
                 </article>
 
-                <article className="uh-festival-booking-clarity-card">
-                  <div className="uh-festival-booking-clarity-card-head">
-                    <div className="uh-festival-booking-clarity-icon" />
+                <article className="uh-bhutan-booking-clarity-card">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <ChevronRight aria-hidden="true" />
+                    </div>
 
                     <div>
                       <span>Not Included</span>
-                      <h4>Exclusions</h4>
+                      <h4>Important Exclusions</h4>
                     </div>
                   </div>
 
@@ -355,9 +365,11 @@ export default function FestivalToursPage() {
                   </ul>
                 </article>
 
-                <article className="uh-festival-booking-clarity-card">
-                  <div className="uh-festival-booking-clarity-card-head">
-                    <div className="uh-festival-booking-clarity-icon" />
+                <article className="uh-bhutan-booking-clarity-card">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <CalendarDays aria-hidden="true" />
+                    </div>
 
                     <div>
                       <span>Booking Process</span>
@@ -375,13 +387,15 @@ export default function FestivalToursPage() {
                   </ul>
                 </article>
 
-                <article className="uh-festival-booking-clarity-card uh-festival-booking-clarity-card-dark">
-                  <div className="uh-festival-booking-clarity-card-head">
-                    <div className="uh-festival-booking-clarity-icon" />
+                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-dark">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <ShieldCheck aria-hidden="true" />
+                    </div>
 
                     <div>
-                      <span>Terms to Reconfirm</span>
-                      <h4>Terms</h4>
+                      <span>Terms to Confirm</span>
+                      <h4>Terms & Conditions</h4>
                     </div>
                   </div>
 

@@ -19,6 +19,7 @@ import {
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
+import { BookingClaritySection } from "../components/BookingClaritySection";
 import {
   TourImageSlot as ImageSlot,
   TourSectionHeader as SectionHeader,
@@ -28,10 +29,6 @@ import {
   customizableItems,
   durationFilters,
   itineraries,
-  reservationAndCancellation,
-  termsAndConditions,
-  tourExclusions,
-  tourInclusions,
 } from "../data/tourItineraries";
 
 const getDurationId = (duration: string) =>
@@ -260,125 +257,10 @@ export default function BhutanToursPage() {
           </div>
         </section>
 
-        <section
+        <BookingClaritySection
           id="bhutan-tour-booking-clarity"
-          className="tour-pro-section tour-pro-section-white uh-bhutan-booking-clarity-section"
-        >
-          <div className="container">
-            <SectionHeader
-              eyebrow="Booking Clarity"
-              title="Tour inclusions, exclusions, reservation policies, and terms & conditions."
-              subtitle="A separate section for the practical details guests should understand before confirming a photography tour."
-            />
-
-            <div className="uh-bhutan-booking-clarity-shell">
-              <div className="uh-bhutan-booking-clarity-overview">
-                <div className="uh-bhutan-booking-clarity-copy">
-                  <span>Before confirmation</span>
-                  
-                  <p>
-                    Every itinerary can be customized. This section separates the business
-                    details from the day-by-day itinerary so clients can clearly see
-                    what is included, what is excluded, and what must be confirmed
-                    before travel.
-                  </p>
-                </div>
-
-                
-              </div>
-
-              <div className="uh-bhutan-booking-clarity-grid">
-                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-primary">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <CheckCircle aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Included Services</span>
-                      <h4>Tour Inclusions</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {tourInclusions.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-
-                <article className="uh-bhutan-booking-clarity-card">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <ChevronRight aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Not Included</span>
-                      <h4>Important Exclusions</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {tourExclusions.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-
-                <article className="uh-bhutan-booking-clarity-card">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <CalendarDays aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Booking Process</span>
-                      <h4>Reservation & Cancellation</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {reservationAndCancellation.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-
-                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-dark">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <ShieldCheck aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Terms to Confirm</span>
-                      <h4>Terms & Conditions</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {termsAndConditions.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
+          subtitle="A separate section for the practical details guests should understand before confirming a photography tour."
+        />
 
         <section className="tour-pro-section tour-pro-section-white">
           <div className="container">

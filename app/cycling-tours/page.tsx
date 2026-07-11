@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import {
   ArrowRight,
   Bike,
+  CalendarDays,
   CheckCircle,
   ChevronRight,
   Clock,
@@ -229,53 +230,116 @@ export default function CyclingToursPage() {
           </div>
         </section>
 
-        <section className="tour-pro-section tour-pro-section-white cultural-pro-booking-section uh-festival-booking-clarity-section">
+        <section className="tour-pro-section tour-pro-section-white uh-bhutan-booking-clarity-section">
           <div className="container">
             <SectionHeader
               eyebrow="Booking Clarity"
-              title="Cycling inclusions, exclusions, reservation policies, and terms & conditions."
-              subtitle="Cycling routes may require additional bike support, vehicle access, spare parts, and weather checks before confirmation."
+              title="Tour inclusions, exclusions, reservation policies, and terms & conditions."
+              subtitle="A separate section for the practical details guests and partners should understand before confirming a cycling tour."
             />
 
-            <div className="uh-festival-booking-clarity-shell cultural-pro-booking-shell">
-              <div className="uh-festival-booking-clarity-overview">
-                <div className="uh-festival-booking-clarity-copy">
+            <div className="uh-bhutan-booking-clarity-shell">
+              <div className="uh-bhutan-booking-clarity-overview">
+                <div className="uh-bhutan-booking-clarity-copy">
                   <span>Before confirmation</span>
-                  <h3>Support, pace, and safety are planned together.</h3>
+
                   <p>
-                    Cycling itineraries can be shaped around riding experience,
-                    support-vehicle preferences, hotel category, route distance,
-                    and recovery time. Final route details should be confirmed
-                    with current road, weather, and guest fitness conditions.
+                    Every itinerary can be customized. This section separates the
+                    business details from the day-by-day itinerary so clients can
+                    clearly see what is included, what is excluded, and what must
+                    be confirmed before travel.
                   </p>
                 </div>
               </div>
 
-              <div className="uh-festival-booking-clarity-grid cultural-pro-booking-grid">
-                <BookingCard
-                  title="Tour Inclusions"
-                  label="Included Services"
-                  items={tourInclusions}
-                  primary
-                />
+              <div className="uh-bhutan-booking-clarity-grid">
+                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-primary">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <CheckCircle aria-hidden="true" />
+                    </div>
 
-                <BookingCard
-                  title="Tour Exclusions"
-                  label="Not Included"
-                  items={tourExclusions}
-                />
+                    <div>
+                      <span>Included Services</span>
+                      <h4>Tour Inclusions</h4>
+                    </div>
+                  </div>
 
-                <BookingCard
-                  title="Reservation & Cancellation"
-                  label="Booking Notes"
-                  items={reservationAndCancellation}
-                />
+                  <ul>
+                    {tourInclusions.map((item, index) => (
+                      <li key={item}>
+                        <strong>{String(index + 1).padStart(2, "0")}</strong>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
 
-                <BookingCard
-                  title="Terms & Conditions"
-                  label="Important Terms"
-                  items={termsAndConditions}
-                />
+                <article className="uh-bhutan-booking-clarity-card">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <ChevronRight aria-hidden="true" />
+                    </div>
+
+                    <div>
+                      <span>Not Included</span>
+                      <h4>Important Exclusions</h4>
+                    </div>
+                  </div>
+
+                  <ul>
+                    {tourExclusions.map((item, index) => (
+                      <li key={item}>
+                        <strong>{String(index + 1).padStart(2, "0")}</strong>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+
+                <article className="uh-bhutan-booking-clarity-card">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <CalendarDays aria-hidden="true" />
+                    </div>
+
+                    <div>
+                      <span>Booking Process</span>
+                      <h4>Reservation & Cancellation</h4>
+                    </div>
+                  </div>
+
+                  <ul>
+                    {reservationAndCancellation.map((item, index) => (
+                      <li key={item}>
+                        <strong>{String(index + 1).padStart(2, "0")}</strong>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+
+                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-dark">
+                  <div className="uh-bhutan-booking-clarity-card-head">
+                    <div className="uh-bhutan-booking-clarity-icon">
+                      <ShieldCheck aria-hidden="true" />
+                    </div>
+
+                    <div>
+                      <span>Terms to Confirm</span>
+                      <h4>Terms & Conditions</h4>
+                    </div>
+                  </div>
+
+                  <ul>
+                    {termsAndConditions.map((item, index) => (
+                      <li key={item}>
+                        <strong>{String(index + 1).padStart(2, "0")}</strong>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
               </div>
             </div>
           </div>
@@ -393,48 +457,6 @@ function RoutePanel({
           </div>
         </aside>
       </div>
-    </article>
-  );
-}
-
-function BookingCard({
-  title,
-  label,
-  items,
-  primary = false,
-}: {
-  title: string;
-  label: string;
-  items: string[];
-  primary?: boolean;
-}) {
-  return (
-    <article
-      className={`uh-festival-booking-clarity-card cultural-pro-booking-card ${
-        primary
-          ? "uh-festival-booking-clarity-card-primary cultural-pro-booking-card-primary"
-          : ""
-      }`}
-    >
-      <div className="uh-festival-booking-clarity-card-head cultural-pro-booking-card-head">
-        <div className="uh-festival-booking-clarity-icon">
-          {primary ? <CheckCircle aria-hidden="true" /> : <ShieldCheck aria-hidden="true" />}
-        </div>
-
-        <div>
-          <span>{label}</span>
-          <h4>{title}</h4>
-        </div>
-      </div>
-
-      <ul>
-        {items.map((item) => (
-          <li key={item}>
-            <CheckCircle aria-hidden="true" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
     </article>
   );
 }
