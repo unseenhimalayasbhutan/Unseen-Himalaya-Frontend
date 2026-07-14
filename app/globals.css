@@ -14977,6 +14977,12 @@ img {
   line-height: 1.45;
 }
 
+.tour-pro-image-rate .tour-pro-sdf-note,
+.tour-pro-route-rate-note .tour-pro-sdf-note {
+  color: #5f513f;
+  font-weight: 850;
+}
+
 .uh-package-card-rate {
   margin: 12px 18px 0;
 }
@@ -33826,6 +33832,9 @@ body {
   .tour-pro-route-rate-note,
   .tour-pro-route-rate-note strong,
   .tour-pro-route-rate-note p,
+  .tour-pro-image-rate,
+  .tour-pro-image-rate strong,
+  .tour-pro-image-rate span,
   .cultural-pro-route-note,
   .cultural-pro-route-note strong,
   .cultural-pro-route-note p,

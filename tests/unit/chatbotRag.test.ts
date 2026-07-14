@@ -91,7 +91,7 @@ describe("chatbot RAG pipeline", () => {
     expect(data.reply).toMatch(/Please send a question/i);
   });
 
-  it("answers SDF questions without inventing an amount", async () => {
+  it("answers SDF questions with the public website note and verification caveat", async () => {
     const response = await POST(
       mockRequest({
         messages: [{ role: "user", content: "Do Indians need to pay SDF?" }],
@@ -100,8 +100,8 @@ describe("chatbot RAG pipeline", () => {
     const data = (await response.json()) as { reply: string };
 
     expect(response.status).toBe(200);
-    expect(data.reply).toMatch(/verify|government|nationality|exclude/i);
-    expect(data.reply).not.toMatch(/\$\d+|Nu\.\s*\d+/);
+    expect(data.reply).toMatch(/USD 100|Nu\.\s*1,200/i);
+    expect(data.reply).toMatch(/verify|government|nationality/i);
   });
 
   it("asks for quote inputs instead of inventing a final Bhutan trip cost", async () => {

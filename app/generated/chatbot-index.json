@@ -1,5 +1,5 @@
 {
-  "lastIndexedAt": "2026-07-14T05:44:39.490Z",
+  "lastIndexedAt": "2026-07-14T10:39:11.218Z",
   "records": 41,
   "chunks": [
     {
@@ -40,7 +40,7 @@
       "title": "Tour inclusions, exclusions, and SDF notes",
       "contentType": "policy",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "0bd29937cf4897051b9936223c3fc752e533c37e881b6ac2f1a0a70333b1b1d2",
+      "contentHash": "b4902fd14b65fd46e2d0779d9c5967ebd03d162a7e4d8200aa676cac514c1c86",
       "metadata": {
         "id": "tour-inclusions-exclusions",
         "title": "Tour inclusions, exclusions, and SDF notes",
@@ -88,7 +88,7 @@
       "title": "Visa and Sustainable Development Fee verification",
       "contentType": "travel-info",
       "sourceUrl": "https://www.theunseenhimalayas.com/faq",
-      "contentHash": "edfbd70ca19c057d470efc5001f6cb4f6b97271180e5e67a408b32c5239b9e77",
+      "contentHash": "6181fbb6e0921b5d071358e5e6152c3e8447b24b2dd5d82eeb86855549a8d0c0",
       "metadata": {
         "id": "visa-sdf-verification",
         "title": "Visa and Sustainable Development Fee verification",

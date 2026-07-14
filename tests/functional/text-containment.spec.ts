@@ -22,6 +22,7 @@ async function findTextOverflow(page: Page) {
   return page.evaluate(() => {
     const selectors = [
       ".tour-pro-route-rate-note",
+      ".tour-pro-image-rate",
       ".cultural-pro-route-note",
       ".cultural-pro-route-facts > div",
       ".cultural-pro-route-option",

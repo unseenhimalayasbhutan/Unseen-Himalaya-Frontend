@@ -64,7 +64,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
       content: [
         `Inclusions: ${tourInclusions.join("; ")}.`,
         `Exclusions: ${tourExclusions.join("; ")}.`,
-        "Displayed package rates are starting rates for a 3-star hotel Standard Tour and are subject to +5% GST. Hotels can be upgraded for Premium and Luxury packages. SDF is excluded unless a final quotation says otherwise.",
+        "Displayed package rates are starting rates for a 3-star hotel Standard Tour and are subject to +5% GST. Hotels can be upgraded for Premium and Luxury packages. SDF is excluded unless a final quotation says otherwise. Website price notes state that foreign nationals pay SDF of USD 100 per night per person and Indian nationals pay Nu. 1,200 per night per person.",
       ].join(" "),
       requiresVerification: true,
     }),
@@ -94,7 +94,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
       contentType: "travel-info",
       summary: "Visa and SDF information should be verified before quoting or booking.",
       content:
-        "The website provides visa and SDF guidance for international guests, but exact government rules, SDF rates, border procedures, visa requirements, monument fees, and flight schedules must be reconfirmed before booking. The chatbot must not invent SDF amounts or visa rules.",
+        "Website price notes state that foreign nationals pay SDF of USD 100 per night per person and Indian nationals pay Nu. 1,200 per night per person. Visa and SDF rules are government-regulated, so exact government rules, SDF rates, border procedures, visa requirements, monument fees, and flight schedules must be reconfirmed before booking. The chatbot must not invent SDF amounts or visa rules beyond the public website note.",
       requiresVerification: true,
     }),
     buildStaticRecord({

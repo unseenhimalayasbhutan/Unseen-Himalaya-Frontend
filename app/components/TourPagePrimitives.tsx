@@ -2,6 +2,9 @@
 
 import { getFallbackImage } from "./imageFallbacks";
 
+const SDF_NOTE =
+  "SDF: Foreign nationals pay USD 100 per night per person; Indian nationals pay Nu. 1,200 per night per person.";
+
 export type ImageAsset = {
   src: string;
   alt: string;
@@ -38,6 +41,7 @@ export function TourImageSlot({
       {formattedRate ? (
         <div className="tour-pro-image-rate">
           <strong>{formattedRate}</strong>
+          <span className="tour-pro-sdf-note">{SDF_NOTE}</span>
           <span>
             The mentioned price is for a 3-star hotel (Standard Tour). Hotels
             can be upgraded for Premium and Luxury packages.
@@ -61,6 +65,7 @@ export function TourRateNote({ startingRate }: { startingRate?: number }) {
   return (
     <div className="tour-pro-route-rate-note">
       <strong>{formattedRate}</strong>
+      <p className="tour-pro-sdf-note">{SDF_NOTE}</p>
       <p>
         The mentioned price is for a 3-star hotel (Standard Tour). Hotels can
         be upgraded for Premium and Luxury packages.

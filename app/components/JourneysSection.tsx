@@ -25,6 +25,9 @@ type TourPackage = {
   ideal: string;
 };
 
+const SDF_NOTE =
+  "SDF: Foreign nationals pay USD 100 per night per person; Indian nationals pay Nu. 1,200 per night per person.";
+
 const destinations: Destination[] = [
   {
     image: "/Buddha-Dordenma-Statue-by-Alicia-Warner-16.jpg",
@@ -286,6 +289,7 @@ export function JourneysSection() {
                     <strong>
                       Starting at Nu. {pkg.startingRate.toLocaleString("en-US")} + 5% GST
                     </strong>
+                    <span className="tour-pro-sdf-note">{SDF_NOTE}</span>
                     <span>
                       The mentioned price is for a 3-star hotel (Standard Tour).
                       Hotels can be upgraded for Premium and Luxury packages.
