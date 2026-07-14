@@ -9,6 +9,8 @@ export type FestivalTourDay = {
 export type FestivalPackage = {
   title: string;
   duration: string;
+  tourCode?: string;
+  startingRate?: number;
   dates: string;
   coverage: string;
   bestFor: string;
@@ -20,8 +22,10 @@ export type FestivalPackage = {
 
 export const festivalPackages: FestivalPackage[] = [
   {
-    "title": "5-Day Black Necked Crane Festival Tour",
+    "title": "5-Day Black Necked Crane Festival Short Tour",
     "duration": "5 Days / 4 Nights",
+    "tourCode": "UH-FT-004",
+    "startingRate": 55944,
     "dates": "11 November 2026 festival period",
     "coverage": "Paro - Thimphu - Gangtey / Phobjikha - Paro",
     "bestFor": "Short conservation festival trip",
@@ -96,8 +100,10 @@ export const festivalPackages: FestivalPackage[] = [
     ]
   },
   {
-    "title": "7-Day Black Necked Crane Festival Tour",
+    "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
     "duration": "7 Days / 6 Nights",
+    "tourCode": "UH-FT-006",
+    "startingRate": 75389,
     "dates": "11 November 2026 festival period",
     "coverage": "Paro - Thimphu - Punakha - Gangtey / Phobjikha - Paro",
     "bestFor": "Conservation festival with Punakha",
@@ -549,6 +555,8 @@ export const festivalPackages: FestivalPackage[] = [
   {
     "title": "4-Day Dechenphu Tshechu Short Festival Tour",
     "duration": "4 Days / 3 Nights",
+    "tourCode": "UH-FT-001",
+    "startingRate": 43222,
     "dates": "21 October 2026 festival period",
     "coverage": "Paro - Thimphu - Paro",
     "bestFor": "Short-stay international guests",
@@ -617,6 +625,8 @@ export const festivalPackages: FestivalPackage[] = [
   {
     "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
     "duration": "5 Days / 4 Nights",
+    "tourCode": "UH-FT-005",
+    "startingRate": 46778,
     "dates": "21 October 2026 festival period",
     "coverage": "Paro - Thimphu - Paro",
     "bestFor": "Short cultural festival clients",

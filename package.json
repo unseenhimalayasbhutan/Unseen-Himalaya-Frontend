@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "chatbot:index": "ts-node --transpile-only --compiler-options \"{\\\"module\\\":\\\"CommonJS\\\",\\\"moduleResolution\\\":\\\"node\\\"}\" scripts/index-chatbot.ts",
     "test": "npm run test:unit && npm run test:functional",
     "test:unit": "jest --runInBand",
     "test:functional": "playwright test tests/functional",

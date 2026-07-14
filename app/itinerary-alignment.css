@@ -97,7 +97,7 @@
 
 .festival-pro-route-panel .cultural-pro-route-facts,
 .photography-pro-route-panel .cultural-pro-route-facts {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .festival-pro-route-panel .cultural-pro-route-note strong,

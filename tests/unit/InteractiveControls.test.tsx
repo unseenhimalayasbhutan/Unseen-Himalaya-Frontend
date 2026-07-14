@@ -33,10 +33,10 @@ describe("shared interactive controls", () => {
       "/cultural-tours#itinerary-5-day-classic-western-bhutan",
     );
     expect(tour).toHaveAttribute("aria-current", "true");
-    expect(document.querySelector(".uh-package-preview")).toHaveTextContent(
+    expect(tour).toHaveTextContent(
       "5-Day Classic Western Bhutan",
     );
-    expect(document.querySelector(".uh-package-preview")).toHaveTextContent(
+    expect(tour).toHaveTextContent(
       "5 Days / 4 Nights",
     );
   });

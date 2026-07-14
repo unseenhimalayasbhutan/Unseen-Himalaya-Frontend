@@ -8,6 +8,7 @@ import {
   CheckCircle,
   ChevronRight,
   Clock,
+  Hash,
   MapPin,
   ShieldCheck,
   Sparkles,
@@ -18,6 +19,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import {
   TourImageSlot as ImageSlot,
+  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -406,6 +408,14 @@ function RoutePanel({
               <span>Best For</span>
               <strong>{route.bestFor}</strong>
             </div>
+
+            {route.tourCode ? (
+              <div>
+                <Hash aria-hidden="true" />
+                <span>Tour Code</span>
+                <strong>{route.tourCode}</strong>
+              </div>
+            ) : null}
           </div>
 
           <div className="cultural-pro-route-tags">
@@ -457,10 +467,14 @@ function RoutePanel({
         </div>
 
         <aside className="cultural-pro-route-media">
-          <ImageSlot image={route.image} className="cultural-pro-route-image" />
+          <ImageSlot
+            image={route.image}
+            className="cultural-pro-route-image"
+          />
 
           <div className="cultural-pro-route-note">
             <span>Culture Focus</span>
+            <RateNote startingRate={route.startingRate} />
             <strong>{route.theme}</strong>
             <p>
               This route can be adjusted with farmhouse meals, archery, textile

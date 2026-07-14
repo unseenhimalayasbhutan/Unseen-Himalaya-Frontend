@@ -19,6 +19,7 @@ type TourPackage = {
   title: string;
   text: string;
   price: string;
+  startingRate: number;
   duration: string;
   route: string;
   ideal: string;
@@ -64,7 +65,8 @@ const packages: TourPackage[] = [
     tag: "Short Escape",
     title: "3-Day Paro & Thimphu Essentials",
     text: "For travelers with limited time who still want Thimphu highlights and Tiger’s Nest.",
-    price: "On Request",
+    price: "Nu. 25,910",
+    startingRate: 25910,
     duration: "3 Days / 2 Nights",
     route: "Paro • Thimphu • Paro",
     ideal: "Short-stay travelers",
@@ -75,7 +77,8 @@ const packages: TourPackage[] = [
     tag: "Classic Route",
     title: "5-Day Classic Western Bhutan",
     text: "A strong first-time route with Thimphu, Punakha, Dochula, Paro, and Tiger’s Nest.",
-    price: "On Request",
+    price: "Nu. 44,859",
+    startingRate: 44859,
     duration: "5 Days / 4 Nights",
     route: "Paro • Thimphu • Punakha • Paro",
     ideal: "First-time Bhutan travelers",
@@ -86,7 +89,8 @@ const packages: TourPackage[] = [
     tag: "Deeper Journey",
     title: "8-Day Punakha & Phobjikha In-Depth",
     text: "A fuller route with additional Punakha sightseeing and a scenic Phobjikha extension.",
-    price: "On Request",
+    price: "Nu. 69,936",
+    startingRate: 69936,
     duration: "8 Days / 7 Nights",
     route: "Paro • Thimphu • Punakha • Phobjikha • Paro",
     ideal: "Nature, culture, and slow discovery",
@@ -243,6 +247,18 @@ export function JourneysSection() {
         </div>
 
         <div className="uh-package-switcher">
+          {packages.map((pkg, index) => (
+            <input
+              key={pkg.title}
+              id={`uh-package-${index + 1}`}
+              className="uh-package-radio"
+              type="radio"
+              name="uh-package"
+              checked={activePackage === index}
+              readOnly
+            />
+          ))}
+
           <div className="uh-package-layout">
             <div className="uh-package-grid" aria-label="Curated Bhutan tours">
               {packages.map((pkg, index) => (
@@ -266,6 +282,16 @@ export function JourneysSection() {
                     <div className="uh-package-tag">{pkg.tag}</div>
                   </div>
 
+                  <div className="tour-pro-image-rate uh-package-card-rate">
+                    <strong>
+                      Starting at Nu. {pkg.startingRate.toLocaleString("en-US")} + 5% GST
+                    </strong>
+                    <span>
+                      The mentioned price is for a 3-star hotel (Standard Tour).
+                      Hotels can be upgraded for Premium and Luxury packages.
+                    </span>
+                  </div>
+
                   <div className="uh-package-card-content">
                     <h3>{pkg.title}</h3>
 
@@ -286,10 +312,6 @@ export function JourneysSection() {
                     </div>
 
                     <div className="uh-package-card-footer">
-                      <div>
-                        Price <strong>{pkg.price}</strong>
-                      </div>
-
                       <span>
                         View Itinerary
                         <ArrowRight aria-hidden="true" />
@@ -300,7 +322,33 @@ export function JourneysSection() {
               ))}
             </div>
 
-        
+            <div className="uh-package-preview-panels">
+              <article className="uh-package-preview is-active">
+                <div className="uh-package-preview-text">
+                  <span>Selected itinerary</span>
+                  <h3>{packages[activePackage].title}</h3>
+                  <p>{packages[activePackage].text}</p>
+                </div>
+
+                <div className="uh-package-preview-meta">
+                  <div>
+                    <small>Duration</small>
+                    <strong>{packages[activePackage].duration}</strong>
+                  </div>
+                  <div>
+                    <small>Route</small>
+                    <strong>{packages[activePackage].route}</strong>
+                  </div>
+                  <Link
+                    href={`/cultural-tours#itinerary-${packages[activePackage].slug}`}
+                    className="uh-package-preview-btn"
+                  >
+                    Enquire
+                    <ArrowRight aria-hidden="true" />
+                  </Link>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </div>

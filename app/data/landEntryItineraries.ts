@@ -5,6 +5,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "4-day-thimphu-paro-classic",
     name: "4-Day Thimphu & Paro Classic Land-Entry Tour",
     duration: "4 Days / 3 Nights",
+    tourCode: "UH-LET-001",
+    startingRate: 26208,
     route: "Phuentsholing - Thimphu - Paro - Phuentsholing",
     theme: "Classic Short Land-Entry Route",
     summary:
@@ -68,6 +70,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "4-day-thimphu-paro-cultural",
     name: "4-Day Thimphu & Paro Cultural Land-Entry Tour",
     duration: "4 Days / 3 Nights",
+    tourCode: "UH-LET-002",
+    startingRate: 26708,
     route: "Phuentsholing - Thimphu - Paro - Phuentsholing",
     theme: "Thimphu Culture & Paro Highlights",
     summary:
@@ -131,6 +135,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "4-day-paro-focus",
     name: "4-Day Paro-Focused Land-Entry Tour",
     duration: "4 Days / 3 Nights",
+    tourCode: "UH-LET-003",
+    startingRate: 26208,
     route: "Phuentsholing - Thimphu - Paro - Phuentsholing",
     theme: "Paro-Focused Short Route",
     summary:
@@ -194,6 +200,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "5-day-punakha-paro",
     name: "5-Day Punakha & Paro Land-Entry Tour",
     duration: "5 Days / 4 Nights",
+    tourCode: "UH-LET-004",
+    startingRate: 32271,
     route: "Phuentsholing - Thimphu - Punakha - Paro - Phuentsholing",
     theme: "Punakha Valley & Paro",
     summary:
@@ -269,6 +277,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "5-day-punakha-standard",
     name: "5-Day Punakha Standard Land-Entry Tour",
     duration: "5 Days / 4 Nights",
+    tourCode: "UH-LET-005",
+    startingRate: 33271,
     route: "Phuentsholing - Thimphu - Punakha - Paro - Phuentsholing",
     theme: "Classic Punakha Standard Route",
     summary:
@@ -345,6 +355,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "6-day-thimphu-punakha-paro",
     name: "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
     duration: "6 Days / 5 Nights",
+    tourCode: "UH-LET-006",
+    startingRate: 40833,
     route: "Phuentsholing - Thimphu - Punakha - Paro - Phuentsholing",
     theme: "Western Bhutan Cultural Circuit",
     summary:
@@ -435,6 +447,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "7-day-gangtey-paro",
     name: "7-Day Gangtey & Paro Land-Entry Tour",
     duration: "7 Days / 6 Nights",
+    tourCode: "UH-LET-007",
+    startingRate: 49474,
     route: "Phuentsholing - Thimphu - Punakha - Phobjikha - Paro - Phuentsholing",
     theme: "Punakha, Gangtey & Paro",
     summary:
@@ -537,6 +551,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "7-day-punakha-paro",
     name: "7-Day Punakha & Paro Land-Entry Tour",
     duration: "7 Days / 6 Nights",
+    tourCode: "UH-LET-008",
+    startingRate: 47396,
     route: "Phuentsholing - Thimphu - Punakha - Paro - Phuentsholing",
     theme: "Punakha Depth & Paro",
     summary:
@@ -640,6 +656,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "8-day-gangtey",
     name: "8-Day Gangtey Land-Entry Tour",
     duration: "8 Days / 7 Nights",
+    tourCode: "UH-LET-009",
+    startingRate: 57115,
     route: "Phuentsholing - Thimphu - Punakha - Gangtey - Paro - Phuentsholing",
     theme: "Gangtey Valley Extension",
     summary:
@@ -743,6 +761,8 @@ export const landEntryItineraries: ItineraryRoute[] = [
     slug: "8-day-punakha-gangtey",
     name: "8-Day Punakha & Gangtey Land-Entry Tour",
     duration: "8 Days / 7 Nights",
+    tourCode: "UH-LET-010",
+    startingRate: 55037,
     route: "Phuentsholing - Thimphu - Punakha - Phobjikha - Paro - Phuentsholing",
     theme: "Punakha Depth & Phobjikha",
     summary:

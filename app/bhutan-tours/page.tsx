@@ -9,6 +9,7 @@ import {
   CheckCircle,
   ChevronRight,
   Clock,
+  Hash,
   MapPin,
   Mountain,
   ShieldCheck,
@@ -22,6 +23,7 @@ import { CtaSection } from "../components/CtaSection";
 import { BookingClaritySection } from "../components/BookingClaritySection";
 import {
   TourImageSlot as ImageSlot,
+  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -30,6 +32,7 @@ import {
   durationFilters,
   itineraries,
 } from "../data/tourItineraries";
+import { photographyTourCodes } from "../data/photographyTourCodes";
 
 const getDurationId = (duration: string) =>
   duration.split(" ")[0].replace(/[^0-9]/g, "");
@@ -301,6 +304,8 @@ function PhotographyRoutePanel({
   route: (typeof itineraries)[number];
   routePosition: number;
 }) {
+  const displayTourCode = photographyTourCodes[route.slug] || route.tourCode;
+
   return (
     <article className="cultural-pro-route-panel photography-pro-route-panel" aria-live="polite">
       <div className="cultural-pro-route-panel-grid">
@@ -330,6 +335,14 @@ function PhotographyRoutePanel({
               <span>Best For</span>
               <strong>{route.bestFor}</strong>
             </div>
+
+            {displayTourCode ? (
+              <div>
+                <Hash aria-hidden="true" />
+                <span>Tour Code</span>
+                <strong>{displayTourCode}</strong>
+              </div>
+            ) : null}
           </div>
 
           <div className="cultural-pro-route-tags">
@@ -381,10 +394,14 @@ function PhotographyRoutePanel({
         </div>
 
         <aside className="cultural-pro-route-media">
-          <ImageSlot image={route.image} className="cultural-pro-route-image" />
+          <ImageSlot
+            image={route.image}
+            className="cultural-pro-route-image"
+          />
 
           <div className="cultural-pro-route-note">
             <span>Customizable</span>
+            <RateNote startingRate={route.startingRate} />
             <strong>{route.theme}</strong>
             <p>
               Hotels, meals, activities, guide, vehicle, and travel pace can be

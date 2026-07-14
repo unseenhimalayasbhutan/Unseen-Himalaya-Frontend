@@ -1,0 +1,2725 @@
+{
+  "lastIndexedAt": "2026-07-14T05:44:39.490Z",
+  "records": 41,
+  "chunks": [
+    {
+      "id": "site-overview::chunk-1",
+      "recordId": "site-overview",
+      "title": "Unseen Himalayas Bhutan overview",
+      "contentType": "company",
+      "sourceUrl": "https://www.theunseenhimalayas.com/",
+      "contentHash": "5dcd300a0fec8884a98159ab7e98715615eb709e5515a0c2e2ce345a0b94947f",
+      "metadata": {
+        "id": "site-overview",
+        "title": "Unseen Himalayas Bhutan overview",
+        "sourceUrl": "https://www.theunseenhimalayas.com/",
+        "contentType": "company",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "contact-handoff::chunk-1",
+      "recordId": "contact-handoff",
+      "title": "Contact and human handoff",
+      "contentType": "contact",
+      "sourceUrl": "https://www.theunseenhimalayas.com/contact",
+      "contentHash": "6de3ecbcf628fa5078d26683dc97e7ebbabc8b694268b6d7b79f5b0f1eabe215",
+      "metadata": {
+        "id": "contact-handoff",
+        "title": "Contact and human handoff",
+        "sourceUrl": "https://www.theunseenhimalayas.com/contact",
+        "contentType": "contact",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "tour-inclusions-exclusions::chunk-1",
+      "recordId": "tour-inclusions-exclusions",
+      "title": "Tour inclusions, exclusions, and SDF notes",
+      "contentType": "policy",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "0bd29937cf4897051b9936223c3fc752e533c37e881b6ac2f1a0a70333b1b1d2",
+      "metadata": {
+        "id": "tour-inclusions-exclusions",
+        "title": "Tour inclusions, exclusions, and SDF notes",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "policy",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "booking-terms::chunk-1",
+      "recordId": "booking-terms",
+      "title": "Booking, reservation, and cancellation terms",
+      "contentType": "policy",
+      "sourceUrl": "https://www.theunseenhimalayas.com/terms",
+      "contentHash": "3bbc7e6ed7a3d5209b165745f7660d16b8805dd465d93beafbc96aa5e48a3443",
+      "metadata": {
+        "id": "booking-terms",
+        "title": "Booking, reservation, and cancellation terms",
+        "sourceUrl": "https://www.theunseenhimalayas.com/terms",
+        "contentType": "policy",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "customisation-options::chunk-1",
+      "recordId": "customisation-options",
+      "title": "Custom itinerary options",
+      "contentType": "planning",
+      "sourceUrl": "https://www.theunseenhimalayas.com/contact",
+      "contentHash": "9e95ccf955c8326fcb67aa13f128bd06ca6343f7328d7f8880d66c233c749ad8",
+      "metadata": {
+        "id": "customisation-options",
+        "title": "Custom itinerary options",
+        "sourceUrl": "https://www.theunseenhimalayas.com/contact",
+        "contentType": "planning",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "visa-sdf-verification::chunk-1",
+      "recordId": "visa-sdf-verification",
+      "title": "Visa and Sustainable Development Fee verification",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/faq",
+      "contentHash": "edfbd70ca19c057d470efc5001f6cb4f6b97271180e5e67a408b32c5239b9e77",
+      "metadata": {
+        "id": "visa-sdf-verification",
+        "title": "Visa and Sustainable Development Fee verification",
+        "sourceUrl": "https://www.theunseenhimalayas.com/faq",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "best-time-festivals::chunk-1",
+      "recordId": "best-time-festivals",
+      "title": "Best time to visit and festival planning",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/best-time",
+      "contentHash": "b1ce6b7c78a16579657d0b26ff9af274e486ae3346fda00bbbffbf2807ca10c8",
+      "metadata": {
+        "id": "best-time-festivals",
+        "title": "Best time to visit and festival planning",
+        "sourceUrl": "https://www.theunseenhimalayas.com/best-time",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "regular-tour:3-day-paro-thimphu-paro::chunk-1",
+      "recordId": "regular-tour:3-day-paro-thimphu-paro",
+      "title": "3-Day Paro & Thimphu Essentials",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "a0b235d4bd69da3944269ac3e963d330b65bbb1ae76e5b76f9163dc5b027fc01",
+      "metadata": {
+        "id": "regular-tour:3-day-paro-thimphu-paro",
+        "title": "3-Day Paro & Thimphu Essentials",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-001",
+        "startingRate": 25910,
+        "tourCategory": "Short Cultural Tour",
+        "durationDays": 3,
+        "durationNights": 2,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:3-day-paro-paro::chunk-1",
+      "recordId": "regular-tour:3-day-paro-paro",
+      "title": "3-Day Paro Valley Short Escape",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "b185492ae860fe96e481eb3abbf4ce2516993d7866b21331dd484dbb591849e0",
+      "metadata": {
+        "id": "regular-tour:3-day-paro-paro",
+        "title": "3-Day Paro Valley Short Escape",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-002",
+        "startingRate": 26833,
+        "tourCategory": "Short Paro Tour",
+        "durationDays": 3,
+        "durationNights": 2,
+        "destinations": [
+          "Paro"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Paro",
+        "interests": [
+          "culture",
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:4-day-paro-punakha-paro::chunk-1",
+      "recordId": "regular-tour:4-day-paro-punakha-paro",
+      "title": "4-Day Punakha Quick Journey",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "220b5474912c2489306ad9df8a9a2ff41bd9a3f9921e0361706347a0f0942eca",
+      "metadata": {
+        "id": "regular-tour:4-day-paro-punakha-paro",
+        "title": "4-Day Punakha Quick Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-003",
+        "startingRate": 34500,
+        "tourCategory": "Scenic Valley Tour",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "culture",
+          "photography",
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:4-day-paro-punakha-paro::chunk-2",
+      "recordId": "regular-tour:4-day-paro-punakha-paro",
+      "title": "4-Day Punakha Quick Journey",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "24387eba7fe66cf19e7631bc4599b0f53ef7194fcd6d3622b376a767e0bf284f",
+      "metadata": {
+        "id": "regular-tour:4-day-paro-punakha-paro",
+        "title": "4-Day Punakha Quick Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-003",
+        "startingRate": 34500,
+        "tourCategory": "Scenic Valley Tour",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "culture",
+          "photography",
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:4-day-paro-thimphu-paro::chunk-1",
+      "recordId": "regular-tour:4-day-paro-thimphu-paro",
+      "title": "4-Day Thimphu & Paro Cultural Intro",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "deaade1ff4cbd70875b9b4ef0bd789bfd6b83fc03256521fa0bcdecf7f2d41ad",
+      "metadata": {
+        "id": "regular-tour:4-day-paro-thimphu-paro",
+        "title": "4-Day Thimphu & Paro Cultural Intro",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-004",
+        "startingRate": 36192,
+        "tourCategory": "Cultural Introduction",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:4-day-paro-thimphu-paro::chunk-2",
+      "recordId": "regular-tour:4-day-paro-thimphu-paro",
+      "title": "4-Day Thimphu & Paro Cultural Intro",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "5cec0af3b8bcff22b7b9232e5225071975b05102fb84dd6c3085c5461844d0a5",
+      "metadata": {
+        "id": "regular-tour:4-day-paro-thimphu-paro",
+        "title": "4-Day Thimphu & Paro Cultural Intro",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-004",
+        "startingRate": 36192,
+        "tourCategory": "Cultural Introduction",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:5-day-classic-western-bhutan::chunk-1",
+      "recordId": "regular-tour:5-day-classic-western-bhutan",
+      "title": "5-Day Classic Western Bhutan",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "3f2a8c65e71354da75d84c0857a7ffcf5eb578b0a9374edf86410cd417b4bfb8",
+      "metadata": {
+        "id": "regular-tour:5-day-classic-western-bhutan",
+        "title": "5-Day Classic Western Bhutan",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-005",
+        "startingRate": 44859,
+        "tourCategory": "Classic Western Bhutan",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:5-day-classic-western-bhutan::chunk-2",
+      "recordId": "regular-tour:5-day-classic-western-bhutan",
+      "title": "5-Day Classic Western Bhutan",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "2642652798a47ab1e87e183a626aa1bfc27a29f7b6a916c4dae68b4f96c522da",
+      "metadata": {
+        "id": "regular-tour:5-day-classic-western-bhutan",
+        "title": "5-Day Classic Western Bhutan",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-005",
+        "startingRate": 44859,
+        "tourCategory": "Classic Western Bhutan",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:6-day-punakha-depth::chunk-1",
+      "recordId": "regular-tour:6-day-punakha-depth",
+      "title": "6-Day Punakha Culture & Valley Journey",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "1de3200bb24125a2ee182c55a02cf75435c9f1bbdf41b32a15f3fcf9ecfae6a5",
+      "metadata": {
+        "id": "regular-tour:6-day-punakha-depth",
+        "title": "6-Day Punakha Culture & Valley Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-006",
+        "startingRate": 53026,
+        "tourCategory": "Punakha Focus",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "culture",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:6-day-punakha-depth::chunk-2",
+      "recordId": "regular-tour:6-day-punakha-depth",
+      "title": "6-Day Punakha Culture & Valley Journey",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "13aec6ca4d3c5897989e06e05da41f497562734788454e738da8b02abba87823",
+      "metadata": {
+        "id": "regular-tour:6-day-punakha-depth",
+        "title": "6-Day Punakha Culture & Valley Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-006",
+        "startingRate": 53026,
+        "tourCategory": "Punakha Focus",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "culture",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:6-day-thimphu-punakha-paro::chunk-1",
+      "recordId": "regular-tour:6-day-thimphu-punakha-paro",
+      "title": "6-Day Thimphu, Punakha & Paro Classic",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "a42d9393f59438c2ddd12adf6f5321ddc97b4f5a939642b9a80fdbcb6349c154",
+      "metadata": {
+        "id": "regular-tour:6-day-thimphu-punakha-paro",
+        "title": "6-Day Thimphu, Punakha & Paro Classic",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-007",
+        "startingRate": 53218,
+        "tourCategory": "Classic Culture",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:6-day-thimphu-punakha-paro::chunk-2",
+      "recordId": "regular-tour:6-day-thimphu-punakha-paro",
+      "title": "6-Day Thimphu, Punakha & Paro Classic",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "a99b162a51a4357d8628b717cc76be205ed7dddd0cf911e91f4ff67d2c9b4043",
+      "metadata": {
+        "id": "regular-tour:6-day-thimphu-punakha-paro",
+        "title": "6-Day Thimphu, Punakha & Paro Classic",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-007",
+        "startingRate": 53218,
+        "tourCategory": "Classic Culture",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:7-day-bhutan-valley-explorer::chunk-1",
+      "recordId": "regular-tour:7-day-bhutan-valley-explorer",
+      "title": "7-Day Bhutan Valley Explorer",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "73456e4fc9e2c84f52dc85cb6778be001eb01f2d6521b9cc147df2b11f9820a0",
+      "metadata": {
+        "id": "regular-tour:7-day-bhutan-valley-explorer",
+        "title": "7-Day Bhutan Valley Explorer",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-008",
+        "startingRate": 62269,
+        "tourCategory": "Nature & Culture",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "nature",
+          "birdwatching"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:7-day-bhutan-valley-explorer::chunk-2",
+      "recordId": "regular-tour:7-day-bhutan-valley-explorer",
+      "title": "7-Day Bhutan Valley Explorer",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "8d674fb7eaab2723c58471b4c5bd3cad93c124b7db0894fa5fdae9f00b1066fd",
+      "metadata": {
+        "id": "regular-tour:7-day-bhutan-valley-explorer",
+        "title": "7-Day Bhutan Valley Explorer",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-008",
+        "startingRate": 62269,
+        "tourCategory": "Nature & Culture",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "nature",
+          "birdwatching"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:7-day-bhutan-valley-explorer::chunk-3",
+      "recordId": "regular-tour:7-day-bhutan-valley-explorer",
+      "title": "7-Day Bhutan Valley Explorer",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "c27c50077faaacf37f85a66dc44cab0807f081a495817634fd843498e994f334",
+      "metadata": {
+        "id": "regular-tour:7-day-bhutan-valley-explorer",
+        "title": "7-Day Bhutan Valley Explorer",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-008",
+        "startingRate": 62269,
+        "tourCategory": "Nature & Culture",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "nature",
+          "birdwatching"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:8-day-gangtey-phobjikha::chunk-1",
+      "recordId": "regular-tour:8-day-gangtey-phobjikha",
+      "title": "8-Day Gangtey & Phobjikha Journey",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "bb80d5df2811cb6e25d98c6eaf2298519d2121fa2c6fd5e7147d4f308e955440",
+      "metadata": {
+        "id": "regular-tour:8-day-gangtey-phobjikha",
+        "title": "8-Day Gangtey & Phobjikha Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-009",
+        "startingRate": 71321,
+        "tourCategory": "Gangtey Focus",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:8-day-gangtey-phobjikha::chunk-2",
+      "recordId": "regular-tour:8-day-gangtey-phobjikha",
+      "title": "8-Day Gangtey & Phobjikha Journey",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "62a912fa3f5ba9caa75dfd4e8bdd62abb7d4436cf64a6498fd99a360cbfd032c",
+      "metadata": {
+        "id": "regular-tour:8-day-gangtey-phobjikha",
+        "title": "8-Day Gangtey & Phobjikha Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-009",
+        "startingRate": 71321,
+        "tourCategory": "Gangtey Focus",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:8-day-gangtey-phobjikha::chunk-3",
+      "recordId": "regular-tour:8-day-gangtey-phobjikha",
+      "title": "8-Day Gangtey & Phobjikha Journey",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "cfe7f43a3dedf2959674e32483506154376cea04e8e2b457b40b7770b769ddfc",
+      "metadata": {
+        "id": "regular-tour:8-day-gangtey-phobjikha",
+        "title": "8-Day Gangtey & Phobjikha Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-009",
+        "startingRate": 71321,
+        "tourCategory": "Gangtey Focus",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:8-day-punakha-phobjikha-depth::chunk-1",
+      "recordId": "regular-tour:8-day-punakha-phobjikha-depth",
+      "title": "8-Day Punakha & Phobjikha In-Depth",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "9b85905d3b5f7cfd82ab160973f93e57ea98ab4a0974fa90579702223ca6a1bc",
+      "metadata": {
+        "id": "regular-tour:8-day-punakha-phobjikha-depth",
+        "title": "8-Day Punakha & Phobjikha In-Depth",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-010",
+        "startingRate": 69936,
+        "tourCategory": "In-Depth Western Bhutan",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:8-day-punakha-phobjikha-depth::chunk-2",
+      "recordId": "regular-tour:8-day-punakha-phobjikha-depth",
+      "title": "8-Day Punakha & Phobjikha In-Depth",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "43b19088a324b3ab228dc4b25f9ec2a3e18926549d19f3470a4a1505b27d5769",
+      "metadata": {
+        "id": "regular-tour:8-day-punakha-phobjikha-depth",
+        "title": "8-Day Punakha & Phobjikha In-Depth",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-010",
+        "startingRate": 69936,
+        "tourCategory": "In-Depth Western Bhutan",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "regular-tour:8-day-punakha-phobjikha-depth::chunk-3",
+      "recordId": "regular-tour:8-day-punakha-phobjikha-depth",
+      "title": "8-Day Punakha & Phobjikha In-Depth",
+      "contentType": "regular-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "contentHash": "b2b7860313b7d13fa88040250789a71728258eb70a0de10f185698047204f6f9",
+      "metadata": {
+        "id": "regular-tour:8-day-punakha-phobjikha-depth",
+        "title": "8-Day Punakha & Phobjikha In-Depth",
+        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "contentType": "regular-tour",
+        "tourCode": "UH-PT-010",
+        "startingRate": 69936,
+        "tourCategory": "In-Depth Western Bhutan",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:4-day-thimphu-paro-classic::chunk-1",
+      "recordId": "land-entry-tour:4-day-thimphu-paro-classic",
+      "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "bbdcdb2e8901c1321d845e77bd95fae26612e39f8ad0a758a1f9e4816f065301",
+      "metadata": {
+        "id": "land-entry-tour:4-day-thimphu-paro-classic",
+        "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-001",
+        "startingRate": 26208,
+        "tourCategory": "Classic Short Land-Entry Route",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:4-day-thimphu-paro-classic::chunk-2",
+      "recordId": "land-entry-tour:4-day-thimphu-paro-classic",
+      "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "64f031854339e597174ce11ea76639e17a119138694b848f1c9cffb56090098d",
+      "metadata": {
+        "id": "land-entry-tour:4-day-thimphu-paro-classic",
+        "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-001",
+        "startingRate": 26208,
+        "tourCategory": "Classic Short Land-Entry Route",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:4-day-thimphu-paro-cultural::chunk-1",
+      "recordId": "land-entry-tour:4-day-thimphu-paro-cultural",
+      "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "e98dadc6b72665a068d075911f758affa11e33022600d038a4ee2c5f3b6f1c55",
+      "metadata": {
+        "id": "land-entry-tour:4-day-thimphu-paro-cultural",
+        "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-002",
+        "startingRate": 26708,
+        "tourCategory": "Thimphu Culture & Paro Highlights",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:4-day-thimphu-paro-cultural::chunk-2",
+      "recordId": "land-entry-tour:4-day-thimphu-paro-cultural",
+      "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "1069b71267a1a8fbaa4a301d75cb1ff46d9cd6acdcf2a4dc56f19597f7ace8c3",
+      "metadata": {
+        "id": "land-entry-tour:4-day-thimphu-paro-cultural",
+        "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-002",
+        "startingRate": 26708,
+        "tourCategory": "Thimphu Culture & Paro Highlights",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:4-day-paro-focus::chunk-1",
+      "recordId": "land-entry-tour:4-day-paro-focus",
+      "title": "4-Day Paro-Focused Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "b05034bfe13377e73d13cadfd766a3511cd78fc601ef67f9ede504c4dd4a816f",
+      "metadata": {
+        "id": "land-entry-tour:4-day-paro-focus",
+        "title": "4-Day Paro-Focused Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-003",
+        "startingRate": 26208,
+        "tourCategory": "Paro-Focused Short Route",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:4-day-paro-focus::chunk-2",
+      "recordId": "land-entry-tour:4-day-paro-focus",
+      "title": "4-Day Paro-Focused Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "3760c8bdbcfa0b5a8ac98345fdb805d7a34481e853a808e3ebe387785bf7e508",
+      "metadata": {
+        "id": "land-entry-tour:4-day-paro-focus",
+        "title": "4-Day Paro-Focused Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-003",
+        "startingRate": 26208,
+        "tourCategory": "Paro-Focused Short Route",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:5-day-punakha-paro::chunk-1",
+      "recordId": "land-entry-tour:5-day-punakha-paro",
+      "title": "5-Day Punakha & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "f44be6c0e0776fd0c82b8873fe5752a7e123e9edf23f6e1855e837054b4d82e0",
+      "metadata": {
+        "id": "land-entry-tour:5-day-punakha-paro",
+        "title": "5-Day Punakha & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-004",
+        "startingRate": 32271,
+        "tourCategory": "Punakha Valley & Paro",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:5-day-punakha-paro::chunk-2",
+      "recordId": "land-entry-tour:5-day-punakha-paro",
+      "title": "5-Day Punakha & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "0c2f7ab01f8c449482e2c8a83d70a0bb8316e4e8afa05a6c1f46dc5291e8fa67",
+      "metadata": {
+        "id": "land-entry-tour:5-day-punakha-paro",
+        "title": "5-Day Punakha & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-004",
+        "startingRate": 32271,
+        "tourCategory": "Punakha Valley & Paro",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:5-day-punakha-standard::chunk-1",
+      "recordId": "land-entry-tour:5-day-punakha-standard",
+      "title": "5-Day Punakha Standard Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "cf9d0492098ed3ddb5b806a86551d7cb4adbdf940ed15c769835d3824c6a0de4",
+      "metadata": {
+        "id": "land-entry-tour:5-day-punakha-standard",
+        "title": "5-Day Punakha Standard Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-005",
+        "startingRate": 33271,
+        "tourCategory": "Classic Punakha Standard Route",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:5-day-punakha-standard::chunk-2",
+      "recordId": "land-entry-tour:5-day-punakha-standard",
+      "title": "5-Day Punakha Standard Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "869b986929eb76b78c4cb4555147b678f6dda2c9309ca5c6b4ef4723d7104525",
+      "metadata": {
+        "id": "land-entry-tour:5-day-punakha-standard",
+        "title": "5-Day Punakha Standard Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-005",
+        "startingRate": 33271,
+        "tourCategory": "Classic Punakha Standard Route",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:6-day-thimphu-punakha-paro::chunk-1",
+      "recordId": "land-entry-tour:6-day-thimphu-punakha-paro",
+      "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "eb3a4b07859a595f0b8c4901c390968b354e783dad9ce8a652cdfaff82434366",
+      "metadata": {
+        "id": "land-entry-tour:6-day-thimphu-punakha-paro",
+        "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-006",
+        "startingRate": 40833,
+        "tourCategory": "Western Bhutan Cultural Circuit",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture",
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:6-day-thimphu-punakha-paro::chunk-2",
+      "recordId": "land-entry-tour:6-day-thimphu-punakha-paro",
+      "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "bb23f0225426753e9a6cf24ec2adc82b84b4821a3bd47fb4c0daf567da64b4a5",
+      "metadata": {
+        "id": "land-entry-tour:6-day-thimphu-punakha-paro",
+        "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-006",
+        "startingRate": 40833,
+        "tourCategory": "Western Bhutan Cultural Circuit",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "culture",
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:7-day-gangtey-paro::chunk-1",
+      "recordId": "land-entry-tour:7-day-gangtey-paro",
+      "title": "7-Day Gangtey & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "95317a69097306bda8e40d6ac036e479d6e820026043363e85416fd09fd55fb0",
+      "metadata": {
+        "id": "land-entry-tour:7-day-gangtey-paro",
+        "title": "7-Day Gangtey & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-007",
+        "startingRate": 49474,
+        "tourCategory": "Punakha, Gangtey & Paro",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature",
+          "birdwatching"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:7-day-gangtey-paro::chunk-2",
+      "recordId": "land-entry-tour:7-day-gangtey-paro",
+      "title": "7-Day Gangtey & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "b59d24aba2186c623ef30f01ddfa12360248b2308d21fde249f101f093c3a484",
+      "metadata": {
+        "id": "land-entry-tour:7-day-gangtey-paro",
+        "title": "7-Day Gangtey & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-007",
+        "startingRate": 49474,
+        "tourCategory": "Punakha, Gangtey & Paro",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature",
+          "birdwatching"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:7-day-gangtey-paro::chunk-3",
+      "recordId": "land-entry-tour:7-day-gangtey-paro",
+      "title": "7-Day Gangtey & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "3c060ac8d4eb693bd1a3348a0e925eff4f0c7292373f8f25f712f32797bdc487",
+      "metadata": {
+        "id": "land-entry-tour:7-day-gangtey-paro",
+        "title": "7-Day Gangtey & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-007",
+        "startingRate": 49474,
+        "tourCategory": "Punakha, Gangtey & Paro",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature",
+          "birdwatching"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:7-day-punakha-paro::chunk-1",
+      "recordId": "land-entry-tour:7-day-punakha-paro",
+      "title": "7-Day Punakha & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "1323306df83e6ecc5af257d6594639358b9b84739f52d7f68881be71bc098404",
+      "metadata": {
+        "id": "land-entry-tour:7-day-punakha-paro",
+        "title": "7-Day Punakha & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-008",
+        "startingRate": 47396,
+        "tourCategory": "Punakha Depth & Paro",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:7-day-punakha-paro::chunk-2",
+      "recordId": "land-entry-tour:7-day-punakha-paro",
+      "title": "7-Day Punakha & Paro Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "e472f06b035fae78c66732faa0416fcc39560b76353b9a67b40606c41e96477a",
+      "metadata": {
+        "id": "land-entry-tour:7-day-punakha-paro",
+        "title": "7-Day Punakha & Paro Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-008",
+        "startingRate": 47396,
+        "tourCategory": "Punakha Depth & Paro",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:8-day-gangtey::chunk-1",
+      "recordId": "land-entry-tour:8-day-gangtey",
+      "title": "8-Day Gangtey Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "b4cde183d59f9d1cde5107a32d7b4730e526636083d6f865dff95fffa309dfba",
+      "metadata": {
+        "id": "land-entry-tour:8-day-gangtey",
+        "title": "8-Day Gangtey Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-009",
+        "startingRate": 57115,
+        "tourCategory": "Gangtey Valley Extension",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Gangtey",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:8-day-gangtey::chunk-2",
+      "recordId": "land-entry-tour:8-day-gangtey",
+      "title": "8-Day Gangtey Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "8fcd1a1e8b2114556f038c36dd73a06a578db654e1165284777e8f1d7bd1610c",
+      "metadata": {
+        "id": "land-entry-tour:8-day-gangtey",
+        "title": "8-Day Gangtey Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-009",
+        "startingRate": 57115,
+        "tourCategory": "Gangtey Valley Extension",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Gangtey",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:8-day-gangtey::chunk-3",
+      "recordId": "land-entry-tour:8-day-gangtey",
+      "title": "8-Day Gangtey Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "a66f0a423fdb842605eb0b3522624e44f26dd93f88f7c914c5b53dd1393e74b4",
+      "metadata": {
+        "id": "land-entry-tour:8-day-gangtey",
+        "title": "8-Day Gangtey Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-009",
+        "startingRate": 57115,
+        "tourCategory": "Gangtey Valley Extension",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Gangtey",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:8-day-punakha-gangtey::chunk-1",
+      "recordId": "land-entry-tour:8-day-punakha-gangtey",
+      "title": "8-Day Punakha & Gangtey Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "7ce6ebdb9c546ad9ecc7e263f05ac90170c214502c331f9646d6058ddeaf3f91",
+      "metadata": {
+        "id": "land-entry-tour:8-day-punakha-gangtey",
+        "title": "8-Day Punakha & Gangtey Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-010",
+        "startingRate": 55037,
+        "tourCategory": "Punakha Depth & Phobjikha",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:8-day-punakha-gangtey::chunk-2",
+      "recordId": "land-entry-tour:8-day-punakha-gangtey",
+      "title": "8-Day Punakha & Gangtey Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "c7cdbdf49ba05fdeb537471f651e8af33bbe9d33dec21d9f7e6e60a90e4c655e",
+      "metadata": {
+        "id": "land-entry-tour:8-day-punakha-gangtey",
+        "title": "8-Day Punakha & Gangtey Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-010",
+        "startingRate": 55037,
+        "tourCategory": "Punakha Depth & Phobjikha",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "land-entry-tour:8-day-punakha-gangtey::chunk-3",
+      "recordId": "land-entry-tour:8-day-punakha-gangtey",
+      "title": "8-Day Punakha & Gangtey Land-Entry Tour",
+      "contentType": "land-entry-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+      "contentHash": "215448cbae99d68d996a3521915f80ed529efb2dbe0e397614d944ee6e6523f7",
+      "metadata": {
+        "id": "land-entry-tour:8-day-punakha-gangtey",
+        "title": "8-Day Punakha & Gangtey Land-Entry Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
+        "contentType": "land-entry-tour",
+        "tourCode": "UH-LET-010",
+        "startingRate": 55037,
+        "tourCategory": "Punakha Depth & Phobjikha",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Phuentsholing",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha",
+          "Paro"
+        ],
+        "entryPoint": "Phuentsholing",
+        "exitPoint": "Phuentsholing",
+        "interests": [],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:3-day-bhutan-cycling-tour::chunk-1",
+      "recordId": "cycling-tour:3-day-bhutan-cycling-tour",
+      "title": "3-Day Bhutan Scenic Cycling Short Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "c7de890e1903fc2c27bcbf4ea6bfda8fb25aefd17ae960569d80db0360f5bfc4",
+      "metadata": {
+        "id": "cycling-tour:3-day-bhutan-cycling-tour",
+        "title": "3-Day Bhutan Scenic Cycling Short Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Short Cycling Tour",
+        "durationDays": 3,
+        "durationNights": 2,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:3-day-bhutan-cycling-tour::chunk-2",
+      "recordId": "cycling-tour:3-day-bhutan-cycling-tour",
+      "title": "3-Day Bhutan Scenic Cycling Short Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "b237ca36d9012360d11005fb8e405cd48e4327c8c083ac76ad6a3433ad49ffbc",
+      "metadata": {
+        "id": "cycling-tour:3-day-bhutan-cycling-tour",
+        "title": "3-Day Bhutan Scenic Cycling Short Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Short Cycling Tour",
+        "durationDays": 3,
+        "durationNights": 2,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:4-day-bhutan-cycling-tour::chunk-1",
+      "recordId": "cycling-tour:4-day-bhutan-cycling-tour",
+      "title": "4-Day Paro & Thimphu Scenic Cycling Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "7aa7422f1f676393359f5f6eed01b2c6a0edfe996e1c18d97c25726e60157711",
+      "metadata": {
+        "id": "cycling-tour:4-day-bhutan-cycling-tour",
+        "title": "4-Day Paro & Thimphu Scenic Cycling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Western Valley Cycling",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:4-day-bhutan-cycling-tour::chunk-2",
+      "recordId": "cycling-tour:4-day-bhutan-cycling-tour",
+      "title": "4-Day Paro & Thimphu Scenic Cycling Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "7723ee5baceb9c327ddb3ed1ec1e4167272f64593f621ddf55b9a11f3e481573",
+      "metadata": {
+        "id": "cycling-tour:4-day-bhutan-cycling-tour",
+        "title": "4-Day Paro & Thimphu Scenic Cycling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Western Valley Cycling",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:5-day-bhutan-cycling-tour::chunk-1",
+      "recordId": "cycling-tour:5-day-bhutan-cycling-tour",
+      "title": "5-Day Bhutan Scenic Cycling Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "c5c53c3111574b9a15833224154e4ff7e3dcce13caa088d749a25bb5b2731e53",
+      "metadata": {
+        "id": "cycling-tour:5-day-bhutan-cycling-tour",
+        "title": "5-Day Bhutan Scenic Cycling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Classic Cycling Route",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:5-day-bhutan-cycling-tour::chunk-2",
+      "recordId": "cycling-tour:5-day-bhutan-cycling-tour",
+      "title": "5-Day Bhutan Scenic Cycling Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "b2d8d111d72f4c0e8610169a1988732958adf17693ba767c9090c84ee33064d4",
+      "metadata": {
+        "id": "cycling-tour:5-day-bhutan-cycling-tour",
+        "title": "5-Day Bhutan Scenic Cycling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Classic Cycling Route",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:6-day-bhutan-cycling-tour::chunk-1",
+      "recordId": "cycling-tour:6-day-bhutan-cycling-tour",
+      "title": "6-Day Western Bhutan Cycling Journey",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "5f7ab8487b3d571490cb785289b047d09c0969f5a4514b756dec3e231f7d8d78",
+      "metadata": {
+        "id": "cycling-tour:6-day-bhutan-cycling-tour",
+        "title": "6-Day Western Bhutan Cycling Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Western Bhutan Cycling",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:6-day-bhutan-cycling-tour::chunk-2",
+      "recordId": "cycling-tour:6-day-bhutan-cycling-tour",
+      "title": "6-Day Western Bhutan Cycling Journey",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "877a1d00572653770a828a183254544dd52b3cf451b0726afe6e1c0c9272172f",
+      "metadata": {
+        "id": "cycling-tour:6-day-bhutan-cycling-tour",
+        "title": "6-Day Western Bhutan Cycling Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Western Bhutan Cycling",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:7-day-bhutan-cycling-tour::chunk-1",
+      "recordId": "cycling-tour:7-day-bhutan-cycling-tour",
+      "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "69eb52b9fe52b01e715a98747012da2cf677d825a0b1b4435ad401c3b996d64d",
+      "metadata": {
+        "id": "cycling-tour:7-day-bhutan-cycling-tour",
+        "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Valley Cycling & Nature",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:7-day-bhutan-cycling-tour::chunk-2",
+      "recordId": "cycling-tour:7-day-bhutan-cycling-tour",
+      "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "0e4b50c21985895b8213eebf3370e886c1aa41034a5a51dc29fc7b9d6c8644af",
+      "metadata": {
+        "id": "cycling-tour:7-day-bhutan-cycling-tour",
+        "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Valley Cycling & Nature",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:7-day-bhutan-cycling-tour::chunk-3",
+      "recordId": "cycling-tour:7-day-bhutan-cycling-tour",
+      "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "882b6275d648b60a5bab7479a806290b243c09b7e76e41947d746d635f303df5",
+      "metadata": {
+        "id": "cycling-tour:7-day-bhutan-cycling-tour",
+        "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Valley Cycling & Nature",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:8-day-bhutan-cycling-tour::chunk-1",
+      "recordId": "cycling-tour:8-day-bhutan-cycling-tour",
+      "title": "8-Day Grand Western Bhutan Cycling Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "b4b928550da46f45af436aec6f9144099b7c580f4c8d3b799c3738fdfe3a1405",
+      "metadata": {
+        "id": "cycling-tour:8-day-bhutan-cycling-tour",
+        "title": "8-Day Grand Western Bhutan Cycling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Grand Cycling Circuit",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:8-day-bhutan-cycling-tour::chunk-2",
+      "recordId": "cycling-tour:8-day-bhutan-cycling-tour",
+      "title": "8-Day Grand Western Bhutan Cycling Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "d5badccd09971d9da00ecd25cd84ebef5e7b84b963f2468bc2ad7e68cbcf8de6",
+      "metadata": {
+        "id": "cycling-tour:8-day-bhutan-cycling-tour",
+        "title": "8-Day Grand Western Bhutan Cycling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Grand Cycling Circuit",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "cycling-tour:8-day-bhutan-cycling-tour::chunk-3",
+      "recordId": "cycling-tour:8-day-bhutan-cycling-tour",
+      "title": "8-Day Grand Western Bhutan Cycling Tour",
+      "contentType": "cycling-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+      "contentHash": "5e804514342c9aee3ba79807771edb868e76dd16cd8e272597ee85cb6b6bc1ab",
+      "metadata": {
+        "id": "cycling-tour:8-day-bhutan-cycling-tour",
+        "title": "8-Day Grand Western Bhutan Cycling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
+        "contentType": "cycling-tour",
+        "tourCategory": "Grand Cycling Circuit",
+        "durationDays": 8,
+        "durationNights": 7,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "cycling",
+          "active travel",
+          "culture"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "festival-tour:5-day-black-necked-crane-festival-short-tour::chunk-1",
+      "recordId": "festival-tour:5-day-black-necked-crane-festival-short-tour",
+      "title": "5-Day Black Necked Crane Festival Short Tour",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "dcd552a0235ff0247193a3108f60dbefb08bd68fbb12c6de99449174299d289b",
+      "metadata": {
+        "id": "festival-tour:5-day-black-necked-crane-festival-short-tour",
+        "title": "5-Day Black Necked Crane Festival Short Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-004",
+        "startingRate": 55944,
+        "tourCategory": "festival",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Gangtey",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "Black Necked Crane Festival",
+          "Gangtey Gonpa",
+          "Phobjikha Valley",
+          "Conservation Festival",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "november"
+        ],
+        "festivalName": "Black Necked Crane Festival",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:5-day-black-necked-crane-festival-short-tour::chunk-2",
+      "recordId": "festival-tour:5-day-black-necked-crane-festival-short-tour",
+      "title": "5-Day Black Necked Crane Festival Short Tour",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "44912d4ec3d94140fb167a05430b9e01817eb18a61f9f880b663f982387f0897",
+      "metadata": {
+        "id": "festival-tour:5-day-black-necked-crane-festival-short-tour",
+        "title": "5-Day Black Necked Crane Festival Short Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-004",
+        "startingRate": 55944,
+        "tourCategory": "festival",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Gangtey",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "Black Necked Crane Festival",
+          "Gangtey Gonpa",
+          "Phobjikha Valley",
+          "Conservation Festival",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "november"
+        ],
+        "festivalName": "Black Necked Crane Festival",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest::chunk-1",
+      "recordId": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest",
+      "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "75d35983b7cd404f0c99c246b1212f502528e8f80d3521539fb624a03c4aa9a3",
+      "metadata": {
+        "id": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest",
+        "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-006",
+        "startingRate": 75389,
+        "tourCategory": "festival",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Gangtey",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "Black Necked Crane Festival",
+          "Punakha",
+          "Gangtey",
+          "Tiger's Nest",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "november"
+        ],
+        "festivalName": "Black Necked Crane Festival",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest::chunk-2",
+      "recordId": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest",
+      "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "289f277eb32740129dba5f46749f9857d3060ceda4e2adc33f22c96486f07808",
+      "metadata": {
+        "id": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest",
+        "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-006",
+        "startingRate": 75389,
+        "tourCategory": "festival",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Gangtey",
+          "Phobjikha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Phobjikha",
+        "interests": [
+          "Black Necked Crane Festival",
+          "Punakha",
+          "Gangtey",
+          "Tiger's Nest",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "november"
+        ],
+        "festivalName": "Black Necked Crane Festival",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:15-day-bumthang-festival-circuit::chunk-1",
+      "recordId": "festival-tour:15-day-bumthang-festival-circuit",
+      "title": "15-Day Bumthang Festival Circuit",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "8053adfd704a792fdf0fd6daa9a8a11397c1f8d1ac549b3a187bd89c2f5e27af",
+      "metadata": {
+        "id": "festival-tour:15-day-bumthang-festival-circuit",
+        "title": "15-Day Bumthang Festival Circuit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 15,
+        "durationNights": 14,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Trongsa",
+          "Bumthang",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jakar Tshechu",
+          "Jambay Lhakhang Drup",
+          "Traakar Duchhoed",
+          "Bumthang",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:15-day-bumthang-festival-circuit::chunk-2",
+      "recordId": "festival-tour:15-day-bumthang-festival-circuit",
+      "title": "15-Day Bumthang Festival Circuit",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "07900d4dd954d3e7858519509657f11d2362731fce68885949590865724f4318",
+      "metadata": {
+        "id": "festival-tour:15-day-bumthang-festival-circuit",
+        "title": "15-Day Bumthang Festival Circuit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 15,
+        "durationNights": 14,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Trongsa",
+          "Bumthang",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jakar Tshechu",
+          "Jambay Lhakhang Drup",
+          "Traakar Duchhoed",
+          "Bumthang",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:15-day-bumthang-festival-circuit::chunk-3",
+      "recordId": "festival-tour:15-day-bumthang-festival-circuit",
+      "title": "15-Day Bumthang Festival Circuit",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "8b2eaeffa0e7751816df6e4cd7acacd8526af05fd29f6d1e0e3a65f574f72eb7",
+      "metadata": {
+        "id": "festival-tour:15-day-bumthang-festival-circuit",
+        "title": "15-Day Bumthang Festival Circuit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 15,
+        "durationNights": 14,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Trongsa",
+          "Bumthang",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jakar Tshechu",
+          "Jambay Lhakhang Drup",
+          "Traakar Duchhoed",
+          "Bumthang",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:15-day-bumthang-festival-circuit::chunk-4",
+      "recordId": "festival-tour:15-day-bumthang-festival-circuit",
+      "title": "15-Day Bumthang Festival Circuit",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "da0836f3855385bf82acedc1b52050a825f7cdaa55541a9f07bc023dc91b7e23",
+      "metadata": {
+        "id": "festival-tour:15-day-bumthang-festival-circuit",
+        "title": "15-Day Bumthang Festival Circuit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 15,
+        "durationNights": 14,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Trongsa",
+          "Bumthang",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jakar Tshechu",
+          "Jambay Lhakhang Drup",
+          "Traakar Duchhoed",
+          "Bumthang",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour::chunk-1",
+      "recordId": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour",
+      "title": "4-Day Dechenphu Tshechu Short Festival Tour",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "4a5674968e6abd41b1857f2f254d19f9df47d0d8cb86a5ef7389eeae9d3ed718",
+      "metadata": {
+        "id": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour",
+        "title": "4-Day Dechenphu Tshechu Short Festival Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-001",
+        "startingRate": 43222,
+        "tourCategory": "festival",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "Dechenphu Tshechu",
+          "Thimphu",
+          "Paro",
+          "Short Festival Tour",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "october"
+        ],
+        "festivalName": "Dechenphu Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour::chunk-2",
+      "recordId": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour",
+      "title": "4-Day Dechenphu Tshechu Short Festival Tour",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "555a4be79d9bbd1c71bd7d994eedb893cff6fc359ee89ba71b3d5e71b8ac5a08",
+      "metadata": {
+        "id": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour",
+        "title": "4-Day Dechenphu Tshechu Short Festival Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-001",
+        "startingRate": 43222,
+        "tourCategory": "festival",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "Dechenphu Tshechu",
+          "Thimphu",
+          "Paro",
+          "Short Festival Tour",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "october"
+        ],
+        "festivalName": "Dechenphu Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest::chunk-1",
+      "recordId": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest",
+      "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "b07d319f0344f66be0710413704791a8540fdf67aa6d99a5bd35d6f8c13c38cf",
+      "metadata": {
+        "id": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest",
+        "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-005",
+        "startingRate": 46778,
+        "tourCategory": "festival",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "Dechenphu Tshechu",
+          "Tiger's Nest",
+          "Thimphu",
+          "Paro",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "october"
+        ],
+        "festivalName": "Dechenphu Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest::chunk-2",
+      "recordId": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest",
+      "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "1f0653925d22146113c182c457a44f2692a0038b592022dab042c9c137cf424f",
+      "metadata": {
+        "id": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest",
+        "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCode": "UH-FT-005",
+        "startingRate": 46778,
+        "tourCategory": "festival",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "Dechenphu Tshechu",
+          "Tiger's Nest",
+          "Thimphu",
+          "Paro",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [
+          "october"
+        ],
+        "festivalName": "Dechenphu Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:7-day-jakar-tshechu-festival-tour-with-domestic-flight::chunk-1",
+      "recordId": "festival-tour:7-day-jakar-tshechu-festival-tour-with-domestic-flight",
+      "title": "7-Day Jakar Tshechu Festival Tour with Domestic Flight",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "04014310d96a758925703781a548091198b5c248ad8215eff4a847fe85ad398d",
+      "metadata": {
+        "id": "festival-tour:7-day-jakar-tshechu-festival-tour-with-domestic-flight",
+        "title": "7-Day Jakar Tshechu Festival Tour with Domestic Flight",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Bumthang"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Bumthang",
+        "interests": [
+          "Jakar Tshechu",
+          "Bumthang",
+          "Domestic Flight",
+          "Tiger's Nest",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:7-day-jakar-tshechu-festival-tour-with-domestic-flight::chunk-2",
+      "recordId": "festival-tour:7-day-jakar-tshechu-festival-tour-with-domestic-flight",
+      "title": "7-Day Jakar Tshechu Festival Tour with Domestic Flight",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "6c4f1dab536bf7a670a5091c32d600dd35fa336f6fedd225855e9caaca235134",
+      "metadata": {
+        "id": "festival-tour:7-day-jakar-tshechu-festival-tour-with-domestic-flight",
+        "title": "7-Day Jakar Tshechu Festival Tour with Domestic Flight",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 7,
+        "durationNights": 6,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Bumthang"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Bumthang",
+        "interests": [
+          "Jakar Tshechu",
+          "Bumthang",
+          "Domestic Flight",
+          "Tiger's Nest",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:9-day-jakar-tshechu-festival-tour-via-trongsa::chunk-1",
+      "recordId": "festival-tour:9-day-jakar-tshechu-festival-tour-via-trongsa",
+      "title": "9-Day Jakar Tshechu Festival Tour via Trongsa",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "108cad6605cebb8a1e41f4576e3d3eb4a89db11556219c3672766c2b48bf9253",
+      "metadata": {
+        "id": "festival-tour:9-day-jakar-tshechu-festival-tour-via-trongsa",
+        "title": "9-Day Jakar Tshechu Festival Tour via Trongsa",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 9,
+        "durationNights": 8,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Trongsa",
+          "Bumthang",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jakar Tshechu",
+          "Trongsa",
+          "Bumthang",
+          "Overland Route",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:9-day-jakar-tshechu-festival-tour-via-trongsa::chunk-2",
+      "recordId": "festival-tour:9-day-jakar-tshechu-festival-tour-via-trongsa",
+      "title": "9-Day Jakar Tshechu Festival Tour via Trongsa",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "bd4b55dbfdd4fd6bb659ee7585567b3e773c0ea1855099413ae4f7ef1b408775",
+      "metadata": {
+        "id": "festival-tour:9-day-jakar-tshechu-festival-tour-via-trongsa",
+        "title": "9-Day Jakar Tshechu Festival Tour via Trongsa",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 9,
+        "durationNights": 8,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha",
+          "Trongsa",
+          "Bumthang",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jakar Tshechu",
+          "Trongsa",
+          "Bumthang",
+          "Overland Route",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jakar Tshechu",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:9-day-jambay-lhakhang-drup-festival-tour::chunk-1",
+      "recordId": "festival-tour:9-day-jambay-lhakhang-drup-festival-tour",
+      "title": "9-Day Jambay Lhakhang Drup Festival Tour",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "7818705fc84f30828d320e4a54fe5c2b059d1478b4fdfe07a4e8dc1409f38d7e",
+      "metadata": {
+        "id": "festival-tour:9-day-jambay-lhakhang-drup-festival-tour",
+        "title": "9-Day Jambay Lhakhang Drup Festival Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 9,
+        "durationNights": 8,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Trongsa",
+          "Bumthang",
+          "Punakha",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jambay Lhakhang Drup",
+          "Traakar Duchhoed",
+          "Bumthang",
+          "Trongsa",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jambay Lhakhang Drup",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-tour:9-day-jambay-lhakhang-drup-festival-tour::chunk-2",
+      "recordId": "festival-tour:9-day-jambay-lhakhang-drup-festival-tour",
+      "title": "9-Day Jambay Lhakhang Drup Festival Tour",
+      "contentType": "festival-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+      "contentHash": "f669076e8ddff098b6f92377b0dcf716210845d9d24cbd96f3f268307ba81fe5",
+      "metadata": {
+        "id": "festival-tour:9-day-jambay-lhakhang-drup-festival-tour",
+        "title": "9-Day Jambay Lhakhang Drup Festival Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
+        "contentType": "festival-tour",
+        "tourCategory": "festival",
+        "durationDays": 9,
+        "durationNights": 8,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Trongsa",
+          "Bumthang",
+          "Punakha",
+          "Gangtey"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Gangtey",
+        "interests": [
+          "Jambay Lhakhang Drup",
+          "Traakar Duchhoed",
+          "Bumthang",
+          "Trongsa",
+          "festival",
+          "culture"
+        ],
+        "travelSeason": [],
+        "festivalName": "Jambay Lhakhang Drup",
+        "lastUpdated": "2026-07-13",
+        "requiresVerification": true
+      }
+    }
+  ],
+  "contentTypes": {
+    "company": 1,
+    "contact": 1,
+    "policy": 2,
+    "planning": 1,
+    "travel-info": 2,
+    "regular-tour": 21,
+    "land-entry-tour": 23,
+    "cycling-tour": 14,
+    "festival-tour": 18
+  },
+  "failures": []
+}

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./itinerary-alignment.css";
+import "./chatbot.css";
+import { AiChatbot } from "./components/AiChatbot";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 import { siteConfig } from "./siteConfig";
 
 export const metadata: Metadata = {
@@ -102,6 +105,8 @@ export default function RootLayout({
           }}
         />
         {children}
+        <AiChatbot />
+        <FloatingWhatsApp />
       </body>
     </html>
   );

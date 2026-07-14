@@ -7,6 +7,7 @@ import {
   CheckCircle,
   ChevronRight,
   Clock,
+  Hash,
   MapPin,
   Users,
 } from "lucide-react";
@@ -16,6 +17,7 @@ import { Header } from "../components/Header";
 import { BookingClaritySection } from "../components/BookingClaritySection";
 import {
   TourImageSlot as ImageSlot,
+  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -270,6 +272,14 @@ function RoutePanel({
               <span>Best For</span>
               <strong>{route.bestFor}</strong>
             </div>
+
+            {route.tourCode ? (
+              <div>
+                <Hash aria-hidden="true" />
+                <span>Tour Code</span>
+                <strong>{route.tourCode}</strong>
+              </div>
+            ) : null}
           </div>
 
           <div className="cultural-pro-route-tags">
@@ -322,10 +332,14 @@ function RoutePanel({
         </div>
 
         <aside className="cultural-pro-route-media">
-          <ImageSlot image={route.image} className="cultural-pro-route-image" />
+          <ImageSlot
+            image={route.image}
+            className="cultural-pro-route-image"
+          />
 
           <div className="cultural-pro-route-note">
             <span>Land-Entry Focus</span>
+            <RateNote startingRate={route.startingRate} />
             <strong>{route.theme}</strong>
             <p>
               Border arrival timing, road conditions, sightseeing stops, and

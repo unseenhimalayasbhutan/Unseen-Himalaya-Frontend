@@ -119,6 +119,117 @@ export default function Contact() {
           </div>
         </section>
 
+        <section className="contact-pro-section contact-pro-section-warm">
+          <div className="container">
+            <div className="contact-pro-layout">
+              <div className="contact-pro-form-card">
+                <div className="contact-pro-section-header">
+                  <span className="contact-pro-section-line" />
+                  <span className="contact-pro-section-label">Trip Inquiry</span>
+                </div>
+
+                <h2 className="contact-pro-section-title">
+                  Share the basics and we will shape the right route.
+                </h2>
+                <p>
+                  This form helps you prepare the key details before contacting
+                  the team and keeps your inquiry focused for a faster reply.
+                </p>
+
+                <form className="contact-pro-form" action={contactLinks.email}>
+                  <div className="contact-pro-form-grid">
+                    <label>
+                      Full Name
+                      <input
+                        name="name"
+                        type="text"
+                        autoComplete="name"
+                        placeholder="Your name"
+                      />
+                    </label>
+
+                    <label>
+                      Email Address
+                      <input
+                        name="email"
+                        type="email"
+                        autoComplete="email"
+                        placeholder="you@example.com"
+                      />
+                    </label>
+
+                    <label>
+                      Travel Month
+                      <input
+                        name="travel-month"
+                        type="text"
+                        placeholder="October 2026"
+                      />
+                    </label>
+
+                    <label>
+                      What kind of Bhutan trip are you interested in?
+                      <select name="trip-type" defaultValue="">
+                        <option value="" disabled>
+                          Select a trip style
+                        </option>
+                        <option value="cultural">Cultural tour</option>
+                        <option value="festival">Festival journey</option>
+                        <option value="nature">Nature and soft adventure</option>
+                        <option value="trekking">Trekking</option>
+                        <option value="luxury">Premium or luxury travel</option>
+                        <option value="custom">Custom itinerary</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <label>
+                    Message
+                    <textarea
+                      name="message"
+                      rows={5}
+                      placeholder="Tell us your group size, duration, interests, route preferences, and any hotel category request."
+                    />
+                  </label>
+
+                  <button type="submit" className="contact-pro-submit-btn">
+                    Submit Inquiry
+                    <ArrowRight aria-hidden />
+                  </button>
+
+                  <p className="contact-pro-form-note">
+                    You can review and edit the message before sending it to
+                    Unseen Himalayas Bhutan.
+                  </p>
+                </form>
+              </div>
+
+              <aside className="contact-pro-side">
+                <div className="contact-pro-side-card">
+                  <h3>For faster replies</h3>
+                  <p>
+                    Include travel month, number of travellers, preferred
+                    duration, entry point, hotel style, and the tour package or
+                    experience you liked.
+                  </p>
+                </div>
+
+                <div className="contact-pro-side-card">
+                  <h3>Need urgent help?</h3>
+                  <p>
+                    WhatsApp is the fastest channel for quick planning questions,
+                    availability checks, and time-sensitive travel support.
+                  </p>
+                  <a href={contactLinks.whatsapp} className="contact-pro-inline-link">
+                    Chat on WhatsApp
+                    <FaWhatsapp aria-hidden />
+                  </a>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
         <section className="contact-pro-cta">
           <div className="container">
             <div className="contact-pro-cta-card">

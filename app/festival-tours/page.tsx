@@ -7,6 +7,7 @@ import {
   CheckCircle,
   ChevronRight,
   Clock,
+  Hash,
   MapPin,
   ShieldCheck,
   Users,
@@ -16,6 +17,7 @@ import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
 import {
   TourImageSlot as ImageSlot,
+  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -498,6 +500,14 @@ function FestivalPackagePanel({
               <span>Coverage</span>
               <strong>{pkg.coverage}</strong>
             </div>
+
+            {pkg.tourCode ? (
+              <div>
+                <Hash aria-hidden="true" />
+                <span>Tour Code</span>
+                <strong>{pkg.tourCode}</strong>
+              </div>
+            ) : null}
           </div>
 
           <div className="cultural-pro-route-tags">
@@ -560,6 +570,7 @@ function FestivalPackagePanel({
 
           <div className="cultural-pro-route-note">
             <span>Festival routing note</span>
+            <RateNote startingRate={pkg.startingRate} />
             <strong>{pkg.bestFor}</strong>
             <p>
               Hotel location, festival viewing time, road travel, domestic

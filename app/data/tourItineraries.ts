@@ -14,6 +14,8 @@ export type ItineraryRoute = {
   slug: string;
   name: string;
   duration: string;
+  tourCode?: string;
+  startingRate?: number;
   route: string;
   theme: string;
   summary: string;
@@ -123,6 +125,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "3-day-paro-thimphu-paro",
     "name": "3-Day Paro & Thimphu Essentials",
     "duration": "3 Days / 2 Nights",
+    "tourCode": "UH-NAC-001",
+    "startingRate": 25910,
     "route": "Paro • Thimphu • Paro",
     "theme": "Short Cultural Tour",
     "summary": "For travelers with limited time who still want Thimphu highlights and Tiger’s Nest.",
@@ -178,6 +182,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "3-day-paro-paro",
     "name": "3-Day Paro Valley Short Escape",
     "duration": "3 Days / 2 Nights",
+    "tourCode": "UH-NAC-002",
+    "startingRate": 26833,
     "route": "Paro • Paro",
     "theme": "Short Paro Tour",
     "summary": "A compact Paro-based journey focused on dzongs, museums, Tiger’s Nest, and local culture.",
@@ -230,6 +236,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "4-day-paro-punakha-paro",
     "name": "4-Day Punakha Quick Journey",
     "duration": "4 Days / 3 Nights",
+    "tourCode": "UH-NAC-003",
+    "startingRate": 34500,
     "route": "Paro • Punakha • Paro",
     "theme": "Scenic Valley Tour",
     "summary": "A fast-paced route for travelers who want Punakha Dzong, valley views, and Tiger’s Nest.",
@@ -297,6 +305,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "4-day-paro-thimphu-paro",
     "name": "4-Day Thimphu & Paro Cultural Intro",
     "duration": "4 Days / 3 Nights",
+    "tourCode": "UH-NAC-004",
+    "startingRate": 36192,
     "route": "Paro • Thimphu • Paro",
     "theme": "Cultural Introduction",
     "summary": "A balanced short itinerary combining Thimphu culture, Paro heritage, and Tiger’s Nest.",
@@ -363,6 +373,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "5-day-classic-western-bhutan",
     "name": "5-Day Classic Western Bhutan",
     "duration": "5 Days / 4 Nights",
+    "tourCode": "UH-NAC-005",
+    "startingRate": 44859,
     "route": "Paro • Thimphu • Punakha • Paro",
     "theme": "Classic Western Bhutan",
     "summary": "A strong first-time route with Thimphu, Punakha, Dochula, Paro, and Tiger’s Nest.",
@@ -443,6 +455,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "6-day-punakha-depth",
     "name": "6-Day Punakha Culture & Valley Journey",
     "duration": "6 Days / 5 Nights",
+    "tourCode": "UH-NAC-006",
+    "startingRate": 53026,
     "route": "Paro • Thimphu • Punakha • Paro",
     "theme": "Punakha Focus",
     "summary": "A deeper Punakha-focused route with rural activities, dzongs, hikes, and Paro highlights.",
@@ -542,6 +556,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "6-day-thimphu-punakha-paro",
     "name": "6-Day Thimphu, Punakha & Paro Classic",
     "duration": "6 Days / 5 Nights",
+    "tourCode": "UH-NAC-007",
+    "startingRate": 53218,
     "route": "Paro • Thimphu • Punakha • Paro",
     "theme": "Classic Culture",
     "summary": "A comfortable classic itinerary with museums, markets, Punakha Dzong, and Tiger’s Nest.",
@@ -635,6 +651,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "7-day-bhutan-valley-explorer",
     "name": "7-Day Bhutan Valley Explorer",
     "duration": "7 Days / 6 Nights",
+    "tourCode": "UH-NAC-008",
+    "startingRate": 62269,
     "route": "Paro • Thimphu • Punakha • Phobjikha • Paro",
     "theme": "Nature & Culture",
     "summary": "A rewarding route adding Phobjikha/Gangtey and black-necked crane landscapes.",
@@ -741,6 +759,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "8-day-gangtey-phobjikha",
     "name": "8-Day Gangtey & Phobjikha Journey",
     "duration": "8 Days / 7 Nights",
+    "tourCode": "UH-NAC-009",
+    "startingRate": 71321,
     "route": "Paro • Thimphu • Punakha • Gangtey • Paro",
     "theme": "Gangtey Focus",
     "summary": "An extended route with more time in Gangtey and Phobjikha Valley.",
@@ -848,6 +868,8 @@ export const itineraries: ItineraryRoute[] = [
     "slug": "8-day-punakha-phobjikha-depth",
     "name": "8-Day Punakha & Phobjikha In-Depth",
     "duration": "8 Days / 7 Nights",
+    "tourCode": "UH-NAC-010",
+    "startingRate": 69936,
     "route": "Paro • Thimphu • Punakha • Phobjikha • Paro",
     "theme": "In-Depth Western Bhutan",
     "summary": "A fuller route with additional Punakha sightseeing and a scenic Phobjikha extension.",
