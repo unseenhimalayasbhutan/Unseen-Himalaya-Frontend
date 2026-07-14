@@ -33820,3 +33820,111 @@ body {
     overflow-wrap: anywhere;
   }
 }
+
+/* Text containment guardrails for high-density cards and tour price notes */
+:is(
+  .tour-pro-route-rate-note,
+  .tour-pro-route-rate-note strong,
+  .tour-pro-route-rate-note p,
+  .cultural-pro-route-note,
+  .cultural-pro-route-note strong,
+  .cultural-pro-route-note p,
+  .cultural-pro-route-main h3,
+  .cultural-pro-route-main > p,
+  .cultural-pro-route-option,
+  .cultural-pro-route-option-content,
+  .cultural-pro-route-option-content > span,
+  .cultural-pro-route-option-content strong,
+  .cultural-pro-route-option-content small,
+  .cultural-pro-route-facts > div,
+  .cultural-pro-route-facts span,
+  .cultural-pro-route-facts strong,
+  .cultural-pro-route-tags span,
+  .cultural-pro-day-item,
+  .cultural-pro-day-content,
+  .cultural-pro-day-content h4,
+  .cultural-pro-day-content li span,
+  .uh-package-card,
+  .uh-package-card-content,
+  .uh-package-card-content h3,
+  .uh-package-card-content p,
+  .uh-package-card-meta span,
+  .uh-package-card-footer,
+  .uh-package-preview,
+  .uh-package-preview h3,
+  .uh-package-preview p,
+  .contact-pro-card,
+  .contact-pro-card h3,
+  .contact-pro-card p,
+  .contact-pro-card span,
+  .contact-pro-form-card,
+  .contact-pro-form-card h2,
+  .contact-pro-form-card p,
+  .contact-pro-side-card,
+  .contact-pro-side-card h3,
+  .contact-pro-side-card p,
+  .tour-pro-stat-card,
+  .tour-pro-stat-card strong,
+  .tour-pro-stat-card span,
+  .uh-bhutan-custom-card,
+  .uh-bhutan-custom-card h3,
+  .uh-bhutan-custom-card p,
+  .faq-item,
+  .faq-item h3,
+  .faq-item p
+) {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+:is(
+  .cultural-pro-route-option-content > span,
+  .cultural-pro-route-tags span,
+  .tour-pro-filter-btn,
+  .uh-duration-filter-btn,
+  .uh-itinerary-redesign-filter-btn,
+  .uh-festival-library-redesign-filter-btn,
+  .festival-calendar-redesign-month-tab
+) {
+  max-width: 100%;
+  white-space: normal;
+}
+
+.tour-pro-route-rate-note strong {
+  font-size: clamp(13px, 1.25vw, 16px);
+}
+
+@media (max-width: 860px) {
+  .contact-pro-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .tour-pro-route-rate-note {
+    padding: 11px 12px;
+  }
+
+  .tour-pro-route-rate-note strong {
+    font-size: 13px;
+  }
+
+  .tour-pro-route-rate-note p {
+    font-size: 11px;
+  }
+
+  .cultural-pro-route-facts > div {
+    padding: 13px;
+  }
+
+  .cultural-pro-route-option-content > span {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-pro-cards-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
