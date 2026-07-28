@@ -14,14 +14,19 @@ import {
 
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import { BookingClaritySection } from "../components/BookingClaritySection";
 import {
   TourImageSlot as ImageSlot,
   TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
+import {
+  ItineraryPackageShowcase,
+  type PackageShowcaseItem,
+} from "../components/ItineraryPackageShowcase";
 import { landEntryItineraries as landEntryRoutes } from "../data/landEntryItineraries";
+import { getB2cUsdPrice } from "../data/tourPricing";
+import { sortPackages } from "../data/packageShowcases";
 
 type LandEntryValue = {
   title: string;
@@ -39,6 +44,27 @@ function getItineraryIndexFromHash() {
 
   return landEntryRoutes.findIndex((route) => route.slug === hashSlug);
 }
+
+const landEntryShowcasePackages: PackageShowcaseItem[] = landEntryRoutes.map(
+  (route) => ({
+    slug: route.slug,
+    title: route.name,
+    duration: route.duration,
+    route: route.route,
+    summary: route.summary,
+    bestFor: route.bestFor,
+    theme: route.theme,
+    image: route.image,
+    tags: route.tags,
+    tourCode: route.tourCode,
+    pricing: getB2cUsdPrice(route.tourCode),
+    days: route.days.map((day, index) => ({
+      label: `Day ${String(index + 1).padStart(2, "0")}`,
+      title: day.title.replace(/^Day\s*\d+\s*:\s*/i, ""),
+      activities: day.activities,
+    })),
+  })
+);
 
 export default function LandEntryToursPage() {
   const [activeRoute, setActiveRoute] = useState(0);
@@ -134,6 +160,15 @@ export default function LandEntryToursPage() {
           </div>
         </section>
 
+        <ItineraryPackageShowcase
+          eyebrow="Land-Entry Tour Packages"
+          title="Choose a Bhutan route from Phuentsholing."
+          subtitle="Browse packages in a simple card grid, then open the itinerary, cost/inclusions, terms, and more package options in the detail tabs."
+          routeLabel="Land-Entry Route"
+          packages={sortPackages(landEntryShowcasePackages)}
+          detailBasePath="/land-entry-tours"
+        />
+
         <section
           id="land-entry-itineraries"
           className="tour-pro-section tour-pro-section-warm uh-itinerary-section cultural-pro-itinerary-section"
@@ -223,7 +258,6 @@ export default function LandEntryToursPage() {
           </div>
         </section>
 
-        <BookingClaritySection subtitle="A separate section for the practical details guests and partners should understand before confirming a land-entry tour." />
       </main>
 
       <Footer />

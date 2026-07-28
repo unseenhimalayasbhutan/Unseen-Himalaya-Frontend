@@ -20,7 +20,6 @@ import {
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
-import { BookingClaritySection } from "../components/BookingClaritySection";
 import {
   TourImageSlot as ImageSlot,
   TourRateNote as RateNote,
@@ -28,17 +27,44 @@ import {
   type ImageAsset,
 } from "../components/TourPagePrimitives";
 import {
+  ItineraryPackageShowcase,
+  type PackageShowcaseItem,
+} from "../components/ItineraryPackageShowcase";
+import {
   customizableItems,
   durationFilters,
   itineraries,
 } from "../data/tourItineraries";
 import { photographyTourCodes } from "../data/photographyTourCodes";
+import { getB2cUsdPrice } from "../data/tourPricing";
+import { sortPackages } from "../data/packageShowcases";
 
 const getDurationId = (duration: string) =>
   duration.split(" ")[0].replace(/[^0-9]/g, "");
 
 const getDurationFilterId = (duration: string) =>
   `${getDurationId(duration)}days`;
+
+const photographyShowcasePackages: PackageShowcaseItem[] = itineraries.map(
+  (route) => ({
+    slug: route.slug,
+    title: route.name,
+    duration: route.duration,
+    route: route.route,
+    summary: route.summary,
+    bestFor: route.bestFor,
+    theme: route.theme,
+    image: route.image,
+    tags: route.tags,
+    tourCode: photographyTourCodes[route.slug] || route.tourCode,
+    pricing: getB2cUsdPrice(route.tourCode),
+    days: route.days.map((day, index) => ({
+      label: `Day ${String(index + 1).padStart(2, "0")}`,
+      title: day.title.replace(/^Day\s*\d+\s*:\s*/i, ""),
+      activities: day.activities,
+    })),
+  })
+);
 
 export default function BhutanToursPage() {
   const [activeDuration, setActiveDuration] = useState("all");
@@ -142,6 +168,15 @@ export default function BhutanToursPage() {
             </div>
           </div>
         </section>
+
+        <ItineraryPackageShowcase
+          eyebrow="Photography Tour Packages"
+          title="Choose a Bhutan photography route."
+          subtitle="Browse packages in a simple card grid, then open the itinerary, cost/inclusions, terms, and more package options in the detail tabs."
+          routeLabel="Photography Route"
+          packages={sortPackages(photographyShowcasePackages)}
+          detailBasePath="/bhutan-tours"
+        />
 
         <section
           id="itinerary-library"
@@ -259,11 +294,6 @@ export default function BhutanToursPage() {
             </div>
           </div>
         </section>
-
-        <BookingClaritySection
-          id="bhutan-tour-booking-clarity"
-          subtitle="A separate section for the practical details guests should understand before confirming a photography tour."
-        />
 
         <section className="tour-pro-section tour-pro-section-white">
           <div className="container">

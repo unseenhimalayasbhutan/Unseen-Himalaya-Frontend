@@ -24,7 +24,7 @@ export function TourImageSlot({
   const resolvedSrc = image.src.trim() || getFallbackImage(image.label);
   const formattedRate =
     typeof startingRate === "number"
-      ? `Starting at Nu. ${startingRate.toLocaleString("en-US")} + 5% GST`
+      ? `Starting from Nu. ${startingRate.toLocaleString("en-US")}`
       : "";
 
   return (
@@ -59,8 +59,8 @@ export function TourImageSlot({
 export function TourRateNote({ startingRate }: { startingRate?: number }) {
   const formattedRate =
     typeof startingRate === "number"
-      ? `Starting at Nu. ${startingRate.toLocaleString("en-US")} + 5% GST`
-      : "Rate on request + 5% GST";
+      ? `Starting from Nu. ${startingRate.toLocaleString("en-US")}`
+      : "Rate on request";
 
   return (
     <div className="tour-pro-route-rate-note">

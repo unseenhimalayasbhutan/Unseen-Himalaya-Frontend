@@ -33937,3 +33937,857 @@ body {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Heavenly Bhutan inspired package grid and detail tabs */
+
+.uh-package-showcase-section {
+  background: #fff;
+}
+
+.cultural-pro-itinerary-section,
+.uh-itinerary-redesign-section,
+.uh-festival-accordion-section,
+.uh-bhutan-booking-clarity-section {
+  display: none;
+}
+
+.uh-hb-detail-page-section {
+  padding-top: clamp(110px, 12vw, 150px);
+}
+
+.uh-hb-page-title {
+  max-width: 940px;
+  margin-bottom: 28px;
+}
+
+.uh-hb-page-title span {
+  color: #a97931;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.uh-hb-page-title h1 {
+  margin: 8px 0 0;
+  color: var(--dark, #1f1a14);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.uh-hb-page-title p {
+  margin: 12px 0 0;
+  color: var(--muted, #786f63);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.uh-hb-package-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(24px, 3vw, 38px);
+  margin-top: 40px;
+}
+
+.uh-hb-package-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(196, 155, 82, 0.18);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 16px 42px rgba(92, 75, 52, 0.07);
+}
+
+.uh-hb-package-media-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  text-align: left;
+  text-decoration: none;
+}
+
+.uh-hb-package-image,
+.uh-hb-package-image .tour-pro-image-frame {
+  margin: 0;
+  border-radius: 0;
+}
+
+.uh-hb-package-image .tour-pro-image-frame {
+  min-height: 0;
+  height: 250px;
+}
+
+.uh-hb-package-image .tour-pro-image-credit,
+.uh-hb-detail-image .tour-pro-image-credit,
+.uh-hb-thumb-image .tour-pro-image-credit,
+.uh-hb-more-image .tour-pro-image-credit {
+  display: none;
+}
+
+.uh-hb-day-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 74px;
+  height: 74px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold, #c49b52);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 12px 28px rgba(196, 155, 82, 0.28);
+}
+
+.uh-hb-day-badge strong {
+  display: block;
+  margin-bottom: -16px;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 950;
+}
+
+.uh-hb-day-badge span {
+  display: block;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.uh-hb-package-body {
+  padding: 14px 14px 18px;
+}
+
+.uh-hb-package-body h3 {
+  min-height: 48px;
+  margin: 0;
+  color: var(--dark, #1f1a14);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.uh-hb-package-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  gap: 12px;
+  align-items: end;
+  margin-top: 12px;
+}
+
+.uh-hb-package-price,
+.uh-hb-package-meta {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.uh-hb-package-price span,
+.uh-hb-package-meta span {
+  color: var(--muted, #786f63);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.uh-hb-package-price strong {
+  color: #a97931;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.uh-hb-package-meta strong {
+  color: var(--dark, #1f1a14);
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.uh-hb-view-trip-btn {
+  min-height: 43px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 16px;
+  background: var(--gold, #c49b52);
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.uh-hb-view-trip-btn:hover,
+.uh-hb-view-trip-btn:focus-visible {
+  background: #a97931;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.uh-hb-detail-shell {
+  margin-top: 52px;
+  scroll-margin-top: 130px;
+}
+
+.uh-hb-detail-hero {
+  max-width: 940px;
+}
+
+.uh-hb-detail-image,
+.uh-hb-detail-image .tour-pro-image-frame {
+  margin: 0;
+  border-radius: 0;
+}
+
+.uh-hb-detail-image .tour-pro-image-frame {
+  min-height: 0;
+  height: clamp(340px, 48vw, 560px);
+}
+
+.uh-hb-detail-thumbnail-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.uh-hb-detail-thumb {
+  width: 150px;
+  border: 1px solid rgba(196, 155, 82, 0.24);
+  border-radius: 16px;
+  padding: 4px;
+  background: #fff;
+}
+
+.uh-hb-thumb-image,
+.uh-hb-thumb-image .tour-pro-image-frame {
+  margin: 0;
+  border-radius: 0;
+}
+
+.uh-hb-thumb-image .tour-pro-image-frame {
+  min-height: 0;
+  height: 90px;
+}
+
+.uh-hb-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 34px;
+}
+
+.uh-hb-tab {
+  min-height: 52px;
+  border: 1px solid transparent;
+  border-radius: 16px 16px 0 0;
+  padding: 0 20px;
+  background: rgba(246, 234, 212, 0.78);
+  color: #7d6541;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.uh-hb-tab.is-active {
+  border-color: rgba(196, 155, 82, 0.48);
+  background: var(--gold, #c49b52);
+  color: #fff;
+}
+
+.uh-hb-detail-panel {
+  max-width: 940px;
+  min-height: 320px;
+  border: 1px solid rgba(196, 155, 82, 0.22);
+  border-radius: 0 22px 22px 22px;
+  padding: clamp(20px, 3vw, 34px);
+  background: #fff;
+}
+
+.uh-hb-detail-heading span {
+  color: #a97931;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.uh-hb-detail-heading h3 {
+  margin: 8px 0 0;
+  color: var(--dark, #1f1a14);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.22;
+  font-weight: 850;
+}
+
+.uh-hb-detail-heading p {
+  max-width: 760px;
+  margin: 12px 0 0;
+  color: var(--muted, #786f63);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.uh-hb-fact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.uh-hb-fact-grid > div {
+  min-width: 0;
+  display: grid;
+  gap: 6px;
+  border: 1px solid rgba(196, 155, 82, 0.18);
+  padding: 13px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.uh-hb-fact-grid svg {
+  width: 18px;
+  height: 18px;
+  color: var(--gold, #c49b52);
+}
+
+.uh-hb-fact-grid span {
+  color: #a97931;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.uh-hb-fact-grid strong {
+  color: var(--dark, #1f1a14);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.uh-hb-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.uh-hb-tag-row span {
+  border: 1px solid rgba(196, 155, 82, 0.22);
+  border-radius: 999px;
+  padding: 7px 10px;
+  background: rgba(196, 155, 82, 0.1);
+  color: #6b573b;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.uh-hb-day-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.uh-hb-day-card {
+  border-top: 1px solid rgba(196, 155, 82, 0.18);
+  padding-top: 18px;
+}
+
+.uh-hb-day-card h4 {
+  margin: 0;
+  color: var(--dark, #1f1a14);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 850;
+}
+
+.uh-hb-day-card ul,
+.uh-hb-cost-grid ul {
+  display: grid;
+  gap: 9px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.uh-hb-day-card li,
+.uh-hb-cost-grid li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #5d4d3b;
+  font-size: 14px;
+  line-height: 1.58;
+}
+
+.uh-hb-day-card li svg,
+.uh-hb-cost-grid li svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  margin-top: 4px;
+  color: var(--gold, #c49b52);
+}
+
+.uh-hb-price-table-wrap {
+  overflow-x: auto;
+  margin-top: 22px;
+  border: 1px solid rgba(196, 155, 82, 0.22);
+}
+
+.uh-hb-price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.uh-hb-price-table th,
+.uh-hb-price-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid rgba(196, 155, 82, 0.16);
+  border-right: 1px solid rgba(196, 155, 82, 0.16);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.uh-hb-price-table th:last-child,
+.uh-hb-price-table td:last-child {
+  border-right: 0;
+}
+
+.uh-hb-price-table th {
+  background: rgba(246, 234, 212, 0.68);
+  color: #6b573b;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.uh-hb-price-table td {
+  color: var(--dark, #1f1a14);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.uh-hb-price-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.uh-hb-package-cost-table caption {
+  caption-side: top;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(196, 155, 82, 0.24);
+  background: rgba(246, 234, 212, 0.82);
+  color: #a97931;
+  font-size: 15px;
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.uh-hb-package-cost-table a {
+  color: #a97931;
+  font-weight: 900;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.uh-hb-price-pending {
+  margin: 18px 0 0;
+  border-left: 4px solid var(--gold, #c49b52);
+  padding: 12px 14px;
+  background: rgba(196, 155, 82, 0.1);
+  color: #5d4d3b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.uh-hb-cost-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 26px;
+}
+
+.uh-hb-cost-grid h4 {
+  margin: 0;
+  color: var(--dark, #1f1a14);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.uh-hb-more-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.uh-hb-more-card {
+  min-width: 0;
+  display: grid;
+  gap: 8px;
+  border: 1px solid rgba(196, 155, 82, 0.18);
+  border-radius: 18px;
+  padding: 0 0 14px;
+  background: rgba(255, 255, 255, 0.9);
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.uh-hb-more-image,
+.uh-hb-more-image .tour-pro-image-frame {
+  margin: 0;
+  border-radius: 0;
+}
+
+.uh-hb-more-image .tour-pro-image-frame {
+  min-height: 0;
+  height: 150px;
+}
+
+.uh-hb-more-card span,
+.uh-hb-more-card strong,
+.uh-hb-more-card small {
+  margin-inline: 12px;
+}
+
+.uh-hb-more-card span {
+  color: #a97931;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.uh-hb-more-card strong {
+  color: var(--dark, #1f1a14);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.uh-hb-more-card small {
+  color: #a97931;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+@media (max-width: 1180px) {
+  .uh-hb-package-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .uh-hb-fact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .uh-hb-package-grid,
+  .uh-hb-more-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .uh-hb-cost-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .uh-hb-package-grid,
+  .uh-hb-more-grid,
+  .uh-hb-fact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .uh-hb-package-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .uh-hb-view-trip-btn {
+    width: 100%;
+  }
+
+  .uh-hb-detail-image .tour-pro-image-frame {
+    height: 300px;
+  }
+
+  .uh-hb-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .uh-hb-tab {
+    min-height: 48px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   SITE-WIDE CONSISTENCY PASS
+   ========================================================= */
+
+:root {
+  --font-body: "Poppins", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --surface-clean: #fff;
+  --surface-warm: var(--cream, #fffaf2);
+  --surface-soft: var(--cream-2, #f8efe0);
+  --brand-card: rgba(255, 255, 255, 0.92);
+  --brand-border: rgba(196, 155, 82, 0.2);
+  --brand-shadow: 0 18px 48px rgba(92, 75, 52, 0.08);
+  --brand-radius-card: 22px;
+  --brand-radius-control: 999px;
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  color: var(--text, #3f3528);
+  background: #fff;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-body);
+}
+
+:where(
+  .tour-pro-section-heading,
+  .section-heading,
+  .trekking-section-header,
+  .trekking-section-header-center,
+  .uh-packages-heading,
+  .uh-hb-section-heading,
+  .contact-pro-section,
+  .faq-section,
+  .facts-section,
+  .tour-pro-card,
+  .tour-pro-package-card,
+  .tour-pro-info-card,
+  .trekking-card,
+  .trekking-trek-card,
+  .trekking-difficulty-card,
+  .trekking-season-card,
+  .contact-pro-card,
+  .faq-card,
+  .faq-item,
+  .facts-card,
+  .uh-package-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .uh-hb-more-card
+) :is(h1, h2, h3, h4),
+:where(.site-footer) h3,
+:where(.site-footer) h4 {
+  font-family: var(--font-heading);
+  color: var(--dark, #2f281f);
+  letter-spacing: 0;
+}
+
+:where(
+  .tour-pro-card,
+  .tour-pro-package-card,
+  .tour-pro-info-card,
+  .trekking-card,
+  .trekking-trek-card,
+  .trekking-difficulty-card,
+  .trekking-season-card,
+  .contact-pro-card,
+  .faq-card,
+  .faq-item,
+  .facts-card,
+  .uh-package-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .uh-hb-more-card
+) :is(strong, b, th) {
+  color: var(--dark, #2f281f);
+}
+
+:where(main) :is(a:not([class]), .text-link) {
+  color: var(--gold-dark, #ac843f);
+  text-underline-offset: 3px;
+}
+
+:where(
+  .tour-pro-section-heading,
+  .section-heading,
+  .trekking-section-header,
+  .trekking-section-header-center,
+  .uh-packages-heading,
+  .uh-hb-section-heading
+) :is(span, small, .tour-pro-section-label, .trekking-section-header-label) {
+  color: var(--gold-dark, #ac843f);
+}
+
+:where(
+  .tour-pro-page,
+  .cultural-pro-page,
+  .festival-pro-page,
+  .land-entry-pro-page,
+  .trekking-page,
+  .contact-pro-page,
+  .faq-page,
+  .facts-page,
+  .uh-package-showcase-section,
+  .uh-hb-detail-page
+) {
+  color: var(--text, #3f3528);
+  background: var(--surface-clean);
+}
+
+:where(
+  .tour-pro-section-warm,
+  .tour-pro-section-soft,
+  .trekking-section-beige,
+  .trekking-section-soft,
+  .festival-calendar-redesign-section,
+  .uh-package-showcase-section
+) {
+  background:
+    linear-gradient(180deg, var(--surface-warm) 0%, var(--surface-soft) 52%, var(--surface-warm) 100%);
+}
+
+:where(
+  .tour-pro-section-white,
+  .trekking-section-white,
+  .contact-pro-section,
+  .faq-section,
+  .facts-section
+) {
+  background: var(--surface-clean);
+}
+
+:where(
+  .feature-card,
+  .bottom-card,
+  .info-card,
+  .journey-card,
+  .destination-card,
+  .tour-pro-card,
+  .tour-pro-package-card,
+  .tour-pro-info-card,
+  .tour-pro-day-card,
+  .trekking-card,
+  .trekking-trek-card,
+  .trekking-difficulty-card,
+  .trekking-season-card,
+  .trekking-info-card,
+  .contact-pro-card,
+  .faq-card,
+  .faq-item,
+  .facts-card,
+  .uh-package-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .uh-hb-more-card
+) {
+  border: 1px solid var(--brand-border);
+  border-radius: var(--brand-radius-card);
+  background: var(--brand-card);
+  box-shadow: var(--brand-shadow);
+}
+
+:where(
+  .tour-pro-btn-primary,
+  .tour-pro-cta-primary,
+  .home-hero-btn-primary,
+  .cta-btn,
+  .cta-button,
+  .primary-btn,
+  .button-primary,
+  .trekking-trek-btn-primary,
+  .trekking-cta-btn-primary,
+  .contact-pro-submit,
+  .uh-hb-view-trip-btn,
+  .uh-hb-tab-active
+) {
+  border-color: var(--gold, #c49b52);
+  background: var(--gold, #c49b52);
+  color: #fff;
+}
+
+:where(
+  .tour-pro-btn-primary,
+  .tour-pro-cta-primary,
+  .home-hero-btn-primary,
+  .cta-btn,
+  .cta-button,
+  .primary-btn,
+  .button-primary,
+  .trekking-trek-btn-primary,
+  .trekking-cta-btn-primary,
+  .contact-pro-submit,
+  .uh-hb-view-trip-btn
+):hover {
+  border-color: var(--gold-dark, #ac843f);
+  background: var(--gold-dark, #ac843f);
+  color: #fff;
+}
+
+:where(
+  .tour-pro-btn-secondary,
+  .home-hero-btn-secondary,
+  .secondary-btn,
+  .button-secondary,
+  .trekking-trek-btn-secondary,
+  .uh-hb-tab
+) {
+  border-color: var(--brand-border);
+  background: rgba(255, 250, 242, 0.82);
+  color: var(--dark, #2f281f);
+}
+
+:where(
+  .badge,
+  .pill,
+  .tag,
+  .eyebrow,
+  .tour-pro-badge,
+  .tour-pro-pill,
+  .trekking-badge,
+  .trekking-tag,
+  .trekking-section-header-label,
+  .uh-hb-day-badge,
+  .uh-hb-card-badge
+) {
+  border-color: rgba(196, 155, 82, 0.24);
+  background: rgba(196, 155, 82, 0.1);
+  color: var(--gold-dark, #ac843f);
+}
+
+:where(input, textarea, select) {
+  border-color: var(--brand-border);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text, #3f3528);
+}
+
+:where(input, textarea, select):focus {
+  border-color: var(--gold, #c49b52);
+  outline: 2px solid rgba(196, 155, 82, 0.18);
+  outline-offset: 2px;
+}
+
+:where(table) {
+  border-color: var(--brand-border);
+}
+
+:where(th) {
+  background: rgba(246, 234, 212, 0.78);
+}

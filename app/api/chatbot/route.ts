@@ -350,7 +350,7 @@ function buildGuardedFallbackReply({
     }
 
     if (!hasSpecificTripDetail) {
-      return "Package pages show Standard Tour starting rates for 3-star hotels, plus 5% GST.\nSDF is extra: USD 100 per night per person for foreign nationals, or Nu. 1,200 per night per person for Indian nationals.\nPremium/Luxury hotels can be upgraded. How many people and how many days?";
+      return "Package pages show B2C starting rates in USD for 3-star Standard Tours.\nSDF is extra: USD 100 per night per person for foreign nationals, or Nu. 1,200 per night per person for Indian nationals.\nPremium/Luxury hotels can be upgraded. How many people and how many days?";
     }
 
     const lines = recommendations.length
@@ -362,7 +362,7 @@ function buildGuardedFallbackReply({
           .join(" ")
       : "Displayed tour pages use starting rates, and final pricing must be confirmed.";
 
-    return `${lines}\nRates are for 3-star Standard Tours, plus 5% GST. SDF is extra: USD 100 per night per person for foreign nationals, or Nu. 1,200 per night per person for Indian nationals. Premium/Luxury upgrades can be quoted.\nHow many people and how many days?`;
+    return `${lines}\nRates are for 3-star Standard Tours. SDF is extra: USD 100 per night per person for foreign nationals, or Nu. 1,200 per night per person for Indian nationals. Premium/Luxury upgrades can be quoted.\nHow many people and how many days?`;
   }
 
   if (intent === "booking" || intent === "human_agent" || intent === "b2b" || intent === "urgent") {

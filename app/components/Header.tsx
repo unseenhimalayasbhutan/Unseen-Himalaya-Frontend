@@ -252,6 +252,42 @@ function setGoogleTranslateCookie(languageCode: string) {
   }
 }
 
+function clearGoogleTranslateState() {
+  if (typeof window === "undefined") return;
+
+  const expires = "Thu, 01 Jan 1970 00:00:00 GMT";
+  const hostname = window.location.hostname;
+  const domainCandidates = new Set<string>();
+
+  document.cookie = `googtrans=; path=/; expires=${expires}; max-age=0; SameSite=Lax`;
+
+  if (hostname) {
+    domainCandidates.add(hostname);
+    domainCandidates.add(`.${hostname}`);
+
+    const parts = hostname.split(".");
+    for (let index = 0; index < parts.length - 1; index += 1) {
+      domainCandidates.add(`.${parts.slice(index).join(".")}`);
+    }
+  }
+
+  domainCandidates.forEach((domain) => {
+    document.cookie = `googtrans=; path=/; domain=${domain}; expires=${expires}; max-age=0; SameSite=Lax`;
+  });
+
+  [window.localStorage, window.sessionStorage].forEach((storage) => {
+    try {
+      Object.keys(storage).forEach((key) => {
+        if (key.toLowerCase().includes("translate")) {
+          storage.removeItem(key);
+        }
+      });
+    } catch {
+      // Storage can be unavailable in restricted browser modes.
+    }
+  });
+}
+
 function applyGoogleTranslate(languageCode: string) {
   const combo = document.querySelector<HTMLSelectElement>(".goog-te-combo");
 
@@ -394,6 +430,8 @@ export function Header() {
     setGoogleTranslateCookie(languageCode);
 
     if (!languageCode) {
+      applyGoogleTranslate("");
+      clearGoogleTranslateState();
       window.location.reload();
       return;
     }

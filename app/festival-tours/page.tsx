@@ -3,13 +3,11 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import {
-  CalendarDays,
   CheckCircle,
   ChevronRight,
   Clock,
   Hash,
   MapPin,
-  ShieldCheck,
   Users,
 } from "lucide-react";
 import { Header } from "../components/Header";
@@ -22,10 +20,15 @@ import {
   type ImageAsset,
 } from "../components/TourPagePrimitives";
 import {
+  ItineraryPackageShowcase,
+  type PackageShowcaseItem,
+} from "../components/ItineraryPackageShowcase";
+import {
   festivalPackages,
   type FestivalPackage,
 } from "../data/festivalPackages";
-import { tourExclusions, tourInclusions } from "../data/tourItineraries";
+import { getB2cUsdPrice } from "../data/tourPricing";
+import { sortPackages } from "../data/packageShowcases";
 
 const removedFestivalPackageTitles = new Set([
   "5-Day Chhukha Tshechu Land-Entry Festival Tour",
@@ -35,6 +38,33 @@ const removedFestivalPackageTitles = new Set([
 const visibleFestivalPackages = festivalPackages.filter(
   (pkg) => !removedFestivalPackageTitles.has(pkg.title)
 );
+
+const festivalShowcasePackages: PackageShowcaseItem[] =
+  visibleFestivalPackages.map((pkg) => {
+    const slug = pkg.title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
+
+    return {
+      slug,
+      title: pkg.title,
+      duration: pkg.duration,
+      route: pkg.coverage,
+      summary: pkg.summary,
+      bestFor: pkg.bestFor,
+      theme: pkg.dates,
+      image: pkg.image,
+      tags: pkg.festivals,
+      tourCode: pkg.tourCode,
+      pricing: getB2cUsdPrice(pkg.tourCode),
+      days: pkg.days.map((day) => ({
+        label: `Day ${day.day}`,
+        title: day.title,
+        activities: day.activities,
+      })),
+    };
+  });
 
 type FestivalItem = {
   name: string;
@@ -171,6 +201,15 @@ export default function FestivalToursPage() {
           </div>
         </section>
 
+        <ItineraryPackageShowcase
+          eyebrow="Festival Tour Packages"
+          title="Choose a Bhutan festival journey."
+          subtitle="Browse packages in a simple card grid, then open the itinerary, cost/inclusions, terms, and more package options in the detail tabs."
+          routeLabel="Festival Route"
+          packages={sortPackages(festivalShowcasePackages)}
+          detailBasePath="/festival-tours"
+        />
+
         <section
           id="festival-itineraries"
           className="tour-pro-section tour-pro-section-warm uh-festival-accordion-section uh-festival-library-redesign-section"
@@ -292,124 +331,6 @@ export default function FestivalToursPage() {
                     />
                   ) : null}
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          id="festival-booking-clarity"
-          className="tour-pro-section tour-pro-section-white uh-bhutan-booking-clarity-section"
-        >
-          <div className="container">
-            <SectionHeader
-              eyebrow="Booking Clarity"
-              title="Tour inclusions, exclusions, reservation policies, and terms & conditions."
-              subtitle="A separate section for the practical details guests and partners should understand before confirming a festival tour."
-            />
-
-            <div className="uh-bhutan-booking-clarity-shell">
-              <div className="uh-bhutan-booking-clarity-overview">
-                <div className="uh-bhutan-booking-clarity-copy">
-                  <span>Before confirmation</span>
-
-                  <p>
-                    Every itinerary can be customized. This section separates the
-                    business details from the day-by-day itinerary so clients can
-                    clearly see what is included, what is excluded, and what must
-                    be confirmed before travel.
-                  </p>
-                </div>
-              </div>
-
-              <div className="uh-bhutan-booking-clarity-grid">
-                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-primary">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <CheckCircle aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Included Services</span>
-                      <h4>Tour Inclusions</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {tourInclusions.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-
-                <article className="uh-bhutan-booking-clarity-card">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <ChevronRight aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Not Included</span>
-                      <h4>Important Exclusions</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {tourExclusions.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-
-                <article className="uh-bhutan-booking-clarity-card">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <CalendarDays aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Booking Process</span>
-                      <h4>Reservation & Cancellation</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {festivalReservationNotes.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-
-                <article className="uh-bhutan-booking-clarity-card uh-bhutan-booking-clarity-card-dark">
-                  <div className="uh-bhutan-booking-clarity-card-head">
-                    <div className="uh-bhutan-booking-clarity-icon">
-                      <ShieldCheck aria-hidden="true" />
-                    </div>
-
-                    <div>
-                      <span>Terms to Confirm</span>
-                      <h4>Terms & Conditions</h4>
-                    </div>
-                  </div>
-
-                  <ul>
-                    {festivalTerms.map((item, index) => (
-                      <li key={item}>
-                        <strong>{String(index + 1).padStart(2, "0")}</strong>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </article>
               </div>
             </div>
           </div>
@@ -598,23 +519,6 @@ const festivalQuickStats = [
   { value: "4-15", label: "Day Route Options" },
   { value: "8", label: "Curated Packages" },
   { value: "Bumthang", label: "Central Festival Circuit" },
-];
-
-const festivalReservationNotes = [
-  "Festival and race tours should be booked early because hotel demand rises around event dates.",
-  "Booking is confirmed only after written confirmation and receipt of the required advance payment.",
-  "Final payment should be completed before the agreed deadline stated in the quotation.",
-  "Cancellation charges depend on hotel, airline, government, race organizer, and service-provider policies.",
-  "Date changes are subject to hotel availability, event schedule feasibility, and supplier price differences.",
-];
-
-const festivalTerms = [
-  "Festival dates, race schedules, locations, and access should be reconfirmed before final booking because local schedules may change.",
-  "The final quotation will confirm whether SDF, visa fee, domestic flight, meals, entrance fees, race support, and taxes are included or excluded.",
-  "Itinerary timing may change due to weather, road conditions, festival crowd movement, flight timing, race rules, or guest safety.",
-  "When festivals overlap, guests may need to choose one festival experience from the same date range.",
-  "Festival routing depends on local schedules, road permissions, venue access, and organizer instructions.",
-  "Unseen Himalayas Bhutan will provide suitable routing alternatives if a listed service becomes unavailable after confirmation.",
 ];
 
 const heroImage: ImageAsset = {

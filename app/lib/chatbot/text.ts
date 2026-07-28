@@ -70,8 +70,8 @@ export function splitRouteDestinations(route: string) {
 
 export function formatRate(rate?: number) {
   return typeof rate === "number"
-    ? `Starting at Nu. ${rate.toLocaleString("en-US")} + 5% GST`
-    : "Rate on request + 5% GST";
+    ? `Starting from Nu. ${rate.toLocaleString("en-US")}`
+    : "Rate on request";
 }
 
 export function truncateText(text: string, maxLength: number) {

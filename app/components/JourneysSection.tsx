@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, CheckCircle, Clock, MapPin, Sparkles } from "lucide-react";
+import { formatUsd, getB2cUsdPrice } from "../data/tourPricing";
 
 type Destination = {
   image: string;
@@ -14,6 +15,7 @@ type Destination = {
 
 type TourPackage = {
   slug: string;
+  tourCode: string;
   image: string;
   tag: string;
   title: string;
@@ -24,9 +26,6 @@ type TourPackage = {
   route: string;
   ideal: string;
 };
-
-const SDF_NOTE =
-  "SDF: Foreign nationals pay USD 100 per night per person; Indian nationals pay Nu. 1,200 per night per person.";
 
 const destinations: Destination[] = [
   {
@@ -64,6 +63,7 @@ const destinations: Destination[] = [
 const packages: TourPackage[] = [
   {
     slug: "3-day-paro-thimphu-paro",
+    tourCode: "UH-NAC-001",
     image: "/By Marcus Westberg _ Paro _ 2023_18.jpg",
     tag: "Short Escape",
     title: "3-Day Paro & Thimphu Essentials",
@@ -76,6 +76,7 @@ const packages: TourPackage[] = [
   },
   {
     slug: "5-day-classic-western-bhutan",
+    tourCode: "UH-NAC-005",
     image: "/Punakha by Marcus Westberg30.jpg",
     tag: "Classic Route",
     title: "5-Day Classic Western Bhutan",
@@ -88,6 +89,7 @@ const packages: TourPackage[] = [
   },
   {
     slug: "8-day-punakha-phobjikha-depth",
+    tourCode: "UH-NAC-010",
     image: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
     tag: "Deeper Journey",
     title: "8-Day Punakha & Phobjikha In-Depth",
@@ -287,13 +289,12 @@ export function JourneysSection() {
 
                   <div className="tour-pro-image-rate uh-package-card-rate">
                     <strong>
-                      Starting at Nu. {pkg.startingRate.toLocaleString("en-US")} + 5% GST
+                      Starting From{" "}
+                      {formatUsd(
+                        getB2cUsdPrice(pkg.tourCode)?.fourSix ??
+                          pkg.startingRate
+                      )}
                     </strong>
-                    <span className="tour-pro-sdf-note">{SDF_NOTE}</span>
-                    <span>
-                      The mentioned price is for a 3-star hotel (Standard Tour).
-                      Hotels can be upgraded for Premium and Luxury packages.
-                    </span>
                   </div>
 
                   <div className="uh-package-card-content">

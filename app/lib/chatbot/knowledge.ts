@@ -64,7 +64,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
       content: [
         `Inclusions: ${tourInclusions.join("; ")}.`,
         `Exclusions: ${tourExclusions.join("; ")}.`,
-        "Displayed package rates are starting rates for a 3-star hotel Standard Tour and are subject to +5% GST. Hotels can be upgraded for Premium and Luxury packages. SDF is excluded unless a final quotation says otherwise. Website price notes state that foreign nationals pay SDF of USD 100 per night per person and Indian nationals pay Nu. 1,200 per night per person.",
+        "Displayed package rates are B2C starting rates in USD for a 3-star hotel Standard Tour. Hotels can be upgraded for Premium and Luxury packages. SDF is excluded unless a final quotation says otherwise. Website price notes state that foreign nationals pay SDF of USD 100 per night per person and Indian nationals pay Nu. 1,200 per night per person.",
       ].join(" "),
       requiresVerification: true,
     }),
