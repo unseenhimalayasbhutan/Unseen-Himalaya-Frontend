@@ -34791,3 +34791,1547 @@ textarea {
 :where(th) {
   background: rgba(246, 234, 212, 0.78);
 }
+
+/* =========================================================
+   UPCOMING EVENTS - GUNS N' ROSES CONCERT
+   ========================================================= */
+
+.home-hero-event-alert {
+  width: fit-content;
+  max-width: min(100%, 720px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 16px;
+  align-items: center;
+  margin-bottom: 26px;
+  padding: 16px 18px;
+  border: 1px solid rgba(196, 155, 82, 0.34);
+  border-radius: 8px;
+  background: rgba(255, 250, 242, 0.9);
+  color: var(--dark);
+  box-shadow: 0 20px 48px rgba(47, 40, 31, 0.14);
+  backdrop-filter: blur(14px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.home-hero-event-alert:hover,
+.home-hero-event-alert:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(196, 155, 82, 0.62);
+  box-shadow: 0 26px 62px rgba(47, 40, 31, 0.2);
+  outline: none;
+}
+
+.home-hero-event-alert-kicker {
+  grid-column: 1 / -1;
+  color: var(--gold-dark);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.home-hero-event-alert strong {
+  min-width: 0;
+  color: var(--dark);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.05;
+}
+
+.home-hero-event-alert-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.home-hero-event-alert-meta svg,
+.home-hero-event-alert-arrow {
+  width: 16px;
+  height: 16px;
+  color: var(--gold-dark);
+}
+
+.home-hero-event-alert-arrow {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.upcoming-events-page {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 14% 0%, rgba(196, 155, 82, 0.16), transparent 28rem),
+    linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 48%, var(--cream) 100%);
+  color: var(--text);
+}
+
+.upcoming-events-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(72px, 8vw, 110px) 0;
+  background:
+    linear-gradient(135deg, rgba(47, 40, 31, 0.96), rgba(30, 26, 21, 0.92)),
+    radial-gradient(circle at 75% 20%, rgba(196, 155, 82, 0.28), transparent 28rem);
+  color: #fff;
+}
+
+.upcoming-events-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 78px 78px;
+  opacity: 0.7;
+}
+
+.upcoming-events-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+  gap: clamp(32px, 5vw, 70px);
+  align-items: center;
+}
+
+.upcoming-events-hero-content h1 {
+  max-width: 760px;
+  margin: 0;
+  color: #fff;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(46px, 6vw, 78px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.upcoming-events-hero-content p {
+  max-width: 620px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.7;
+}
+
+.upcoming-events-eyebrow {
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 9px 13px;
+  border: 1px solid rgba(232, 201, 122, 0.36);
+  border-radius: 999px;
+  color: var(--gold-soft);
+  background: rgba(255, 250, 242, 0.08);
+}
+
+.upcoming-events-eyebrow span {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.upcoming-events-facts div {
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(232, 201, 122, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 250, 242, 0.08);
+}
+
+.upcoming-events-facts svg {
+  width: 18px;
+  height: 18px;
+  color: var(--gold-soft);
+}
+
+.upcoming-events-facts span,
+.upcoming-events-facts strong {
+  display: block;
+}
+
+.upcoming-events-facts span {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-facts strong {
+  margin-top: 6px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.upcoming-events-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.upcoming-events-hero-media,
+.upcoming-events-itinerary-media {
+  overflow: hidden;
+  border: 1px solid rgba(196, 155, 82, 0.28);
+  border-radius: 8px;
+  background: #17130f;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.34);
+}
+
+.upcoming-events-hero-media img,
+.upcoming-events-itinerary-media img {
+  width: 100%;
+  height: auto;
+}
+
+.upcoming-events-heading {
+  text-align: center;
+}
+
+.upcoming-events-heading-left {
+  max-width: 680px;
+  margin: 0 0 36px;
+  text-align: left;
+}
+
+.upcoming-events-heading-left .tour-pro-section-label {
+  justify-content: flex-start;
+}
+
+.upcoming-events-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.upcoming-events-highlight-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 112px;
+  padding: 18px;
+  border: 1px solid rgba(196, 155, 82, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 16px 42px rgba(92, 75, 52, 0.08);
+}
+
+.upcoming-events-highlight-card svg,
+.upcoming-events-day li svg,
+.upcoming-events-package-card li svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: var(--gold-dark);
+}
+
+.upcoming-events-highlight-card span {
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.upcoming-events-itinerary-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: clamp(30px, 5vw, 64px);
+  align-items: start;
+}
+
+.upcoming-events-timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.upcoming-events-day {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid rgba(196, 155, 82, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 250, 242, 0.82);
+  box-shadow: 0 18px 48px rgba(92, 75, 52, 0.08);
+}
+
+.upcoming-events-day-label {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.upcoming-events-day-content h3 {
+  margin: 0;
+  color: var(--dark);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(24px, 2.6vw, 32px);
+  line-height: 1.1;
+}
+
+.upcoming-events-day-content ul {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.upcoming-events-day li,
+.upcoming-events-package-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.upcoming-events-day li strong {
+  color: var(--dark);
+}
+
+.upcoming-events-package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.upcoming-events-package-card {
+  padding: clamp(24px, 3vw, 34px);
+  border: 1px solid rgba(196, 155, 82, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 250, 242, 0.78);
+  box-shadow: var(--shadow);
+}
+
+.upcoming-events-package-card h2 {
+  margin: 0;
+  color: var(--dark);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(28px, 3vw, 38px);
+  line-height: 1.1;
+}
+
+.upcoming-events-package-card ul {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+@media (max-width: 1120px) {
+  .upcoming-events-facts,
+  .upcoming-events-highlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .upcoming-events-hero-grid,
+  .upcoming-events-itinerary-grid,
+  .upcoming-events-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-hero-media,
+  .upcoming-events-itinerary-media {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-hero-event-alert {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 14px;
+  }
+
+  .home-hero-event-alert-arrow {
+    display: none;
+  }
+
+  .upcoming-events-facts,
+  .upcoming-events-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-day {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-day-label {
+    width: fit-content;
+    height: auto;
+    padding: 10px 13px;
+  }
+
+  .upcoming-events-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .upcoming-events-actions a {
+    width: 100%;
+  }
+}
+
+/* Professional redesign pass for the Guwahati concert event page. */
+.upcoming-events-page {
+  background:
+    radial-gradient(circle at 14% 0%, rgba(196, 155, 82, 0.12), transparent 32rem),
+    linear-gradient(180deg, #fffaf2 0%, #f8efe0 42%, #fffaf2 100%);
+}
+
+.upcoming-events-hero {
+  min-height: calc(100vh - 128px);
+  display: flex;
+  align-items: center;
+  padding: clamp(76px, 8vw, 118px) 0;
+  background: #15110e;
+}
+
+.upcoming-events-hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, rgba(12, 10, 8, 0.94) 0%, rgba(18, 15, 12, 0.9) 42%, rgba(18, 15, 12, 0.58) 100%),
+    url("/guns-n-roses-concert-tour-brochure.png") right center / min(58vw, 860px) auto no-repeat;
+  opacity: 0.95;
+}
+
+.upcoming-events-hero::before {
+  z-index: -1;
+  background:
+    radial-gradient(circle at 72% 18%, rgba(224, 70, 28, 0.28), transparent 24rem),
+    radial-gradient(circle at 28% 38%, rgba(196, 155, 82, 0.24), transparent 26rem),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: auto, auto, 82px 82px, 82px 82px;
+  opacity: 1;
+}
+
+.upcoming-events-hero-grid {
+  grid-template-columns: minmax(0, 0.98fr) minmax(340px, 460px);
+  gap: clamp(34px, 5vw, 76px);
+}
+
+.upcoming-events-eyebrow {
+  border-radius: 8px;
+  background: rgba(196, 155, 82, 0.14);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.2);
+}
+
+.upcoming-events-hero-content h1 {
+  max-width: 820px;
+  font-size: clamp(48px, 6.4vw, 86px);
+  line-height: 0.95;
+  text-wrap: balance;
+}
+
+.upcoming-events-hero-content p {
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.upcoming-events-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 720px;
+  gap: 14px;
+}
+
+.upcoming-events-facts div {
+  min-height: 126px;
+  border-color: rgba(232, 201, 122, 0.24);
+  background: linear-gradient(145deg, rgba(255, 250, 242, 0.12), rgba(255, 250, 242, 0.05));
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.upcoming-events-facts strong {
+  font-size: 16px;
+}
+
+.upcoming-events-facts small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.upcoming-events-stage-card {
+  position: relative;
+  overflow: hidden;
+  align-self: stretch;
+  min-height: 620px;
+  border: 1px solid rgba(232, 201, 122, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 250, 242, 0.08), rgba(255, 250, 242, 0.02)),
+    #0f0d0b;
+  box-shadow: 0 38px 110px rgba(0, 0, 0, 0.48);
+}
+
+.upcoming-events-stage-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.upcoming-events-stage-badge,
+.upcoming-events-stage-price {
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  right: 18px;
+  border: 1px solid rgba(232, 201, 122, 0.28);
+  border-radius: 8px;
+  background: rgba(12, 10, 8, 0.78);
+  color: #fff;
+  backdrop-filter: blur(14px);
+}
+
+.upcoming-events-stage-badge {
+  top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 13px;
+}
+
+.upcoming-events-stage-badge svg {
+  width: 18px;
+  height: 18px;
+  color: var(--gold-soft);
+}
+
+.upcoming-events-stage-badge span {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-stage-price {
+  bottom: 18px;
+  padding: 15px 16px;
+}
+
+.upcoming-events-stage-price span {
+  display: block;
+  color: var(--gold-soft);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(28px, 3vw, 38px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.upcoming-events-stage-price small {
+  display: block;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-highlight-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.upcoming-events-highlight-card {
+  min-height: 150px;
+  flex-direction: column;
+  border-color: rgba(196, 155, 82, 0.22);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 250, 242, 0.68)),
+    radial-gradient(circle at 85% 0%, rgba(196, 155, 82, 0.12), transparent 14rem);
+}
+
+.upcoming-events-highlight-card svg {
+  width: 22px;
+  height: 22px;
+  margin-top: 0;
+}
+
+.upcoming-events-media-section {
+  padding: clamp(70px, 8vw, 106px) 0;
+  background:
+    linear-gradient(135deg, rgba(47, 40, 31, 0.96), rgba(20, 17, 14, 0.94)),
+    radial-gradient(circle at 18% 0%, rgba(196, 155, 82, 0.26), transparent 28rem);
+}
+
+.upcoming-events-media-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.78fr);
+  gap: clamp(22px, 4vw, 42px);
+  align-items: stretch;
+}
+
+.upcoming-events-media-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 540px;
+  border: 1px solid rgba(232, 201, 122, 0.24);
+  border-radius: 8px;
+  background: #100d0a;
+  box-shadow: 0 30px 88px rgba(0, 0, 0, 0.38);
+}
+
+.upcoming-events-media-panel-main {
+  min-height: 680px;
+}
+
+.upcoming-events-media-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.upcoming-events-media-panel figcaption {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 2;
+  padding: 9px 12px;
+  border: 1px solid rgba(232, 201, 122, 0.24);
+  border-radius: 8px;
+  background: rgba(12, 10, 8, 0.76);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+}
+
+.upcoming-events-itinerary-section {
+  background:
+    radial-gradient(circle at 85% 8%, rgba(196, 155, 82, 0.16), transparent 25rem),
+    linear-gradient(180deg, #f8efe0, #fffaf2);
+}
+
+.upcoming-events-itinerary-media {
+  position: sticky;
+  top: 130px;
+  max-height: calc(100vh - 160px);
+}
+
+.upcoming-events-itinerary-media img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.upcoming-events-day {
+  grid-template-columns: 86px minmax(0, 1fr);
+  border-color: rgba(196, 155, 82, 0.22);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(255, 250, 242, 0.7)),
+    radial-gradient(circle at 100% 0%, rgba(196, 155, 82, 0.1), transparent 16rem);
+}
+
+.upcoming-events-day-label {
+  width: 66px;
+  height: 66px;
+  background: #2f281f;
+  color: var(--gold-soft);
+}
+
+.upcoming-events-package-grid {
+  gap: 24px;
+}
+
+.upcoming-events-package-card {
+  overflow: hidden;
+  border-color: rgba(196, 155, 82, 0.24);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(255, 250, 242, 0.76)),
+    radial-gradient(circle at 100% 0%, rgba(196, 155, 82, 0.14), transparent 18rem);
+}
+
+.upcoming-events-package-card h2 {
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(196, 155, 82, 0.2);
+}
+
+.upcoming-events-package-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(196, 155, 82, 0.1);
+}
+
+.upcoming-events-package-card li:last-child {
+  border-bottom: 0;
+}
+
+@media (max-width: 1180px) {
+  .upcoming-events-highlight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .upcoming-events-hero {
+    min-height: auto;
+  }
+
+  .upcoming-events-hero-backdrop {
+    background:
+      linear-gradient(180deg, rgba(12, 10, 8, 0.94), rgba(18, 15, 12, 0.9)),
+      url("/guns-n-roses-concert-tour-brochure.png") center top / cover no-repeat;
+  }
+
+  .upcoming-events-hero-grid,
+  .upcoming-events-media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-stage-card,
+  .upcoming-events-media-panel,
+  .upcoming-events-media-panel-main {
+    min-height: auto;
+  }
+
+  .upcoming-events-stage-card img,
+  .upcoming-events-media-panel img {
+    height: auto;
+  }
+
+  .upcoming-events-itinerary-media {
+    position: relative;
+    top: auto;
+    max-height: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .upcoming-events-hero-content h1 {
+    font-size: clamp(40px, 12vw, 58px);
+  }
+
+  .upcoming-events-facts,
+  .upcoming-events-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-facts div,
+  .upcoming-events-highlight-card {
+    min-height: auto;
+  }
+
+  .upcoming-events-stage-price span {
+    font-size: 28px;
+  }
+}
+
+/* Final professional event-page system: hero, summary, highlights, itinerary, gallery, details. */
+.upcoming-events-page {
+  --event-ink: #211a15;
+  --event-panel: #fffaf2;
+  --event-line: rgba(196, 155, 82, 0.22);
+  --event-red: #8f261f;
+  background:
+    linear-gradient(180deg, #fffaf2 0%, #f6ead8 46%, #fffaf2 100%);
+}
+
+.upcoming-events-hero {
+  min-height: min(820px, calc(100vh - 114px));
+  padding: clamp(74px, 8vw, 112px) 0;
+  background: #130f0c;
+}
+
+.upcoming-events-hero-backdrop {
+  background:
+    linear-gradient(90deg, rgba(16, 12, 9, 0.96) 0%, rgba(20, 15, 11, 0.88) 48%, rgba(20, 15, 11, 0.54) 100%),
+    image-set(url("/guns-n-roses-concert-tour-brochure.png") 1x) right center / min(54vw, 820px) auto no-repeat;
+  filter: saturate(0.95);
+}
+
+.upcoming-events-hero::before {
+  background:
+    linear-gradient(90deg, rgba(143, 38, 31, 0.18), transparent 48%),
+    radial-gradient(circle at 30% 18%, rgba(196, 155, 82, 0.18), transparent 30rem);
+}
+
+.upcoming-events-hero-grid {
+  grid-template-columns: minmax(0, 0.95fr) minmax(340px, 430px);
+  align-items: center;
+}
+
+.upcoming-events-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  color: #f4d991;
+  background: rgba(255, 250, 242, 0.08);
+}
+
+.upcoming-events-eyebrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+.upcoming-events-hero-content h1 {
+  max-width: 820px;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.upcoming-events-hero-content p {
+  max-width: 680px;
+}
+
+.upcoming-events-actions {
+  margin-top: 34px;
+}
+
+.upcoming-events-hero-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(232, 201, 122, 0.28);
+  border-radius: 8px;
+  background: #0f0c09;
+  box-shadow: 0 32px 90px rgba(0, 0, 0, 0.42);
+}
+
+.upcoming-events-hero-card-media {
+  height: clamp(520px, 62vw, 650px);
+  overflow: hidden;
+}
+
+.upcoming-events-hero-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.upcoming-events-ticket-panel {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  padding: 18px;
+  border: 1px solid rgba(232, 201, 122, 0.28);
+  border-radius: 8px;
+  background: rgba(14, 11, 8, 0.82);
+  color: #fff;
+  backdrop-filter: blur(14px);
+}
+
+.upcoming-events-ticket-panel span,
+.upcoming-events-ticket-panel small {
+  display: block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-ticket-panel span {
+  color: #f4d991;
+}
+
+.upcoming-events-ticket-panel strong {
+  display: block;
+  margin-top: 8px;
+  color: #fff;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(30px, 3.2vw, 42px);
+  line-height: 1.02;
+}
+
+.upcoming-events-ticket-panel small {
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.upcoming-events-booking-strip {
+  position: relative;
+  z-index: 3;
+  margin-top: -42px;
+  padding: 0 0 clamp(62px, 7vw, 90px);
+}
+
+.upcoming-events-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.upcoming-events-fact-card,
+.upcoming-events-facts .upcoming-events-fact-card {
+  min-height: 148px;
+  padding: 20px;
+  border: 1px solid var(--event-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(255, 250, 242, 0.82));
+  box-shadow: 0 20px 52px rgba(92, 75, 52, 0.1);
+  backdrop-filter: none;
+}
+
+.upcoming-events-fact-card svg {
+  width: 22px;
+  height: 22px;
+  color: var(--event-red);
+}
+
+.upcoming-events-fact-card span {
+  display: block;
+  margin-top: 14px;
+  color: #8b6a35;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-fact-card strong {
+  display: block;
+  margin-top: 7px;
+  color: var(--event-ink);
+  font-size: clamp(17px, 1.5vw, 22px);
+  line-height: 1.18;
+}
+
+.upcoming-events-fact-card small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.upcoming-events-overview-section {
+  padding: clamp(76px, 8vw, 112px) 0;
+  background: #fffaf2;
+}
+
+.upcoming-events-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 390px);
+  gap: clamp(30px, 5vw, 68px);
+  align-items: center;
+}
+
+.upcoming-events-heading-tight {
+  margin-bottom: 30px;
+}
+
+.upcoming-events-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.upcoming-events-highlight-card {
+  min-height: 122px;
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.upcoming-events-highlight-card svg {
+  width: 22px;
+  height: 22px;
+  color: var(--event-red);
+}
+
+.upcoming-events-highlight-card span {
+  color: var(--event-ink);
+}
+
+.upcoming-events-feature-image {
+  position: relative;
+  overflow: hidden;
+  min-height: 560px;
+  border: 1px solid var(--event-line);
+  border-radius: 8px;
+  background: #17120e;
+  box-shadow: 0 26px 78px rgba(92, 75, 52, 0.16);
+}
+
+.upcoming-events-feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.upcoming-events-feature-image figcaption,
+.upcoming-events-gallery-panel figcaption {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  background: rgba(16, 12, 9, 0.78);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  backdrop-filter: blur(12px);
+}
+
+.upcoming-events-itinerary-section {
+  padding: clamp(76px, 8vw, 112px) 0;
+  background:
+    linear-gradient(180deg, #f6ead8, #fffaf2);
+}
+
+.upcoming-events-itinerary-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  gap: clamp(28px, 4vw, 54px);
+  align-items: start;
+}
+
+.upcoming-events-timeline {
+  gap: 16px;
+}
+
+.upcoming-events-day {
+  grid-template-columns: 84px minmax(0, 1fr);
+  padding: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.upcoming-events-day-label {
+  width: 62px;
+  height: 62px;
+  background: var(--event-ink);
+  color: #f4d991;
+  text-align: center;
+}
+
+.upcoming-events-day-content h3 {
+  letter-spacing: 0;
+}
+
+.upcoming-events-day-content ul {
+  gap: 9px;
+}
+
+.upcoming-events-day li svg,
+.upcoming-events-package-card li svg {
+  color: var(--event-red);
+}
+
+.upcoming-events-itinerary-note {
+  position: sticky;
+  top: 126px;
+  overflow: hidden;
+  max-height: calc(100vh - 150px);
+  border: 1px solid var(--event-line);
+  border-radius: 8px;
+  background: #17120e;
+  box-shadow: 0 26px 78px rgba(92, 75, 52, 0.16);
+}
+
+.upcoming-events-itinerary-note img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.upcoming-events-gallery-section {
+  padding: clamp(76px, 8vw, 112px) 0;
+  background:
+    linear-gradient(135deg, rgba(33, 26, 21, 0.98), rgba(17, 13, 10, 0.96));
+}
+
+.upcoming-events-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(22px, 4vw, 44px);
+}
+
+.upcoming-events-gallery-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  border: 1px solid rgba(232, 201, 122, 0.24);
+  border-radius: 8px;
+  background: #120e0b;
+  box-shadow: 0 30px 86px rgba(0, 0, 0, 0.36);
+}
+
+.upcoming-events-gallery-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.upcoming-events-package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.upcoming-events-package-card {
+  border-radius: 8px;
+  background: #fff;
+}
+
+.upcoming-events-package-card h2 {
+  letter-spacing: 0;
+}
+
+@media (max-width: 1080px) {
+  .upcoming-events-hero-grid,
+  .upcoming-events-overview-grid,
+  .upcoming-events-itinerary-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-hero-backdrop {
+    background:
+      linear-gradient(180deg, rgba(16, 12, 9, 0.96) 0%, rgba(20, 15, 11, 0.9) 100%),
+      url("/guns-n-roses-concert-tour-brochure.png") center top / cover no-repeat;
+  }
+
+  .upcoming-events-hero-card,
+  .upcoming-events-feature-image,
+  .upcoming-events-itinerary-note {
+    max-width: 620px;
+  }
+
+  .upcoming-events-itinerary-note {
+    position: relative;
+    top: auto;
+    max-height: none;
+  }
+}
+
+@media (max-width: 860px) {
+  .upcoming-events-booking-strip {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .upcoming-events-facts,
+  .upcoming-events-highlight-grid,
+  .upcoming-events-gallery-grid,
+  .upcoming-events-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-feature-image,
+  .upcoming-events-gallery-panel {
+    min-height: auto;
+  }
+
+  .upcoming-events-feature-image img,
+  .upcoming-events-gallery-panel img,
+  .upcoming-events-itinerary-note img {
+    height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .upcoming-events-hero {
+    padding: 62px 0 70px;
+  }
+
+  .upcoming-events-hero-content h1 {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 1.02;
+  }
+
+  .upcoming-events-hero-card-media {
+    height: auto;
+  }
+
+  .upcoming-events-hero-card-media img {
+    height: auto;
+  }
+
+  .upcoming-events-ticket-panel {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    margin: 12px;
+  }
+
+  .upcoming-events-day {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-day-label {
+    width: fit-content;
+    height: auto;
+    padding: 10px 12px;
+  }
+}
+
+/* Visual QA fixes: poster artwork should read as artwork, not crop into black empty areas. */
+.upcoming-events-itinerary-note,
+.upcoming-events-gallery-panel {
+  aspect-ratio: 4 / 5;
+}
+
+.upcoming-events-itinerary-note img,
+.upcoming-events-gallery-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.upcoming-events-gallery-panel {
+  min-height: auto;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 860px) {
+  .upcoming-events-gallery-panel img,
+  .upcoming-events-itinerary-note img {
+    height: 100%;
+  }
+}
+
+/* Expert cleanup: no visible event images, background-only artwork, tighter component system. */
+.upcoming-events-hero {
+  min-height: min(760px, calc(100vh - 114px));
+}
+
+.upcoming-events-hero-backdrop {
+  background:
+    linear-gradient(90deg, rgba(16, 12, 9, 0.97) 0%, rgba(19, 14, 10, 0.9) 48%, rgba(19, 14, 10, 0.58) 100%),
+    url("/guns-n-roses-concert-tour-brochure.png") right center / min(60vw, 920px) auto no-repeat;
+}
+
+.upcoming-events-hero-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.upcoming-events-hero-content {
+  max-width: 780px;
+}
+
+.upcoming-events-hero-summary,
+.upcoming-events-flow-card,
+.upcoming-events-itinerary-note {
+  border: 1px solid rgba(232, 201, 122, 0.26);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 250, 242, 0.12), rgba(255, 250, 242, 0.06));
+  box-shadow: 0 28px 78px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(16px);
+}
+
+.upcoming-events-hero-summary {
+  align-self: center;
+  padding: clamp(24px, 3vw, 34px);
+  color: #fff;
+}
+
+.upcoming-events-summary-kicker,
+.upcoming-events-flow-card > span,
+.upcoming-events-itinerary-note > span {
+  display: block;
+  color: #f4d991;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-hero-summary > strong {
+  display: block;
+  margin-top: 12px;
+  color: #fff;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.upcoming-events-hero-summary > small {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-summary-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 26px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(232, 201, 122, 0.18);
+}
+
+.upcoming-events-summary-list div {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-width: 0;
+}
+
+.upcoming-events-summary-list svg {
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(232, 201, 122, 0.13);
+  color: #f4d991;
+}
+
+.upcoming-events-summary-list span {
+  min-width: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.upcoming-events-booking-strip {
+  margin-top: -34px;
+}
+
+.upcoming-events-overview-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 370px);
+}
+
+.upcoming-events-flow-card {
+  padding: clamp(24px, 3vw, 32px);
+  background:
+    linear-gradient(145deg, rgba(47, 40, 31, 0.96), rgba(28, 22, 17, 0.94));
+  color: #fff;
+}
+
+.upcoming-events-flow-card ol {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+  counter-reset: event-flow;
+}
+
+.upcoming-events-flow-card li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.55;
+  list-style: none;
+}
+
+.upcoming-events-flow-card li::before {
+  counter-increment: event-flow;
+  content: counter(event-flow, decimal-leading-zero);
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(232, 201, 122, 0.28);
+  border-radius: 8px;
+  color: #f4d991;
+  background: rgba(232, 201, 122, 0.1);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.upcoming-events-highlight-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.upcoming-events-highlight-card {
+  min-height: 132px;
+}
+
+.upcoming-events-itinerary-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+}
+
+.upcoming-events-itinerary-note {
+  position: sticky;
+  top: 126px;
+  aspect-ratio: auto;
+  max-height: none;
+  padding: clamp(24px, 3vw, 32px);
+  background:
+    linear-gradient(145deg, rgba(33, 26, 21, 0.97), rgba(20, 15, 12, 0.96));
+  color: #fff;
+}
+
+.upcoming-events-itinerary-note h3 {
+  margin: 16px 0 0;
+  color: #fff;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(25px, 2.6vw, 34px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.upcoming-events-itinerary-note p {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.upcoming-events-itinerary-note ul {
+  display: grid;
+  gap: 11px;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(232, 201, 122, 0.18);
+}
+
+.upcoming-events-itinerary-note li {
+  display: flex;
+  gap: 9px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.upcoming-events-itinerary-note li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  margin-top: 7px;
+  border-radius: 999px;
+  background: #f4d991;
+}
+
+.upcoming-events-day {
+  box-shadow: 0 18px 48px rgba(92, 75, 52, 0.08);
+}
+
+.upcoming-events-gallery-section,
+.upcoming-events-gallery-grid,
+.upcoming-events-gallery-panel,
+.upcoming-events-feature-image,
+.upcoming-events-hero-card,
+.upcoming-events-hero-card-media,
+.upcoming-events-ticket-panel {
+  display: none !important;
+}
+
+@media (max-width: 1120px) {
+  .upcoming-events-highlight-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .upcoming-events-hero {
+    min-height: auto;
+  }
+
+  .upcoming-events-hero-backdrop {
+    background:
+      linear-gradient(180deg, rgba(16, 12, 9, 0.96) 0%, rgba(19, 14, 10, 0.9) 100%),
+      url("/guns-n-roses-concert-tour-brochure.png") center top / cover no-repeat;
+  }
+
+  .upcoming-events-hero-grid,
+  .upcoming-events-overview-grid,
+  .upcoming-events-itinerary-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-hero-summary,
+  .upcoming-events-flow-card,
+  .upcoming-events-itinerary-note {
+    max-width: none;
+  }
+
+  .upcoming-events-itinerary-note {
+    position: relative;
+    top: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .upcoming-events-booking-strip {
+    margin-top: 0;
+    padding-top: 18px;
+  }
+
+  .upcoming-events-facts,
+  .upcoming-events-highlight-grid,
+  .upcoming-events-package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-fact-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .upcoming-events-hero-summary {
+    padding: 22px;
+  }
+
+  .upcoming-events-hero-summary > strong {
+    font-size: 34px;
+  }
+
+  .upcoming-events-summary-list div {
+    grid-template-columns: 32px minmax(0, 1fr);
+  }
+
+  .upcoming-events-summary-list svg {
+    width: 32px;
+    height: 32px;
+  }
+}

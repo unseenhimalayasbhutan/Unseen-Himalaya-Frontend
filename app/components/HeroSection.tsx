@@ -2,9 +2,11 @@ import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle,
+  Clock,
   ShieldCheck,
   MapPin,
 } from "lucide-react";
+import { featuredUpcomingEvent } from "../data/upcomingEvents";
 
 export function HeroSection() {
   return (
@@ -14,7 +16,23 @@ export function HeroSection() {
       <div className="home-hero-pattern" aria-hidden="true" />
 
       <div className="home-hero-content">
-        
+        <Link
+          href="/upcoming-events"
+          className="home-hero-event-alert"
+          aria-label={`View details for ${featuredUpcomingEvent.title}`}
+        >
+          <span className="home-hero-event-alert-kicker">
+            {featuredUpcomingEvent.label}
+          </span>
+          <strong>{featuredUpcomingEvent.title}</strong>
+          <span className="home-hero-event-alert-meta">
+            <Clock aria-hidden />
+            {featuredUpcomingEvent.date}
+            <span aria-hidden="true">|</span>
+            {featuredUpcomingEvent.location}
+          </span>
+          <ArrowRight aria-hidden className="home-hero-event-alert-arrow" />
+        </Link>
 
         <h1>
           Unseen Himalayas Bhutan

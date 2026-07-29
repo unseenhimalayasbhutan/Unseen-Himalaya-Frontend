@@ -123,6 +123,10 @@ const navLinks = [
       },
     ],
   },
+  {
+    label: "Upcoming Events",
+    href: "/upcoming-events",
+  },
     {
     label: "Company",
     href: "#",
