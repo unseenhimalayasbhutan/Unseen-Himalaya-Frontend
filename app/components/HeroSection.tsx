@@ -1,12 +1,14 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
+  CalendarDays,
   CheckCircle,
-  Clock,
   ShieldCheck,
   MapPin,
 } from "lucide-react";
 import { featuredUpcomingEvent } from "../data/upcomingEvents";
+import { siteConfig } from "../siteConfig";
 
 export function HeroSection() {
   return (
@@ -21,17 +23,44 @@ export function HeroSection() {
           className="home-hero-event-alert"
           aria-label={`View details for ${featuredUpcomingEvent.title}`}
         >
-          <span className="home-hero-event-alert-kicker">
-            {featuredUpcomingEvent.label}
+          <span className="home-hero-event-alert-media">
+            {featuredUpcomingEvent.notificationImage ? (
+              <Image
+                src={featuredUpcomingEvent.notificationImage}
+                alt=""
+                fill
+                priority
+                unoptimized
+                sizes="(max-width: 760px) calc(100vw - 32px), 760px"
+              />
+            ) : null}
           </span>
-          <strong>{featuredUpcomingEvent.title}</strong>
-          <span className="home-hero-event-alert-meta">
-            <Clock aria-hidden />
-            {featuredUpcomingEvent.date}
-            <span aria-hidden="true">|</span>
-            {featuredUpcomingEvent.location}
+
+          <span className="home-hero-event-alert-shade" aria-hidden="true" />
+
+          <span className="home-hero-event-alert-copy">
+            <span className="home-hero-event-alert-kicker">
+              {featuredUpcomingEvent.label}
+            </span>
+            <strong>
+              Guns N&apos; Roses
+              <span>Live in Guwahati</span>
+            </strong>
+            <span className="home-hero-event-alert-meta">
+              <span>
+                <CalendarDays aria-hidden />
+                {featuredUpcomingEvent.date}
+              </span>
+              <span>
+                <MapPin aria-hidden />
+                {featuredUpcomingEvent.location}
+              </span>
+            </span>
           </span>
-          <ArrowRight aria-hidden className="home-hero-event-alert-arrow" />
+
+          <span className="home-hero-event-alert-arrow">
+            <ArrowRight aria-hidden />
+          </span>
         </Link>
 
         <h1>
@@ -46,10 +75,15 @@ export function HeroSection() {
         </p>
 
         <div className="home-hero-buttons">
-          <Link href="/contact" className="home-hero-btn-primary">
+          <a
+            href={siteConfig.contact.whatsappHref}
+            className="home-hero-btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Plan Your Journey
             <ArrowRight aria-hidden />
-          </Link>
+          </a>
 
           <Link href="/about-bhutan" className="home-hero-btn-secondary">
             Learn About Bhutan
@@ -73,10 +107,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-
-    
-
-      
     </section>
   );
 }

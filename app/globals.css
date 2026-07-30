@@ -36335,3 +36335,2624 @@ textarea {
     height: 32px;
   }
 }
+
+/* Event artwork notification and bottom experience block. */
+.home-hero-event-alert {
+  position: relative;
+  width: min(760px, 100%);
+  max-width: min(100%, 760px);
+  aspect-ratio: 16 / 6.25;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 24px;
+  padding: 0;
+  border: 1px solid rgba(232, 201, 122, 0.82);
+  border-radius: 8px;
+  background: #120d0b;
+  color: #fff;
+  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.36);
+  transform: translateZ(0);
+}
+
+.home-hero-event-alert:hover,
+.home-hero-event-alert:focus-visible {
+  transform: translateY(-3px);
+  border-color: #f4d991;
+  box-shadow: 0 32px 86px rgba(0, 0, 0, 0.46);
+  outline: none;
+}
+
+.home-hero-event-alert-media,
+.home-hero-event-alert-shade,
+.home-hero-event-alert-copy {
+  position: absolute;
+}
+
+.home-hero-event-alert-media,
+.home-hero-event-alert-shade {
+  inset: 0;
+}
+
+.home-hero-event-alert-media img {
+  object-fit: cover;
+  object-position: 42% 42%;
+}
+
+.home-hero-event-alert-shade {
+  background:
+    linear-gradient(90deg, rgba(11, 8, 7, 0.42), rgba(11, 8, 7, 0.1) 48%, rgba(11, 8, 7, 0.52)),
+    linear-gradient(0deg, rgba(11, 8, 7, 0.88), rgba(11, 8, 7, 0.08) 52%);
+}
+
+.home-hero-event-alert-copy {
+  left: clamp(16px, 3vw, 30px);
+  right: 86px;
+  bottom: clamp(14px, 2.4vw, 24px);
+  display: grid;
+  gap: 7px;
+}
+
+.home-hero-event-alert-kicker {
+  width: fit-content;
+  padding: 7px 11px;
+  border-radius: 4px;
+  background: #a81f1a;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.home-hero-event-alert strong {
+  min-width: 0;
+  color: #fff;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: 0;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.72);
+}
+
+.home-hero-event-alert strong span {
+  display: block;
+  margin-top: 4px;
+  color: #d72824;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: clamp(16px, 2.1vw, 28px);
+  font-style: italic;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.home-hero-event-alert-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.home-hero-event-alert-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.home-hero-event-alert-meta svg {
+  width: 16px;
+  height: 16px;
+  color: #f4d991;
+}
+
+.home-hero-event-alert-arrow {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(244, 217, 145, 0.84);
+  border-radius: 999px;
+  color: #f4d991;
+  background: rgba(12, 9, 7, 0.42);
+}
+
+.home-hero-event-alert-arrow svg {
+  width: 22px;
+  height: 22px;
+}
+
+.upcoming-events-experience-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(70px, 8vw, 108px) 0;
+  background:
+    radial-gradient(circle at 5% 20%, rgba(143, 38, 31, 0.36), transparent 24rem),
+    radial-gradient(circle at 94% 68%, rgba(196, 155, 82, 0.2), transparent 26rem),
+    linear-gradient(180deg, #170f0d 0%, #0f0b09 100%);
+  color: #fff;
+}
+
+.upcoming-events-sample-panel,
+.upcoming-events-experience-panel,
+.upcoming-events-ready-panel,
+.upcoming-events-icon-row {
+  position: relative;
+  z-index: 1;
+}
+
+.upcoming-events-panel-title {
+  display: grid;
+  grid-template-columns: minmax(24px, 1fr) auto minmax(24px, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.upcoming-events-panel-title span {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(232, 201, 122, 0.6), transparent);
+}
+
+.upcoming-events-panel-title h2 {
+  margin: 0;
+  color: #f8e3ac;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.upcoming-events-sample-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.upcoming-events-sample-card {
+  min-height: 188px;
+  padding: 20px;
+  border: 1px solid rgba(232, 201, 122, 0.34);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.025)),
+    #16110f;
+  box-shadow: 0 22px 64px rgba(0, 0, 0, 0.24);
+}
+
+.upcoming-events-sample-card span {
+  display: inline-flex;
+  padding: 6px 9px;
+  border-radius: 4px;
+  background: rgba(143, 38, 31, 0.92);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.upcoming-events-sample-card h3 {
+  margin: 16px 0 0;
+  color: #f8e3ac;
+  font-size: clamp(17px, 1.6vw, 22px);
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+.upcoming-events-sample-card p {
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.upcoming-events-experience-panel {
+  margin-top: clamp(34px, 5vw, 56px);
+}
+
+.upcoming-events-experience-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 5 / 1.15;
+  border: 1px solid rgba(232, 201, 122, 0.38);
+  border-radius: 8px;
+  background: #080604;
+  box-shadow: 0 28px 84px rgba(0, 0, 0, 0.34);
+}
+
+.upcoming-events-experience-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.upcoming-events-ready-panel {
+  margin-top: 18px;
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid rgba(232, 201, 122, 0.42);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(33, 26, 21, 0.96), rgba(65, 30, 24, 0.92), rgba(33, 26, 21, 0.96));
+  text-align: center;
+  box-shadow: 0 28px 84px rgba(0, 0, 0, 0.3);
+}
+
+.upcoming-events-ready-panel > span {
+  display: block;
+  color: #f8e3ac;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.upcoming-events-ready-panel > small {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.upcoming-events-ready-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.upcoming-events-ready-actions .tour-pro-btn-secondary {
+  border-color: rgba(232, 201, 122, 0.38);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+}
+
+.upcoming-events-call-link {
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 18px;
+  border: 1px solid rgba(232, 201, 122, 0.24);
+  border-radius: 8px;
+  color: #f8e3ac;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.upcoming-events-call-link svg {
+  width: 17px;
+  height: 17px;
+}
+
+.upcoming-events-icon-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.upcoming-events-icon-item {
+  min-height: 112px;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 18px 14px;
+  border: 1px solid rgba(232, 201, 122, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  text-align: center;
+}
+
+.upcoming-events-icon-item svg {
+  width: 28px;
+  height: 28px;
+  color: #f4d991;
+}
+
+.upcoming-events-icon-item span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+@media (max-width: 980px) {
+  .upcoming-events-sample-grid,
+  .upcoming-events-icon-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .upcoming-events-experience-image {
+    aspect-ratio: 16 / 6;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-hero-event-alert {
+    width: 100%;
+    aspect-ratio: 16 / 9.4;
+  }
+
+  .home-hero-event-alert-copy {
+    right: 18px;
+    bottom: 16px;
+  }
+
+  .home-hero-event-alert strong {
+    font-size: clamp(30px, 10vw, 44px);
+  }
+
+  .home-hero-event-alert-arrow {
+    display: none;
+  }
+
+  .upcoming-events-sample-grid,
+  .upcoming-events-icon-row {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-experience-image {
+    aspect-ratio: 16 / 8.5;
+  }
+
+  .upcoming-events-ready-actions,
+  .upcoming-events-ready-actions a {
+    width: 100%;
+  }
+}
+
+/* Full concert-poster redesign for the upcoming events page. */
+.upcoming-events-poster-page {
+  --event-black: #090706;
+  --event-charcoal: #140f0d;
+  --event-card: rgba(18, 13, 11, 0.94);
+  --event-red: #9f1f1d;
+  --event-red-bright: #d82724;
+  --event-gold: #c9893e;
+  --event-gold-soft: #f2c06c;
+  --event-line: rgba(201, 137, 62, 0.42);
+  overflow: hidden;
+  padding: 0 0 54px;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(159, 31, 29, 0.32), transparent 22rem),
+    radial-gradient(circle at 88% 46%, rgba(201, 137, 62, 0.2), transparent 26rem),
+    linear-gradient(180deg, #090706 0%, #150b0a 42%, #070504 100%);
+  color: #fff;
+}
+
+.upcoming-events-poster {
+  width: min(1120px, calc(100% - 28px));
+  margin: 0 auto;
+  border-right: 1px solid rgba(201, 137, 62, 0.16);
+  border-left: 1px solid rgba(201, 137, 62, 0.16);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    var(--event-black);
+  background-size: 80px 80px;
+  box-shadow: 0 34px 110px rgba(0, 0, 0, 0.5);
+}
+
+.upcoming-events-poster-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(520px, 68vw, 720px);
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+  padding: clamp(28px, 5vw, 58px);
+  border-bottom: 1px solid var(--event-line);
+  background:
+    radial-gradient(circle at 74% 8%, rgba(250, 184, 82, 0.32), transparent 18rem),
+    radial-gradient(circle at 54% 18%, rgba(216, 39, 36, 0.5), transparent 20rem),
+    linear-gradient(135deg, #1b0b0a, #060403 76%);
+}
+
+.upcoming-events-poster-hero::before,
+.upcoming-events-poster-hero::after,
+.upcoming-events-image-slot::before {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.upcoming-events-poster-hero::before {
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(105deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.22) 52%, rgba(0, 0, 0, 0.58) 100%),
+    repeating-linear-gradient(100deg, transparent 0 82px, rgba(201, 137, 62, 0.24) 83px 85px);
+}
+
+.upcoming-events-poster-hero::after {
+  inset: auto 0 0;
+  z-index: -1;
+  height: 42%;
+  background:
+    radial-gradient(ellipse at center bottom, rgba(216, 39, 36, 0.72), transparent 62%),
+    repeating-linear-gradient(90deg, rgba(255, 45, 34, 0.3) 0 3px, transparent 3px 22px);
+  opacity: 0.72;
+}
+
+.upcoming-events-poster-hero-image,
+.upcoming-events-poster-hero-shade {
+  position: absolute;
+  inset: 0;
+}
+
+.upcoming-events-poster-hero-image {
+  z-index: 0;
+  border: 0;
+  border-radius: 0;
+  background: #090706;
+}
+
+.upcoming-events-poster-hero-image::before {
+  display: none;
+}
+
+.upcoming-events-poster-hero-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.upcoming-events-poster-hero-shade {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(7, 5, 4, 0.92) 0%, rgba(7, 5, 4, 0.34) 52%, rgba(7, 5, 4, 0.42) 100%),
+    linear-gradient(0deg, rgba(7, 5, 4, 0.78), rgba(7, 5, 4, 0.05) 58%);
+}
+
+.upcoming-events-poster-hero-copy {
+  width: min(620px, 100%);
+  position: relative;
+  z-index: 3;
+}
+
+.upcoming-events-red-label {
+  width: fit-content;
+  display: inline-flex;
+  padding: 8px 13px;
+  border-radius: 3px;
+  background: var(--event-red);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.upcoming-events-poster-hero h1 {
+  margin: 16px 0 0;
+  color: #f3f0e9;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(56px, 9vw, 118px);
+  font-weight: 950;
+  line-height: 0.84;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.84);
+}
+
+.upcoming-events-poster-hero h1 span {
+  display: block;
+  margin-top: 10px;
+  color: var(--event-red-bright);
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: clamp(24px, 4.4vw, 58px);
+  font-style: italic;
+  font-weight: 950;
+  line-height: 0.95;
+}
+
+.upcoming-events-poster-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: 26px;
+}
+
+.upcoming-events-poster-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.upcoming-events-poster-meta svg {
+  width: 18px;
+  height: 18px;
+  color: var(--event-gold-soft);
+}
+
+.upcoming-events-poster-hero-copy p {
+  margin: 16px 0 0;
+  color: var(--event-gold-soft);
+  font-size: clamp(15px, 2vw, 22px);
+  font-weight: 950;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.upcoming-events-poster-actions,
+.upcoming-events-ready-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.upcoming-events-gold-btn,
+.upcoming-events-outline-btn,
+.upcoming-events-tier-card a,
+.upcoming-events-call-link {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 20px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.upcoming-events-gold-btn,
+.upcoming-events-tier-card a {
+  border: 1px solid var(--event-gold);
+  background: linear-gradient(180deg, #d7984c, #b66f2d);
+  color: #fff;
+}
+
+.upcoming-events-outline-btn,
+.upcoming-events-call-link {
+  border: 1px solid rgba(242, 192, 108, 0.48);
+  background: rgba(255, 255, 255, 0.035);
+  color: #fff;
+}
+
+.upcoming-events-gold-btn:hover,
+.upcoming-events-gold-btn:focus-visible,
+.upcoming-events-outline-btn:hover,
+.upcoming-events-outline-btn:focus-visible,
+.upcoming-events-tier-card a:hover,
+.upcoming-events-tier-card a:focus-visible,
+.upcoming-events-call-link:hover,
+.upcoming-events-call-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--event-gold-soft);
+  outline: none;
+}
+
+.upcoming-events-record-mark {
+  position: absolute;
+  top: clamp(28px, 5vw, 64px);
+  right: clamp(24px, 5vw, 70px);
+  z-index: 2;
+  width: clamp(122px, 17vw, 190px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 8px solid #a66d2c;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, #31231d 0 30%, #c89748 31% 44%, #19100c 45%);
+  color: #e9c26c;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, 0.48);
+  transform: rotate(-10deg);
+}
+
+.upcoming-events-record-mark span,
+.upcoming-events-record-mark strong {
+  display: block;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(14px, 2vw, 24px);
+  line-height: 1;
+  letter-spacing: 0.12em;
+}
+
+.upcoming-events-trust-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  border-bottom: 1px solid var(--event-line);
+  background: rgba(201, 137, 62, 0.3);
+}
+
+.upcoming-events-trust-strip article {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 15px;
+  min-height: 132px;
+  padding: clamp(20px, 3vw, 28px);
+  background: linear-gradient(180deg, rgba(20, 15, 13, 0.98), rgba(11, 8, 7, 0.98));
+}
+
+.upcoming-events-trust-strip svg {
+  width: 42px;
+  height: 42px;
+  color: var(--event-gold);
+}
+
+.upcoming-events-trust-strip h2 {
+  margin: 0;
+  color: #f4d991;
+  font-size: 14px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.upcoming-events-trust-strip p {
+  margin: 7px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.upcoming-events-poster-section {
+  position: relative;
+  padding: clamp(34px, 5vw, 58px) clamp(18px, 4vw, 50px);
+}
+
+.upcoming-events-panel-title {
+  display: grid;
+  grid-template-columns: minmax(28px, 1fr) auto minmax(28px, 1fr);
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.upcoming-events-panel-title > span {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--event-gold), transparent);
+}
+
+.upcoming-events-panel-title h2 {
+  margin: 0;
+  color: #f5dfb1;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(23px, 3.2vw, 38px);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.upcoming-events-panel-title h2 small {
+  display: inline-block;
+  margin-left: 8px;
+  color: rgba(245, 223, 177, 0.82);
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: 0.56em;
+}
+
+.upcoming-events-package-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.upcoming-events-tier-card {
+  position: relative;
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 22px 22px;
+  border: 1px solid var(--event-line);
+  border-radius: 4px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02)),
+    var(--event-card);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.025), 0 20px 64px rgba(0, 0, 0, 0.24);
+}
+
+.upcoming-events-tier-card-featured {
+  border-color: rgba(242, 192, 108, 0.86);
+  box-shadow: 0 0 0 1px rgba(242, 192, 108, 0.22), 0 24px 72px rgba(201, 137, 62, 0.18);
+}
+
+.upcoming-events-tier-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: var(--event-gold);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 950;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+}
+
+.upcoming-events-tier-card h2 {
+  margin: 0;
+  color: #f5dfb1;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(22px, 2.4vw, 30px);
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.upcoming-events-tier-card strong {
+  display: block;
+  margin-top: 12px;
+  color: var(--event-gold-soft);
+  font-size: clamp(20px, 2.2vw, 28px);
+  text-align: center;
+}
+
+.upcoming-events-tier-price-note {
+  display: block;
+  margin-top: 4px;
+  color: rgba(245, 223, 177, 0.7);
+  font-size: 11px;
+  font-weight: 850;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.upcoming-events-tier-card ul {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.upcoming-events-tier-card li {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  gap: 9px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.upcoming-events-tier-card li svg {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  color: var(--event-gold);
+}
+
+.upcoming-events-tier-card a {
+  width: 100%;
+  margin-top: auto;
+}
+
+.upcoming-events-icon-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid rgba(201, 137, 62, 0.22);
+  background: rgba(201, 137, 62, 0.26);
+}
+
+.upcoming-events-icon-item {
+  min-height: 124px;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 11px;
+  padding: 18px 10px;
+  border: 0;
+  border-radius: 0;
+  background: rgba(12, 9, 7, 0.94);
+  text-align: center;
+}
+
+.upcoming-events-icon-item svg {
+  width: 30px;
+  height: 30px;
+  color: var(--event-gold);
+}
+
+.upcoming-events-icon-item span {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 11px;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.upcoming-events-sample-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.upcoming-events-sample-card {
+  min-height: 294px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid var(--event-line);
+  border-radius: 4px;
+  background: rgba(20, 15, 13, 0.95);
+}
+
+.upcoming-events-sample-card > span {
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 2px;
+  background: var(--event-red);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 950;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.upcoming-events-sample-card h3 {
+  margin: 12px 0 0;
+  color: var(--event-gold-soft);
+  font-size: 15px;
+  font-weight: 950;
+  letter-spacing: 0;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.upcoming-events-sample-card p {
+  margin: 9px 0 14px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.upcoming-events-sample-card-image {
+  position: relative;
+  min-height: 108px;
+  margin-top: auto;
+}
+
+.upcoming-events-experience-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.upcoming-events-detail-itinerary {
+  display: grid;
+  gap: 12px;
+}
+
+.upcoming-events-detail-itinerary article {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--event-line);
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018)),
+    rgba(16, 12, 10, 0.96);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.22);
+}
+
+.upcoming-events-detail-itinerary article > span {
+  min-height: 58px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(242, 192, 108, 0.38);
+  border-radius: 3px;
+  background: rgba(159, 31, 29, 0.82);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 950;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.upcoming-events-detail-itinerary h3 {
+  margin: 0;
+  color: var(--event-gold-soft);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(22px, 2.8vw, 34px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.upcoming-events-detail-itinerary ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px 16px;
+  margin-top: 15px;
+}
+
+.upcoming-events-detail-itinerary li {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  gap: 9px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.upcoming-events-detail-itinerary li svg {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  color: var(--event-gold);
+}
+
+.upcoming-events-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.upcoming-events-detail-list {
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid var(--event-line);
+  border-radius: 4px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
+    rgba(14, 10, 9, 0.96);
+}
+
+.upcoming-events-detail-list-red {
+  border-color: rgba(216, 39, 36, 0.48);
+}
+
+.upcoming-events-detail-list h3 {
+  margin: 0;
+  color: var(--event-gold-soft);
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(24px, 3vw, 36px);
+  letter-spacing: 0;
+}
+
+.upcoming-events-detail-list-red h3 {
+  color: #ffada4;
+}
+
+.upcoming-events-detail-list ul {
+  display: grid;
+  gap: 11px;
+  margin-top: 20px;
+}
+
+.upcoming-events-detail-list li {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.upcoming-events-detail-list li svg {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  color: var(--event-gold);
+}
+
+.upcoming-events-detail-list-red li svg {
+  color: #ff766d;
+}
+
+.upcoming-events-experience-image {
+  position: relative;
+  min-height: 168px;
+}
+
+.upcoming-events-image-slot {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(201, 137, 62, 0.32);
+  border-radius: 3px;
+  background:
+    radial-gradient(circle at 22% 28%, rgba(216, 39, 36, 0.28), transparent 10rem),
+    radial-gradient(circle at 80% 68%, rgba(201, 137, 62, 0.22), transparent 12rem),
+    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 12px),
+    #16110f;
+}
+
+.upcoming-events-image-slot::before {
+  inset: 10px;
+  border: 1px dashed rgba(242, 192, 108, 0.34);
+  border-radius: 2px;
+}
+
+.upcoming-events-image-slot img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.upcoming-events-ready-panel {
+  margin: clamp(18px, 3vw, 38px) clamp(18px, 4vw, 50px) 0;
+  padding: clamp(22px, 3vw, 34px);
+  border: 1px solid rgba(242, 192, 108, 0.46);
+  border-radius: 4px;
+  background:
+    linear-gradient(90deg, rgba(20, 15, 13, 0.98), rgba(72, 21, 18, 0.92), rgba(20, 15, 13, 0.98));
+  text-align: center;
+  box-shadow: 0 30px 92px rgba(0, 0, 0, 0.34);
+}
+
+.upcoming-events-ready-panel > span {
+  display: block;
+  color: #f5dfb1;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(26px, 4vw, 44px);
+  font-weight: 900;
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.upcoming-events-ready-panel > small {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.upcoming-events-ready-actions {
+  justify-content: center;
+}
+
+.upcoming-events-call-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.upcoming-events-poster-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(150px, 0.72fr) minmax(150px, 0.82fr) minmax(0, 1fr);
+  gap: 26px;
+  margin-top: 44px;
+  padding: 34px clamp(18px, 4vw, 50px);
+  border-top: 1px solid var(--event-line);
+  background: #080604;
+}
+
+.upcoming-events-poster-footer div,
+.upcoming-events-poster-footer nav {
+  display: grid;
+  gap: 9px;
+  align-content: start;
+}
+
+.upcoming-events-footer-brand > a {
+  width: fit-content;
+}
+
+.upcoming-events-footer-brand img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.upcoming-events-poster-footer svg {
+  width: 18px;
+  height: 18px;
+  color: var(--event-gold);
+}
+
+.upcoming-events-poster-footer strong,
+.upcoming-events-poster-footer nav strong {
+  color: #f5dfb1;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: 21px;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.upcoming-events-poster-footer span,
+.upcoming-events-poster-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.upcoming-events-footer-social {
+  display: flex !important;
+  align-items: center;
+  gap: 9px !important;
+  margin-top: 6px;
+}
+
+.upcoming-events-footer-social a {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(201, 137, 62, 0.3);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.upcoming-events-footer-social svg {
+  width: 15px;
+  height: 15px;
+}
+
+.upcoming-events-poster-footer a:hover,
+.upcoming-events-poster-footer a:focus-visible {
+  color: var(--event-gold-soft);
+  outline: none;
+}
+
+.home-hero-event-alert-media {
+  background:
+    radial-gradient(circle at 72% 18%, rgba(216, 39, 36, 0.42), transparent 16rem),
+    radial-gradient(circle at 22% 64%, rgba(201, 137, 62, 0.24), transparent 18rem),
+    linear-gradient(135deg, #18100d, #070504);
+}
+
+@media (max-width: 980px) {
+  .upcoming-events-poster {
+    width: min(100% - 20px, 760px);
+  }
+
+  .upcoming-events-trust-strip,
+  .upcoming-events-package-cards,
+  .upcoming-events-poster-footer,
+  .upcoming-events-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-icon-row,
+  .upcoming-events-sample-grid,
+  .upcoming-events-experience-strip,
+  .upcoming-events-detail-itinerary ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .upcoming-events-poster-page {
+    padding-bottom: 24px;
+  }
+
+  .upcoming-events-poster {
+    width: 100%;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .upcoming-events-poster-hero {
+    min-height: 560px;
+    padding: 26px 18px;
+  }
+
+  .upcoming-events-record-mark {
+    width: 104px;
+    right: 18px;
+  }
+
+  .upcoming-events-poster-meta,
+  .upcoming-events-poster-actions,
+  .upcoming-events-ready-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .upcoming-events-poster-actions a,
+  .upcoming-events-ready-actions a {
+    width: 100%;
+  }
+
+  .upcoming-events-icon-row,
+  .upcoming-events-sample-grid,
+  .upcoming-events-experience-strip,
+  .upcoming-events-detail-itinerary,
+  .upcoming-events-detail-itinerary ul {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-poster-section {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+  .upcoming-events-ready-panel {
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+}
+
+/* Professional polish for the concert itinerary and footer. */
+.upcoming-events-itinerary-pro-section {
+  background:
+    radial-gradient(circle at 0% 30%, rgba(159, 31, 29, 0.18), transparent 22rem),
+    linear-gradient(180deg, rgba(11, 8, 7, 0.1), rgba(11, 8, 7, 0.42));
+}
+
+.upcoming-events-itinerary-pro-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.44fr) minmax(0, 1fr);
+  gap: clamp(22px, 4vw, 40px);
+  align-items: start;
+}
+
+.upcoming-events-itinerary-pro-aside {
+  position: sticky;
+  top: 112px;
+  overflow: hidden;
+  border: 1px solid rgba(242, 192, 108, 0.32);
+  border-radius: 6px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025)),
+    rgba(13, 9, 8, 0.98);
+  box-shadow: 0 26px 86px rgba(0, 0, 0, 0.28);
+}
+
+.upcoming-events-itinerary-pro-image {
+  position: relative;
+  min-height: 390px;
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+
+.upcoming-events-itinerary-pro-image::before {
+  display: none;
+}
+
+.upcoming-events-itinerary-pro-image img {
+  object-position: 50% 18%;
+}
+
+.upcoming-events-itinerary-pro-brief {
+  padding: clamp(22px, 3vw, 30px);
+}
+
+.upcoming-events-itinerary-pro-brief > span,
+.upcoming-events-footer-event-card > span {
+  display: inline-flex;
+  width: fit-content;
+  padding: 7px 10px;
+  border-radius: 3px;
+  background: rgba(159, 31, 29, 0.9);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 950;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.upcoming-events-itinerary-pro-brief h3 {
+  margin: 16px 0 0;
+  color: #f5dfb1;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.upcoming-events-itinerary-pro-brief p {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.upcoming-events-itinerary-pro-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.upcoming-events-itinerary-pro-stats div {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid rgba(242, 192, 108, 0.22);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.upcoming-events-itinerary-pro-stats svg {
+  width: 18px;
+  height: 18px;
+  color: var(--event-gold-soft);
+}
+
+.upcoming-events-itinerary-pro-stats strong,
+.upcoming-events-itinerary-pro-stats small {
+  display: block;
+}
+
+.upcoming-events-itinerary-pro-stats strong {
+  margin-top: 9px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.upcoming-events-itinerary-pro-stats small {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary {
+  position: relative;
+  gap: 16px;
+}
+
+.upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 36px;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(242, 192, 108, 0.52), transparent);
+}
+
+.upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary article {
+  position: relative;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.upcoming-events-itinerary-day-mark {
+  position: relative;
+  z-index: 2;
+  width: 72px;
+  height: 72px;
+  align-self: start;
+  display: grid;
+  place-items: center;
+  gap: 2px;
+  border: 1px solid rgba(242, 192, 108, 0.54);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 35% 25%, rgba(242, 192, 108, 0.2), transparent 42%),
+    #160c0a;
+  box-shadow: 0 0 0 8px rgba(9, 7, 6, 0.86), 0 16px 42px rgba(0, 0, 0, 0.28);
+}
+
+.upcoming-events-itinerary-day-mark small,
+.upcoming-events-itinerary-day-mark strong {
+  display: block;
+  color: #f5dfb1;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.upcoming-events-itinerary-day-mark small {
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.upcoming-events-itinerary-day-mark strong {
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+
+.upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary article > div {
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid rgba(242, 192, 108, 0.26);
+  border-radius: 6px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
+    rgba(14, 10, 9, 0.98);
+  box-shadow: 0 20px 64px rgba(0, 0, 0, 0.22);
+}
+
+.upcoming-events-itinerary-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(242, 192, 108, 0.16);
+}
+
+.upcoming-events-itinerary-card-heading h3 {
+  margin: 0;
+}
+
+.upcoming-events-itinerary-card-heading > span {
+  flex: 0 0 auto;
+  padding: 7px 9px;
+  border: 1px solid rgba(242, 192, 108, 0.24);
+  border-radius: 3px;
+  color: var(--event-gold-soft);
+  background: rgba(242, 192, 108, 0.06);
+  font-size: 10px;
+  font-weight: 950;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary ul {
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary li {
+  grid-template-columns: 18px minmax(0, 1fr);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+}
+
+.upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary li svg {
+  width: 16px;
+  height: 16px;
+  color: var(--event-gold-soft);
+}
+
+.upcoming-events-poster-footer {
+  display: block;
+  margin-top: 48px;
+  padding: 0;
+  border-top: 1px solid rgba(242, 192, 108, 0.3);
+  background:
+    radial-gradient(circle at 14% 0%, rgba(159, 31, 29, 0.18), transparent 20rem),
+    linear-gradient(180deg, #100b09 0%, #070504 100%);
+}
+
+.upcoming-events-footer-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.72fr);
+  gap: clamp(20px, 4vw, 46px);
+  align-items: stretch;
+  padding: clamp(30px, 5vw, 50px) clamp(18px, 4vw, 50px) clamp(24px, 4vw, 38px);
+  border-bottom: 1px solid rgba(242, 192, 108, 0.16);
+}
+
+.upcoming-events-footer-brand {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+}
+
+.upcoming-events-footer-brand > a,
+.upcoming-events-footer-brand img {
+  width: 92px;
+  height: 92px;
+}
+
+.upcoming-events-footer-brand img {
+  object-fit: contain;
+}
+
+.upcoming-events-footer-brand strong,
+.upcoming-events-footer-event-card strong,
+.upcoming-events-footer-main strong {
+  color: #f5dfb1;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  letter-spacing: 0;
+}
+
+.upcoming-events-footer-brand strong {
+  display: block;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1;
+}
+
+.upcoming-events-footer-brand span {
+  display: block;
+  max-width: 560px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.upcoming-events-footer-event-card {
+  display: grid;
+  align-content: center;
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid rgba(242, 192, 108, 0.28);
+  border-radius: 6px;
+  background:
+    linear-gradient(135deg, rgba(159, 31, 29, 0.34), rgba(255, 255, 255, 0.035)),
+    rgba(14, 10, 9, 0.92);
+}
+
+.upcoming-events-footer-event-card strong {
+  display: block;
+  margin-top: 14px;
+  font-size: clamp(22px, 2.5vw, 32px);
+  line-height: 1.05;
+}
+
+.upcoming-events-footer-event-card small {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.upcoming-events-footer-main {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.75fr) minmax(160px, 0.85fr) minmax(220px, 1fr) minmax(220px, 1fr);
+  gap: clamp(18px, 3vw, 34px);
+  padding: clamp(26px, 4vw, 42px) clamp(18px, 4vw, 50px);
+}
+
+.upcoming-events-footer-main nav,
+.upcoming-events-footer-contact,
+.upcoming-events-footer-social-wrap {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.upcoming-events-footer-main strong {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.upcoming-events-footer-main a,
+.upcoming-events-footer-main span,
+.upcoming-events-footer-bottom span,
+.upcoming-events-footer-bottom a {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.upcoming-events-footer-contact a,
+.upcoming-events-footer-contact span {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 9px;
+  align-items: start;
+}
+
+.upcoming-events-footer-main svg {
+  width: 16px;
+  height: 16px;
+  color: var(--event-gold);
+}
+
+.upcoming-events-footer-social {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px !important;
+}
+
+.upcoming-events-footer-social a {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(242, 192, 108, 0.26);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.upcoming-events-footer-social a svg {
+  width: 16px;
+  height: 16px;
+}
+
+.upcoming-events-footer-cta {
+  width: fit-content;
+  min-height: 44px;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 11px 15px;
+  border: 1px solid rgba(242, 192, 108, 0.34);
+  border-radius: 3px;
+  color: #fff !important;
+  background: rgba(159, 31, 29, 0.62);
+  text-transform: uppercase;
+}
+
+.upcoming-events-footer-main a:hover,
+.upcoming-events-footer-main a:focus-visible,
+.upcoming-events-footer-bottom a:hover,
+.upcoming-events-footer-bottom a:focus-visible {
+  color: var(--event-gold-soft);
+  outline: none;
+}
+
+.upcoming-events-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px clamp(18px, 4vw, 50px);
+  border-top: 1px solid rgba(242, 192, 108, 0.16);
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.upcoming-events-footer-bottom div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 980px) {
+  .upcoming-events-itinerary-pro-layout,
+  .upcoming-events-footer-top,
+  .upcoming-events-footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-itinerary-pro-aside {
+    position: relative;
+    top: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .upcoming-events-itinerary-pro-image {
+    min-height: 300px;
+  }
+
+  .upcoming-events-itinerary-pro-stats,
+  .upcoming-events-footer-brand {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary::before {
+    left: 27px;
+  }
+
+  .upcoming-events-itinerary-pro-layout .upcoming-events-detail-itinerary article {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .upcoming-events-itinerary-day-mark {
+    width: 54px;
+    height: 54px;
+    box-shadow: 0 0 0 6px rgba(9, 7, 6, 0.86), 0 12px 34px rgba(0, 0, 0, 0.24);
+  }
+
+  .upcoming-events-itinerary-day-mark strong {
+    font-size: 20px;
+  }
+
+  .upcoming-events-itinerary-card-heading {
+    display: grid;
+  }
+
+  .upcoming-events-itinerary-card-heading > span {
+    width: fit-content;
+  }
+
+  .upcoming-events-footer-top,
+  .upcoming-events-footer-main,
+  .upcoming-events-footer-bottom {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .upcoming-events-footer-bottom {
+    display: grid;
+  }
+}
+
+/* Reference-match compact content bands: keep all details without breaking poster flow. */
+.upcoming-events-compact-details-section {
+  padding-top: clamp(18px, 3vw, 30px);
+  padding-bottom: clamp(18px, 3vw, 34px);
+}
+
+.upcoming-events-detail-itinerary-compact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.upcoming-events-detail-itinerary-compact article {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 14px;
+  min-height: 170px;
+  padding: 18px;
+  border: 1px solid rgba(201, 137, 62, 0.36);
+  border-radius: 4px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+    rgba(13, 10, 8, 0.96);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.018), 0 18px 54px rgba(0, 0, 0, 0.22);
+}
+
+.upcoming-events-detail-itinerary-compact article > span {
+  width: 62px;
+  height: 62px;
+  min-height: 62px;
+  align-self: start;
+  border: 1px solid rgba(242, 192, 108, 0.42);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 35% 25%, rgba(242, 192, 108, 0.18), transparent 46%),
+    rgba(159, 31, 29, 0.76);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 950;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.upcoming-events-detail-itinerary-compact h3 {
+  margin: 0;
+  color: var(--event-gold-soft);
+  font-size: clamp(20px, 2.4vw, 28px);
+}
+
+.upcoming-events-detail-itinerary-compact ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.upcoming-events-detail-itinerary-compact li {
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 12px;
+}
+
+.upcoming-events-details-grid-compact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.upcoming-events-details-grid-compact .upcoming-events-detail-list {
+  padding: clamp(22px, 3vw, 28px);
+  border-color: rgba(201, 137, 62, 0.36);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018)),
+    rgba(13, 10, 8, 0.96);
+}
+
+.upcoming-events-details-grid-compact .upcoming-events-detail-list-red {
+  border-color: rgba(216, 39, 36, 0.42);
+}
+
+.upcoming-events-details-grid-compact .upcoming-events-detail-list h3 {
+  font-size: clamp(23px, 2.8vw, 34px);
+}
+
+.upcoming-events-details-grid-compact .upcoming-events-detail-list li {
+  font-size: 12px;
+}
+
+.upcoming-events-poster-hero {
+  min-height: clamp(520px, 58vw, 650px);
+  padding: clamp(32px, 5vw, 62px) clamp(34px, 6vw, 74px);
+}
+
+.upcoming-events-poster-hero-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.upcoming-events-poster-hero::before,
+.upcoming-events-poster-hero::after,
+.upcoming-events-poster-hero-shade,
+.upcoming-events-record-mark {
+  display: none;
+}
+
+.upcoming-events-poster-hero h1,
+.upcoming-events-poster-hero-copy p,
+.upcoming-events-red-label {
+  opacity: 0;
+}
+
+.upcoming-events-poster-actions {
+  margin-top: clamp(280px, 38vw, 410px);
+}
+
+.upcoming-events-experience-strip {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.upcoming-events-experience-image {
+  min-height: 154px;
+}
+
+.upcoming-events-sample-card {
+  min-height: 342px;
+}
+
+.upcoming-events-sample-card-image {
+  min-height: 150px;
+}
+
+.upcoming-events-sample-card:nth-child(1) .upcoming-events-sample-card-image img {
+  object-position: center 28%;
+}
+
+.upcoming-events-sample-card:nth-child(2) .upcoming-events-sample-card-image img {
+  object-position: center;
+}
+
+.upcoming-events-sample-card:nth-child(3) .upcoming-events-sample-card-image img {
+  object-position: center 62%;
+}
+
+.upcoming-events-sample-card:nth-child(4) .upcoming-events-sample-card-image img {
+  object-position: center;
+}
+
+.upcoming-events-experience-strip .upcoming-events-experience-image:nth-child(1) img,
+.upcoming-events-experience-strip .upcoming-events-experience-image:nth-child(3) img {
+  object-position: center 20%;
+}
+
+.upcoming-events-experience-strip .upcoming-events-experience-image:nth-child(2) img,
+.upcoming-events-experience-strip .upcoming-events-experience-image:nth-child(4) img,
+.upcoming-events-experience-strip .upcoming-events-experience-image:nth-child(5) img {
+  object-position: center;
+}
+
+@media (max-width: 980px) {
+  .upcoming-events-detail-itinerary-compact,
+  .upcoming-events-details-grid-compact {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-experience-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .upcoming-events-poster-hero {
+    min-height: 440px;
+    padding: 22px;
+  }
+
+  .upcoming-events-poster-actions {
+    margin-top: 290px;
+  }
+
+  .upcoming-events-detail-itinerary-compact article {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-events-experience-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Keep the concert page in poster mode at the supplied reference width. */
+.upcoming-events-poster {
+  width: 100%;
+  max-width: none;
+}
+
+.upcoming-events-poster-hero {
+  min-height: clamp(390px, 42vw, 520px);
+  background:
+    linear-gradient(90deg, rgba(5, 3, 3, 0.96) 0%, rgba(5, 3, 3, 0.82) 36%, rgba(5, 3, 3, 0.16) 62%, rgba(5, 3, 3, 0.06) 100%),
+    url("/concert/03_guns_n_roses_band_live.jpg") right center / cover no-repeat !important;
+}
+
+.upcoming-events-poster-hero .upcoming-events-poster-hero-image {
+  display: block !important;
+  z-index: 0;
+  background: transparent;
+}
+
+.upcoming-events-poster-hero .upcoming-events-poster-hero-image img {
+  object-fit: cover;
+  object-position: right center;
+}
+
+.upcoming-events-poster-hero .upcoming-events-poster-hero-shade {
+  display: block;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(5, 3, 3, 0.96) 0%, rgba(5, 3, 3, 0.8) 33%, rgba(5, 3, 3, 0.22) 58%, rgba(5, 3, 3, 0.08) 100%),
+    linear-gradient(180deg, rgba(7, 5, 4, 0) 0%, rgba(7, 5, 4, 0.7) 100%);
+}
+
+.upcoming-events-record-mark {
+  display: none !important;
+}
+
+.upcoming-events-poster-hero h1,
+.upcoming-events-poster-hero-copy p,
+.upcoming-events-red-label {
+  opacity: 1;
+}
+
+.upcoming-events-poster-actions {
+  margin-top: 24px;
+}
+
+@media (min-width: 761px) {
+  .upcoming-events-trust-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .upcoming-events-package-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .upcoming-events-icon-row {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .upcoming-events-sample-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .upcoming-events-experience-strip {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .upcoming-events-detail-itinerary-compact,
+  .upcoming-events-details-grid-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .upcoming-events-footer-top {
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.72fr);
+  }
+
+  .upcoming-events-footer-main {
+    grid-template-columns: minmax(150px, 0.75fr) minmax(160px, 0.85fr) minmax(220px, 1fr) minmax(220px, 1fr);
+  }
+}
+
+@media (min-width: 1180px) {
+  .upcoming-events-sample-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* Final concert artwork polish. */
+.home-hero-event-alert {
+  width: min(700px, 100%);
+  aspect-ratio: 12 / 5;
+  border: 1px solid rgba(232, 201, 122, 0.92);
+  border-radius: 16px;
+  background: #090706;
+}
+
+.home-hero-event-alert-media img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-hero-event-alert-shade,
+.home-hero-event-alert-copy {
+  display: none !important;
+}
+
+.home-hero-event-alert-arrow {
+  top: 50%;
+  right: 18px;
+  bottom: auto;
+  width: 52px;
+  height: 52px;
+  transform: translateY(-50%);
+  background: rgba(11, 8, 7, 0.56);
+}
+
+.upcoming-events-package-inclusions-panel {
+  margin-top: 18px;
+  padding: clamp(20px, 3vw, 28px);
+  border: 1px solid rgba(201, 137, 62, 0.38);
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(159, 31, 29, 0.12), rgba(201, 137, 62, 0.05)),
+    rgba(13, 10, 8, 0.96);
+}
+
+.upcoming-events-package-inclusions-panel h3 {
+  margin: 0;
+  color: #f5dfb1;
+  font-family: "Playfair Display", "Cormorant Garamond", serif;
+  font-size: clamp(24px, 2.8vw, 36px);
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.upcoming-events-package-inclusions-panel ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+  margin-top: 18px;
+}
+
+.upcoming-events-package-inclusions-panel li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.upcoming-events-package-inclusions-panel svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--event-gold-soft);
+}
+
+.upcoming-events-experience-strip {
+  align-items: stretch;
+}
+
+.upcoming-events-experience-image {
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  background: #050403;
+}
+
+.upcoming-events-experience-image img {
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+@media (max-width: 720px) {
+  .home-hero-event-alert {
+    aspect-ratio: 16 / 9;
+  }
+
+  .upcoming-events-package-inclusions-panel ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Final home hero reference match. */
+.home-hero {
+  min-height: calc(100vh - 198px);
+  align-items: flex-start;
+  padding: clamp(22px, 2.5vw, 34px) clamp(56px, 5.6vw, 90px) 118px;
+  background-position: center center !important;
+}
+
+.home-hero .home-hero-overlay {
+  display: block !important;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 1 !important;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.24) 44%, rgba(0, 0, 0, 0.06) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.44) 100%) !important;
+}
+
+.home-hero-content {
+  width: min(760px, 56vw);
+  max-width: 760px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-hero-event-alert {
+  width: min(720px, 100%);
+  aspect-ratio: 2.56 / 1;
+  isolation: isolate;
+  margin: 0 0 16px;
+  border: 1px solid rgba(218, 163, 75, 0.98);
+  border-radius: 18px;
+  background: #090706;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+
+.home-hero-event-alert::before {
+  display: none;
+}
+
+.home-hero-event-alert-media img {
+  object-fit: fill;
+  object-position: center;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+.home-hero-event-alert-shade {
+  display: none !important;
+}
+
+.home-hero-event-alert-copy {
+  display: none !important;
+}
+
+.home-hero-event-alert-arrow {
+  z-index: 4;
+  right: 20px;
+  width: 54px;
+  height: 54px;
+  border-color: rgba(238, 190, 98, 0.98);
+  color: #f1c36e;
+  background: rgba(12, 9, 7, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.home-hero h1 {
+  max-width: 720px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(54px, 5vw, 78px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: 0;
+  text-shadow: 0 5px 24px rgba(0, 0, 0, 0.54);
+}
+
+.home-hero h1::after {
+  width: 88px;
+  height: 3px;
+  margin-top: 16px;
+  background: #c49b52;
+}
+
+.home-hero h1 span {
+  max-width: none;
+  margin-top: 16px;
+  color: #fff;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: clamp(22px, 1.85vw, 30px);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.home-hero p {
+  display: none;
+}
+
+.home-hero-buttons {
+  gap: 24px;
+  margin-top: 22px;
+}
+
+.home-hero-btn-primary,
+.home-hero-btn-secondary {
+  min-width: 176px;
+  min-height: 50px;
+  padding: 14px 28px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.home-hero-btn-primary {
+  border-color: #c9954e;
+  background: #c9954e;
+}
+
+.home-hero-btn-secondary {
+  border-color: rgba(255, 255, 255, 0.62);
+  background: rgba(0, 0, 0, 0.08);
+  color: #fff;
+  backdrop-filter: blur(8px);
+}
+
+.home-hero-side-actions {
+  position: absolute;
+  right: clamp(30px, 4vw, 64px);
+  top: 48%;
+  z-index: 3;
+  display: grid;
+  gap: 14px;
+  transform: translateY(-50%);
+}
+
+.home-hero-side-actions a {
+  min-width: 150px;
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: #c49b52;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.24);
+}
+
+.home-hero-side-actions a:nth-child(2) {
+  border-color: rgba(24, 178, 82, 0.85);
+  background: #18c85e;
+}
+
+.home-hero-side-actions a:nth-child(3) {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: #fff;
+  color: #473727;
+}
+
+.home-hero-side-actions svg {
+  width: 18px;
+  height: 18px;
+}
+
+.home-hero-trust {
+  position: absolute;
+  left: clamp(56px, 8.8vw, 140px);
+  right: clamp(56px, 7.8vw, 124px);
+  bottom: 14px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(214, 166, 88, 0.44);
+  border-radius: 4px;
+  background: rgba(187, 132, 63, 0.92);
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(10px);
+}
+
+.home-hero-trust-item {
+  min-height: 84px;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 18px 28px;
+  border: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.home-hero-trust-item:last-child {
+  border-right: 0;
+}
+
+.home-hero-trust-item svg {
+  width: 34px;
+  height: 34px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.home-hero-trust-item span {
+  display: grid;
+  gap: 3px;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.home-hero-trust-item strong {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .home-hero {
+    min-height: auto;
+    padding-bottom: 34px;
+  }
+
+  .home-hero-content {
+    width: min(760px, 100%);
+  }
+
+  .home-hero-side-actions {
+    position: static;
+    grid-template-columns: repeat(3, minmax(0, auto));
+    margin-top: 24px;
+    transform: none;
+  }
+
+  .home-hero-trust {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-hero {
+    padding: 18px 18px 28px;
+  }
+
+  .home-hero-event-alert {
+    aspect-ratio: 16 / 9;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(42px, 13vw, 58px);
+  }
+
+  .home-hero h1 span {
+    font-size: 18px;
+  }
+
+  .home-hero-buttons,
+  .home-hero-side-actions,
+  .home-hero-trust {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .home-hero-buttons {
+    display: grid;
+    gap: 12px;
+  }
+
+  .home-hero-side-actions a,
+  .home-hero-btn-primary,
+  .home-hero-btn-secondary {
+    width: 100%;
+  }
+}
+
+/* Revert home hero layout changes; keep only the polished notification image. */
+.home-hero {
+  min-height: calc(100vh - 128px);
+  align-items: center;
+  padding: clamp(80px, 10vw, 120px) 80px clamp(86px, 9vw, 112px);
+  background-position: center center !important;
+}
+
+.home-hero .home-hero-overlay,
+.home-hero-overlay,
+.home-hero-pattern {
+  display: none !important;
+  opacity: 0 !important;
+  background: none !important;
+}
+
+.home-hero-content {
+  width: auto;
+  max-width: 760px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.home-hero-event-alert {
+  width: min(700px, 100%);
+  aspect-ratio: 2.52 / 1;
+  display: block;
+  overflow: hidden;
+  margin: 0 0 24px;
+  border: 1px solid rgba(218, 163, 75, 0.96);
+  border-radius: 18px;
+  background: #090706;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.home-hero-event-alert-media,
+.home-hero-event-alert-shade {
+  position: absolute;
+  inset: 0;
+}
+
+.home-hero-event-alert-media img {
+  object-fit: fill;
+  object-position: center;
+  filter: saturate(1.04) contrast(1.02);
+}
+
+.home-hero-event-alert-shade,
+.home-hero-event-alert-copy {
+  display: none !important;
+}
+
+.home-hero-event-alert-arrow {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  bottom: auto;
+  z-index: 4;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(238, 190, 98, 0.98);
+  border-radius: 999px;
+  color: #f1c36e;
+  background: rgba(12, 9, 7, 0.38);
+  transform: translateY(-50%);
+  backdrop-filter: blur(5px);
+}
+
+.home-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  color: #fff;
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: 0;
+  text-shadow: 0 5px 24px rgba(0, 0, 0, 0.54);
+}
+
+.home-hero h1::after {
+  width: 88px;
+  height: 3px;
+  margin-top: 16px;
+  background: #c49b52;
+}
+
+.home-hero h1 span {
+  display: block;
+  max-width: 780px;
+  margin-top: 14px;
+  color: #fff;
+  font-family: "Poppins", "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: 0;
+}
+
+.home-hero p {
+  display: block;
+  max-width: 560px;
+  margin: 22px 0 0;
+}
+
+.home-hero-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.home-hero-btn-primary,
+.home-hero-btn-secondary {
+  min-width: 0;
+  min-height: 48px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.home-hero-trust {
+  position: static;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.home-hero-trust-item {
+  min-height: 0;
+  display: inline-flex;
+  grid-template-columns: none;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+  backdrop-filter: blur(8px);
+}
+
+.home-hero-trust-item svg {
+  width: 16px;
+  height: 16px;
+  color: #f4d991;
+}
+
+.home-hero-trust-item span {
+  display: inline;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+@media (max-width: 1180px) {
+  .home-hero h1 {
+    font-size: 62px;
+  }
+
+  .home-hero h1 span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-hero {
+    min-height: auto;
+    padding: 24px 18px 34px;
+  }
+
+  .home-hero-event-alert {
+    aspect-ratio: 16 / 9;
+  }
+
+  .home-hero h1 {
+    font-size: 40px;
+    line-height: 1.08;
+  }
+
+  .home-hero h1 span {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
