@@ -37026,6 +37026,10 @@ textarea {
   padding: clamp(34px, 5vw, 58px) clamp(18px, 4vw, 50px);
 }
 
+#concert-packages {
+  scroll-margin-top: 130px;
+}
+
 .upcoming-events-panel-title {
   display: grid;
   grid-template-columns: minmax(28px, 1fr) auto minmax(28px, 1fr);

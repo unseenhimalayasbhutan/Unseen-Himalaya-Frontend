@@ -33,6 +33,7 @@ export const upcomingEvents = [
           "Same concert ticket category included",
           "Train tickets both ways",
           "Transportation for the entire tour",
+          "Sunset Cruise on Brahmaputra",
         ],
       },
       {
@@ -67,7 +68,7 @@ export const upcomingEvents = [
       "Premium SUV transportation in Guwahati",
       "Premium SUV / Toyota Hiace Bus / Toyota Bus from Thimphu to Phuentsholing and return, depending on group size",
       "Guns N' Roses concert ticket in the same category for all packages",
-      "Concert tickets can be upgraded on request",
+      "Ticket category upgrades are available at an additional cost, subject to availability",
       "Tour coordination by Unseen Himalayas Bhutan",
     ],
     highlights: [
@@ -85,7 +86,7 @@ export const upcomingEvents = [
       "Premium SUV transportation in Guwahati",
       "Premium SUV / Toyota Hiace Bus / Toyota Bus from Thimphu to Phuentsholing and return, depending on group size",
       "Guns N' Roses concert ticket in the same category for all packages",
-      "Concert tickets can be upgraded on request",
+      "Ticket category upgrades are available at an additional cost, subject to availability",
       "Tour coordination by Unseen Himalayas Bhutan",
     ],
     exclusions: [

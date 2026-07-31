@@ -75,10 +75,8 @@ export default function UpcomingEventsPage() {
 
               <div className="upcoming-events-poster-actions">
                 <a
-                  href={siteConfig.contact.whatsappHref}
+                  href="#concert-packages"
                   className="upcoming-events-gold-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   View Packages
                   <ChevronRight aria-hidden="true" />
