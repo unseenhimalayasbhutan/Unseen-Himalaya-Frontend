@@ -90,6 +90,11 @@ const navLinks = [
         href: "/why-visit",
         description: "Unique experiences await",
       },
+      {
+        label: "Places to Visit in Bhutan",
+        href: "/places-to-visit",
+        description: "Thimphu, Paro, hikes, temples, and hidden gems",
+      },
     ],
   },
   {
@@ -115,6 +120,11 @@ const navLinks = [
         label: "Festival Calendar",
         href: "/festival-calendar",
         description: "Plan around Bhutan festival dates",
+      },
+      {
+        label: "SDF",
+        href: "/sdf",
+        description: "Sustainable Development Fee explained",
       },
       {
         label: "FAQ",

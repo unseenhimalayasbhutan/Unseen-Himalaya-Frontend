@@ -43,7 +43,9 @@ const routeImages: Partial<Record<IndexedPath, string[]>> = {
   "/gnh-philosophies": ["/gnh.jpg"],
   "/land-entry-tours": ["/Phobjikha-valley-by-Alicia-Warner-56.jpg"],
   "/optional-tours": ["/rafting2.jpg"],
+  "/places-to-visit": ["/Buddha-Dordenma-Statue-by-Alicia-Warner-16.jpg"],
   "/seasons": ["/Peach blossoms in front of the stunning Thimphu Dzong.JPG"],
+  "/sdf": ["/cover2.png"],
   "/why-visit": ["/IMG_20231021_170519.jpg"],
 };
 

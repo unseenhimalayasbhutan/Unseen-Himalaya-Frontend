@@ -121,11 +121,35 @@ export const pageSeo = {
       "Personalize your Bhutan itinerary with hikes, wellness, food, photography, village visits, and other optional experiences.",
     keywords: ["Bhutan activities", "Bhutan experiences", "Bhutan tour add-ons"],
   },
+  "/places-to-visit": {
+    title: "Places to Visit in Bhutan | Thimphu & Paro Travel Guide",
+    description:
+      "Explore places to visit in Bhutan, including Thimphu attractions, Paro highlights, monasteries, museums, markets, hikes, hidden gems, and responsible access notes.",
+    keywords: [
+      "places to visit in Bhutan",
+      "places to visit in Thimphu",
+      "places to visit in Paro",
+      "Bhutan attractions",
+      "Bhutan sightseeing",
+      "Bhutan travel guide 2026",
+    ],
+  },
   "/privacy-policy": {
     title: "Privacy Policy",
     description:
       "Read how Unseen Himalayas Bhutan handles personal information submitted through our Bhutan travel website and inquiry channels.",
     keywords: ["Unseen Himalayas Bhutan privacy policy"],
+  },
+  "/sdf": {
+    title: "Bhutan SDF | Sustainable Development Fee Guide",
+    description:
+      "Understand Bhutan's Sustainable Development Fee, what it supports, how it is allocated, and how it contributes to culture, environment, infrastructure, education, and public services.",
+    keywords: [
+      "Bhutan SDF",
+      "Sustainable Development Fee Bhutan",
+      "Bhutan travel cost",
+      "Bhutan tourism fee",
+    ],
   },
   "/seasons": {
     title: "Bhutan Seasons & Weather",
