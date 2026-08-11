@@ -25,7 +25,10 @@ import {
   type PackageShowcaseItem,
 } from "../components/ItineraryPackageShowcase";
 import { landEntryItineraries as landEntryRoutes } from "../data/landEntryItineraries";
-import { getB2cUsdPrice } from "../data/tourPricing";
+import {
+  INTERNATIONAL_TRAVELER_PRICE_NOTE,
+  getB2cUsdPrice,
+} from "../data/tourPricing";
 import { sortPackages } from "../data/packageShowcases";
 
 type LandEntryValue = {
@@ -352,6 +355,10 @@ function RoutePanel({
               </div>
             ))}
           </div>
+
+          <p className="uh-itinerary-pricing-note">
+            {INTERNATIONAL_TRAVELER_PRICE_NOTE}
+          </p>
 
           <div className="cultural-pro-route-actions">
             <Link href="/contact" className="tour-pro-btn-primary">

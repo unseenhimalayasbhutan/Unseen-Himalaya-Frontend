@@ -17,7 +17,11 @@ import {
   type ImageAsset,
 } from "./TourPagePrimitives";
 import { siteConfig } from "../siteConfig";
-import { formatUsd, type TourPriceGroup } from "../data/tourPricing";
+import {
+  INTERNATIONAL_TRAVELER_PRICE_NOTE,
+  formatUsd,
+  type TourPriceGroup,
+} from "../data/tourPricing";
 
 export type PackageShowcaseDay = {
   label: string;
@@ -186,7 +190,11 @@ export function ItineraryPackageDetail({
 
           <article className="uh-hb-detail-panel">
             {activeTab === "itinerary" ? (
-              <ItineraryTab item={item} routeLabel={routeLabel} />
+              <ItineraryTab
+                item={item}
+                routeLabel={routeLabel}
+                showPrices={showPrices}
+              />
             ) : null}
 
             {activeTab === "cost" ? (
@@ -220,9 +228,11 @@ export function ItineraryPackageDetail({
 function ItineraryTab({
   item,
   routeLabel,
+  showPrices,
 }: {
   item: PackageShowcaseItem;
   routeLabel: string;
+  showPrices: boolean;
 }) {
   return (
     <>
@@ -278,6 +288,12 @@ function ItineraryTab({
           </section>
         ))}
       </div>
+
+      {showPrices ? (
+        <p className="uh-itinerary-pricing-note">
+          {INTERNATIONAL_TRAVELER_PRICE_NOTE}
+        </p>
+      ) : null}
     </>
   );
 }

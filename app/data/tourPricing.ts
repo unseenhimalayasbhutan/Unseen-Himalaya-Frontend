@@ -4,6 +4,9 @@ export type TourPriceGroup = {
   fourSix: number;
 };
 
+export const INTERNATIONAL_TRAVELER_PRICE_NOTE =
+  "Prices mentioned are for international travelers and do not apply to regional travelers from India, Bangladesh, or Maldives.";
+
 export const b2cUsdTourPrices: Record<string, TourPriceGroup> = {
   "UH-NAC-001": { one: 949, twoThree: 754, fourSix: 590 },
   "UH-NAC-002": { one: 967, twoThree: 775, fourSix: 610 },

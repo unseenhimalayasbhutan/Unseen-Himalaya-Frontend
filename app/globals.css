@@ -34339,6 +34339,17 @@ body {
   color: var(--gold, #c49b52);
 }
 
+.uh-itinerary-pricing-note {
+  margin: 18px 0 0;
+  border-left: 3px solid var(--gold, #c49b52);
+  padding: 11px 14px;
+  background: rgba(196, 155, 82, 0.09);
+  color: #5d4d3b;
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 750;
+}
+
 .uh-hb-price-table-wrap {
   overflow-x: auto;
   margin-top: 22px;

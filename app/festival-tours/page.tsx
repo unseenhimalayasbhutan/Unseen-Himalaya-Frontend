@@ -27,7 +27,10 @@ import {
   festivalPackages,
   type FestivalPackage,
 } from "../data/festivalPackages";
-import { getB2cUsdPrice } from "../data/tourPricing";
+import {
+  INTERNATIONAL_TRAVELER_PRICE_NOTE,
+  getB2cUsdPrice,
+} from "../data/tourPricing";
 import { sortPackages } from "../data/packageShowcases";
 
 const removedFestivalPackageTitles = new Set([
@@ -470,6 +473,10 @@ function FestivalPackagePanel({
               </div>
             ))}
           </div>
+
+          <p className="uh-itinerary-pricing-note">
+            {INTERNATIONAL_TRAVELER_PRICE_NOTE}
+          </p>
 
           <div className="cultural-pro-route-actions">
             <Link href="/contact" className="tour-pro-btn-primary">

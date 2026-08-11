@@ -36,7 +36,10 @@ import {
   itineraries,
 } from "../data/tourItineraries";
 import { photographyTourCodes } from "../data/photographyTourCodes";
-import { getB2cUsdPrice } from "../data/tourPricing";
+import {
+  INTERNATIONAL_TRAVELER_PRICE_NOTE,
+  getB2cUsdPrice,
+} from "../data/tourPricing";
 import { sortPackages } from "../data/packageShowcases";
 
 const getDurationId = (duration: string) =>
@@ -410,6 +413,10 @@ function PhotographyRoutePanel({
               </div>
             ))}
           </div>
+
+          <p className="uh-itinerary-pricing-note">
+            {INTERNATIONAL_TRAVELER_PRICE_NOTE}
+          </p>
 
           <div className="cultural-pro-route-actions">
             <Link href="/contact" className="tour-pro-btn-primary">
