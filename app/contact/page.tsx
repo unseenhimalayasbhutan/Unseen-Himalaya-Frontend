@@ -8,7 +8,6 @@ import {
   Mail,
   MessageCircle,
   Phone,
-  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -34,7 +33,7 @@ export default function Contact() {
             <div className="contact-pro-hero-grid">
               <div className="contact-pro-hero-content">
                 <div className="contact-pro-eyebrow">
-                  <Sparkles aria-hidden />
+                  <MessageCircle aria-hidden />
                   <span>Contact Unseen Himalayas Bhutan</span>
                 </div>
 
@@ -282,7 +281,7 @@ const contactCards: ContactCard[] = [
     icon: FaWhatsapp as unknown as LucideIcon,
     label: "WhatsApp",
     title: siteConfig.contact.phoneDisplayAll,
-    description: "Best for quick questions, trip planning, and regional rates.",
+    description: "Best for quick questions and trip planning support.",
     href: contactLinks.secondaryWhatsapp,
   },
   {

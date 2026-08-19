@@ -13,6 +13,7 @@ import {
   BookOpen,
   CheckCircle,
   ChevronRight,
+  Compass,
   Clock,
   Feather,
   Flag,
@@ -24,7 +25,6 @@ import {
   Route,
   ShieldCheck,
   Smile,
-  Sparkles,
   Users,
   Utensils,
   type LucideIcon,
@@ -170,7 +170,7 @@ export default function WhyVisitBhutanPage() {
             <div className="whyvisit-pro-hero-grid">
               <div className="whyvisit-pro-hero-content">
                 <div className="whyvisit-pro-eyebrow">
-                  <Sparkles aria-hidden />
+                  <Compass aria-hidden />
                   <span>Why Visit Bhutan</span>
                 </div>
 
@@ -687,7 +687,7 @@ const quickStats: StatItem[] = [
 
 const visitReasons: VisitReason[] = [
   {
-    icon: "🕊️",
+    icon: "01",
     title: "Peaceful Atmosphere",
     kicker: "Calm travel rhythm",
     description:
@@ -703,7 +703,7 @@ const visitReasons: VisitReason[] = [
     },
   },
   {
-    icon: "🏯",
+    icon: "02",
     title: "Living Spiritual Culture",
     kicker: "Monasteries and rituals",
     description:
@@ -719,7 +719,7 @@ const visitReasons: VisitReason[] = [
     },
   },
   {
-    icon: "🌲",
+    icon: "03",
     title: "Nature With Purpose",
     kicker: "Forests and conservation",
     description:
@@ -735,7 +735,7 @@ const visitReasons: VisitReason[] = [
     },
   },
   {
-    icon: "🤝",
+    icon: "04",
     title: "Human Connection",
     kicker: "Warm local encounters",
     description:
@@ -811,7 +811,7 @@ const topReasons: IconCard[] = [
 
 const travelStyles: TravelStyle[] = [
   {
-    icon: "🏯",
+    icon: "01",
     title: "Culture Seeker",
     bestFor: "Best for heritage lovers",
     description:
@@ -833,7 +833,7 @@ const travelStyles: TravelStyle[] = [
     },
   },
   {
-    icon: "🌲",
+    icon: "02",
     title: "Nature Lover",
     bestFor: "Best for landscapes and calm",
     description:
@@ -855,7 +855,7 @@ const travelStyles: TravelStyle[] = [
     },
   },
   {
-    icon: "🥾",
+    icon: "03",
     title: "Soft Adventurer",
     bestFor: "Best for active travelers",
     description:
@@ -877,7 +877,7 @@ const travelStyles: TravelStyle[] = [
     },
   },
   {
-    icon: "🧘",
+    icon: "04",
     title: "Spiritual Traveler",
     bestFor: "Best for reflection and meaning",
     description:

@@ -95,7 +95,9 @@ async function buildChatbotResponse(messages: ChatMessage[], latestQuestion: str
   const needsHandoff = shouldOfferHumanHandoff(intent, latestQuestion);
   const lead = needsHandoff || intent === "booking" ? buildLeadDraft(messages, profile, recommendations) : undefined;
   const handoffSummary = lead ? buildHandoffSummary(lead, handoffReason(intent)) : "";
-  const sources = uniqueSources(retrievalResults);
+  const sources = isConcertQuestion(latestQuestion)
+    ? uniqueSources(retrievalResults).filter((source) => source.contentType === "upcoming-event")
+    : uniqueSources(retrievalResults);
   const suggestions = buildSuggestions(intent, profile.durationDays);
   const fallbackReply = buildGuardedFallbackReply({
     intent,
@@ -224,13 +226,14 @@ async function generateAiReply({
 
 function buildSystemInstructions(intent: ChatIntent) {
   return [
-    `You are the official virtual travel assistant for ${siteConfig.name}, a licensed Bhutan tour operator and destination management company.`,
+    `You are Jarvis, the official virtual travel assistant for ${siteConfig.name}, a licensed Bhutan tour operator and destination management company.`,
     `Detected intent: ${intent}.`,
     `Contact details: WhatsApp/phone ${siteConfig.contact.phoneDisplayAll}; email ${siteConfig.contact.email}.`,
     "Be welcoming, intelligent, concise, professional, and accurate.",
     "Use short, easy-to-scan answers. Prefer 1-3 compact lines over paragraphs.",
     "Use retrieved Unseen Himalayas Bhutan website content as the primary source of truth.",
     "Preserve 'starting from' wording for displayed rates and always mention displayed starting rates exclude SDF.",
+    "For the Guns N' Roses Guwahati event, explain that the listed concert ticket category is the same across packages and upgrades can be requested at an additional cost, subject to availability.",
     "Do not present time-sensitive information as permanently fixed.",
     "Before submitting lead details, explain that they will be shared with Unseen Himalayas Bhutan to prepare a personalised itinerary or quotation.",
     "For serious inquiries, guide the traveller to WhatsApp or email and summarize the traveller's requirements for handoff.",
@@ -253,6 +256,14 @@ function buildGuardedFallbackReply({
   leadReady: boolean;
 }) {
   const lowerQuestion = cleanText(latestQuestion).toLowerCase();
+
+  if (isConcertQuestion(latestQuestion)) {
+    return [
+      "Guns N' Roses Guwahati is a 5 Days / 4 Nights concert escape on 17 November 2026.",
+      "Starting rates: Standard Nu. 26,214, Deluxe 3-Star Nu. 51,548, Premium 4-Star Nu. 55,548 per person.",
+      "Includes Phuentsholing and Guwahati stays, train tickets both ways, transport, Brahmaputra Sunset Cruise, the same concert ticket category, and tour coordination. Ticket upgrades can be requested at extra cost, subject to availability.",
+    ].join("\n");
+  }
 
   if (lowerQuestion.includes("inclusion") || lowerQuestion.includes("included")) {
     const inclusionSource = retrievalResults.find((result) =>
@@ -290,7 +301,7 @@ function buildGuardedFallbackReply({
       return "That information is confidential.\nI can help with public tour details or connect you with the team for a B2B discussion.";
     }
 
-    return "I help with Bhutan tours, rates, SDF/visa guidance, routes, festivals, hotels, and contacting the travel team.";
+    return "I am Jarvis. I help with Bhutan tours, event packages, rates, SDF/visa guidance, routes, festivals, hotels, and contacting the travel team.";
   }
 
   if (intent === "sdf" || intent === "visa") {
@@ -388,7 +399,18 @@ function buildGuardedFallbackReply({
     return `${truncateText(best.summary, 180)}\nSource: ${best.sourceUrl}\nTeam verification is needed for rules, hotels, roads, flights, or availability.`;
   }
 
-  return "I can help with tours, rates, SDF exclusions, festivals, land-entry routes, and custom planning.\nPlease share month, guests, days, entry point, and interests.";
+  return "I can help with tours, rates, SDF exclusions, upcoming events, festivals, land-entry routes, and custom planning.\nPlease share month, guests, days, entry point, and interests.";
+}
+
+function isConcertQuestion(question: string) {
+  const lowerQuestion = cleanText(question).toLowerCase();
+
+  return (
+    lowerQuestion.includes("guns") ||
+    lowerQuestion.includes("roses") ||
+    lowerQuestion.includes("concert") ||
+    lowerQuestion.includes("guwahati")
+  );
 }
 
 function cleanReplyText(text: string) {

@@ -1,6 +1,6 @@
 {
-  "lastIndexedAt": "2026-07-14T10:39:11.218Z",
-  "records": 41,
+  "lastIndexedAt": "2026-08-19T13:07:35.022Z",
+  "records": 42,
   "chunks": [
     {
       "id": "site-overview::chunk-1",
@@ -8,13 +8,13 @@
       "title": "Unseen Himalayas Bhutan overview",
       "contentType": "company",
       "sourceUrl": "https://www.theunseenhimalayas.com/",
-      "contentHash": "5dcd300a0fec8884a98159ab7e98715615eb709e5515a0c2e2ce345a0b94947f",
+      "contentHash": "bb5ce9433f0cfd9ef7be487da92ba0571dcdce89f7836ee1875ca6483a8f5e11",
       "metadata": {
         "id": "site-overview",
         "title": "Unseen Himalayas Bhutan overview",
         "sourceUrl": "https://www.theunseenhimalayas.com/",
         "contentType": "company",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -24,13 +24,13 @@
       "title": "Contact and human handoff",
       "contentType": "contact",
       "sourceUrl": "https://www.theunseenhimalayas.com/contact",
-      "contentHash": "6de3ecbcf628fa5078d26683dc97e7ebbabc8b694268b6d7b79f5b0f1eabe215",
+      "contentHash": "c150b567249bec786a1a2bca5ed508289c08acb3d2201750b3b6b3b4518eba42",
       "metadata": {
         "id": "contact-handoff",
         "title": "Contact and human handoff",
         "sourceUrl": "https://www.theunseenhimalayas.com/contact",
         "contentType": "contact",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -40,13 +40,13 @@
       "title": "Tour inclusions, exclusions, and SDF notes",
       "contentType": "policy",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "b4902fd14b65fd46e2d0779d9c5967ebd03d162a7e4d8200aa676cac514c1c86",
+      "contentHash": "6100dbb9b4db8cb187fc5a19f9d463812ea50d9554a2ff81d5291e90935865d2",
       "metadata": {
         "id": "tour-inclusions-exclusions",
         "title": "Tour inclusions, exclusions, and SDF notes",
         "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
         "contentType": "policy",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -62,7 +62,7 @@
         "title": "Booking, reservation, and cancellation terms",
         "sourceUrl": "https://www.theunseenhimalayas.com/terms",
         "contentType": "policy",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -78,7 +78,7 @@
         "title": "Custom itinerary options",
         "sourceUrl": "https://www.theunseenhimalayas.com/contact",
         "contentType": "planning",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -94,7 +94,7 @@
         "title": "Visa and Sustainable Development Fee verification",
         "sourceUrl": "https://www.theunseenhimalayas.com/faq",
         "contentType": "travel-info",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -110,7 +110,7 @@
         "title": "Best time to visit and festival planning",
         "sourceUrl": "https://www.theunseenhimalayas.com/best-time",
         "contentType": "travel-info",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -120,7 +120,7 @@
       "title": "3-Day Paro & Thimphu Essentials",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "a0b235d4bd69da3944269ac3e963d330b65bbb1ae76e5b76f9163dc5b027fc01",
+      "contentHash": "4c080c8f6dceaf63aeae1cc6d95600e9528daf4cc493410d73f72d1cb9afdaae",
       "metadata": {
         "id": "regular-tour:3-day-paro-thimphu-paro",
         "title": "3-Day Paro & Thimphu Essentials",
@@ -141,7 +141,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -151,7 +151,7 @@
       "title": "3-Day Paro Valley Short Escape",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "b185492ae860fe96e481eb3abbf4ce2516993d7866b21331dd484dbb591849e0",
+      "contentHash": "dda46805aad2dd208ce4d336e3c2c2f98e3446f883a4da005275dd9b6732abb8",
       "metadata": {
         "id": "regular-tour:3-day-paro-paro",
         "title": "3-Day Paro Valley Short Escape",
@@ -172,7 +172,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -182,7 +182,7 @@
       "title": "4-Day Punakha Quick Journey",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "220b5474912c2489306ad9df8a9a2ff41bd9a3f9921e0361706347a0f0942eca",
+      "contentHash": "024a2d7f84e7d3802fa2a3783d44598c1ab0dccc28e00ed91580ac44599edb26",
       "metadata": {
         "id": "regular-tour:4-day-paro-punakha-paro",
         "title": "4-Day Punakha Quick Journey",
@@ -205,40 +205,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:4-day-paro-punakha-paro::chunk-2",
-      "recordId": "regular-tour:4-day-paro-punakha-paro",
-      "title": "4-Day Punakha Quick Journey",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "24387eba7fe66cf19e7631bc4599b0f53ef7194fcd6d3622b376a767e0bf284f",
-      "metadata": {
-        "id": "regular-tour:4-day-paro-punakha-paro",
-        "title": "4-Day Punakha Quick Journey",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-003",
-        "startingRate": 34500,
-        "tourCategory": "Scenic Valley Tour",
-        "durationDays": 4,
-        "durationNights": 3,
-        "destinations": [
-          "Paro",
-          "Punakha"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Punakha",
-        "interests": [
-          "culture",
-          "photography",
-          "nature"
-        ],
-        "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -248,7 +215,7 @@
       "title": "4-Day Thimphu & Paro Cultural Intro",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "deaade1ff4cbd70875b9b4ef0bd789bfd6b83fc03256521fa0bcdecf7f2d41ad",
+      "contentHash": "66277435e171fca83e7a861d75ae80f224b96a510a5899ea8fda5f3b4332b229",
       "metadata": {
         "id": "regular-tour:4-day-paro-thimphu-paro",
         "title": "4-Day Thimphu & Paro Cultural Intro",
@@ -269,7 +236,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -300,7 +267,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -310,7 +277,7 @@
       "title": "5-Day Classic Western Bhutan",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "3f2a8c65e71354da75d84c0857a7ffcf5eb578b0a9374edf86410cd417b4bfb8",
+      "contentHash": "8c0f43f54a2ac98299ae18975d9ae0f692f543689e79b429b5946328a31fd6b2",
       "metadata": {
         "id": "regular-tour:5-day-classic-western-bhutan",
         "title": "5-Day Classic Western Bhutan",
@@ -330,7 +297,7 @@
         "exitPoint": "Punakha",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -360,7 +327,7 @@
         "exitPoint": "Punakha",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -370,7 +337,7 @@
       "title": "6-Day Punakha Culture & Valley Journey",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "1de3200bb24125a2ee182c55a02cf75435c9f1bbdf41b32a15f3fcf9ecfae6a5",
+      "contentHash": "e8306d91957de8e44c38264359e77a5673bbc998aa5d23e3c26717f152cff583",
       "metadata": {
         "id": "regular-tour:6-day-punakha-depth",
         "title": "6-Day Punakha Culture & Valley Journey",
@@ -394,7 +361,7 @@
           "soft adventure"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -428,7 +395,7 @@
           "soft adventure"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -438,7 +405,7 @@
       "title": "6-Day Thimphu, Punakha & Paro Classic",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "a42d9393f59438c2ddd12adf6f5321ddc97b4f5a939642b9a80fdbcb6349c154",
+      "contentHash": "698a4fbf9b7b8705c5a39cb395ca9b365cb6efcce4f9243493b49b027fc38951",
       "metadata": {
         "id": "regular-tour:6-day-thimphu-punakha-paro",
         "title": "6-Day Thimphu, Punakha & Paro Classic",
@@ -460,7 +427,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -492,7 +459,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -502,7 +469,7 @@
       "title": "7-Day Bhutan Valley Explorer",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "73456e4fc9e2c84f52dc85cb6778be001eb01f2d6521b9cc147df2b11f9820a0",
+      "contentHash": "b58b812110f683687bb7fc5d2798c518173963ff91a7e22124934eaf7718aa75",
       "metadata": {
         "id": "regular-tour:7-day-bhutan-valley-explorer",
         "title": "7-Day Bhutan Valley Explorer",
@@ -526,7 +493,7 @@
           "birdwatching"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -560,7 +527,7 @@
           "birdwatching"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -594,7 +561,7 @@
           "birdwatching"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -604,7 +571,7 @@
       "title": "8-Day Gangtey & Phobjikha Journey",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "bb80d5df2811cb6e25d98c6eaf2298519d2121fa2c6fd5e7147d4f308e955440",
+      "contentHash": "7f7f60243bfaef0d62c5bd832a5e82efad7c6f74531f436983393f7904c1abdc",
       "metadata": {
         "id": "regular-tour:8-day-gangtey-phobjikha",
         "title": "8-Day Gangtey & Phobjikha Journey",
@@ -627,7 +594,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -660,7 +627,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -693,7 +660,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -703,7 +670,7 @@
       "title": "8-Day Punakha & Phobjikha In-Depth",
       "contentType": "regular-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "9b85905d3b5f7cfd82ab160973f93e57ea98ab4a0974fa90579702223ca6a1bc",
+      "contentHash": "828f41aa31db578be433950e29859c5f71f2e011d94f8eb187ac525e44c95ee9",
       "metadata": {
         "id": "regular-tour:8-day-punakha-phobjikha-depth",
         "title": "8-Day Punakha & Phobjikha In-Depth",
@@ -724,7 +691,7 @@
         "exitPoint": "Phobjikha",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -755,7 +722,7 @@
         "exitPoint": "Phobjikha",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -786,7 +753,7 @@
         "exitPoint": "Phobjikha",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -796,7 +763,7 @@
       "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "bbdcdb2e8901c1321d845e77bd95fae26612e39f8ad0a758a1f9e4816f065301",
+      "contentHash": "77afb98fe01e4bd080576b6986d3ccd083a80c12ab2aec8171277b275ff67867",
       "metadata": {
         "id": "land-entry-tour:4-day-thimphu-paro-classic",
         "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
@@ -816,7 +783,7 @@
         "exitPoint": "Phuentsholing",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -846,7 +813,7 @@
         "exitPoint": "Phuentsholing",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -856,7 +823,7 @@
       "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "e98dadc6b72665a068d075911f758affa11e33022600d038a4ee2c5f3b6f1c55",
+      "contentHash": "2125d82ce882e259b0ec8c8b88169c62804ab72fc69e328f954f78faba04176e",
       "metadata": {
         "id": "land-entry-tour:4-day-thimphu-paro-cultural",
         "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
@@ -878,7 +845,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -910,7 +877,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -920,7 +887,7 @@
       "title": "4-Day Paro-Focused Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "b05034bfe13377e73d13cadfd766a3511cd78fc601ef67f9ede504c4dd4a816f",
+      "contentHash": "739bbb5199b9234f382d0c3d1d5bc2a87501e3938239004ccfdf52ec3bdc28a3",
       "metadata": {
         "id": "land-entry-tour:4-day-paro-focus",
         "title": "4-Day Paro-Focused Land-Entry Tour",
@@ -942,7 +909,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -952,7 +919,7 @@
       "title": "4-Day Paro-Focused Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "3760c8bdbcfa0b5a8ac98345fdb805d7a34481e853a808e3ebe387785bf7e508",
+      "contentHash": "bd1ba95eef88448caeade9beef16c272b260ebf3fd2bf44d65a2d6e616e33d1c",
       "metadata": {
         "id": "land-entry-tour:4-day-paro-focus",
         "title": "4-Day Paro-Focused Land-Entry Tour",
@@ -974,7 +941,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -984,7 +951,7 @@
       "title": "5-Day Punakha & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "f44be6c0e0776fd0c82b8873fe5752a7e123e9edf23f6e1855e837054b4d82e0",
+      "contentHash": "c8e0be04093923e2cc61f2001bbadc0bf55cad9b4518ce0643a7a1ad25e80467",
       "metadata": {
         "id": "land-entry-tour:5-day-punakha-paro",
         "title": "5-Day Punakha & Paro Land-Entry Tour",
@@ -1009,7 +976,7 @@
           "soft adventure"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1044,7 +1011,7 @@
           "soft adventure"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1054,7 +1021,7 @@
       "title": "5-Day Punakha Standard Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "cf9d0492098ed3ddb5b806a86551d7cb4adbdf940ed15c769835d3824c6a0de4",
+      "contentHash": "b2a2053c7ff9bce9c53a395c883d2c26e128a65cd0974ca7b4e4d820fa93740b",
       "metadata": {
         "id": "land-entry-tour:5-day-punakha-standard",
         "title": "5-Day Punakha Standard Land-Entry Tour",
@@ -1077,7 +1044,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1110,7 +1077,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1120,7 +1087,7 @@
       "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "eb3a4b07859a595f0b8c4901c390968b354e783dad9ce8a652cdfaff82434366",
+      "contentHash": "b8f2e0a470ac0ff9521f3dcfb2f1056670e3b2b993645c968f8eb4941a6c9163",
       "metadata": {
         "id": "land-entry-tour:6-day-thimphu-punakha-paro",
         "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
@@ -1144,7 +1111,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1178,7 +1145,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1188,7 +1155,7 @@
       "title": "7-Day Gangtey & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "95317a69097306bda8e40d6ac036e479d6e820026043363e85416fd09fd55fb0",
+      "contentHash": "f03e32206d71f0fcefd92e8c01044be4afc86c17662105863192608cad81dc6e",
       "metadata": {
         "id": "land-entry-tour:7-day-gangtey-paro",
         "title": "7-Day Gangtey & Paro Land-Entry Tour",
@@ -1213,7 +1180,7 @@
           "birdwatching"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1248,7 +1215,7 @@
           "birdwatching"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1283,7 +1250,7 @@
           "birdwatching"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1293,7 +1260,7 @@
       "title": "7-Day Punakha & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "1323306df83e6ecc5af257d6594639358b9b84739f52d7f68881be71bc098404",
+      "contentHash": "6f09df66f1bcf67031f546a880a9e1e211a585bffd18ef8d4ca064a9d77019a5",
       "metadata": {
         "id": "land-entry-tour:7-day-punakha-paro",
         "title": "7-Day Punakha & Paro Land-Entry Tour",
@@ -1317,7 +1284,7 @@
           "soft adventure"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1351,7 +1318,7 @@
           "soft adventure"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1361,7 +1328,7 @@
       "title": "8-Day Gangtey Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "b4cde183d59f9d1cde5107a32d7b4730e526636083d6f865dff95fffa309dfba",
+      "contentHash": "ae01f02e0aaf2141a93af09b3482e99badcc6135af59a75b0c8561301a8e5cf9",
       "metadata": {
         "id": "land-entry-tour:8-day-gangtey",
         "title": "8-Day Gangtey Land-Entry Tour",
@@ -1385,7 +1352,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1419,7 +1386,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1453,7 +1420,7 @@
           "nature"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1463,7 +1430,7 @@
       "title": "8-Day Punakha & Gangtey Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "7ce6ebdb9c546ad9ecc7e263f05ac90170c214502c331f9646d6058ddeaf3f91",
+      "contentHash": "6bbd62ab2719991124cb21bd681edb1fb0789d0261494145a1dd2375729e1925",
       "metadata": {
         "id": "land-entry-tour:8-day-punakha-gangtey",
         "title": "8-Day Punakha & Gangtey Land-Entry Tour",
@@ -1485,7 +1452,7 @@
         "exitPoint": "Phuentsholing",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1517,7 +1484,7 @@
         "exitPoint": "Phuentsholing",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1549,7 +1516,7 @@
         "exitPoint": "Phuentsholing",
         "interests": [],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1559,7 +1526,7 @@
       "title": "3-Day Bhutan Scenic Cycling Short Tour",
       "contentType": "cycling-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-      "contentHash": "c7de890e1903fc2c27bcbf4ea6bfda8fb25aefd17ae960569d80db0360f5bfc4",
+      "contentHash": "74276e25e12ab3222592bcab6911e1ff9f196f829f9bf51558e108ceb272a1cf",
       "metadata": {
         "id": "cycling-tour:3-day-bhutan-cycling-tour",
         "title": "3-Day Bhutan Scenic Cycling Short Tour",
@@ -1580,38 +1547,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "cycling-tour:3-day-bhutan-cycling-tour::chunk-2",
-      "recordId": "cycling-tour:3-day-bhutan-cycling-tour",
-      "title": "3-Day Bhutan Scenic Cycling Short Tour",
-      "contentType": "cycling-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-      "contentHash": "b237ca36d9012360d11005fb8e405cd48e4327c8c083ac76ad6a3433ad49ffbc",
-      "metadata": {
-        "id": "cycling-tour:3-day-bhutan-cycling-tour",
-        "title": "3-Day Bhutan Scenic Cycling Short Tour",
-        "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-        "contentType": "cycling-tour",
-        "tourCategory": "Short Cycling Tour",
-        "durationDays": 3,
-        "durationNights": 2,
-        "destinations": [
-          "Paro",
-          "Thimphu"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Thimphu",
-        "interests": [
-          "cycling",
-          "active travel",
-          "culture"
-        ],
-        "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1621,7 +1557,7 @@
       "title": "4-Day Paro & Thimphu Scenic Cycling Tour",
       "contentType": "cycling-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-      "contentHash": "7aa7422f1f676393359f5f6eed01b2c6a0edfe996e1c18d97c25726e60157711",
+      "contentHash": "71055616bd10afafc068719a778e957790f91ffaf4f71df5c185bcc089a83262",
       "metadata": {
         "id": "cycling-tour:4-day-bhutan-cycling-tour",
         "title": "4-Day Paro & Thimphu Scenic Cycling Tour",
@@ -1642,7 +1578,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1673,7 +1609,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1683,7 +1619,7 @@
       "title": "5-Day Bhutan Scenic Cycling Tour",
       "contentType": "cycling-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-      "contentHash": "c5c53c3111574b9a15833224154e4ff7e3dcce13caa088d749a25bb5b2731e53",
+      "contentHash": "a7ee4b385313d9a252ce4ed4c300daec5737cc99b1ab763d41013808fd9428e1",
       "metadata": {
         "id": "cycling-tour:5-day-bhutan-cycling-tour",
         "title": "5-Day Bhutan Scenic Cycling Tour",
@@ -1705,7 +1641,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1737,7 +1673,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1747,7 +1683,7 @@
       "title": "6-Day Western Bhutan Cycling Journey",
       "contentType": "cycling-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-      "contentHash": "5f7ab8487b3d571490cb785289b047d09c0969f5a4514b756dec3e231f7d8d78",
+      "contentHash": "dee83c8b3dddbc748d4971e56a81fe58d7e764bd471dffb54ba5d98cf857e21f",
       "metadata": {
         "id": "cycling-tour:6-day-bhutan-cycling-tour",
         "title": "6-Day Western Bhutan Cycling Journey",
@@ -1769,7 +1705,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1801,7 +1737,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1811,7 +1747,7 @@
       "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
       "contentType": "cycling-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-      "contentHash": "69eb52b9fe52b01e715a98747012da2cf677d825a0b1b4435ad401c3b996d64d",
+      "contentHash": "ef70852690e353608d4aeeec88abb5684e99fbb30bbeecea8a088687bfd1d425",
       "metadata": {
         "id": "cycling-tour:7-day-bhutan-cycling-tour",
         "title": "7-Day Bhutan Valley Cycling Tour with Gangtey",
@@ -1834,7 +1770,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1867,7 +1803,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1900,7 +1836,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1910,7 +1846,7 @@
       "title": "8-Day Grand Western Bhutan Cycling Tour",
       "contentType": "cycling-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/cycling-tours",
-      "contentHash": "b4b928550da46f45af436aec6f9144099b7c580f4c8d3b799c3738fdfe3a1405",
+      "contentHash": "5dfa3a6cc9d0f53a2ae6b5da85816d9b64c9bdeb8df979b64a3f72dd8f452a9b",
       "metadata": {
         "id": "cycling-tour:8-day-bhutan-cycling-tour",
         "title": "8-Day Grand Western Bhutan Cycling Tour",
@@ -1933,7 +1869,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1966,7 +1902,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -1999,7 +1935,7 @@
           "culture"
         ],
         "travelSeason": [],
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
@@ -2009,7 +1945,7 @@
       "title": "5-Day Black Necked Crane Festival Short Tour",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "dcd552a0235ff0247193a3108f60dbefb08bd68fbb12c6de99449174299d289b",
+      "contentHash": "3f75ee713cdf52b9c306c289b38a0f269ec3cca819375fb59a218bb54329652d",
       "metadata": {
         "id": "festival-tour:5-day-black-necked-crane-festival-short-tour",
         "title": "5-Day Black Necked Crane Festival Short Tour",
@@ -2040,7 +1976,7 @@
           "november"
         ],
         "festivalName": "Black Necked Crane Festival",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2081,7 +2017,7 @@
           "november"
         ],
         "festivalName": "Black Necked Crane Festival",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2091,7 +2027,7 @@
       "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "75d35983b7cd404f0c99c246b1212f502528e8f80d3521539fb624a03c4aa9a3",
+      "contentHash": "1e8031d549a63739d79dbba3286a4970595ceecb4adc32bc187b5fca271c2c9f",
       "metadata": {
         "id": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest",
         "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
@@ -2123,7 +2059,7 @@
           "november"
         ],
         "festivalName": "Black Necked Crane Festival",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2165,7 +2101,7 @@
           "november"
         ],
         "festivalName": "Black Necked Crane Festival",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2175,7 +2111,7 @@
       "title": "15-Day Bumthang Festival Circuit",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "8053adfd704a792fdf0fd6daa9a8a11397c1f8d1ac549b3a187bd89c2f5e27af",
+      "contentHash": "a2c35442ac0a9a97d3e9449c4724a31774450bb6f48249b539ccb6ae30d2d01c",
       "metadata": {
         "id": "festival-tour:15-day-bumthang-festival-circuit",
         "title": "15-Day Bumthang Festival Circuit",
@@ -2204,7 +2140,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2243,7 +2179,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2282,7 +2218,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2321,7 +2257,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2331,7 +2267,7 @@
       "title": "4-Day Dechenphu Tshechu Short Festival Tour",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "4a5674968e6abd41b1857f2f254d19f9df47d0d8cb86a5ef7389eeae9d3ed718",
+      "contentHash": "b473f7c568003eb4ec70ae36f402cc5e17bac0ae2f9b3201104820d66e1cddc3",
       "metadata": {
         "id": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour",
         "title": "4-Day Dechenphu Tshechu Short Festival Tour",
@@ -2360,7 +2296,7 @@
           "october"
         ],
         "festivalName": "Dechenphu Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2399,7 +2335,7 @@
           "october"
         ],
         "festivalName": "Dechenphu Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2409,7 +2345,7 @@
       "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "b07d319f0344f66be0710413704791a8540fdf67aa6d99a5bd35d6f8c13c38cf",
+      "contentHash": "6bd467df3766a158ed07119e245cb758aa538f1fef09b8ce7893d1905bc918e6",
       "metadata": {
         "id": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest",
         "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
@@ -2438,7 +2374,7 @@
           "october"
         ],
         "festivalName": "Dechenphu Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2477,7 +2413,7 @@
           "october"
         ],
         "festivalName": "Dechenphu Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2487,7 +2423,7 @@
       "title": "7-Day Jakar Tshechu Festival Tour with Domestic Flight",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "04014310d96a758925703781a548091198b5c248ad8215eff4a847fe85ad398d",
+      "contentHash": "efb31697cd66385420eb7752151cdd50d3022f4a56378a21c4f199383b98a700",
       "metadata": {
         "id": "festival-tour:7-day-jakar-tshechu-festival-tour-with-domestic-flight",
         "title": "7-Day Jakar Tshechu Festival Tour with Domestic Flight",
@@ -2513,7 +2449,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2549,7 +2485,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2559,7 +2495,7 @@
       "title": "9-Day Jakar Tshechu Festival Tour via Trongsa",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "108cad6605cebb8a1e41f4576e3d3eb4a89db11556219c3672766c2b48bf9253",
+      "contentHash": "7340139cb99c0051c82b1528ec2e427ae1b6dd2d99851ceb999511afa1b2500c",
       "metadata": {
         "id": "festival-tour:9-day-jakar-tshechu-festival-tour-via-trongsa",
         "title": "9-Day Jakar Tshechu Festival Tour via Trongsa",
@@ -2588,7 +2524,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2627,7 +2563,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jakar Tshechu",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2637,7 +2573,7 @@
       "title": "9-Day Jambay Lhakhang Drup Festival Tour",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "7818705fc84f30828d320e4a54fe5c2b059d1478b4fdfe07a4e8dc1409f38d7e",
+      "contentHash": "9b7b5f575391d14a0c3a7beb8ae1d078fc11ce4a01edabc0e65e879643474676",
       "metadata": {
         "id": "festival-tour:9-day-jambay-lhakhang-drup-festival-tour",
         "title": "9-Day Jambay Lhakhang Drup Festival Tour",
@@ -2666,7 +2602,7 @@
         ],
         "travelSeason": [],
         "festivalName": "Jambay Lhakhang Drup",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     },
@@ -2705,7 +2641,112 @@
         ],
         "travelSeason": [],
         "festivalName": "Jambay Lhakhang Drup",
-        "lastUpdated": "2026-07-13",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "upcoming-event:guns-n-roses-guwahati-2026::chunk-1",
+      "recordId": "upcoming-event:guns-n-roses-guwahati-2026",
+      "title": "Guns N' Roses Concert at Guwahati",
+      "contentType": "upcoming-event",
+      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+      "contentHash": "41915e6c909db1891e60d151a32c6cd511b4b9b16a76b78c4028e242b7d99ad3",
+      "metadata": {
+        "id": "upcoming-event:guns-n-roses-guwahati-2026",
+        "title": "Guns N' Roses Concert at Guwahati",
+        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+        "contentType": "upcoming-event",
+        "startingRate": 26214,
+        "tourCategory": "event",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Phuentsholing",
+          "Guwahati",
+          "Thimphu"
+        ],
+        "entryPoint": "Thimphu",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "concert",
+          "guns n' roses",
+          "guwahati",
+          "assam",
+          "event",
+          "music"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "upcoming-event:guns-n-roses-guwahati-2026::chunk-2",
+      "recordId": "upcoming-event:guns-n-roses-guwahati-2026",
+      "title": "Guns N' Roses Concert at Guwahati",
+      "contentType": "upcoming-event",
+      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+      "contentHash": "227adbddc90934cd0d31faad61e2780b01b62109a2d07c976eb997af6e33dea1",
+      "metadata": {
+        "id": "upcoming-event:guns-n-roses-guwahati-2026",
+        "title": "Guns N' Roses Concert at Guwahati",
+        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+        "contentType": "upcoming-event",
+        "startingRate": 26214,
+        "tourCategory": "event",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Phuentsholing",
+          "Guwahati",
+          "Thimphu"
+        ],
+        "entryPoint": "Thimphu",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "concert",
+          "guns n' roses",
+          "guwahati",
+          "assam",
+          "event",
+          "music"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "upcoming-event:guns-n-roses-guwahati-2026::chunk-3",
+      "recordId": "upcoming-event:guns-n-roses-guwahati-2026",
+      "title": "Guns N' Roses Concert at Guwahati",
+      "contentType": "upcoming-event",
+      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+      "contentHash": "df2a36b2f15a1572a62410f0b868f1ff068adf48cb13ec3f3394d636b3fe992b",
+      "metadata": {
+        "id": "upcoming-event:guns-n-roses-guwahati-2026",
+        "title": "Guns N' Roses Concert at Guwahati",
+        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+        "contentType": "upcoming-event",
+        "startingRate": 26214,
+        "tourCategory": "event",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Phuentsholing",
+          "Guwahati",
+          "Thimphu"
+        ],
+        "entryPoint": "Thimphu",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "concert",
+          "guns n' roses",
+          "guwahati",
+          "assam",
+          "event",
+          "music"
+        ],
+        "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
     }
@@ -2716,10 +2757,11 @@
     "policy": 2,
     "planning": 1,
     "travel-info": 2,
-    "regular-tour": 21,
+    "regular-tour": 20,
     "land-entry-tour": 23,
-    "cycling-tour": 14,
-    "festival-tour": 18
+    "cycling-tour": 13,
+    "festival-tour": 18,
+    "upcoming-event": 3
   },
   "failures": []
 }

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowRight, CheckCircle, Clock, MapPin, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle, Clock, Compass, MapPin } from "lucide-react";
 import { formatUsd, getB2cUsdPrice } from "../data/tourPricing";
 
 type Destination = {
@@ -121,7 +121,7 @@ export function JourneysSection() {
       <div className="journey-container uh-journeys-container">
         <div className="uh-journeys-heading">
           <div className="uh-journeys-kicker">
-            <Sparkles aria-hidden="true" />
+            <Compass aria-hidden="true" />
             <span>Destinations & Journeys</span>
           </div>
 

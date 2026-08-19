@@ -562,7 +562,7 @@ const categories: AddOnCategory[] = [
         description:
           "Premium helicopter experience for scenic aerial views or special routing, subject to availability, weather, permits, and operational clearance.",
         image: {
-          src: "/air.png",
+          src: "/air-optimized.jpg",
           alt: "Private helicopter tour in Bhutan",
           label: "Private Helicopter Tour Image",
           copyrightName: "",
@@ -578,7 +578,7 @@ const categories: AddOnCategory[] = [
         description:
           "Upgrade to a more comfortable vehicle for private tours and premium guests.",
         image: {
-          src: "aa.png",
+          src: "/aa-optimized.jpg",
           alt: "Premium vehicle",
           label: "Premium Vehicle Image",
           copyrightName: "Unseen Himalayas Bhutan",

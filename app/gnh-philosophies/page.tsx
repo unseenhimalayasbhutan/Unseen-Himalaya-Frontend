@@ -17,7 +17,6 @@ import {
   Leaf,
   ShieldCheck,
   Smile,
-  Sparkles,
   Users,
   type LucideIcon,
 } from "lucide-react";
@@ -107,7 +106,7 @@ export default function GNHPhilosophiesPage() {
             <div className="gnh-pro-hero-grid">
               <div className="gnh-pro-hero-content">
                 <div className="gnh-pro-eyebrow">
-                  <Sparkles aria-hidden />
+                  <Heart aria-hidden />
                   <span>Gross National Happiness</span>
                 </div>
 

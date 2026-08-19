@@ -1,13 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowRight,
-  CalendarDays,
-  CheckCircle,
-  ShieldCheck,
-  MapPin,
-} from "lucide-react";
-import { featuredUpcomingEvent } from "../data/upcomingEvents";
+import { ArrowRight, CheckCircle, ShieldCheck, MapPin } from "lucide-react";
 import { siteConfig } from "../siteConfig";
 
 export function HeroSection() {
@@ -20,46 +13,16 @@ export function HeroSection() {
       <div className="home-hero-content">
         <Link
           href="/upcoming-events"
-          className="home-hero-event-alert"
-          aria-label={`View details for ${featuredUpcomingEvent.title}`}
+          className="home-hero-gnr-link"
+          aria-label="View Guns N' Roses concert trip packages"
         >
-          <span className="home-hero-event-alert-media">
-            {featuredUpcomingEvent.notificationImage ? (
-              <Image
-                src={featuredUpcomingEvent.notificationImage}
-                alt=""
-                fill
-                preload
-                sizes="(max-width: 760px) calc(100vw - 32px), 760px"
-              />
-            ) : null}
-          </span>
-
-          <span className="home-hero-event-alert-shade" aria-hidden="true" />
-
-          <span className="home-hero-event-alert-copy">
-            <span className="home-hero-event-alert-kicker">
-              {featuredUpcomingEvent.label}
-            </span>
-            <strong>
-              Guns N&apos; Roses
-              <span>Live in Guwahati</span>
-            </strong>
-            <span className="home-hero-event-alert-meta">
-              <span>
-                <CalendarDays aria-hidden />
-                {featuredUpcomingEvent.date}
-              </span>
-              <span>
-                <MapPin aria-hidden />
-                {featuredUpcomingEvent.location}
-              </span>
-            </span>
-          </span>
-
-          <span className="home-hero-event-alert-arrow">
-            <ArrowRight aria-hidden />
-          </span>
+          <Image
+            src="/cover/GnR.png"
+            alt="Guns N' Roses Live in Guwahati concert trip"
+            fill
+            priority
+            sizes="(max-width: 760px) calc(100vw - 32px), 520px"
+          />
         </Link>
 
         <h1>

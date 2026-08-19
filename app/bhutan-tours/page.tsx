@@ -6,6 +6,7 @@ import Link from "next/link";
 import {
   ArrowRight,
   CalendarDays,
+  Camera,
   CheckCircle,
   ChevronRight,
   Clock,
@@ -13,7 +14,6 @@ import {
   MapPin,
   Mountain,
   ShieldCheck,
-  Sparkles,
   Users,
 } from "lucide-react";
 
@@ -121,7 +121,7 @@ export default function BhutanToursPage() {
           <div className="container tour-pro-hero-grid">
             <div className="tour-pro-hero-content">
               <div className="tour-pro-eyebrow">
-                <Sparkles aria-hidden="true" />
+                <Camera aria-hidden="true" />
                 <span>Photography Tours</span>
               </div>
 
@@ -452,7 +452,7 @@ function PhotographyRoutePanel({
 }
 
 const heroImage: ImageAsset = {
-  src: "/ppp.png",
+  src: "/ppp-optimized.jpg",
   alt: "Bhutan photography tour route image",
   label: "Photography Tours Hero Image",
   copyrightName: "",
@@ -464,5 +464,5 @@ const quickStats = [
   { icon: CalendarDays, value: "10", label: "Ready Itineraries" },
   { icon: Mountain, value: "3-8", label: "Day Options" },
   { icon: ShieldCheck, value: "Private", label: "Guide & Driver" },
-  { icon: Sparkles, value: "Photo", label: "Custom Focus" },
+  { icon: Camera, value: "Photo", label: "Custom Focus" },
 ];

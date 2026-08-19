@@ -13,7 +13,6 @@ import {
   MessageCircle,
   Plane,
   ShieldCheck,
-  Sparkles,
   WalletCards,
   type LucideIcon,
 } from "lucide-react";
@@ -43,7 +42,7 @@ export default function FAQPage() {
           <div className="container">
             <div className="faq-hero-content">
               <div className="faq-eyebrow">
-                <Sparkles aria-hidden="true" />
+                <MessageCircle aria-hidden="true" />
                 <span>Travel Help Center</span>
               </div>
 

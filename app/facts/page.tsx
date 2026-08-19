@@ -8,6 +8,7 @@ import {
   CheckCircle,
   ChevronRight,
   Compass,
+  Feather,
   Globe2,
   Heart,
   Landmark,
@@ -15,7 +16,6 @@ import {
   MapPin,
   Mountain,
   ShieldCheck,
-  Sparkles,
   Sprout,
   TreePine,
   Users,
@@ -78,7 +78,7 @@ export default function FactsPage() {
           <div className="tour-pro-hero-bg" aria-hidden="true" />
           <div className="container tour-pro-hero-grid facts-redesign-hero-grid">
             <div className="tour-pro-hero-content">
-              <div className="tour-pro-eyebrow"><Sparkles aria-hidden="true" /><span>Facts About Bhutan</span></div>
+              <div className="tour-pro-eyebrow"><Compass aria-hidden="true" /><span>Bhutan Travel Notes</span></div>
               <h1>Interesting facts that make Bhutan unlike anywhere else.</h1>
               <p>Bhutan is shaped by sacred mountains, protected forests, living Buddhist culture, peaceful democratic transition, Paro’s dramatic mountain airport, and a development philosophy that places wellbeing at the centre.</p>
               <div className="tour-pro-hero-actions">
@@ -205,7 +205,7 @@ const heroImage: ImageAsset = { src: "/By Marcus Westberg _Thimphu_2023_44.jpg",
 const identityImage: ImageAsset = { src: "/Paro Dzong lit twilight  DOT AA Original Bhutan Travels.jpg", alt: "Bhutanese dzong, monastery, or cultural scene", label: "Culture / Dzong Image", copyrightName: "Teo Chin Leong" };
 const foodImage: ImageAsset = { src: "/Bumdeling 090723 by Amp Sripimanwat-140.jpg", alt: "Traditional Bhutanese food", label: "Food Image", copyrightName: "Carissa Nimah" };
 const paroAirportImage: ImageAsset = { src: "/air_paro.png", alt: "Paro International Airport and mountain valley approach", label: "Paro International Airport Image", copyrightName: "Unseen Himalayas Bhutan" };
-const gmcImage: ImageAsset = { src: "/aaa.png", alt: "Gelephu Mindfulness City vision and southern Bhutan landscape", label: "Gelephu Mindfulness City Image", copyrightName: "Unseen Himalayas Bhutan" };
+const gmcImage: ImageAsset = { src: "/aaa-optimized.jpg", alt: "Gelephu Mindfulness City vision and southern Bhutan landscape", label: "Gelephu Mindfulness City Image", copyrightName: "Unseen Himalayas Bhutan" };
 
 const heroTrust = ["Democracy and royal transition", "Paro Airport gateway", "Culture, nature, and GNH"];
 const quickStats: StatItem[] = [
@@ -227,7 +227,7 @@ const governanceFacts: DetailCard[] = [
 ];
 
 const featureFacts: TabItem[] = [
-  { id: "druk-yul", icon: Sparkles, eyebrow: "Name & Identity", title: "Bhutan is Druk Yul, the Land of the Thunder Dragon.", description: "Bhutan is known locally as Druk Yul. The dragon is not only decorative; it represents the spiritual and cultural identity of the kingdom.", points: ["Druk means thunder dragon in Bhutanese cultural context.", "The dragon appears on Bhutan’s national flag.", "Bhutanese people are often referred to as Drukpa.", "The name reflects Bhutan’s identity as a Himalayan Buddhist kingdom."], image: { src: "/Khoma 130723 by Amp Sripimanwat-33.jpg", alt: "Dragon symbol or Bhutan flag image", label: "Dragon / Flag Image", copyrightName: "Carissa Nimah" } },
+  { id: "druk-yul", icon: Compass, eyebrow: "Name & Identity", title: "Bhutan is Druk Yul, the Land of the Thunder Dragon.", description: "Bhutan is known locally as Druk Yul. The dragon is not only decorative; it represents the spiritual and cultural identity of the kingdom.", points: ["Druk means thunder dragon in Bhutanese cultural context.", "The dragon appears on Bhutan’s national flag.", "Bhutanese people are often referred to as Drukpa.", "The name reflects Bhutan’s identity as a Himalayan Buddhist kingdom."], image: { src: "/Khoma 130723 by Amp Sripimanwat-33.jpg", alt: "Dragon symbol or Bhutan flag image", label: "Dragon / Flag Image", copyrightName: "Carissa Nimah" } },
   { id: "gnh", icon: Heart, eyebrow: "National Philosophy", title: "Bhutan is famous for Gross National Happiness.", description: "Gross National Happiness is Bhutan’s internationally known development philosophy. It reminds travelers that progress can include culture, environment, good governance, and wellbeing.", points: ["GNH is one of Bhutan’s strongest global identities.", "It connects development with wellbeing and balance.", "Travelers often feel this slower, more mindful rhythm while visiting.", "It gives Bhutan a destination story beyond ordinary sightseeing."], image: { src: "/Ben-Richards-Tourism-Bhutan-041.jpg", alt: "Bhutan community wellbeing image", label: "GNH / Community Image", copyrightName: "Carissa Nimah" } },
   { id: "forests", icon: Leaf, eyebrow: "Conservation", title: "Bhutan protects forests as part of its national character.", description: "Bhutan is known for conservation values, high forest coverage, protected areas, and a constitutional commitment to keep at least 60% of the country under forest cover.", points: ["More than 70% of Bhutan is forested.", "The Constitution requires at least 60% forest cover.", "Nature is connected with culture, spirituality, and daily life.", "This is why Bhutan is seen as a carbon-conscious destination."], image: { src: "/Taktshang topdown  DOT AA Original Bhutan Travels.jpg", alt: "Bhutan forest and protected landscape image", label: "Forest / Conservation Image", copyrightName: "Agnieszka Wieczorek / Amazing Aerial Agency" } },
   { id: "sacred-peaks", icon: Mountain, eyebrow: "Sacred Peaks", title: "Bhutan is home to one of the world’s highest unclimbed mountains.", description: "Gangkhar Puensum is Bhutan’s highest peak and is widely known as the world’s highest unclimbed mountain. Bhutan’s sacred mountain traditions make the story especially meaningful.", points: ["The mountain rises above 7,500 meters.", "Bhutan closed high peaks to climbing for spiritual reasons.", "The fact reflects Bhutan’s respect for sacred landscapes.", "Mountains are viewed with reverence, not conquest."], image: { src: "/6Snowman Race Climate Conclave.jpg", alt: "Gangkhar Puensum or high Himalayan peak image", label: "Sacred Mountain Image", copyrightName: "Scarlette DG" } },
@@ -261,7 +261,7 @@ const paroAirportFacts: DetailCard[] = [
 ];
 const nationalSymbols: SymbolItem[] = [
   { id: "takin", icon: Mountain, title: "National Animal", value: "Takin", description: "The takin is a rare and unusual Himalayan animal linked with Bhutanese folklore and mountain ecology.", points: ["A unique-looking Himalayan animal strongly associated with Bhutan.", "Connected with Bhutanese folklore and mountain ecology.", "Often introduced at the Takin Preserve in Thimphu.", "A memorable symbol because it feels unlike ordinary national animals."], image: { src: "/Takins.jpg", alt: "Bhutan takin image", label: "Takin Image", copyrightName: "Carissa Nimah" } },
-  { id: "raven", icon: Sparkles, title: "National Bird", value: "Raven", description: "The raven is connected with Bhutan’s protective deities and royal symbolism.", points: ["Associated with protective spiritual symbolism.", "Connected with Bhutan’s monarchy through the Raven Crown.", "Links spiritual belief and state identity.", "A powerful symbol for explaining Bhutan’s sacred worldview."], image: { src: "/raven.jpg", alt: "Raven or Raven Crown image", label: "Raven Image", copyrightName: "Unseen Himalayas Bhutan" } },
+  { id: "raven", icon: Feather, title: "National Bird", value: "Raven", description: "The raven is connected with Bhutan’s protective deities and royal symbolism.", points: ["Associated with protective spiritual symbolism.", "Connected with Bhutan’s monarchy through the Raven Crown.", "Links spiritual belief and state identity.", "A powerful symbol for explaining Bhutan’s sacred worldview."], image: { src: "/raven.jpg", alt: "Raven or Raven Crown image", label: "Raven Image", copyrightName: "Unseen Himalayas Bhutan" } },
   { id: "blue-poppy", icon: Leaf, title: "National Flower", value: "Blue Poppy", description: "The blue poppy is a rare Himalayan flower associated with high mountain environments.", points: ["Linked with high-altitude Himalayan environments.", "A reminder of fragile mountain biodiversity.", "Represents rarity, natural elegance, and conservation value.", "Useful for travelers interested in flora and soft nature experiences."], image: { src: "/MarcusWestbergBhutanHiRes-10.jpg", alt: "Blue poppy flower image", label: "Blue Poppy Image", copyrightName: "Scarlette DG" } },
   { id: "cypress", icon: TreePine, title: "National Tree", value: "Cypress", description: "The cypress is associated with religious places and rugged landscapes.", points: ["Often seen near sacred places and mountain landscapes.", "Associated with strength and spiritual presence.", "Connects Bhutan’s natural and religious identity.", "A quiet but important symbol of Bhutanese landscape character."], image: { src: "/Haa by Marcus Westberg30.jpg", alt: "Bhutan cypress tree image", label: "Cypress Image", copyrightName: "Carissa Nimah" } },
   { id: "archery-symbol", icon: Compass, title: "National Sport", value: "Archery", description: "Archery brings communities together through competition, song, laughter, and celebration.", points: ["A social event as much as a sport.", "Often includes songs, jokes, cheering, and community gathering.", "Traditional and modern bow styles are both seen.", "A strong optional add-on for culture-focused itineraries."], image: { src: "/Trashi Yangtse 090723 by Amp Sripimanwat-219.jpg", alt: "Bhutan archery image", label: "Archery Symbol Image", copyrightName: "Carissa Nimah" } },

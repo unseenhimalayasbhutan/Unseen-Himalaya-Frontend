@@ -95,7 +95,7 @@ export default function CyclingToursPage() {
             <div className="tour-pro-hero-content">
               <div className="tour-pro-eyebrow">
                 <Bike aria-hidden="true" />
-                <span>Cycling Tours in Bhutan</span>
+                <span>Guided Valley Rides</span>
               </div>
 
               <h1>

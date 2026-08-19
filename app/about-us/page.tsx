@@ -62,7 +62,7 @@ export default function AboutPage() {
                 <div className="about-pro-hero-trust">
                   {heroTrust.map((item) => (
                     <div key={item} className="about-pro-hero-trust-item">
-                      <span className="about-pro-mini-check" aria-hidden="true">✓</span>
+                      <span className="about-pro-mini-check" aria-hidden="true" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -208,7 +208,7 @@ export default function AboutPage() {
                   <div className="about-pro-feature-points">
                     {featurePoints.map((point) => (
                       <div key={point}>
-                        <span className="about-pro-mini-check" aria-hidden="true">✓</span>
+                        <span className="about-pro-mini-check" aria-hidden="true" />
                         <span>{point}</span>
                       </div>
                     ))}

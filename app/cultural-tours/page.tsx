@@ -9,7 +9,6 @@ import {
   Clock,
   Hash,
   MapPin,
-  Sparkles,
   Users,
 } from "lucide-react";
 
@@ -101,8 +100,8 @@ export default function CulturalToursPage() {
           <div className="container tour-pro-hero-grid">
             <div className="tour-pro-hero-content">
               <div className="tour-pro-eyebrow">
-                <Sparkles aria-hidden="true" />
-                <span>Cultural Tours in Bhutan</span>
+                <MapPin aria-hidden="true" />
+                <span>Handcrafted Cultural Journeys</span>
               </div>
 
               <h1>

@@ -6,7 +6,6 @@ import {
   HandHeart,
   Leaf,
   ShieldCheck,
-  Sparkles,
 } from "lucide-react";
 
 import { CtaSection } from "../components/CtaSection";
@@ -31,7 +30,7 @@ export default function SdfPage() {
           <div className="container sdf-hero-grid">
             <div className="sdf-hero-content">
               <div className="tour-pro-eyebrow">
-                <Sparkles aria-hidden="true" />
+                <Leaf aria-hidden="true" />
                 <span>Travel to Bhutan Responsibly</span>
               </div>
 

@@ -12,7 +12,6 @@ import {
   MapPin,
   Mountain,
   Plane,
-  Sparkles,
   UtensilsCrossed,
   Users,
   type LucideIcon,
@@ -119,11 +118,6 @@ export default function AboutBhutanPage() {
         <section className="about-bhutan-hero">
           <div className="container about-bhutan-hero-grid">
             <div className="about-bhutan-hero-copy">
-              <div className="about-bhutan-label about-bhutan-label-left">
-                <Sparkles aria-hidden="true" />
-                All About Bhutan
-              </div>
-
               <h1>Discover Druk Yul, the Land of the Thunder Dragon.</h1>
 
               <p>

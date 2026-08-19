@@ -32,9 +32,9 @@ const routeImages: Partial<Record<IndexedPath, string[]>> = {
   ],
   "/about-us": ["/logo.png"],
   "/best-time": ["/Marcus Westberg Bumthang 202318.jpg"],
-  "/bhutan-tours": ["/ppp.png"],
+  "/bhutan-tours": ["/ppp-optimized.jpg"],
   "/bhutan-trekkings": ["/High mountain treks.jpg"],
-  "/contact": ["/cover2.png"],
+  "/contact": [siteConfig.defaultImage],
   "/cultural-tours": ["/Haa Summer Festival6.jpg"],
   "/cycling-tours": ["/cycling.jpg"],
   "/facts": ["/Takins.jpg"],
@@ -45,7 +45,7 @@ const routeImages: Partial<Record<IndexedPath, string[]>> = {
   "/optional-tours": ["/rafting2.jpg"],
   "/places-to-visit": ["/Buddha-Dordenma-Statue-by-Alicia-Warner-16.jpg"],
   "/seasons": ["/Peach blossoms in front of the stunning Thimphu Dzong.JPG"],
-  "/sdf": ["/cover2.png"],
+  "/sdf": [siteConfig.defaultImage],
   "/why-visit": ["/IMG_20231021_170519.jpg"],
 };
 

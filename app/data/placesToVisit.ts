@@ -63,7 +63,7 @@ export const globalVisitorNotes = [
   {
     title: "Fees and opening hours",
     text:
-      "Some monuments charge admission and others do not. Site schedules, religious events and official functions take priority, so fees and hours should remain editable and be verified before each season.",
+      "Monument fees apply at every monument. Site schedules, religious events and official functions take priority, so fees and opening hours should remain editable and be verified before each season.",
   },
   {
     title: "Religious etiquette",
@@ -1282,7 +1282,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A conservation-focused visitor stop explaining crane migration, wetland habitat and the valley's ecological importance.",
         note: "Crane sightings remain seasonal and cannot be guaranteed.",
-        image: `${phobjikhaBase}/14_Black_Necked_Crane_Conservation_Karma.jpg`,
+        image: `${phobjikhaBase}/14_Black_Necked_Crane_Conservation_Karma-optimized.jpg`,
       },
       {
         title: "Gangtey Nature Trail",

@@ -10,7 +10,6 @@ import {
   Compass,
   MapPin,
   Mountain,
-  Sparkles,
   Star,
 } from "lucide-react";
 
@@ -59,8 +58,8 @@ export default function FestivalCalendarPage() {
           <div className="container festival-calendar-redesign-hero-grid">
             <div className="festival-calendar-redesign-hero-content">
               <div className="festival-calendar-redesign-eyebrow">
-                <Sparkles aria-hidden="true" />
-                <span>Bhutan Festival Calendar</span>
+                <CalendarDays aria-hidden="true" />
+                <span>Sacred Festival Dates</span>
               </div>
 
               <h1>Plan your Bhutan journey around sacred festivals.</h1>
@@ -148,7 +147,7 @@ export default function FestivalCalendarPage() {
         >
           <div className="container">
             <div className="festival-calendar-redesign-section-heading">
-              <span>Festival Calendar</span>
+              <span>Month by Month</span>
               <h2>Select a month, then explore the festival details.</h2>
               <p>
                 Browse by travel month to see the major festivals, cultural
@@ -225,7 +224,7 @@ export default function FestivalCalendarPage() {
         <section className="festival-calendar-redesign-section festival-calendar-redesign-all-section">
           <div className="container">
             <div className="festival-calendar-redesign-section-heading">
-              <span>Full Calendar</span>
+              <span>Complete Listing</span>
               <h2>All listed festivals by month.</h2>
               <p>
                 A complete month-by-month view for quick comparison when planning

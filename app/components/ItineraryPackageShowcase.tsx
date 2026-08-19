@@ -16,12 +16,12 @@ import {
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "./TourPagePrimitives";
-import { siteConfig } from "../siteConfig";
 import {
   INTERNATIONAL_TRAVELER_PRICE_NOTE,
   formatUsd,
   type TourPriceGroup,
 } from "../data/tourPricing";
+import { siteConfig } from "../siteConfig";
 
 export type PackageShowcaseDay = {
   label: string;
@@ -131,13 +131,6 @@ export function ItineraryPackageShowcase({
                     <p className="uh-hb-package-price-note">
                       <strong>Pricing note</strong>
                       <span>{INTERNATIONAL_TRAVELER_PRICE_NOTE}</span>
-                      <a
-                        href={siteConfig.contact.secondaryWhatsappHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Regional rates: WhatsApp {siteConfig.contact.secondaryPhoneDisplay}
-                      </a>
                     </p>
                   ) : null}
                 </div>
@@ -336,7 +329,7 @@ function CostTab({
       <div className="uh-hb-price-table-wrap">
           <table className="uh-hb-price-table uh-hb-package-cost-table">
             <caption>
-              Package cost for {item.title} {getDayCount(item.duration)}days
+              Package cost for {item.title}
             </caption>
           <thead>
             <tr>

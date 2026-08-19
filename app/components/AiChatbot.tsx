@@ -2,14 +2,12 @@
 
 import { FormEvent, useEffect, useRef, useState } from "react";
 import {
-  Bot,
   ExternalLink,
   LoaderCircle,
   MessageCircle,
   RefreshCcw,
   Send,
   ShieldCheck,
-  Sparkles,
   User,
   X,
 } from "lucide-react";
@@ -52,17 +50,16 @@ type ChatbotApiResponse = {
 
 const starterPrompts = [
   "Find the right Bhutan tour",
+  "Ask about Guns N' Roses packages",
   "Plan a customised journey",
   "Ask about Bhutan visa and SDF",
-  "Explore festival tours",
-  "Enter Bhutan by road",
   "Speak with our travel team",
 ];
 
 const welcomeMessage: ChatMessage = {
   role: "assistant",
   content:
-    "Hi, I can help you choose Bhutan routes, check starting rates, understand SDF exclusions, and plan a custom itinerary. What would you like to know?",
+    "Hi, I am Jarvis. I can help you choose Bhutan routes, check starting rates, understand SDF exclusions, plan a custom itinerary, or review the Guns N' Roses Guwahati concert package. What would you like to know?",
 };
 
 export function AiChatbot() {
@@ -189,16 +186,16 @@ export function AiChatbot() {
   return (
     <div className={`ai-chatbot ${isOpen ? "is-open" : ""}`}>
       {isOpen ? (
-        <section className="ai-chatbot-panel" aria-label="AI travel assistant">
+        <section className="ai-chatbot-panel" aria-label="Jarvis travel chat">
           <div className="ai-chatbot-header">
             <div className="ai-chatbot-title">
               <span className="ai-chatbot-avatar">
-                <Bot aria-hidden />
+                <MessageCircle aria-hidden />
               </span>
 
               <div>
-                <strong>Bhutan AI Assistant</strong>
-                <span>Routes, rates, SDF, festivals</span>
+                <strong>Jarvis</strong>
+                <span>Bhutan tours, events, rates</span>
               </div>
             </div>
 
@@ -206,7 +203,7 @@ export function AiChatbot() {
               type="button"
               className="ai-chatbot-icon-btn"
               onClick={() => setIsOpen(false)}
-              aria-label="Close AI chat"
+              aria-label="Close Jarvis"
             >
               <X aria-hidden />
             </button>
@@ -220,7 +217,7 @@ export function AiChatbot() {
               >
                 <span className="ai-chatbot-message-icon">
                   {message.role === "assistant" ? (
-                    <Bot aria-hidden />
+                    <MessageCircle aria-hidden />
                   ) : (
                     <User aria-hidden />
                   )}
@@ -280,13 +277,13 @@ export function AiChatbot() {
             {isSending ? (
               <div className="ai-chatbot-message ai-chatbot-message-assistant">
                 <span className="ai-chatbot-message-icon">
-                  <Bot aria-hidden />
+                  <MessageCircle aria-hidden />
                 </span>
 
                 <div className="ai-chatbot-message-body">
                   <p className="ai-chatbot-thinking">
                     <LoaderCircle aria-hidden />
-                    Thinking
+                    Checking details
                   </p>
                 </div>
               </div>
@@ -312,8 +309,8 @@ export function AiChatbot() {
             <input
               value={inputValue}
               onChange={(event) => setInputValue(event.target.value)}
-              placeholder="Ask about tours, rates, SDF..."
-              aria-label="Ask the AI travel assistant"
+              placeholder="Ask Jarvis about tours, events, rates..."
+              aria-label="Ask Jarvis"
               maxLength={500}
             />
 
@@ -345,11 +342,10 @@ export function AiChatbot() {
         className="ai-chatbot-toggle"
         onClick={() => setIsOpen((current) => !current)}
         aria-expanded={isOpen}
-        aria-label={isOpen ? "Close AI travel assistant" : "Open AI travel assistant"}
+        aria-label={isOpen ? "Close Jarvis" : "Open Jarvis"}
       >
-        <Sparkles aria-hidden className="ai-chatbot-toggle-spark" />
         <MessageCircle aria-hidden />
-        <span>Ask AI</span>
+        <span>Jarvis</span>
       </button>
     </div>
   );

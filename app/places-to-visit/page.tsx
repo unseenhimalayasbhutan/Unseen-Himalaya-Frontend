@@ -3,9 +3,9 @@ import Link from "next/link";
 import {
   ArrowRight,
   Clock,
+  Compass,
   MapPin,
   Mountain,
-  Sparkles,
 } from "lucide-react";
 
 import { CtaSection } from "../components/CtaSection";
@@ -25,16 +25,16 @@ export default function PlacesToVisitPage() {
           <div className="container places-hero-grid">
             <div className="places-hero-content">
               <div className="tour-pro-eyebrow">
-                <Sparkles aria-hidden="true" />
-                <span>Bhutan Destination Guide 2026</span>
+                <Compass aria-hidden="true" />
+                <span>Bhutan Destination Guide</span>
               </div>
 
               <h1>Places to Visit in Bhutan</h1>
               <p>
                 Western Bhutan destination guide for Thimphu, Paro, Punakha,
                 Wangdue Phodrang, Gangtey and Phobjikha, and Haa, built from
-                the 2026 destination content master with access-aware visitor
-                notes and real destination imagery.
+                the 2026 destination notes with access-aware visitor guidance
+                and real destination imagery.
               </p>
 
               <div className="places-hero-actions">
@@ -137,9 +137,9 @@ export default function PlacesToVisitPage() {
                   <span>Featured Experiences</span>
                   <h3>Best places and experiences in {destination.shortName}</h3>
                   <p>
-                    These cards follow the master directory fields: image,
-                    name, tags, recommended time, difficulty, priority, summary,
-                    and visitor note.
+                    Each experience includes imagery, location, tags,
+                    recommended time, difficulty, priority, summary, and visitor
+                    notes for practical route planning.
                   </p>
                 </div>
 

@@ -60,7 +60,7 @@ export default function BhutanTrekkingsPage() {
             
             <div className="trekking-why-image">
               <div className="trekking-why-image-box">
-                <div className="trekking-why-image-emoji">🏔️</div>
+                <div className="trekking-why-image-emoji">Himalaya</div>
                 <div className="trekking-why-image-caption">Trekker at Laverty Pass (4,900m)</div>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function BhutanTrekkingsPage() {
               </Link>
             </div>
             <p className="trekking-cta-note">
-              ✦ Private treks available for all levels ✦ Group discounts available ✦
+              Private treks available for all levels | Group discounts available
             </p>
           </div>
         </div>
@@ -293,7 +293,7 @@ const treks = [
       "Camp near glacial lakes",
       "Spot rare blue sheep and snow leopards"
     ],
-    icon: "❄️",
+    icon: "ST",
     imageCaption: "Crossing a high pass on the Snowman Trek",
     slug: "snowman-trek"
   },
@@ -313,7 +313,7 @@ const treks = [
       "Meet Yak herder communities",
       "Visit ancient Drukyel Dzong ruins"
     ],
-    icon: "🏔️",
+    icon: "JT",
     imageCaption: "Camp with view of Mount Jomolhari",
     slug: "jomolhari-trek"
   },
@@ -333,7 +333,7 @@ const treks = [
       "Spectacular views of Mount Jomolhari",
       "Descend into Thimphu valley"
     ],
-    icon: "🌲",
+    icon: "DP",
     imageCaption: "Rhododendron forest on Druk Path",
     slug: "druk-path-trek"
   }
@@ -342,7 +342,7 @@ const treks = [
 const difficultyLevels = [
   {
     level: "Easy",
-    icon: "🥾",
+    icon: "Easy",
     description: "Perfect for beginners and families. Gentle terrain, shorter days.",
     duration: "2-4 days",
     altitude: "2,000-3,000m",
@@ -350,7 +350,7 @@ const difficultyLevels = [
   },
   {
     level: "Moderate",
-    icon: "⛰️",
+    icon: "Mod",
     description: "Some uphill sections, longer days. Good fitness required.",
     duration: "5-10 days",
     altitude: "3,000-4,200m",
@@ -358,7 +358,7 @@ const difficultyLevels = [
   },
   {
     level: "Strenuous",
-    icon: "🏔️",
+    icon: "High",
     description: "Challenging terrain, high altitudes. Previous trekking experience needed.",
     duration: "10-20 days",
     altitude: "4,200-5,300m",
@@ -376,8 +376,8 @@ const inclusions = [
 ];
 
 const seasons = [
-  { name: "Spring", months: "Mar-May", icon: "🌸", description: "Rhododendrons in bloom, clear skies, mild temperatures" },
-  { name: "Summer", months: "Jun-Aug", icon: "☔", description: "Lush greenery, fewer trekkers, afternoon showers" },
-  { name: "Autumn", months: "Sep-Nov", icon: "🍂", description: "Peak season, crystal clear views, perfect weather" },
-  { name: "Winter", months: "Dec-Feb", icon: "❄️", description: "Snow-covered peaks, lower treks only" }
+  { name: "Spring", months: "Mar-May", icon: "Mar", description: "Rhododendrons in bloom, clear skies, mild temperatures" },
+  { name: "Summer", months: "Jun-Aug", icon: "Jun", description: "Lush greenery, fewer trekkers, afternoon showers" },
+  { name: "Autumn", months: "Sep-Nov", icon: "Sep", description: "Peak season, crystal clear views, perfect weather" },
+  { name: "Winter", months: "Dec-Feb", icon: "Dec", description: "Snow-covered peaks, lower treks only" }
 ];

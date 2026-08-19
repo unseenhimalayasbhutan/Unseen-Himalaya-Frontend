@@ -81,7 +81,7 @@ const navLinks = [
         description: "Gross National Happiness",
       },
       {
-        label: "Facts About Bhutan",
+        label: "Bhutan Facts",
         href: "/facts",
         description: "Interesting insights",
       },
@@ -328,7 +328,7 @@ export function Header() {
   const [desktopOpenSubmenu, setDesktopOpenSubmenu] = useState<string | null>(
     null
   );
-  const [bstTime, setBstTime] = useState("BST --:--:--");
+  const [bstTime, setBstTime] = useState(() => `BST ${getBhutanTime()}`);
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [isTranslatorReady, setIsTranslatorReady] = useState(false);
 
@@ -486,9 +486,7 @@ export function Header() {
               <span className="top-bar-text-strong">
                 Certified & licensed tour operator
               </span>
-              <span className="top-bar-text-divider" aria-hidden="true">
-                •
-              </span>
+              <span className="top-bar-text-divider" aria-hidden="true">&bull;</span>
               <span>
                 Department of Tourism, Royal Government of Bhutan
               </span>

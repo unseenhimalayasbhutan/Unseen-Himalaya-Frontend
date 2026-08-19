@@ -16,7 +16,6 @@ import {
   IdCard,
   MapPin,
   ShieldCheck,
-  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 
@@ -54,7 +53,7 @@ export default function DocumentsPage() {
             <div className="documents-hero-grid">
               <div className="documents-hero-content">
                 <div className="documents-eyebrow">
-                  <Sparkles aria-hidden />
+                  <FileText aria-hidden />
                   <span>Bhutan Entry Guide</span>
                 </div>
 

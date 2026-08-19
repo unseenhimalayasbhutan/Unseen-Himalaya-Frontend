@@ -34864,78 +34864,6 @@ textarea {
   background: rgba(246, 234, 212, 0.78);
 }
 
-/* =========================================================
-   UPCOMING EVENTS - GUNS N' ROSES CONCERT
-   ========================================================= */
-
-.home-hero-event-alert {
-  width: fit-content;
-  max-width: min(100%, 720px);
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 8px 16px;
-  align-items: center;
-  margin-bottom: 26px;
-  padding: 16px 18px;
-  border: 1px solid rgba(196, 155, 82, 0.34);
-  border-radius: 8px;
-  background: rgba(255, 250, 242, 0.9);
-  color: var(--dark);
-  box-shadow: 0 20px 48px rgba(47, 40, 31, 0.14);
-  backdrop-filter: blur(14px);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.home-hero-event-alert:hover,
-.home-hero-event-alert:focus-visible {
-  transform: translateY(-2px);
-  border-color: rgba(196, 155, 82, 0.62);
-  box-shadow: 0 26px 62px rgba(47, 40, 31, 0.2);
-  outline: none;
-}
-
-.home-hero-event-alert-kicker {
-  grid-column: 1 / -1;
-  color: var(--gold-dark);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.home-hero-event-alert strong {
-  min-width: 0;
-  color: var(--dark);
-  font-family: "Playfair Display", "Cormorant Garamond", serif;
-  font-size: clamp(22px, 2.4vw, 30px);
-  line-height: 1.05;
-}
-
-.home-hero-event-alert-meta {
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.home-hero-event-alert-meta svg,
-.home-hero-event-alert-arrow {
-  width: 16px;
-  height: 16px;
-  color: var(--gold-dark);
-}
-
-.home-hero-event-alert-arrow {
-  grid-column: 2;
-  grid-row: 2;
-}
-
 .upcoming-events-page {
   overflow: hidden;
   background:
@@ -35237,15 +35165,6 @@ textarea {
 }
 
 @media (max-width: 720px) {
-  .home-hero-event-alert {
-    width: 100%;
-    grid-template-columns: minmax(0, 1fr);
-    padding: 14px;
-  }
-
-  .home-hero-event-alert-arrow {
-    display: none;
-  }
 
   .upcoming-events-facts,
   .upcoming-events-highlight-grid {
@@ -36408,140 +36327,6 @@ textarea {
   }
 }
 
-/* Event artwork notification and bottom experience block. */
-.home-hero-event-alert {
-  position: relative;
-  width: min(760px, 100%);
-  max-width: min(100%, 760px);
-  aspect-ratio: 16 / 6.25;
-  display: block;
-  overflow: hidden;
-  margin-bottom: 24px;
-  padding: 0;
-  border: 1px solid rgba(232, 201, 122, 0.82);
-  border-radius: 8px;
-  background: #120d0b;
-  color: #fff;
-  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.36);
-  transform: translateZ(0);
-}
-
-.home-hero-event-alert:hover,
-.home-hero-event-alert:focus-visible {
-  transform: translateY(-3px);
-  border-color: #f4d991;
-  box-shadow: 0 32px 86px rgba(0, 0, 0, 0.46);
-  outline: none;
-}
-
-.home-hero-event-alert-media,
-.home-hero-event-alert-shade,
-.home-hero-event-alert-copy {
-  position: absolute;
-}
-
-.home-hero-event-alert-media,
-.home-hero-event-alert-shade {
-  inset: 0;
-}
-
-.home-hero-event-alert-media img {
-  object-fit: cover;
-  object-position: 42% 42%;
-}
-
-.home-hero-event-alert-shade {
-  background:
-    linear-gradient(90deg, rgba(11, 8, 7, 0.42), rgba(11, 8, 7, 0.1) 48%, rgba(11, 8, 7, 0.52)),
-    linear-gradient(0deg, rgba(11, 8, 7, 0.88), rgba(11, 8, 7, 0.08) 52%);
-}
-
-.home-hero-event-alert-copy {
-  left: clamp(16px, 3vw, 30px);
-  right: 86px;
-  bottom: clamp(14px, 2.4vw, 24px);
-  display: grid;
-  gap: 7px;
-}
-
-.home-hero-event-alert-kicker {
-  width: fit-content;
-  padding: 7px 11px;
-  border-radius: 4px;
-  background: #a81f1a;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.home-hero-event-alert strong {
-  min-width: 0;
-  color: #fff;
-  font-family: "Playfair Display", "Cormorant Garamond", serif;
-  font-size: clamp(34px, 5vw, 58px);
-  font-weight: 800;
-  line-height: 0.92;
-  letter-spacing: 0;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.72);
-}
-
-.home-hero-event-alert strong span {
-  display: block;
-  margin-top: 4px;
-  color: #d72824;
-  font-family: "Poppins", "Inter", sans-serif;
-  font-size: clamp(16px, 2.1vw, 28px);
-  font-style: italic;
-  font-weight: 900;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.home-hero-event-alert-meta {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 13px;
-  font-weight: 800;
-  line-height: 1.35;
-}
-
-.home-hero-event-alert-meta span {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.home-hero-event-alert-meta svg {
-  width: 16px;
-  height: 16px;
-  color: #f4d991;
-}
-
-.home-hero-event-alert-arrow {
-  position: absolute;
-  right: 22px;
-  bottom: 22px;
-  width: 50px;
-  height: 50px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(244, 217, 145, 0.84);
-  border-radius: 999px;
-  color: #f4d991;
-  background: rgba(12, 9, 7, 0.42);
-}
-
-.home-hero-event-alert-arrow svg {
-  width: 22px;
-  height: 22px;
-}
-
 .upcoming-events-experience-section {
   position: relative;
   isolation: isolate;
@@ -36760,23 +36545,6 @@ textarea {
 }
 
 @media (max-width: 720px) {
-  .home-hero-event-alert {
-    width: 100%;
-    aspect-ratio: 16 / 9.4;
-  }
-
-  .home-hero-event-alert-copy {
-    right: 18px;
-    bottom: 16px;
-  }
-
-  .home-hero-event-alert strong {
-    font-size: clamp(30px, 10vw, 44px);
-  }
-
-  .home-hero-event-alert-arrow {
-    display: none;
-  }
 
   .upcoming-events-sample-grid,
   .upcoming-events-icon-row {
@@ -37595,13 +37363,6 @@ textarea {
 .upcoming-events-poster-footer a:focus-visible {
   color: var(--event-gold-soft);
   outline: none;
-}
-
-.home-hero-event-alert-media {
-  background:
-    radial-gradient(circle at 72% 18%, rgba(216, 39, 36, 0.42), transparent 16rem),
-    radial-gradient(circle at 22% 64%, rgba(201, 137, 62, 0.24), transparent 18rem),
-    linear-gradient(135deg, #18100d, #070504);
 }
 
 @media (max-width: 980px) {
@@ -38438,35 +38199,6 @@ textarea {
   }
 }
 
-/* Final concert artwork polish. */
-.home-hero-event-alert {
-  width: min(700px, 100%);
-  aspect-ratio: 12 / 5;
-  border: 1px solid rgba(232, 201, 122, 0.92);
-  border-radius: 16px;
-  background: #090706;
-}
-
-.home-hero-event-alert-media img {
-  object-fit: cover;
-  object-position: center;
-}
-
-.home-hero-event-alert-shade,
-.home-hero-event-alert-copy {
-  display: none !important;
-}
-
-.home-hero-event-alert-arrow {
-  top: 50%;
-  right: 18px;
-  bottom: auto;
-  width: 52px;
-  height: 52px;
-  transform: translateY(-50%);
-  background: rgba(11, 8, 7, 0.56);
-}
-
 .upcoming-events-package-inclusions-panel {
   margin-top: 18px;
   padding: clamp(20px, 3vw, 28px);
@@ -38531,9 +38263,6 @@ textarea {
 }
 
 @media (max-width: 720px) {
-  .home-hero-event-alert {
-    aspect-ratio: 16 / 9;
-  }
 
   .upcoming-events-package-inclusions-panel ul {
     grid-template-columns: 1fr;
@@ -38567,46 +38296,6 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.home-hero-event-alert {
-  width: min(720px, 100%);
-  aspect-ratio: 2.56 / 1;
-  isolation: isolate;
-  margin: 0 0 16px;
-  border: 1px solid rgba(218, 163, 75, 0.98);
-  border-radius: 18px;
-  background: #090706;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
-}
-
-.home-hero-event-alert::before {
-  display: none;
-}
-
-.home-hero-event-alert-media img {
-  object-fit: fill;
-  object-position: center;
-  filter: saturate(1.05) contrast(1.03);
-}
-
-.home-hero-event-alert-shade {
-  display: none !important;
-}
-
-.home-hero-event-alert-copy {
-  display: none !important;
-}
-
-.home-hero-event-alert-arrow {
-  z-index: 4;
-  right: 20px;
-  width: 54px;
-  height: 54px;
-  border-color: rgba(238, 190, 98, 0.98);
-  color: #f1c36e;
-  background: rgba(12, 9, 7, 0.4);
-  backdrop-filter: blur(5px);
 }
 
 .home-hero h1 {
@@ -38803,10 +38492,6 @@ textarea {
     padding: 18px 18px 28px;
   }
 
-  .home-hero-event-alert {
-    aspect-ratio: 16 / 9;
-  }
-
   .home-hero h1 {
     font-size: clamp(42px, 13vw, 58px);
   }
@@ -38856,53 +38541,6 @@ textarea {
   position: relative;
   z-index: 2;
   display: block;
-}
-
-.home-hero-event-alert {
-  width: min(560px, 100%);
-  aspect-ratio: 2.52 / 1;
-  display: block;
-  overflow: hidden;
-  margin: 0 0 20px;
-  border: 1px solid rgba(218, 163, 75, 0.96);
-  border-radius: 14px;
-  background: #090706;
-  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.22);
-}
-
-.home-hero-event-alert-media,
-.home-hero-event-alert-shade {
-  position: absolute;
-  inset: 0;
-}
-
-.home-hero-event-alert-media img {
-  object-fit: fill;
-  object-position: center;
-  filter: saturate(1.04) contrast(1.02);
-}
-
-.home-hero-event-alert-shade,
-.home-hero-event-alert-copy {
-  display: none !important;
-}
-
-.home-hero-event-alert-arrow {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  bottom: auto;
-  z-index: 4;
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(238, 190, 98, 0.98);
-  border-radius: 999px;
-  color: #f1c36e;
-  background: rgba(12, 9, 7, 0.34);
-  transform: translateY(-50%);
-  backdrop-filter: blur(5px);
 }
 
 .home-hero h1 {
@@ -39016,10 +38654,6 @@ textarea {
   .home-hero {
     min-height: auto;
     padding: 24px 18px 34px;
-  }
-
-  .home-hero-event-alert {
-    aspect-ratio: 16 / 9;
   }
 
   .home-hero h1 {
@@ -39768,5 +39402,2548 @@ textarea {
   .places-hero-card,
   .sdf-quick-card {
     border-radius: 18px;
+  }
+}
+
+/* Premium editorial dark theme system. */
+:root {
+  --uh-ink: #0d0d0d;
+  --uh-ink-2: #121212;
+  --uh-ink-3: #171511;
+  --uh-gold: #c79a4b;
+  --uh-gold-2: #d1a45e;
+  --uh-ivory: #f4f0e8;
+  --uh-muted: #b7b3ac;
+  --uh-muted-2: #8f8980;
+  --uh-line: rgba(199, 154, 75, 0.24);
+  --uh-line-soft: rgba(199, 154, 75, 0.13);
+  --uh-panel: rgba(18, 17, 15, 0.92);
+  --uh-panel-soft: rgba(22, 20, 17, 0.84);
+  --uh-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+  --uh-container: min(85vw, 1540px);
+}
+
+html,
+body {
+  background: var(--uh-ink) !important;
+  color: var(--uh-ivory) !important;
+}
+
+body {
+  font-family: "Montserrat", "Inter", "Poppins", system-ui, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+main,
+.app-shell,
+[class*="-page"] {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(199, 154, 75, 0.08), transparent 34rem),
+    linear-gradient(180deg, #0d0d0d 0%, #12110f 48%, #0d0d0d 100%) !important;
+  color: var(--uh-ivory) !important;
+}
+
+main section[class]:not(.home-hero):not(.upcoming-events-poster-hero) {
+  background: transparent !important;
+  color: var(--uh-ivory) !important;
+}
+
+.container,
+.header-inner,
+.topbar-inner,
+.home-hero-content,
+.home-hero-trust,
+.section-shell,
+.journey-container,
+.about-container,
+.festival-container,
+.facts-container,
+.why-visit-container,
+.upcoming-events-poster-container,
+.upcoming-events-footer-inner,
+.tour-pro-container,
+.bhutan-tours-container,
+.travel-container,
+.contact-container,
+.footer-container {
+  width: var(--uh-container) !important;
+  max-width: 1540px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 900px) {
+  :root { --uh-container: min(calc(100% - 28px), 1540px); }
+}
+
+main h1,
+main h2,
+main h3,
+.hero-title,
+.section-title,
+.home-hero h1,
+.upcoming-events-title,
+.upcoming-events-section-title,
+.tour-pro-title,
+.journey-section-title,
+.about-heading,
+.festival-heading,
+.why-visit-heading {
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif !important;
+  color: var(--uh-ivory) !important;
+  letter-spacing: 0 !important;
+  text-wrap: balance;
+}
+
+main p,
+main li,
+main dd,
+main span:not(.sr-only),
+main small {
+  color: var(--uh-muted) !important;
+}
+
+main strong,
+main b,
+main .highlight,
+main .accent,
+main .price,
+main [class*="price"],
+main [class*="Price"],
+main [class*="rate"],
+main [class*="Rate"] {
+  color: var(--uh-gold-2) !important;
+}
+
+.header,
+.site-header,
+.navbar {
+  background: rgba(8, 8, 8, 0.96) !important;
+  border-bottom: 1px solid var(--uh-line) !important;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.34) !important;
+}
+
+.topbar {
+  background: #0a0a0a !important;
+  border-bottom: 1px solid rgba(199, 154, 75, 0.18) !important;
+  color: var(--uh-muted) !important;
+}
+
+.nav-link,
+.dropdown-btn,
+.mobile-menu-link,
+.mobile-menu-dropdown-btn,
+.header a,
+.header button,
+.site-header a,
+.site-header button {
+  color: var(--uh-ivory) !important;
+  font-family: "Montserrat", "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.38);
+}
+
+.nav-link:hover,
+.nav-link.active,
+.dropdown-btn:hover,
+.dropdown-btn.active,
+.mobile-menu-link:hover,
+.mobile-menu-link.active {
+  color: var(--uh-gold-2) !important;
+}
+
+.dropdown-menu,
+.mobile-menu-panel {
+  background: rgba(12, 12, 12, 0.98) !important;
+  border: 1px solid var(--uh-line) !important;
+  box-shadow: var(--uh-shadow) !important;
+}
+
+.dropdown-menu a,
+.mobile-menu-panel a {
+  color: var(--uh-ivory) !important;
+}
+
+.bst-clock,
+.language-selector,
+.language-selector select,
+.header-social-link,
+.social-link {
+  background: rgba(199, 154, 75, 0.1) !important;
+  border-color: var(--uh-line) !important;
+  color: var(--uh-ivory) !important;
+}
+
+.home-hero::before {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.3) 48%, rgba(0, 0, 0, 0.14)) !important;
+}
+
+.home-event-notification {
+  width: min(38rem, 48vw) !important;
+  max-width: 100% !important;
+  margin: 0 0 clamp(1rem, 2.2vw, 1.65rem) 0 !important;
+  border-radius: 1rem !important;
+  border: 1px solid rgba(209, 164, 94, 0.78) !important;
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.42) !important;
+  overflow: hidden !important;
+}
+
+.home-event-notification img,
+.home-event-notification-image {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 900px) {
+  .home-event-notification {
+    width: min(100%, 35rem) !important;
+  }
+}
+
+main :is(
+  .card,
+  .feature-card,
+  .destination-card,
+  .package-card,
+  .stat-card,
+  .info-card,
+  .detail-card,
+  .journey-card,
+  .journey-package-card,
+  .journey-featured-card,
+  .uh-hb-package-card,
+  .uh-destination-list-card,
+  .bottom-card,
+  .currency-step,
+  .places-at-glance-grid > div,
+  .places-destination-nav > a,
+  .places-guidance-card,
+  .places-info-panel,
+  .places-card-details,
+  .places-faq-strip > article,
+  .contact-pro-card,
+  .contact-pro-form-card,
+  .contact-pro-side-card,
+  .documents-provide,
+  .documents-provide-item,
+  .documents-provide-footer,
+  .tour-pro-card,
+  .tour-pro-panel,
+  .tour-pro-stat-card,
+  .festival-card,
+  .about-card,
+  .facts-card,
+  .why-visit-card,
+  .highlight-card,
+  .inclusion-card,
+  .itinerary-card,
+  .timeline-card,
+  .faq-card
+) {
+  background: linear-gradient(145deg, rgba(23, 21, 18, 0.96), rgba(12, 12, 12, 0.96)) !important;
+  border: 1px solid var(--uh-line) !important;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36) !important;
+  color: var(--uh-ivory) !important;
+}
+
+main :is(
+  .card,
+  .feature-card,
+  .destination-card,
+  .package-card,
+  .stat-card,
+  .info-card,
+  .detail-card,
+  .journey-card,
+  .journey-package-card,
+  .journey-featured-card,
+  .uh-hb-package-card,
+  .uh-destination-list-card,
+  .bottom-card,
+  .currency-step,
+  .places-at-glance-grid > div,
+  .places-destination-nav > a,
+  .places-guidance-card,
+  .places-info-panel,
+  .places-card-details,
+  .places-faq-strip > article,
+  .contact-pro-card,
+  .contact-pro-form-card,
+  .contact-pro-side-card,
+  .documents-provide,
+  .documents-provide-item,
+  .documents-provide-footer,
+  .tour-pro-card,
+  .tour-pro-panel,
+  .tour-pro-stat-card,
+  .festival-card,
+  .about-card,
+  .facts-card,
+  .why-visit-card,
+  .highlight-card,
+  .inclusion-card,
+  .itinerary-card,
+  .timeline-card,
+  .faq-card
+) :is(h1, h2, h3, h4, h5, h6, strong) {
+  color: var(--uh-ivory) !important;
+}
+
+main :is(
+  .card,
+  .feature-card,
+  .destination-card,
+  .package-card,
+  .stat-card,
+  .info-card,
+  .detail-card,
+  .journey-card,
+  .journey-package-card,
+  .journey-featured-card,
+  .uh-hb-package-card,
+  .uh-destination-list-card,
+  .bottom-card,
+  .currency-step,
+  .places-at-glance-grid > div,
+  .places-destination-nav > a,
+  .places-guidance-card,
+  .places-info-panel,
+  .places-card-details,
+  .places-faq-strip > article,
+  .contact-pro-card,
+  .contact-pro-form-card,
+  .contact-pro-side-card,
+  .documents-provide,
+  .documents-provide-item,
+  .documents-provide-footer,
+  .tour-pro-card,
+  .tour-pro-panel,
+  .tour-pro-stat-card,
+  .festival-card,
+  .about-card,
+  .facts-card,
+  .why-visit-card,
+  .highlight-card,
+  .inclusion-card,
+  .itinerary-card,
+  .timeline-card,
+  .faq-card
+) :is(p, li, span:not(.sr-only), small) {
+  color: var(--uh-muted) !important;
+}
+
+.eyebrow,
+.section-eyebrow,
+.tour-pro-eyebrow,
+.journey-eyebrow,
+.badge,
+.pill,
+.tag,
+[class*="eyebrow"],
+[class*="badge"],
+[class*="pill"],
+[class*="tag"] {
+  background: rgba(199, 154, 75, 0.12) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-gold-2) !important;
+  font-family: "Montserrat", "Inter", sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+}
+
+button,
+.button,
+.btn,
+.cta-button,
+.primary-btn,
+a[class*="button"],
+a[class*="btn"] {
+  font-family: "Montserrat", "Inter", sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+}
+
+.primary-btn,
+.cta-button,
+.btn-primary,
+.button-primary,
+.home-hero-primary,
+.journey-primary,
+.tour-pro-primary,
+.upcoming-events-primary,
+.upcoming-events-button-primary,
+button[type="submit"] {
+  background: linear-gradient(135deg, var(--uh-gold-2), var(--uh-gold)) !important;
+  border: 1px solid rgba(244, 240, 232, 0.12) !important;
+  color: #0b0b0b !important;
+  box-shadow: 0 18px 38px rgba(199, 154, 75, 0.24) !important;
+}
+
+.secondary-btn,
+.btn-secondary,
+.button-secondary,
+.home-hero-secondary,
+.journey-secondary,
+.tour-pro-secondary,
+.upcoming-events-secondary,
+.upcoming-events-button-secondary {
+  background: rgba(0, 0, 0, 0.28) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-gold-2) !important;
+  box-shadow: none !important;
+}
+
+.primary-btn *,
+.cta-button *,
+.btn-primary *,
+.button-primary *,
+.home-hero-primary *,
+.journey-primary *,
+.tour-pro-primary *,
+.upcoming-events-primary *,
+.upcoming-events-button-primary * {
+  color: #0b0b0b !important;
+}
+
+.secondary-btn *,
+.btn-secondary *,
+.button-secondary *,
+.home-hero-secondary *,
+.journey-secondary *,
+.tour-pro-secondary *,
+.upcoming-events-secondary *,
+.upcoming-events-button-secondary * {
+  color: var(--uh-gold-2) !important;
+}
+
+.journey-package-price,
+.uh-hb-package-price,
+.uh-hb-package-price-note,
+.tour-pro-rate-note,
+.tour-pro-sdf-note,
+.uh-itinerary-pricing-note,
+.upcoming-events-package-price,
+.package-price,
+.price-chip {
+  background: rgba(199, 154, 75, 0.13) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-gold-2) !important;
+  box-shadow: none !important;
+}
+
+.journey-package-price *,
+.uh-hb-package-price *,
+.uh-hb-package-price-note *,
+.tour-pro-rate-note *,
+.tour-pro-sdf-note *,
+.uh-itinerary-pricing-note *,
+.upcoming-events-package-price *,
+.package-price *,
+.price-chip * {
+  color: var(--uh-gold-2) !important;
+}
+
+main img {
+  background-color: #12110f;
+}
+
+main :is(img, picture) {
+  border-color: var(--uh-line-soft) !important;
+}
+
+input,
+textarea,
+select {
+  background: rgba(12, 12, 12, 0.92) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-ivory) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(183, 179, 172, 0.74) !important;
+}
+
+.ai-chatbot-toggle,
+.ai-chatbot-panel {
+  font-family: "Montserrat", "Inter", sans-serif !important;
+}
+
+.ai-chatbot-toggle {
+  background: linear-gradient(135deg, var(--uh-gold-2), var(--uh-gold)) !important;
+  color: #0b0b0b !important;
+  border: 1px solid rgba(244, 240, 232, 0.16) !important;
+}
+
+.ai-chatbot-toggle * {
+  color: #0b0b0b !important;
+}
+
+.ai-chatbot-panel {
+  background: rgba(12, 12, 12, 0.98) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-ivory) !important;
+}
+
+.ai-chatbot-panel p,
+.ai-chatbot-panel span,
+.ai-chatbot-panel small {
+  color: var(--uh-muted) !important;
+}
+
+.ai-chatbot-panel strong,
+.ai-chatbot-panel h2,
+.ai-chatbot-panel h3 {
+  color: var(--uh-ivory) !important;
+}
+
+.site-footer,
+.footer,
+.upcoming-events-footer {
+  background: #080808 !important;
+  border-top: 1px solid var(--uh-line) !important;
+  color: var(--uh-muted) !important;
+}
+
+.site-footer a,
+.footer a,
+.upcoming-events-footer a {
+  color: var(--uh-ivory) !important;
+}
+
+.site-footer h2,
+.site-footer h3,
+.site-footer h4,
+.footer h2,
+.footer h3,
+.footer h4,
+.upcoming-events-footer h2,
+.upcoming-events-footer h3,
+.upcoming-events-footer h4 {
+  color: var(--uh-gold-2) !important;
+}
+
+body :is(
+  .journey-section.uh-journeys-section,
+  .why-section.uh-whychoose-section,
+  .travel-info-section.uh-travel-section,
+  .cta-contact-section
+) {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(199, 154, 75, 0.1), transparent 30rem),
+    linear-gradient(180deg, #101010 0%, #15130f 52%, #0d0d0d 100%) !important;
+  color: var(--uh-ivory) !important;
+}
+
+body :is(
+  .journey-section.uh-journeys-section,
+  .why-section.uh-whychoose-section,
+  .travel-info-section.uh-travel-section,
+  .cta-contact-section
+)::before,
+body :is(
+  .journey-section.uh-journeys-section,
+  .why-section.uh-whychoose-section,
+  .travel-info-section.uh-travel-section,
+  .cta-contact-section
+)::after,
+.uh-journeys-bg-orb,
+.why-bg-orb,
+.uh-travel-bg-orb,
+.travel-bg-orb {
+  opacity: 0 !important;
+  background: none !important;
+}
+
+body :is(
+  .uh-journeys-feature-card,
+  .uh-journeys-destination-card,
+  .uh-journeys-package-card,
+  .uh-journeys-selected-card,
+  .uh-destination-preview,
+  .uh-destination-option,
+  .uh-package-card,
+  .uh-package-card-image,
+  .uh-package-card-content,
+  .uh-package-preview,
+  .uh-whychoose-preview-panel,
+  .uh-whychoose-feature-card,
+  .uh-whychoose-stat-card,
+  .why-section .stat-card,
+  .why-section .bottom-card,
+  .uh-travel-panel,
+  .uh-travel-step-card,
+  .cta-contact-card,
+  .cta-contact-note
+) {
+  background: linear-gradient(145deg, rgba(29, 26, 22, 0.96), rgba(12, 12, 12, 0.96)) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-ivory) !important;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4) !important;
+}
+
+body :is(
+  .uh-journeys-feature-card,
+  .uh-journeys-destination-card,
+  .uh-journeys-package-card,
+  .uh-journeys-selected-card,
+  .uh-destination-preview,
+  .uh-destination-option,
+  .uh-package-card,
+  .uh-package-card-image,
+  .uh-package-card-content,
+  .uh-package-preview,
+  .uh-whychoose-preview-panel,
+  .uh-whychoose-feature-card,
+  .uh-whychoose-stat-card,
+  .why-section .stat-card,
+  .why-section .bottom-card,
+  .uh-travel-panel,
+  .uh-travel-step-card,
+  .cta-contact-card,
+  .cta-contact-note
+) :is(h2, h3, h4, strong) {
+  color: var(--uh-ivory) !important;
+}
+
+body :is(
+  .uh-journeys-feature-card,
+  .uh-journeys-destination-card,
+  .uh-journeys-package-card,
+  .uh-journeys-selected-card,
+  .uh-destination-preview,
+  .uh-destination-option,
+  .uh-package-card,
+  .uh-package-card-image,
+  .uh-package-card-content,
+  .uh-package-preview,
+  .uh-whychoose-preview-panel,
+  .uh-whychoose-feature-card,
+  .uh-whychoose-stat-card,
+  .why-section .stat-card,
+  .why-section .bottom-card,
+  .uh-travel-panel,
+  .uh-travel-step-card,
+  .cta-contact-card,
+  .cta-contact-note
+) :is(p, span:not(.sr-only), li, small) {
+  color: var(--uh-muted) !important;
+}
+
+body :is(
+  .uh-journeys-kicker,
+  .uh-journeys-link-btn,
+  .uh-journeys-btn-secondary,
+  .uh-travel-kicker,
+  .uh-travel-btn-secondary,
+  .cta-contact-label
+) {
+  background: rgba(199, 154, 75, 0.1) !important;
+  border-color: var(--uh-line) !important;
+  color: var(--uh-gold-2) !important;
+}
+
+body :is(
+  .uh-journeys-btn-primary,
+  .uh-travel-btn-primary,
+  .cta-contact-buttons a:first-child,
+  .cta-contact-buttons button:first-child
+) {
+  background: linear-gradient(135deg, var(--uh-gold-2), var(--uh-gold)) !important;
+  color: #0b0b0b !important;
+  border: 1px solid rgba(244, 240, 232, 0.12) !important;
+}
+
+body :is(
+  .uh-journeys-btn-primary,
+  .uh-travel-btn-primary,
+  .cta-contact-buttons a:first-child,
+  .cta-contact-buttons button:first-child
+) * {
+  color: #0b0b0b !important;
+}
+
+body :is(.uh-journeys-btn-secondary, .uh-travel-btn-secondary, .cta-contact-buttons a:not(:first-child)) * {
+  color: var(--uh-gold-2) !important;
+}
+
+body :is(
+  .journey-section.uh-journeys-section,
+  .why-section.uh-whychoose-section,
+  .travel-info-section.uh-travel-section
+) :is(h1, h2, h3, h4, .main-title, .section-title) {
+  color: var(--uh-ivory) !important;
+}
+
+body :is(
+  .journey-section.uh-journeys-section,
+  .why-section.uh-whychoose-section,
+  .travel-info-section.uh-travel-section
+) :is(p, li, small, .description, .feature-text, .bottom-text) {
+  color: var(--uh-muted) !important;
+}
+
+body .uh-package-card :is(.tour-pro-image-rate, .uh-package-card-rate),
+body .uh-package-preview-meta > div {
+  background: rgba(199, 154, 75, 0.12) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-gold-2) !important;
+}
+
+body .uh-package-card :is(.tour-pro-image-rate, .uh-package-card-rate) *,
+body .uh-package-preview-meta > div * {
+  color: var(--uh-gold-2) !important;
+}
+
+.uh-destination-option-thumb,
+.uh-package-card-image {
+  background: rgba(199, 154, 75, 0.08) !important;
+}
+
+body .journey-section.uh-journeys-section .uh-destination-option,
+body .why-section.uh-whychoose-section .stat-card,
+body .why-section.uh-whychoose-section .bottom-card {
+  background: linear-gradient(145deg, rgba(25, 23, 20, 0.96), rgba(12, 12, 12, 0.96)) !important;
+  border: 1px solid var(--uh-line) !important;
+  color: var(--uh-ivory) !important;
+}
+
+body .journey-section.uh-journeys-section .uh-destination-option[aria-pressed="true"],
+body .journey-section.uh-journeys-section .uh-destination-option:hover {
+  background: linear-gradient(145deg, rgba(46, 38, 28, 0.98), rgba(16, 15, 13, 0.98)) !important;
+  border-color: rgba(209, 164, 94, 0.48) !important;
+}
+
+body .journey-section.uh-journeys-section .uh-destination-option h3,
+body .why-section.uh-whychoose-section .stat-card strong,
+body .why-section.uh-whychoose-section .bottom-card h3 {
+  color: var(--uh-ivory) !important;
+}
+
+body .journey-section.uh-journeys-section .uh-destination-option span,
+body .why-section.uh-whychoose-section .stat-card span,
+body .why-section.uh-whychoose-section .bottom-card span {
+  color: var(--uh-gold-2) !important;
+}
+
+body .journey-section.uh-journeys-section .uh-destination-option p,
+body .why-section.uh-whychoose-section .bottom-card p {
+  color: var(--uh-muted) !important;
+}
+
+.uh-whychoose-feature-card.active,
+.uh-whychoose-feature-card:hover,
+.uh-travel-step-card.is-active,
+.uh-travel-step-card:hover {
+  background: linear-gradient(145deg, rgba(48, 40, 28, 0.98), rgba(18, 17, 15, 0.98)) !important;
+  border-color: rgba(209, 164, 94, 0.44) !important;
+}
+
+.site-footer,
+.footer {
+  background: #090909 !important;
+}
+
+body .site-footer .site-footer-main,
+body .site-footer .site-footer-bottom,
+body .site-footer .site-footer-certificate {
+  background: #090909 !important;
+  border-color: var(--uh-line) !important;
+}
+
+::selection {
+  background: rgba(199, 154, 75, 0.38);
+  color: var(--uh-ivory);
+}
+
+/* Unified premium black and gold finish. */
+:root {
+  --lux-black: #050505;
+  --lux-black-2: #0b0b0a;
+  --lux-black-3: #11100d;
+  --lux-gold: #d1a45e;
+  --lux-gold-2: #c79a4b;
+  --lux-gold-soft: #ead39a;
+  --lux-gold-muted: #c9ad73;
+  --lux-border: rgba(209, 164, 94, 0.34);
+  --lux-border-soft: rgba(209, 164, 94, 0.16);
+  --lux-shadow: 0 26px 80px rgba(0, 0, 0, 0.52);
+  --lux-font-heading: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --lux-font-body: "Montserrat", "Inter", "Poppins", system-ui, sans-serif;
+}
+
+html,
+body {
+  background: var(--lux-black) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--lux-font-body) !important;
+}
+
+body * {
+  font-family: var(--lux-font-body) !important;
+}
+
+body :is(main, section, header, footer, nav, aside, form) {
+  background-color: var(--lux-black) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+body main section[class]:not(.home-hero):not(.upcoming-events-poster-hero) {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(209, 164, 94, 0.08), transparent 34rem),
+    linear-gradient(180deg, var(--lux-black) 0%, var(--lux-black-2) 52%, var(--lux-black) 100%) !important;
+}
+
+body :is(.topbar, .header, .site-header, .navbar, .site-footer, .footer, .site-footer-main, .site-footer-bottom) {
+  background: #030303 !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+body :is(h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .main-title) {
+  color: var(--lux-gold-soft) !important;
+  font-family: var(--lux-font-heading) !important;
+  letter-spacing: 0 !important;
+}
+
+body :is(h1, h2, h3, h4, h5, h6, .hero-title, .section-title, .main-title) * {
+  font-family: var(--lux-font-heading) !important;
+}
+
+body :is(p, li, dd, label, small, span:not(.sr-only), summary, td, th) {
+  color: var(--lux-gold-muted) !important;
+}
+
+body :is(strong, b, a, .price, [class*="price"], [class*="Price"], [class*="rate"], [class*="Rate"]) {
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(
+  .card,
+  [class*="card"],
+  [class*="Card"],
+  [class*="panel"],
+  [class*="Panel"],
+  [class*="tile"],
+  [class*="Tile"],
+  [class*="item"],
+  [class*="Item"],
+  [class*="box"],
+  [class*="Box"],
+  [class*="note"],
+  [class*="Note"],
+  [class*="summary"],
+  [class*="Summary"],
+  [class*="tab"],
+  [class*="Tab"],
+  [class*="option"],
+  [class*="Option"],
+  [class*="package"],
+  [class*="Package"],
+  [class*="policy"],
+  [class*="Policy"],
+  [class*="faq"],
+  [class*="Faq"],
+  [class*="step"],
+  [class*="Step"]
+) {
+  background:
+    linear-gradient(145deg, rgba(24, 22, 19, 0.98), rgba(8, 8, 8, 0.98)) !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-muted) !important;
+  box-shadow: var(--lux-shadow) !important;
+}
+
+body :is(
+  .card,
+  [class*="card"],
+  [class*="Card"],
+  [class*="panel"],
+  [class*="Panel"],
+  [class*="tile"],
+  [class*="Tile"],
+  [class*="item"],
+  [class*="Item"],
+  [class*="box"],
+  [class*="Box"],
+  [class*="note"],
+  [class*="Note"],
+  [class*="summary"],
+  [class*="Summary"],
+  [class*="tab"],
+  [class*="Tab"],
+  [class*="option"],
+  [class*="Option"],
+  [class*="package"],
+  [class*="Package"],
+  [class*="policy"],
+  [class*="Policy"],
+  [class*="faq"],
+  [class*="Faq"],
+  [class*="step"],
+  [class*="Step"]
+) :is(h1, h2, h3, h4, h5, h6, strong, b) {
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(
+  .card,
+  [class*="card"],
+  [class*="Card"],
+  [class*="panel"],
+  [class*="Panel"],
+  [class*="tile"],
+  [class*="Tile"],
+  [class*="item"],
+  [class*="Item"],
+  [class*="box"],
+  [class*="Box"],
+  [class*="note"],
+  [class*="Note"],
+  [class*="summary"],
+  [class*="Summary"],
+  [class*="tab"],
+  [class*="Tab"],
+  [class*="option"],
+  [class*="Option"],
+  [class*="package"],
+  [class*="Package"],
+  [class*="policy"],
+  [class*="Policy"],
+  [class*="faq"],
+  [class*="Faq"],
+  [class*="step"],
+  [class*="Step"]
+) :is(p, li, span:not(.sr-only), small, label, summary) {
+  color: var(--lux-gold-muted) !important;
+}
+
+body :is(
+  .eyebrow,
+  .section-eyebrow,
+  [class*="eyebrow"],
+  [class*="Eyebrow"],
+  [class*="kicker"],
+  [class*="Kicker"],
+  [class*="badge"],
+  [class*="Badge"],
+  [class*="pill"],
+  [class*="Pill"],
+  [class*="tag"],
+  [class*="Tag"],
+  [class*="label"],
+  [class*="Label"]
+) {
+  background: rgba(209, 164, 94, 0.1) !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+  font-family: var(--lux-font-body) !important;
+}
+
+body :is(.nav-link, .dropdown-btn, .mobile-menu-link, .mobile-menu-dropdown-btn) {
+  color: var(--lux-gold-soft) !important;
+  font-family: var(--lux-font-heading) !important;
+  font-size: 1.02rem !important;
+  font-weight: 700 !important;
+}
+
+body :is(.nav-link:hover, .nav-link.active, .dropdown-btn:hover, .dropdown-btn.active) {
+  color: var(--lux-gold) !important;
+}
+
+body :is(.header-social-link, .social-link, .bst-clock, .language-selector, .language-selector select) {
+  background: rgba(0, 0, 0, 0.64) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is([class*="icon"], [class*="Icon"]) {
+  background-color: rgba(209, 164, 94, 0.12) !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(button, .button, .btn, [class*="btn"], [class*="Btn"], [class*="button"], [class*="Button"]) {
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(.primary-btn, .btn-primary, .button-primary, [class*="primary"], [class*="Primary"], button[type="submit"]) {
+  background: linear-gradient(135deg, var(--lux-gold), var(--lux-gold-2)) !important;
+  border-color: rgba(234, 211, 154, 0.52) !important;
+  color: #050505 !important;
+}
+
+body :is(.primary-btn, .btn-primary, .button-primary, [class*="primary"], [class*="Primary"], button[type="submit"]) * {
+  color: #050505 !important;
+}
+
+body :is(.secondary-btn, .btn-secondary, .button-secondary, [class*="secondary"], [class*="Secondary"]) {
+  background: rgba(0, 0, 0, 0.48) !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(input, textarea, select) {
+  background: #080808 !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(input::placeholder, textarea::placeholder) {
+  color: rgba(201, 173, 115, 0.7) !important;
+}
+
+body .home-hero {
+  background-color: #050505 !important;
+}
+
+body .home-hero::before {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.38) 48%, rgba(0, 0, 0, 0.16)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.38)) !important;
+}
+
+body .home-hero h1 {
+  color: var(--lux-gold-soft) !important;
+  text-shadow: 0 4px 28px rgba(0, 0, 0, 0.66) !important;
+}
+
+body .home-hero h1 span,
+body .home-hero .hero-title-highlight {
+  color: var(--lux-gold) !important;
+}
+
+body .home-event-notification {
+  width: min(36rem, 42vw) !important;
+  border: 1px solid rgba(209, 164, 94, 0.84) !important;
+  border-radius: 0.75rem !important;
+  background: #050505 !important;
+}
+
+body :is(.site-footer-main, .site-footer-bottom) {
+  background-image: none !important;
+}
+
+body .site-footer :is(p, li, span:not(.sr-only), a) {
+  color: var(--lux-gold-muted) !important;
+}
+
+body .site-footer :is(h2, h3, h4, strong) {
+  color: var(--lux-gold-soft) !important;
+}
+
+body .ai-chatbot {
+  font-family: var(--lux-font-body) !important;
+}
+
+body .ai-chatbot-toggle {
+  background: linear-gradient(135deg, #15110b, #050505) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.48) !important;
+}
+
+body .ai-chatbot-toggle * {
+  color: var(--lux-gold-soft) !important;
+}
+
+body .ai-chatbot-panel {
+  background: #050505 !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-muted) !important;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.62) !important;
+}
+
+body .ai-chatbot-header,
+body .ai-chatbot-footer,
+body .ai-chatbot-prompts,
+body .ai-chatbot-form {
+  background: #050505 !important;
+  border-color: var(--lux-border-soft) !important;
+}
+
+body .ai-chatbot-title strong,
+body .ai-chatbot-message-body strong {
+  color: var(--lux-gold-soft) !important;
+}
+
+body .ai-chatbot-title span,
+body .ai-chatbot-message-body p,
+body .ai-chatbot-footer span,
+body .ai-chatbot-thinking {
+  color: var(--lux-gold-muted) !important;
+}
+
+body .ai-chatbot-message-body p,
+body .ai-chatbot-thinking {
+  background: transparent !important;
+}
+
+body .ai-chatbot-avatar,
+body .ai-chatbot-message-icon,
+body .ai-chatbot-icon-btn {
+  background: rgba(209, 164, 94, 0.12) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body .ai-chatbot-message-body {
+  background: #0a0a09 !important;
+  border: 1px solid var(--lux-border-soft) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+body .ai-chatbot-message-user .ai-chatbot-message-body {
+  background: rgba(209, 164, 94, 0.16) !important;
+  border-color: var(--lux-border) !important;
+}
+
+body .ai-chatbot-prompts button,
+body .ai-chatbot-handoff a,
+body .ai-chatbot-sources a,
+body .ai-chatbot-lead-btn,
+body .ai-chatbot-footer button {
+  background: rgba(209, 164, 94, 0.1) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body .ai-chatbot-footer {
+  color: var(--lux-gold-muted) !important;
+}
+
+body .site-header .top-bar,
+body .site-header .top-bar-inner {
+  background: #030303 !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body .site-header .top-bar-text,
+body .site-header .top-bar-text span,
+body .site-header .top-bar-text-strong,
+body .site-header .top-bar-text-divider {
+  color: var(--lux-gold-soft) !important;
+}
+
+body .site-header .top-bar-logo-frame {
+  background: rgba(209, 164, 94, 0.12) !important;
+  border: 1px solid var(--lux-border) !important;
+}
+
+body .site-header .navbar {
+  background: #030303 !important;
+  border-color: var(--lux-border) !important;
+}
+
+body .site-header :is(.nav-link, .dropdown-btn) {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding-inline: 0 !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body .site-header :is(.nav-link, .dropdown-btn)::after {
+  background: var(--lux-gold) !important;
+}
+
+body .site-header .desktop-social-icon {
+  background: rgba(0, 0, 0, 0.42) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body .site-header :is(.nav-item, .desktop-nav, .desktop-actions, .desktop-socials) {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+body :is(.legal-pro-page, .policies-pro-page, .terms-pro-page) {
+  background:
+    radial-gradient(circle at 50% 8%, rgba(209, 164, 94, 0.08), transparent 34rem),
+    var(--lux-black) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+body :is(
+  .legal-pro-section-white,
+  .legal-pro-section-warm,
+  .policies-pro-overview-section,
+  .policies-pro-details-section,
+  .policies-pro-summary-section,
+  .legal-pro-contact-section
+) {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(209, 164, 94, 0.07), transparent 32rem),
+    linear-gradient(180deg, var(--lux-black) 0%, var(--lux-black-2) 54%, var(--lux-black) 100%) !important;
+}
+
+body :is(
+  .legal-pro-overview-card,
+  .legal-pro-nav-card,
+  .legal-pro-detail-card,
+  .legal-pro-notice-card,
+  .legal-pro-contact-card,
+  .policies-pro-nav-card,
+  .policies-pro-detail-card,
+  .policies-pro-contact-card
+) {
+  background:
+    linear-gradient(145deg, rgba(24, 22, 19, 0.98), rgba(8, 8, 8, 0.98)) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-muted) !important;
+  box-shadow: var(--lux-shadow) !important;
+}
+
+body :is(.legal-pro-overview-icon, .legal-pro-detail-icon, .legal-pro-notice-icon) {
+  background: rgba(209, 164, 94, 0.13) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(.legal-pro-nav-card a, .legal-pro-detail-card li) {
+  background: rgba(209, 164, 94, 0.08) !important;
+  border: 1px solid rgba(209, 164, 94, 0.18) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+body .legal-pro-nav-card a:hover {
+  background: rgba(209, 164, 94, 0.15) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(.legal-pro-section-heading p, .legal-pro-overview-card p, .legal-pro-detail-card p, .legal-pro-detail-card li, .legal-pro-contact-card p, .legal-pro-notice-card p) {
+  color: var(--lux-gold-muted) !important;
+}
+
+body :is(
+  .tour-pro-image-frame,
+  .about-bhutan-image,
+  .about-bhutan-feature-row,
+  .seasons-pro-detail-image,
+  .besttime-sidebar-help,
+  .about-pro-feature-points > div,
+  .uh-addon-category-button,
+  .whyvisit-pro-style-button,
+  .whyvisit-pro-moment-button,
+  .whyvisit-pro-moment-preview,
+  .policies-pro-summary-stats div,
+  .places-card-media > div
+) {
+  background:
+    linear-gradient(145deg, rgba(24, 22, 19, 0.98), rgba(8, 8, 8, 0.98)) !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+body :is(
+  .uh-hb-detail-thumb,
+  .uh-hb-detail-meta-grid > div,
+  .uh-hb-detail-summary-grid > div,
+  .uh-hb-detail-facts > div,
+  .about-bhutan-timeline-date,
+  .about-bhutan-food-card span
+) {
+  background: rgba(209, 164, 94, 0.1) !important;
+  border: 1px solid var(--lux-border-soft) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+body :is(
+  .site-footer-contact-btn,
+  .uh-hb-view-trip-btn,
+  .contact-pro-btn-primary,
+  .tour-pro-btn-primary,
+  .about-bhutan-btn-primary,
+  .upcoming-events-gold-btn
+),
+body :is(
+  .site-footer-contact-btn,
+  .uh-hb-view-trip-btn,
+  .contact-pro-btn-primary,
+  .tour-pro-btn-primary,
+  .about-bhutan-btn-primary,
+  .upcoming-events-gold-btn
+) * {
+  color: #050505 !important;
+}
+
+body .upcoming-events-detail-itinerary-compact article > span,
+body .upcoming-events-footer-event-card > span,
+body .upcoming-events-itinerary-day-mark {
+  background: rgba(209, 164, 94, 0.14) !important;
+  border: 1px solid var(--lux-border) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+html body .site-footer a.site-footer-contact-btn,
+html body .site-footer a.site-footer-contact-btn *,
+html body a.uh-hb-view-trip-btn,
+html body a.uh-hb-view-trip-btn *,
+html body a.contact-pro-btn-primary,
+html body a.contact-pro-btn-primary *,
+html body a.tour-pro-btn-primary,
+html body a.tour-pro-btn-primary *,
+html body a.about-bhutan-btn-primary,
+html body a.about-bhutan-btn-primary *,
+html body a.upcoming-events-gold-btn,
+html body a.upcoming-events-gold-btn * {
+  color: #050505 !important;
+}
+
+html body :is(
+  .currency-sidebar-help,
+  .documents-sidebar-help,
+  .faq-sidebar-help,
+  .currency-info-card li,
+  .currency-check-list li,
+  .currency-feature-item li,
+  .currency-step,
+  .currency-soft-note,
+  .currency-warning-note,
+  .documents-check-list li,
+  .documents-fee-item,
+  .documents-notice,
+  .documents-warning-note,
+  .uh-hb-fact-grid > div,
+  .about-bhutan-timeline-card > span,
+  .facts-redesign-philosophy-tab,
+  .facts-redesign-timeline-item,
+  .facts-redesign-airport-card,
+  .facts-redesign-food-item,
+  .whyvisit-pro-moment-preview,
+  .whyvisit-pro-style-button,
+  .whyvisit-pro-moment-button
+) {
+  background:
+    linear-gradient(145deg, rgba(24, 22, 19, 0.98), rgba(8, 8, 8, 0.98)) !important;
+  border-color: var(--lux-border) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+html body :is(
+  .currency-sidebar-help,
+  .documents-sidebar-help,
+  .faq-sidebar-help,
+  .currency-info-card li,
+  .currency-check-list li,
+  .currency-feature-item li,
+  .currency-step,
+  .currency-soft-note,
+  .currency-warning-note,
+  .documents-check-list li,
+  .documents-fee-item,
+  .documents-notice,
+  .documents-warning-note,
+  .uh-hb-fact-grid > div,
+  .about-bhutan-timeline-card > span,
+  .facts-redesign-philosophy-tab,
+  .facts-redesign-timeline-item,
+  .facts-redesign-airport-card,
+  .facts-redesign-food-item,
+  .whyvisit-pro-moment-preview,
+  .whyvisit-pro-style-button,
+  .whyvisit-pro-moment-button
+) :is(p, span:not(.sr-only), small, li) {
+  color: var(--lux-gold-muted) !important;
+}
+
+html body :is(
+  .currency-sidebar-help,
+  .documents-sidebar-help,
+  .faq-sidebar-help,
+  .uh-hb-fact-grid > div,
+  .about-bhutan-timeline-card > span,
+  .facts-redesign-philosophy-tab,
+  .whyvisit-pro-style-button,
+  .whyvisit-pro-moment-button
+) :is(strong, h3, h4) {
+  color: var(--lux-gold-soft) !important;
+}
+
+/* =========================================================
+   Final premium cleanup: black/gold consistency
+   ========================================================= */
+
+html body {
+  background: var(--lux-black) !important;
+}
+
+html body .container {
+  width: min(1440px, calc(100% - 72px)) !important;
+  max-width: 1440px !important;
+}
+
+html body .site-header .logo,
+html body .site-header .mobile-menu-logo {
+  min-width: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .site-header .logo-image,
+html body .site-header .mobile-logo-image {
+  width: 94px !important;
+  height: auto !important;
+  max-height: 82px !important;
+  object-fit: contain !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  filter: none !important;
+}
+
+html body .site-header :is(.nav-link, .dropdown-btn) {
+  color: #f4f0e8 !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45) !important;
+}
+
+html body .site-header :is(.nav-link:hover, .dropdown-btn:hover, .nav-link.active) {
+  color: var(--lux-gold-soft) !important;
+}
+
+html body .site-header .desktop-actions {
+  gap: clamp(22px, 2.4vw, 42px) !important;
+}
+
+html body .site-header .desktop-socials {
+  gap: 12px !important;
+  padding-left: 26px !important;
+  margin-left: 6px !important;
+  border-left: 1px solid rgba(209, 164, 94, 0.36) !important;
+}
+
+html body .home-hero {
+  min-height: calc(100vh - 132px) !important;
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.84) 0%, rgba(0, 0, 0, 0.52) 44%, rgba(0, 0, 0, 0.12) 76%),
+    url("/cover/background-optimized.jpg") !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+html body .home-hero::before,
+html body .home-hero-pattern {
+  opacity: 0 !important;
+}
+
+html body .home-hero-content {
+  width: min(780px, 52vw) !important;
+  margin-left: clamp(28px, 5.5vw, 96px) !important;
+  padding-top: clamp(72px, 10vh, 132px) !important;
+}
+
+html body .home-hero h1 {
+  color: #f4f0e8 !important;
+}
+
+html body .home-hero h1 span {
+  color: var(--lux-gold-soft) !important;
+}
+
+html body .home-hero p {
+  max-width: 680px !important;
+  color: rgba(244, 240, 232, 0.86) !important;
+}
+
+html body .tour-pro-eyebrow,
+html body .festival-calendar-redesign-eyebrow,
+html body .festival-calendar-redesign-section-heading > span,
+html body .festival-calendar-redesign-feature-copy span,
+html body .festival-calendar-redesign-cta-card > div > span {
+  background: transparent !important;
+  border: 1px solid rgba(209, 164, 94, 0.35) !important;
+  color: var(--lux-gold-soft) !important;
+  letter-spacing: 0.16em !important;
+}
+
+html body .uh-hb-price-table-wrap {
+  overflow: hidden !important;
+  margin-top: 24px !important;
+  border: 1px solid rgba(209, 164, 94, 0.34) !important;
+  border-radius: 18px !important;
+  background:
+    linear-gradient(145deg, rgba(20, 18, 14, 0.98), rgba(5, 5, 5, 0.98)) !important;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42) !important;
+}
+
+html body .uh-hb-price-table {
+  min-width: 720px !important;
+  background: transparent !important;
+}
+
+html body .uh-hb-package-cost-table caption {
+  padding: 16px 20px !important;
+  border-bottom: 1px solid rgba(209, 164, 94, 0.24) !important;
+  background: rgba(209, 164, 94, 0.08) !important;
+  color: var(--lux-gold-soft) !important;
+  font-family: var(--lux-font-heading) !important;
+  font-size: clamp(1.25rem, 2vw, 1.7rem) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  text-transform: none !important;
+}
+
+html body .uh-hb-price-table th,
+html body .uh-hb-price-table td {
+  border-color: rgba(209, 164, 94, 0.16) !important;
+  background: transparent !important;
+  color: rgba(244, 240, 232, 0.9) !important;
+  white-space: normal !important;
+}
+
+html body .uh-hb-price-table th {
+  background: rgba(209, 164, 94, 0.12) !important;
+  color: var(--lux-gold-soft) !important;
+  font-family: var(--lux-font-body) !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.12em !important;
+}
+
+html body .uh-hb-price-table td:first-child {
+  color: var(--lux-gold-soft) !important;
+}
+
+html body .uh-hb-price-table a {
+  color: var(--lux-gold-soft) !important;
+  text-decoration: underline;
+  text-decoration-color: rgba(209, 164, 94, 0.45);
+  text-underline-offset: 4px;
+}
+
+html body .seasons-pro-weather-row div {
+  border: 1px solid rgba(209, 164, 94, 0.24) !important;
+  border-radius: 14px !important;
+  background:
+    linear-gradient(145deg, rgba(23, 21, 17, 0.98), rgba(8, 8, 8, 0.98)) !important;
+}
+
+html body .seasons-pro-weather-row strong {
+  color: var(--lux-gold-soft) !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+html body .seasons-pro-weather-row span {
+  color: rgba(244, 240, 232, 0.78) !important;
+}
+
+html body .festival-calendar-redesign-page {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(209, 164, 94, 0.09), transparent 34rem),
+    linear-gradient(180deg, #050505 0%, #0d0d0c 48%, #050505 100%) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+html body .festival-calendar-redesign-hero {
+  min-height: calc(100vh - 132px) !important;
+  padding: clamp(90px, 12vh, 150px) 0 clamp(70px, 9vh, 110px) !important;
+  border-bottom: 1px solid rgba(209, 164, 94, 0.24) !important;
+  background: #050505 !important;
+}
+
+html body .festival-calendar-redesign-hero-bg {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.62) 42%, rgba(0, 0, 0, 0.32)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2), #050505 100%),
+    url("/Thimphu festival header2.jpg") center / cover no-repeat !important;
+  opacity: 0.82 !important;
+}
+
+html body .festival-calendar-redesign-hero-bg::after {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(209, 164, 94, 0.14), transparent 24rem),
+    linear-gradient(180deg, transparent 0%, rgba(5, 5, 5, 0.92) 100%) !important;
+}
+
+html body .festival-calendar-redesign-hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 470px) !important;
+  gap: clamp(40px, 6vw, 96px) !important;
+  align-items: end !important;
+}
+
+html body .festival-calendar-redesign-hero-content h1,
+html body .festival-calendar-redesign-section-heading h2,
+html body .festival-calendar-redesign-cta-card h2 {
+  color: #f4f0e8 !important;
+  font-family: var(--lux-font-heading) !important;
+  letter-spacing: 0 !important;
+}
+
+html body .festival-calendar-redesign-hero-content h1 {
+  max-width: 820px !important;
+  font-size: clamp(3.6rem, 5vw, 4.8rem) !important;
+  line-height: 0.98 !important;
+}
+
+html body .festival-calendar-redesign-hero-content p,
+html body .festival-calendar-redesign-section-heading p,
+html body .festival-calendar-redesign-cta-card p,
+html body .festival-calendar-redesign-month-card p,
+html body .festival-calendar-redesign-event-copy p,
+html body .festival-event-copy p {
+  color: rgba(244, 240, 232, 0.72) !important;
+}
+
+html body .festival-calendar-redesign-hero-card,
+html body .festival-calendar-redesign-shell,
+html body .festival-calendar-redesign-month-card,
+html body .festival-calendar-redesign-cta-card,
+html body .festival-calendar-redesign-feature-panel,
+html body .festival-calendar-redesign-feature-event,
+html body .festival-event-card {
+  border: 1px solid rgba(209, 164, 94, 0.28) !important;
+  border-radius: 18px !important;
+  background:
+    linear-gradient(145deg, rgba(22, 20, 16, 0.96), rgba(7, 7, 7, 0.96)) !important;
+  color: var(--lux-gold-muted) !important;
+  box-shadow: 0 24px 74px rgba(0, 0, 0, 0.42) !important;
+}
+
+html body .festival-calendar-redesign-stats-section,
+html body .festival-calendar-redesign-section,
+html body .festival-calendar-redesign-all-section,
+html body .festival-calendar-redesign-cta {
+  background: transparent !important;
+}
+
+html body .festival-calendar-redesign-stats-grid div {
+  border: 1px solid rgba(209, 164, 94, 0.22) !important;
+  border-radius: 14px !important;
+  background: rgba(209, 164, 94, 0.08) !important;
+}
+
+html body .festival-calendar-redesign-stats-grid strong,
+html body .festival-calendar-redesign-hero-card strong,
+html body .festival-calendar-redesign-feature-copy h3,
+html body .festival-calendar-redesign-event-copy h4,
+html body .festival-month-card-head h3,
+html body .festival-event-copy h4 {
+  color: #f4f0e8 !important;
+}
+
+html body .festival-calendar-redesign-stats-grid span,
+html body .festival-calendar-redesign-hero-card p,
+html body .festival-calendar-redesign-hero-card-list span,
+html body .festival-month-card-head span,
+html body .festival-event-location span {
+  color: var(--lux-gold-muted) !important;
+}
+
+html body .festival-calendar-redesign-month-tab {
+  border: 1px solid rgba(209, 164, 94, 0.22) !important;
+  border-radius: 999px !important;
+  background: rgba(0, 0, 0, 0.42) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+html body .festival-calendar-redesign-month-tab:hover,
+html body .festival-calendar-redesign-month-tab:focus-visible,
+html body .festival-calendar-redesign-month-tab.is-active {
+  background: linear-gradient(135deg, var(--lux-gold), var(--lux-gold-2)) !important;
+  color: #050505 !important;
+}
+
+html body .festival-calendar-redesign-month-tab:hover *,
+html body .festival-calendar-redesign-month-tab:focus-visible *,
+html body .festival-calendar-redesign-month-tab.is-active * {
+  color: #050505 !important;
+}
+
+html body .festival-calendar-redesign-event-date,
+html body .festival-event-date,
+html body .festival-month-count,
+html body .festival-calendar-redesign-feature-count {
+  background: rgba(209, 164, 94, 0.11) !important;
+  border: 1px solid rgba(209, 164, 94, 0.28) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+html body .festival-calendar-redesign-btn-primary {
+  background: linear-gradient(135deg, var(--lux-gold), var(--lux-gold-2)) !important;
+  color: #050505 !important;
+}
+
+html body .festival-calendar-redesign-btn-primary * {
+  color: #050505 !important;
+}
+
+html body .festival-calendar-redesign-btn-secondary {
+  background: rgba(0, 0, 0, 0.48) !important;
+  border: 1px solid rgba(209, 164, 94, 0.4) !important;
+  color: var(--lux-gold-soft) !important;
+}
+
+@media (max-width: 900px) {
+  html body .container {
+    width: min(100% - 32px, 720px) !important;
+  }
+
+  html body .home-hero-content {
+    width: min(100%, 680px) !important;
+    margin-inline: auto !important;
+    padding-top: 72px !important;
+  }
+
+  html body .festival-calendar-redesign-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  html body .festival-calendar-redesign-hero {
+    min-height: auto !important;
+  }
+
+  html body .festival-calendar-redesign-hero-content h1 {
+    font-size: clamp(3.25rem, 13vw, 4.4rem) !important;
+  }
+}
+
+/* =========================================================
+   Places to Visit and Jarvis polish
+   ========================================================= */
+
+html body .site-header :is(.nav-link, .dropdown-btn) {
+  font-family: var(--lux-font-heading) !important;
+  font-size: clamp(1.05rem, 1vw, 1.22rem) !important;
+  font-weight: 700 !important;
+  color: #f4f0e8 !important;
+  letter-spacing: 0 !important;
+}
+
+html body .home-hero-gnr-link {
+  position: relative !important;
+  display: block !important;
+  width: min(520px, 42vw) !important;
+  aspect-ratio: 16 / 7.2 !important;
+  margin-bottom: clamp(28px, 4vh, 42px) !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(209, 164, 94, 0.72) !important;
+  border-radius: 18px !important;
+  background: #050505 !important;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.58) !important;
+}
+
+html body .home-hero-gnr-link img {
+  object-fit: cover !important;
+  transition: transform 320ms ease !important;
+}
+
+html body .home-hero-gnr-link:hover img,
+html body .home-hero-gnr-link:focus-visible img {
+  transform: scale(1.035) !important;
+}
+
+html body .home-hero-gnr-link:focus-visible {
+  outline: 2px solid var(--lux-gold-soft) !important;
+  outline-offset: 4px !important;
+}
+
+html body .places-page {
+  background:
+    radial-gradient(circle at 14% 8%, rgba(209, 164, 94, 0.12), transparent 34rem),
+    linear-gradient(180deg, #050505 0%, #10100f 48%, #050505 100%) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+html body .places-page :is(.tour-pro-section, .tour-pro-section-white, .tour-pro-section-warm, .places-filter-section, .places-destination-section, .places-cta) {
+  background: transparent !important;
+}
+
+html body .places-hero {
+  min-height: calc(100vh - 132px) !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: clamp(92px, 12vh, 148px) 0 clamp(72px, 9vh, 108px) !important;
+  border-bottom: 1px solid rgba(209, 164, 94, 0.22) !important;
+  background: #050505 !important;
+}
+
+html body .places-hero-bg {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.58) 48%, rgba(0, 0, 0, 0.22)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.04), #050505 100%),
+    url("/Buddha-Dordenma-Statue-by-Alicia-Warner-16.jpg") center / cover no-repeat !important;
+  opacity: 0.76 !important;
+}
+
+html body .places-hero-grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 470px) !important;
+  gap: clamp(44px, 7vw, 112px) !important;
+  align-items: end !important;
+}
+
+html body .places-hero-content {
+  max-width: 830px !important;
+}
+
+html body .places-hero h1 {
+  max-width: 760px !important;
+  color: #f4f0e8 !important;
+  font-family: var(--lux-font-heading) !important;
+  font-size: clamp(4.2rem, 6.6vw, 7.4rem) !important;
+  line-height: 0.9 !important;
+  letter-spacing: 0 !important;
+}
+
+html body .places-hero p {
+  max-width: 720px !important;
+  color: rgba(244, 240, 232, 0.76) !important;
+  font-family: var(--lux-font-body) !important;
+  font-size: clamp(1rem, 1.2vw, 1.14rem) !important;
+  line-height: 1.85 !important;
+}
+
+html body .places-hero-card,
+html body .places-guidance-card,
+html body .places-destination-hero,
+html body .places-at-glance-grid > div,
+html body .places-card,
+html body .places-info-panel,
+html body .places-faq-strip article,
+html body .places-destination-nav a,
+html body .places-page .tour-pro-cta-card {
+  border: 1px solid rgba(209, 164, 94, 0.28) !important;
+  border-radius: 18px !important;
+  background:
+    linear-gradient(145deg, rgba(22, 20, 16, 0.96), rgba(7, 7, 7, 0.97)) !important;
+  color: var(--lux-gold-muted) !important;
+  box-shadow: 0 24px 74px rgba(0, 0, 0, 0.38) !important;
+}
+
+html body .places-hero-card {
+  padding: clamp(28px, 3vw, 42px) !important;
+}
+
+html body .places-hero-card > span,
+html body .places-section-heading > span,
+html body .places-group-heading > span,
+html body .places-destination-copy > span,
+html body .places-info-panel > span,
+html body .places-page .tour-pro-cta-card > div > span {
+  color: var(--lux-gold-soft) !important;
+  font-family: var(--lux-font-body) !important;
+  font-size: 0.74rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+html body .places-section-heading h2,
+html body .places-group-heading h3,
+html body .places-destination-copy h2,
+html body .places-info-panel h2,
+html body .places-faq-strip h3,
+html body .places-card-body h3,
+html body .places-guidance-card h3,
+html body .places-page .tour-pro-cta-card h2,
+html body .places-hero-card strong {
+  color: #f4f0e8 !important;
+  font-family: var(--lux-font-heading) !important;
+  letter-spacing: 0 !important;
+}
+
+html body .places-section-heading {
+  max-width: 920px !important;
+  margin-bottom: clamp(28px, 4vw, 48px) !important;
+}
+
+html body .places-section-heading h2 {
+  font-size: clamp(2.7rem, 4.2vw, 5rem) !important;
+  line-height: 0.98 !important;
+}
+
+html body .places-destination-nav {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+}
+
+html body .places-destination-nav a {
+  min-height: 124px !important;
+  padding: 20px !important;
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease !important;
+}
+
+html body .places-destination-nav a:hover,
+html body .places-destination-nav a:focus-visible {
+  transform: translateY(-4px) !important;
+  border-color: rgba(209, 164, 94, 0.62) !important;
+  background:
+    linear-gradient(145deg, rgba(39, 32, 20, 0.98), rgba(7, 7, 7, 0.98)) !important;
+}
+
+html body .places-destination-nav strong {
+  color: #f4f0e8 !important;
+  font-family: var(--lux-font-heading) !important;
+  font-size: 1.35rem !important;
+}
+
+html body .places-destination-nav span,
+html body .places-hero-card p,
+html body .places-guidance-card p,
+html body .places-destination-copy p,
+html body .places-card-body p,
+html body .places-info-panel p,
+html body .places-check-list span,
+html body .places-event-list small,
+html body .places-faq-strip p,
+html body .places-page .tour-pro-cta-card p {
+  color: rgba(244, 240, 232, 0.72) !important;
+}
+
+html body .places-guidance-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+}
+
+html body .places-guidance-card {
+  padding: 26px !important;
+}
+
+html body .places-destination-section {
+  padding: clamp(76px, 8vw, 124px) 0 !important;
+  border-top: 1px solid rgba(209, 164, 94, 0.16) !important;
+}
+
+html body .places-destination-hero {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1fr) !important;
+  gap: clamp(28px, 4vw, 60px) !important;
+  align-items: stretch !important;
+  padding: clamp(18px, 2vw, 24px) !important;
+  margin-bottom: clamp(22px, 3vw, 34px) !important;
+}
+
+html body .places-destination-copy {
+  padding: clamp(22px, 3vw, 38px) !important;
+  align-self: center !important;
+}
+
+html body .places-destination-copy h2 {
+  font-size: clamp(3rem, 5vw, 5.4rem) !important;
+  line-height: 0.92 !important;
+}
+
+html body .places-destination-kicker {
+  color: var(--lux-gold-soft) !important;
+  font-weight: 700 !important;
+}
+
+html body .places-destination-image {
+  min-height: 390px !important;
+  border: 1px solid rgba(209, 164, 94, 0.28) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+}
+
+html body .places-destination-image img,
+html body .places-card-media img {
+  object-fit: cover !important;
+}
+
+html body .places-at-glance-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  margin-bottom: clamp(34px, 5vw, 64px) !important;
+}
+
+html body .places-at-glance-grid > div {
+  padding: 18px 20px !important;
+}
+
+html body .places-at-glance-grid strong {
+  color: #f4f0e8 !important;
+  font-family: var(--lux-font-heading) !important;
+  font-size: 1.45rem !important;
+}
+
+html body .places-card-grid.uh-hb-package-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+}
+
+html body .places-card {
+  overflow: hidden !important;
+}
+
+html body .places-card-media {
+  height: 260px !important;
+  border-bottom: 1px solid rgba(209, 164, 94, 0.22) !important;
+}
+
+html body .places-card-media > div {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border: 1px solid rgba(209, 164, 94, 0.24) !important;
+  color: #f4f0e8 !important;
+}
+
+html body .places-number-badge {
+  background: linear-gradient(135deg, var(--lux-gold), var(--lux-gold-2)) !important;
+  color: #050505 !important;
+}
+
+html body .places-number-badge * {
+  color: #050505 !important;
+}
+
+html body .places-card-body {
+  padding: 24px !important;
+  background: transparent !important;
+}
+
+html body .places-card-kicker,
+html body .places-card-meta span,
+html body .places-card-details summary,
+html body .places-event-list span,
+html body .places-event-list strong {
+  color: var(--lux-gold-soft) !important;
+}
+
+html body .places-card-meta span,
+html body .places-card-details,
+html body .places-check-list li,
+html body .places-event-list div {
+  border: 1px solid rgba(209, 164, 94, 0.18) !important;
+  border-radius: 12px !important;
+  background: rgba(209, 164, 94, 0.08) !important;
+}
+
+html body .places-destination-bottom {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  margin-top: clamp(36px, 5vw, 64px) !important;
+}
+
+html body .places-info-panel {
+  padding: clamp(26px, 3vw, 36px) !important;
+}
+
+html body .places-faq-strip {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  margin-top: 22px !important;
+}
+
+html body .places-faq-strip article {
+  padding: 24px !important;
+}
+
+html body .places-page .tour-pro-btn-primary,
+html body .places-page .tour-pro-btn-primary * {
+  color: #050505 !important;
+}
+
+html body .places-page .tour-pro-btn-secondary {
+  color: var(--lux-gold-soft) !important;
+  border-color: rgba(209, 164, 94, 0.42) !important;
+  background: rgba(0, 0, 0, 0.42) !important;
+}
+
+html body .ai-chatbot-form {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  gap: 10px !important;
+}
+
+html body .ai-chatbot-form button[type="submit"] {
+  min-width: 108px !important;
+  height: 48px !important;
+  padding: 0 18px !important;
+  border: 1px solid rgba(234, 211, 154, 0.64) !important;
+  border-radius: 999px !important;
+  background: linear-gradient(135deg, var(--lux-gold), var(--lux-gold-2)) !important;
+  color: #050505 !important;
+  font-family: var(--lux-font-body) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.02em !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.38) !important;
+}
+
+html body .ai-chatbot-form button[type="submit"] * {
+  color: #050505 !important;
+}
+
+html body .ai-chatbot-form button[type="submit"]:disabled {
+  cursor: not-allowed !important;
+  border-color: rgba(209, 164, 94, 0.2) !important;
+  background: linear-gradient(135deg, rgba(209, 164, 94, 0.16), rgba(199, 154, 75, 0.1)) !important;
+  color: rgba(234, 211, 154, 0.52) !important;
+  box-shadow: none !important;
+}
+
+html body .ai-chatbot-form button[type="submit"]:disabled * {
+  color: rgba(234, 211, 154, 0.52) !important;
+}
+
+html body .ai-chatbot-form input {
+  min-height: 48px !important;
+  color: #f4f0e8 !important;
+}
+
+@media (max-width: 1180px) {
+  html body .places-destination-nav,
+  html body .places-guidance-grid,
+  html body .places-card-grid.uh-hb-package-grid,
+  html body .places-faq-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  html body .places-hero-grid,
+  html body .places-destination-hero {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 720px) {
+  html body .home-hero-gnr-link {
+    width: 100% !important;
+    max-width: 520px !important;
+  }
+
+  html body .places-hero h1 {
+    font-size: clamp(3.25rem, 16vw, 4.6rem) !important;
+  }
+
+  html body .places-destination-nav,
+  html body .places-guidance-grid,
+  html body .places-card-grid.uh-hb-package-grid,
+  html body .places-at-glance-grid,
+  html body .places-destination-bottom,
+  html body .places-faq-strip {
+    grid-template-columns: 1fr !important;
+  }
+
+  html body .places-destination-image,
+  html body .places-card-media {
+    min-height: 250px !important;
+    height: 250px !important;
+  }
+
+  html body .ai-chatbot-form button[type="submit"] {
+    min-width: 52px !important;
+    width: 52px !important;
+    padding: 0 !important;
+  }
+
+  html body .ai-chatbot-form button[type="submit"] span {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   Final responsive polish and typography normalization
+   ========================================================= */
+
+:root {
+  --lux-font-heading: "Cormorant Garamond", Georgia, serif;
+  --lux-font-body: "Montserrat", "Inter", system-ui, sans-serif;
+  --lux-font-script: "Allura", cursive;
+}
+
+html body,
+html body :is(p, a, button, input, textarea, select, label, small, li, span, strong) {
+  font-family: var(--lux-font-body) !important;
+}
+
+html body :is(h1, h2, h3, h4, h5, h6),
+html body :is(.section-title, .tour-pro-section-title, .journey-section-title, .places-hero h1, .home-hero h1) {
+  font-family: var(--lux-font-heading) !important;
+  letter-spacing: 0 !important;
+}
+
+html body :is(
+  .script-text,
+  .journey-eyebrow,
+  .whyvisit-pro-section-label,
+  .tour-pro-script,
+  .home-hero-script
+) {
+  font-family: var(--lux-font-script) !important;
+}
+
+html body .home-hero {
+  min-height: calc(100svh - 132px) !important;
+  overflow: hidden !important;
+}
+
+html body .home-hero-content {
+  width: min(720px, 50vw) !important;
+  padding-top: clamp(48px, 7vh, 88px) !important;
+}
+
+html body .home-hero-gnr-link {
+  width: min(500px, 38vw) !important;
+  aspect-ratio: 16 / 8.05 !important;
+  border-radius: 14px !important;
+}
+
+html body .home-hero-gnr-link img {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #050505 !important;
+}
+
+html body .uh-hb-package-card,
+html body .uh-package-card,
+html body .journey-package-card {
+  border: 1px solid rgba(209, 164, 94, 0.24) !important;
+  background:
+    linear-gradient(145deg, rgba(20, 18, 14, 0.98), rgba(6, 6, 6, 0.98)) !important;
+  color: var(--lux-gold-muted) !important;
+}
+
+html body :is(.uh-hb-package-body h3, .uh-package-card-content h3, .journey-package-content h3) {
+  color: #f4f0e8 !important;
+}
+
+html body :is(.uh-hb-package-body p, .uh-package-card-content p, .journey-package-content p) {
+  color: rgba(244, 240, 232, 0.72) !important;
+}
+
+html body .uh-hb-package-price,
+html body .uh-package-card-rate,
+html body .tour-pro-image-rate,
+html body .journey-package-price {
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-align: left !important;
+}
+
+html body .uh-hb-package-price span,
+html body .uh-package-card-rate strong,
+html body .tour-pro-image-rate strong,
+html body .journey-package-price span {
+  color: rgba(244, 240, 232, 0.68) !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+html body .uh-hb-package-price strong,
+html body .journey-package-price strong {
+  display: block !important;
+  margin-top: 2px !important;
+  color: var(--lux-gold-soft) !important;
+  font-size: 1.18rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+}
+
+html body .uh-hb-day-badge,
+html body .places-number-badge.uh-hb-day-badge {
+  width: 66px !important;
+  height: 66px !important;
+  border: 1px solid rgba(234, 211, 154, 0.56) !important;
+  border-radius: 50% !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(234, 211, 154, 0.42), transparent 38%),
+    linear-gradient(145deg, #d1a45e, #a77a33) !important;
+  color: #050505 !important;
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.48) !important;
+}
+
+html body .uh-hb-day-badge strong {
+  margin: 0 !important;
+  color: #050505 !important;
+  font-size: 1.35rem !important;
+  font-weight: 900 !important;
+  line-height: 0.95 !important;
+}
+
+html body .uh-hb-day-badge span {
+  margin: 0 !important;
+  color: #050505 !important;
+  font-size: 0.64rem !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.04em !important;
+}
+
+html body a.uh-hb-view-trip-btn,
+html body a.uh-hb-view-trip-btn:visited {
+  min-height: 44px !important;
+  border: 1px solid rgba(209, 164, 94, 0.58) !important;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: var(--lux-gold-soft) !important;
+  font-family: var(--lux-font-body) !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  box-shadow: none !important;
+}
+
+html body a.uh-hb-view-trip-btn:hover,
+html body a.uh-hb-view-trip-btn:focus-visible {
+  border-color: rgba(234, 211, 154, 0.9) !important;
+  background: linear-gradient(135deg, var(--lux-gold), var(--lux-gold-2)) !important;
+  color: #050505 !important;
+  transform: translateY(-1px) !important;
+}
+
+html body a.uh-hb-view-trip-btn:hover *,
+html body a.uh-hb-view-trip-btn:focus-visible * {
+  color: #050505 !important;
+}
+
+html body .uh-hb-package-price-note {
+  border: 1px solid rgba(209, 164, 94, 0.16) !important;
+  background: rgba(209, 164, 94, 0.07) !important;
+  color: rgba(244, 240, 232, 0.66) !important;
+}
+
+html body .uh-hb-package-price-note * {
+  color: rgba(244, 240, 232, 0.7) !important;
+}
+
+html body .places-page .tour-pro-section,
+html body .places-page .uh-package-showcase-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
+@media (max-width: 980px) {
+  html body .home-hero {
+    min-height: auto !important;
+    padding-bottom: 48px !important;
+  }
+
+  html body .home-hero-content {
+    width: min(100% - 32px, 680px) !important;
+    padding-top: 54px !important;
+  }
+
+  html body .home-hero-gnr-link {
+    width: min(100%, 520px) !important;
+    aspect-ratio: 16 / 8.05 !important;
+  }
+
+  html body .uh-hb-package-footer {
+    grid-template-columns: 1fr !important;
+    align-items: stretch !important;
+  }
+
+  html body .uh-hb-view-trip-btn {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  html body {
+    text-rendering: optimizeSpeed;
+  }
+
+  html body .site-header .logo-image,
+  html body .site-header .mobile-logo-image {
+    width: 76px !important;
+    max-height: 64px !important;
+  }
+
+  html body .home-hero-content {
+    padding-top: 38px !important;
+  }
+
+  html body .home-hero h1,
+  html body .places-hero h1 {
+    font-size: clamp(3rem, 14vw, 4.1rem) !important;
+    line-height: 0.96 !important;
+  }
+
+  html body .home-hero p,
+  html body .places-hero p {
+    font-size: 0.98rem !important;
+    line-height: 1.72 !important;
+  }
+
+  html body .home-hero-buttons,
+  html body .places-hero-actions,
+  html body .tour-pro-hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  html body .home-hero-btn-primary,
+  html body .home-hero-btn-secondary,
+  html body .places-page .tour-pro-btn-primary,
+  html body .places-page .tour-pro-btn-secondary {
+    width: 100% !important;
+    min-height: 50px !important;
+    justify-content: center !important;
+  }
+
+  html body .home-hero-trust,
+  html body .places-at-glance-grid,
+  html body .places-guidance-grid,
+  html body .places-destination-bottom,
+  html body .places-faq-strip {
+    gap: 12px !important;
+  }
+
+  html body .places-card-media,
+  html body .uh-hb-package-image .tour-pro-image-frame {
+    height: 220px !important;
+    min-height: 220px !important;
+  }
+
+  html body .uh-hb-day-badge,
+  html body .places-number-badge.uh-hb-day-badge {
+    width: 58px !important;
+    height: 58px !important;
+  }
+
+  html body .uh-hb-day-badge strong {
+    font-size: 1.16rem !important;
+  }
+
+  html body .ai-chatbot-panel {
+    width: min(100vw - 20px, 390px) !important;
+    max-height: min(78svh, 680px) !important;
+    right: 10px !important;
+  }
+
+  html body .ai-chatbot-form {
+    padding: 10px !important;
+  }
+}
+
+/* Final mobile QA fixes: keep pricing, chips, and CTAs readable on narrow screens. */
+html body .uh-package-card .uh-package-card-rate,
+html body .uh-package-card .tour-pro-image-rate,
+html body .tour-pro-card .tour-pro-image-rate,
+html body .journey-package-card .journey-package-price,
+html body .uh-hb-package-card .uh-hb-package-price {
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-width: 0 !important;
+  border-color: transparent !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: var(--lux-gold-muted) !important;
+  text-align: left !important;
+}
+
+html body .uh-package-card .uh-package-card-rate *,
+html body .uh-package-card .tour-pro-image-rate *,
+html body .tour-pro-card .tour-pro-image-rate *,
+html body .journey-package-card .journey-package-price *,
+html body .uh-hb-package-card .uh-hb-package-price * {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .uh-hb-package-card .uh-hb-package-footer {
+  gap: 14px !important;
+}
+
+html body .uh-hb-package-card a.uh-hb-view-trip-btn,
+html body .tour-pro-card a.tour-pro-link,
+html body .journey-package-card a.journey-package-cta {
+  min-height: 46px !important;
+  border: 1px solid rgba(209, 164, 94, 0.58) !important;
+  background: transparent !important;
+  color: var(--lux-gold-soft) !important;
+  text-align: center !important;
+  box-shadow: none !important;
+}
+
+html body .ai-chatbot-panel {
+  color-scheme: dark !important;
+}
+
+html body .ai-chatbot-prompts {
+  flex-wrap: wrap !important;
+  overflow-x: hidden !important;
+  padding-inline: 14px !important;
+}
+
+html body .ai-chatbot-prompts button {
+  flex: 1 1 min(100%, 154px) !important;
+  min-width: 0 !important;
+  white-space: normal !important;
+  text-align: center !important;
+}
+
+html body .ai-chatbot-form input {
+  min-width: 0 !important;
+  color: var(--lux-gold-soft) !important;
+  caret-color: var(--lux-gold-soft) !important;
+}
+
+html body .ai-chatbot-form button[type="submit"]:not(:disabled) {
+  background: linear-gradient(135deg, var(--lux-gold), var(--lux-gold-2)) !important;
+  color: #050505 !important;
+  border-color: rgba(234, 211, 154, 0.72) !important;
+}
+
+html body .ai-chatbot-form button[type="submit"]:not(:disabled) * {
+  color: #050505 !important;
+}
+
+@media (max-width: 640px) {
+  html body .uh-hb-package-card,
+  html body .uh-package-card,
+  html body .tour-pro-card,
+  html body .journey-package-card {
+    width: min(100%, 343px) !important;
+    margin-inline: auto !important;
+  }
+
+  html body .uh-hb-package-card .uh-hb-package-footer {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  html body .uh-hb-package-card a.uh-hb-view-trip-btn,
+  html body .tour-pro-card a.tour-pro-link,
+  html body .journey-package-card a.journey-package-cta {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  html body .ai-chatbot-prompts {
+    gap: 7px !important;
+  }
+
+  html body .ai-chatbot-form input {
+    height: 48px !important;
+    font-size: 12px !important;
   }
 }

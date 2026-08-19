@@ -9,8 +9,8 @@ import {
   Landmark,
   Leaf,
   Mountain,
-  Sparkles,
   Star,
+  UsersRound,
   type LucideIcon,
 } from "lucide-react";
 
@@ -60,7 +60,7 @@ const bottomFeatures: FeatureItem[] = [
     text: "Personalized travel experiences designed for every explorer.",
   },
   {
-    icon: Sparkles,
+    icon: UsersRound,
     title: "Local Experts",
     text: "Friendly Bhutan specialists with authentic knowledge and passion.",
   },

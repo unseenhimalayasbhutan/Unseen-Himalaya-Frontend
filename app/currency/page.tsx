@@ -16,7 +16,6 @@ import {
   Receipt,
   ShieldCheck,
   Smartphone,
-  Sparkles,
   Wallet,
   WalletCards,
   type LucideIcon,
@@ -62,7 +61,7 @@ export default function CurrencyPage() {
             <div className="currency-hero-grid">
               <div className="currency-hero-content">
                 <div className="currency-eyebrow">
-                  <Sparkles aria-hidden />
+                  <Banknote aria-hidden />
                   <span>Bhutan Money Guide</span>
                 </div>
 

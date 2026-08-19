@@ -2,6 +2,7 @@ import { cyclingItineraries } from "../../data/cyclingItineraries";
 import { festivalPackages } from "../../data/festivalPackages";
 import { landEntryItineraries } from "../../data/landEntryItineraries";
 import { photographyTourCodes } from "../../data/photographyTourCodes";
+import { upcomingEvents } from "../../data/upcomingEvents";
 import {
   customizableItems,
   itineraries,
@@ -19,7 +20,7 @@ import {
   splitRouteDestinations,
 } from "./text";
 
-const INDEX_DATE = "2026-07-13";
+const INDEX_DATE = "2026-08-19";
 const hiddenFestivalPackageTitles = new Set([
   "5-Day Chhukha Tshechu Land-Entry Festival Tour",
   "7-Day Chhukha Tshechu Festival Tour",
@@ -172,6 +173,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
           requiresVerification: true,
         } satisfies KnowledgeRecord;
       }),
+    ...upcomingEvents.map(buildUpcomingEventRecord),
   ];
 }
 
@@ -221,6 +223,62 @@ function buildTourRecord(
     lastUpdated: INDEX_DATE,
     requiresVerification: false,
     ...overrides,
+  };
+}
+
+function buildUpcomingEventRecord(event: (typeof upcomingEvents)[number]): KnowledgeRecord {
+  const itineraryText = event.itinerary
+    .map(
+      (day) =>
+        `${cleanText(day.day)}: ${cleanText(day.title)}. ${day.activities
+          .map(cleanText)
+          .join("; ")}.`
+    )
+    .join(" ");
+
+  const packageText = event.packages
+    .map(
+      (pkg) =>
+        `${cleanText(pkg.name)}: ${cleanText(pkg.price)}. ${pkg.features
+          .map(cleanText)
+          .join("; ")}.`
+    )
+    .join(" ");
+
+  const content = [
+    `${cleanText(event.title)}.`,
+    `${cleanText(event.subtitle)}.`,
+    `Date: ${cleanText(event.date)}.`,
+    `Location: ${cleanText(event.location)}.`,
+    `Duration: ${cleanText(event.duration)}.`,
+    `Starting price: ${cleanText(event.price)} ${cleanText(event.priceNote)}.`,
+    `Packages: ${packageText}`,
+    `Package inclusions: ${event.packageSectionInclusions.map(cleanText).join("; ")}.`,
+    `Tour highlights: ${event.highlights.map(cleanText).join("; ")}.`,
+    `Detailed inclusions: ${event.inclusions.map(cleanText).join("; ")}.`,
+    `Exclusions: ${event.exclusions.map(cleanText).join("; ")}.`,
+    `Itinerary: ${itineraryText}`,
+  ].join(" ");
+
+  return {
+    id: `upcoming-event:${event.slug}`,
+    title: cleanText(event.title),
+    content,
+    summary: `${cleanText(event.duration)} concert escape from Bhutan to ${cleanText(
+      event.location
+    )}, starting at ${cleanText(event.price)} ${cleanText(event.priceNote)}.`,
+    sourceUrl: `${siteConfig.url}/upcoming-events`,
+    contentType: "upcoming-event",
+    startingRate: Number(cleanText(event.price).replace(/[^\d]/g, "")) || undefined,
+    tourCategory: "event",
+    durationDays: 5,
+    durationNights: 4,
+    destinations: ["Phuentsholing", "Guwahati", "Thimphu"],
+    entryPoint: "Thimphu",
+    exitPoint: "Thimphu",
+    interests: ["concert", "guns n' roses", "guwahati", "assam", "event", "music"],
+    lastUpdated: INDEX_DATE,
+    requiresVerification: true,
   };
 }
 
