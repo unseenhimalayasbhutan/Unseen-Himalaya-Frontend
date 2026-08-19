@@ -38,7 +38,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
         "Licensed Bhutan-based destination management company offering private tours and custom travel arrangements.",
       content: [
         siteConfig.description,
-        `Company contact: email ${siteConfig.contact.email}, phone and WhatsApp ${siteConfig.contact.phoneDisplay}.`,
+        `Company contact: email ${siteConfig.contact.email}, phone and WhatsApp ${siteConfig.contact.phoneDisplayAll}.`,
         "The team supports private Bhutan tours, cultural journeys, festival tours, hotel reservations, guides, transportation, tailor-made travel experiences, B2B travel-agent inquiries, and custom itineraries.",
       ].join(" "),
     }),
@@ -49,7 +49,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
       contentType: "contact",
       summary: "WhatsApp, email, and phone contact details for travel inquiries.",
       content: [
-        `WhatsApp and phone: ${siteConfig.contact.phoneDisplay}.`,
+        `WhatsApp and phone: ${siteConfig.contact.phoneDisplayAll}.`,
         `Email: ${siteConfig.contact.email}.`,
         "WhatsApp is best for quick travel questions. Email is best for detailed tour inquiries and B2B requests.",
         "Travellers should share travel dates, number of guests, preferred hotel style, interests, and budget range for a customised itinerary or quotation.",

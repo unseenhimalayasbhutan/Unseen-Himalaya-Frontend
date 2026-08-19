@@ -318,10 +318,17 @@ export default function UpcomingEventsPage() {
 
               <div className="upcoming-events-footer-contact">
                 <strong>Contact Us</strong>
-                <a href={siteConfig.contact.phoneHref}>
+                <div className="upcoming-events-footer-phone">
                   <Phone aria-hidden="true" />
-                  {siteConfig.contact.phoneDisplay}
-                </a>
+                  <span>
+                    <a href={siteConfig.contact.phoneHref}>
+                      {siteConfig.contact.phoneDisplay}
+                    </a>
+                    <a href={siteConfig.contact.secondaryPhoneHref}>
+                      {siteConfig.contact.secondaryPhoneDisplay}
+                    </a>
+                  </span>
+                </div>
                 <a href={siteConfig.contact.emailHref}>
                   <Mail aria-hidden="true" />
                   {siteConfig.contact.email}
@@ -395,8 +402,7 @@ function PosterImage({
           src={src}
           alt={alt}
           fill
-          unoptimized
-          {...(priority ? { priority: true } : { loading: "eager" as const })}
+          {...(priority ? { preload: true } : { loading: "lazy" as const })}
           sizes="(max-width: 900px) calc(100vw - 24px), 1100px"
         />
       ) : null}

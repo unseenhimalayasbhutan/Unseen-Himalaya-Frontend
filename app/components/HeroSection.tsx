@@ -29,8 +29,7 @@ export function HeroSection() {
                 src={featuredUpcomingEvent.notificationImage}
                 alt=""
                 fill
-                priority
-                unoptimized
+                preload
                 sizes="(max-width: 760px) calc(100vw - 32px), 760px"
               />
             ) : null}

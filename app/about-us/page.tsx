@@ -444,7 +444,7 @@ const companyInfo: CompanyInfoItem[] = [
   },
   {
     label: "Phone",
-    value: "+975 16168893",
+    value: "+975 16168893 / +975 16192762",
   },
   {
     label: "Email",

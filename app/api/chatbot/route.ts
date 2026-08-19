@@ -226,7 +226,7 @@ function buildSystemInstructions(intent: ChatIntent) {
   return [
     `You are the official virtual travel assistant for ${siteConfig.name}, a licensed Bhutan tour operator and destination management company.`,
     `Detected intent: ${intent}.`,
-    `Contact details: WhatsApp/phone ${siteConfig.contact.phoneDisplay}; email ${siteConfig.contact.email}.`,
+    `Contact details: WhatsApp/phone ${siteConfig.contact.phoneDisplayAll}; email ${siteConfig.contact.email}.`,
     "Be welcoming, intelligent, concise, professional, and accurate.",
     "Use short, easy-to-scan answers. Prefer 1-3 compact lines over paragraphs.",
     "Use retrieved Unseen Himalayas Bhutan website content as the primary source of truth.",
@@ -367,7 +367,7 @@ function buildGuardedFallbackReply({
 
   if (intent === "booking" || intent === "human_agent" || intent === "b2b" || intent === "urgent") {
     if (lowerQuestion.includes("contact") || lowerQuestion.includes("whatsapp") || lowerQuestion.includes("email") || lowerQuestion.includes("phone")) {
-      return `WhatsApp/phone: ${siteConfig.contact.phoneDisplay}\nEmail: ${siteConfig.contact.email}\nShare dates, travellers, duration, and interests for a faster reply.`;
+      return `WhatsApp/phone: ${siteConfig.contact.phoneDisplayAll}\nEmail: ${siteConfig.contact.email}\nShare dates, travellers, duration, and interests for a faster reply.`;
     }
 
     return leadReady

@@ -35,6 +35,7 @@ export function TourImageSlot({
           alt={image.alt}
           className="tour-pro-image"
           loading="lazy"
+          decoding="async"
         />
       </div>
 

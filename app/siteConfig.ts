@@ -17,9 +17,13 @@ export const siteConfig = {
     email: "unseenhimalayasbhutan@gmail.com",
     emailHref: "mailto:unseenhimalayasbhutan@gmail.com",
     phoneDisplay: "+975 16168893",
+    phoneDisplayAll: "+975 16168893 / +975 16192762",
     phoneHref: "tel:+97516168893",
+    secondaryPhoneDisplay: "+975 16192762",
+    secondaryPhoneHref: "tel:+97516192762",
     whatsappNumber: "97516168893",
     whatsappHref: "https://wa.me/97516168893",
+    secondaryWhatsappHref: "https://wa.me/97516192762",
   },
   social: {
     facebook: "https://www.facebook.com/profile.php?id=61591321688105",

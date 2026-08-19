@@ -69,7 +69,7 @@ export default function RootLayout({
     url: siteConfig.url,
     logo: new URL("/logo.png", siteConfig.url).toString(),
     description: siteConfig.description,
-    telephone: siteConfig.contact.phoneDisplay,
+    telephone: siteConfig.contact.phoneDisplayAll,
     email: siteConfig.contact.email,
     address: {
       "@type": "PostalAddress",

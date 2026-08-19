@@ -126,6 +126,20 @@ export function ItineraryPackageShowcase({
                   >
                     View This Trip
                   </Link>
+
+                  {showPrices && pkg.pricing ? (
+                    <p className="uh-hb-package-price-note">
+                      <strong>Pricing note</strong>
+                      <span>{INTERNATIONAL_TRAVELER_PRICE_NOTE}</span>
+                      <a
+                        href={siteConfig.contact.secondaryWhatsappHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Regional rates: WhatsApp {siteConfig.contact.secondaryPhoneDisplay}
+                      </a>
+                    </p>
+                  ) : null}
                 </div>
               </div>
             </article>

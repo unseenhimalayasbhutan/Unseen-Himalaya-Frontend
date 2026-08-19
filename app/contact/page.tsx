@@ -268,6 +268,7 @@ const contactLinks = {
   email: siteConfig.contact.emailHref,
   phone: siteConfig.contact.phoneHref,
   whatsapp: siteConfig.contact.whatsappHref,
+  secondaryWhatsapp: siteConfig.contact.secondaryWhatsappHref,
 };
 
 const heroTrust = [
@@ -280,9 +281,9 @@ const contactCards: ContactCard[] = [
   {
     icon: FaWhatsapp as unknown as LucideIcon,
     label: "WhatsApp",
-    title: siteConfig.contact.phoneDisplay,
-    description: "Best for quick questions and trip planning.",
-    href: contactLinks.whatsapp,
+    title: siteConfig.contact.phoneDisplayAll,
+    description: "Best for quick questions, trip planning, and regional rates.",
+    href: contactLinks.secondaryWhatsapp,
   },
   {
     icon: Mail,
@@ -294,7 +295,7 @@ const contactCards: ContactCard[] = [
   {
     icon: Phone,
     label: "Call",
-    title: siteConfig.contact.phoneDisplay,
+    title: siteConfig.contact.phoneDisplayAll,
     description: "Call us during business hours in Bhutan.",
     href: contactLinks.phone,
   },

@@ -34135,6 +34135,67 @@ body {
   outline: none;
 }
 
+.uh-hb-package-price-note {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(196, 155, 82, 0.18);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 250, 242, 0.88), rgba(248, 239, 224, 0.58));
+  color: var(--muted, #786f63);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.uh-hb-package-price-note strong {
+  color: #8a6730;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.uh-hb-package-price-note a {
+  width: fit-content;
+  color: #a97931;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.uh-hb-package-price-note a:hover,
+.uh-hb-package-price-note a:focus-visible {
+  color: var(--dark, #1f1a14);
+  text-decoration: underline;
+  outline: none;
+}
+
+.site-footer-contact-stack {
+  display: grid;
+  gap: 2px;
+}
+
+.upcoming-events-footer-phone {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 9px;
+  align-items: start;
+}
+
+.upcoming-events-footer-phone span {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2px;
+}
+
+.upcoming-events-footer-phone a {
+  display: block;
+  grid-template-columns: none;
+  width: fit-content;
+}
+
 .uh-hb-detail-shell {
   margin-top: 52px;
   scroll-margin-top: 130px;

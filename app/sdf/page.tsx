@@ -37,7 +37,7 @@ export default function SdfPage() {
 
               <h1>SDF - Sustainable Development Fee</h1>
               <p>
-                Bhutan asks every visitor to help protect the kingdom's culture,
+                Bhutan asks every visitor to help protect the kingdom&apos;s culture,
                 environment, public services, infrastructure, and future
                 opportunities. The SDF is part of that national commitment.
               </p>
@@ -69,7 +69,7 @@ export default function SdfPage() {
           <div className="container">
             <div className="places-section-heading">
               <span>What it means</span>
-              <h2>The SDF is a contribution to Bhutan's long-term wellbeing.</h2>
+              <h2>The SDF is a contribution to Bhutan&apos;s long-term wellbeing.</h2>
               <p>
                 Since Bhutan reopened to international visitors on 23 September
                 2022, the country has asked travelers to participate
@@ -115,7 +115,7 @@ export default function SdfPage() {
           <div className="container">
             <div className="places-section-heading">
               <span>Development themes</span>
-              <h2>Major areas supported through Bhutan's planning approach</h2>
+              <h2>Major areas supported through Bhutan&apos;s planning approach</h2>
             </div>
 
             <div className="places-guidance-grid">

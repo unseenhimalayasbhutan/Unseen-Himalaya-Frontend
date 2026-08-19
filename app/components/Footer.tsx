@@ -137,9 +137,14 @@ export function Footer() {
                 </li>
                 <li>
                   <Phone aria-hidden />
-                  <a href={siteConfig.contact.phoneHref}>
-                    {siteConfig.contact.phoneDisplay}
-                  </a>
+                  <span className="site-footer-contact-stack">
+                    <a href={siteConfig.contact.phoneHref}>
+                      {siteConfig.contact.phoneDisplay}
+                    </a>
+                    <a href={siteConfig.contact.secondaryPhoneHref}>
+                      {siteConfig.contact.secondaryPhoneDisplay}
+                    </a>
+                  </span>
                 </li>
                 <li>
                   <Mail aria-hidden />
