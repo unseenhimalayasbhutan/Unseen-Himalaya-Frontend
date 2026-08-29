@@ -112,6 +112,7 @@ const getImageSrc = (src: string): string => {
 export function JourneysSection() {
   const [activeDestination, setActiveDestination] = useState(0);
   const [activePackage, setActivePackage] = useState(0);
+  const selectedDestination = destinations[activeDestination];
 
   return (
     <section className="journey-section uh-journeys-section">
@@ -120,14 +121,14 @@ export function JourneysSection() {
 
       <div className="journey-container uh-journeys-container">
         <div className="uh-journeys-heading">
-          <div className="uh-journeys-kicker">
+          <div className="uh-journeys-kicker section-eyebrow">
             <Compass aria-hidden="true" />
             <span>Destinations & Journeys</span>
           </div>
 
-          <h2>Journeys Designed Around You</h2>
+          <h2 className="section-title">Journeys Designed Around You</h2>
 
-          <p>
+          <p className="section-description">
             Discover handcrafted Bhutan travel experiences through Thimphu,
             Paro, Haa, Punakha, Gangtey, and other beautiful Himalayan
             destinations.
@@ -143,52 +144,54 @@ export function JourneysSection() {
               type="radio"
               name="uh-destination"
               checked={activeDestination === index}
+              aria-hidden="true"
+              tabIndex={-1}
               readOnly
             />
           ))}
 
           <div className="uh-destination-layout">
             <div className="uh-destination-preview-panels">
-              {destinations.map((destination, index) => (
-                <article
-                  key={destination.title}
-                  className={`uh-destination-preview uh-destination-preview-${
-                    index + 1
-                  }`}
-                >
-                  <div className="uh-destination-preview-media">
-                    <Image
-                      src={getImageSrc(destination.image)}
-                      alt={`${destination.title} Bhutan`}
-                      fill
-                      sizes="(max-width: 960px) 100vw, 58vw"
-                      className="uh-journey-image"
-                    />
+              <article
+                key={selectedDestination.title}
+                id="uh-destination-preview"
+                className={`uh-destination-preview uh-destination-preview-${
+                  activeDestination + 1
+                } is-active`}
+                aria-live="polite"
+              >
+                <div className="uh-destination-preview-media">
+                  <Image
+                    src={getImageSrc(selectedDestination.image)}
+                    alt={`${selectedDestination.title} Bhutan`}
+                    fill
+                    sizes="(max-width: 960px) 100vw, 58vw"
+                    className="uh-journey-image"
+                  />
+                </div>
+
+                <div className="uh-destination-preview-badge">
+                  Featured Destination
+                </div>
+
+                <div className="uh-destination-preview-content">
+                  <span>Explore Bhutan</span>
+
+                  <h3>{selectedDestination.title}</h3>
+
+                  <p>{selectedDestination.text}</p>
+
+                  <div className="uh-destination-preview-meta">
+                    <MapPin aria-hidden="true" />
+                    <strong>{selectedDestination.highlight}</strong>
                   </div>
 
-                  <div className="uh-destination-preview-badge">
-                    Featured Destination
-                  </div>
-
-                  <div className="uh-destination-preview-content">
-                    <span>Explore Bhutan</span>
-
-                    <h3>{destination.title}</h3>
-
-                    <p>{destination.text}</p>
-
-                    <div className="uh-destination-preview-meta">
-                      <MapPin aria-hidden="true" />
-                      <strong>{destination.highlight}</strong>
-                    </div>
-
-                    <Link href="/cultural-tours" className="uh-journeys-link-btn">
-                      Explore Destination
-                      <ArrowRight aria-hidden="true" />
-                    </Link>
-                  </div>
-                </article>
-              ))}
+                  <Link href="/cultural-tours" className="uh-journeys-link-btn">
+                    Explore Destination
+                    <ArrowRight aria-hidden="true" />
+                  </Link>
+                </div>
+              </article>
             </div>
 
             <div
@@ -201,14 +204,15 @@ export function JourneysSection() {
                   key={destination.title}
                   className={`uh-destination-option uh-destination-option-${
                     index + 1
-                  }`}
+                  }${activeDestination === index ? " is-active" : ""}`}
                   onClick={() => setActiveDestination(index)}
                   aria-pressed={activeDestination === index}
+                  aria-controls="uh-destination-preview"
                 >
                   <div className="uh-destination-option-thumb">
                     <Image
                       src={getImageSrc(destination.image)}
-                      alt={`${destination.title} Bhutan`}
+                      alt=""
                       fill
                       sizes="112px"
                       className="uh-journey-image"
@@ -218,7 +222,6 @@ export function JourneysSection() {
                   <div className="uh-destination-option-content">
                     <span>{String(index + 1).padStart(2, "0")}</span>
                     <h3>{destination.title}</h3>
-                    <p>{destination.text}</p>
                   </div>
                 </button>
               ))}
@@ -238,14 +241,16 @@ export function JourneysSection() {
         </div>
 
         <div className="uh-packages-heading">
-          <div className="uh-journeys-kicker">
+          <div className="uh-journeys-kicker section-eyebrow">
             <CheckCircle aria-hidden="true" />
             <span>Itinerary Library</span>
           </div>
 
-          <h2>Ready Bhutan itineraries from short escapes to deeper journeys</h2>
+          <h2 className="section-title">
+            Ready Bhutan itineraries from short escapes to deeper journeys
+          </h2>
 
-          <p>
+          <p className="section-description">
             Selected routes from the itinerary library, designed for guests who
             want clear duration, route, and travel-style options before enquiring.
           </p>
@@ -329,28 +334,40 @@ export function JourneysSection() {
 
             <div className="uh-package-preview-panels">
               <article className="uh-package-preview is-active">
-                <div className="uh-package-preview-text">
-                  <span>Selected itinerary</span>
-                  <h3>{packages[activePackage].title}</h3>
-                  <p>{packages[activePackage].text}</p>
+                <div className="uh-package-preview-media">
+                  <Image
+                    src={getImageSrc(packages[activePackage].image)}
+                    alt={packages[activePackage].title}
+                    fill
+                    sizes="(max-width: 720px) calc(100vw - 44px), (max-width: 1060px) 40vw, 42vw"
+                    className="uh-journey-image"
+                  />
                 </div>
 
-                <div className="uh-package-preview-meta">
-                  <div>
-                    <small>Duration</small>
-                    <strong>{packages[activePackage].duration}</strong>
+                <div className="uh-package-preview-body">
+                  <div className="uh-package-preview-text">
+                    <span>Selected itinerary</span>
+                    <h3>{packages[activePackage].title}</h3>
+                    <p>{packages[activePackage].text}</p>
                   </div>
-                  <div>
-                    <small>Route</small>
-                    <strong>{packages[activePackage].route}</strong>
+
+                  <div className="uh-package-preview-meta">
+                    <div>
+                      <small>Duration</small>
+                      <strong>{packages[activePackage].duration}</strong>
+                    </div>
+                    <div>
+                      <small>Route</small>
+                      <strong>{packages[activePackage].route}</strong>
+                    </div>
+                    <Link
+                      href={`/cultural-tours#itinerary-${packages[activePackage].slug}`}
+                      className="uh-package-preview-btn"
+                    >
+                      Enquire
+                      <ArrowRight aria-hidden="true" />
+                    </Link>
                   </div>
-                  <Link
-                    href={`/cultural-tours#itinerary-${packages[activePackage].slug}`}
-                    className="uh-package-preview-btn"
-                  >
-                    Enquire
-                    <ArrowRight aria-hidden="true" />
-                  </Link>
                 </div>
               </article>
             </div>

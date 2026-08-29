@@ -48,6 +48,7 @@ const steps: TravelStep[] = [
 
 export function TravelInfo() {
   const [activeStep, setActiveStep] = useState(0);
+  const selectedStep = steps[activeStep];
 
   return (
     <section className="travel-info-section uh-travel-section">
@@ -56,14 +57,14 @@ export function TravelInfo() {
 
       <div className="container uh-travel-container">
         <div className="uh-travel-heading">
-          <div className="uh-travel-kicker">
+          <div className="uh-travel-kicker section-eyebrow">
             <CheckCircle aria-hidden="true" />
             <span>How It Works</span>
           </div>
 
-          <h2>Traveling to Bhutan, Made Simple</h2>
+          <h2 className="section-title">Traveling to Bhutan, Made Simple</h2>
 
-          <p>
+          <p className="section-description">
             From your first inquiry to your final mountain view, we make every
             step clear, personal, and effortless.
           </p>
@@ -78,22 +79,28 @@ export function TravelInfo() {
               type="radio"
               name="uh-travel-step"
               checked={activeStep === index}
+              aria-hidden="true"
+              tabIndex={-1}
               readOnly
             />
           ))}
 
           <div className="uh-travel-layout">
             <div className="uh-travel-panel-wrap">
-              {steps.map((step, index) => {
-                const Icon = step.icon;
+              {(() => {
+                const Icon = selectedStep.icon;
                 const progressValue = Math.round(
-                  ((index + 1) / steps.length) * 100
+                  ((activeStep + 1) / steps.length) * 100
                 );
 
                 return (
                   <article
-                    key={step.title}
-                    className={`uh-travel-panel uh-travel-panel-${index + 1}`}
+                    key={selectedStep.title}
+                    id="uh-travel-panel"
+                    className={`uh-travel-panel uh-travel-panel-${
+                      activeStep + 1
+                    } is-active`}
+                    aria-live="polite"
                   >
                     <div className="uh-travel-panel-top">
                       <div className="uh-travel-panel-icon">
@@ -101,18 +108,18 @@ export function TravelInfo() {
                       </div>
 
                       <span className="uh-travel-panel-label">
-                        Step {step.number} of {steps.length}
+                        Step {selectedStep.number} of {steps.length}
                       </span>
                     </div>
 
-                    <h3>{step.title}</h3>
+                    <h3>{selectedStep.title}</h3>
 
-                    <p>{step.text}</p>
+                    <p>{selectedStep.text}</p>
 
                     <div
                       className="uh-travel-progress"
                       role="progressbar"
-                      aria-label={`Progress for step ${step.number}`}
+                      aria-label={`Progress for step ${selectedStep.number}`}
                       aria-valuenow={progressValue}
                       aria-valuemin={0}
                       aria-valuemax={100}
@@ -129,7 +136,7 @@ export function TravelInfo() {
                     </div>
                   </article>
                 );
-              })}
+              })()}
             </div>
 
             <div
@@ -148,6 +155,7 @@ export function TravelInfo() {
                     }`}
                     onClick={() => setActiveStep(index)}
                     aria-pressed={activeStep === index}
+                    aria-controls="uh-travel-panel"
                   >
                     <div className="uh-travel-step-icon">
                       <Icon aria-hidden="true" />
@@ -156,7 +164,6 @@ export function TravelInfo() {
 
                     <div className="uh-travel-step-content">
                       <h3>{step.title}</h3>
-                      <p>{step.text}</p>
                     </div>
                   </button>
                 );

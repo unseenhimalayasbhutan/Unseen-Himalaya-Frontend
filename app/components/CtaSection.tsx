@@ -1,4 +1,5 @@
 import { Mail, MessageCircle, ArrowRight } from "lucide-react";
+import { ButtonLink } from "./DesignSystem";
 import { siteConfig } from "../siteConfig";
 
 export function CtaSection() {
@@ -16,14 +17,16 @@ export function CtaSection() {
       <div className="container">
         <div className="cta-contact-card">
           <div className="cta-contact-content">
-            <span className="cta-contact-label">Plan Your Bhutan Journey</span>
+            <span className="cta-contact-label section-eyebrow">
+              Plan Your Bhutan Journey
+            </span>
 
-            <h2>Connect with us</h2>
+            <h2 className="section-title">Connect with us</h2>
 
           
 
             <div className="cta-contact-buttons">
-              <a
+              <ButtonLink
                 href={`${siteConfig.contact.whatsappHref}?text=${encodeURIComponent(
                   whatsappMessage
                 )}`}
@@ -34,18 +37,19 @@ export function CtaSection() {
                 <MessageCircle size={20} />
                 Chat on WhatsApp
                 <ArrowRight size={18} />
-              </a>
+              </ButtonLink>
 
-              <a
+              <ButtonLink
                 href={`${siteConfig.contact.emailHref}?subject=${encodeURIComponent(
                   emailSubject
                 )}&body=${encodeURIComponent(emailBody)}`}
+                variant="secondary"
                 className="cta-btn cta-btn-email"
               >
                 <Mail size={20} />
                 Send Email
                 <ArrowRight size={18} />
-              </a>
+              </ButtonLink>
             </div>
           </div>
 

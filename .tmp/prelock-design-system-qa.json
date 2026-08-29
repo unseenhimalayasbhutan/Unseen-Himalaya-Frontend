@@ -1,0 +1,1437 @@
+{
+  "failures": [],
+  "observations": [
+    {
+      "width": 1920,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 1920,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 1920,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 1920,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 1440,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 1440,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 1440,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 1280,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 1280,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 1280,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 1024,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 1024,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 1024,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 768,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 768,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 768,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    },
+    {
+      "width": 430,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 430,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 430,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 430,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 390,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 390,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 390,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    },
+    {
+      "width": 360,
+      "route": "/",
+      "page": "Homepage",
+      "notes": [
+        {
+          "route": "Homepage",
+          "selector": ".home-hero-gnr-link",
+          "label": "homepage GNR feature card",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-destination-option",
+          "label": "homepage Destinations selector",
+          "count": 5
+        },
+        {
+          "route": "Homepage",
+          "selector": ".uh-package-preview-media",
+          "label": "homepage Selected itinerary image",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".why-section",
+          "label": "lower homepage",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Homepage",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "route": "/about-bhutan",
+      "page": "About Bhutan",
+      "notes": [
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-overview-card",
+          "label": "About Bhutan information cards",
+          "count": 4
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".about-bhutan-detail-card",
+          "label": "About Bhutan detail cards",
+          "count": 6
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "About Bhutan",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "route": "/facts",
+      "page": "Bhutan Facts",
+      "notes": [
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-story-card",
+          "label": "facts-style cards",
+          "count": 8
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".facts-redesign-philosophy-tab",
+          "label": "facts tabs",
+          "count": 12
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Bhutan Facts",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "route": "/cultural-tours",
+      "page": "Cultural Tours",
+      "notes": [
+        {
+          "route": "Cultural Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .cultural-value-card-clean",
+          "label": "Cultural Tours cards",
+          "count": 16
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Cultural Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "route": "/festival-tours",
+      "page": "Festival Tours",
+      "notes": [
+        {
+          "route": "Festival Tours",
+          "selector": ".tour-pro-card, .uh-hb-package-card, .uh-festival-anchor-card",
+          "label": "Festival Tours cards",
+          "count": 14
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-footer",
+          "label": "footer",
+          "count": 1
+        },
+        {
+          "route": "Festival Tours",
+          "selector": ".site-header",
+          "label": "header",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "route": "/bhutan-tours",
+      "page": "Photography Tours",
+      "notes": []
+    },
+    {
+      "width": 360,
+      "route": "/faq",
+      "page": "FAQ",
+      "notes": []
+    },
+    {
+      "width": 360,
+      "route": "/contact",
+      "page": "Contact",
+      "notes": []
+    },
+    {
+      "width": 360,
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "page": "Tour Detail",
+      "notes": []
+    }
+  ]
+}

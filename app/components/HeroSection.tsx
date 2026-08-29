@@ -19,9 +19,10 @@ export function HeroSection() {
           <Image
             src="/cover/GnR.png"
             alt="Guns N' Roses Live in Guwahati concert trip"
-            fill
+            width={1448}
+            height={1086}
             priority
-            sizes="(max-width: 760px) calc(100vw - 32px), 520px"
+            sizes="(max-width: 720px) min(100vw - 36px, 440px), (max-width: 1180px) min(36vw, 420px), 500px"
           />
         </Link>
 

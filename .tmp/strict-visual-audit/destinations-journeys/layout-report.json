@@ -1,0 +1,1246 @@
+{
+  "reportPath": ".tmp\\strict-visual-audit\\destinations-journeys\\layout-report.json",
+  "failures": [],
+  "results": [
+    {
+      "width": 1440,
+      "height": 980,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "vars": {
+          "textPrimary": "#f3f0e8",
+          "textSecondary": "#b9b4ad",
+          "accent": "#c99a4a",
+          "bgCard": "#151515",
+          "border": "#c99a4a33",
+          "borderStrong": "#c99a4a61"
+        },
+        "layout": {
+          "top": 171.671875,
+          "right": 1320,
+          "bottom": 807.671875,
+          "left": 120,
+          "width": 1200,
+          "height": 636
+        },
+        "preview": {
+          "heading": "rgb(243, 240, 232)",
+          "body": "rgb(185, 180, 173)",
+          "metaBg": "rgb(21, 21, 21)",
+          "metaColor": "rgb(185, 180, 173)",
+          "buttonBg": "rgb(201, 154, 74)",
+          "buttonRadius": "6px"
+        },
+        "options": [
+          {
+            "index": 0,
+            "label": "Thimphu",
+            "expected": "Thimphu",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.38)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 168.671875,
+              "right": 1319.984375,
+              "bottom": 284.671875,
+              "left": 820.734375,
+              "width": 499.25,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 183.671875,
+              "bottom": 269.671875,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 203.828125,
+              "bottom": 222.515625,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 229.515625,
+              "bottom": 249.515625,
+              "height": 20
+            },
+            "pressed": "true"
+          },
+          {
+            "index": 1,
+            "label": "Paro",
+            "expected": "Paro",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 301.671875,
+              "right": 1319.984375,
+              "bottom": 417.671875,
+              "left": 820.734375,
+              "width": 499.25,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 316.671875,
+              "bottom": 402.671875,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 336.828125,
+              "bottom": 355.515625,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 362.515625,
+              "bottom": 382.515625,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 2,
+            "label": "Haa",
+            "expected": "Haa",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 431.671875,
+              "right": 1319.984375,
+              "bottom": 547.671875,
+              "left": 820.734375,
+              "width": 499.25,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 446.671875,
+              "bottom": 532.671875,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 466.828125,
+              "bottom": 485.515625,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 492.515625,
+              "bottom": 512.515625,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 3,
+            "label": "Punakha",
+            "expected": "Punakha",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 561.671875,
+              "right": 1319.984375,
+              "bottom": 677.671875,
+              "left": 820.734375,
+              "width": 499.25,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 576.671875,
+              "bottom": 662.671875,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 596.828125,
+              "bottom": 615.515625,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 622.515625,
+              "bottom": 642.515625,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 4,
+            "label": "Gangtey",
+            "expected": "Gangtey",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 691.671875,
+              "right": 1319.984375,
+              "bottom": 807.671875,
+              "left": 820.734375,
+              "width": 499.25,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 706.671875,
+              "bottom": 792.671875,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 726.828125,
+              "bottom": 745.515625,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 752.515625,
+              "bottom": 772.515625,
+              "height": 20
+            },
+            "pressed": "false"
+          }
+        ]
+      },
+      "clickedPreviews": [
+        "Thimphu",
+        "Paro",
+        "Haa",
+        "Punakha",
+        "Gangtey"
+      ],
+      "hover": {
+        "borderColor": "rgba(201, 154, 74, 0.37)",
+        "background": "rgb(19, 19, 19)",
+        "titleColor": "rgb(243, 240, 232)"
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\destinations-journeys\\homepage-1440.png"
+    },
+    {
+      "width": 1024,
+      "height": 980,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "vars": {
+          "textPrimary": "#f3f0e8",
+          "textSecondary": "#b9b4ad",
+          "accent": "#c99a4a",
+          "bgCard": "#151515",
+          "border": "#c99a4a33",
+          "borderStrong": "#c99a4a61"
+        },
+        "layout": {
+          "top": -18.359375,
+          "right": 964,
+          "bottom": 998.59375,
+          "left": 60,
+          "width": 904,
+          "height": 1016.953125
+        },
+        "preview": {
+          "heading": "rgb(243, 240, 232)",
+          "body": "rgb(185, 180, 173)",
+          "metaBg": "rgb(21, 21, 21)",
+          "metaColor": "rgb(185, 180, 173)",
+          "buttonBg": "rgb(201, 154, 74)",
+          "buttonRadius": "6px"
+        },
+        "options": [
+          {
+            "index": 0,
+            "label": "Thimphu",
+            "expected": "Thimphu",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.38)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 619.59375,
+              "right": 505,
+              "bottom": 735.59375,
+              "left": 60,
+              "width": 445,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 634.59375,
+              "bottom": 720.59375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 654.75,
+              "bottom": 673.4375,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 680.4375,
+              "bottom": 700.4375,
+              "height": 20
+            },
+            "pressed": "true"
+          },
+          {
+            "index": 1,
+            "label": "Paro",
+            "expected": "Paro",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 622.59375,
+              "right": 964,
+              "bottom": 738.59375,
+              "left": 519,
+              "width": 445,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 637.59375,
+              "bottom": 723.59375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 657.75,
+              "bottom": 676.4375,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 683.4375,
+              "bottom": 703.4375,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 2,
+            "label": "Haa",
+            "expected": "Haa",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 752.59375,
+              "right": 505,
+              "bottom": 868.59375,
+              "left": 60,
+              "width": 445,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 767.59375,
+              "bottom": 853.59375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 787.75,
+              "bottom": 806.4375,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 813.4375,
+              "bottom": 833.4375,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 3,
+            "label": "Punakha",
+            "expected": "Punakha",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 752.59375,
+              "right": 964,
+              "bottom": 868.59375,
+              "left": 519,
+              "width": 445,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 767.59375,
+              "bottom": 853.59375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 787.75,
+              "bottom": 806.4375,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 813.4375,
+              "bottom": 833.4375,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 4,
+            "label": "Gangtey",
+            "expected": "Gangtey",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 882.59375,
+              "right": 505,
+              "bottom": 998.59375,
+              "left": 60,
+              "width": 445,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 897.59375,
+              "bottom": 983.59375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 917.75,
+              "bottom": 936.4375,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 943.4375,
+              "bottom": 963.4375,
+              "height": 20
+            },
+            "pressed": "false"
+          }
+        ]
+      },
+      "clickedPreviews": [
+        "Thimphu",
+        "Paro",
+        "Haa",
+        "Punakha",
+        "Gangtey"
+      ],
+      "hover": {
+        "borderColor": "rgba(201, 154, 74, 0.35)",
+        "background": "rgb(19, 19, 19)",
+        "titleColor": "rgb(243, 240, 232)"
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\destinations-journeys\\homepage-1024.png"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "vars": {
+          "textPrimary": "#f3f0e8",
+          "textSecondary": "#b9b4ad",
+          "accent": "#c99a4a",
+          "bgCard": "#151515",
+          "border": "#c99a4a33",
+          "borderStrong": "#c99a4a61"
+        },
+        "layout": {
+          "top": 8.890625,
+          "right": 708,
+          "bottom": 1015.609375,
+          "left": 60,
+          "width": 648,
+          "height": 1006.71875
+        },
+        "preview": {
+          "heading": "rgb(243, 240, 232)",
+          "body": "rgb(185, 180, 173)",
+          "metaBg": "rgb(21, 21, 21)",
+          "metaColor": "rgb(185, 180, 173)",
+          "buttonBg": "rgb(201, 154, 74)",
+          "buttonRadius": "6px"
+        },
+        "options": [
+          {
+            "index": 0,
+            "label": "Thimphu",
+            "expected": "Thimphu",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.38)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 636.609375,
+              "right": 377,
+              "bottom": 752.609375,
+              "left": 60,
+              "width": 317,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 651.609375,
+              "bottom": 737.609375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 671.765625,
+              "bottom": 690.453125,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 697.453125,
+              "bottom": 717.453125,
+              "height": 20
+            },
+            "pressed": "true"
+          },
+          {
+            "index": 1,
+            "label": "Paro",
+            "expected": "Paro",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 639.609375,
+              "right": 708,
+              "bottom": 755.609375,
+              "left": 391,
+              "width": 317,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 654.609375,
+              "bottom": 740.609375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 674.765625,
+              "bottom": 693.453125,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 700.453125,
+              "bottom": 720.453125,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 2,
+            "label": "Haa",
+            "expected": "Haa",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 769.609375,
+              "right": 377,
+              "bottom": 885.609375,
+              "left": 60,
+              "width": 317,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 784.609375,
+              "bottom": 870.609375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 804.765625,
+              "bottom": 823.453125,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 830.453125,
+              "bottom": 850.453125,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 3,
+            "label": "Punakha",
+            "expected": "Punakha",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 769.609375,
+              "right": 708,
+              "bottom": 885.609375,
+              "left": 391,
+              "width": 317,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 784.609375,
+              "bottom": 870.609375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 804.765625,
+              "bottom": 823.453125,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 830.453125,
+              "bottom": 850.453125,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 4,
+            "label": "Gangtey",
+            "expected": "Gangtey",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 899.609375,
+              "right": 377,
+              "bottom": 1015.609375,
+              "left": 60,
+              "width": 317,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 914.609375,
+              "bottom": 1000.609375,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 934.765625,
+              "bottom": 953.453125,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 960.453125,
+              "bottom": 980.453125,
+              "height": 20
+            },
+            "pressed": "false"
+          }
+        ]
+      },
+      "clickedPreviews": [
+        "Thimphu",
+        "Paro",
+        "Haa",
+        "Punakha",
+        "Gangtey"
+      ],
+      "hover": {
+        "borderColor": "rgba(201, 154, 74, 0.36)",
+        "background": "rgb(19, 19, 19)",
+        "titleColor": "rgb(243, 240, 232)"
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\destinations-journeys\\homepage-768.png"
+    },
+    {
+      "width": 430,
+      "height": 844,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 430,
+        "innerWidth": 430,
+        "vars": {
+          "textPrimary": "#f3f0e8",
+          "textSecondary": "#b9b4ad",
+          "accent": "#c99a4a",
+          "bgCard": "#151515",
+          "border": "#c99a4a33",
+          "borderStrong": "#c99a4a61"
+        },
+        "layout": {
+          "top": -177.671875,
+          "right": 408,
+          "bottom": 1022.328125,
+          "left": 22,
+          "width": 386,
+          "height": 1200
+        },
+        "preview": {
+          "heading": "rgb(243, 240, 232)",
+          "body": "rgb(185, 180, 173)",
+          "metaBg": "rgb(21, 21, 21)",
+          "metaColor": "rgb(185, 180, 173)",
+          "buttonBg": "rgb(201, 154, 74)",
+          "buttonRadius": "6px"
+        },
+        "options": [
+          {
+            "index": 0,
+            "label": "Thimphu",
+            "expected": "Thimphu",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.38)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 383.328125,
+              "right": 408,
+              "bottom": 499.328125,
+              "left": 22,
+              "width": 386,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 398.328125,
+              "bottom": 484.328125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 418.484375,
+              "bottom": 437.171875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 444.171875,
+              "bottom": 464.171875,
+              "height": 20
+            },
+            "pressed": "true"
+          },
+          {
+            "index": 1,
+            "label": "Paro",
+            "expected": "Paro",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 516.328125,
+              "right": 408,
+              "bottom": 632.328125,
+              "left": 22,
+              "width": 386,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 531.328125,
+              "bottom": 617.328125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 551.484375,
+              "bottom": 570.171875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 577.171875,
+              "bottom": 597.171875,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 2,
+            "label": "Haa",
+            "expected": "Haa",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 646.328125,
+              "right": 408,
+              "bottom": 762.328125,
+              "left": 22,
+              "width": 386,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 661.328125,
+              "bottom": 747.328125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 681.484375,
+              "bottom": 700.171875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 707.171875,
+              "bottom": 727.171875,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 3,
+            "label": "Punakha",
+            "expected": "Punakha",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 776.328125,
+              "right": 408,
+              "bottom": 892.328125,
+              "left": 22,
+              "width": 386,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 791.328125,
+              "bottom": 877.328125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 811.484375,
+              "bottom": 830.171875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 837.171875,
+              "bottom": 857.171875,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 4,
+            "label": "Gangtey",
+            "expected": "Gangtey",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 906.328125,
+              "right": 408,
+              "bottom": 1022.328125,
+              "left": 22,
+              "width": 386,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 921.328125,
+              "bottom": 1007.328125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 941.484375,
+              "bottom": 960.171875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 967.171875,
+              "bottom": 987.171875,
+              "height": 20
+            },
+            "pressed": "false"
+          }
+        ]
+      },
+      "clickedPreviews": [
+        "Thimphu",
+        "Paro",
+        "Haa",
+        "Punakha",
+        "Gangtey"
+      ],
+      "hover": {
+        "borderColor": "rgba(201, 154, 74, 0.36)",
+        "background": "rgb(19, 19, 19)",
+        "titleColor": "rgb(243, 240, 232)"
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\destinations-journeys\\homepage-430.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "vars": {
+          "textPrimary": "#f3f0e8",
+          "textSecondary": "#b9b4ad",
+          "accent": "#c99a4a",
+          "bgCard": "#151515",
+          "border": "#c99a4a33",
+          "borderStrong": "#c99a4a61"
+        },
+        "layout": {
+          "top": -178.296875,
+          "right": 368,
+          "bottom": 1021.703125,
+          "left": 22,
+          "width": 346,
+          "height": 1200
+        },
+        "preview": {
+          "heading": "rgb(243, 240, 232)",
+          "body": "rgb(185, 180, 173)",
+          "metaBg": "rgb(21, 21, 21)",
+          "metaColor": "rgb(185, 180, 173)",
+          "buttonBg": "rgb(201, 154, 74)",
+          "buttonRadius": "6px"
+        },
+        "options": [
+          {
+            "index": 0,
+            "label": "Thimphu",
+            "expected": "Thimphu",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.38)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 382.703125,
+              "right": 368,
+              "bottom": 498.703125,
+              "left": 22,
+              "width": 346,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 397.703125,
+              "bottom": 483.703125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 417.859375,
+              "bottom": 436.546875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 443.546875,
+              "bottom": 463.546875,
+              "height": 20
+            },
+            "pressed": "true"
+          },
+          {
+            "index": 1,
+            "label": "Paro",
+            "expected": "Paro",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 515.703125,
+              "right": 368,
+              "bottom": 631.703125,
+              "left": 22,
+              "width": 346,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 530.703125,
+              "bottom": 616.703125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 550.859375,
+              "bottom": 569.546875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 576.546875,
+              "bottom": 596.546875,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 2,
+            "label": "Haa",
+            "expected": "Haa",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 645.703125,
+              "right": 368,
+              "bottom": 761.703125,
+              "left": 22,
+              "width": 346,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 660.703125,
+              "bottom": 746.703125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 680.859375,
+              "bottom": 699.546875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 706.546875,
+              "bottom": 726.546875,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 3,
+            "label": "Punakha",
+            "expected": "Punakha",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 775.703125,
+              "right": 368,
+              "bottom": 891.703125,
+              "left": 22,
+              "width": 346,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 790.703125,
+              "bottom": 876.703125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 810.859375,
+              "bottom": 829.546875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 836.546875,
+              "bottom": 856.546875,
+              "height": 20
+            },
+            "pressed": "false"
+          },
+          {
+            "index": 4,
+            "label": "Gangtey",
+            "expected": "Gangtey",
+            "background": "rgb(21, 21, 21)",
+            "borderColor": "rgba(201, 154, 74, 0.2)",
+            "display": "grid",
+            "alignItems": "center",
+            "minHeight": "112px",
+            "titleColor": "rgb(243, 240, 232)",
+            "titleFontSize": "16px",
+            "numberColor": "rgb(201, 154, 74)",
+            "thumbnailObjectFit": "cover",
+            "thumbnailObjectPosition": "50% 50%",
+            "thumbnailRadius": "6px",
+            "rect": {
+              "top": 905.703125,
+              "right": 368,
+              "bottom": 1021.703125,
+              "left": 22,
+              "width": 346,
+              "height": 116
+            },
+            "thumbRect": {
+              "top": 920.703125,
+              "bottom": 1006.703125,
+              "height": 86
+            },
+            "numberRect": {
+              "top": 940.859375,
+              "bottom": 959.546875,
+              "height": 18.6875
+            },
+            "titleRect": {
+              "top": 966.546875,
+              "bottom": 986.546875,
+              "height": 20
+            },
+            "pressed": "false"
+          }
+        ]
+      },
+      "clickedPreviews": [
+        "Thimphu",
+        "Paro",
+        "Haa",
+        "Punakha",
+        "Gangtey"
+      ],
+      "hover": {
+        "borderColor": "rgba(201, 154, 74, 0.36)",
+        "background": "rgb(19, 19, 19)",
+        "titleColor": "rgb(243, 240, 232)"
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\destinations-journeys\\homepage-390.png"
+    }
+  ]
+}

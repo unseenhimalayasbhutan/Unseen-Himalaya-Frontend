@@ -1,0 +1,2925 @@
+{
+  "generatedAt": "2026-08-29T03:42:26.229Z",
+  "baseUrl": "http://localhost:3000",
+  "results": [
+    {
+      "label": "homepage",
+      "route": "/",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 15,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Thimphu",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "uh-destination-preview uh-destination-preview-1 is-active",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Thimphu",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-1",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Paro",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-2",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Haa",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-3",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Punakha",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-4",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Gangtey",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-5",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-package-card uh-package-card-1",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "5-Day Classic Western Bhutan",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-package-card uh-package-card-2",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "8-Day Punakha & Phobjikha In-Depth",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-package-card uh-package-card-3",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Sustainably Crafted",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-1",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Deeply Rooted",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-2",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Culturally Immersive",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-3",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Peaceful Exploration",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-4",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Meaningful Travel",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-5",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Memories That Live",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-6",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "about-bhutan",
+      "route": "/about-bhutan",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 35,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Discover Druk Yul, the Land of the Thunder Dragon.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "about-bhutan-btn-secondary",
+          "text": "Explore the Country",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A small kingdom with a powerful national identity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-section about-bhutan-section-warm",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Name & Identity",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Geography & Neighbours",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Capital & Districts",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "People & Languages",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A symbol of monarchy, faith, purity, and prosperity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-section about-bhutan-section-white",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Protective strength and national unity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-flag-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "From sacred temples to a modern constitutional monarchy.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-section about-bhutan-section-warm",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "First Buddhist temples",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Guru Rinpoche's spiritual legacy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Zhabdrung unifies Bhutan",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Birth of the hereditary monarchy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Bhutan joins the United Nations",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Gross National Happiness",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "bhutan-facts",
+      "route": "/facts",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 49,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Interesting facts that make Bhutan unlike anywhere else.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero facts-redesign-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "Explore Tours",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero facts-redesign-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Bhutan is a democratic constitutional monarchy built through a peaceful royal transition.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Democratic Constitutional Monarchy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Bicameral parliamentary democracy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Democracy was handed to the people",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Citizens vote from national to local levels",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Explore the stories behind Bhutan’s most fascinating facts.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "button",
+          "className": "facts-redesign-philosophy-tab is-active",
+          "text": "01Bhutan is Druk Yul, the Land of the Thunder Dragon.Name & Identity",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Bhutan is Druk Yul, the Land of the Thunder Dragon.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Bhutan is Druk Yul, the Land of the Thunder Dragon.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A visual glimpse into Bhutan’s identity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-gallery-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A kingdom shaped by mountains, forests, rivers, and valleys.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "High Himalayan Peaks",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Protected Forests",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Carbon-Conscious Nation",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "cultural-tours",
+      "route": "/cultural-tours",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 77,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Experience Bhutan's living heritage through monasteries, villages, festivals, and everyday",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "View Festival Tours",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Culture is not staged. It is part of daily life.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Sacred Architecture",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Living Festivals",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "National Dress",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Archery Culture",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Traditional Crafts",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Local Food",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Choose a Bhutan cultural and nature journey.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "03",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $590",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Kezang Choden03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "festival-tours",
+      "route": "/festival-tours",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 66,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Experience Bhutan's festival season, sacred tshechus, Black Necked Crane celebrations, and",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "View Festival Routes",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Choose a Bhutan festival journey.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan04Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "04",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "4-Day Dechenphu Tshechu Short Festival Tour",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $804",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan05Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "05",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "5-Day Black Necked Crane Festival Short Tour",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $1,061",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan05Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "05",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "5-Day Dechenphu Tshechu with Tiger's Nest",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "photography-tours",
+      "route": "/bhutan-tours",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 82,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Choose a Bhutan photography journey that matches your time, pace, and creative style.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "View Photography Routes",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Choose a Bhutan photography route.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "03",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $590",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Kezang Choden03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "03",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro Valley Short Escape",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $610",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Carissa Nimah04Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "04",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "4-Day Punakha Quick Journey",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "faq",
+      "route": "/faq",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 61,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "faq-hero-title",
+          "text": "Everything you need to know before travelling to Bhutan.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "faq-page uh-faq-page",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Categories",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Booking & Planning4 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Costs & Payments4 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Visas & Documents3 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Travel Logistics5 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Health & Safety4 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Cancellations & Refunds3 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Need personalized help?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-help",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Booking & Planning",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "faq-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "summary",
+          "className": "faq-question uh-faq-question",
+          "text": "What is the difference between booking directly with Unseen Himalaya and booking through a",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "span",
+          "className": "",
+          "text": "What is the difference between booking directly with Unseen Himalaya and booking through a",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "summary",
+          "className": "faq-question uh-faq-question",
+          "text": "Can I travel solo or do I need to join a group?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "span",
+          "className": "",
+          "text": "Can I travel solo or do I need to join a group?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "summary",
+          "className": "faq-question uh-faq-question",
+          "text": "When is the best time to travel to Bhutan?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "span",
+          "className": "",
+          "text": "When is the best time to travel to Bhutan?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "contact",
+      "route": "/contact",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 16,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "contact-pro-hero-title",
+          "text": "Let's start planning your Bhutan journey.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "contact-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-btn-secondary",
+          "text": "Send Email",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "contact-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "WhatsApp is best for quick travel questions.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-hero-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "contact-pro-section-title contact-pro-center-title",
+          "text": "Choose the easiest way to reach us.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "contact-pro-section contact-pro-section-white",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-card",
+          "text": "WhatsApp+975 16168893 / +975 16192762Best for quick questions and trip planning support.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "+975 16168893 / +975 16192762",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-card",
+          "text": "Emailunseenhimalayasbhutan@gmail.comBest for detailed tour inquiries and B2B requests.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "unseenhimalayasbhutan@gmail.com",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-card",
+          "text": "Call+975 16168893 / +975 16192762Call us during business hours in Bhutan.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "+975 16168893 / +975 16192762",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "contact-pro-section-title",
+          "text": "Share the basics and we will shape the right route.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-form-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "For faster replies",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-side-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Need urgent help?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-side-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-inline-link",
+          "text": "Chat on WhatsApp",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-side-card",
+          "contrast": 9.42,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Send us your Bhutan travel idea today.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-cta-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-btn-secondary",
+          "text": "View Tours",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-cta-card",
+          "contrast": 9.42,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "tour-detail",
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "viewport": "desktop",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 9,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-detail-thumb is-active",
+          "text": "© Unseen Himalayas Bhutan",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-detail-thumb is-active",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-tab ",
+          "text": "Cost/Inclusions",
+          "color": "rgb(185, 180, 173)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 9.56,
+          "threshold": 4.5
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-tab ",
+          "text": "Terms & Conditions",
+          "color": "rgb(185, 180, 173)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 9.56,
+          "threshold": 4.5
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-tab ",
+          "text": "More Packages",
+          "color": "rgb(185, 180, 173)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 9.56,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-detail-panel",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h4",
+          "className": "",
+          "text": "Day 01: Arrival in Paro-Transfer to Thimphu",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-day-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h4",
+          "className": "",
+          "text": "Day 02: Thimphu to Paro",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-day-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h4",
+          "className": "",
+          "text": "Day 03: Departure",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-day-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "homepage",
+      "route": "/",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 15,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Thimphu",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "uh-destination-preview uh-destination-preview-1 is-active",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Thimphu",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-1",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Paro",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-2",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Haa",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-3",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Punakha",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-4",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Gangtey",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-destination-option uh-destination-option-5",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-package-card uh-package-card-1",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "5-Day Classic Western Bhutan",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-package-card uh-package-card-2",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "8-Day Punakha & Phobjikha In-Depth",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-package-card uh-package-card-3",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Sustainably Crafted",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-1",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Deeply Rooted",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-2",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Culturally Immersive",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-3",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Peaceful Exploration",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-4",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Meaningful Travel",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-5",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "div",
+          "className": "feature-title",
+          "text": "Memories That Live",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "feature-card uh-whychoose-feature-card uh-whychoose-feature-card-6",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "about-bhutan",
+      "route": "/about-bhutan",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 35,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Discover Druk Yul, the Land of the Thunder Dragon.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "about-bhutan-btn-secondary",
+          "text": "Explore the Country",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A small kingdom with a powerful national identity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-section about-bhutan-section-warm",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Name & Identity",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Geography & Neighbours",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Capital & Districts",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "People & Languages",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-overview-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A symbol of monarchy, faith, purity, and prosperity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-section about-bhutan-section-white",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Protective strength and national unity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-flag-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "From sacred temples to a modern constitutional monarchy.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "about-bhutan-section about-bhutan-section-warm",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "First Buddhist temples",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Guru Rinpoche's spiritual legacy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Zhabdrung unifies Bhutan",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Birth of the hereditary monarchy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Bhutan joins the United Nations",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Gross National Happiness",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "about-bhutan-timeline-card",
+          "contrast": 16.04,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "bhutan-facts",
+      "route": "/facts",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 49,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Interesting facts that make Bhutan unlike anywhere else.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero facts-redesign-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "Explore Tours",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero facts-redesign-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Bhutan is a democratic constitutional monarchy built through a peaceful royal transition.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Democratic Constitutional Monarchy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Bicameral parliamentary democracy",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Democracy was handed to the people",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Citizens vote from national to local levels",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-governance-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Explore the stories behind Bhutan’s most fascinating facts.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "button",
+          "className": "facts-redesign-philosophy-tab is-active",
+          "text": "01Bhutan is Druk Yul, the Land of the Thunder Dragon.Name & Identity",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Bhutan is Druk Yul, the Land of the Thunder Dragon.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Bhutan is Druk Yul, the Land of the Thunder Dragon.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-philosophy-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A visual glimpse into Bhutan’s identity.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(19, 19, 19)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-warm facts-redesign-gallery-section",
+          "contrast": 16.32,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "A kingdom shaped by mountains, forests, rivers, and valleys.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "High Himalayan Peaks",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Protected Forests",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Carbon-Conscious Nation",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white facts-redesign-nature-section",
+          "contrast": 16.83,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "cultural-tours",
+      "route": "/cultural-tours",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 77,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Experience Bhutan's living heritage through monasteries, villages, festivals, and everyday",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "View Festival Tours",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Culture is not staged. It is part of daily life.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Sacred Architecture",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Living Festivals",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "National Dress",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Archery Culture",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Traditional Crafts",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Local Food",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "cultural-value-card-clean",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Choose a Bhutan cultural and nature journey.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "03",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $590",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Kezang Choden03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "festival-tours",
+      "route": "/festival-tours",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 66,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Experience Bhutan's festival season, sacred tshechus, Black Necked Crane celebrations, and",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "View Festival Routes",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Choose a Bhutan festival journey.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan04Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "04",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "4-Day Dechenphu Tshechu Short Festival Tour",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $804",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan05Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "05",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "5-Day Black Necked Crane Festival Short Tour",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $1,061",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan05Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "05",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "5-Day Dechenphu Tshechu with Tiger's Nest",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "photography-tours",
+      "route": "/bhutan-tours",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 82,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "Choose a Bhutan photography journey that matches your time, pace, and creative style.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "tour-pro-btn-secondary",
+          "text": "View Photography Routes",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "ds-section-heading-title",
+          "text": "Choose a Bhutan photography route.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Unseen Himalayas Bhutan03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "03",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $590",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Kezang Choden03Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "03",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "3-Day Paro Valley Short Escape",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "US $610",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "Pricing note",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "uh-hb-package-media-button",
+          "text": "© Carissa Nimah04Days",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "strong",
+          "className": "",
+          "text": "04",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "4-Day Punakha Quick Journey",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-package-card",
+          "contrast": 16.04,
+          "threshold": 3
+        }
+      ]
+    },
+    {
+      "label": "faq",
+      "route": "/faq",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 61,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "faq-hero-title",
+          "text": "Everything you need to know before travelling to Bhutan.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "faq-page uh-faq-page",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Categories",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Booking & Planning4 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Costs & Payments4 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Visas & Documents3 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Travel Logistics5 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Health & Safety4 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "a",
+          "className": "faq-sidebar-link",
+          "text": "Cancellations & Refunds3 questions",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Need personalized help?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-sidebar-help",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Booking & Planning",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(15, 15, 15)",
+          "surfaceSelector": "faq-section",
+          "contrast": 16.83,
+          "threshold": 3
+        },
+        {
+          "tag": "summary",
+          "className": "faq-question uh-faq-question",
+          "text": "What is the difference between booking directly with Unseen Himalaya and booking through a",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "span",
+          "className": "",
+          "text": "What is the difference between booking directly with Unseen Himalaya and booking through a",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "summary",
+          "className": "faq-question uh-faq-question",
+          "text": "Can I travel solo or do I need to join a group?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "span",
+          "className": "",
+          "text": "Can I travel solo or do I need to join a group?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "summary",
+          "className": "faq-question uh-faq-question",
+          "text": "When is the best time to travel to Bhutan?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "span",
+          "className": "",
+          "text": "When is the best time to travel to Bhutan?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "faq-item uh-faq-item",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "contact",
+      "route": "/contact",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 16,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "contact-pro-hero-title",
+          "text": "Let's start planning your Bhutan journey.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "contact-pro-hero",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-btn-secondary",
+          "text": "Send Email",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "contact-pro-hero",
+          "contrast": 10.16,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "WhatsApp is best for quick travel questions.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-hero-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "contact-pro-section-title contact-pro-center-title",
+          "text": "Choose the easiest way to reach us.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "contact-pro-section contact-pro-section-white",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-card",
+          "text": "WhatsApp+975 16168893 / +975 16192762Best for quick questions and trip planning support.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "+975 16168893 / +975 16192762",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-card",
+          "text": "Emailunseenhimalayasbhutan@gmail.comBest for detailed tour inquiries and B2B requests.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "unseenhimalayasbhutan@gmail.com",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-card",
+          "text": "Call+975 16168893 / +975 16192762Call us during business hours in Bhutan.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "+975 16168893 / +975 16192762",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h2",
+          "className": "contact-pro-section-title",
+          "text": "Share the basics and we will shape the right route.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-form-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "For faster replies",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-side-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h3",
+          "className": "",
+          "text": "Need urgent help?",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-side-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-inline-link",
+          "text": "Chat on WhatsApp",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-side-card",
+          "contrast": 9.42,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "Send us your Bhutan travel idea today.",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-cta-card",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "a",
+          "className": "contact-pro-btn-secondary",
+          "text": "View Tours",
+          "color": "rgb(223, 180, 96)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "contact-pro-cta-card",
+          "contrast": 9.42,
+          "threshold": 4.5
+        }
+      ]
+    },
+    {
+      "label": "tour-detail",
+      "route": "/cultural-tours/3-day-paro-thimphu-paro",
+      "viewport": "mobile",
+      "hasContent": true,
+      "hasErrorOverlay": false,
+      "inspectedDarkTextNodes": 9,
+      "failures": [],
+      "examples": [
+        {
+          "tag": "h1",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 17.28,
+          "threshold": 3
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-detail-thumb is-active",
+          "text": "© Unseen Himalayas Bhutan",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-detail-thumb is-active",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-tab ",
+          "text": "Cost/Inclusions",
+          "color": "rgb(185, 180, 173)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 9.56,
+          "threshold": 4.5
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-tab ",
+          "text": "Terms & Conditions",
+          "color": "rgb(185, 180, 173)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 9.56,
+          "threshold": 4.5
+        },
+        {
+          "tag": "button",
+          "className": "uh-hb-tab ",
+          "text": "More Packages",
+          "color": "rgb(185, 180, 173)",
+          "surface": "rgb(11, 11, 11)",
+          "surfaceSelector": "tour-pro-section tour-pro-section-white uh-package-showcase-section uh-hb-detail-page-section",
+          "contrast": 9.56,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h2",
+          "className": "",
+          "text": "3-Day Paro & Thimphu Essentials",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-detail-panel",
+          "contrast": 16.04,
+          "threshold": 3
+        },
+        {
+          "tag": "h4",
+          "className": "",
+          "text": "Day 01: Arrival in Paro-Transfer to Thimphu",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-day-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h4",
+          "className": "",
+          "text": "Day 02: Thimphu to Paro",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-day-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        },
+        {
+          "tag": "h4",
+          "className": "",
+          "text": "Day 03: Departure",
+          "color": "rgb(243, 240, 232)",
+          "surface": "rgb(21, 21, 21)",
+          "surfaceSelector": "uh-hb-day-card",
+          "contrast": 16.04,
+          "threshold": 4.5
+        }
+      ]
+    }
+  ],
+  "totalFailures": 0
+}

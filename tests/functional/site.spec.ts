@@ -11,17 +11,22 @@ const publicRoutes = [
   "/contact",
   "/cultural-tours",
   "/currency",
+  "/cycling-tours",
   "/documents",
   "/facts",
   "/faq",
   "/festival-calendar",
   "/festival-tours",
   "/gnh-philosophies",
+  "/land-entry-tours",
   "/legal-documents",
   "/optional-tours",
+  "/places-to-visit",
   "/privacy-policy",
   "/seasons",
+  "/sdf",
   "/terms",
+  "/upcoming-events",
   "/why-visit",
 ];
 
@@ -73,7 +78,7 @@ test("all public routes render the shared shell without horizontal overflow", as
       true,
     );
     await expect(page.locator("header.site-header")).toHaveCount(1);
-    await expect(page.locator("footer.site-footer")).toHaveCount(1);
+    await expect(page.locator("footer.site-footer, footer.upcoming-events-poster-footer")).toHaveCount(1);
     await expect(page.locator("h1")).toHaveCount(1);
 
     const layout = await page.evaluate(() => ({
@@ -124,7 +129,7 @@ test("representative pages share the same typography system", async ({
 
   expect(new Set(typography.map((item) => item.bodyFont)).size).toBe(1);
   for (const item of typography) {
-    expect(item.headingFont).toMatch(/Playfair|Cormorant/i);
+    expect(item.headingFont).toMatch(/Cormorant/i);
   }
 });
 

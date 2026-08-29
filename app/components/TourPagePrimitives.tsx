@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { getFallbackImage } from "./imageFallbacks";
+import { SectionHeading } from "./DesignSystem";
 
 const SDF_NOTE =
   "SDF: Foreign nationals pay USD 100 per night per person; Indian nationals pay Nu. 1,200 per night per person.";
@@ -85,16 +86,12 @@ export function TourSectionHeader({
   subtitle?: string;
 }) {
   return (
-    <div className="tour-pro-section-heading">
-      <div className="tour-pro-section-label">
-        <span />
-        {eyebrow}
-        <span />
-      </div>
-
-      <h2>{title}</h2>
-
-      {subtitle ? <p>{subtitle}</p> : null}
-    </div>
+    <SectionHeading
+      eyebrow={eyebrow}
+      title={title}
+      description={subtitle}
+      divider
+      className="tour-pro-section-heading"
+    />
   );
 }

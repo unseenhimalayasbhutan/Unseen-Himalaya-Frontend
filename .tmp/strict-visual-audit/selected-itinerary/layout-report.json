@@ -1,0 +1,546 @@
+{
+  "reportPath": ".tmp\\strict-visual-audit\\selected-itinerary\\layout-report.json",
+  "failures": [],
+  "results": [
+    {
+      "width": 1440,
+      "height": 980,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "cardGrid": {
+          "top": -366.828125,
+          "right": 1320,
+          "bottom": 261.078125,
+          "left": 120,
+          "width": 1200,
+          "height": 627.90625
+        },
+        "panel": {
+          "top": 289.078125,
+          "right": 1320,
+          "bottom": 674.40625,
+          "left": 120,
+          "width": 1200,
+          "height": 385.328125
+        },
+        "media": {
+          "top": 329.703125,
+          "right": 615.109375,
+          "bottom": 633.765625,
+          "left": 159,
+          "width": 456.109375,
+          "height": 304.0625
+        },
+        "mediaImg": {
+          "top": 330.703125,
+          "right": 614.109375,
+          "bottom": 632.765625,
+          "left": 160,
+          "width": 454.109375,
+          "height": 302.0625
+        },
+        "body": {
+          "top": 328.078125,
+          "right": 1281,
+          "bottom": 635.40625,
+          "left": 651.109375,
+          "width": 629.890625,
+          "height": 307.328125
+        },
+        "text": {
+          "top": 328.078125,
+          "right": 1211.109375,
+          "bottom": 530.625,
+          "left": 651.109375,
+          "width": 560,
+          "height": 202.546875
+        },
+        "meta": {
+          "top": 554.625,
+          "right": 1281,
+          "bottom": 635.40625,
+          "left": 651.109375,
+          "width": 629.890625,
+          "height": 80.78125
+        },
+        "nextSection": {
+          "top": 2845.421875,
+          "right": 1440,
+          "bottom": 3977.921875,
+          "left": 0,
+          "width": 1440,
+          "height": 1132.5
+        },
+        "panelDisplay": "grid",
+        "panelColumns": "456.109px 629.891px",
+        "mediaStyle": {
+          "borderRadius": "6px",
+          "overflow": "hidden",
+          "border": "1px solid rgba(201, 154, 74, 0.2)",
+          "aspectRatio": "3 / 2"
+        },
+        "imgStyle": {
+          "objectFit": "cover",
+          "objectPosition": "50% 48%",
+          "width": "454.109px",
+          "height": "302.062px",
+          "naturalWidth": 604,
+          "naturalHeight": 403
+        }
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\selected-itinerary\\homepage-1440.png"
+    },
+    {
+      "width": 1280,
+      "height": 980,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 1280,
+        "innerWidth": 1280,
+        "cardGrid": {
+          "top": -342.109375,
+          "right": 1220,
+          "bottom": 276.734375,
+          "left": 60,
+          "width": 1160,
+          "height": 618.84375
+        },
+        "panel": {
+          "top": 304.734375,
+          "right": 1220,
+          "bottom": 675.609375,
+          "left": 60,
+          "width": 1160,
+          "height": 370.875
+        },
+        "media": {
+          "top": 343.734375,
+          "right": 538.3125,
+          "bottom": 636.609375,
+          "left": 99,
+          "width": 439.3125,
+          "height": 292.875
+        },
+        "mediaImg": {
+          "top": 344.734375,
+          "right": 537.3125,
+          "bottom": 635.609375,
+          "left": 100,
+          "width": 437.3125,
+          "height": 290.875
+        },
+        "body": {
+          "top": 343.734375,
+          "right": 1181,
+          "bottom": 636.609375,
+          "left": 574.3125,
+          "width": 606.6875,
+          "height": 292.875
+        },
+        "text": {
+          "top": 344.0625,
+          "right": 1134.3125,
+          "bottom": 531.484375,
+          "left": 574.3125,
+          "width": 560,
+          "height": 187.421875
+        },
+        "meta": {
+          "top": 555.484375,
+          "right": 1181,
+          "bottom": 636.265625,
+          "left": 574.3125,
+          "width": 606.6875,
+          "height": 80.78125
+        },
+        "nextSection": {
+          "top": 2722.5,
+          "right": 1280,
+          "bottom": 3816.6875,
+          "left": 0,
+          "width": 1280,
+          "height": 1094.1875
+        },
+        "panelDisplay": "grid",
+        "panelColumns": "439.312px 606.688px",
+        "mediaStyle": {
+          "borderRadius": "6px",
+          "overflow": "hidden",
+          "border": "1px solid rgba(201, 154, 74, 0.2)",
+          "aspectRatio": "3 / 2"
+        },
+        "imgStyle": {
+          "objectFit": "cover",
+          "objectPosition": "50% 48%",
+          "width": "437.312px",
+          "height": "290.875px",
+          "naturalWidth": 537,
+          "naturalHeight": 358
+        }
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\selected-itinerary\\homepage-1280.png"
+    },
+    {
+      "width": 1024,
+      "height": 980,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 1024,
+        "innerWidth": 1024,
+        "cardGrid": {
+          "top": -1420.0625,
+          "right": 964,
+          "bottom": 277.453125,
+          "left": 60,
+          "width": 904,
+          "height": 1697.515625
+        },
+        "panel": {
+          "top": 305.453125,
+          "right": 964,
+          "bottom": 675.265625,
+          "left": 60,
+          "width": 904,
+          "height": 369.8125
+        },
+        "media": {
+          "top": 384.328125,
+          "right": 417.109375,
+          "bottom": 596.390625,
+          "left": 99,
+          "width": 318.109375,
+          "height": 212.0625
+        },
+        "mediaImg": {
+          "top": 385.328125,
+          "right": 416.109375,
+          "bottom": 595.390625,
+          "left": 100,
+          "width": 316.109375,
+          "height": 210.0625
+        },
+        "body": {
+          "top": 344.453125,
+          "right": 925,
+          "bottom": 636.265625,
+          "left": 447.828125,
+          "width": 477.171875,
+          "height": 291.8125
+        },
+        "text": {
+          "top": 344.453125,
+          "right": 925,
+          "bottom": 531.484375,
+          "left": 447.828125,
+          "width": 477.171875,
+          "height": 187.03125
+        },
+        "meta": {
+          "top": 555.484375,
+          "right": 925,
+          "bottom": 636.265625,
+          "left": 447.828125,
+          "width": 477.171875,
+          "height": 80.78125
+        },
+        "nextSection": {
+          "top": 3101.5,
+          "right": 1024,
+          "bottom": 4080.671875,
+          "left": 0,
+          "width": 1024,
+          "height": 979.171875
+        },
+        "panelDisplay": "grid",
+        "panelColumns": "318.109px 477.172px",
+        "mediaStyle": {
+          "borderRadius": "6px",
+          "overflow": "hidden",
+          "border": "1px solid rgba(201, 154, 74, 0.2)",
+          "aspectRatio": "3 / 2"
+        },
+        "imgStyle": {
+          "objectFit": "cover",
+          "objectPosition": "50% 48%",
+          "width": "316.109px",
+          "height": "210.062px",
+          "naturalWidth": 409,
+          "naturalHeight": 273
+        }
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\selected-itinerary\\homepage-1024.png"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "cardGrid": {
+          "top": -1559.109375,
+          "right": 708,
+          "bottom": 138.40625,
+          "left": 60,
+          "width": 648,
+          "height": 1697.515625
+        },
+        "panel": {
+          "top": 166.40625,
+          "right": 708,
+          "bottom": 856.8125,
+          "left": 60,
+          "width": 648,
+          "height": 690.40625
+        },
+        "media": {
+          "top": 198.125,
+          "right": 676.28125,
+          "bottom": 587.828125,
+          "left": 91.71875,
+          "width": 584.5625,
+          "height": 389.703125
+        },
+        "mediaImg": {
+          "top": 199.125,
+          "right": 675.28125,
+          "bottom": 586.828125,
+          "left": 92.71875,
+          "width": 582.5625,
+          "height": 387.703125
+        },
+        "body": {
+          "top": 611.828125,
+          "right": 676.28125,
+          "bottom": 825.09375,
+          "left": 91.71875,
+          "width": 584.5625,
+          "height": 213.265625
+        },
+        "text": {
+          "top": 611.828125,
+          "right": 651.71875,
+          "bottom": 720.3125,
+          "left": 91.71875,
+          "width": 560,
+          "height": 108.484375
+        },
+        "meta": {
+          "top": 744.3125,
+          "right": 676.28125,
+          "bottom": 825.09375,
+          "left": 91.71875,
+          "width": 584.5625,
+          "height": 80.78125
+        },
+        "nextSection": {
+          "top": 3245,
+          "right": 768,
+          "bottom": 4601,
+          "left": 0,
+          "width": 768,
+          "height": 1356
+        },
+        "panelDisplay": "grid",
+        "panelColumns": "584.562px",
+        "mediaStyle": {
+          "borderRadius": "6px",
+          "overflow": "hidden",
+          "border": "1px solid rgba(201, 154, 74, 0.2)",
+          "aspectRatio": "3 / 2"
+        },
+        "imgStyle": {
+          "objectFit": "cover",
+          "objectPosition": "50% 48%",
+          "width": "582.562px",
+          "height": "387.703px",
+          "naturalWidth": 307,
+          "naturalHeight": 204
+        }
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\selected-itinerary\\homepage-768.png"
+    },
+    {
+      "width": 430,
+      "height": 844,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 430,
+        "innerWidth": 430,
+        "cardGrid": {
+          "top": -1770.25,
+          "right": 408,
+          "bottom": 28.9375,
+          "left": 22,
+          "width": 386,
+          "height": 1799.1875
+        },
+        "panel": {
+          "top": 56.9375,
+          "right": 408,
+          "bottom": 787.4375,
+          "left": 22,
+          "width": 386,
+          "height": 730.5
+        },
+        "media": {
+          "top": 79.9375,
+          "right": 385,
+          "bottom": 306.59375,
+          "left": 45,
+          "width": 340,
+          "height": 226.65625
+        },
+        "mediaImg": {
+          "top": 80.9375,
+          "right": 384,
+          "bottom": 305.59375,
+          "left": 46,
+          "width": 338,
+          "height": 224.65625
+        },
+        "body": {
+          "top": 330.59375,
+          "right": 385,
+          "bottom": 764.4375,
+          "left": 45,
+          "width": 340,
+          "height": 433.84375
+        },
+        "text": {
+          "top": 330.59375,
+          "right": 385,
+          "bottom": 504.875,
+          "left": 45,
+          "width": 340,
+          "height": 174.28125
+        },
+        "meta": {
+          "top": 528.875,
+          "right": 385,
+          "bottom": 764.4375,
+          "left": 45,
+          "width": 340,
+          "height": 235.5625
+        },
+        "nextSection": {
+          "top": 4575,
+          "right": 430,
+          "bottom": 6212.546875,
+          "left": 0,
+          "width": 430,
+          "height": 1637.546875
+        },
+        "panelDisplay": "grid",
+        "panelColumns": "340px",
+        "mediaStyle": {
+          "borderRadius": "6px",
+          "overflow": "hidden",
+          "border": "1px solid rgba(201, 154, 74, 0.2)",
+          "aspectRatio": "3 / 2"
+        },
+        "imgStyle": {
+          "objectFit": "cover",
+          "objectPosition": "50% 48%",
+          "width": "338px",
+          "height": "224.656px",
+          "naturalWidth": 386,
+          "naturalHeight": 257
+        }
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\selected-itinerary\\homepage-430.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "issues": [],
+      "metrics": {
+        "scrollWidth": 390,
+        "innerWidth": 390,
+        "cardGrid": {
+          "top": -1756.875,
+          "right": 368,
+          "bottom": 42.3125,
+          "left": 22,
+          "width": 346,
+          "height": 1799.1875
+        },
+        "panel": {
+          "top": 70.3125,
+          "right": 368,
+          "bottom": 774.15625,
+          "left": 22,
+          "width": 346,
+          "height": 703.84375
+        },
+        "media": {
+          "top": 93.3125,
+          "right": 345,
+          "bottom": 293.3125,
+          "left": 45,
+          "width": 300,
+          "height": 200
+        },
+        "mediaImg": {
+          "top": 94.3125,
+          "right": 344,
+          "bottom": 292.3125,
+          "left": 46,
+          "width": 298,
+          "height": 198
+        },
+        "body": {
+          "top": 317.3125,
+          "right": 345,
+          "bottom": 751.15625,
+          "left": 45,
+          "width": 300,
+          "height": 433.84375
+        },
+        "text": {
+          "top": 317.3125,
+          "right": 345,
+          "bottom": 491.59375,
+          "left": 45,
+          "width": 300,
+          "height": 174.28125
+        },
+        "meta": {
+          "top": 515.59375,
+          "right": 345,
+          "bottom": 751.15625,
+          "left": 45,
+          "width": 300,
+          "height": 235.5625
+        },
+        "nextSection": {
+          "top": 4649.03125,
+          "right": 390,
+          "bottom": 6377.21875,
+          "left": 0,
+          "width": 390,
+          "height": 1728.1875
+        },
+        "panelDisplay": "grid",
+        "panelColumns": "300px",
+        "mediaStyle": {
+          "borderRadius": "6px",
+          "overflow": "hidden",
+          "border": "1px solid rgba(201, 154, 74, 0.2)",
+          "aspectRatio": "3 / 2"
+        },
+        "imgStyle": {
+          "objectFit": "cover",
+          "objectPosition": "50% 48%",
+          "width": "298px",
+          "height": "198px",
+          "naturalWidth": 346,
+          "naturalHeight": 230
+        }
+      },
+      "screenshotPath": ".tmp\\strict-visual-audit\\selected-itinerary\\homepage-390.png"
+    }
+  ]
+}

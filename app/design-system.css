@@ -1,0 +1,1827 @@
+/* =========================================================
+   REPOSITORY-WIDE DESIGN SYSTEM
+   Unseen Himalayas Bhutan
+   ---------------------------------------------------------
+   Guardrails:
+   - Do not hardcode brand colors in components.
+   - Use semantic design tokens from :root.
+   - Use typography primitives for display/body/script roles.
+   - Use shared Button, Card/Surface, Section, Container, Badge,
+     Divider, and form primitives before adding page-specific CSS.
+   - Page CSS may own layout composition, not brand colors, fonts,
+     base buttons, base cards, global shadows, or section rhythm.
+   ========================================================= */
+
+:root {
+  --color-bg-page: #0b0b0b;
+  --color-bg-section: #0f0f0f;
+  --color-bg-elevated: #131313;
+  --color-bg-card: #151515;
+  --color-bg-card-hover: #181818;
+
+  --color-text-primary: #f3f0e8;
+  --color-text-secondary: #b9b4ad;
+  --color-text-muted: #85817b;
+
+  --color-accent: #c99a4a;
+  --color-accent-light: #dfb460;
+  --color-accent-muted: rgba(201, 154, 74, 0.65);
+  --color-accent-wash: var(--color-accent-wash);
+
+  --color-border: rgba(201, 154, 74, 0.2);
+  --color-border-strong: rgba(201, 154, 74, 0.38);
+  --color-border-hover: rgba(201, 154, 74, 0.48);
+  --color-divider: rgba(201, 154, 74, 0.16);
+
+  --color-overlay-light: rgba(0, 0, 0, 0.35);
+  --color-overlay-medium: rgba(0, 0, 0, 0.55);
+  --color-overlay-heavy: rgba(0, 0, 0, 0.72);
+  --color-shadow: rgba(0, 0, 0, 0.24);
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1fbd59;
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Montserrat", sans-serif;
+  --font-script: "Allura", cursive;
+
+  --font-size-xs: 0.6875rem;
+  --font-size-sm: 0.75rem;
+  --font-size-md: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-heading-sm: clamp(1.25rem, 1.8vw, 1.55rem);
+  --font-size-heading-md: clamp(1.75rem, 2.7vw, 2.6rem);
+  --font-size-heading-lg: clamp(2.5rem, 4.5vw, 4.4rem);
+  --font-size-display: clamp(3rem, 5.5vw, 5.25rem);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --space-10: 96px;
+  --space-11: 120px;
+  --space-12: 144px;
+
+  --container-main: min(1280px, calc(100% - clamp(40px, 6vw, 96px)));
+  --container-wide: min(1440px, calc(100% - clamp(40px, 6vw, 96px)));
+  --container-narrow: min(860px, calc(100% - clamp(40px, 6vw, 96px)));
+
+  --section-padding-y: clamp(var(--space-9), 8vw, var(--space-11));
+  --section-padding-y-compact: clamp(var(--space-8), 6vw, var(--space-10));
+  --section-padding-y-lg: clamp(var(--space-10), 10vw, var(--space-12));
+
+  --radius-none: 0;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-round: 999px;
+
+  --shadow-none: none;
+  --shadow-subtle: 0 14px 34px rgba(0, 0, 0, 0.16);
+  --shadow-panel: 0 18px 40px var(--color-shadow);
+  --shadow-focus: 0 0 0 3px var(--color-divider);
+  --shadow-text: 0 4px 22px var(--color-overlay-medium);
+  --motion-standard: 220ms ease;
+  --motion-fast: 180ms ease;
+
+  /* Legacy compatibility aliases. New code should use --color-* / --font-* / --space-* tokens. */
+  --cream: var(--color-bg-section);
+  --cream-2: var(--color-bg-elevated);
+  --warm: var(--color-bg-card);
+  --gold: var(--color-accent);
+  --gold-dark: var(--color-accent);
+  --gold-soft: var(--color-accent-light);
+  --gold-light: var(--color-accent-light);
+  --gold-primary: var(--color-accent);
+  --gold-border: var(--color-border);
+  --dark: var(--color-bg-page);
+  --dark-2: var(--color-bg-elevated);
+  --text: var(--color-text-primary);
+  --muted: var(--color-text-secondary);
+  --muted-2: var(--color-text-muted);
+  --border: var(--color-border);
+  --bg-main: var(--color-bg-page);
+  --bg-section: var(--color-bg-section);
+  --bg-card: var(--color-bg-card);
+  --bg-card-hover: var(--color-bg-card-hover);
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-muted: var(--color-text-muted);
+  --lux-font-heading: var(--font-display);
+  --lux-font-body: var(--font-body);
+  --lux-font-script: var(--font-script);
+  --font-heading: var(--font-display);
+  --shadow: var(--shadow-subtle);
+  --shadow-strong: var(--shadow-subtle);
+  --radius: var(--radius-md);
+  --radius-lg: var(--radius-md);
+  --container: var(--container-main);
+  --section-space: var(--section-padding-y);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-main: min(100% - 48px, 1280px);
+    --container-wide: min(100% - 48px, 1440px);
+    --container-narrow: min(100% - 48px, 860px);
+    --section-padding-y: clamp(64px, 13vw, 80px);
+    --section-padding-y-compact: clamp(56px, 11vw, 72px);
+    --section-padding-y-lg: clamp(72px, 14vw, 92px);
+  }
+}
+
+@media (max-width: 430px) {
+  :root {
+    --container-main: min(100% - 40px, 1280px);
+    --container-wide: min(100% - 40px, 1440px);
+    --container-narrow: min(100% - 40px, 860px);
+  }
+}
+
+html {
+  background: var(--color-bg-page);
+}
+
+body {
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-secondary) !important;
+  font-family: var(--font-body) !important;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-body) !important;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container,
+.container-wide,
+.container-narrow {
+  width: var(--container-main) !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+}
+
+.container-wide {
+  width: var(--container-wide) !important;
+}
+
+.container-narrow {
+  width: var(--container-narrow) !important;
+}
+
+.section,
+.section-compact,
+.section-lg,
+.tour-pro-section,
+.contact-pro-section,
+.festival-calendar-redesign-section,
+.festival-calendar-redesign-stats-section,
+.festival-calendar-redesign-all-section,
+.about-pro-section,
+.about-bhutan-section,
+.besttime-section,
+.currency-section,
+.documents-section,
+.faq-section,
+.facts-redesign-section,
+.gnh-pro-section,
+.legal-pro-section,
+.seasons-pro-section,
+.whyvisit-pro-section,
+.places-section {
+  padding-block: var(--section-padding-y) !important;
+  background: var(--color-bg-section) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+.section-compact {
+  padding-block: var(--section-padding-y-compact) !important;
+}
+
+.section-lg {
+  padding-block: var(--section-padding-y-lg) !important;
+}
+
+.tour-pro-section-warm,
+.contact-pro-section-warm,
+.festival-calendar-redesign-section:nth-of-type(even) {
+  background: var(--color-bg-elevated) !important;
+}
+
+main,
+.tour-pro-page,
+.contact-pro-page,
+.festival-calendar-page,
+.about-pro-page,
+.about-bhutan-page,
+.besttime-page,
+.currency-page,
+.documents-page,
+.faq-page,
+.facts-redesign-page,
+.gnh-pro-page,
+.legal-pro-page,
+.seasons-pro-page,
+.whyvisit-pro-page,
+.places-page,
+.optional-pro-page,
+.trekking-page {
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+.display-xl,
+.display-lg,
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-4,
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-text-primary);
+  font-family: var(--font-display) !important;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.display-xl {
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  line-height: 0.92;
+}
+
+.display-lg,
+h1 {
+  font-size: clamp(3rem, 5.5vw, 5.25rem);
+  line-height: 0.96;
+}
+
+.heading-1 {
+  font-size: clamp(2.75rem, 5vw, 4.8rem);
+  line-height: 0.98;
+}
+
+.heading-2,
+h2 {
+  font-size: clamp(2.5rem, 4.5vw, 4.4rem);
+  line-height: 1;
+}
+
+.heading-3,
+h3 {
+  font-size: clamp(1.75rem, 2.7vw, 2.6rem);
+  line-height: 1.08;
+}
+
+.heading-4,
+h4 {
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  line-height: 1.18;
+}
+
+.body-lg {
+  color: var(--color-text-secondary);
+  font-family: var(--font-body) !important;
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+  line-height: 1.75;
+}
+
+.body-md,
+p,
+li {
+  color: var(--color-text-secondary);
+  font-family: var(--font-body) !important;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.body-sm,
+small {
+  color: var(--color-text-muted);
+  font-family: var(--font-body) !important;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.label,
+.overline {
+  color: var(--color-accent-light);
+  font-family: var(--font-body) !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.script-eyebrow,
+.ds-section-heading-eyebrow {
+  color: var(--color-accent-light);
+  font-family: var(--font-script) !important;
+  font-size: clamp(1.9rem, 3vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: none;
+}
+
+.ds-section-heading,
+.section-heading,
+.tour-pro-section-heading,
+.contact-pro-section-header,
+.festival-calendar-redesign-section-heading,
+.top-heading,
+.bottom-heading {
+  width: min(100%, var(--section-heading-max, 900px));
+  margin-inline: auto !important;
+  margin-bottom: clamp(36px, 5vw, 64px) !important;
+  color: var(--color-text-secondary);
+  text-align: var(--section-heading-align, center);
+}
+
+.ds-section-heading.align-left,
+.section-heading.align-left {
+  --section-heading-align: left;
+  margin-left: 0 !important;
+}
+
+.ds-section-heading-eyebrow,
+.tour-pro-section-label,
+.contact-pro-section-label,
+.festival-calendar-redesign-section-heading > span,
+.top-heading > span,
+.bottom-heading > span,
+.section-label {
+  color: var(--color-accent-light) !important;
+  font-family: var(--font-script) !important;
+  font-size: clamp(1.9rem, 3vw, 2.75rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  text-transform: none !important;
+}
+
+.ds-section-heading-title,
+.tour-pro-section-heading h2,
+.contact-pro-section-title,
+.festival-calendar-redesign-section-heading h2,
+.top-heading h2,
+.bottom-heading h2,
+.section-title {
+  max-width: 980px;
+  margin: 0 auto !important;
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.5rem, 4.5vw, 4.4rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  text-transform: none !important;
+  text-wrap: balance;
+}
+
+.ds-section-heading.align-left .ds-section-heading-title,
+.section-heading.align-left .section-title {
+  margin-left: 0 !important;
+}
+
+.ds-section-heading-description,
+.tour-pro-section-heading p,
+.contact-pro-section-title + p,
+.festival-calendar-redesign-section-heading p,
+.top-heading p,
+.bottom-heading p,
+.section-description {
+  max-width: 820px;
+  margin: var(--space-5) auto 0 !important;
+  color: var(--color-text-secondary) !important;
+  font-family: var(--font-body) !important;
+  font-size: clamp(0.95rem, 1.3vw, 1.125rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.72 !important;
+  text-transform: none !important;
+}
+
+.ds-divider,
+.tour-pro-section-label span,
+.contact-pro-section-line {
+  display: inline-block;
+  width: clamp(42px, 7vw, 86px);
+  height: 1px;
+  background: var(--color-divider) !important;
+}
+
+.ds-surface,
+.card,
+.surface {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-none);
+  transition:
+    transform var(--motion-standard),
+    border-color var(--motion-standard),
+    background var(--motion-standard),
+    color var(--motion-standard);
+}
+
+.ds-surface:hover,
+.card:hover,
+.surface:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-bg-card-hover);
+  transform: translateY(-3px);
+}
+
+:where(
+  .feature-card,
+  .bottom-card,
+  .stat-card,
+  .uh-package-card,
+  .uh-travel-step-card,
+  .tour-pro-stat-card,
+  .tour-pro-feature-card,
+  .tour-pro-image-card,
+  .tour-pro-mini-card,
+  .tour-pro-route-card,
+  .tour-pro-tab-card,
+  .tour-pro-addon-card,
+  .tour-pro-hero-card,
+  .tour-pro-active-card,
+  .tour-pro-itinerary-preview,
+  .tour-pro-builder-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .uh-hb-more-card,
+  .cultural-value-card-clean,
+  .cultural-pro-route-option,
+  .cultural-pro-route-panel,
+  .cultural-pro-route-note,
+  .cultural-pro-route-facts > div,
+  .cultural-pro-day-item,
+  .uh-festival-library-redesign-shell,
+  .uh-festival-library-redesign-topbar,
+  .uh-festival-anchor-card,
+  .festival-calendar-redesign-hero-card,
+  .festival-calendar-redesign-feature-panel,
+  .festival-calendar-redesign-feature-event,
+  .festival-calendar-redesign-month-card,
+  .festival-event-card,
+  .contact-pro-card,
+  .contact-pro-form-card,
+  .contact-pro-side-card,
+  .contact-pro-cta-card,
+  .about-pro-assurance-card,
+  .about-pro-difference-card,
+  .about-bhutan-card,
+  .besttime-card,
+  .currency-card,
+  .documents-card,
+  .faq-card,
+  .facts-redesign-card,
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-feature-card,
+  .facts-redesign-gallery-card,
+  .facts-redesign-airport-card,
+  .facts-redesign-timeline-item,
+  .facts-redesign-food-item,
+  .facts-redesign-philosophy-tab,
+  .facts-redesign-philosophy-panel,
+  .gnh-pro-card,
+  .legal-pro-card,
+  .seasons-pro-card,
+  .whyvisit-pro-card,
+  .places-card,
+  .trekking-trek-card,
+  .trekking-included-card,
+  .uh-optional-step-card,
+  .uh-addon-category-button,
+  .uh-addon-experience-card,
+  .uh-optional-route-card
+) {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-card) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: var(--shadow-none) !important;
+  transition:
+    transform var(--motion-standard),
+    border-color var(--motion-standard),
+    background var(--motion-standard),
+    color var(--motion-standard) !important;
+}
+
+:where(
+  .feature-card,
+  .bottom-card,
+  .stat-card,
+  .uh-package-card,
+  .uh-travel-step-card,
+  .tour-pro-stat-card,
+  .tour-pro-feature-card,
+  .tour-pro-image-card,
+  .tour-pro-mini-card,
+  .tour-pro-route-card,
+  .tour-pro-tab-card,
+  .tour-pro-addon-card,
+  .uh-hb-package-card,
+  .uh-hb-more-card,
+  .cultural-value-card-clean,
+  .cultural-pro-route-option,
+  .uh-festival-anchor-card,
+  .festival-calendar-redesign-month-tab,
+  .contact-pro-card,
+  .uh-addon-category-button,
+  .uh-addon-experience-card,
+  .uh-optional-route-card
+):hover,
+:where(
+  .uh-travel-step-card,
+  .cultural-pro-route-option,
+  .festival-calendar-redesign-month-tab,
+  .uh-addon-category-button,
+  .uh-addon-experience-card
+):focus-visible {
+  border-color: var(--color-border-strong) !important;
+  background: var(--color-bg-card-hover) !important;
+  box-shadow: var(--shadow-none) !important;
+  transform: translateY(-3px) !important;
+}
+
+:where(.is-active, .is-selected, [aria-pressed="true"], [aria-selected="true"]) {
+  border-color: var(--color-border-strong);
+}
+
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-ghost,
+.tour-pro-btn-primary,
+.tour-pro-btn-secondary,
+.home-hero-btn-primary,
+.home-hero-btn-secondary,
+.uh-journeys-btn-primary,
+.uh-journeys-btn-secondary,
+.uh-journeys-link-btn,
+.uh-travel-btn-primary,
+.uh-travel-btn-secondary,
+.uh-package-preview-btn,
+.cta-btn,
+.cta-secondary,
+.contact-pro-btn-primary,
+.contact-pro-btn-secondary,
+.contact-pro-submit-btn,
+.festival-calendar-redesign-btn-primary,
+.festival-calendar-redesign-btn-secondary,
+.about-pro-btn-primary,
+.about-pro-btn-secondary,
+.about-bhutan-btn-primary,
+.about-bhutan-btn-secondary,
+.besttime-btn-primary,
+.besttime-btn-secondary,
+.currency-btn-primary,
+.currency-btn-secondary,
+.documents-btn-primary,
+.documents-btn-secondary,
+.gnh-pro-btn-primary,
+.gnh-pro-btn-secondary,
+.legal-pro-btn-primary,
+.seasons-pro-btn-primary,
+.seasons-pro-btn-secondary,
+.whyvisit-pro-btn-primary,
+.whyvisit-pro-btn-secondary,
+.trekking-trek-btn-primary,
+.trekking-trek-btn-secondary,
+.trekking-cta-btn-primary,
+.trekking-cta-btn-secondary,
+.site-footer-contact-btn,
+.uh-hb-view-trip-btn {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 12px 22px;
+  border-radius: var(--radius-sm) !important;
+  font-family: var(--font-body) !important;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-decoration: none;
+  text-transform: none;
+  transition:
+    transform var(--motion-standard),
+    border-color var(--motion-standard),
+    background var(--motion-standard),
+    color var(--motion-standard) !important;
+}
+
+.btn-primary,
+.tour-pro-btn-primary,
+.home-hero-btn-primary,
+.uh-journeys-btn-primary,
+.uh-journeys-link-btn,
+.uh-travel-btn-primary,
+.uh-package-preview-btn,
+.cta-btn,
+.contact-pro-btn-primary,
+.contact-pro-submit-btn,
+.festival-calendar-redesign-btn-primary,
+.about-pro-btn-primary,
+.about-bhutan-btn-primary,
+.besttime-btn-primary,
+.currency-btn-primary,
+.documents-btn-primary,
+.gnh-pro-btn-primary,
+.legal-pro-btn-primary,
+.seasons-pro-btn-primary,
+.whyvisit-pro-btn-primary,
+.trekking-trek-btn-primary,
+.trekking-cta-btn-primary,
+.uh-hb-view-trip-btn {
+  border: 1px solid var(--color-accent) !important;
+  background: var(--color-accent) !important;
+  color: var(--color-bg-page) !important;
+  box-shadow: var(--shadow-none) !important;
+}
+
+.btn-primary:hover,
+.tour-pro-btn-primary:hover,
+.home-hero-btn-primary:hover,
+.uh-journeys-btn-primary:hover,
+.uh-journeys-link-btn:hover,
+.uh-travel-btn-primary:hover,
+.uh-package-preview-btn:hover,
+.cta-btn:hover,
+.contact-pro-btn-primary:hover,
+.contact-pro-submit-btn:hover,
+.festival-calendar-redesign-btn-primary:hover,
+.about-pro-btn-primary:hover,
+.about-bhutan-btn-primary:hover,
+.besttime-btn-primary:hover,
+.currency-btn-primary:hover,
+.documents-btn-primary:hover,
+.gnh-pro-btn-primary:hover,
+.legal-pro-btn-primary:hover,
+.seasons-pro-btn-primary:hover,
+.whyvisit-pro-btn-primary:hover,
+.trekking-trek-btn-primary:hover,
+.trekking-cta-btn-primary:hover,
+.uh-hb-view-trip-btn:hover {
+  border-color: var(--color-accent-light) !important;
+  background: var(--color-accent-light) !important;
+  color: var(--color-bg-page) !important;
+  transform: translateY(-2px);
+}
+
+.btn-secondary,
+.tour-pro-btn-secondary,
+.home-hero-btn-secondary,
+.uh-journeys-btn-secondary,
+.uh-travel-btn-secondary,
+.cta-secondary,
+.contact-pro-btn-secondary,
+.festival-calendar-redesign-btn-secondary,
+.about-pro-btn-secondary,
+.about-bhutan-btn-secondary,
+.besttime-btn-secondary,
+.currency-btn-secondary,
+.documents-btn-secondary,
+.gnh-pro-btn-secondary,
+.seasons-pro-btn-secondary,
+.whyvisit-pro-btn-secondary,
+.trekking-trek-btn-secondary,
+.trekking-cta-btn-secondary,
+.site-footer-contact-btn {
+  border: 1px solid var(--color-border-strong) !important;
+  background: transparent !important;
+  color: var(--color-accent-light) !important;
+  box-shadow: var(--shadow-none) !important;
+}
+
+.btn-secondary:hover,
+.tour-pro-btn-secondary:hover,
+.home-hero-btn-secondary:hover,
+.uh-journeys-btn-secondary:hover,
+.uh-travel-btn-secondary:hover,
+.cta-secondary:hover,
+.contact-pro-btn-secondary:hover,
+.festival-calendar-redesign-btn-secondary:hover,
+.about-pro-btn-secondary:hover,
+.about-bhutan-btn-secondary:hover,
+.besttime-btn-secondary:hover,
+.currency-btn-secondary:hover,
+.documents-btn-secondary:hover,
+.gnh-pro-btn-secondary:hover,
+.seasons-pro-btn-secondary:hover,
+.whyvisit-pro-btn-secondary:hover,
+.trekking-trek-btn-secondary:hover,
+.trekking-cta-btn-secondary:hover,
+.site-footer-contact-btn:hover {
+  border-color: var(--color-accent-light) !important;
+  background: var(--color-accent-wash) !important;
+  color: var(--color-text-primary) !important;
+  transform: translateY(-2px);
+}
+
+.btn-ghost,
+.tour-pro-inline-link,
+.contact-pro-inline-link,
+.documents-inline-link {
+  color: var(--color-accent-light) !important;
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+.badge,
+.pill,
+.uh-package-tag,
+.uh-hb-tag-row span,
+.cultural-pro-route-tags span,
+.tour-pro-eyebrow,
+.contact-pro-eyebrow,
+.festival-calendar-redesign-eyebrow {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-round) !important;
+  background: var(--color-accent-wash) !important;
+  color: var(--color-accent-light) !important;
+  font-family: var(--font-body) !important;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+:where(
+  .feature-icon,
+  .bottom-icon,
+  .uh-travel-step-icon,
+  .tour-pro-feature-icon,
+  .tour-pro-step-number,
+  .cultural-pro-route-number,
+  .uh-hb-day-badge,
+  .site-footer-certificate-badge,
+  .contact-pro-card-icon,
+  .about-pro-text-icon,
+  .festival-month-count
+) {
+  border-color: var(--color-border) !important;
+  background: var(--color-accent-wash) !important;
+  color: var(--color-accent-light) !important;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-card) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-muted) !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
+}
+
+.site-header,
+.navbar,
+.top-bar,
+.mobile-menu {
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-primary) !important;
+  border-color: var(--color-divider) !important;
+  box-shadow: none !important;
+}
+
+.top-bar {
+  border-bottom: 1px solid var(--color-divider) !important;
+}
+
+.top-bar-text,
+.dropdown-btn,
+.nav-link,
+.mobile-dropdown-btn,
+.mobile-nav-link,
+.mobile-submenu-item-title {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-body) !important;
+}
+
+.dropdown-item-description,
+.mobile-submenu-item-description,
+.top-bar-text span {
+  color: var(--color-text-secondary) !important;
+}
+
+.dropdown-menu,
+.mobile-submenu-inner {
+  border-color: var(--color-border) !important;
+  background: var(--color-bg-card) !important;
+  box-shadow: var(--shadow-subtle) !important;
+}
+
+.dropdown-item,
+.mobile-submenu-item {
+  border-radius: var(--radius-sm) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.dropdown-item:hover,
+.mobile-submenu-item:hover {
+  background: var(--color-accent-wash) !important;
+}
+
+.desktop-social-icon,
+.mobile-social-icon,
+.language-selector,
+.bst-clock {
+  border-color: var(--color-border) !important;
+  background: var(--color-bg-card) !important;
+  color: var(--color-accent-light) !important;
+}
+
+.home-hero,
+.tour-pro-hero,
+.contact-pro-hero,
+.festival-calendar-redesign-hero,
+.about-pro-hero,
+.about-bhutan-hero,
+.besttime-hero,
+.currency-hero,
+.documents-hero,
+.facts-redesign-hero,
+.gnh-pro-hero,
+.seasons-pro-hero,
+.whyvisit-pro-hero,
+.places-hero,
+.legal-pro-hero,
+.trekking-hero,
+.upcoming-events-page {
+  background-color: var(--color-bg-page) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.home-hero h1,
+.tour-pro-hero h1,
+.contact-pro-hero-title,
+.festival-calendar-redesign-hero h1,
+.about-pro-hero h1,
+.about-bhutan-hero h1,
+.besttime-hero h1,
+.currency-hero h1,
+.documents-hero h1,
+.facts-redesign-hero h1,
+.gnh-pro-hero h1,
+.seasons-pro-hero h1,
+.whyvisit-pro-hero h1,
+.places-hero h1,
+.legal-pro-hero h1,
+.trekking-hero h1 {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-display) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  text-wrap: balance;
+}
+
+.home-hero p,
+.tour-pro-hero p,
+.contact-pro-hero-description,
+.festival-calendar-redesign-hero p,
+.about-pro-hero p,
+.about-bhutan-hero p,
+.besttime-hero p,
+.currency-hero p,
+.documents-hero p,
+.facts-redesign-hero p,
+.gnh-pro-hero p,
+.seasons-pro-hero p,
+.whyvisit-pro-hero p,
+.places-hero p,
+.legal-pro-hero p,
+.trekking-hero p {
+  color: var(--color-text-secondary) !important;
+  font-family: var(--font-body) !important;
+  line-height: 1.75 !important;
+}
+
+.tour-pro-image-frame,
+.uh-destination-preview,
+.uh-package-card-image,
+.uh-hb-package-image .tour-pro-image-frame,
+.uh-hb-detail-image .tour-pro-image-frame,
+.uh-hb-more-image .tour-pro-image-frame {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-elevated) !important;
+  overflow: hidden;
+}
+
+.tour-pro-image,
+.uh-journey-image,
+.uh-package-card-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.upcoming-events-page {
+  --event-gold: var(--color-accent);
+  --event-gold-soft: var(--color-accent-light);
+  --event-line: var(--color-border);
+  --event-card: var(--color-bg-card);
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.upcoming-events-poster {
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.upcoming-events-poster-section {
+  padding-block: clamp(3.5rem, 7vw, 6.5rem) !important;
+}
+
+.upcoming-events-panel-title h2,
+.upcoming-events-tier-card h2,
+.upcoming-events-detail-itinerary h3,
+.upcoming-events-detail-list h3,
+.upcoming-events-ready-panel > span,
+.upcoming-events-poster-footer strong,
+.upcoming-events-poster-footer nav strong {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-display) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.upcoming-events-panel-title h2 {
+  font-size: clamp(2.25rem, 4vw, 3.9rem) !important;
+  line-height: 1.02 !important;
+  text-wrap: balance;
+}
+
+.upcoming-events-panel-title h2 small,
+.upcoming-events-poster-meta span,
+.upcoming-events-tier-price-note,
+.upcoming-events-ready-panel > small,
+.upcoming-events-poster-footer span,
+.upcoming-events-poster-footer a,
+.upcoming-events-trust-strip p,
+.upcoming-events-tier-card li,
+.upcoming-events-icon-item span,
+.upcoming-events-sample-card p,
+.upcoming-events-detail-itinerary li,
+.upcoming-events-detail-list li {
+  color: var(--color-text-secondary) !important;
+  font-family: var(--font-body) !important;
+  line-height: 1.65 !important;
+}
+
+.upcoming-events-panel-title > span {
+  background: linear-gradient(90deg, transparent, var(--color-divider), transparent) !important;
+}
+
+.upcoming-events-gold-btn,
+.upcoming-events-tier-card a,
+.upcoming-events-footer-cta,
+.upcoming-events-poster-footer .upcoming-events-footer-cta {
+  border: 1px solid var(--color-accent) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-accent) !important;
+  color: var(--color-bg-page) !important;
+  box-shadow: none !important;
+  transition: transform var(--motion-fast), border-color var(--motion-fast), background var(--motion-fast), color var(--motion-fast) !important;
+}
+
+.upcoming-events-outline-btn,
+.upcoming-events-call-link {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: transparent !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+  transition: transform var(--motion-fast), border-color var(--motion-fast), background var(--motion-fast), color var(--motion-fast) !important;
+}
+
+.upcoming-events-gold-btn:hover,
+.upcoming-events-gold-btn:focus-visible,
+.upcoming-events-outline-btn:hover,
+.upcoming-events-outline-btn:focus-visible,
+.upcoming-events-tier-card a:hover,
+.upcoming-events-tier-card a:focus-visible,
+.upcoming-events-call-link:hover,
+.upcoming-events-call-link:focus-visible,
+.upcoming-events-footer-cta:hover,
+.upcoming-events-footer-cta:focus-visible,
+.upcoming-events-poster-footer .upcoming-events-footer-cta:hover,
+.upcoming-events-poster-footer .upcoming-events-footer-cta:focus-visible {
+  transform: translateY(-3px) !important;
+  border-color: var(--color-border-hover) !important;
+  background: var(--color-accent-wash) !important;
+  color: var(--color-accent-light) !important;
+  box-shadow: none !important;
+}
+
+.upcoming-events-gold-btn:hover,
+.upcoming-events-gold-btn:focus-visible,
+.upcoming-events-tier-card a:hover,
+.upcoming-events-tier-card a:focus-visible,
+.upcoming-events-footer-cta:hover,
+.upcoming-events-footer-cta:focus-visible,
+.upcoming-events-poster-footer .upcoming-events-footer-cta:hover,
+.upcoming-events-poster-footer .upcoming-events-footer-cta:focus-visible {
+  background: var(--color-accent-light) !important;
+  color: var(--color-bg-page) !important;
+}
+
+.upcoming-events-trust-strip {
+  border-color: var(--color-divider) !important;
+  background: var(--color-divider) !important;
+}
+
+.upcoming-events-trust-strip article,
+.upcoming-events-tier-card,
+.upcoming-events-sample-card,
+.upcoming-events-detail-itinerary article,
+.upcoming-events-detail-list,
+.upcoming-events-package-inclusions-panel,
+.upcoming-events-ready-panel,
+.upcoming-events-footer-event-card,
+.upcoming-events-icon-item {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-card) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+  transition: transform var(--motion-fast), border-color var(--motion-fast), background var(--motion-fast) !important;
+}
+
+.upcoming-events-tier-card:hover,
+.upcoming-events-sample-card:hover,
+.upcoming-events-detail-itinerary article:hover,
+.upcoming-events-detail-list:hover,
+.upcoming-events-package-inclusions-panel:hover,
+.upcoming-events-footer-event-card:hover,
+.upcoming-events-icon-item:hover {
+  transform: translateY(-3px) !important;
+  border-color: var(--color-border-hover) !important;
+  background: var(--color-bg-card-hover) !important;
+  box-shadow: none !important;
+}
+
+.upcoming-events-tier-card-featured,
+.upcoming-events-detail-list-red {
+  border-color: var(--color-border-strong) !important;
+  box-shadow: none !important;
+}
+
+.upcoming-events-tier-badge,
+.upcoming-events-sample-card > span,
+.upcoming-events-detail-itinerary article > span,
+.upcoming-events-red-label {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-xs) !important;
+  background: var(--color-accent-wash) !important;
+  color: var(--color-accent-light) !important;
+}
+
+.upcoming-events-poster-meta svg,
+.upcoming-events-trust-strip svg,
+.upcoming-events-tier-card li svg,
+.upcoming-events-icon-item svg,
+.upcoming-events-detail-itinerary li svg,
+.upcoming-events-detail-list li svg,
+.upcoming-events-poster-footer svg,
+.upcoming-events-call-link svg {
+  color: var(--color-accent) !important;
+}
+
+.upcoming-events-tier-card strong,
+.upcoming-events-sample-card h3 {
+  color: var(--color-accent-light) !important;
+}
+
+.upcoming-events-image-slot,
+.upcoming-events-footer-social a {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-elevated) !important;
+  box-shadow: none !important;
+}
+
+.upcoming-events-ready-panel,
+.upcoming-events-poster-footer {
+  border-color: var(--color-divider) !important;
+  background: var(--color-bg-page) !important;
+}
+
+.uh-whychoose-indicator {
+  min-width: 32px !important;
+  min-height: 32px !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: var(--color-accent) !important;
+  box-shadow: none !important;
+}
+
+.uh-whychoose-indicator::before {
+  content: "";
+  width: 32px;
+  height: 7px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-round);
+  background: var(--color-border);
+  transition: width var(--motion-fast), border-color var(--motion-fast), background var(--motion-fast);
+}
+
+.uh-whychoose-indicator[aria-pressed="true"]::before,
+.uh-whychoose-indicator:hover::before,
+.uh-whychoose-indicator:focus-visible::before {
+  width: 40px;
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+}
+
+.site-footer,
+.site-footer-main,
+.cta-contact-section {
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-primary) !important;
+  border-color: var(--color-divider) !important;
+}
+
+.site-footer p,
+.site-footer li,
+.site-footer span {
+  color: var(--color-text-secondary) !important;
+}
+
+.site-footer h2,
+.site-footer h3 {
+  color: var(--color-text-primary) !important;
+}
+
+.site-footer a {
+  color: var(--color-text-secondary) !important;
+}
+
+.site-footer a:hover {
+  color: var(--color-accent-light) !important;
+}
+
+.ai-chatbot,
+.floating-whatsapp-cta {
+  z-index: 1300 !important;
+}
+
+.ai-chatbot-panel,
+.ai-chatbot.is-open .ai-chatbot-panel {
+  z-index: 1310 !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-md) !important;
+  background: var(--color-bg-elevated) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: var(--shadow-subtle) !important;
+}
+
+.ai-chatbot-toggle,
+.ai-chatbot-form button[type="submit"] {
+  border-color: var(--color-accent) !important;
+  background: var(--color-accent) !important;
+  color: var(--color-bg-page) !important;
+}
+
+.floating-whatsapp-cta {
+  /* WhatsApp keeps brand green for recognition; all sizing/radius/stacks still use system rules. */
+  border-radius: var(--radius-sm) !important;
+  color: var(--color-bg-page) !important;
+}
+
+.floating-whatsapp-cta:hover,
+.floating-whatsapp-cta:focus-visible {
+  color: var(--color-text-primary) !important;
+}
+
+.ai-chatbot-header,
+.ai-chatbot-form,
+.ai-chatbot-message-body p,
+.ai-chatbot-prompts button,
+.ai-chatbot-footer button {
+  border-color: var(--color-border) !important;
+  background: var(--color-bg-card) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+/* Central legacy normalizer: these public pages still have specific route
+   selectors in globals.css, so the design-system import owns the final values. */
+.about-bhutan-page,
+.about-bhutan-section,
+.about-bhutan-section-white,
+.about-bhutan-section-warm,
+.about-bhutan-section-gallery,
+.about-bhutan-section-split,
+.faq-page,
+.faq-main,
+.contact-pro-section,
+.contact-pro-section-white,
+.contact-pro-section-warm,
+.uh-package-showcase-section,
+.uh-hb-detail-page-section {
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-secondary) !important;
+}
+
+.about-bhutan-section-head,
+.faq-section-header,
+.faq-sidebar-header,
+.contact-pro-cta-card,
+.uh-hb-detail-heading {
+  color: var(--color-text-secondary) !important;
+}
+
+.about-bhutan-label,
+.about-bhutan-label-left,
+.section-eyebrow,
+.tour-pro-eyebrow,
+.contact-pro-eyebrow,
+.festival-calendar-redesign-eyebrow,
+.faq-eyebrow,
+.faq-section-header > div > p,
+.faq-sidebar-help h3,
+.contact-pro-card-kicker,
+.contact-pro-cta-kicker,
+.uh-hb-page-title > span,
+.uh-hb-detail-heading span {
+  color: var(--color-accent-light) !important;
+}
+
+.about-bhutan-label,
+.section-eyebrow,
+.tour-pro-eyebrow,
+.contact-pro-eyebrow,
+.festival-calendar-redesign-eyebrow,
+.faq-eyebrow,
+.contact-pro-card-kicker,
+.contact-pro-cta-kicker,
+.uh-hb-page-title > span {
+  border: 0 !important;
+  border-radius: var(--radius-none) !important;
+  background: transparent !important;
+  box-shadow: var(--shadow-none) !important;
+  font-family: var(--font-script) !important;
+  font-size: clamp(1.9rem, 3vw, 2.75rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  text-transform: none !important;
+}
+
+.about-bhutan-section-head h2,
+.faq-hero-title,
+.faq-section-header h2,
+.faq-sidebar-header h2,
+.contact-pro-hero-card h2,
+.contact-pro-cta-card h2,
+.uh-hb-page-title h1,
+.uh-hb-detail-heading h2,
+.uh-hb-detail-heading h3 {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-display) !important;
+  font-size: clamp(2.5rem, 4.5vw, 4.4rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  line-height: 1 !important;
+  text-transform: none !important;
+}
+
+.about-bhutan-section-head p,
+.faq-section-header p,
+.faq-sidebar-help p,
+.contact-pro-hero-card p,
+.contact-pro-cta-card p,
+.uh-hb-detail-heading p,
+.uh-hb-day-card li {
+  color: var(--color-text-secondary) !important;
+  font-family: var(--font-body) !important;
+  font-size: clamp(0.95rem, 1.3vw, 1.125rem) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.72 !important;
+  text-transform: none !important;
+}
+
+.about-bhutan-image,
+.about-bhutan-stat-card,
+.about-bhutan-overview-card,
+.about-bhutan-feature-row,
+.about-bhutan-region-card,
+.about-bhutan-detail-card,
+.about-bhutan-food-card,
+.about-bhutan-gallery-card,
+.about-bhutan-timeline-card,
+.about-bhutan-flag-card,
+.about-bhutan-altitude-note,
+.faq-sidebar-card,
+.faq-sidebar-help,
+.faq-item,
+.contact-pro-hero-card,
+.uh-hb-day-card,
+.uh-hb-fact-grid > div {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-card) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: var(--shadow-none) !important;
+}
+
+.uh-hb-day-card {
+  padding: clamp(18px, 2.5vw, 26px) !important;
+}
+
+.uh-hb-day-card h4,
+.uh-hb-detail-heading h2,
+.uh-hb-fact-grid strong {
+  color: var(--color-text-primary) !important;
+  font-family: var(--font-display) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+}
+
+.faq-sidebar-help a,
+.contact-pro-hero-card-link {
+  display: inline-flex !important;
+  min-height: 46px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: var(--space-2) !important;
+  padding: 12px 22px !important;
+  border: 1px solid var(--color-accent) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-accent) !important;
+  color: var(--color-bg-page) !important;
+  box-shadow: var(--shadow-none) !important;
+  font-family: var(--font-body) !important;
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  text-transform: none !important;
+}
+
+.faq-sidebar-help a:hover,
+.contact-pro-hero-card-link:hover {
+  border-color: var(--color-accent-light) !important;
+  background: var(--color-accent-light) !important;
+  color: var(--color-bg-page) !important;
+  transform: translateY(-2px) !important;
+}
+
+.uh-hb-detail-cta {
+  margin-top: var(--space-5) !important;
+}
+
+/* Dark-surface text contrast contract. These selectors describe semantic
+   component roles so legacy near-black aliases cannot leak onto dark cards. */
+:where(
+  .feature-card,
+  .bottom-card,
+  .stat-card,
+  .info-card,
+  .destination-card,
+  .journey-card,
+  .uh-destination-preview,
+  .uh-package-card,
+  .uh-travel-step-card,
+  .tour-pro-card,
+  .tour-pro-stat-card,
+  .tour-pro-feature-card,
+  .tour-pro-image-card,
+  .tour-pro-mini-card,
+  .tour-pro-route-card,
+  .tour-pro-tab-card,
+  .tour-pro-addon-card,
+  .tour-pro-hero-card,
+  .tour-pro-active-card,
+  .tour-pro-itinerary-preview,
+  .tour-pro-builder-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .uh-hb-more-card,
+  .cultural-value-card-clean,
+  .cultural-pro-route-option,
+  .cultural-pro-route-panel,
+  .cultural-pro-route-note,
+  .cultural-pro-route-facts > div,
+  .cultural-pro-day-item,
+  .uh-festival-library-redesign-shell,
+  .uh-festival-library-redesign-topbar,
+  .uh-festival-library-redesign-route-card,
+  .uh-festival-library-redesign-panel,
+  .uh-festival-anchor-card,
+  .festival-calendar-redesign-hero-card,
+  .festival-calendar-redesign-feature-panel,
+  .festival-calendar-redesign-feature-event,
+  .festival-calendar-redesign-month-card,
+  .festival-event-card,
+  .contact-pro-card,
+  .contact-pro-form-card,
+  .contact-pro-side-card,
+  .contact-pro-cta-card,
+  .about-pro-assurance-card,
+  .about-pro-difference-card,
+  .about-bhutan-stat-card,
+  .about-bhutan-overview-card,
+  .about-bhutan-feature-row,
+  .about-bhutan-region-card,
+  .about-bhutan-detail-card,
+  .about-bhutan-food-card,
+  .about-bhutan-gallery-card,
+  .about-bhutan-timeline-card,
+  .about-bhutan-flag-card,
+  .about-bhutan-altitude-note,
+  .besttime-card,
+  .currency-card,
+  .currency-info-card,
+  .documents-card,
+  .faq-card,
+  .faq-sidebar-card,
+  .faq-sidebar-help,
+  .faq-item,
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-feature-card,
+  .facts-redesign-gallery-card,
+  .facts-redesign-airport-card,
+  .facts-redesign-dark-card,
+  .facts-redesign-timeline-item,
+  .facts-redesign-food-item,
+  .facts-redesign-philosophy-tab,
+  .facts-redesign-philosophy-panel,
+  .uh-bhutan-custom-card,
+  .gnh-pro-card,
+  .gnh-pro-pillar-card,
+  .gnh-pro-domain-card,
+  .gnh-pro-initiative-card,
+  .legal-pro-card,
+  .legal-document-card,
+  .seasons-pro-card,
+  .whyvisit-pro-card,
+  .places-card,
+  .places-destination-nav a,
+  .places-destination-bottom,
+  .sdf-info-card,
+  .trekking-trek-card,
+  .trekking-included-card,
+  .trekking-info-card,
+  .uh-optional-step-card,
+  .uh-addon-category-button,
+  .uh-addon-experience-card,
+  .uh-optional-route-card
+) :is(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .card-title,
+  .feature-title,
+  .destination-title,
+  .info-card-title,
+  .section-title,
+  .tour-pro-card-title,
+  .uh-package-card-title,
+  .mobile-submenu-item-title,
+  strong,
+  b,
+  th,
+  summary,
+  .faq-question span
+) {
+  color: var(--color-text-primary) !important;
+}
+
+:where(
+  .feature-card,
+  .bottom-card,
+  .info-card,
+  .destination-card,
+  .journey-card,
+  .uh-destination-preview,
+  .uh-package-card,
+  .uh-travel-step-card,
+  .tour-pro-card,
+  .tour-pro-feature-card,
+  .tour-pro-image-card,
+  .tour-pro-mini-card,
+  .tour-pro-route-card,
+  .tour-pro-tab-card,
+  .tour-pro-addon-card,
+  .tour-pro-hero-card,
+  .tour-pro-active-card,
+  .tour-pro-itinerary-preview,
+  .tour-pro-builder-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .uh-hb-more-card,
+  .cultural-value-card-clean,
+  .cultural-pro-route-option,
+  .cultural-pro-route-panel,
+  .cultural-pro-route-note,
+  .cultural-pro-day-item,
+  .uh-festival-library-redesign-route-card,
+  .uh-festival-library-redesign-panel,
+  .uh-festival-anchor-card,
+  .festival-calendar-redesign-feature-panel,
+  .festival-calendar-redesign-feature-event,
+  .festival-calendar-redesign-month-card,
+  .festival-event-card,
+  .contact-pro-card,
+  .contact-pro-form-card,
+  .contact-pro-side-card,
+  .contact-pro-cta-card,
+  .about-pro-assurance-card,
+  .about-pro-difference-card,
+  .about-bhutan-stat-card,
+  .about-bhutan-overview-card,
+  .about-bhutan-feature-row,
+  .about-bhutan-region-card,
+  .about-bhutan-detail-card,
+  .about-bhutan-food-card,
+  .about-bhutan-gallery-card,
+  .about-bhutan-timeline-card,
+  .about-bhutan-flag-card,
+  .about-bhutan-altitude-note,
+  .besttime-card,
+  .currency-card,
+  .currency-info-card,
+  .documents-card,
+  .faq-card,
+  .faq-sidebar-card,
+  .faq-sidebar-help,
+  .faq-item,
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-feature-card,
+  .facts-redesign-gallery-card,
+  .facts-redesign-airport-card,
+  .facts-redesign-dark-card,
+  .facts-redesign-timeline-item,
+  .facts-redesign-food-item,
+  .facts-redesign-philosophy-tab,
+  .facts-redesign-philosophy-panel,
+  .uh-bhutan-custom-card,
+  .gnh-pro-card,
+  .gnh-pro-pillar-card,
+  .gnh-pro-domain-card,
+  .gnh-pro-initiative-card,
+  .legal-pro-card,
+  .legal-document-card,
+  .seasons-pro-card,
+  .whyvisit-pro-card,
+  .places-card,
+  .places-destination-nav a,
+  .places-destination-bottom,
+  .sdf-info-card,
+  .trekking-trek-card,
+  .trekking-included-card,
+  .trekking-info-card,
+  .uh-optional-step-card,
+  .uh-addon-category-button,
+  .uh-addon-experience-card,
+  .uh-optional-route-card
+) :is(
+  p,
+  li,
+  td,
+  .card-description,
+  .feature-description,
+  .destination-description,
+  .info-card-description,
+  .tour-pro-card-description,
+  .uh-package-card-description,
+  .faq-answer,
+  .faq-answer p
+) {
+  color: var(--color-text-secondary) !important;
+}
+
+:where(
+  .feature-card,
+  .bottom-card,
+  .stat-card,
+  .info-card,
+  .destination-card,
+  .journey-card,
+  .uh-package-card,
+  .tour-pro-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .uh-hb-more-card,
+  .festival-event-card,
+  .contact-pro-card,
+  .about-bhutan-stat-card,
+  .about-bhutan-timeline-card,
+  .faq-card,
+  .faq-sidebar-card,
+  .faq-item,
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-card,
+  .facts-redesign-timeline-item,
+  .facts-redesign-philosophy-tab,
+  .uh-bhutan-custom-card,
+  .places-card,
+  .sdf-info-card
+) :is(small, .meta, .metadata, .date, .duration, .price-note) {
+  color: var(--color-text-muted) !important;
+}
+
+:where(
+  .feature-card,
+  .bottom-card,
+  .info-card,
+  .destination-card,
+  .journey-card,
+  .uh-package-card,
+  .tour-pro-card,
+  .tour-pro-stat-card,
+  .uh-hb-package-card,
+  .uh-hb-detail-panel,
+  .festival-event-card,
+  .contact-pro-card,
+  .about-bhutan-stat-card,
+  .about-bhutan-overview-card,
+  .about-bhutan-detail-card,
+  .faq-card,
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-card,
+  .facts-redesign-philosophy-tab,
+  .uh-bhutan-custom-card,
+  .places-card,
+  .sdf-info-card
+) :is(
+  .label,
+  .eyebrow,
+  .kicker,
+  .section-eyebrow,
+  .tour-pro-eyebrow,
+  .contact-pro-eyebrow,
+  .faq-eyebrow,
+  .facts-redesign-card-kicker,
+  .facts-redesign-panel-kicker,
+  .contact-pro-card-kicker,
+  .contact-pro-cta-kicker
+) {
+  color: var(--color-accent) !important;
+}
+
+.facts-redesign-philosophy-tab,
+.facts-redesign-philosophy-tab.is-active,
+.facts-redesign-philosophy-tab:hover,
+.facts-redesign-philosophy-tab:focus-visible,
+.uh-hb-detail-thumb,
+.uh-hb-detail-thumb.is-active,
+.uh-hb-detail-thumb:hover,
+.uh-hb-detail-thumb:focus-visible {
+  color: var(--color-text-primary) !important;
+}
+
+.about-bhutan-timeline-card > span,
+.facts-redesign-philosophy-tab.is-active .facts-redesign-philosophy-number {
+  background: var(--color-accent) !important;
+  color: var(--color-bg-page) !important;
+}
+
+:where(
+  .btn-primary,
+  .tour-pro-btn-primary,
+  .home-hero-btn-primary,
+  .uh-journeys-btn-primary,
+  .uh-journeys-link-btn,
+  .uh-travel-btn-primary,
+  .uh-package-preview-btn,
+  .cta-btn,
+  .contact-pro-btn-primary,
+  .contact-pro-submit-btn,
+  .festival-calendar-redesign-btn-primary,
+  .about-pro-btn-primary,
+  .about-bhutan-btn-primary,
+  .besttime-btn-primary,
+  .currency-btn-primary,
+  .documents-btn-primary,
+  .gnh-pro-btn-primary,
+  .legal-pro-btn-primary,
+  .seasons-pro-btn-primary,
+  .whyvisit-pro-btn-primary,
+  .trekking-trek-btn-primary,
+  .trekking-cta-btn-primary,
+  .uh-hb-view-trip-btn,
+  .faq-sidebar-help a,
+  .contact-pro-hero-card-link,
+  .uh-hb-tab.is-active
+) :is(span, strong, small, svg),
+:where(
+  .btn-primary,
+  .tour-pro-btn-primary,
+  .home-hero-btn-primary,
+  .uh-journeys-btn-primary,
+  .uh-journeys-link-btn,
+  .uh-travel-btn-primary,
+  .uh-package-preview-btn,
+  .cta-btn,
+  .contact-pro-btn-primary,
+  .contact-pro-submit-btn,
+  .festival-calendar-redesign-btn-primary,
+  .about-pro-btn-primary,
+  .about-bhutan-btn-primary,
+  .besttime-btn-primary,
+  .currency-btn-primary,
+  .documents-btn-primary,
+  .gnh-pro-btn-primary,
+  .legal-pro-btn-primary,
+  .seasons-pro-btn-primary,
+  .whyvisit-pro-btn-primary,
+  .trekking-trek-btn-primary,
+  .trekking-cta-btn-primary,
+  .uh-hb-view-trip-btn,
+  .faq-sidebar-help a,
+  .contact-pro-hero-card-link,
+  .uh-hb-tab.is-active
+) {
+  color: var(--color-bg-page) !important;
+}
+
+@media (max-width: 560px) {
+  .floating-whatsapp-cta,
+  .ai-chatbot-toggle {
+    border-radius: var(--radius-sm) !important;
+  }
+}
+
+@media (max-width: 430px) {
+  h1,
+  .display-lg {
+    font-size: clamp(2.35rem, 13vw, 3.25rem) !important;
+    line-height: 1.02 !important;
+  }
+
+  h2,
+  .heading-2,
+  .ds-section-heading-title,
+  .tour-pro-section-heading h2,
+  .contact-pro-section-title,
+  .festival-calendar-redesign-section-heading h2 {
+    font-size: clamp(2.1rem, 11vw, 2.75rem) !important;
+    line-height: 1.05 !important;
+  }
+}

@@ -1,0 +1,793 @@
+[
+  {
+    "width": 1920,
+    "height": 1080,
+    "issues": [],
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "card": {
+        "top": 331.15625,
+        "right": 1840,
+        "bottom": 706.65625,
+        "left": 1340,
+        "width": 500,
+        "height": 375.5
+      },
+      "img": {
+        "top": 332.15625,
+        "right": 1839,
+        "bottom": 705.65625,
+        "left": 1341,
+        "width": 498,
+        "height": 373.5
+      },
+      "nav": {
+        "top": 0,
+        "right": 1920,
+        "bottom": 158,
+        "left": 0,
+        "width": 1920,
+        "height": 158
+      },
+      "hero": {
+        "top": 158,
+        "right": 1920,
+        "bottom": 1110,
+        "left": 0,
+        "width": 1920,
+        "height": 952
+      },
+      "h1": {
+        "top": 287.96875,
+        "right": 840,
+        "bottom": 443.515625,
+        "left": 80,
+        "width": 760,
+        "height": 155.546875
+      },
+      "buttons": {
+        "top": 784.015625,
+        "right": 840,
+        "bottom": 830.015625,
+        "left": 80,
+        "width": 760,
+        "height": 46
+      },
+      "trust": {
+        "top": 950.015625,
+        "right": 840,
+        "bottom": 988.015625,
+        "left": 80,
+        "width": 760,
+        "height": 38
+      },
+      "trustItems": [
+        {
+          "top": 950.015625,
+          "right": 295.359375,
+          "bottom": 988.015625,
+          "left": 80,
+          "width": 215.359375,
+          "height": 38
+        },
+        {
+          "top": 950.015625,
+          "right": 505.96875,
+          "bottom": 988.015625,
+          "left": 305.359375,
+          "width": 200.609375,
+          "height": 38
+        },
+        {
+          "top": 950.015625,
+          "right": 733.953125,
+          "bottom": 988.015625,
+          "left": 515.96875,
+          "width": 217.984375,
+          "height": 38
+        }
+      ],
+      "cardRatio": 1.3315579227696406,
+      "imgRatio": 1.3333333333333333,
+      "ratioDelta": 0.001775410563692681,
+      "imageRatioDelta": 0,
+      "cardStyle": {
+        "background": "rgb(19, 19, 19)",
+        "border": "1px solid rgba(201, 154, 74, 0.38)",
+        "borderRadius": "6px",
+        "boxShadow": "rgba(0, 0, 0, 0.3) 0px 18px 45px 0px"
+      },
+      "overlaps": {
+        "nav": false,
+        "h1": false,
+        "buttons": false,
+        "trust": false
+      },
+      "distances": {
+        "h1": 500,
+        "buttons": 506,
+        "trust": 556
+      },
+      "trustSingleLine": true
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1080,
+    "issues": [],
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "card": {
+        "top": 350.09375,
+        "right": 1360,
+        "bottom": 696.1875,
+        "left": 899.203125,
+        "width": 460.796875,
+        "height": 346.09375
+      },
+      "img": {
+        "top": 351.09375,
+        "right": 1359,
+        "bottom": 695.1875,
+        "left": 900.203125,
+        "width": 458.796875,
+        "height": 344.09375
+      },
+      "nav": {
+        "top": 0,
+        "right": 1440,
+        "bottom": 158,
+        "left": 0,
+        "width": 1440,
+        "height": 158
+      },
+      "hero": {
+        "top": 158,
+        "right": 1440,
+        "bottom": 1110,
+        "left": 0,
+        "width": 1440,
+        "height": 952
+      },
+      "h1": {
+        "top": 306.90625,
+        "right": 773.609375,
+        "bottom": 453.40625,
+        "left": 80,
+        "width": 693.609375,
+        "height": 146.5
+      },
+      "buttons": {
+        "top": 774.6875,
+        "right": 773.609375,
+        "bottom": 820.6875,
+        "left": 80,
+        "width": 693.609375,
+        "height": 46
+      },
+      "trust": {
+        "top": 931.078125,
+        "right": 773.609375,
+        "bottom": 969.078125,
+        "left": 80,
+        "width": 693.609375,
+        "height": 38
+      },
+      "trustItems": [
+        {
+          "top": 931.078125,
+          "right": 295.359375,
+          "bottom": 969.078125,
+          "left": 80,
+          "width": 215.359375,
+          "height": 38
+        },
+        {
+          "top": 931.078125,
+          "right": 505.96875,
+          "bottom": 969.078125,
+          "left": 305.359375,
+          "width": 200.609375,
+          "height": 38
+        },
+        {
+          "top": 931.078125,
+          "right": 733.953125,
+          "bottom": 969.078125,
+          "left": 515.96875,
+          "width": 217.984375,
+          "height": 38
+        }
+      ],
+      "cardRatio": 1.3314221218961626,
+      "imgRatio": 1.333348469712106,
+      "ratioDelta": 0.0019112114371706568,
+      "imageRatioDelta": 0.000015136378772817594,
+      "cardStyle": {
+        "background": "rgb(19, 19, 19)",
+        "border": "1px solid rgba(201, 154, 74, 0.38)",
+        "borderRadius": "6px",
+        "boxShadow": "rgba(0, 0, 0, 0.3) 0px 18px 45px 0px"
+      },
+      "overlaps": {
+        "nav": false,
+        "h1": false,
+        "buttons": false,
+        "trust": false
+      },
+      "distances": {
+        "h1": 126,
+        "buttons": 148,
+        "trust": 266
+      },
+      "trustSingleLine": true
+    }
+  },
+  {
+    "width": 1280,
+    "height": 1080,
+    "issues": [],
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "card": {
+        "top": 702.390625,
+        "right": 640,
+        "bottom": 1032.890625,
+        "left": 200,
+        "width": 440,
+        "height": 330.5
+      },
+      "img": {
+        "top": 703.390625,
+        "right": 639,
+        "bottom": 1031.890625,
+        "left": 201,
+        "width": 438,
+        "height": 328.5
+      },
+      "nav": {
+        "top": 0,
+        "right": 1280,
+        "bottom": 158,
+        "left": 0,
+        "width": 1280,
+        "height": 158
+      },
+      "hero": {
+        "top": 158,
+        "right": 1280,
+        "bottom": 1144.890625,
+        "left": 0,
+        "width": 1280,
+        "height": 986.890625
+      },
+      "h1": {
+        "top": 278,
+        "right": 760,
+        "bottom": 411.890625,
+        "left": 80,
+        "width": 680,
+        "height": 133.890625
+      },
+      "buttons": {
+        "top": 560.390625,
+        "right": 760,
+        "bottom": 606.390625,
+        "left": 80,
+        "width": 680,
+        "height": 46
+      },
+      "trust": {
+        "top": 630.390625,
+        "right": 760,
+        "bottom": 668.390625,
+        "left": 80,
+        "width": 680,
+        "height": 38
+      },
+      "trustItems": [
+        {
+          "top": 630.390625,
+          "right": 295.359375,
+          "bottom": 668.390625,
+          "left": 80,
+          "width": 215.359375,
+          "height": 38
+        },
+        {
+          "top": 630.390625,
+          "right": 505.96875,
+          "bottom": 668.390625,
+          "left": 305.359375,
+          "width": 200.609375,
+          "height": 38
+        },
+        {
+          "top": 630.390625,
+          "right": 733.953125,
+          "bottom": 668.390625,
+          "left": 515.96875,
+          "width": 217.984375,
+          "height": 38
+        }
+      ],
+      "cardRatio": 1.3313161875945536,
+      "imgRatio": 1.3333333333333333,
+      "ratioDelta": 0.0020171457387796465,
+      "imageRatioDelta": 0,
+      "cardStyle": {
+        "background": "rgb(19, 19, 19)",
+        "border": "1px solid rgba(201, 154, 74, 0.38)",
+        "borderRadius": "6px",
+        "boxShadow": "rgba(0, 0, 0, 0.3) 0px 18px 45px 0px"
+      },
+      "overlaps": {
+        "nav": false,
+        "h1": false,
+        "buttons": false,
+        "trust": false
+      },
+      "distances": {
+        "h1": 291,
+        "buttons": 96,
+        "trust": 34
+      },
+      "trustSingleLine": true
+    }
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "issues": [],
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "card": {
+        "top": 668.71875,
+        "right": 640,
+        "bottom": 999.21875,
+        "left": 200,
+        "width": 440,
+        "height": 330.5
+      },
+      "img": {
+        "top": 669.71875,
+        "right": 639,
+        "bottom": 998.21875,
+        "left": 201,
+        "width": 438,
+        "height": 328.5
+      },
+      "nav": {
+        "top": 0,
+        "right": 1024,
+        "bottom": 161.6875,
+        "left": 0,
+        "width": 1024,
+        "height": 161.6875
+      },
+      "hero": {
+        "top": 161.6875,
+        "right": 1024,
+        "bottom": 1091.375,
+        "left": 0,
+        "width": 1024,
+        "height": 929.6875
+      },
+      "h1": {
+        "top": 264.078125,
+        "right": 760,
+        "bottom": 378.21875,
+        "left": 80,
+        "width": 680,
+        "height": 114.140625
+      },
+      "buttons": {
+        "top": 526.71875,
+        "right": 760,
+        "bottom": 572.71875,
+        "left": 80,
+        "width": 680,
+        "height": 46
+      },
+      "trust": {
+        "top": 596.71875,
+        "right": 760,
+        "bottom": 634.71875,
+        "left": 80,
+        "width": 680,
+        "height": 38
+      },
+      "trustItems": [
+        {
+          "top": 596.71875,
+          "right": 295.359375,
+          "bottom": 634.71875,
+          "left": 80,
+          "width": 215.359375,
+          "height": 38
+        },
+        {
+          "top": 596.71875,
+          "right": 505.96875,
+          "bottom": 634.71875,
+          "left": 305.359375,
+          "width": 200.609375,
+          "height": 38
+        },
+        {
+          "top": 596.71875,
+          "right": 733.953125,
+          "bottom": 634.71875,
+          "left": 515.96875,
+          "width": 217.984375,
+          "height": 38
+        }
+      ],
+      "cardRatio": 1.3313161875945536,
+      "imgRatio": 1.3333333333333333,
+      "ratioDelta": 0.0020171457387796465,
+      "imageRatioDelta": 0,
+      "cardStyle": {
+        "background": "rgb(19, 19, 19)",
+        "border": "1px solid rgba(201, 154, 74, 0.38)",
+        "borderRadius": "6px",
+        "boxShadow": "rgba(0, 0, 0, 0.3) 0px 18px 45px 0px"
+      },
+      "overlaps": {
+        "nav": false,
+        "h1": false,
+        "buttons": false,
+        "trust": false
+      },
+      "distances": {
+        "h1": 291,
+        "buttons": 96,
+        "trust": 34
+      },
+      "trustSingleLine": true
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "issues": [],
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "card": {
+        "top": 677.109375,
+        "right": 604,
+        "bottom": 1007.609375,
+        "left": 164,
+        "width": 440,
+        "height": 330.5
+      },
+      "img": {
+        "top": 678.109375,
+        "right": 603,
+        "bottom": 1006.609375,
+        "left": 165,
+        "width": 438,
+        "height": 328.5
+      },
+      "nav": {
+        "top": 0,
+        "right": 768,
+        "bottom": 185.875,
+        "left": 0,
+        "width": 768,
+        "height": 185.875
+      },
+      "hero": {
+        "top": 185.875,
+        "right": 768,
+        "bottom": 1093.609375,
+        "left": 0,
+        "width": 768,
+        "height": 907.734375
+      },
+      "h1": {
+        "top": 265.875,
+        "right": 688,
+        "bottom": 373.828125,
+        "left": 80,
+        "width": 608,
+        "height": 107.953125
+      },
+      "buttons": {
+        "top": 522.328125,
+        "right": 688,
+        "bottom": 568.328125,
+        "left": 80,
+        "width": 608,
+        "height": 46
+      },
+      "trust": {
+        "top": 592.328125,
+        "right": 688,
+        "bottom": 643.109375,
+        "left": 80,
+        "width": 608,
+        "height": 50.78125
+      },
+      "trustItems": [
+        {
+          "top": 592.328125,
+          "right": 279.703125,
+          "bottom": 643.109375,
+          "left": 80,
+          "width": 199.703125,
+          "height": 50.78125
+        },
+        {
+          "top": 592.328125,
+          "right": 475.890625,
+          "bottom": 643.109375,
+          "left": 289.703125,
+          "width": 186.1875,
+          "height": 50.78125
+        },
+        {
+          "top": 592.328125,
+          "right": 688,
+          "bottom": 643.109375,
+          "left": 485.890625,
+          "width": 202.109375,
+          "height": 50.78125
+        }
+      ],
+      "cardRatio": 1.3313161875945536,
+      "imgRatio": 1.3333333333333333,
+      "ratioDelta": 0.0020171457387796465,
+      "imageRatioDelta": 0,
+      "cardStyle": {
+        "background": "rgb(19, 19, 19)",
+        "border": "1px solid rgba(201, 154, 74, 0.38)",
+        "borderRadius": "6px",
+        "boxShadow": "rgba(0, 0, 0, 0.3) 0px 18px 45px 0px"
+      },
+      "overlaps": {
+        "nav": false,
+        "h1": false,
+        "buttons": false,
+        "trust": false
+      },
+      "distances": {
+        "h1": 303,
+        "buttons": 109,
+        "trust": 34
+      },
+      "trustSingleLine": true
+    }
+  },
+  {
+    "width": 430,
+    "height": 844,
+    "issues": [],
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "card": {
+        "top": 845.90625,
+        "right": 412,
+        "bottom": 1141.90625,
+        "left": 18,
+        "width": 394,
+        "height": 296
+      },
+      "img": {
+        "top": 846.90625,
+        "right": 411,
+        "bottom": 1140.90625,
+        "left": 19,
+        "width": 392,
+        "height": 294
+      },
+      "nav": {
+        "top": 0,
+        "right": 430,
+        "bottom": 266.875,
+        "left": 0,
+        "width": 430,
+        "height": 266.875
+      },
+      "hero": {
+        "top": 266.875,
+        "right": 430,
+        "bottom": 1175.90625,
+        "left": 0,
+        "width": 430,
+        "height": 909.03125
+      },
+      "h1": {
+        "top": 290.875,
+        "right": 412,
+        "bottom": 450.734375,
+        "left": 18,
+        "width": 394,
+        "height": 159.859375
+      },
+      "buttons": {
+        "top": 616.734375,
+        "right": 412,
+        "bottom": 722.734375,
+        "left": 18,
+        "width": 394,
+        "height": 106
+      },
+      "trust": {
+        "top": 746.734375,
+        "right": 412,
+        "bottom": 811.90625,
+        "left": 18,
+        "width": 394,
+        "height": 65.171875
+      },
+      "trustItems": [
+        {
+          "top": 746.734375,
+          "right": 144.78125,
+          "bottom": 811.90625,
+          "left": 18,
+          "width": 126.78125,
+          "height": 65.171875
+        },
+        {
+          "top": 746.734375,
+          "right": 273.859375,
+          "bottom": 811.90625,
+          "left": 154.78125,
+          "width": 119.078125,
+          "height": 65.171875
+        },
+        {
+          "top": 746.734375,
+          "right": 412,
+          "bottom": 811.90625,
+          "left": 283.859375,
+          "width": 128.140625,
+          "height": 65.171875
+        }
+      ],
+      "cardRatio": 1.3310810810810811,
+      "imgRatio": 1.3333333333333333,
+      "ratioDelta": 0.0022522522522521182,
+      "imageRatioDelta": 0,
+      "cardStyle": {
+        "background": "rgb(19, 19, 19)",
+        "border": "1px solid rgba(201, 154, 74, 0.38)",
+        "borderRadius": "6px",
+        "boxShadow": "rgba(0, 0, 0, 0.3) 0px 18px 45px 0px"
+      },
+      "overlaps": {
+        "nav": false,
+        "h1": false,
+        "buttons": false,
+        "trust": false
+      },
+      "distances": {
+        "h1": 395,
+        "buttons": 123,
+        "trust": 34
+      },
+      "trustSingleLine": true
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "issues": [],
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "card": {
+        "top": 925.28125,
+        "right": 372,
+        "bottom": 1191.28125,
+        "left": 18,
+        "width": 354,
+        "height": 266
+      },
+      "img": {
+        "top": 926.28125,
+        "right": 371,
+        "bottom": 1190.28125,
+        "left": 19,
+        "width": 352,
+        "height": 264
+      },
+      "nav": {
+        "top": 0,
+        "right": 390,
+        "bottom": 282.8125,
+        "left": 0,
+        "width": 390,
+        "height": 282.8125
+      },
+      "hero": {
+        "top": 282.8125,
+        "right": 390,
+        "bottom": 1225.28125,
+        "left": 0,
+        "width": 390,
+        "height": 942.46875
+      },
+      "h1": {
+        "top": 306.8125,
+        "right": 372,
+        "bottom": 515.71875,
+        "left": 18,
+        "width": 354,
+        "height": 208.90625
+      },
+      "buttons": {
+        "top": 681.71875,
+        "right": 372,
+        "bottom": 787.71875,
+        "left": 18,
+        "width": 354,
+        "height": 106
+      },
+      "trust": {
+        "top": 811.71875,
+        "right": 372,
+        "bottom": 891.28125,
+        "left": 18,
+        "width": 354,
+        "height": 79.5625
+      },
+      "trustItems": [
+        {
+          "top": 811.71875,
+          "right": 131.359375,
+          "bottom": 891.28125,
+          "left": 18,
+          "width": 113.359375,
+          "height": 79.5625
+        },
+        {
+          "top": 811.71875,
+          "right": 247.78125,
+          "bottom": 891.28125,
+          "left": 141.359375,
+          "width": 106.421875,
+          "height": 79.5625
+        },
+        {
+          "top": 811.71875,
+          "right": 372,
+          "bottom": 891.28125,
+          "left": 257.78125,
+          "width": 114.21875,
+          "height": 79.5625
+        }
+      ],
+      "cardRatio": 1.330827067669173,
+      "imgRatio": 1.3333333333333333,
+      "ratioDelta": 0.0025062656641603454,
+      "imageRatioDelta": 0,
+      "cardStyle": {
+        "background": "rgb(19, 19, 19)",
+        "border": "1px solid rgba(201, 154, 74, 0.38)",
+        "borderRadius": "6px",
+        "boxShadow": "rgba(0, 0, 0, 0.3) 0px 18px 45px 0px"
+      },
+      "overlaps": {
+        "nav": false,
+        "h1": false,
+        "buttons": false,
+        "trust": false
+      },
+      "distances": {
+        "h1": 410,
+        "buttons": 138,
+        "trust": 34
+      },
+      "trustSingleLine": true
+    }
+  }
+]

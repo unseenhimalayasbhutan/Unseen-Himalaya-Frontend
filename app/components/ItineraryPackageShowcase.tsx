@@ -163,6 +163,12 @@ export function ItineraryPackageDetail({
           <span>{routeLabel}</span>
           <h1>{item.title}</h1>
           <p>{item.duration} · {item.route}</p>
+          <a
+            href={getWriteToUsHref(item.title, "custom")}
+            className="uh-hb-view-trip-btn uh-hb-detail-cta"
+          >
+            Plan This Trip
+          </a>
         </div>
 
         <div className="uh-hb-detail-shell">
@@ -245,7 +251,7 @@ function ItineraryTab({
     <>
       <div className="uh-hb-detail-heading">
         <span>{routeLabel}</span>
-        <h3>{item.title}</h3>
+        <h2>{item.title}</h2>
         <p>{item.summary}</p>
       </div>
 
@@ -320,7 +326,7 @@ function CostTab({
     <>
       <div className="uh-hb-detail-heading">
         <span>Cost and inclusions</span>
-        <h3>{item.title}</h3>
+        <h2>{item.title}</h2>
         {!showPrices ? (
           <p>Pricing for this package will be added after the rates are finalized.</p>
         ) : null}

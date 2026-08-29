@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import {
@@ -81,20 +82,32 @@ const bottomFeatures: FeatureItem[] = [
   },
 ];
 
+const guidebookImages = [
+  {
+    src: "/MarcusWestbergBhutanHiRes-38.jpg",
+    alt: "Bhutan mountain valley and monastery experience",
+  },
+  {
+    src: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
+    alt: "Phobjikha Valley hidden Bhutan landscape",
+  },
+];
+
 export function WhyChooseUs() {
   const [activeFeature, setActiveFeature] = useState(0);
+  const selectedFeature = features[activeFeature];
 
   return (
     <section className="why-section uh-whychoose-section">
       <div className="container">
         <div className="top-heading">
-          <div className="mini-text">WHY CHOOSE US</div>
+          <div className="mini-text section-eyebrow">WHY CHOOSE US</div>
 
-          <h2 className="main-title">
+          <h2 className="main-title section-title">
             A Kingdom That Values <span>What Matters</span>
           </h2>
 
-          <p className="description">
+          <p className="description section-description">
             Experience authentic Himalayan journeys crafted with sustainability,
             culture, comfort, and mindful travel at the heart of every adventure.
           </p>
@@ -109,6 +122,8 @@ export function WhyChooseUs() {
               type="radio"
               name="uh-whychoose-feature"
               checked={activeFeature === index}
+              aria-hidden="true"
+              tabIndex={-1}
               readOnly
             />
           ))}
@@ -118,17 +133,17 @@ export function WhyChooseUs() {
               <div className="showcase-badge">Unseen Himalayas Bhutan</div>
 
               <div className="uh-whychoose-preview-panels">
-                {features.map((feature, index) => (
-                  <article
-                    key={feature.title}
-                    className={`uh-whychoose-preview-panel uh-whychoose-preview-panel-${
-                      index + 1
-                    }`}
-                  >
-                    <h2>{feature.title}</h2>
-                    <p>{feature.text}</p>
-                  </article>
-                ))}
+                <article
+                  key={selectedFeature.title}
+                  id="uh-whychoose-preview"
+                  className={`uh-whychoose-preview-panel uh-whychoose-preview-panel-${
+                    activeFeature + 1
+                  } is-active`}
+                  aria-live="polite"
+                >
+                  <h2>{selectedFeature.title}</h2>
+                  <p>{selectedFeature.text}</p>
+                </article>
               </div>
 
               <div className="feature-indicators uh-whychoose-indicators">
@@ -141,6 +156,7 @@ export function WhyChooseUs() {
                     }`}
                     onClick={() => setActiveFeature(index)}
                     aria-pressed={activeFeature === index}
+                    aria-controls="uh-whychoose-preview"
                     aria-label={`Show ${feature.title}`}
                   />
                 ))}
@@ -157,13 +173,12 @@ export function WhyChooseUs() {
                   }`}
                   onClick={() => setActiveFeature(index)}
                   aria-pressed={activeFeature === index}
-                  aria-label={feature.title}
+                  aria-controls="uh-whychoose-preview"
                 >
                   <div className="feature-icon">
                     <feature.icon aria-hidden="true" />
                   </div>
                   <div className="feature-title">{feature.title}</div>
-                  <div className="feature-text">{feature.text}</div>
                 </button>
               ))}
             </div>
@@ -194,27 +209,49 @@ export function WhyChooseUs() {
           </Link>
         </div>
 
-        <div className="bottom-heading">
-          <h2>Travel Beyond the Guidebooks</h2>
-          <p>
-            Explore hidden stories, sacred valleys, meaningful encounters, and
-            unforgettable Himalayan adventures.
-          </p>
-        </div>
+        <div className="uh-guidebook-editorial">
+          <div className="bottom-heading">
+            <h2 className="section-title">Travel Beyond the Guidebooks</h2>
+            <p className="section-description">
+              Explore hidden stories, sacred valleys, meaningful encounters, and
+              unforgettable Himalayan adventures.
+            </p>
+          </div>
 
-        <div className="bottom-grid">
-          {bottomFeatures.map((feature) => (
-            <div key={feature.title} className="bottom-card">
-              <div className="bottom-icon">
-                <feature.icon aria-hidden="true" />
-              </div>
-
-              <div>
-                <div className="bottom-title">{feature.title}</div>
-                <div className="bottom-text">{feature.text}</div>
-              </div>
+          <div className="uh-guidebook-layout">
+            <div className="uh-guidebook-media" aria-hidden="true">
+              {guidebookImages.map((image, index) => (
+                <div
+                  key={image.src}
+                  className={`uh-guidebook-image uh-guidebook-image-${
+                    index + 1
+                  }`}
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes="(max-width: 960px) 100vw, 36vw"
+                  />
+                </div>
+              ))}
             </div>
-          ))}
+
+            <div className="bottom-grid">
+              {bottomFeatures.map((feature) => (
+                <div key={feature.title} className="bottom-card">
+                  <div className="bottom-icon">
+                    <feature.icon aria-hidden="true" />
+                  </div>
+
+                  <div>
+                    <div className="bottom-title">{feature.title}</div>
+                    <div className="bottom-text">{feature.text}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
