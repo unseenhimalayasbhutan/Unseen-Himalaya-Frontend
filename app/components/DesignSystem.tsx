@@ -7,9 +7,30 @@ import type {
 } from "react";
 
 type Align = "left" | "center";
+type EyebrowVariant = "editorial" | "utility";
+
+type EyebrowProps = HTMLAttributes<HTMLElement> & {
+  as?: ElementType;
+  variant?: EyebrowVariant;
+  children: ReactNode;
+};
+
+type PageHeroProps = HTMLAttributes<HTMLElement> & {
+  eyebrow?: ReactNode;
+  eyebrowVariant?: EyebrowVariant;
+  title: ReactNode;
+  description?: ReactNode;
+  actions?: ReactNode;
+  media?: ReactNode;
+  trust?: ReactNode;
+  align?: Align;
+  contentClassName?: string;
+  mediaClassName?: string;
+};
 
 type SectionHeadingProps = {
   eyebrow?: ReactNode;
+  eyebrowVariant?: EyebrowVariant;
   title: ReactNode;
   description?: ReactNode;
   align?: Align;
@@ -30,8 +51,64 @@ type ButtonLinkProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   children: ReactNode;
 };
 
+type ImageCreditProps = HTMLAttributes<HTMLElement> & {
+  href?: string;
+  overlay?: boolean;
+  children: ReactNode;
+};
+
+export function Eyebrow({
+  as: Component = "span",
+  variant = "editorial",
+  className = "",
+  children,
+  ...props
+}: EyebrowProps) {
+  return (
+    <Component
+      className={`ds-eyebrow ds-eyebrow-${variant} ${className}`.trim()}
+      {...props}
+    >
+      {children}
+    </Component>
+  );
+}
+
+export function PageHero({
+  eyebrow,
+  eyebrowVariant = "utility",
+  title,
+  description,
+  actions,
+  media,
+  trust,
+  align = "left",
+  className = "",
+  contentClassName = "",
+  mediaClassName = "",
+  children,
+  ...props
+}: PageHeroProps) {
+  return (
+    <section className={`page-hero page-hero-${align} ${className}`.trim()} {...props}>
+      <Container className="page-hero-grid">
+        <div className={`page-hero-content ${contentClassName}`.trim()}>
+          {eyebrow ? <Eyebrow variant={eyebrowVariant}>{eyebrow}</Eyebrow> : null}
+          <h1 className="page-hero-title">{title}</h1>
+          {description ? <p className="page-hero-description">{description}</p> : null}
+          {actions ? <div className="page-hero-actions">{actions}</div> : null}
+          {trust ? <div className="page-hero-trust">{trust}</div> : null}
+          {children}
+        </div>
+        {media ? <div className={`page-hero-media ${mediaClassName}`.trim()}>{media}</div> : null}
+      </Container>
+    </section>
+  );
+}
+
 export function SectionHeading({
   eyebrow,
+  eyebrowVariant = "editorial",
   title,
   description,
   align = "center",
@@ -47,7 +124,7 @@ export function SectionHeading({
       {eyebrow ? (
         <div className="ds-section-heading-eyebrow">
           {divider ? <span className="ds-divider" aria-hidden="true" /> : null}
-          <span>{eyebrow}</span>
+          <Eyebrow variant={eyebrowVariant}>{eyebrow}</Eyebrow>
           {divider ? <span className="ds-divider" aria-hidden="true" /> : null}
         </div>
       ) : null}
@@ -105,5 +182,28 @@ export function ButtonLink({
     <a className={`btn btn-${variant} btn-${size} ${className}`.trim()} href={href} {...props}>
       {children}
     </a>
+  );
+}
+
+export function ImageCredit({
+  href,
+  overlay = true,
+  className = "",
+  children,
+  ...props
+}: ImageCreditProps) {
+  return (
+    <figcaption
+      className={`image-credit ${overlay ? "image-credit-overlay" : "image-credit-below"} ${className}`.trim()}
+      {...props}
+    >
+      {href ? (
+        <a href={href} target="_blank" rel="noreferrer">
+          {children}
+        </a>
+      ) : (
+        children
+      )}
+    </figcaption>
   );
 }

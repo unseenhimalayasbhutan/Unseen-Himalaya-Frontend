@@ -210,15 +210,15 @@ export function WhyChooseUs() {
         </div>
 
         <div className="uh-guidebook-editorial">
-          <div className="bottom-heading">
-            <h2 className="section-title">Travel Beyond the Guidebooks</h2>
-            <p className="section-description">
-              Explore hidden stories, sacred valleys, meaningful encounters, and
-              unforgettable Himalayan adventures.
-            </p>
-          </div>
-
           <div className="uh-guidebook-layout">
+            <div className="bottom-heading">
+              <h2 className="section-title">Travel Beyond the Guidebooks</h2>
+              <p className="section-description">
+                Explore hidden stories, sacred valleys, meaningful encounters, and
+                unforgettable Himalayan adventures.
+              </p>
+            </div>
+
             <div className="uh-guidebook-media" aria-hidden="true">
               {guidebookImages.map((image, index) => (
                 <div

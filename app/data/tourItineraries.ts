@@ -132,8 +132,8 @@ export const itineraries: ItineraryRoute[] = [
     "summary": "For travelers with limited time who still want Thimphu highlights and Tiger’s Nest.",
     "bestFor": "Short-stay travelers",
     "image": {
-      "src": "",
-      "alt": "3-Day Paro & Thimphu Essentials image",
+      "src": "/Thimphu_2026_Web_Optimized_Images/Thimphu_2026_Website_Photo_Pack/Thimphu/01_Buddha_Dordenma.jpg",
+      "alt": "Buddha Dordenma overlooking Thimphu on a short Bhutan cultural tour",
       "label": "3-Day Paro & Thimphu Essentials Image",
       "copyrightName": "Unseen Himalayas Bhutan"
     },

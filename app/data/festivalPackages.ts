@@ -37,10 +37,10 @@ export const festivalPackages: FestivalPackage[] = [
       "Conservation Festival"
     ],
     "image": {
-      "src": "/Phobjikha-valley-by-Alicia-Warner-6.jpg",
-      "alt": "5-Day Black Necked Crane Festival Tour image",
+      "src": "/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Gangtey_Phobjikha/13_Black_Necked_Crane_Festival.jpg",
+      "alt": "Black Necked Crane Festival gathering at Gangtey Gonpa",
       "label": "5-Day Black Necked Crane Festival Tour Image",
-      "copyrightName": "Unseen Himalayas Bhutan"
+      "copyrightName": "Shruti D."
     },
     "days": [
       {
@@ -115,8 +115,8 @@ export const festivalPackages: FestivalPackage[] = [
       "Tiger's Nest"
     ],
     "image": {
-      "src": "/Phobjikha-valley-by-Alicia-Warner-34.jpg",
-      "alt": "7-Day Black Necked Crane Festival Tour image",
+      "src": "/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Gangtey_Phobjikha/12_Black_Necked_Cranes_Bhutan_2026.jpg",
+      "alt": "Black-necked cranes in Bhutan's Phobjikha Valley",
       "label": "7-Day Black Necked Crane Festival Tour Image",
       "copyrightName": "Unseen Himalayas Bhutan"
     },
@@ -469,8 +469,8 @@ export const festivalPackages: FestivalPackage[] = [
       "Phuntsholing"
     ],
     "image": {
-      "src": "/ChhukhaTshechu.jpg",
-      "alt": "7-Day Chhukha Tshechu Festival Tour image",
+      "src": "/Taktshang topdown  DOT AA Original Bhutan Travels.jpg",
+      "alt": "Tiger's Nest and Paro highlights on the 7-Day Chhukha Tshechu Festival Tour",
       "label": "7-Day Chhukha Tshechu Festival Tour Image",
       "copyrightName": "Unseen Himalayas Bhutan"
     },
@@ -716,8 +716,8 @@ export const festivalPackages: FestivalPackage[] = [
       "Tiger's Nest"
     ],
     "image": {
-      "src": "/Marcus Westberg Bumthang 202318.jpg",
-      "alt": "7-Day Jakar Tshechu Festival Tour with Domestic Flight image",
+      "src": "/air_paro.png",
+      "alt": "Paro airport approach for a domestic-flight festival tour",
       "label": "7-Day Jakar Tshechu Festival Tour with Domestic Flight Image",
       "copyrightName": "Unseen Himalayas Bhutan"
     },
@@ -926,8 +926,8 @@ export const festivalPackages: FestivalPackage[] = [
       "Trongsa"
     ],
     "image": {
-      "src": "/Marcus Westberg Bumthang 202318.jpg",
-      "alt": "9-Day Jambay Lhakhang Drup Festival Tour image",
+      "src": "/Thimphu Tshechu by Bassem Nimah65.jpg",
+      "alt": "Bhutanese masked dancers during a tshechu festival",
       "label": "9-Day Jambay Lhakhang Drup Festival Tour Image",
       "copyrightName": "Unseen Himalayas Bhutan"
     },

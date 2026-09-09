@@ -1,22 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import {
   ArrowRight,
   CheckCircle,
-  ChevronRight,
-  Clock,
-  Hash,
   MapPin,
-  Users,
 } from "lucide-react";
 
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import {
   TourImageSlot as ImageSlot,
-  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -27,28 +21,13 @@ import {
 import {
   itineraries as culturalRoutes,
 } from "../data/tourItineraries";
-import {
-  INTERNATIONAL_TRAVELER_PRICE_NOTE,
-  getB2cUsdPrice,
-} from "../data/tourPricing";
+import { getB2cUsdPrice } from "../data/tourPricing";
 import { sortPackages } from "../data/packageShowcases";
 
 type CulturalValue = {
   title: string;
   description: string;
 };
-
-function getItineraryIndexFromHash() {
-  if (typeof window === "undefined") return -1;
-
-  const hashSlug = window.location.hash
-    .replace(/^#/, "")
-    .replace(/^itinerary-/, "");
-
-  if (!hashSlug) return -1;
-
-  return culturalRoutes.findIndex((route) => route.slug === hashSlug);
-}
 
 const culturalShowcasePackages: PackageShowcaseItem[] = culturalRoutes.map(
   (route) => ({
@@ -72,23 +51,6 @@ const culturalShowcasePackages: PackageShowcaseItem[] = culturalRoutes.map(
 );
 
 export default function CulturalToursPage() {
-  const [activeRoute, setActiveRoute] = useState(0);
-
-  useEffect(() => {
-    const syncRouteWithHash = () => {
-      const nextIndex = getItineraryIndexFromHash();
-
-      if (nextIndex >= 0) {
-        setActiveRoute(nextIndex);
-      }
-    };
-
-    syncRouteWithHash();
-    window.addEventListener("hashchange", syncRouteWithHash);
-
-    return () => window.removeEventListener("hashchange", syncRouteWithHash);
-  }, []);
-
   return (
     <>
       <Header />
@@ -173,92 +135,6 @@ export default function CulturalToursPage() {
           detailBasePath="/cultural-tours"
         />
 
-        <section className="tour-pro-section tour-pro-section-warm uh-itinerary-section cultural-pro-itinerary-section">
-          <div className="container">
-            <SectionHeader
-              eyebrow="Relevant Cultural Itineraries"
-              title="Classic routes with strong cultural value."
-              subtitle="Select a route below to preview the route flow, highlights, inclusions, exclusions, and full day-by-day journey."
-            />
-
-            <div className="cultural-pro-route-shell">
-  <aside
-    className="cultural-pro-route-options"
-    aria-label="Relevant cultural itineraries"
-  >
-    {culturalRoutes.map((route, index) => {
-      const isActive = activeRoute === index;
-      const mobilePanelId = `mobile-itinerary-${route.slug}`;
-
-      return (
-        <div
-          key={route.slug}
-          className={`cultural-pro-route-option-group ${
-            isActive ? "is-open" : ""
-          }`}
-        >
-          <button
-            type="button"
-            className={`cultural-pro-route-option ${
-              isActive ? "is-active" : ""
-            }`}
-            onClick={() => {
-              setActiveRoute(index);
-
-              if (typeof window !== "undefined") {
-                window.history.replaceState(
-                  null,
-                  "",
-                  `#itinerary-${route.slug}`
-                );
-              }
-            }}
-            aria-expanded={isActive}
-            aria-controls={mobilePanelId}
-          >
-            <span className="cultural-pro-route-number">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-
-            <span className="cultural-pro-route-option-content">
-              <span>{route.duration}</span>
-              <strong>{route.name}</strong>
-              <small>{route.route}</small>
-            </span>
-
-            <ChevronRight aria-hidden="true" />
-          </button>
-
-          {isActive ? (
-            <div
-              id={mobilePanelId}
-              className="cultural-pro-route-mobile-panel"
-            >
-              <RoutePanel
-                key={`mobile-${route.slug}`}
-                route={route}
-                routeIndex={index}
-              />
-            </div>
-          ) : null}
-        </div>
-      );
-    })}
-  </aside>
-
-  <div className="cultural-pro-route-panel-list">
-    {culturalRoutes[activeRoute] ? (
-      <RoutePanel
-        key={culturalRoutes[activeRoute].slug}
-        route={culturalRoutes[activeRoute]}
-        routeIndex={activeRoute}
-      />
-    ) : null}
-  </div>
-</div>
-          </div>
-        </section>
-
         <section className="tour-pro-cta">
           <div className="container">
             <div className="tour-pro-cta-card">
@@ -284,128 +160,6 @@ export default function CulturalToursPage() {
 
       <Footer />
     </>
-  );
-}
-
-function RoutePanel({
-  route,
-  routeIndex,
-  panelId,
-}: {
-  route: (typeof culturalRoutes)[number];
-  routeIndex: number;
-  panelId?: string;
-}) {
-  return (
-    <article id={panelId ?? `itinerary-${route.slug}`} className="cultural-pro-route-panel">
-      <div className="cultural-pro-route-panel-grid">
-        <div className="cultural-pro-route-main">
-          <div className="cultural-pro-route-kicker">
-            Cultural Route {String(routeIndex + 1).padStart(2, "0")}
-          </div>
-
-          <h3>{route.name}</h3>
-          <p>{route.summary}</p>
-
-          <div className="cultural-pro-route-facts">
-            <div>
-              <Clock aria-hidden="true" />
-              <span>Duration</span>
-              <strong>{route.duration}</strong>
-            </div>
-
-            <div>
-              <MapPin aria-hidden="true" />
-              <span>Route</span>
-              <strong>{route.route}</strong>
-            </div>
-
-            <div>
-              <Users aria-hidden="true" />
-              <span>Best For</span>
-              <strong>{route.bestFor}</strong>
-            </div>
-
-            {route.tourCode ? (
-              <div>
-                <Hash aria-hidden="true" />
-                <span>Tour Code</span>
-                <strong>{route.tourCode}</strong>
-              </div>
-            ) : null}
-          </div>
-
-          <div className="cultural-pro-route-tags">
-            {route.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
-          </div>
-
-          <div className="cultural-pro-day-heading">
-            <span>Day-by-day journey</span>
-            <strong>
-              {route.days.length} {route.days.length === 1 ? "travel day" : "travel days"}
-            </strong>
-          </div>
-
-          <div className="cultural-pro-day-timeline">
-            {route.days.map((day, index) => (
-              <div key={day.title} className="cultural-pro-day-item">
-                <div className="cultural-pro-day-number">
-                  Day {String(index + 1).padStart(2, "0")}
-                </div>
-
-                <div className="cultural-pro-day-content">
-                  <h4>{day.title}</h4>
-
-                  <ul>
-                    {day.activities.map((activity) => (
-                      <li key={activity}>
-                        <CheckCircle aria-hidden="true" />
-                        <span>{activity}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="uh-itinerary-pricing-note">
-            {INTERNATIONAL_TRAVELER_PRICE_NOTE}
-          </p>
-
-          <div className="cultural-pro-route-actions">
-            <Link href="/contact" className="tour-pro-btn-primary">
-              Customize This Cultural Route
-              <ChevronRight aria-hidden="true" />
-            </Link>
-
-            <Link href="/festival-tours" className="tour-pro-btn-secondary">
-              Add Festival Experience
-            </Link>
-          </div>
-        </div>
-
-        <aside className="cultural-pro-route-media">
-          <ImageSlot
-            image={route.image}
-            className="cultural-pro-route-image"
-          />
-
-          <div className="cultural-pro-route-note">
-            <span>Culture Focus</span>
-            <RateNote startingRate={route.startingRate} />
-            <strong>{route.theme}</strong>
-            <p>
-              This route can be adjusted with farmhouse meals, archery, textile
-              visits, festival timing, hot stone bath, local markets, museums,
-              and pace preferences.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </article>
   );
 }
 

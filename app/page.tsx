@@ -10,12 +10,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <HeroSection />
-      <JourneysSection />
-      <WhyChooseUs />
-      
-      <TravelInfo />
-      <CtaSection />
+      <main className="home-page">
+        <HeroSection />
+        <JourneysSection />
+        <WhyChooseUs />
+        <TravelInfo />
+        <CtaSection />
+      </main>
       <Footer />
     </>
   );

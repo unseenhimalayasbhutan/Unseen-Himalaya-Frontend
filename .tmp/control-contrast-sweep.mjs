@@ -2,7 +2,7 @@ import { chromium } from "playwright";
 import fs from "node:fs";
 import path from "node:path";
 
-const baseURL = process.env.BASE_URL || "http://localhost:3000";
+const baseURL = process.env.BASE_URL || "http://localhost:3009";
 const routes = [
   "/",
   "/about-bhutan",

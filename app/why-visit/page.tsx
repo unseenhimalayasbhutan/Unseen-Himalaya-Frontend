@@ -628,23 +628,6 @@ export default function WhyVisitBhutanPage() {
   );
 }
 
-/*
-  IMAGE SETUP:
-  Replace any empty src value below with your real image path later.
-
-  Example with clickable copyright link:
-  image: {
-    src: "/images/why-visit/tigers-nest.jpg",
-    alt: "Tiger's Nest Monastery in Bhutan",
-    label: "Tiger's Nest Image",
-    credit: "Unseen Himalayas Bhutan / Photographer Name",
-    creditHref: "https://example.com/photo-source",
-    creditPosition: "overlay",
-  }
-
-  Use creditPosition: "below" when you want the copyright text below the image.
-*/
-
 const heroImage: ImageAsset = {
   src: "/IMG_20231021_170519.jpg",
   alt: "Scenic Bhutan landscape",
@@ -655,7 +638,7 @@ const heroImage: ImageAsset = {
 };
 
 const wayOfLifeImage: ImageAsset = {
-  src: "MarcusWestbergBhutanHiRes-6.jpg",
+  src: "/MarcusWestbergBhutanHiRes-6.jpg",
   alt: "Bhutanese way of life",
   label: "Way of Life Image",
   credit: "Scarlette DG",

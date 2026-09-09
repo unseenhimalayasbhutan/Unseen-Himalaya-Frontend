@@ -26,7 +26,7 @@
   --color-accent: #c99a4a;
   --color-accent-light: #dfb460;
   --color-accent-muted: rgba(201, 154, 74, 0.65);
-  --color-accent-wash: var(--color-accent-wash);
+  --color-accent-wash: rgba(201, 154, 74, 0.08);
 
   --color-border: rgba(201, 154, 74, 0.2);
   --color-border-strong: rgba(201, 154, 74, 0.38);
@@ -119,8 +119,8 @@
   --font-heading: var(--font-display);
   --shadow: var(--shadow-subtle);
   --shadow-strong: var(--shadow-subtle);
-  --radius: var(--radius-md);
-  --radius-lg: var(--radius-md);
+  --radius: var(--radius-sm);
+  --radius-lg: var(--radius-sm);
   --container: var(--container-main);
   --section-space: var(--section-padding-y);
 }
@@ -177,16 +177,19 @@ img {
 .container-wide,
 .container-narrow {
   width: var(--container-main) !important;
+  max-width: 1280px !important;
   margin-inline: auto !important;
   padding-inline: 0 !important;
 }
 
 .container-wide {
   width: var(--container-wide) !important;
+  max-width: 1440px !important;
 }
 
 .container-narrow {
   width: var(--container-narrow) !important;
+  max-width: 860px !important;
 }
 
 .section,
@@ -337,14 +340,28 @@ small {
 }
 
 .script-eyebrow,
+.ds-eyebrow,
 .ds-section-heading-eyebrow {
   color: var(--color-accent-light);
+}
+
+.ds-eyebrow-editorial,
+.ds-section-heading-eyebrow {
   font-family: var(--font-script) !important;
   font-size: clamp(1.9rem, 3vw, 2.75rem);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
   text-transform: none;
+}
+
+.ds-eyebrow-utility {
+  font-family: var(--font-body) !important;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .ds-section-heading,
@@ -381,6 +398,15 @@ small {
   letter-spacing: 0 !important;
   line-height: 1 !important;
   text-transform: none !important;
+}
+
+.ds-section-heading-eyebrow .ds-eyebrow-utility {
+  font-family: var(--font-body) !important;
+  font-size: var(--font-size-sm) !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.16em !important;
+  line-height: 1.2 !important;
+  text-transform: uppercase !important;
 }
 
 .ds-section-heading-title,
@@ -455,123 +481,6 @@ small {
   border-color: var(--color-border-strong);
   background: var(--color-bg-card-hover);
   transform: translateY(-3px);
-}
-
-:where(
-  .feature-card,
-  .bottom-card,
-  .stat-card,
-  .uh-package-card,
-  .uh-travel-step-card,
-  .tour-pro-stat-card,
-  .tour-pro-feature-card,
-  .tour-pro-image-card,
-  .tour-pro-mini-card,
-  .tour-pro-route-card,
-  .tour-pro-tab-card,
-  .tour-pro-addon-card,
-  .tour-pro-hero-card,
-  .tour-pro-active-card,
-  .tour-pro-itinerary-preview,
-  .tour-pro-builder-card,
-  .uh-hb-package-card,
-  .uh-hb-detail-panel,
-  .uh-hb-more-card,
-  .cultural-value-card-clean,
-  .cultural-pro-route-option,
-  .cultural-pro-route-panel,
-  .cultural-pro-route-note,
-  .cultural-pro-route-facts > div,
-  .cultural-pro-day-item,
-  .uh-festival-library-redesign-shell,
-  .uh-festival-library-redesign-topbar,
-  .uh-festival-anchor-card,
-  .festival-calendar-redesign-hero-card,
-  .festival-calendar-redesign-feature-panel,
-  .festival-calendar-redesign-feature-event,
-  .festival-calendar-redesign-month-card,
-  .festival-event-card,
-  .contact-pro-card,
-  .contact-pro-form-card,
-  .contact-pro-side-card,
-  .contact-pro-cta-card,
-  .about-pro-assurance-card,
-  .about-pro-difference-card,
-  .about-bhutan-card,
-  .besttime-card,
-  .currency-card,
-  .documents-card,
-  .faq-card,
-  .facts-redesign-card,
-  .facts-redesign-story-card,
-  .facts-redesign-number-card,
-  .facts-redesign-gmc-card,
-  .facts-redesign-airport-feature-card,
-  .facts-redesign-gallery-card,
-  .facts-redesign-airport-card,
-  .facts-redesign-timeline-item,
-  .facts-redesign-food-item,
-  .facts-redesign-philosophy-tab,
-  .facts-redesign-philosophy-panel,
-  .gnh-pro-card,
-  .legal-pro-card,
-  .seasons-pro-card,
-  .whyvisit-pro-card,
-  .places-card,
-  .trekking-trek-card,
-  .trekking-included-card,
-  .uh-optional-step-card,
-  .uh-addon-category-button,
-  .uh-addon-experience-card,
-  .uh-optional-route-card
-) {
-  border: 1px solid var(--color-border) !important;
-  border-radius: var(--radius-sm) !important;
-  background: var(--color-bg-card) !important;
-  color: var(--color-text-primary) !important;
-  box-shadow: var(--shadow-none) !important;
-  transition:
-    transform var(--motion-standard),
-    border-color var(--motion-standard),
-    background var(--motion-standard),
-    color var(--motion-standard) !important;
-}
-
-:where(
-  .feature-card,
-  .bottom-card,
-  .stat-card,
-  .uh-package-card,
-  .uh-travel-step-card,
-  .tour-pro-stat-card,
-  .tour-pro-feature-card,
-  .tour-pro-image-card,
-  .tour-pro-mini-card,
-  .tour-pro-route-card,
-  .tour-pro-tab-card,
-  .tour-pro-addon-card,
-  .uh-hb-package-card,
-  .uh-hb-more-card,
-  .cultural-value-card-clean,
-  .cultural-pro-route-option,
-  .uh-festival-anchor-card,
-  .festival-calendar-redesign-month-tab,
-  .contact-pro-card,
-  .uh-addon-category-button,
-  .uh-addon-experience-card,
-  .uh-optional-route-card
-):hover,
-:where(
-  .uh-travel-step-card,
-  .cultural-pro-route-option,
-  .festival-calendar-redesign-month-tab,
-  .uh-addon-category-button,
-  .uh-addon-experience-card
-):focus-visible {
-  border-color: var(--color-border-strong) !important;
-  background: var(--color-bg-card-hover) !important;
-  box-shadow: var(--shadow-none) !important;
-  transform: translateY(-3px) !important;
 }
 
 :where(.is-active, .is-selected, [aria-pressed="true"], [aria-selected="true"]) {
@@ -764,10 +673,9 @@ small {
 .pill,
 .uh-package-tag,
 .uh-hb-tag-row span,
-.cultural-pro-route-tags span,
 .tour-pro-eyebrow,
 .contact-pro-eyebrow,
-.festival-calendar-redesign-eyebrow {
+.festival-calendar-redesign-eyebrow{
   border: 1px solid var(--color-border) !important;
   border-radius: var(--radius-round) !important;
   background: var(--color-accent-wash) !important;
@@ -777,24 +685,6 @@ small {
 
 svg {
   flex-shrink: 0;
-}
-
-:where(
-  .feature-icon,
-  .bottom-icon,
-  .uh-travel-step-icon,
-  .tour-pro-feature-icon,
-  .tour-pro-step-number,
-  .cultural-pro-route-number,
-  .uh-hb-day-badge,
-  .site-footer-certificate-badge,
-  .contact-pro-card-icon,
-  .about-pro-text-icon,
-  .festival-month-count
-) {
-  border-color: var(--color-border) !important;
-  background: var(--color-accent-wash) !important;
-  color: var(--color-accent-light) !important;
 }
 
 input,
@@ -879,6 +769,7 @@ a:focus-visible {
 }
 
 .home-hero,
+.page-hero,
 .tour-pro-hero,
 .contact-pro-hero,
 .festival-calendar-redesign-hero,
@@ -900,6 +791,8 @@ a:focus-visible {
 }
 
 .home-hero h1,
+.page-hero-title,
+.page-hero h1,
 .tour-pro-hero h1,
 .contact-pro-hero-title,
 .festival-calendar-redesign-hero h1,
@@ -924,6 +817,8 @@ a:focus-visible {
 }
 
 .home-hero p,
+.page-hero-description,
+.page-hero p,
 .tour-pro-hero p,
 .contact-pro-hero-description,
 .festival-calendar-redesign-hero p,
@@ -954,6 +849,7 @@ a:focus-visible {
   border-radius: var(--radius-sm) !important;
   background: var(--color-bg-elevated) !important;
   overflow: hidden;
+  position: relative;
 }
 
 .tour-pro-image,
@@ -961,6 +857,133 @@ a:focus-visible {
 .uh-package-card-image img {
   object-fit: cover;
   object-position: center;
+}
+
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: clamp(var(--space-6), 5vw, var(--space-9));
+  align-items: center;
+}
+
+.page-hero-center .page-hero-grid {
+  display: block;
+}
+
+.page-hero-content {
+  max-width: 760px;
+}
+
+.page-hero-center .page-hero-content {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.page-hero-actions,
+.page-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.page-hero-actions {
+  margin-top: var(--space-6);
+}
+
+.page-hero-trust {
+  margin-top: var(--space-5);
+}
+
+.image-credit,
+.tour-pro-image-credit,
+.about-bhutan-pro-image-credit,
+.seasons-pro-image-credit,
+.facts-pro-image-credit,
+.whyvisit-pro-image-credit,
+.gnh-pro-image-credit {
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+}
+
+.image-credit-overlay,
+.tour-pro-image-credit,
+.about-bhutan-pro-image-credit,
+.seasons-pro-image-credit,
+.facts-pro-image-credit,
+.whyvisit-pro-image-credit-overlay,
+.gnh-pro-credit-overlay .gnh-pro-image-credit {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  width: fit-content;
+  max-width: calc(100% - 28px);
+  margin: 0;
+  padding: 7px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-round);
+  background: var(--color-overlay-medium);
+  backdrop-filter: blur(10px);
+}
+
+.image-credit-below,
+.whyvisit-pro-image-credit-below,
+.gnh-pro-credit-below .gnh-pro-image-credit {
+  position: static;
+  max-width: none;
+  padding-top: var(--space-2);
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.image-credit a,
+.whyvisit-pro-image-credit a,
+.gnh-pro-image-credit a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.image-credit a:hover,
+.image-credit a:focus-visible,
+.whyvisit-pro-image-credit a:hover,
+.whyvisit-pro-image-credit a:focus-visible,
+.gnh-pro-image-credit a:hover,
+.gnh-pro-image-credit a:focus-visible {
+  color: var(--color-accent-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.tour-pro-image-rate,
+.tour-pro-image-rate strong,
+.tour-pro-image-placeholder span,
+.about-bhutan-pro-image-placeholder span,
+.seasons-pro-image-placeholder span,
+.facts-pro-image-placeholder span,
+.gnh-pro-image-placeholder span,
+.whyvisit-pro-image-slot .whyvisit-pro-image-placeholder span {
+  color: var(--color-text-primary) !important;
+}
+
+.tour-pro-image-rate span,
+.tour-pro-image-placeholder small,
+.about-bhutan-pro-image-placeholder small,
+.seasons-pro-image-placeholder small,
+.facts-pro-image-placeholder small,
+.gnh-pro-image-placeholder small,
+.whyvisit-pro-image-slot .whyvisit-pro-image-placeholder small {
+  color: var(--color-text-secondary) !important;
+}
+
+@media (max-width: 900px) {
+  .page-hero-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .upcoming-events-page {
@@ -985,9 +1008,7 @@ a:focus-visible {
 .upcoming-events-tier-card h2,
 .upcoming-events-detail-itinerary h3,
 .upcoming-events-detail-list h3,
-.upcoming-events-ready-panel > span,
-.upcoming-events-poster-footer strong,
-.upcoming-events-poster-footer nav strong {
+.upcoming-events-ready-panel > span {
   color: var(--color-text-primary) !important;
   font-family: var(--font-display) !important;
   font-weight: 500 !important;
@@ -1005,8 +1026,6 @@ a:focus-visible {
 .upcoming-events-poster-meta span,
 .upcoming-events-tier-price-note,
 .upcoming-events-ready-panel > small,
-.upcoming-events-poster-footer span,
-.upcoming-events-poster-footer a,
 .upcoming-events-trust-strip p,
 .upcoming-events-tier-card li,
 .upcoming-events-icon-item span,
@@ -1023,9 +1042,7 @@ a:focus-visible {
 }
 
 .upcoming-events-gold-btn,
-.upcoming-events-tier-card a,
-.upcoming-events-footer-cta,
-.upcoming-events-poster-footer .upcoming-events-footer-cta {
+.upcoming-events-tier-card a {
   border: 1px solid var(--color-accent) !important;
   border-radius: var(--radius-sm) !important;
   background: var(--color-accent) !important;
@@ -1051,11 +1068,7 @@ a:focus-visible {
 .upcoming-events-tier-card a:hover,
 .upcoming-events-tier-card a:focus-visible,
 .upcoming-events-call-link:hover,
-.upcoming-events-call-link:focus-visible,
-.upcoming-events-footer-cta:hover,
-.upcoming-events-footer-cta:focus-visible,
-.upcoming-events-poster-footer .upcoming-events-footer-cta:hover,
-.upcoming-events-poster-footer .upcoming-events-footer-cta:focus-visible {
+.upcoming-events-call-link:focus-visible {
   transform: translateY(-3px) !important;
   border-color: var(--color-border-hover) !important;
   background: var(--color-accent-wash) !important;
@@ -1066,11 +1079,7 @@ a:focus-visible {
 .upcoming-events-gold-btn:hover,
 .upcoming-events-gold-btn:focus-visible,
 .upcoming-events-tier-card a:hover,
-.upcoming-events-tier-card a:focus-visible,
-.upcoming-events-footer-cta:hover,
-.upcoming-events-footer-cta:focus-visible,
-.upcoming-events-poster-footer .upcoming-events-footer-cta:hover,
-.upcoming-events-poster-footer .upcoming-events-footer-cta:focus-visible {
+.upcoming-events-tier-card a:focus-visible {
   background: var(--color-accent-light) !important;
   color: var(--color-bg-page) !important;
 }
@@ -1087,7 +1096,6 @@ a:focus-visible {
 .upcoming-events-detail-list,
 .upcoming-events-package-inclusions-panel,
 .upcoming-events-ready-panel,
-.upcoming-events-footer-event-card,
 .upcoming-events-icon-item {
   border: 1px solid var(--color-border) !important;
   border-radius: var(--radius-sm) !important;
@@ -1102,7 +1110,6 @@ a:focus-visible {
 .upcoming-events-detail-itinerary article:hover,
 .upcoming-events-detail-list:hover,
 .upcoming-events-package-inclusions-panel:hover,
-.upcoming-events-footer-event-card:hover,
 .upcoming-events-icon-item:hover {
   transform: translateY(-3px) !important;
   border-color: var(--color-border-hover) !important;
@@ -1132,7 +1139,6 @@ a:focus-visible {
 .upcoming-events-icon-item svg,
 .upcoming-events-detail-itinerary li svg,
 .upcoming-events-detail-list li svg,
-.upcoming-events-poster-footer svg,
 .upcoming-events-call-link svg {
   color: var(--color-accent) !important;
 }
@@ -1142,16 +1148,14 @@ a:focus-visible {
   color: var(--color-accent-light) !important;
 }
 
-.upcoming-events-image-slot,
-.upcoming-events-footer-social a {
+.upcoming-events-image-slot {
   border: 1px solid var(--color-border) !important;
   border-radius: var(--radius-sm) !important;
   background: var(--color-bg-elevated) !important;
   box-shadow: none !important;
 }
 
-.upcoming-events-ready-panel,
-.upcoming-events-poster-footer {
+.upcoming-events-ready-panel {
   border-color: var(--color-divider) !important;
   background: var(--color-bg-page) !important;
 }
@@ -1424,234 +1428,6 @@ a:focus-visible {
   margin-top: var(--space-5) !important;
 }
 
-/* Dark-surface text contrast contract. These selectors describe semantic
-   component roles so legacy near-black aliases cannot leak onto dark cards. */
-:where(
-  .feature-card,
-  .bottom-card,
-  .stat-card,
-  .info-card,
-  .destination-card,
-  .journey-card,
-  .uh-destination-preview,
-  .uh-package-card,
-  .uh-travel-step-card,
-  .tour-pro-card,
-  .tour-pro-stat-card,
-  .tour-pro-feature-card,
-  .tour-pro-image-card,
-  .tour-pro-mini-card,
-  .tour-pro-route-card,
-  .tour-pro-tab-card,
-  .tour-pro-addon-card,
-  .tour-pro-hero-card,
-  .tour-pro-active-card,
-  .tour-pro-itinerary-preview,
-  .tour-pro-builder-card,
-  .uh-hb-package-card,
-  .uh-hb-detail-panel,
-  .uh-hb-more-card,
-  .cultural-value-card-clean,
-  .cultural-pro-route-option,
-  .cultural-pro-route-panel,
-  .cultural-pro-route-note,
-  .cultural-pro-route-facts > div,
-  .cultural-pro-day-item,
-  .uh-festival-library-redesign-shell,
-  .uh-festival-library-redesign-topbar,
-  .uh-festival-library-redesign-route-card,
-  .uh-festival-library-redesign-panel,
-  .uh-festival-anchor-card,
-  .festival-calendar-redesign-hero-card,
-  .festival-calendar-redesign-feature-panel,
-  .festival-calendar-redesign-feature-event,
-  .festival-calendar-redesign-month-card,
-  .festival-event-card,
-  .contact-pro-card,
-  .contact-pro-form-card,
-  .contact-pro-side-card,
-  .contact-pro-cta-card,
-  .about-pro-assurance-card,
-  .about-pro-difference-card,
-  .about-bhutan-stat-card,
-  .about-bhutan-overview-card,
-  .about-bhutan-feature-row,
-  .about-bhutan-region-card,
-  .about-bhutan-detail-card,
-  .about-bhutan-food-card,
-  .about-bhutan-gallery-card,
-  .about-bhutan-timeline-card,
-  .about-bhutan-flag-card,
-  .about-bhutan-altitude-note,
-  .besttime-card,
-  .currency-card,
-  .currency-info-card,
-  .documents-card,
-  .faq-card,
-  .faq-sidebar-card,
-  .faq-sidebar-help,
-  .faq-item,
-  .facts-redesign-story-card,
-  .facts-redesign-number-card,
-  .facts-redesign-gmc-card,
-  .facts-redesign-airport-feature-card,
-  .facts-redesign-gallery-card,
-  .facts-redesign-airport-card,
-  .facts-redesign-dark-card,
-  .facts-redesign-timeline-item,
-  .facts-redesign-food-item,
-  .facts-redesign-philosophy-tab,
-  .facts-redesign-philosophy-panel,
-  .uh-bhutan-custom-card,
-  .gnh-pro-card,
-  .gnh-pro-pillar-card,
-  .gnh-pro-domain-card,
-  .gnh-pro-initiative-card,
-  .legal-pro-card,
-  .legal-document-card,
-  .seasons-pro-card,
-  .whyvisit-pro-card,
-  .places-card,
-  .places-destination-nav a,
-  .places-destination-bottom,
-  .sdf-info-card,
-  .trekking-trek-card,
-  .trekking-included-card,
-  .trekking-info-card,
-  .uh-optional-step-card,
-  .uh-addon-category-button,
-  .uh-addon-experience-card,
-  .uh-optional-route-card
-) :is(
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .card-title,
-  .feature-title,
-  .destination-title,
-  .info-card-title,
-  .section-title,
-  .tour-pro-card-title,
-  .uh-package-card-title,
-  .mobile-submenu-item-title,
-  strong,
-  b,
-  th,
-  summary,
-  .faq-question span
-) {
-  color: var(--color-text-primary) !important;
-}
-
-:where(
-  .feature-card,
-  .bottom-card,
-  .info-card,
-  .destination-card,
-  .journey-card,
-  .uh-destination-preview,
-  .uh-package-card,
-  .uh-travel-step-card,
-  .tour-pro-card,
-  .tour-pro-feature-card,
-  .tour-pro-image-card,
-  .tour-pro-mini-card,
-  .tour-pro-route-card,
-  .tour-pro-tab-card,
-  .tour-pro-addon-card,
-  .tour-pro-hero-card,
-  .tour-pro-active-card,
-  .tour-pro-itinerary-preview,
-  .tour-pro-builder-card,
-  .uh-hb-package-card,
-  .uh-hb-detail-panel,
-  .uh-hb-more-card,
-  .cultural-value-card-clean,
-  .cultural-pro-route-option,
-  .cultural-pro-route-panel,
-  .cultural-pro-route-note,
-  .cultural-pro-day-item,
-  .uh-festival-library-redesign-route-card,
-  .uh-festival-library-redesign-panel,
-  .uh-festival-anchor-card,
-  .festival-calendar-redesign-feature-panel,
-  .festival-calendar-redesign-feature-event,
-  .festival-calendar-redesign-month-card,
-  .festival-event-card,
-  .contact-pro-card,
-  .contact-pro-form-card,
-  .contact-pro-side-card,
-  .contact-pro-cta-card,
-  .about-pro-assurance-card,
-  .about-pro-difference-card,
-  .about-bhutan-stat-card,
-  .about-bhutan-overview-card,
-  .about-bhutan-feature-row,
-  .about-bhutan-region-card,
-  .about-bhutan-detail-card,
-  .about-bhutan-food-card,
-  .about-bhutan-gallery-card,
-  .about-bhutan-timeline-card,
-  .about-bhutan-flag-card,
-  .about-bhutan-altitude-note,
-  .besttime-card,
-  .currency-card,
-  .currency-info-card,
-  .documents-card,
-  .faq-card,
-  .faq-sidebar-card,
-  .faq-sidebar-help,
-  .faq-item,
-  .facts-redesign-story-card,
-  .facts-redesign-number-card,
-  .facts-redesign-gmc-card,
-  .facts-redesign-airport-feature-card,
-  .facts-redesign-gallery-card,
-  .facts-redesign-airport-card,
-  .facts-redesign-dark-card,
-  .facts-redesign-timeline-item,
-  .facts-redesign-food-item,
-  .facts-redesign-philosophy-tab,
-  .facts-redesign-philosophy-panel,
-  .uh-bhutan-custom-card,
-  .gnh-pro-card,
-  .gnh-pro-pillar-card,
-  .gnh-pro-domain-card,
-  .gnh-pro-initiative-card,
-  .legal-pro-card,
-  .legal-document-card,
-  .seasons-pro-card,
-  .whyvisit-pro-card,
-  .places-card,
-  .places-destination-nav a,
-  .places-destination-bottom,
-  .sdf-info-card,
-  .trekking-trek-card,
-  .trekking-included-card,
-  .trekking-info-card,
-  .uh-optional-step-card,
-  .uh-addon-category-button,
-  .uh-addon-experience-card,
-  .uh-optional-route-card
-) :is(
-  p,
-  li,
-  td,
-  .card-description,
-  .feature-description,
-  .destination-description,
-  .info-card-description,
-  .tour-pro-card-description,
-  .uh-package-card-description,
-  .faq-answer,
-  .faq-answer p
-) {
-  color: var(--color-text-secondary) !important;
-}
-
 :where(
   .feature-card,
   .bottom-card,
@@ -1734,6 +1510,94 @@ a:focus-visible {
 .uh-hb-detail-thumb:hover,
 .uh-hb-detail-thumb:focus-visible {
   color: var(--color-text-primary) !important;
+}
+
+.facts-redesign-philosophy-tab {
+  border-color: var(--color-border) !important;
+  background: var(--color-bg-card) !important;
+}
+
+.facts-redesign-philosophy-tab:hover,
+.facts-redesign-philosophy-tab:focus-visible,
+.facts-redesign-philosophy-tab.is-active {
+  border-color: var(--color-border-strong) !important;
+  background: var(--color-bg-card-hover) !important;
+}
+
+:where(
+  .uh-travel-step-content,
+  .about-bhutan-overview-card,
+  .about-bhutan-feature-row,
+  .about-bhutan-flag-card,
+  .about-bhutan-timeline-card,
+  .about-bhutan-detail-head,
+  .about-bhutan-region-card,
+  .about-bhutan-food-card,
+  .about-bhutan-gallery-card,
+  .facts-redesign-hero-note,
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-feature-card,
+  .facts-redesign-philosophy-content,
+  .tour-pro-stat-card,
+  .cultural-value-card-clean,
+  .uh-festival-anchor-content,
+  .about-pro-assurance-card,
+  .places-destination-nav,
+  .places-info-panel,
+  .places-event-list,
+  .legal-document-placeholder,
+  .festival-calendar-redesign-hero-card,
+  .festival-calendar-redesign-feature-copy,
+  .festival-calendar-redesign-feature-count,
+  .festival-month-card-head,
+  .sdf-info-card,
+  .uh-optional-step-card,
+  .uh-addon-category-copy,
+  .uh-addon-experience-body,
+  .uh-optional-route-card
+) :is(h2, h3, h4, strong) {
+  color: var(--color-text-primary) !important;
+}
+
+:where(
+  .uh-travel-step-content,
+  .about-bhutan-overview-card,
+  .about-bhutan-feature-row,
+  .about-bhutan-flag-card,
+  .about-bhutan-timeline-card,
+  .about-bhutan-detail-card,
+  .about-bhutan-region-card,
+  .about-bhutan-food-card,
+  .facts-redesign-hero-note,
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-feature-card,
+  .facts-redesign-philosophy-content,
+  .cultural-value-card-clean,
+  .uh-festival-anchor-content,
+  .about-pro-assurance-card,
+  .places-info-panel,
+  .legal-document-placeholder,
+  .festival-calendar-redesign-feature-copy,
+  .festival-month-card-head,
+  .sdf-info-card,
+  .uh-optional-step-card,
+  .uh-addon-category-copy,
+  .uh-addon-experience-body,
+  .uh-optional-route-card
+) :is(p, small, span, li) {
+  color: var(--color-text-secondary) !important;
+}
+
+.facts-redesign-philosophy-number,
+.facts-redesign-neutral-number,
+.facts-redesign-airport-card > span {
+  background: var(--color-bg-elevated) !important;
+  color: var(--color-accent) !important;
+  border-color: var(--color-border) !important;
 }
 
 .about-bhutan-timeline-card > span,
@@ -1823,5 +1687,407 @@ a:focus-visible {
   .festival-calendar-redesign-section-heading h2 {
     font-size: clamp(2.1rem, 11vw, 2.75rem) !important;
     line-height: 1.05 !important;
+  }
+}
+
+/* Homepage color and composition pass */
+.home-page {
+  --home-ink: var(--color-text-primary);
+  --home-muted: var(--color-text-secondary);
+  --home-subtle: rgba(243, 240, 232, 0.72);
+  --home-bg: var(--color-bg-page);
+  --home-bg-section: var(--color-bg-section);
+  --home-bg-elevated: var(--color-bg-elevated);
+  --home-card: rgba(21, 21, 21, 0.96);
+  --home-card-hover: rgba(24, 24, 24, 0.98);
+  --home-card-soft: rgba(243, 240, 232, 0.06);
+  --home-gold: var(--color-accent);
+  --home-gold-soft: var(--color-accent-light);
+  --home-border: rgba(223, 180, 96, 0.2);
+  --home-border-strong: rgba(223, 180, 96, 0.42);
+  --home-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+  color: var(--home-ink);
+  background: var(--home-bg);
+}
+
+.home-page .home-hero {
+  background-color: var(--home-bg) !important;
+  box-shadow:
+    inset 0 0 0 9999px rgba(0, 0, 0, 0.58),
+    inset 0 -220px 180px rgba(0, 0, 0, 0.36);
+}
+
+.home-page .home-hero h1,
+.home-page .home-hero h1 span {
+  color: var(--home-ink) !important;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.48);
+}
+
+.home-page .home-hero p {
+  color: var(--home-subtle) !important;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.42);
+}
+
+.home-page .home-hero-btn-primary,
+.home-page .uh-journeys-btn-primary,
+.home-page .uh-journeys-link-btn,
+.home-page .uh-package-preview-btn,
+.home-page .uh-travel-btn-primary,
+.home-page .discover-btn,
+.home-page .cta-btn {
+  border-color: var(--home-gold) !important;
+  background: var(--home-gold) !important;
+  color: var(--color-bg-page) !important;
+  box-shadow: 0 12px 24px rgba(55, 36, 18, 0.18) !important;
+}
+
+.home-page .home-hero-btn-primary:hover,
+.home-page .uh-journeys-btn-primary:hover,
+.home-page .uh-journeys-link-btn:hover,
+.home-page .uh-package-preview-btn:hover,
+.home-page .uh-travel-btn-primary:hover,
+.home-page .discover-btn:hover,
+.home-page .cta-btn:hover {
+  border-color: var(--home-gold-soft) !important;
+  background: var(--home-gold-soft) !important;
+  color: var(--color-bg-page) !important;
+}
+
+.home-page .home-hero-btn-secondary,
+.home-page .uh-travel-btn-secondary,
+.home-page .cta-btn-email {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+  color: var(--home-ink) !important;
+  backdrop-filter: blur(10px);
+}
+
+.home-page .home-hero-btn-secondary:hover,
+.home-page .uh-travel-btn-secondary:hover,
+.home-page .cta-btn-email:hover {
+  border-color: var(--home-border-strong) !important;
+  background: var(--home-card-hover) !important;
+  color: var(--home-ink) !important;
+}
+
+.home-page .home-hero-trust-item {
+  border-color: var(--home-border) !important;
+  background: var(--home-card) !important;
+}
+
+.home-page .home-hero-trust-item span,
+.home-page .home-hero-trust-item svg {
+  color: var(--home-ink) !important;
+}
+
+.home-page .uh-journeys-section,
+.home-page .uh-travel-section {
+  background-color: var(--home-bg) !important;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(201, 154, 74, 0.1), transparent 28rem),
+    linear-gradient(180deg, var(--home-bg) 0%, var(--home-bg-section) 52%, var(--home-bg) 100%) !important;
+  color: var(--home-ink) !important;
+}
+
+.home-page .uh-journeys-section::before,
+.home-page .uh-journeys-section::after,
+.home-page .uh-travel-section::before,
+.home-page .uh-travel-section::after,
+.home-page .why-section::before,
+.home-page .why-section::after,
+.home-page .uh-journeys-bg-orb,
+.home-page .uh-travel-bg-orb,
+.home-page .why-bg-orb {
+  display: none !important;
+}
+
+.home-page :is(
+  .uh-journeys-heading h2,
+  .uh-packages-heading h2,
+  .uh-travel-heading h2,
+  .why-section .main-title,
+  .showcase-left h2,
+  .why-section .bottom-heading h2,
+  .uh-travel-panel h3
+) {
+  letter-spacing: 0 !important;
+}
+
+.home-page :is(
+  .uh-journeys-heading h2,
+  .uh-packages-heading h2,
+  .uh-travel-heading h2
+) {
+  color: var(--home-ink) !important;
+}
+
+.home-page :is(
+  .uh-journeys-heading p,
+  .uh-packages-heading p,
+  .uh-travel-heading p
+) {
+  color: var(--home-subtle) !important;
+}
+
+.home-page :is(.uh-journeys-kicker, .uh-packages-kicker, .uh-travel-kicker) {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+  color: var(--home-gold-soft) !important;
+  box-shadow: none !important;
+}
+
+.home-page .uh-destination-option,
+.home-page .uh-package-card,
+.home-page .uh-travel-step-card {
+  border: 1px solid var(--home-border) !important;
+  background: var(--home-card) !important;
+  color: var(--home-ink) !important;
+  box-shadow: var(--home-shadow) !important;
+}
+
+.home-page .uh-destination-option:hover,
+.home-page .uh-destination-option:focus-visible,
+.home-page .uh-package-card:hover,
+.home-page .uh-package-card:focus-visible,
+.home-page .uh-travel-step-card:hover,
+.home-page .uh-travel-step-card:focus-visible,
+.home-page .uh-travel-step-card[aria-pressed="true"] {
+  border-color: var(--home-border-strong) !important;
+  background: var(--home-card-hover) !important;
+  box-shadow: var(--home-shadow) !important;
+}
+
+.home-page :is(
+  .uh-destination-option-content h3,
+  .uh-package-card-content h3,
+  .uh-package-card-footer strong,
+  .uh-travel-step-content h3
+) {
+  color: var(--home-ink) !important;
+}
+
+.home-page :is(
+  .uh-destination-option-content span,
+  .uh-package-card-meta span,
+  .uh-package-card-footer > span
+) {
+  color: var(--home-gold-soft) !important;
+}
+
+.home-page :is(
+  .uh-destination-option-content p,
+  .uh-package-card-content p,
+  .uh-package-card-footer div,
+  .uh-travel-step-content p
+) {
+  color: var(--home-subtle) !important;
+}
+
+.home-page .uh-package-card-image,
+.home-page .uh-destination-option-thumb {
+  border-color: var(--home-border) !important;
+  background: var(--color-bg-card) !important;
+}
+
+.home-page .uh-package-preview,
+.home-page .uh-travel-panel {
+  border-color: var(--home-border) !important;
+  background:
+    linear-gradient(145deg, var(--home-card-hover), var(--home-card)) !important;
+  color: var(--home-ink) !important;
+  box-shadow: var(--home-shadow) !important;
+}
+
+.home-page .uh-package-preview::before,
+.home-page .uh-travel-panel::before {
+  border-color: var(--home-border) !important;
+}
+
+.home-page :is(
+  .uh-package-preview-text span,
+  .uh-package-preview-meta small,
+  .uh-travel-panel-label,
+  .uh-travel-progress-meta strong
+) {
+  color: var(--home-gold-soft) !important;
+}
+
+.home-page :is(
+  .uh-package-preview-text h3,
+  .uh-package-preview-meta strong,
+  .uh-travel-panel h3
+) {
+  color: var(--home-ink) !important;
+}
+
+.home-page :is(
+  .uh-package-preview-text p,
+  .uh-travel-panel p,
+  .uh-travel-progress-meta span
+) {
+  color: var(--home-subtle) !important;
+}
+
+.home-page .uh-package-preview-meta div,
+.home-page .uh-travel-progress,
+.home-page .uh-travel-panel-icon {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+}
+
+.home-page .uh-travel-step-icon {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+  color: var(--home-gold-soft) !important;
+}
+
+.home-page .uh-travel-step-icon span {
+  border-color: var(--home-border) !important;
+  background: var(--home-gold) !important;
+  color: var(--color-bg-page) !important;
+}
+
+.home-page .uh-whychoose-section {
+  background-color: var(--home-bg) !important;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(201, 154, 74, 0.1), transparent 28rem),
+    linear-gradient(180deg, var(--home-bg-section) 0%, var(--home-bg) 54%, var(--home-bg-section) 100%) !important;
+  color: var(--home-ink) !important;
+}
+
+.home-page .why-section .mini-text,
+.home-page .showcase-badge {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+  color: var(--home-gold-soft) !important;
+  box-shadow: none !important;
+}
+
+.home-page .why-section .main-title,
+.home-page .why-section .bottom-heading h2,
+.home-page .why-section .feature-title,
+.home-page .why-section .bottom-title,
+.home-page .stat-card strong {
+  color: var(--home-ink) !important;
+}
+
+.home-page .why-section .main-title span,
+.home-page .why-section .bottom-icon,
+.home-page .why-section .feature-icon,
+.home-page .stat-card strong {
+  color: var(--home-gold-soft) !important;
+}
+
+.home-page .why-section .description,
+.home-page .showcase-left p,
+.home-page .why-section .bottom-heading p,
+.home-page .why-section .bottom-text,
+.home-page .stat-card span {
+  color: var(--home-subtle) !important;
+}
+
+.home-page .showcase-left {
+  border-color: var(--home-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.46)),
+    url("/MarcusWestbergBhutanHiRes-38.jpg") center / cover no-repeat !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2) !important;
+}
+
+.home-page .showcase-left::before {
+  border-color: var(--home-border) !important;
+}
+
+.home-page .showcase-left::after {
+  display: none !important;
+}
+
+.home-page .why-section .feature-card,
+.home-page .why-section .stat-card {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+  color: var(--home-ink) !important;
+  box-shadow: none !important;
+}
+
+.home-page .why-section .feature-card:hover,
+.home-page .why-section .feature-card:focus-visible,
+.home-page .why-section .feature-card.active,
+.home-page .why-section .feature-card[aria-pressed="true"],
+.home-page .why-section .stat-card:hover {
+  border-color: var(--home-border-strong) !important;
+  background: rgba(243, 240, 232, 0.12) !important;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.14) !important;
+}
+
+.home-page .why-section .feature-icon,
+.home-page .why-section .bottom-icon {
+  border-color: var(--home-border) !important;
+  background: rgba(201, 154, 74, 0.14) !important;
+}
+
+.home-page .indicator,
+.home-page .indicator:hover,
+.home-page .indicator:focus-visible {
+  background: rgba(243, 240, 232, 0.28) !important;
+}
+
+.home-page .indicator[aria-pressed="true"],
+.home-page .indicator.active {
+  background: var(--home-gold-soft) !important;
+}
+
+.home-page .why-section .uh-guidebook-image {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16) !important;
+}
+
+.home-page .why-section .uh-guidebook-image img {
+  filter: saturate(1.08) contrast(1.04);
+}
+
+.home-page .why-section .bottom-card {
+  border-color: var(--home-border) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.home-page .cta-contact-section {
+  background-color: var(--home-bg) !important;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(201, 154, 74, 0.1), transparent 26rem),
+    linear-gradient(180deg, var(--home-bg-section) 0%, var(--home-bg) 100%) !important;
+  color: var(--home-ink) !important;
+}
+
+.home-page .cta-contact-card {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+  color: var(--home-ink) !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.14) !important;
+}
+
+.home-page .cta-contact-label,
+.home-page .cta-contact-note p {
+  color: var(--home-gold-soft) !important;
+}
+
+.home-page .cta-contact-card h2 {
+  color: var(--home-ink) !important;
+}
+
+.home-page .cta-contact-note {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+}
+
+@media (max-width: 900px) {
+  .home-page .uh-journeys-section,
+  .home-page .uh-whychoose-section,
+  .home-page .uh-travel-section,
+  .home-page .cta-contact-section {
+    padding-inline: 0 !important;
   }
 }

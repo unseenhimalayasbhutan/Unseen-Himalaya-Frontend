@@ -7,7 +7,7 @@ export const siteConfig = {
   description:
     "Unseen Himalayas is a licensed Bhutan-based destination management company offering private Bhutan tours, cultural journeys, festival tours, hotel reservations, guides, transportation, and tailor-made travel experiences.",
   locale: "en_US",
-  defaultImage: "/cover/background-optimized.jpg",
+  defaultImage: "/cover/background.jpg",
   address: {
     streetAddress: "Theengh's Apartments, Babesa",
     addressLocality: "Thimphu",

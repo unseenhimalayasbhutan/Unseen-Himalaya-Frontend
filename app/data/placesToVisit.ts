@@ -155,6 +155,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "An old temple on a ridge above central Thimphu, traditionally associated with blessings and auspicious names for newborn children. The location also provides attractive views across the city.",
         note: "This is an active temple; ask before photographing worshippers.",
+        image: "/MarcusBhutan2023_HR113.jpg",
       },
       {
         title: "Simtokha Dzong",
@@ -189,6 +190,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Thimphu",
         summary:
           "A restored traditional-house museum interpreting domestic architecture, household tools, agriculture, foodways and rural life. It helps urban-based visitors understand the context behind Bhutanese village culture.",
+        image: "/Homestay 3.jpg",
       },
       {
         title: "Bhutan Postal Museum & General Post Office",
@@ -200,6 +202,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "An unusual museum exploring Bhutan's postal history and inventive stamp designs. Personalised photo-stamp services are often available and make this one of Thimphu's most distinctive souvenir experiences.",
         note: "Check museum hours and service-counter hours separately.",
+        image: "/By Marcus Westberg _Thimphu_2023_44.jpg",
       },
       {
         title: "Jungshi Handmade Paper Factory",
@@ -234,6 +237,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A community-oriented art school north of the city where traditional craft education can be experienced with advance arrangement.",
         note: "Advance notice is recommended and visits follow the academic calendar.",
+        image: "/By Marcus Westberg 14.jpg",
       },
       {
         title: "VAST Bhutan / Contemporary Art Spaces",
@@ -244,6 +248,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Thimphu",
         summary:
           "A useful counterpoint to heritage sightseeing, showing how Bhutanese artists engage with modern identity, social change and traditional visual language.",
+        image: "/Ben-Richards-Tourism-Bhutan-011.jpg",
       },
       {
         title: "National Library and Archives of Bhutan",
@@ -324,6 +329,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Thimphu",
         summary:
           "A relaxed riverside green space for walking, family time or a break between structured sightseeing stops.",
+        image: "/Bhutan Flower Show2.jpg",
       },
       {
         title: "Pangri Zampa Monastery",
@@ -335,6 +341,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A quieter monastic complex associated with Bhutanese astrology, calendar traditions and religious scholarship.",
         note: "Access should be arranged around institutional activity.",
+        image: "/Ben-Richards-Tourism-Bhutan-041.jpg",
       },
       {
         title: "Zilukha Nunnery / Drubthob Goemba",
@@ -346,6 +353,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "An active nunnery above the city offering a respectful introduction to women's monastic life.",
         note: "Do not photograph residents or prayer sessions without permission.",
+        image: "/Bhutan - Moshe Shai - 382.jpg",
       },
       {
         title: "Dechen Phodrang Monastery",
@@ -379,6 +387,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Thimphu Valley",
         summary:
           "A short cross-valley trail that turns the Buddha Dordenma visit into a walking experience rather than a simple drive-up stop.",
+        image: "/Big Buddha with Thimphu City behind x DOT AA Original Bhutan Travels.jpg",
       },
       {
         title: "Tango Monastery Hike",
@@ -411,6 +420,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Above Thimphu",
         summary:
           "A quieter forest hike promoted locally as an off-the-beaten-path option above the capital.",
+        image: "/Dochula by Marcus Westberg62.jpg",
       },
       {
         title: "Phajoding Monastery Hike",
@@ -422,6 +432,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A substantial climb to a monastic landscape around 3,600 metres, with broad views above the capital.",
         note: "Altitude and weather matter; this is not equivalent to Thimphu's short ridge walks.",
+        image: "/Lungchutse-Hike-NK-Image5.jpg",
       },
       {
         title: "Dodedrak Monastery Hike",
@@ -433,6 +444,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A quieter spiritual hike through forest to an active monastic community above Thimphu.",
         note: "Guide-led planning is recommended; treat it as a religious visit, not casual sightseeing.",
+        image: "/Khoma 130723 by Amp Sripimanwat-33.jpg",
       },
       {
         title: "Dochula Pass & 108 Druk Wangyal Chortens",
@@ -455,6 +467,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A forest and botanical stop near Dochula, especially attractive for birding, short walks and seasonal rhododendrons.",
         note: "The 2026 Rhododendron Festival remained TBC in the official tentative calendar.",
+        image: "/Bhutan Flower Show5.jpg",
       },
     ],
     stayPlanning: [
@@ -487,7 +500,7 @@ export const destinationChapters: DestinationChapter[] = [
     intro:
       "Paro combines Bhutan's international gateway with one of the country's most culturally significant valleys. Tiger's Nest is the headline attraction, but Paro also supports several days of travel through ancient temples, dzongs, museum collections, villages, farmhouses, high mountain passes and lesser-known sacred hikes.",
     bestFor: "Iconic sights, history, hiking, villages and photography",
-    heroImage: `${paroBase}/01_Tigers_Nest_Paro_Taktsang.jpg`,
+    heroImage: "/Taktshang topdown  DOT AA Original Bhutan Travels.jpg",
     heroAlt: "Paro Taktsang Tiger's Nest Monastery on a cliff",
     facts: [
       { label: "Ideal stay", value: "2-4 nights" },
@@ -588,6 +601,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Paro town",
         summary:
           "A historic temple near Paro town that adds depth for travellers spending more than one sightseeing day in the valley.",
+        image: "/MarcusBhutan2023_HR111.jpg",
       },
       {
         title: "Jangsarbu Lhakhang",
@@ -598,6 +612,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Near Rinpung Dzong, Paro",
         summary:
           "A smaller sacred site near the Rinpung Dzong area, suited to visitors exploring Paro's less prominent religious heritage.",
+        image: "/Paro Dzong lit twilight  DOT AA Original Bhutan Travels.jpg",
       },
       {
         title: "Ugyen Pelri Palace - Exterior View",
@@ -609,6 +624,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A graceful private palace compound inspired by Zangto Pelri, the celestial paradise associated with Guru Rinpoche.",
         note: "Do not advertise interior access; respect privacy and security.",
+        image: "/Ben-Richards-Tourism-Bhutan-014.jpg",
       },
       {
         title: "Paro Old Town & Main Street",
@@ -643,6 +659,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A Bhutanese bathing tradition using heated river stones, often enjoyed after the Tiger's Nest hike.",
         note: "Present as a bookable experience; quality and style vary by farmhouse or hotel.",
+        image: "/IMG_9291.jpg",
       },
       {
         title: "Paro Valley Rice-Field Walk",
@@ -676,6 +693,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Paro",
         summary:
           "A manageable hillside walk with broad views over Paro, suitable for travellers wanting activity without a full-day climb.",
+        image: "/Dochula by Marcus Westberg71.jpg",
       },
       {
         title: "Dzongdrakha Goenpa",
@@ -698,6 +716,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Paro",
         summary:
           "A sacred hillside area associated with Guru Rinpoche, meditation caves and religious rock formations.",
+        image: "/By Marcus Westberg _ Paro _ 2023_18.jpg",
       },
       {
         title: "Kila Goenpa",
@@ -708,6 +727,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Near Chele La",
         summary:
           "A high mountain nunnery near the Chele La area, combining forest, prayer flags and women's monastic heritage.",
+        image: "/Dochula by Marcus Westberg69.jpg",
       },
       {
         title: "Bumdrak",
@@ -719,6 +739,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A compact high-altitude trekking experience above Tiger's Nest, often descending through the wider Taktsang sacred landscape.",
         note: "Requires accredited trekking support, warm equipment and altitude awareness.",
+        image: "/High mountain treks.jpg",
       },
       {
         title: "Chumphu Ney",
@@ -729,6 +750,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Paro",
         summary:
           "A demanding sacred hike known for caves, pilgrimage landmarks and the revered floating-statue tradition.",
+        image: "/2Snowman Race Climate Conclave.jpg",
       },
       {
         title: "Taktsang Zangtopelri",
@@ -739,6 +761,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Taktsang mountain landscape",
         summary:
           "One of the lesser-visited sacred sites within the wider Taktsang mountain landscape, best for pilgrims and repeat visitors.",
+        image: "/thedronebook-TourismBoardBhutan-200A6604.jpg",
       },
       {
         title: "Taktsang Yoelselgang",
@@ -749,6 +772,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Taktsang mountain landscape",
         summary:
           "A lesser-visited monastic site within the broader Taktsang pilgrimage landscape.",
+        image: "/66bf02f4ff8c371f83c79a4f_66bef5aab388dabf85692211_Paro-Taktsang-1.jpeg",
       },
       {
         title: "Chele La Pass",
@@ -771,6 +795,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Chele La area",
         summary:
           "A scenic high-altitude walk that turns a Chele La drive into a fuller nature-and-culture experience.",
+        image: "/MarcusWestbergBhutanHiRes-38.jpg",
       },
       {
         title: "Haa Valley Day Excursion via Chele La",
@@ -823,7 +848,7 @@ export const destinationChapters: DestinationChapter[] = [
     intro:
       "Punakha is lower, warmer and more fertile than Thimphu and Paro. Punakha Dzong is the centrepiece, but the destination becomes far richer through village walks, river activities, the Khamsum hike, nunnery viewpoints, rural communities, hot springs and seasonal festivals.",
     bestFor: "Dzongs, rivers, village walks, rafting and warmer weather",
-    heroImage: `${punakhaBase}/01_Punakha_Dzong.jpg`,
+    heroImage: "/Punakha Dzong Twilight  DOT AA Original Bhutan Travels.jpg",
     heroAlt: "Punakha Dzong in the Punakha Valley",
     facts: [
       { label: "Ideal stay", value: "2-3 nights" },
@@ -959,6 +984,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Talo, Punakha",
         summary:
           "A ridge-top community known for traditional houses, gardens, religious heritage and broad views over Punakha.",
+        image: "/Punakha by Marcus Westberg55.jpg",
       },
       {
         title: "Nobgang Village",
@@ -969,6 +995,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Near Talo, Punakha",
         summary:
           "A traditional village near Talo that works well as part of a slow rural circuit and provides a different perspective on Punakha beyond its most visited monuments.",
+        image: "/Punakha by Marcus Westberg27.jpg",
       },
       {
         title: "Ritsha Village & Punakha Farmland",
@@ -979,6 +1006,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Punakha",
         summary:
           "A farming landscape that helps explain Punakha's fertile rice-growing identity and seasonal agricultural life.",
+        image: "/village with rice paddy fields  DOT AA Original Bhutan Travels.jpg",
       },
       {
         title: "Punakha Cantilever Bridge & Dzong Approach",
@@ -1000,6 +1028,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Punakha district",
         summary:
           "One of the hot springs identified by Punakha Dzongkhag, suited to rural wellness itineraries with enough time for variable access.",
+        image: `${punakhaBase}/08_Mo_Chhu_River.jpg`,
       },
       {
         title: "Chhubu Tshachu",
@@ -1010,6 +1039,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Punakha district",
         summary:
           "A lesser-known traditional hot-spring area in the wider district, best for repeat visitors and slow travel.",
+        image: "/IMG_20231021_170519.jpg",
       },
       {
         title: "Punakha Winter Trek",
@@ -1021,6 +1051,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A lower-altitude multi-day trek through villages, forest and agricultural landscapes, generally suited to cooler, drier months.",
         note: "All treks require an accredited guide or tour operator.",
+        image: "/Snowman Race48.jpg",
       },
       {
         title: "Punakha Dromchoe & Punakha Tshechu",
@@ -1032,6 +1063,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A major festival sequence at Punakha Dzong combining historic ritual, sacred dance and community gathering.",
         note: "Official tentative 2026 dates: Dromchoe 24-26 February; Tshechu 27 February-1 March.",
+        image: "/thedronebook-TourismBoardBhutan-200A3579.jpg",
       },
       {
         title: "Talo Tshechu",
@@ -1042,6 +1074,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Talo Gonpa",
         summary:
           "A smaller festival at Talo Gonpa offering a more intimate village setting.",
+        image: "/IMG_1786.jpg",
       },
       {
         title: "Punakha Astro-Tourism / Night-Sky Experiences",
@@ -1053,6 +1086,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A new tourism direction highlighted by Punakha in January 2026, combining stargazing, celestial storytelling and low-light rural landscapes.",
         note: "Present as an emerging, provider-dependent experience rather than a guaranteed daily attraction.",
+        image: "/Marcus Westberg Dochula Pass 2023_11.jpg",
       },
     ],
     stayPlanning: [
@@ -1083,7 +1117,7 @@ export const destinationChapters: DestinationChapter[] = [
     intro:
       "Wangdue is often hurried through between Punakha and Phobjikha, yet the district deserves its own identity. The restored dzong anchors the main valley, Rinchengang offers a distinctive village landscape, and deeper rural areas such as Khotokha and Adha-Rukha support community, nature and low-volume travel.",
     bestFor: "Dzong architecture, villages, route photography and homestays",
-    heroImage: `${wangdueBase}/01_Wangdue_Phodrang_Dzong_2024.jpg`,
+    heroImage: `${wangdueBase}/03_Chazam_Village_Landscape.jpg`,
     heroAlt: "Wangdue Phodrang Dzong on a ridge",
     facts: [
       { label: "Ideal stay", value: "1 night in main Wangdue; longer for rural areas" },
@@ -1115,6 +1149,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A compact traditional village facing the dzong, known for tightly clustered stone-and-timber houses and steep lanes.",
         note: "Respect privacy; it is a living community.",
+        image: "/Bhutan - Moshe Shai - 652.jpg",
       },
       {
         title: "Adha & Rukha Villages",
@@ -1126,6 +1161,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "Remote farming villages promoted by the district for homestays, local stories, food and insight into rural life.",
         note: "Autumn is often preferable; summer can bring leeches, insects and wetter access.",
+        image: "/Khoma 130723 by Amp Sripimanwat-131.jpg",
       },
       {
         title: "Khotokha Valley",
@@ -1136,6 +1172,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Wangdue Phodrang",
         summary:
           "A quiet highland valley associated with rural settlements, religious sites and seasonal black-necked crane habitat.",
+        image: "/Dochula by Marcus Westberg63.jpg",
       },
       {
         title: "Dolung Goenpa",
@@ -1146,6 +1183,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Khotokha area",
         summary:
           "A historic monastery around 2,770 metres in the Khotokha area, associated with important religious figures and the annual Dolung Mani.",
+        image: "/2022-10-01 11.35.59.jpg",
       },
       {
         title: "Pele La Pass",
@@ -1178,7 +1216,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Punatsang Chhu corridor",
         summary:
           "Bridges, river landscapes and road viewpoints along the Punatsang Chhu corridor provide useful scenic pauses between formal sightseeing stops.",
-        image: `${wangdueBase}/03_Chazam_Village_Landscape.jpg`,
+        image: "/Punakha by Marcus Westberg30.jpg",
       },
       {
         title: "Village Homestay Experiences",
@@ -1189,6 +1227,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Wangdue rural valleys",
         summary:
           "Community-led stays that help distribute tourism beyond the best-known sites and connect visitors with food, agriculture and household life.",
+        image: "/Khoma 130723 by Amp Sripimanwat-95.jpg",
       },
       {
         title: "Wangdue Tshechu",
@@ -1200,6 +1239,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "Wangdue's principal annual tshechu, with sacred dances and community gathering.",
         note: "Official 2026 dates are tentative and should be reconfirmed.",
+        image: "/ChhukhaTshechu.jpg",
       },
       {
         title: "Samtengang / Short Trekking Routes",
@@ -1211,6 +1251,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "Lower-altitude trekking through forest, villages and agricultural landscapes in the Wangdue-Punakha region.",
         note: "All treks require accredited guiding support.",
+        image: "/Marcus Westberg Bumthang 202318.jpg",
       },
     ],
     stayPlanning: [
@@ -1238,7 +1279,7 @@ export const destinationChapters: DestinationChapter[] = [
     intro:
       "Gangtey and Phobjikha combine a monastic ridge with a broad high-altitude wetland valley. The region is one of Bhutan's strongest nature-and-culture destinations because conservation is visible in the landscape itself. Cranes dominate winter travel, but the valley remains rewarding year-round through walking, farms, monastery heritage and highland scenery.",
     bestFor: "Nature, cranes, monasteries, hikes, homestays and photography",
-    heroImage: `${phobjikhaBase}/08_Gangtey_Nature_Trail_Panorama.jpg`,
+    heroImage: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
     heroAlt: "Gangtey and Phobjikha valley landscape",
     facts: [
       { label: "Ideal stay", value: "2 nights" },
@@ -1351,6 +1392,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Gangtey-Phobjikha area",
         summary:
           "A scenic forest and highland hike with elevated views across the Gangtey-Phobjikha landscape.",
+        image: "/Phobjika by Matt Dutile16.jpg",
       },
       {
         title: "Gangtey Trek",
@@ -1362,6 +1404,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "An established multi-day route through the wider region, focusing on forest and cultural landscapes rather than extreme altitude.",
         note: "Bhutan Travel lists spring and autumn among the main operating seasons.",
+        image: "/Phobjikha-valley-by-Alicia-Warner-33.jpg",
       },
       {
         title: "Lawala / High Pass Approaches",
@@ -1394,6 +1437,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Gangtey Gonpa",
         summary:
           "A major monastic festival at Gangtey Gonpa, with a Thongdrel scheduled on the final day in the tentative 2026 calendar.",
+        image: "/DSC02096.jpg",
       },
       {
         title: "Winter Phobjikha",
@@ -1433,7 +1477,7 @@ export const destinationChapters: DestinationChapter[] = [
     intro:
       "Haa is one of the best choices for travellers seeking western Bhutan with fewer visitors. Lhakhang Karpo and Nagpo anchor the valley's sacred identity, while village walks, local food, homestays, cycling and highland traditions give the destination its strongest personality.",
     bestFor: "Slow travel, villages, sacred sites, food, cycling and quieter landscapes",
-    heroImage: `${haaBase}/01_Haa_Valley_Panorama.jpg`,
+    heroImage: "/Haa by Marcus Westberg33.jpg",
     heroAlt: "Haa Valley panorama",
     facts: [
       { label: "Ideal stay", value: "1-2 nights" },
@@ -1511,6 +1555,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa",
         summary:
           "A traditional village landscape near Haa's sacred sites, suitable for slow walks and architectural photography.",
+        image: "/Haa by Marcus Westberg26.jpg",
       },
       {
         title: "Yangthang Village",
@@ -1532,6 +1577,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa",
         summary:
           "A community temple whose local history is associated with the early spread of Buddhism and a revered Maitreya image.",
+        image: "/Lhakhang Karpo Courtyard with monks haa  DOT AA Original Bhutan Travels.jpg",
       },
       {
         title: "Lungkha Lhakhang",
@@ -1542,6 +1588,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa",
         summary:
           "A small local temple described by Haa Dzongkhag as more than two centuries old, with history preserved through community tradition.",
+        image: "/Ben-Richards-Tourism-Bhutan-066.jpg",
       },
       {
         title: "Juneydrak Hermitage",
@@ -1553,6 +1600,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A secluded hillside religious experience combining forest walking and a quieter atmosphere.",
         note: "Trail and access should be confirmed with a Haa-based guide.",
+        image: "/Haa by Marcus Westberg30.jpg",
       },
       {
         title: "Haa Farmhouse / Approved Homestay",
@@ -1564,6 +1612,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "A local stay combining home-cooked food, traditional architecture and insight into agricultural routines.",
         note: "Use Department of Tourism-approved accommodation and set realistic comfort expectations.",
+        image: "/Ben-Richards-Tourism-Bhutan-037.jpg",
       },
       {
         title: "Haa River & Valley Walks",
@@ -1597,6 +1646,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa Valley",
         summary:
           "Quiet roads, fields and villages make Haa one of Bhutan's attractive areas for recreational cycling.",
+        image: "/cycle.jpg",
       },
       {
         title: "Haa Tshechu",
@@ -1608,6 +1658,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "Haa's main tshechu at Lhakhang Karpo, offering sacred dance and community gathering in a smaller valley setting.",
         note: "The official 2026 calendar is tentative.",
+        image: "/Haa Summer Festival2.jpg",
       },
       {
         title: "Haa Summer Festival / Seasonal Cultural Events",
@@ -1630,6 +1681,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa",
         summary:
           "Taste Haa's distinctive buckwheat dumplings and other local dishes through a farmhouse meal or cooking experience.",
+        image: "/Haa by Marcus Westberg12.jpg",
       },
       {
         title: "Ap Chundu Cultural Traditions",
@@ -1641,6 +1693,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "Community-led interpretation of Haa's strong traditions associated with Ap Chundu and the relationship between sacred landscape and local identity.",
         note: "Do not stage sacred rituals or promise restricted ceremonies.",
+        image: "/Gentle eyes behind a wrathful mask.jpg",
       },
       {
         title: "Haa Nomadic & Highland Heritage",
@@ -1651,6 +1704,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa highlands",
         summary:
           "An emerging tourism theme around herding, highland routes, food and seasonal livelihoods, best delivered through real local hosts.",
+        image: "/Ben-Richards-Tourism-Bhutan-048.jpg",
       },
       {
         title: "Haa-Paro / Saga La Area Trekking Routes",
@@ -1662,6 +1716,7 @@ export const destinationChapters: DestinationChapter[] = [
         summary:
           "Short trekking routes connecting the Haa and Paro mountain landscapes through forest and high passes.",
         note: "Exact routing, camping and trail conditions should be confirmed with an accredited operator.",
+        image: "/MarcusWestbergBhutanHiRes-6.jpg",
       },
     ],
     stayPlanning: [

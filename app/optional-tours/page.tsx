@@ -475,7 +475,7 @@ const categories: AddOnCategory[] = [
         description:
           "Optional nature hike near Dochula when weather and timing allow.",
         image: {
-          src: "Lungchutse-Hike-NK-Image5.jpg",
+          src: "/Lungchutse-Hike-NK-Image5.jpg",
           alt: "Lungchutse hike",
           label: "Lungchutse Hike Image",
           copyrightName: "",

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
   Award,
   CalendarDays,
@@ -8,22 +7,15 @@ import {
   ChevronRight,
   Hotel,
   Landmark,
-  Mail,
   MapPin,
   Mountain,
-  Phone,
   Ship,
   ShieldCheck,
   Ticket,
   Users,
 } from "lucide-react";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTiktok,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { featuredUpcomingEvent } from "../data/upcomingEvents";
 import { siteConfig } from "../siteConfig";
@@ -35,7 +27,7 @@ export default function UpcomingEventsPage() {
     "/concert/10_brahmaputra_cruise.jpg",
     "/concert/02_stadium_concert_crowd.jpg",
     "/concert/08_outdoor_rock_concert_crowd.jpg",
-    "/concert/09_bhutan_thimphu_gate.jpg",
+    "/concert/07_full_band_concert.jpg",
   ];
 
   return (
@@ -272,114 +264,10 @@ export default function UpcomingEventsPage() {
             </div>
           </section>
 
-          <footer className="upcoming-events-poster-footer">
-            <div className="upcoming-events-footer-top">
-              <div className="upcoming-events-footer-brand">
-                <Link href="/" aria-label="Unseen Himalayas Bhutan home">
-                  <Image
-                    src="/logo-transparent.png"
-                    alt="Unseen Himalayas Bhutan Logo"
-                    width={92}
-                    height={92}
-                  />
-                </Link>
-                <div>
-                  <strong>Unseen Himalayas Bhutan</strong>
-                  <span>
-                    Licensed Bhutan tour operator and DMC for concert trips,
-                    cultural travel, festivals, and tailor-made Himalayan journeys.
-                  </span>
-                </div>
-              </div>
-
-              <div className="upcoming-events-footer-event-card">
-                <span>Featured Event</span>
-                <strong>Guns N&apos; Roses Guwahati 2026</strong>
-                <small>{event.date} / {event.location}</small>
-              </div>
-            </div>
-
-            <div className="upcoming-events-footer-main">
-              <nav aria-label="Upcoming event quick links">
-                <strong>Quick Links</strong>
-                <Link href="/">Home</Link>
-                <Link href="/upcoming-events">Upcoming Events</Link>
-                <Link href="/about-bhutan">Bhutan Overview</Link>
-                <Link href="/contact">Contact Us</Link>
-              </nav>
-
-              <nav aria-label="Popular adventures">
-                <strong>Popular Adventures</strong>
-                <Link href="/bhutan-tours">Bhutan Tours</Link>
-                <Link href="/festival-tours">Festival Tours</Link>
-                <Link href="/bhutan-trekkings">Bhutan Trekkings</Link>
-                <Link href="/cultural-tours">Cultural Tours</Link>
-              </nav>
-
-              <div className="upcoming-events-footer-contact">
-                <strong>Contact Us</strong>
-                <div className="upcoming-events-footer-phone">
-                  <Phone aria-hidden="true" />
-                  <span>
-                    <a href={siteConfig.contact.phoneHref}>
-                      {siteConfig.contact.phoneDisplay}
-                    </a>
-                    <a href={siteConfig.contact.secondaryPhoneHref}>
-                      {siteConfig.contact.secondaryPhoneDisplay}
-                    </a>
-                  </span>
-                </div>
-                <a href={siteConfig.contact.emailHref}>
-                  <Mail aria-hidden="true" />
-                  {siteConfig.contact.email}
-                </a>
-                <span>
-                  <MapPin aria-hidden="true" />
-                  Thimphu, Bhutan
-                </span>
-              </div>
-
-              <div className="upcoming-events-footer-social-wrap">
-                <strong>Follow Us</strong>
-                <div className="upcoming-events-footer-social" aria-label="Social media links">
-                  <a href={siteConfig.social.facebook} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                    <FaFacebook aria-hidden="true" />
-                  </a>
-                  <a href={siteConfig.social.instagram} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram aria-hidden="true" />
-                  </a>
-                  <a href={siteConfig.social.youtube} aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-                    <FaYoutube aria-hidden="true" />
-                  </a>
-                  <a href={siteConfig.social.tiktok} aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-                    <FaTiktok aria-hidden="true" />
-                  </a>
-                  <a href={siteConfig.contact.whatsappHref} aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-                    <FaWhatsapp aria-hidden="true" />
-                  </a>
-                </div>
-                <a
-                  href={siteConfig.contact.whatsappHref}
-                  className="upcoming-events-footer-cta"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Enquire About This Trip
-                  <ChevronRight aria-hidden="true" />
-                </a>
-              </div>
-            </div>
-
-            <div className="upcoming-events-footer-bottom">
-              <span>&copy; 2026 Unseen Himalayas Bhutan. All rights reserved.</span>
-              <div>
-                <Link href="/terms">Terms & Conditions</Link>
-                <Link href="/privacy-policy">Privacy Policy</Link>
-              </div>
-            </div>
-          </footer>
         </article>
       </main>
+
+      <Footer />
     </>
   );
 }

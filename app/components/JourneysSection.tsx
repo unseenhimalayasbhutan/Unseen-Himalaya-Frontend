@@ -64,7 +64,7 @@ const packages: TourPackage[] = [
   {
     slug: "3-day-paro-thimphu-paro",
     tourCode: "UH-NAC-001",
-    image: "/By Marcus Westberg _ Paro _ 2023_18.jpg",
+    image: "/Thimphu_2026_Web_Optimized_Images/Thimphu_2026_Website_Photo_Pack/Thimphu/01_Buddha_Dordenma.jpg",
     tag: "Short Escape",
     title: "3-Day Paro & Thimphu Essentials",
     text: "For travelers with limited time who still want Thimphu highlights and Tiger’s Nest.",
@@ -77,7 +77,7 @@ const packages: TourPackage[] = [
   {
     slug: "5-day-classic-western-bhutan",
     tourCode: "UH-NAC-005",
-    image: "/Punakha by Marcus Westberg30.jpg",
+    image: "/Big Buddha with Thimphu City behind x DOT AA Original Bhutan Travels.jpg",
     tag: "Classic Route",
     title: "5-Day Classic Western Bhutan",
     text: "A strong first-time route with Thimphu, Punakha, Dochula, Paro, and Tiger’s Nest.",
@@ -90,7 +90,7 @@ const packages: TourPackage[] = [
   {
     slug: "8-day-punakha-phobjikha-depth",
     tourCode: "UH-NAC-010",
-    image: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
+    image: "/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Gangtey_Phobjikha/11_Phobjikha_Village.jpg",
     tag: "Deeper Journey",
     title: "8-Day Punakha & Phobjikha In-Depth",
     text: "A fuller route with additional Punakha sightseeing and a scenic Phobjikha extension.",

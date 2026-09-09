@@ -2109,101 +2109,6 @@ img {
   }
 }
 
-/* Last-mile overrides for requested page consistency. */
-.festival-pro-page .uh-festival-library-redesign-shell,
-.bhutantour-pro-page .uh-itinerary-redesign-shell {
-  margin-top: 44px;
-  padding: clamp(18px, 2.5vw, 26px);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg, 34px);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at 92% 0%, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-.festival-pro-page .uh-festival-library-redesign-topbar,
-.bhutantour-pro-page .uh-itinerary-redesign-topbar {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-}
-
-.festival-pro-page .uh-festival-library-accordion-group {
-  border: 0;
-  border-radius: var(--radius-none);
-  background: transparent;
-  box-shadow: var(--shadow-subtle);
-}
-
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr) 22px;
-  gap: 13px;
-  align-items: center;
-  padding: 15px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-  text-align: left;
-}
-
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card:hover,
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card:focus-visible,
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card.is-active,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card:hover,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card:focus-visible,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card.is-active {
-  transform: translateY(-2px);
-  border-color: var(--color-border);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-  outline: none;
-}
-
-.festival-pro-page .uh-festival-library-redesign-route-number,
-.bhutantour-pro-page .uh-itinerary-redesign-route-number {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-sm);
-  background: var(--warm, var(--color-bg-card));
-  color: var(--color-accent);
-  border: 1px solid var(--color-border);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.festival-pro-page .uh-festival-library-redesign-route-card.is-active .uh-festival-library-redesign-route-number,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card.is-active .uh-itinerary-redesign-route-number {
-  background: var(--gold, var(--color-accent));
-  color: var(--color-text-primary);
-}
-
-.festival-pro-page .uh-festival-library-accordion-panel {
-  margin-top: 12px;
-  padding: 0;
-  border: 0;
-}
-
-.festival-pro-page .uh-festival-library-accordion-panel .uh-festival-library-redesign-panel,
-.bhutantour-pro-page .uh-itinerary-redesign-panel {
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg, 34px);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at 90% 0%, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
 .cultural-pro-booking-shell {
   margin-top: 42px;
 }
@@ -2288,63 +2193,8 @@ img {
     width: min(100% - 28px, 1200px);
   }
 
-  :is(
-    .tour-pro-hero-grid,
-    .about-bhutan-expanded-split-grid,
-    .about-bhutan-expanded-flight-grid,
-    .cultural-pro-route-shell,
-    .uh-itinerary-redesign-layout,
-    .uh-festival-library-redesign-layout,
-    .uh-festival-library-accordion-panel .uh-festival-library-redesign-panel-grid,
-    .uh-itinerary-redesign-panel-grid,
-    .cultural-pro-booking-grid.uh-festival-booking-clarity-grid,
-    .uh-festival-booking-clarity-overview,
-    .uh-festival-booking-clarity-grid,
-    .tour-pro-stats-grid,
-    .gnh-pro-initiatives-grid,
-    .seasons-pro-activities-grid
-  ) {
-    grid-template-columns: 1fr;
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-shell,
-  .bhutantour-pro-page .uh-itinerary-redesign-shell {
-    padding: 16px;
-    border-radius: var(--radius-sm);
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-filter-row,
-  .bhutantour-pro-page .uh-itinerary-redesign-filter-row {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    padding-bottom: 4px;
-    scrollbar-width: thin;
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-filter-btn,
-  .bhutantour-pro-page .uh-itinerary-redesign-filter-btn {
-    flex: 0 0 auto;
-    white-space: nowrap;
-  }
-
-  .festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card,
-  .bhutantour-pro-page .uh-itinerary-redesign-route-card,
-  .cultural-pro-route-option {
-    grid-template-columns: 42px minmax(0, 1fr);
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-route-card > svg,
-  .bhutantour-pro-page .uh-itinerary-redesign-route-arrow,
-  .cultural-pro-route-option > svg {
-    display: none;
-  }
-
   .tour-pro-section-heading h2,
-  .cultural-pro-route-main h3,
-  .uh-itinerary-redesign-panel-intro h3,
-  .uh-festival-library-redesign-panel-intro h3,
-  .about-bhutan-expanded-highlight-card h3 {
+.about-bhutan-expanded-highlight-card h3{
     overflow-wrap: anywhere;
   }
 }
@@ -2356,9 +2206,7 @@ img {
   }
 
   .tour-pro-btn-primary,
-  .tour-pro-btn-secondary,
-  .uh-itinerary-redesign-actions a,
-  .uh-festival-library-redesign-actions a {
+.tour-pro-btn-secondary{
     width: 100%;
     justify-content: center;
   }
@@ -2374,112 +2222,6 @@ img {
     right: 0;
     transform: none;
   }
-}
-
-/* =========================================================
-   FINAL UI CONSISTENCY PASS - JUNE 2026
-   Itinerary libraries, Booking Clarity, activity month pills,
-   About Bhutan highlight cards, and mobile hardening.
-   ========================================================= */
-
-.festival-pro-page .uh-festival-library-redesign-shell,
-.bhutantour-pro-page .uh-itinerary-redesign-shell {
-  margin-top: 44px;
-  padding: clamp(18px, 2.5vw, 26px);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg, 34px);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at 92% 0%, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-.festival-pro-page .uh-festival-library-redesign-topbar,
-.bhutantour-pro-page .uh-itinerary-redesign-topbar {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-}
-
-.festival-pro-page .uh-festival-library-accordion-list,
-.festival-pro-page .uh-festival-library-redesign-route-list,
-.bhutantour-pro-page .uh-itinerary-redesign-route-list {
-  gap: 12px;
-}
-
-.festival-pro-page .uh-festival-library-accordion-group {
-  border: 0;
-  border-radius: var(--radius-none);
-  background: transparent;
-  box-shadow: var(--shadow-subtle);
-}
-
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr) 22px;
-  gap: 13px;
-  align-items: center;
-  padding: 15px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-  text-align: left;
-}
-
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card:hover,
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card:focus-visible,
-.festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card.is-active,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card:hover,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card:focus-visible,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card.is-active {
-  transform: translateY(-2px);
-  border-color: var(--color-border);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-  outline: none;
-}
-
-.festival-pro-page .uh-festival-library-redesign-route-number,
-.bhutantour-pro-page .uh-itinerary-redesign-route-number {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-sm);
-  background: var(--warm, var(--color-bg-card));
-  color: var(--color-accent);
-  border: 1px solid var(--color-border);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.festival-pro-page .uh-festival-library-redesign-route-card.is-active .uh-festival-library-redesign-route-number,
-.bhutantour-pro-page .uh-itinerary-redesign-route-card.is-active .uh-itinerary-redesign-route-number {
-  background: var(--gold, var(--color-accent));
-  color: var(--color-text-primary);
-}
-
-.festival-pro-page .uh-festival-library-accordion-panel {
-  margin-top: 12px;
-  padding: 0;
-  border: 0;
-}
-
-.festival-pro-page .uh-festival-library-accordion-panel .uh-festival-library-redesign-panel,
-.bhutantour-pro-page .uh-itinerary-redesign-panel {
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg, 34px);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at 90% 0%, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
 }
 
 .cultural-pro-booking-shell {
@@ -2545,11 +2287,6 @@ img {
   .cultural-pro-booking-grid.uh-festival-booking-clarity-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .festival-pro-page .uh-festival-library-accordion-panel .uh-festival-library-redesign-panel-grid,
-  .bhutantour-pro-page .uh-itinerary-redesign-panel-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 820px) {
@@ -2573,87 +2310,17 @@ img {
     padding-right: 0;
   }
 
-  :is(
-    .tour-pro-hero-grid,
-    .about-bhutan-expanded-split-grid,
-    .about-bhutan-expanded-flight-grid,
-    .cultural-pro-route-shell,
-    .uh-itinerary-redesign-layout,
-    .uh-festival-library-redesign-layout,
-    .uh-festival-library-accordion-panel .uh-festival-library-redesign-panel-grid,
-    .uh-itinerary-redesign-panel-grid,
-    .cultural-pro-booking-grid.uh-festival-booking-clarity-grid,
-    .uh-festival-booking-clarity-overview,
-    .uh-festival-booking-clarity-grid,
-    .tour-pro-stats-grid,
-    .gnh-pro-initiatives-grid,
-    .seasons-pro-activities-grid
-  ) {
-    grid-template-columns: 1fr;
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-shell,
-  .bhutantour-pro-page .uh-itinerary-redesign-shell {
-    padding: 16px;
-    border-radius: var(--radius-sm);
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-topbar,
-  .bhutantour-pro-page .uh-itinerary-redesign-topbar {
-    align-items: stretch;
-    gap: 14px;
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-filter-row,
-  .bhutantour-pro-page .uh-itinerary-redesign-filter-row {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    padding-bottom: 4px;
-    scrollbar-width: thin;
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-filter-btn,
-  .bhutantour-pro-page .uh-itinerary-redesign-filter-btn {
-    flex: 0 0 auto;
-    white-space: nowrap;
-  }
-
-  .festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card,
-  .bhutantour-pro-page .uh-itinerary-redesign-route-card,
-  .cultural-pro-route-option {
-    grid-template-columns: 42px minmax(0, 1fr);
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-route-card > svg,
-  .bhutantour-pro-page .uh-itinerary-redesign-route-arrow,
-  .cultural-pro-route-option > svg {
-    display: none;
-  }
-
   .tour-pro-section-heading h2,
-  .cultural-pro-route-main h3,
-  .uh-itinerary-redesign-panel-intro h3,
-  .uh-festival-library-redesign-panel-intro h3,
-  .about-bhutan-expanded-highlight-card h3 {
+.about-bhutan-expanded-highlight-card h3{
     overflow-wrap: anywhere;
   }
 }
 
 @media (max-width: 560px) {
-  .festival-pro-page .uh-festival-library-accordion-group .uh-festival-library-redesign-route-card,
-  .bhutantour-pro-page .uh-itinerary-redesign-route-card,
-  .cultural-pro-route-option,
   .uh-festival-booking-clarity-card,
-  .cultural-pro-booking-card,
-  .about-bhutan-expanded-highlight-card {
+.cultural-pro-booking-card,
+.about-bhutan-expanded-highlight-card{
     border-radius: var(--radius-sm);
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-route-top,
-  .bhutantour-pro-page .uh-itinerary-redesign-route-top {
-    align-items: flex-start;
-    flex-direction: column;
   }
 
   .uh-festival-booking-clarity-card li,
@@ -2662,9 +2329,7 @@ img {
   }
 
   .tour-pro-btn-primary,
-  .tour-pro-btn-secondary,
-  .uh-itinerary-redesign-actions a,
-  .uh-festival-library-redesign-actions a {
+.tour-pro-btn-secondary{
     width: 100%;
     justify-content: center;
   }
@@ -4828,6 +4493,7 @@ img {
 
 .site-footer {
   position: relative;
+  z-index: 1305;
   background: var(--dark);
   color: var(--color-text-primary);
   overflow: hidden;
@@ -12043,7 +11709,7 @@ img {
 .why-section .main-title {
   max-width: 900px;
   margin: 0 auto;
-  color: var(--dark);
+  color: var(--color-text-primary);
   font-size: var(--font-size-display);
   font-weight: 700;
   line-height: 0.98;
@@ -12057,7 +11723,7 @@ img {
 .why-section .description {
   max-width: 720px;
   margin: 24px auto 0;
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-lg);
   line-height: 1.85;
 }
@@ -12258,7 +11924,7 @@ img {
 
 .why-section .feature-title {
   margin: 0 0 10px;
-  color: var(--dark);
+  color: var(--color-text-primary);
   font-size: var(--font-size-md);
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -12268,7 +11934,7 @@ img {
 
 .why-section .feature-text {
   margin: 0;
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-md);
   line-height: 1.75;
 }
@@ -12325,7 +11991,7 @@ img {
 
 .stat-card span {
   display: block;
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -12376,121 +12042,131 @@ img {
 }
 
 .why-section .bottom-heading h2 {
-  max-width: 780px;
-  margin: 0 auto;
-  color: var(--dark);
+  max-width: 680px;
+  margin: 0;
+  color: var(--color-text-primary);
   font-size: var(--font-size-heading-lg);
   line-height: 1.08;
-  letter-spacing: -0.035em;
+  letter-spacing: 0;
 }
 
 .why-section .bottom-heading p {
-  max-width: 680px;
-  margin: 18px auto 0;
-  color: var(--muted);
+  max-width: 640px;
+  margin: 18px 0 0;
+  color: var(--color-text-secondary);
   font-size: var(--font-size-base);
   line-height: 1.8;
 }
 
 .why-section .uh-guidebook-layout {
   display: grid;
-  grid-template-columns: minmax(300px, 0.85fr) minmax(0, 1fr);
-  gap: clamp(24px, 4vw, 48px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 4vw, 52px);
   align-items: center;
-  margin-top: 44px;
+  margin-top: clamp(70px, 8vw, 96px);
+}
+
+.why-section .uh-guidebook-layout .bottom-heading {
+  grid-column: 2;
+  margin: 0;
+  text-align: left;
 }
 
 .why-section .uh-guidebook-media {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
 }
 
 .why-section .uh-guidebook-image {
   position: relative;
-  min-height: 420px;
+  width: 100%;
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
+  background: var(--color-bg-elevated);
 }
 
 .why-section .uh-guidebook-image img {
   object-fit: cover;
 }
 
+.why-section .uh-guidebook-image-1 {
+  aspect-ratio: 16 / 10;
+}
+
 .why-section .uh-guidebook-image-2 {
-  margin-top: 36px;
+  width: min(64%, 360px);
+  justify-self: end;
+  aspect-ratio: 4 / 3;
 }
 
 .why-section .bottom-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  grid-column: 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 24px;
   margin-top: 0;
 }
 
 .why-section .bottom-card {
   position: relative;
-  overflow: hidden;
-  padding: 24px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  padding: 18px 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   text-align: left;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.why-section .bottom-card::before {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--gold), var(--gold-soft));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s ease;
+  transition: border-color 0.25s ease;
 }
 
 .why-section .bottom-card:hover {
-  transform: translateY(-7px);
-  border-color: var(--color-border);
-  box-shadow: var(--shadow-subtle);
-}
-
-.why-section .bottom-card:hover::before {
-  transform: scaleX(1);
+  transform: none;
+  border-color: var(--color-border-strong);
+  box-shadow: none;
 }
 
 .why-section .bottom-icon {
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
-  margin: 0 0 18px;
+  margin: 0;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  background: var(--warm);
+  background: var(--color-bg-card);
   color: var(--color-accent);
-  font-size: var(--font-size-heading-md);
+  font-size: var(--font-size-lg);
   line-height: 1;
 }
 
 .why-section .bottom-title {
   margin: 0 0 9px;
-  color: var(--dark);
-  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   line-height: 1.35;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .why-section .bottom-text {
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
   line-height: 1.7;
+}
+
+.why-section .bottom-card:nth-child(5) {
+  grid-column: 1 / -1;
 }
 
 @keyframes whyFloatOrb {
@@ -12522,16 +12198,33 @@ img {
     min-height: 390px;
   }
 
-  .why-section .bottom-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .why-section .uh-guidebook-layout {
     grid-template-columns: 1fr;
   }
 
-  .why-section .uh-guidebook-image {
-    min-height: 360px;
+  .why-section .uh-guidebook-layout .bottom-heading,
+  .why-section .uh-guidebook-media,
+  .why-section .bottom-grid {
+    grid-column: 1;
+  }
+
+  .why-section .uh-guidebook-layout .bottom-heading {
+    grid-row: 1;
+  }
+
+  .why-section .uh-guidebook-media {
+    grid-row: 2;
+    grid-template-columns: minmax(0, 0.62fr) minmax(0, 0.38fr);
+    align-items: end;
+  }
+
+  .why-section .bottom-grid {
+    grid-row: 3;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .why-section .uh-guidebook-image-2 {
+    width: 100%;
   }
 }
 
@@ -12551,12 +12244,31 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .why-section .uh-guidebook-image {
-    min-height: 300px;
+  .why-section .uh-guidebook-layout {
+    margin-top: 56px;
+  }
+
+  .why-section .uh-guidebook-layout .bottom-heading {
+    text-align: center;
+  }
+
+  .why-section .bottom-heading h2,
+  .why-section .bottom-heading p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .why-section .bottom-card:nth-child(5) {
+    grid-column: auto;
   }
 
   .why-section .uh-guidebook-image-2 {
+    width: 100%;
     margin-top: 0;
+  }
+
+  .why-section .bottom-card {
+    border-radius: 0;
   }
 
   .showcase-left {
@@ -12576,7 +12288,6 @@ img {
   }
 
   .why-section .feature-card,
-  .why-section .bottom-card,
   .stat-card {
     border-radius: var(--radius-sm);
   }
@@ -14631,17 +14342,17 @@ img {
 .tour-pro-hero-content h1 {
   max-width: 880px;
   margin: 0;
-  color: var(--dark);
-  font-size: var(--font-size-display);
+  color: var(--color-text-primary);
+  font-size: var(--font-size-heading-lg);
   font-weight: 700;
-  line-height: 0.98;
-  letter-spacing: -0.045em;
+  line-height: 1.02;
+  letter-spacing: 0;
 }
 
 .tour-pro-hero-content p {
   max-width: 760px;
   margin: 24px 0 0;
-  color: var(--muted);
+  color: var(--color-text-secondary);
   font-size: var(--font-size-lg);
   line-height: 1.82;
 }
@@ -18868,271 +18579,6 @@ a[href] {
   line-height: 1.75;
 }
 
-/* =========================================================
-   CULTURAL ITINERARIES - FINAL CSS-ONLY CLICKABLE FIX
-   This section does not depend on React state.
-   ========================================================= */
-
-.uh-itinerary-section {
-  position: relative;
-  isolation: isolate;
-}
-
-.uh-itinerary-switcher {
-  position: relative;
-  margin-top: 52px;
-}
-
-.uh-itinerary-radio {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.uh-itinerary-layout {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(280px, 0.42fr) minmax(0, 0.58fr);
-  gap: clamp(22px, 3vw, 34px);
-  align-items: stretch;
-}
-
-.uh-itinerary-options {
-  position: relative;
-  z-index: 5;
-  display: grid;
-  gap: 14px;
-}
-
-.uh-itinerary-option {
-  position: relative;
-  z-index: 6;
-  width: 100%;
-  min-height: 116px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 20px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  color: var(--text);
-  cursor: pointer;
-  user-select: none;
-  box-shadow: var(--shadow-subtle);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease,
-    background 0.25s ease;
-}
-
-.uh-itinerary-option:hover {
-  transform: translateY(-3px);
-  border-color: var(--color-border);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-option-number {
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-sm);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  border: 1px solid var(--color-border);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.1em;
-}
-
-.uh-itinerary-option-content {
-  min-width: 0;
-  display: grid;
-  gap: 6px;
-}
-
-.uh-itinerary-option-duration {
-  width: fit-content;
-  display: inline-flex;
-  padding: 6px 10px;
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.uh-itinerary-option strong {
-  color: var(--dark);
-  font-size: var(--font-size-base);
-  font-weight: 800;
-  line-height: 1.25;
-}
-
-.uh-itinerary-option small {
-  color: var(--muted);
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  line-height: 1.45;
-}
-
-.uh-itinerary-panels {
-  position: relative;
-  z-index: 2;
-  min-height: 100%;
-}
-
-.uh-itinerary-panel {
-  display: none;
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at top right, var(--color-divider), transparent 20rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-image {
-  border-radius: var(--radius-none);
-  border: 0;
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-panel .tour-pro-image-slot {
-  margin: 0;
-  border-radius: var(--radius-none);
-}
-
-.uh-itinerary-panel .tour-pro-image-frame {
-  min-height: 270px;
-  border-radius: var(--radius-none);
-}
-
-.uh-itinerary-detail {
-  padding: clamp(26px, 4vw, 42px);
-}
-
-.uh-itinerary-kicker {
-  width: fit-content;
-  margin-bottom: 14px;
-  padding: 8px 12px;
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.uh-itinerary-detail h3 {
-  margin: 0;
-  color: var(--dark);
-  font-size: var(--font-size-heading-lg);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-}
-
-.uh-itinerary-detail p {
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: var(--font-size-md);
-  line-height: 1.8;
-}
-
-.uh-itinerary-facts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 24px;
-}
-
-.uh-itinerary-facts div {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  padding: 13px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 700;
-  line-height: 1.4;
-}
-
-.uh-itinerary-facts svg {
-  width: 15px;
-  height: 15px;
-  flex: 0 0 auto;
-  margin-top: 2px;
-  color: var(--gold);
-}
-
-.uh-itinerary-highlights {
-  display: grid;
-  gap: 10px;
-  margin: 24px 0 28px;
-  padding: 0;
-  list-style: none;
-}
-
-.uh-itinerary-highlights li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  color: var(--text);
-  font-size: var(--font-size-md);
-  line-height: 1.55;
-}
-
-.uh-itinerary-highlights svg {
-  width: 16px;
-  height: 16px;
-  flex: 0 0 auto;
-  margin-top: 3px;
-  color: var(--gold);
-}
-
-/* Active option styling */
-#uh-cultural-route-1:checked ~ .uh-itinerary-layout .uh-itinerary-option-1,
-#uh-cultural-route-2:checked ~ .uh-itinerary-layout .uh-itinerary-option-2,
-#uh-cultural-route-3:checked ~ .uh-itinerary-layout .uh-itinerary-option-3,
-#uh-cultural-route-4:checked ~ .uh-itinerary-layout .uh-itinerary-option-4 {
-  border-color: var(--color-border);
-  background: linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-  transform: translateY(-3px);
-}
-
-#uh-cultural-route-1:checked ~ .uh-itinerary-layout .uh-itinerary-option-1 .uh-itinerary-option-number,
-#uh-cultural-route-2:checked ~ .uh-itinerary-layout .uh-itinerary-option-2 .uh-itinerary-option-number,
-#uh-cultural-route-3:checked ~ .uh-itinerary-layout .uh-itinerary-option-3 .uh-itinerary-option-number,
-#uh-cultural-route-4:checked ~ .uh-itinerary-layout .uh-itinerary-option-4 .uh-itinerary-option-number {
-  background: var(--gold);
-  color: var(--color-text-primary);
-  border-color: var(--gold);
-}
-
-/* Active panel display */
-#uh-cultural-route-1:checked ~ .uh-itinerary-layout .uh-itinerary-panel-1,
-#uh-cultural-route-2:checked ~ .uh-itinerary-layout .uh-itinerary-panel-2,
-#uh-cultural-route-3:checked ~ .uh-itinerary-layout .uh-itinerary-panel-3,
-#uh-cultural-route-4:checked ~ .uh-itinerary-layout .uh-itinerary-panel-4 {
-  display: block;
-  animation: uhItineraryFade 0.28s ease both;
-}
-
 @keyframes uhItineraryFade {
   from {
     opacity: 0;
@@ -19149,40 +18595,11 @@ a[href] {
   .cultural-value-grid-clean {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .uh-itinerary-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-itinerary-options {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 680px) {
   .cultural-value-grid-clean {
     grid-template-columns: 1fr;
-  }
-
-  .uh-itinerary-switcher {
-    margin-top: 36px;
-  }
-
-  .uh-itinerary-options {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-itinerary-option {
-    min-height: auto;
-    padding: 18px;
-  }
-
-  .uh-itinerary-facts {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-itinerary-panel .tour-pro-image-frame {
-    min-height: 220px;
   }
 }
 
@@ -19484,6 +18901,7 @@ a[href] {
   background: var(--color-bg-card);
   color: var(--color-text-primary);
   cursor: pointer;
+  text-align: left;
   user-select: none;
   box-shadow: var(--shadow-subtle);
   transition:
@@ -19493,11 +18911,13 @@ a[href] {
     background 0.25s ease;
 }
 
-.uh-destination-option:hover {
+.uh-destination-option:hover,
+.uh-destination-option:focus-visible {
   transform: translateY(-3px);
   border-color: var(--color-border-strong);
   background: var(--color-bg-elevated);
   box-shadow: var(--shadow-subtle);
+  outline: none;
 }
 
 .uh-destination-option-thumb {
@@ -19526,6 +18946,7 @@ a[href] {
   min-width: 0;
   display: grid;
   align-content: center;
+  justify-items: start;
 }
 
 .uh-destination-option-content span {
@@ -19577,7 +18998,9 @@ a[href] {
   background:
     linear-gradient(145deg, rgba(201, 154, 74, 0.05), rgba(201, 154, 74, 0.02)),
     var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
+  box-shadow:
+    inset 0 0 0 1px rgba(201, 154, 74, 0.14),
+    var(--shadow-subtle);
   transform: translateY(-3px);
 }
 
@@ -20972,32 +20395,17 @@ a[href] {
 
 }
 
-/* =========================================================
-   BHUTAN TOURS PAGE - PROFESSIONAL CSS-ONLY CLICKABLE FIX
-   Unseen Himalayas
-   ========================================================= */
-
-.uh-bhutan-library-section {
-  position: relative;
-  isolation: isolate;
-}
-
 .uh-bhutan-switcher {
   position: relative;
   margin-top: 48px;
 }
 
-.uh-duration-radio,
-.uh-bhutan-route-radio {
+.uh-duration-radio{
   position: absolute;
   width: 1px;
   height: 1px;
   opacity: 0;
   pointer-events: none;
-}
-
-.uh-bhutan-library-layout {
-  position: relative;
 }
 
 .uh-bhutan-duration-row {
@@ -21038,170 +20446,11 @@ a[href] {
   color: var(--color-accent-light);
 }
 
-#uh-duration-all:checked ~ .uh-bhutan-library-layout .uh-duration-filter-all,
-#uh-duration-3days:checked ~ .uh-bhutan-library-layout .uh-duration-filter-3days,
-#uh-duration-4days:checked ~ .uh-bhutan-library-layout .uh-duration-filter-4days,
-#uh-duration-5days:checked ~ .uh-bhutan-library-layout .uh-duration-filter-5days,
-#uh-duration-6days:checked ~ .uh-bhutan-library-layout .uh-duration-filter-6days,
-#uh-duration-7days:checked ~ .uh-bhutan-library-layout .uh-duration-filter-7days,
-#uh-duration-8days:checked ~ .uh-bhutan-library-layout .uh-duration-filter-8days {
-  border-color: var(--gold);
-  background: var(--gold);
-  color: var(--color-text-primary);
-  box-shadow: var(--shadow-subtle);
-}
-
 .uh-bhutan-itinerary-layout {
   display: grid;
   grid-template-columns: minmax(300px, 0.42fr) minmax(0, 0.58fr);
   gap: clamp(24px, 4vw, 42px);
   align-items: start;
-}
-
-.uh-bhutan-route-list {
-  position: sticky;
-  top: 132px;
-  display: grid;
-  gap: 14px;
-  max-height: calc(100vh - 164px);
-  overflow-y: auto;
-  padding-right: 8px;
-  scrollbar-width: thin;
-}
-
-.uh-bhutan-route-list::-webkit-scrollbar {
-  width: 7px;
-}
-
-.uh-bhutan-route-list::-webkit-scrollbar-track {
-  background: var(--color-accent-wash);
-  border-radius: var(--radius-round);
-}
-
-.uh-bhutan-route-list::-webkit-scrollbar-thumb {
-  background: var(--color-accent-wash);
-  border-radius: var(--radius-round);
-}
-
-.uh-bhutan-route-card {
-  display: grid;
-  gap: 12px;
-  width: 100%;
-  padding: 20px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  color: var(--text);
-  cursor: pointer;
-  user-select: none;
-  box-shadow: var(--shadow-subtle);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease,
-    background 0.25s ease;
-}
-
-.uh-bhutan-route-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--color-border);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-bhutan-route-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.uh-bhutan-route-card-top span {
-  display: inline-flex;
-  padding: 7px 10px;
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.uh-bhutan-route-card-top small {
-  color: var(--muted);
-  font-size: var(--font-size-xs);
-  font-weight: 800;
-  text-align: right;
-  line-height: 1.3;
-}
-
-.uh-bhutan-route-card h3 {
-  margin: 0;
-  color: var(--dark);
-  font-size: var(--font-size-base);
-  font-weight: 900;
-  line-height: 1.28;
-}
-
-.uh-bhutan-route-card p {
-  margin: 0;
-  color: var(--muted);
-  font-size: var(--font-size-sm);
-  line-height: 1.62;
-}
-
-.uh-bhutan-route-meta {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 700;
-  line-height: 1.45;
-}
-
-.uh-bhutan-route-meta svg {
-  width: 15px;
-  height: 15px;
-  flex: 0 0 auto;
-  margin-top: 2px;
-  color: var(--gold);
-}
-
-/* Duration filtering for route list */
-#uh-duration-3days:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card,
-#uh-duration-4days:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card,
-#uh-duration-5days:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card,
-#uh-duration-6days:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card,
-#uh-duration-7days:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card,
-#uh-duration-8days:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card {
-  display: none;
-}
-
-#uh-duration-3days:checked ~ .uh-bhutan-library-layout .uh-duration-3days,
-#uh-duration-4days:checked ~ .uh-bhutan-library-layout .uh-duration-4days,
-#uh-duration-5days:checked ~ .uh-bhutan-library-layout .uh-duration-5days,
-#uh-duration-6days:checked ~ .uh-bhutan-library-layout .uh-duration-6days,
-#uh-duration-7days:checked ~ .uh-bhutan-library-layout .uh-duration-7days,
-#uh-duration-8days:checked ~ .uh-bhutan-library-layout .uh-duration-8days {
-  display: grid;
-}
-
-#uh-bhutan-route-1:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-1,
-#uh-bhutan-route-2:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-2,
-#uh-bhutan-route-3:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-3,
-#uh-bhutan-route-4:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-4,
-#uh-bhutan-route-5:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-5,
-#uh-bhutan-route-6:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-6,
-#uh-bhutan-route-7:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-7,
-#uh-bhutan-route-8:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-8,
-#uh-bhutan-route-9:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-9,
-#uh-bhutan-route-10:checked ~ .uh-bhutan-library-layout .uh-bhutan-route-card-10 {
-  border-color: var(--color-border);
-  background: linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-  transform: translateY(-3px);
 }
 
 .uh-bhutan-preview-panels {
@@ -21378,52 +20627,6 @@ a[href] {
   margin-top: 28px;
 }
 
-/* Preview display: all filter uses selected route */
-#uh-duration-all:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview {
-  display: none;
-}
-
-#uh-duration-all:checked ~ #uh-bhutan-route-1:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-1, #uh-duration-all:checked ~ #uh-bhutan-route-2:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-2, #uh-duration-all:checked ~ #uh-bhutan-route-3:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-3, #uh-duration-all:checked ~ #uh-bhutan-route-4:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-4, #uh-duration-all:checked ~ #uh-bhutan-route-5:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-5, #uh-duration-all:checked ~ #uh-bhutan-route-6:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-6, #uh-duration-all:checked ~ #uh-bhutan-route-7:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-7, #uh-duration-all:checked ~ #uh-bhutan-route-8:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-8, #uh-duration-all:checked ~ #uh-bhutan-route-9:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-9, #uh-duration-all:checked ~ #uh-bhutan-route-10:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-10 {
-  display: block;
-  animation: uhBhutanFade 0.28s ease both;
-}
-
-/* Preview display: selected matching route inside duration filters */
-#uh-duration-3days:checked ~ #uh-bhutan-route-1:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-1,
-#uh-duration-3days:checked ~ #uh-bhutan-route-2:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-2,
-#uh-duration-4days:checked ~ #uh-bhutan-route-3:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-3,
-#uh-duration-4days:checked ~ #uh-bhutan-route-4:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-4,
-#uh-duration-5days:checked ~ #uh-bhutan-route-5:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-5,
-#uh-duration-6days:checked ~ #uh-bhutan-route-6:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-6,
-#uh-duration-6days:checked ~ #uh-bhutan-route-7:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-7,
-#uh-duration-7days:checked ~ #uh-bhutan-route-8:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-8,
-#uh-duration-8days:checked ~ #uh-bhutan-route-9:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-9,
-#uh-duration-8days:checked ~ #uh-bhutan-route-10:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview-10 {
-  display: block;
-  animation: uhBhutanFade 0.28s ease both;
-}
-
-/* Fallback preview if a duration filter is chosen while another duration route is still selected */
-.uh-bhutan-switcher:has(#uh-duration-3days:checked):not(:has(#uh-bhutan-route-1:checked)):not(:has(#uh-bhutan-route-2:checked)) .uh-bhutan-preview-1,
-.uh-bhutan-switcher:has(#uh-duration-4days:checked):not(:has(#uh-bhutan-route-3:checked)):not(:has(#uh-bhutan-route-4:checked)) .uh-bhutan-preview-3,
-.uh-bhutan-switcher:has(#uh-duration-5days:checked):not(:has(#uh-bhutan-route-5:checked)) .uh-bhutan-preview-5,
-.uh-bhutan-switcher:has(#uh-duration-6days:checked):not(:has(#uh-bhutan-route-6:checked)):not(:has(#uh-bhutan-route-7:checked)) .uh-bhutan-preview-6,
-.uh-bhutan-switcher:has(#uh-duration-7days:checked):not(:has(#uh-bhutan-route-8:checked)) .uh-bhutan-preview-8,
-.uh-bhutan-switcher:has(#uh-duration-8days:checked):not(:has(#uh-bhutan-route-9:checked)):not(:has(#uh-bhutan-route-10:checked)) .uh-bhutan-preview-9 {
-  display: block;
-  animation: uhBhutanFade 0.28s ease both;
-}
-
-/* Hide non-matching previews when duration filter is active */
-#uh-duration-3days:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview:not(.uh-duration-3days),
-#uh-duration-4days:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview:not(.uh-duration-4days),
-#uh-duration-5days:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview:not(.uh-duration-5days),
-#uh-duration-6days:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview:not(.uh-duration-6days),
-#uh-duration-7days:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview:not(.uh-duration-7days),
-#uh-duration-8days:checked ~ .uh-bhutan-library-layout .uh-bhutan-preview:not(.uh-duration-8days) {
-  display: none;
-}
-
 /* Customization cards without colorful emoji icons */
 .uh-bhutan-custom-grid {
   display: grid;
@@ -21500,15 +20703,6 @@ a[href] {
   .uh-bhutan-itinerary-layout {
     grid-template-columns: 1fr;
   }
-
-  .uh-bhutan-route-list {
-    position: relative;
-    top: auto;
-    max-height: none;
-    overflow: visible;
-    padding-right: 0;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (max-width: 900px) {
@@ -21529,10 +20723,6 @@ a[href] {
 
   .uh-duration-filter-btn {
     flex: 1 1 auto;
-  }
-
-  .uh-bhutan-route-list {
-    grid-template-columns: 1fr;
   }
 
   .uh-bhutan-preview .tour-pro-image-frame {
@@ -23465,19 +22655,6 @@ a[href] {
   }
 }
 
-/* =========================================================
-   BHUTAN TOURS PAGE - ACCORDION ITINERARY LIBRARY OVERRIDE
-   Use with the updated React accordion version of BhutanToursPage.
-   This block intentionally sits at the bottom of globals.css so it
-   overrides the older CSS-radio preview layout above.
-   ========================================================= */
-
-.uh-bhutan-library-layout.uh-bhutan-accordion-library {
-  position: relative;
-  max-width: 1180px;
-  margin: 48px auto 0;
-}
-
 .uh-bhutan-accordion-library .uh-bhutan-duration-row {
   display: flex;
   flex-wrap: wrap;
@@ -23529,11 +22706,6 @@ a[href] {
   box-shadow: var(--shadow-subtle);
 }
 
-.uh-bhutan-route-accordion-list {
-  display: grid;
-  gap: 16px;
-}
-
 .uh-bhutan-accordion-card {
   overflow: hidden;
   border: 1px solid var(--color-border);
@@ -23556,97 +22728,6 @@ a[href] {
 
 .uh-bhutan-accordion-card.is-open {
   transform: translateY(-2px);
-}
-
-.uh-bhutan-route-trigger {
-  width: 100%;
-  display: grid;
-  gap: 12px;
-  padding: 21px 22px;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.uh-bhutan-route-trigger:focus-visible {
-  outline: 3px solid var(--color-border);
-  outline-offset: -8px;
-  border-radius: var(--radius-sm);
-}
-
-.uh-bhutan-accordion-card .uh-bhutan-route-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.uh-bhutan-accordion-card .uh-bhutan-route-card-top > span {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 11px;
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.uh-bhutan-accordion-card .uh-bhutan-route-card-top small {
-  color: var(--muted);
-  font-size: var(--font-size-xs);
-  font-weight: 800;
-  line-height: 1.35;
-  text-align: right;
-}
-
-.uh-bhutan-route-title {
-  display: block;
-  margin: 0;
-  color: var(--dark);
-  font-size: var(--font-size-heading-md);
-  font-weight: 700;
-  letter-spacing: -0.035em;
-  line-height: 1.08;
-}
-
-.uh-bhutan-route-summary {
-  display: block;
-  max-width: 820px;
-  margin: 0;
-  color: var(--muted);
-  font-size: var(--font-size-md);
-  line-height: 1.72;
-}
-
-.uh-bhutan-route-meta-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-}
-
-.uh-bhutan-accordion-card .uh-bhutan-route-meta {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 8px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
-  line-height: 1.45;
-}
-
-.uh-bhutan-accordion-card .uh-bhutan-route-meta svg {
-  width: 15px;
-  height: 15px;
-  flex: 0 0 auto;
-  margin-top: 2px;
-  color: var(--gold);
 }
 
 .uh-bhutan-card-arrow {
@@ -23877,9 +22958,6 @@ a[href] {
 }
 
 @media (max-width: 640px) {
-  .uh-bhutan-library-layout.uh-bhutan-accordion-library {
-    margin-top: 34px;
-  }
 
   .uh-bhutan-accordion-library .uh-bhutan-duration-row {
     justify-content: flex-start;
@@ -23898,28 +22976,9 @@ a[href] {
     padding: 10px 15px;
   }
 
-  .uh-bhutan-route-trigger,
-  .uh-bhutan-inline-preview {
+  .uh-bhutan-inline-preview{
     padding-left: 16px;
     padding-right: 16px;
-  }
-
-  .uh-bhutan-accordion-card .uh-bhutan-route-card-top,
-  .uh-bhutan-route-meta-row {
-    align-items: flex-start;
-  }
-
-  .uh-bhutan-accordion-card .uh-bhutan-route-card-top {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .uh-bhutan-accordion-card .uh-bhutan-route-card-top small {
-    text-align: left;
-  }
-
-  .uh-bhutan-route-meta-row {
-    gap: 10px;
   }
 
   .uh-bhutan-day-item {
@@ -23991,11 +23050,6 @@ a[href] {
   box-shadow: var(--shadow-subtle);
 }
 
-.uh-bhutan-route-accordion-list {
-  display: grid;
-  gap: 18px;
-}
-
 .uh-bhutan-accordion-card {
   overflow: hidden;
   border: 1px solid var(--color-border);
@@ -24018,88 +23072,6 @@ a[href] {
 
 .uh-bhutan-accordion-card.is-open {
   transform: translateY(-2px);
-}
-
-.uh-bhutan-route-trigger {
-  width: 100%;
-  display: grid;
-  gap: 12px;
-  padding: 24px 26px;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.uh-bhutan-route-trigger:focus-visible {
-  outline: 3px solid var(--color-border);
-  outline-offset: -8px;
-  border-radius: var(--radius-sm);
-}
-
-.uh-bhutan-route-card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.uh-bhutan-route-card-top > span {
-  display: inline-flex;
-  align-items: center;
-  border-radius: var(--radius-round);
-  padding: 7px 12px;
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.02em;
-}
-
-.uh-bhutan-route-card-top small {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
-}
-
-.uh-bhutan-route-title {
-  display: block;
-  color: var(--dark);
-  font-size: var(--font-size-heading-md);
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
-}
-
-.uh-bhutan-route-summary {
-  display: block;
-  max-width: 840px;
-  color: var(--muted);
-  font-size: var(--font-size-md);
-  line-height: 1.75;
-}
-
-.uh-bhutan-route-meta-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.uh-bhutan-route-meta {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
-}
-
-.uh-bhutan-route-meta svg {
-  width: 16px;
-  height: 16px;
-  color: var(--gold);
 }
 
 .uh-bhutan-card-arrow {
@@ -24423,24 +23395,9 @@ a[href] {
     flex: 0 0 auto;
   }
 
-  .uh-bhutan-route-trigger,
-  .uh-bhutan-inline-preview {
+  .uh-bhutan-inline-preview{
     padding-left: 16px;
     padding-right: 16px;
-  }
-
-  .uh-bhutan-route-card-top,
-  .uh-bhutan-route-meta-row {
-    align-items: flex-start;
-  }
-
-  .uh-bhutan-route-card-top {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .uh-bhutan-route-title {
-    font-size: var(--font-size-heading-md);
   }
 
   .uh-bhutan-day-item {
@@ -27105,21 +26062,6 @@ a[href] {
   }
 }
 
-/* =========================================================
-   BHUTAN TOURS PAGE - FUNCTION FIX OVERRIDES
-   Use with BhutanToursPage_Functions_Fixed.tsx
-   ---------------------------------------------------------
-   This block protects the new React onclick accordion from
-   older CSS-only radio/preview rules in the global stylesheet.
-   ========================================================= */
-
-.bhutantour-pro-page .uh-bhutan-library-layout.uh-bhutan-accordion-library {
-  position: relative;
-  z-index: 2;
-  max-width: 1180px;
-  margin: 48px auto 0;
-}
-
 .bhutantour-pro-page .uh-bhutan-accordion-library .uh-bhutan-duration-row {
   position: relative;
   z-index: 4;
@@ -27177,14 +26119,6 @@ a[href] {
   box-shadow: var(--shadow-subtle);
 }
 
-.bhutantour-pro-page .uh-bhutan-route-accordion-list {
-  position: relative;
-  z-index: 3;
-  display: grid;
-  gap: 18px;
-  width: 100%;
-}
-
 .bhutantour-pro-page .uh-bhutan-accordion-card {
   display: block;
   overflow: hidden;
@@ -27206,31 +26140,8 @@ a[href] {
   box-shadow: var(--shadow-subtle);
 }
 
-.bhutantour-pro-page .uh-bhutan-route-trigger {
-  appearance: none;
-  -webkit-appearance: none;
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  display: grid;
-  gap: 12px;
-  padding: 24px 26px;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.bhutantour-pro-page .uh-bhutan-route-trigger[aria-current="true"] .uh-bhutan-card-arrow,
-.bhutantour-pro-page .uh-bhutan-accordion-card.is-open .uh-bhutan-card-arrow {
+.bhutantour-pro-page .uh-bhutan-accordion-card.is-open .uh-bhutan-card-arrow{
   transform: rotate(90deg);
-}
-
-.bhutantour-pro-page .uh-bhutan-route-trigger:focus-visible {
-  outline: 3px solid var(--color-border);
-  outline-offset: -8px;
-  border-radius: var(--radius-sm);
 }
 
 .bhutantour-pro-page .uh-bhutan-inline-preview {
@@ -27344,8 +26255,7 @@ a[href] {
     flex: 0 0 auto;
   }
 
-  .bhutantour-pro-page .uh-bhutan-route-trigger,
-  .bhutantour-pro-page .uh-bhutan-inline-preview {
+  .bhutantour-pro-page .uh-bhutan-inline-preview{
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -27357,52 +26267,16 @@ a[href] {
    Styled like the About Bhutan "Why Bhutan Is Different" system
    ========================================================= */
 
-.facts-redesign-page{background:radial-gradient(circle at 10% 0%,var(--color-border),transparent 28rem),linear-gradient(180deg,var(--cream) 0%,var(--cream-2) 46%,var(--cream) 100%);color:var(--text);overflow:hidden}.facts-redesign-hero-card{position:relative}.facts-redesign-hero-note{padding:clamp(22px,3vw,30px);border-top:1px solid var(--color-border);background:linear-gradient(135deg,var(--color-text-secondary),var(--color-text-secondary)),radial-gradient(circle at right top,var(--color-border),transparent 18rem)}.facts-redesign-hero-note span,.facts-redesign-card-kicker,.facts-redesign-panel-kicker,.facts-redesign-airport-card small,.facts-redesign-gmc-card span{display:block;color:var(--color-accent);font-size: var(--font-size-xs);font-weight:900;letter-spacing:.14em;text-transform:uppercase}.facts-redesign-hero-note strong{display:block;margin-top:8px;color:var(--dark);font-size: var(--font-size-heading-md);line-height:1.1}.facts-redesign-hero-note p{margin:12px 0 0;color:var(--muted);font-size: var(--font-size-md);line-height:1.65}.facts-redesign-stats-grid{grid-template-columns:repeat(4,1fr)}.facts-redesign-section-heading{max-width:860px;margin:0 auto 46px}.facts-redesign-section-heading-left{margin-left:0;text-align:left}.facts-redesign-section-heading-left .tour-pro-section-label{justify-content:flex-start}.facts-redesign-section-heading-dark h2,.facts-redesign-section-heading-dark p{color:var(--color-border)}.facts-redesign-story-grid,.facts-redesign-card-grid,.facts-redesign-dark-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-governance-grid{grid-template-columns:repeat(2,1fr)}.facts-redesign-story-card,.facts-redesign-number-card,.facts-redesign-gmc-card,.facts-redesign-airport-feature-card{position:relative;overflow:hidden;padding:28px;border:1px solid var(--color-border);border-radius: var(--radius);background:linear-gradient(145deg,var(--color-text-secondary),var(--color-text-secondary)),radial-gradient(circle at 90% 10%,var(--color-border),transparent 16rem);box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.facts-redesign-story-card:hover,.facts-redesign-number-card:hover,.facts-redesign-gmc-card:hover{transform:translateY(-5px);border-color:var(--color-border);box-shadow: var(--shadow-subtle);height:58px;display:grid;place-items:center;margin-bottom:20px;border-radius: var(--radius-sm);background:var(--warm);color:var(--color-accent);border:1px solid var(--color-border)}.facts-redesign-story-icon svg{width:27px;height:27px}.facts-redesign-story-card h3,.facts-redesign-number-card h3,.facts-redesign-gmc-card h3,.facts-redesign-airport-feature-card h3{margin:0;color:var(--dark);font-size: var(--font-size-heading-md);line-height:1.12}.facts-redesign-story-card p,.facts-redesign-number-card p,.facts-redesign-gmc-card p,.facts-redesign-airport-feature-card p{margin:14px 0 0;color:var(--muted);font-size: var(--font-size-md);line-height:1.75}.facts-redesign-card-kicker{margin-bottom:12px}.facts-redesign-philosophy-layout{display:grid;grid-template-columns:360px minmax(0,1fr);gap:clamp(22px,4vw,42px);align-items:start}.facts-redesign-philosophy-tabs{display:grid;gap:12px;position:sticky;top:132px}.facts-redesign-philosophy-tab{width:100%;display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;align-items:center;padding:14px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-text-secondary);box-shadow: var(--shadow-subtle);cursor:pointer;text-align:left;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease,background .25s ease}.facts-redesign-philosophy-tab:hover,.facts-redesign-philosophy-tab:focus-visible,.facts-redesign-philosophy-tab.is-active{transform:translateY(-2px);border-color:var(--color-border);background:linear-gradient(135deg,var(--color-text-secondary),var(--color-text-secondary));box-shadow: var(--shadow-subtle);outline:none}.facts-redesign-philosophy-number,.facts-redesign-airport-card>span,.facts-redesign-neutral-number{width:52px;height:52px;display:grid;place-items:center;border-radius: var(--radius-sm);background:var(--warm);color:var(--color-accent);font-size: var(--font-size-sm);font-weight:900;letter-spacing:.08em;border:1px solid var(--color-border)}.facts-redesign-philosophy-tab.is-active .facts-redesign-philosophy-number{background:var(--gold);color:var(--color-border)}.facts-redesign-philosophy-tab-content{min-width:0;display:grid;gap:5px}.facts-redesign-philosophy-tab-content svg{width:18px;height:18px;color:var(--color-accent)}.facts-redesign-philosophy-tab-content strong{color:var(--dark);font-size: var(--font-size-md);line-height:1.35}.facts-redesign-philosophy-tab-content small{color:var(--muted);font-size: var(--font-size-sm);line-height:1.35}.facts-redesign-philosophy-panel{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:clamp(22px,3vw,34px);align-items:stretch;min-height:560px;padding:clamp(24px,3.5vw,38px);border:1px solid var(--color-border);border-radius: var(--radius-lg);background:linear-gradient(145deg,var(--color-text-secondary),var(--color-text-secondary)),radial-gradient(circle at 90% 0%,var(--color-border),transparent 20rem);box-shadow:var(--shadow-strong)}.facts-redesign-philosophy-content{display:flex;flex-direction:column;justify-content:center}.facts-redesign-panel-kicker{margin-bottom:16px}.facts-redesign-philosophy-content h3{margin:0;color:var(--dark);font-size: var(--font-size-heading-lg);line-height:1.02;letter-spacing:-.035em}.facts-redesign-philosophy-content p{margin:22px 0 0;color:var(--muted);font-size: var(--font-size-base);line-height:1.85}.facts-redesign-point-list{display:grid;gap:12px;margin-top:26px}.facts-redesign-card-points{margin-top:20px}.facts-redesign-point{display:flex;align-items:flex-start;gap:10px;color:var(--color-border);font-size: var(--font-size-md);line-height:1.6}.facts-redesign-point svg{width:16px;height:16px;flex:0 0 auto;margin-top:4px;color:var(--gold)}.facts-redesign-philosophy-image{min-height:100%}.facts-redesign-philosophy-image .tour-pro-image-slot,.facts-redesign-philosophy-image .tour-pro-image-frame{height:100%;min-height:460px;border-radius: var(--radius-sm);object-fit:cover}.facts-redesign-gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-gallery-card{overflow:hidden;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-text-secondary);box-shadow:var(--shadow)}.facts-redesign-gallery-card .tour-pro-image-frame{aspect-ratio:4/3}.facts-redesign-gallery-card strong{display:block;padding:18px 20px;color:var(--dark);font-size: var(--font-size-md);grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-image-card{overflow:hidden;border-radius: var(--radius-sm);box-shadow:var(--shadow)}.facts-redesign-image-card .tour-pro-image-frame{aspect-ratio:4/3}.facts-redesign-nature-grid{grid-template-columns:repeat(4,1fr)}.facts-redesign-airport-layout{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1fr);gap:clamp(24px,4vw,46px);align-items:stretch;margin-top:46px}.facts-redesign-airport-media{position:relative;overflow:hidden;min-height:620px;border:1px solid var(--color-border);border-radius: var(--radius-lg);box-shadow:var(--shadow-strong)}.facts-redesign-airport-media .tour-pro-image-slot,.facts-redesign-airport-media .tour-pro-image-frame{height:100%;min-height:620px;border-radius: var(--radius-sm);object-fit:cover}.facts-redesign-airport-note{position:absolute;left:22px;right:22px;bottom:22px;padding:22px;border:1px solid var(--color-text-secondary);border-radius: var(--radius-sm);background:var(--color-shadow);color:var(--color-border);backdrop-filter:blur(14px)}.facts-redesign-airport-note span{display:block;color:var(--gold-soft);font-size: var(--font-size-xs);font-weight:900;letter-spacing:.14em;text-transform:uppercase}.facts-redesign-airport-note strong{display:block;margin-top:8px;color:var(--color-border);font-size: var(--font-size-heading-md);color:var(--color-text-secondary);font-size: var(--font-size-md);line-height:1.65}.facts-redesign-airport-content{display:grid;gap:18px}.facts-redesign-airport-feature-card{min-height:240px}.facts-redesign-airport-detail-grid{display:grid;gap:14px}.facts-redesign-airport-card{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;padding:20px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-text-secondary);box-shadow: var(--shadow-subtle);color:var(--dark);font-size: var(--font-size-heading-md);line-height:1.1}.facts-redesign-airport-card p{margin:9px 0 0;color:var(--muted);font-size: var(--font-size-md);line-height:1.65}.facts-redesign-dark-section{padding:clamp(78px,8vw,112px) 0;background:radial-gradient(circle at 20% 0%,var(--color-border),transparent 26rem),linear-gradient(135deg,var(--color-border),var(--color-border));color:var(--color-border)}.facts-redesign-culture-image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-culture-image-card{overflow:hidden;border-radius: var(--radius-sm);border:1px solid var(--color-text-secondary);border-radius: var(--radius-sm);background:var(--color-text-secondary)}.facts-redesign-dark-card h3{margin:18px 0 0;color:var(--color-border);font-size: var(--font-size-heading-md);color:var(--color-text-secondary);line-height:1.75;font-size: var(--font-size-md);gap:16px;max-width:920px;margin:46px auto 0}.facts-redesign-timeline-item{display:grid;grid-template-columns:140px minmax(0,1fr);gap:22px;align-items:start;padding:24px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-text-secondary);box-shadow:var(--shadow)}.facts-redesign-timeline-period{width:fit-content;padding:9px 13px;border-radius: var(--radius-round);background:var(--warm);color:var(--color-border);font-size: var(--font-size-sm);font-weight:900}.facts-redesign-timeline-item h3{margin:0;color:var(--dark);font-size: var(--font-size-heading-md);color:var(--muted);line-height:1.72;font-size: var(--font-size-md);grid-template-columns:minmax(360px,.78fr) minmax(0,1fr);gap:clamp(24px,4vw,42px);margin-top:46px}.facts-redesign-gmc-visual{overflow:hidden;border-radius: var(--radius-lg);box-shadow:var(--shadow-strong)}.facts-redesign-gmc-visual .tour-pro-image-frame{min-height:620px}.facts-redesign-gmc-visual .tour-pro-image{height:100%;object-fit:cover}.facts-redesign-gmc-grid{display:grid;gap:18px}.facts-redesign-gmc-card{padding:24px}.facts-redesign-gmc-card .facts-redesign-neutral-number{margin-bottom:18px}.facts-redesign-split-grid{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:clamp(28px,5vw,60px);align-items:center}.facts-redesign-split-grid-reverse{grid-template-columns:420px minmax(0,1fr)}.facts-redesign-split-content>p{max-width:680px;margin:-20px 0 0;color:var(--muted);font-size: var(--font-size-base);line-height:1.85}.facts-redesign-image-panel{overflow:hidden;border-radius: var(--radius-lg);box-shadow:var(--shadow-strong)}.facts-redesign-image-panel .tour-pro-image-frame{aspect-ratio:4/5}.facts-redesign-highlight-list{display:grid;gap:10px;margin-top:26px}.facts-redesign-highlight-item{display:flex;align-items:flex-start;gap:10px;color:var(--color-border);font-size: var(--font-size-md);line-height:1.6}.facts-redesign-highlight-item svg{width:16px;height:16px;margin-top:4px;color:var(--gold)}.facts-redesign-card-grid,.facts-redesign-fun-grid{grid-template-columns:repeat(3,1fr)}.facts-redesign-number-card .facts-redesign-neutral-number{margin-bottom:18px}.facts-redesign-food-list{display:grid;gap:14px;margin-top:26px}.facts-redesign-food-item{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;padding:18px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-text-secondary)}.facts-redesign-food-item h3{margin:0;color:var(--dark);font-size: var(--font-size-base);color:var(--muted);line-height:1.65;font-size: var(--font-size-md);grid-template-columns:repeat(2,1fr)}.facts-redesign-philosophy-panel{grid-template-columns:1fr;min-height:auto}.facts-redesign-philosophy-image .tour-pro-image-slot,.facts-redesign-philosophy-image .tour-pro-image-frame{min-height:360px}.facts-redesign-airport-media,.facts-redesign-airport-media .tour-pro-image-slot,.facts-redesign-airport-media .tour-pro-image-frame,.facts-redesign-gmc-visual .tour-pro-image-frame{min-height:420px}.facts-redesign-split-grid,.facts-redesign-split-grid-reverse{grid-template-columns:1fr}@media(max-width:860px){.facts-redesign-stats-grid,.facts-redesign-story-grid,.facts-redesign-governance-grid,.facts-redesign-gallery-grid,.facts-redesign-image-row,.facts-redesign-nature-grid,.facts-redesign-culture-image-grid,.facts-redesign-dark-grid,.facts-redesign-card-grid,.facts-redesign-fun-grid{grid-template-columns:1fr}.facts-redesign-philosophy-tabs{grid-template-columns:1fr}.facts-redesign-timeline-item{grid-template-columns:1fr}.facts-redesign-airport-card,.facts-redesign-food-item{grid-template-columns:1fr}}@media(max-width:560px){.facts-redesign-philosophy-panel,.facts-redesign-story-card,.facts-redesign-number-card,.facts-redesign-gmc-card,.facts-redesign-airport-feature-card{padding:22px;border-radius: var(--radius-sm);height:44px;border-radius: var(--radius-sm);left:auto;right:auto;bottom:auto;margin:14px;background:var(--color-border)}}
+.facts-redesign-page{background:radial-gradient(circle at 10% 0%,var(--color-border),transparent 28rem),linear-gradient(180deg,var(--cream) 0%,var(--cream-2) 46%,var(--cream) 100%);color:var(--text);overflow:hidden}.facts-redesign-hero-card{position:relative}.facts-redesign-hero-note{padding:clamp(22px,3vw,30px);border-top:1px solid var(--color-border);background:var(--color-bg-elevated)}.facts-redesign-hero-note span,.facts-redesign-card-kicker,.facts-redesign-panel-kicker,.facts-redesign-airport-card small,.facts-redesign-gmc-card span{display:block;color:var(--color-accent);font-size: var(--font-size-xs);font-weight:900;letter-spacing:.14em;text-transform:uppercase}.facts-redesign-hero-note strong{display:block;margin-top:8px;color:var(--color-text-primary);font-size: var(--font-size-heading-md);line-height:1.1}.facts-redesign-hero-note p{margin:12px 0 0;color:var(--muted);font-size: var(--font-size-md);line-height:1.65}.facts-redesign-stats-grid{grid-template-columns:repeat(4,1fr)}.facts-redesign-section-heading{max-width:860px;margin:0 auto 46px}.facts-redesign-section-heading-left{margin-left:0;text-align:left}.facts-redesign-section-heading-left .tour-pro-section-label{justify-content:flex-start}.facts-redesign-section-heading-dark h2{color:var(--color-text-primary)}.facts-redesign-section-heading-dark p{color:var(--color-text-secondary)}.facts-redesign-story-grid,.facts-redesign-card-grid,.facts-redesign-dark-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-governance-grid{grid-template-columns:repeat(2,1fr)}.facts-redesign-story-card,.facts-redesign-number-card,.facts-redesign-gmc-card,.facts-redesign-airport-feature-card{position:relative;overflow:hidden;padding:28px;border:1px solid var(--color-border);border-radius: var(--radius);background:var(--color-bg-card);box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.facts-redesign-story-card:hover,.facts-redesign-number-card:hover,.facts-redesign-gmc-card:hover{transform:translateY(-5px);border-color:var(--color-border);box-shadow: var(--shadow-subtle);height:58px;display:grid;place-items:center;margin-bottom:20px;border-radius: var(--radius-sm);background:var(--warm);color:var(--color-accent);border:1px solid var(--color-border)}.facts-redesign-story-icon svg{width:27px;height:27px}.facts-redesign-story-card h3,.facts-redesign-number-card h3,.facts-redesign-gmc-card h3,.facts-redesign-airport-feature-card h3{margin:0;color:var(--color-text-primary);font-size: var(--font-size-heading-md);line-height:1.12}.facts-redesign-story-card p,.facts-redesign-number-card p,.facts-redesign-gmc-card p,.facts-redesign-airport-feature-card p{margin:14px 0 0;color:var(--muted);font-size: var(--font-size-md);line-height:1.75}.facts-redesign-card-kicker{margin-bottom:12px}.facts-redesign-philosophy-layout{display:grid;grid-template-columns:360px minmax(0,1fr);gap:clamp(22px,4vw,42px);align-items:start}.facts-redesign-philosophy-tabs{display:grid;gap:12px;position:sticky;top:132px}.facts-redesign-philosophy-tab{width:100%;display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;align-items:center;padding:14px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-bg-card);box-shadow: var(--shadow-subtle);cursor:pointer;text-align:left;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease,background .25s ease}.facts-redesign-philosophy-tab:hover,.facts-redesign-philosophy-tab:focus-visible,.facts-redesign-philosophy-tab.is-active{transform:translateY(-2px);border-color:var(--color-border-strong);background:var(--color-bg-card-hover);box-shadow: var(--shadow-subtle);outline:none}.facts-redesign-philosophy-number,.facts-redesign-airport-card>span,.facts-redesign-neutral-number{width:52px;height:52px;display:grid;place-items:center;border-radius: var(--radius-sm);background:var(--warm);color:var(--color-accent);font-size: var(--font-size-sm);font-weight:900;letter-spacing:.08em;border:1px solid var(--color-border)}.facts-redesign-philosophy-tab.is-active .facts-redesign-philosophy-number{background:var(--color-accent);color:var(--color-bg-page)}.facts-redesign-philosophy-tab-content{min-width:0;display:grid;gap:5px}.facts-redesign-philosophy-tab-content svg{width:18px;height:18px;color:var(--color-accent)}.facts-redesign-philosophy-tab-content strong{color:var(--color-text-primary);font-size: var(--font-size-md);line-height:1.35}.facts-redesign-philosophy-tab-content small{color:var(--muted);font-size: var(--font-size-sm);line-height:1.35}.facts-redesign-philosophy-panel{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:clamp(22px,3vw,34px);align-items:stretch;min-height:560px;padding:clamp(24px,3.5vw,38px);border:1px solid var(--color-border);border-radius: var(--radius-lg);background:var(--color-bg-elevated);box-shadow:var(--shadow-strong)}.facts-redesign-philosophy-content{display:flex;flex-direction:column;justify-content:center}.facts-redesign-panel-kicker{margin-bottom:16px}.facts-redesign-philosophy-content h3{margin:0;color:var(--color-text-primary);font-size: var(--font-size-heading-lg);line-height:1.02;letter-spacing:-.035em}.facts-redesign-philosophy-content p{margin:22px 0 0;color:var(--muted);font-size: var(--font-size-base);line-height:1.85}.facts-redesign-point-list{display:grid;gap:12px;margin-top:26px}.facts-redesign-card-points{margin-top:20px}.facts-redesign-point{display:flex;align-items:flex-start;gap:10px;color:var(--color-text-secondary);font-size: var(--font-size-md);line-height:1.6}.facts-redesign-point svg{width:16px;height:16px;flex:0 0 auto;margin-top:4px;color:var(--gold)}.facts-redesign-philosophy-image{min-height:100%}.facts-redesign-philosophy-image .tour-pro-image-slot,.facts-redesign-philosophy-image .tour-pro-image-frame{height:100%;min-height:460px;border-radius: var(--radius-sm);object-fit:cover}.facts-redesign-gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-gallery-card{overflow:hidden;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-bg-card);box-shadow:var(--shadow)}.facts-redesign-gallery-card .tour-pro-image-frame{aspect-ratio:4/3}.facts-redesign-gallery-card strong{display:block;padding:18px 20px;color:var(--color-text-primary);font-size: var(--font-size-md);grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-image-card{overflow:hidden;border-radius: var(--radius-sm);box-shadow:var(--shadow)}.facts-redesign-image-card .tour-pro-image-frame{aspect-ratio:4/3}.facts-redesign-nature-grid{grid-template-columns:repeat(4,1fr)}.facts-redesign-airport-layout{display:grid;grid-template-columns:minmax(360px,.86fr) minmax(0,1fr);gap:clamp(24px,4vw,46px);align-items:stretch;margin-top:46px}.facts-redesign-airport-media{position:relative;overflow:hidden;min-height:620px;border:1px solid var(--color-border);border-radius: var(--radius-lg);box-shadow:var(--shadow-strong)}.facts-redesign-airport-media .tour-pro-image-slot,.facts-redesign-airport-media .tour-pro-image-frame{height:100%;min-height:620px;border-radius: var(--radius-sm);object-fit:cover}.facts-redesign-airport-note{position:absolute;left:22px;right:22px;bottom:22px;padding:22px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-shadow);color:var(--color-border);backdrop-filter:blur(14px)}.facts-redesign-airport-note span{display:block;color:var(--gold-soft);font-size: var(--font-size-xs);font-weight:900;letter-spacing:.14em;text-transform:uppercase}.facts-redesign-airport-note strong{display:block;margin-top:8px;color:var(--color-border);font-size: var(--font-size-heading-md);color:var(--color-text-secondary);font-size: var(--font-size-md);line-height:1.65}.facts-redesign-airport-content{display:grid;gap:18px}.facts-redesign-airport-feature-card{min-height:240px}.facts-redesign-airport-detail-grid{display:grid;gap:14px}.facts-redesign-airport-card{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;padding:20px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-bg-card);box-shadow: var(--shadow-subtle);color:var(--color-text-primary);font-size: var(--font-size-heading-md);line-height:1.1}.facts-redesign-airport-card p{margin:9px 0 0;color:var(--muted);font-size: var(--font-size-md);line-height:1.65}.facts-redesign-dark-section{padding:clamp(78px,8vw,112px) 0;background:var(--color-bg-section);color:var(--color-text-secondary)}.facts-redesign-culture-image-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}.facts-redesign-culture-image-card{overflow:hidden;border-radius: var(--radius-sm);border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-bg-card)}.facts-redesign-dark-card h3{margin:18px 0 0;color:var(--color-border);font-size: var(--font-size-heading-md);color:var(--color-text-secondary);line-height:1.75;font-size: var(--font-size-md);gap:16px;max-width:920px;margin:46px auto 0}.facts-redesign-timeline-item{display:grid;grid-template-columns:140px minmax(0,1fr);gap:22px;align-items:start;padding:24px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-bg-card);box-shadow:var(--shadow)}.facts-redesign-timeline-period{width:fit-content;padding:9px 13px;border-radius: var(--radius-round);background:var(--warm);color:var(--color-border);font-size: var(--font-size-sm);font-weight:900}.facts-redesign-timeline-item h3{margin:0;color:var(--color-text-primary);font-size: var(--font-size-heading-md);color:var(--muted);line-height:1.72;font-size: var(--font-size-md);grid-template-columns:minmax(360px,.78fr) minmax(0,1fr);gap:clamp(24px,4vw,42px);margin-top:46px}.facts-redesign-gmc-visual{overflow:hidden;border-radius: var(--radius-lg);box-shadow:var(--shadow-strong)}.facts-redesign-gmc-visual .tour-pro-image-frame{min-height:620px}.facts-redesign-gmc-visual .tour-pro-image{height:100%;object-fit:cover}.facts-redesign-gmc-grid{display:grid;gap:18px}.facts-redesign-gmc-card{padding:24px}.facts-redesign-gmc-card .facts-redesign-neutral-number{margin-bottom:18px}.facts-redesign-split-grid{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:clamp(28px,5vw,60px);align-items:center}.facts-redesign-split-grid-reverse{grid-template-columns:420px minmax(0,1fr)}.facts-redesign-split-content>p{max-width:680px;margin:-20px 0 0;color:var(--muted);font-size: var(--font-size-base);line-height:1.85}.facts-redesign-image-panel{overflow:hidden;border-radius: var(--radius-lg);box-shadow:var(--shadow-strong)}.facts-redesign-image-panel .tour-pro-image-frame{aspect-ratio:4/5}.facts-redesign-highlight-list{display:grid;gap:10px;margin-top:26px}.facts-redesign-highlight-item{display:flex;align-items:flex-start;gap:10px;color:var(--color-text-secondary);font-size: var(--font-size-md);line-height:1.6}.facts-redesign-highlight-item svg{width:16px;height:16px;margin-top:4px;color:var(--gold)}.facts-redesign-card-grid,.facts-redesign-fun-grid{grid-template-columns:repeat(3,1fr)}.facts-redesign-number-card .facts-redesign-neutral-number{margin-bottom:18px}.facts-redesign-food-list{display:grid;gap:14px;margin-top:26px}.facts-redesign-food-item{display:grid;grid-template-columns:58px minmax(0,1fr);gap:16px;padding:18px;border:1px solid var(--color-border);border-radius: var(--radius-sm);background:var(--color-bg-card)}.facts-redesign-food-item h3{margin:0;color:var(--color-text-primary);font-size: var(--font-size-base);color:var(--muted);line-height:1.65;font-size: var(--font-size-md);grid-template-columns:repeat(2,1fr)}.facts-redesign-philosophy-panel{grid-template-columns:1fr;min-height:auto}.facts-redesign-philosophy-image .tour-pro-image-slot,.facts-redesign-philosophy-image .tour-pro-image-frame{min-height:360px}.facts-redesign-airport-media,.facts-redesign-airport-media .tour-pro-image-slot,.facts-redesign-airport-media .tour-pro-image-frame,.facts-redesign-gmc-visual .tour-pro-image-frame{min-height:420px}.facts-redesign-split-grid,.facts-redesign-split-grid-reverse{grid-template-columns:1fr}@media(max-width:860px){.facts-redesign-stats-grid,.facts-redesign-story-grid,.facts-redesign-governance-grid,.facts-redesign-gallery-grid,.facts-redesign-image-row,.facts-redesign-nature-grid,.facts-redesign-culture-image-grid,.facts-redesign-dark-grid,.facts-redesign-card-grid,.facts-redesign-fun-grid{grid-template-columns:1fr}.facts-redesign-philosophy-tabs{grid-template-columns:1fr}.facts-redesign-timeline-item{grid-template-columns:1fr}.facts-redesign-airport-card,.facts-redesign-food-item{grid-template-columns:1fr}}@media(max-width:560px){.facts-redesign-philosophy-panel,.facts-redesign-story-card,.facts-redesign-number-card,.facts-redesign-gmc-card,.facts-redesign-airport-feature-card{padding:22px;border-radius: var(--radius-sm);height:44px;border-radius: var(--radius-sm);left:auto;right:auto;bottom:auto;margin:14px;background:var(--color-border)}}
 
-
-/* =========================================================
-   FESTIVAL BOOKING CLARITY - STANDALONE SECTION
-   Moves Inclusions / Exclusions / Reservation / Terms out of the route panel
-   ========================================================= */
-
-.uh-festival-library-redesign-policy-link-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 18px;
-  align-items: center;
-  margin-top: 28px;
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-policy-link-card span,
 .uh-festival-booking-clarity-copy span,
-.uh-festival-booking-clarity-card-head span {
+.uh-festival-booking-clarity-card-head span{
   display: block;
   color: var(--color-accent);
   font-size: var(--font-size-xs);
   font-weight: 900;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.uh-festival-library-redesign-policy-link-card strong {
-  display: block;
-  margin-top: 7px;
-  color: var(--dark);
-  font-size: var(--font-size-lg);
-  line-height: 1.12;
-}
-
-.uh-festival-library-redesign-policy-link-card p {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-size: var(--font-size-md);
-  line-height: 1.65;
 }
 
 .uh-festival-booking-clarity-section {
@@ -27647,9 +26521,6 @@ a[href] {
 }
 
 @media (max-width: 680px) {
-  .uh-festival-library-redesign-policy-link-card {
-    grid-template-columns: 1fr;
-  }
 
   .uh-festival-booking-clarity-stats {
     grid-template-columns: 1fr 1fr;
@@ -27671,49 +26542,14 @@ a[href] {
   }
 }
 
-/* =========================================================
-   FESTIVAL BOOKING CLARITY - STANDALONE SECTION
-   Moves Inclusions / Exclusions / Reservation / Terms out of the route panel
-   ========================================================= */
-
-.uh-festival-library-redesign-policy-link-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 18px;
-  align-items: center;
-  margin-top: 28px;
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-policy-link-card span,
 .uh-festival-booking-clarity-copy span,
-.uh-festival-booking-clarity-card-head span {
+.uh-festival-booking-clarity-card-head span{
   display: block;
   color: var(--color-accent);
   font-size: var(--font-size-xs);
   font-weight: 900;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.uh-festival-library-redesign-policy-link-card strong {
-  display: block;
-  margin-top: 7px;
-  color: var(--dark);
-  font-size: var(--font-size-lg);
-  line-height: 1.12;
-}
-
-.uh-festival-library-redesign-policy-link-card p {
-  margin: 8px 0 0;
-  color: var(--muted);
-  font-size: var(--font-size-md);
-  line-height: 1.65;
 }
 
 .uh-festival-booking-clarity-section {
@@ -27958,9 +26794,6 @@ a[href] {
 }
 
 @media (max-width: 680px) {
-  .uh-festival-library-redesign-policy-link-card {
-    grid-template-columns: 1fr;
-  }
 
   .uh-festival-booking-clarity-stats {
     grid-template-columns: 1fr 1fr;
@@ -27979,654 +26812,6 @@ a[href] {
 
   .uh-festival-booking-clarity-stats {
     grid-template-columns: 1fr;
-  }
-}
-
-
-/* =========================================================
-   FESTIVAL ITINERARY LIBRARY REDESIGN
-   Premium route selector + active festival itinerary panel
-   ========================================================= */
-
-.uh-festival-library-redesign-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.uh-festival-library-redesign-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 12% 8%, var(--color-accent-wash), transparent 25rem),
-    radial-gradient(circle at 88% 18%, var(--color-divider), transparent 22rem);
-}
-
-.uh-festival-library-redesign-section > .container {
-  position: relative;
-  z-index: 1;
-}
-
-.uh-festival-library-redesign-shell {
-  margin-top: 46px;
-  padding: clamp(18px, 2.4vw, 28px);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at top right, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-topbar {
-  display: grid;
-  grid-template-columns: minmax(230px, 0.34fr) minmax(0, 1fr);
-  gap: 18px;
-  align-items: center;
-  margin-bottom: 22px;
-  padding: 16px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-}
-
-.uh-festival-library-redesign-topbar-copy span,
-.uh-festival-library-redesign-kicker,
-.uh-festival-library-redesign-sidebar-heading span,
-.uh-festival-library-redesign-media-note span {
-  display: block;
-  color: var(--color-accent);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.uh-festival-library-redesign-topbar-copy strong,
-.uh-festival-library-redesign-sidebar-heading strong {
-  display: block;
-  margin-top: 5px;
-  color: var(--dark);
-  font-size: var(--font-size-md);
-}
-
-.uh-festival-library-redesign-filter-row {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.uh-festival-library-redesign-filter-btn {
-  min-height: 42px;
-  padding: 10px 15px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-round);
-  background: var(--color-bg-card);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 850;
-  cursor: pointer;
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.uh-festival-library-redesign-filter-btn:hover,
-.uh-festival-library-redesign-filter-btn:focus-visible,
-.uh-festival-library-redesign-filter-btn.is-active {
-  border-color: var(--gold);
-  background: var(--gold);
-  color: var(--color-text-primary);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-subtle);
-  outline: none;
-}
-
-.uh-festival-library-redesign-layout {
-  display: grid;
-  grid-template-columns: minmax(300px, 0.34fr) minmax(0, 1fr);
-  gap: clamp(18px, 3vw, 30px);
-  align-items: start;
-}
-
-.uh-festival-library-redesign-sidebar {
-  position: sticky;
-  top: 132px;
-  display: grid;
-  gap: 14px;
-}
-
-.uh-festival-library-redesign-sidebar-heading {
-  padding: 18px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-route-list {
-  display: grid;
-  gap: 12px;
-  max-height: calc(100vh - 250px);
-  overflow: auto;
-  padding-right: 4px;
-}
-
-.uh-festival-library-redesign-route-list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.uh-festival-library-redesign-route-list::-webkit-scrollbar-thumb {
-  border-radius: var(--radius-round);
-  background: var(--color-accent-wash);
-}
-
-.uh-festival-library-redesign-route-card {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr) 26px;
-  gap: 13px;
-  align-items: center;
-  padding: 14px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-  text-align: left;
-  cursor: pointer;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.uh-festival-library-redesign-route-card:hover,
-.uh-festival-library-redesign-route-card:focus-visible,
-.uh-festival-library-redesign-route-card.is-active {
-  transform: translateY(-2px);
-  border-color: var(--color-border);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-  outline: none;
-}
-
-.uh-festival-library-redesign-route-number {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-sm);
-  background: var(--warm);
-  color: var(--color-accent);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  border: 1px solid var(--color-border);
-}
-
-.uh-festival-library-redesign-route-card.is-active .uh-festival-library-redesign-route-number {
-  background: var(--gold);
-  color: var(--color-text-primary);
-}
-
-.uh-festival-library-redesign-route-copy {
-  min-width: 0;
-  display: grid;
-  gap: 7px;
-}
-
-.uh-festival-library-redesign-route-top {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 7px;
-}
-
-.uh-festival-library-redesign-route-top small,
-.uh-festival-library-redesign-route-top em {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  padding: 5px 8px;
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-style: normal;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.uh-festival-library-redesign-route-card strong {
-  color: var(--dark);
-  font-size: var(--font-size-md);
-  line-height: 1.35;
-}
-
-.uh-festival-library-redesign-route-summary {
-  color: var(--muted);
-  font-size: var(--font-size-sm);
-  line-height: 1.5;
-}
-
-.uh-festival-library-redesign-route-location {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  line-height: 1.45;
-}
-
-.uh-festival-library-redesign-route-location svg {
-  width: 14px;
-  height: 14px;
-  flex: 0 0 auto;
-  margin-top: 1px;
-  color: var(--gold);
-}
-
-.uh-festival-library-redesign-route-arrow {
-  width: 20px;
-  height: 20px;
-  color: var(--gold);
-  transition: transform 0.25s ease;
-}
-
-.uh-festival-library-redesign-route-card.is-active .uh-festival-library-redesign-route-arrow {
-  transform: translateX(3px);
-}
-
-.uh-festival-library-redesign-panel {
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at 90% 0%, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-panel-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
-  gap: clamp(22px, 3vw, 34px);
-  align-items: start;
-  padding: clamp(24px, 3vw, 36px);
-}
-
-.uh-festival-library-redesign-main {
-  min-width: 0;
-}
-
-.uh-festival-library-redesign-panel-intro h3 {
-  max-width: 780px;
-  margin: 10px 0 0;
-  color: var(--dark);
-  font-size: var(--font-size-heading-lg);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
-}
-
-.uh-festival-library-redesign-panel-intro p {
-  max-width: 720px;
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: var(--font-size-base);
-  line-height: 1.82;
-}
-
-.uh-festival-library-redesign-fact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 26px;
-}
-
-.uh-festival-library-redesign-fact-grid > div {
-  min-width: 0;
-  display: grid;
-  gap: 7px;
-  padding: 16px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-}
-
-.uh-festival-library-redesign-fact-grid svg {
-  width: 18px;
-  height: 18px;
-  color: var(--gold);
-}
-
-.uh-festival-library-redesign-fact-grid span {
-  color: var(--color-accent);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.uh-festival-library-redesign-fact-grid strong {
-  min-width: 0;
-  color: var(--dark);
-  font-size: var(--font-size-sm);
-  line-height: 1.45;
-}
-
-.uh-festival-library-redesign-tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
-.uh-festival-library-redesign-tag-row span {
-  padding: 8px 11px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
-}
-
-.uh-festival-library-redesign-timeline-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 18px;
-  margin-top: 34px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.uh-festival-library-redesign-timeline-heading span {
-  color: var(--color-accent);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.uh-festival-library-redesign-timeline-heading strong {
-  color: var(--dark);
-  font-size: var(--font-size-md);
-}
-
-.uh-festival-library-redesign-day-timeline {
-  display: grid;
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.uh-festival-library-redesign-day-item {
-  display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 18px;
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-day-number {
-  width: fit-content;
-  height: fit-content;
-  padding: 9px 11px;
-  border-radius: var(--radius-round);
-  background: var(--warm);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border: 1px solid var(--color-border);
-}
-
-.uh-festival-library-redesign-day-content h4 {
-  margin: 0;
-  color: var(--dark);
-  font-size: var(--font-size-heading-md);
-  line-height: 1.15;
-}
-
-.uh-festival-library-redesign-day-content ul {
-  display: grid;
-  gap: 9px;
-  margin-top: 14px;
-}
-
-.uh-festival-library-redesign-day-content li,
-.uh-festival-library-redesign-policy-card li {
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-md);
-  line-height: 1.62;
-}
-
-.uh-festival-library-redesign-day-content li svg,
-.uh-festival-library-redesign-policy-card li svg {
-  width: 15px;
-  height: 15px;
-  flex: 0 0 auto;
-  margin-top: 4px;
-  color: var(--gold);
-}
-
-.uh-festival-library-redesign-policy-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 28px;
-}
-
-.uh-festival-library-redesign-policy-card {
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-}
-
-.uh-festival-library-redesign-policy-inclusions {
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-}
-
-.uh-festival-library-redesign-policy-card h4 {
-  margin: 0 0 14px;
-  color: var(--dark);
-  font-size: var(--font-size-heading-md);
-  line-height: 1.15;
-}
-
-.uh-festival-library-redesign-policy-card ul {
-  display: grid;
-  gap: 9px;
-}
-
-.uh-festival-library-redesign-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.uh-festival-library-redesign-media {
-  position: sticky;
-  top: 132px;
-  display: grid;
-  gap: 14px;
-}
-
-.uh-festival-library-redesign-media .tour-pro-image-frame {
-  min-height: 430px;
-  border-radius: var(--radius-sm);
-}
-
-.uh-festival-library-redesign-media .tour-pro-image {
-  height: 100%;
-  object-fit: cover;
-}
-
-.uh-festival-library-redesign-media-note {
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-media-note strong {
-  display: block;
-  margin-top: 7px;
-  color: var(--dark);
-  font-size: var(--font-size-heading-md);
-  line-height: 1.12;
-}
-
-.uh-festival-library-redesign-media-note p {
-  margin: 10px 0 0;
-  color: var(--muted);
-  font-size: var(--font-size-md);
-  line-height: 1.68;
-}
-
-.uh-festival-library-redesign-media-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.uh-festival-library-redesign-media-stats div {
-  padding: 18px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  text-align: center;
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-redesign-media-stats span {
-  display: block;
-  color: var(--dark);
-  font-size: var(--font-size-heading-md);
-  font-weight: 700;
-  line-height: 1;
-}
-
-.uh-festival-library-redesign-media-stats small {
-  display: block;
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.uh-festival-library-redesign-empty-state {
-  min-height: 280px;
-  display: grid;
-  place-items: center;
-  padding: 34px;
-  border: 1px dashed var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  color: var(--muted);
-  font-weight: 700;
-  text-align: center;
-}
-
-@media (max-width: 1180px) {
-  .uh-festival-library-redesign-layout,
-  .uh-festival-library-redesign-panel-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-festival-library-redesign-sidebar,
-  .uh-festival-library-redesign-media {
-    position: static;
-  }
-
-  .uh-festival-library-redesign-route-list {
-    max-height: none;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: visible;
-    padding-right: 0;
-  }
-
-  .uh-festival-library-redesign-media .tour-pro-image-frame {
-    min-height: 360px;
-  }
-}
-
-@media (max-width: 860px) {
-  .uh-festival-library-redesign-topbar {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-festival-library-redesign-filter-row {
-    justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 4px;
-  }
-
-  .uh-festival-library-redesign-filter-btn {
-    flex: 0 0 auto;
-  }
-
-  .uh-festival-library-redesign-route-list,
-  .uh-festival-library-redesign-fact-grid,
-  .uh-festival-library-redesign-policy-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-festival-library-redesign-day-item {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 560px) {
-  .uh-festival-library-redesign-shell,
-  .uh-festival-library-redesign-panel-grid {
-    padding: 18px;
-    border-radius: var(--radius-sm);
-  }
-
-  .uh-festival-library-redesign-route-card {
-    grid-template-columns: 42px minmax(0, 1fr);
-  }
-
-  .uh-festival-library-redesign-route-arrow {
-    display: none;
-  }
-
-  .uh-festival-library-redesign-panel-intro h3 {
-    font-size: var(--font-size-heading-md);
-  }
-
-  .uh-festival-library-redesign-actions {
-    flex-direction: column;
-  }
-
-  .uh-festival-library-redesign-actions .tour-pro-btn-primary,
-  .uh-festival-library-redesign-actions .tour-pro-btn-secondary {
-    width: 100%;
   }
 }
 
@@ -28942,473 +27127,13 @@ a[href] {
   }
 }
 
-
-/* =========================================================
-   ITINERARY LIBRARY SECTION CSS
-   For BhutanToursPage itinerary library dashboard
-   Covers:
-   - Itinerary Library section
-   - Duration filter bar
-   - Route selector sidebar
-   - Selected route detail panel
-   - Day-by-day timeline
-   - Sticky image/media card
-   - Booking clarity link card inside itinerary panel
-   ========================================================= */
-
-.uh-itinerary-redesign-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.uh-itinerary-redesign-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    radial-gradient(circle at 12% 8%, var(--color-divider), transparent 25rem),
-    radial-gradient(circle at 88% 18%, var(--color-divider), transparent 22rem);
-}
-
-.uh-itinerary-redesign-section > .container {
-  position: relative;
-  z-index: 1;
-}
-
-.uh-itinerary-redesign-shell {
-  margin-top: 46px;
-  padding: clamp(18px, 2.4vw, 28px);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg, 34px);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at top right, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-/* Top filter bar */
-
-.uh-itinerary-redesign-topbar {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.35fr) minmax(0, 1fr);
-  gap: 18px;
-  align-items: center;
-  margin-bottom: 22px;
-  padding: 16px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-}
-
-.uh-itinerary-redesign-topbar-copy span,
-.uh-itinerary-redesign-kicker,
-.uh-itinerary-redesign-sidebar-heading span,
-.uh-itinerary-redesign-media-note span,
-.uh-bhutan-booking-link-card span {
+.uh-bhutan-booking-link-card span{
   display: block;
   color: var(--color-accent);
   font-size: var(--font-size-xs);
   font-weight: 900;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.uh-itinerary-redesign-topbar-copy strong,
-.uh-itinerary-redesign-sidebar-heading strong {
-  display: block;
-  margin-top: 5px;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-md);
-}
-
-.uh-itinerary-redesign-filter-row {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.uh-itinerary-redesign-filter-btn {
-  min-height: 42px;
-  padding: 10px 15px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-round);
-  background: var(--color-bg-card);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 850;
-  cursor: pointer;
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.uh-itinerary-redesign-filter-btn:hover,
-.uh-itinerary-redesign-filter-btn:focus-visible,
-.uh-itinerary-redesign-filter-btn.is-active {
-  border-color: var(--gold, var(--color-accent));
-  background: var(--gold, var(--color-accent));
-  color: var(--color-text-primary);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-subtle);
-  outline: none;
-}
-
-/* Layout */
-
-.uh-itinerary-redesign-layout {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.34fr) minmax(0, 1fr);
-  gap: clamp(18px, 3vw, 30px);
-  align-items: start;
-}
-
-/* Sidebar route selector */
-
-.uh-itinerary-redesign-sidebar {
-  position: sticky;
-  top: 132px;
-  display: grid;
-  gap: 14px;
-}
-
-.uh-itinerary-redesign-sidebar-heading {
-  padding: 18px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-redesign-route-list {
-  display: grid;
-  gap: 12px;
-  max-height: calc(100vh - 250px);
-  overflow: auto;
-  padding-right: 4px;
-}
-
-.uh-itinerary-redesign-route-list::-webkit-scrollbar {
-  width: 6px;
-}
-
-.uh-itinerary-redesign-route-list::-webkit-scrollbar-thumb {
-  border-radius: var(--radius-round);
-  background: var(--color-accent-wash);
-}
-
-.uh-itinerary-redesign-route-card {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr) 26px;
-  gap: 13px;
-  align-items: center;
-  padding: 14px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-  text-align: left;
-  cursor: pointer;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.uh-itinerary-redesign-route-card:hover,
-.uh-itinerary-redesign-route-card:focus-visible,
-.uh-itinerary-redesign-route-card.is-active {
-  transform: translateY(-2px);
-  border-color: var(--color-border);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-  outline: none;
-}
-
-.uh-itinerary-redesign-route-number {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-sm);
-  background: var(--warm, var(--color-bg-card));
-  color: var(--color-accent);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  border: 1px solid var(--color-border);
-}
-
-.uh-itinerary-redesign-route-card.is-active .uh-itinerary-redesign-route-number {
-  background: var(--gold, var(--color-accent));
-  color: var(--color-text-primary);
-}
-
-.uh-itinerary-redesign-route-copy {
-  min-width: 0;
-  display: grid;
-  gap: 7px;
-}
-
-.uh-itinerary-redesign-route-top {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 7px;
-}
-
-.uh-itinerary-redesign-route-top small,
-.uh-itinerary-redesign-route-top em {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  padding: 5px 8px;
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-style: normal;
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.uh-itinerary-redesign-route-card strong {
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-md);
-  line-height: 1.35;
-}
-
-.uh-itinerary-redesign-route-summary {
-  color: var(--muted, var(--color-text-secondary));
-  font-size: var(--font-size-sm);
-  line-height: 1.5;
-}
-
-.uh-itinerary-redesign-route-location {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  line-height: 1.45;
-}
-
-.uh-itinerary-redesign-route-location svg {
-  width: 14px;
-  height: 14px;
-  flex: 0 0 auto;
-  margin-top: 1px;
-  color: var(--gold, var(--color-accent));
-}
-
-.uh-itinerary-redesign-route-arrow {
-  width: 20px;
-  height: 20px;
-  color: var(--gold, var(--color-accent));
-  transition: transform 0.25s ease;
-}
-
-.uh-itinerary-redesign-route-card.is-active .uh-itinerary-redesign-route-arrow {
-  transform: translateX(3px);
-}
-
-/* Selected itinerary panel */
-
-.uh-itinerary-redesign-panel {
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg, 34px);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at 90% 0%, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-redesign-panel-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
-  gap: clamp(22px, 3vw, 34px);
-  align-items: start;
-  padding: clamp(24px, 3vw, 36px);
-}
-
-.uh-itinerary-redesign-main {
-  min-width: 0;
-}
-
-.uh-itinerary-redesign-panel-intro h3 {
-  max-width: 760px;
-  margin: 10px 0 0;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-heading-lg);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
-}
-
-.uh-itinerary-redesign-panel-intro p {
-  max-width: 720px;
-  margin: 18px 0 0;
-  color: var(--muted, var(--color-text-secondary));
-  font-size: var(--font-size-base);
-  line-height: 1.82;
-}
-
-/* Facts */
-
-.uh-itinerary-redesign-fact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 26px;
-}
-
-.uh-itinerary-redesign-fact-grid > div {
-  min-width: 0;
-  display: grid;
-  gap: 7px;
-  padding: 16px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-}
-
-.uh-itinerary-redesign-fact-grid svg {
-  width: 18px;
-  height: 18px;
-  color: var(--gold, var(--color-accent));
-}
-
-.uh-itinerary-redesign-fact-grid span {
-  color: var(--color-accent);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.uh-itinerary-redesign-fact-grid strong {
-  min-width: 0;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-sm);
-  line-height: 1.45;
-}
-
-/* Tags */
-
-.uh-itinerary-redesign-tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
-.uh-itinerary-redesign-tag-row span {
-  padding: 8px 11px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
-}
-
-/* Timeline */
-
-.uh-itinerary-redesign-timeline-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 18px;
-  margin-top: 34px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.uh-itinerary-redesign-timeline-heading span {
-  color: var(--color-accent);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.uh-itinerary-redesign-timeline-heading strong {
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-md);
-}
-
-.uh-itinerary-redesign-day-timeline {
-  position: relative;
-  display: grid;
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.uh-itinerary-redesign-day-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 86px minmax(0, 1fr);
-  gap: 18px;
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-redesign-day-number {
-  width: fit-content;
-  height: fit-content;
-  padding: 9px 11px;
-  border-radius: var(--radius-round);
-  background: var(--warm, var(--color-bg-card));
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  border: 1px solid var(--color-border);
-}
-
-.uh-itinerary-redesign-day-content h4 {
-  margin: 0;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-heading-md);
-  line-height: 1.15;
-}
-
-.uh-itinerary-redesign-day-content ul {
-  display: grid;
-  gap: 9px;
-  margin-top: 14px;
-  padding: 0;
-  list-style: none;
-}
-
-.uh-itinerary-redesign-day-content li {
-  display: flex;
-  align-items: flex-start;
-  gap: 9px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-md);
-  line-height: 1.62;
-}
-
-.uh-itinerary-redesign-day-content li svg {
-  width: 15px;
-  height: 15px;
-  flex: 0 0 auto;
-  margin-top: 4px;
-  color: var(--gold, var(--color-accent));
 }
 
 /* Booking clarity link inside selected panel */
@@ -29442,155 +27167,7 @@ a[href] {
   line-height: 1.65;
 }
 
-/* Actions */
-
-.uh-itinerary-redesign-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-/* Sticky media side */
-
-.uh-itinerary-redesign-media {
-  position: sticky;
-  top: 132px;
-  display: grid;
-  gap: 14px;
-}
-
-.uh-itinerary-redesign-media .tour-pro-image-frame {
-  min-height: 430px;
-  border-radius: var(--radius-sm);
-}
-
-.uh-itinerary-redesign-media .tour-pro-image {
-  height: 100%;
-  object-fit: cover;
-}
-
-.uh-itinerary-redesign-media-note {
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-redesign-media-note strong {
-  display: block;
-  margin-top: 7px;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-heading-md);
-  line-height: 1.12;
-}
-
-.uh-itinerary-redesign-media-note p {
-  margin: 10px 0 0;
-  color: var(--muted, var(--color-text-secondary));
-  font-size: var(--font-size-md);
-  line-height: 1.68;
-}
-
-.uh-itinerary-redesign-media-stats {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.uh-itinerary-redesign-media-stats div {
-  padding: 18px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  text-align: center;
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-itinerary-redesign-media-stats span {
-  display: block;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-heading-md);
-  font-weight: 700;
-  line-height: 1;
-}
-
-.uh-itinerary-redesign-media-stats small {
-  display: block;
-  margin-top: 6px;
-  color: var(--muted, var(--color-text-secondary));
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-/* Empty state */
-
-.uh-itinerary-redesign-empty-state {
-  min-height: 280px;
-  display: grid;
-  place-items: center;
-  padding: 34px;
-  border: 1px dashed var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  color: var(--muted, var(--color-text-secondary));
-  font-weight: 700;
-  text-align: center;
-}
-
-/* Responsive */
-
-@media (max-width: 1180px) {
-  .uh-itinerary-redesign-layout,
-  .uh-itinerary-redesign-panel-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-itinerary-redesign-sidebar,
-  .uh-itinerary-redesign-media {
-    position: static;
-  }
-
-  .uh-itinerary-redesign-route-list {
-    max-height: none;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: visible;
-    padding-right: 0;
-  }
-
-  .uh-itinerary-redesign-media .tour-pro-image-frame {
-    min-height: 360px;
-  }
-}
-
 @media (max-width: 860px) {
-  .uh-itinerary-redesign-topbar {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-itinerary-redesign-filter-row {
-    justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 4px;
-  }
-
-  .uh-itinerary-redesign-filter-btn {
-    flex: 0 0 auto;
-  }
-
-  .uh-itinerary-redesign-route-list,
-  .uh-itinerary-redesign-fact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-itinerary-redesign-day-item {
-    grid-template-columns: 1fr;
-  }
 
   .uh-bhutan-booking-link-card {
     grid-template-columns: 1fr;
@@ -29598,31 +27175,8 @@ a[href] {
 }
 
 @media (max-width: 560px) {
-  .uh-itinerary-redesign-shell,
-  .uh-itinerary-redesign-panel-grid {
-    padding: 18px;
-    border-radius: var(--radius-sm);
-  }
 
-  .uh-itinerary-redesign-route-card {
-    grid-template-columns: 42px minmax(0, 1fr);
-  }
-
-  .uh-itinerary-redesign-route-arrow {
-    display: none;
-  }
-
-  .uh-itinerary-redesign-panel-intro h3 {
-    font-size: var(--font-size-heading-md);
-  }
-
-  .uh-itinerary-redesign-actions {
-    flex-direction: column;
-  }
-
-  .uh-itinerary-redesign-actions .tour-pro-btn-primary,
-  .uh-itinerary-redesign-actions .tour-pro-btn-secondary,
-  .uh-bhutan-booking-link-card .tour-pro-btn-secondary {
+  .uh-bhutan-booking-link-card .tour-pro-btn-secondary{
     width: 100%;
   }
 }
@@ -31882,215 +29436,14 @@ a[href] {
   overflow: hidden;
 }
 
-.cultural-pro-itinerary-section {
-  position: relative;
-}
-
-.cultural-pro-route-shell {
-  display: grid;
-  grid-template-columns: 330px minmax(0, 1fr);
-  gap: clamp(20px, 3vw, 34px);
-  align-items: start;
-  margin-top: 44px;
-}
-
-.cultural-pro-route-options {
-  position: sticky;
-  top: 132px;
-  display: grid;
-  gap: 12px;
-}
-
-.cultural-pro-route-option {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr) 22px;
-  gap: 13px;
-  align-items: center;
-  padding: 15px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-  text-align: left;
-  cursor: pointer;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    background 0.25s ease,
-    border-color 0.25s ease;
-}
-
-.cultural-pro-route-option:hover,
-.cultural-pro-route-option:focus-visible,
-.cultural-pro-route-option.is-active {
-  transform: translateY(-2px);
-  border-color: var(--color-border);
-  background:
-    linear-gradient(135deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-  outline: none;
-}
-
-.cultural-pro-route-number {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: var(--radius-sm);
-  background: var(--warm, var(--color-bg-card));
-  color: var(--color-accent);
-  border: 1px solid var(--color-border);
-  font-size: var(--font-size-sm);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
-
-.cultural-pro-route-option.is-active .cultural-pro-route-number {
-  background: var(--gold, var(--color-accent));
-  color: var(--color-text-primary);
-}
-
-.cultural-pro-route-option-content {
-  min-width: 0;
-  display: grid;
-  gap: 6px;
-}
-
-.cultural-pro-route-option-content > span {
-  width: fit-content;
-  padding: 5px 8px;
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-accent-light);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.cultural-pro-route-option-content strong {
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-md);
-  line-height: 1.35;
-}
-
-.cultural-pro-route-option-content small {
-  color: var(--muted, var(--color-text-secondary));
-  font-size: var(--font-size-sm);
-  line-height: 1.4;
-}
-
-.cultural-pro-route-option svg {
-  width: 20px;
-  height: 20px;
-  color: var(--gold, var(--color-accent));
-  transition: transform 0.25s ease;
-}
-
-.cultural-pro-route-option.is-active svg {
-  transform: translateX(3px);
-}
-
-.cultural-pro-route-panel {
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg, 34px);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card)),
-    radial-gradient(circle at 90% 0%, var(--color-divider), transparent 22rem);
-  box-shadow: var(--shadow-subtle);
-}
-
-.cultural-pro-route-panel-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 340px;
-  gap: clamp(22px, 3vw, 34px);
-  align-items: start;
-  padding: clamp(24px, 3vw, 36px);
-}
-
-.cultural-pro-route-kicker,
 .cultural-pro-day-heading span,
-.cultural-pro-route-note span,
-.cultural-pro-booking-card-head span {
+.cultural-pro-booking-card-head span{
   display: block;
   color: var(--color-accent);
   font-size: var(--font-size-xs);
   font-weight: 900;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-}
-
-.cultural-pro-route-main h3 {
-  max-width: 760px;
-  margin: 10px 0 0;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-heading-lg);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
-}
-
-.cultural-pro-route-main > p {
-  max-width: 720px;
-  margin: 18px 0 0;
-  color: var(--muted, var(--color-text-secondary));
-  font-size: var(--font-size-base);
-  line-height: 1.82;
-}
-
-.cultural-pro-route-facts {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 26px;
-}
-
-.cultural-pro-route-facts > div {
-  min-width: 0;
-  display: grid;
-  gap: 7px;
-  padding: 16px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-}
-
-.cultural-pro-route-facts svg {
-  width: 18px;
-  height: 18px;
-  color: var(--gold, var(--color-accent));
-}
-
-.cultural-pro-route-facts span {
-  color: var(--color-accent);
-  font-size: var(--font-size-xs);
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.cultural-pro-route-facts strong {
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-sm);
-  line-height: 1.45;
-}
-
-.cultural-pro-route-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
-.cultural-pro-route-tags span {
-  padding: 8px 11px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-round);
-  background: var(--color-divider);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
 }
 
 .cultural-pro-day-heading {
@@ -32171,47 +29524,6 @@ a[href] {
   color: var(--gold, var(--color-accent));
 }
 
-.cultural-pro-route-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.cultural-pro-route-media {
-  position: sticky;
-  top: 132px;
-  display: grid;
-  gap: 14px;
-}
-
-.cultural-pro-route-media .tour-pro-image-frame {
-  min-height: 430px;
-  border-radius: var(--radius-sm);
-}
-
-.cultural-pro-route-media .tour-pro-image {
-  height: 100%;
-  object-fit: cover;
-}
-
-.cultural-pro-route-note {
-  padding: 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
-.cultural-pro-route-note strong {
-  display: block;
-  margin-top: 7px;
-  color: var(--dark, var(--color-text-secondary));
-  font-size: var(--font-size-heading-md);
-  line-height: 1.12;
-}
-
 .tour-pro-route-rate-note {
   display: grid;
   gap: 6px;
@@ -32232,21 +29544,6 @@ a[href] {
 }
 
 .tour-pro-route-rate-note p {
-  margin: 0;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 750;
-  line-height: 1.45;
-}
-
-.cultural-pro-route-note p {
-  margin: 10px 0 0;
-  color: var(--muted, var(--color-text-secondary));
-  font-size: var(--font-size-md);
-  line-height: 1.68;
-}
-
-.cultural-pro-route-note .tour-pro-route-rate-note p {
   margin: 0;
   color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
@@ -32375,50 +29672,13 @@ a[href] {
   line-height: 1.68;
 }
 
-@media (max-width: 1180px) {
-  .cultural-pro-route-shell,
-  .cultural-pro-route-panel-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cultural-pro-route-options,
-  .cultural-pro-route-media {
-    position: static;
-  }
-
-  .cultural-pro-route-options {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cultural-pro-route-media .tour-pro-image-frame {
-    min-height: 360px;
-  }
-}
-
-@media (max-width: 1120px) {
-  .cultural-pro-route-facts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 820px) {
-  .cultural-pro-route-options,
-  .cultural-pro-route-facts,
-  .cultural-pro-booking-grid {
+  .cultural-pro-booking-grid{
     grid-template-columns: 1fr;
   }
 
   .cultural-pro-day-item {
     grid-template-columns: 1fr;
-  }
-
-  .cultural-pro-route-actions {
-    flex-direction: column;
-  }
-
-  .cultural-pro-route-actions .tour-pro-btn-primary,
-  .cultural-pro-route-actions .tour-pro-btn-secondary {
-    width: 100%;
   }
 }
 
@@ -32441,44 +29701,14 @@ a[href] {
 }
 
 @media (max-width: 560px) {
-  .cultural-pro-route-panel-grid,
-  .cultural-pro-booking-card {
+  .cultural-pro-booking-card{
     padding: 20px;
     border-radius: var(--radius-sm);
-  }
-
-  .cultural-pro-route-option {
-    grid-template-columns: 42px minmax(0, 1fr);
-  }
-
-  .cultural-pro-route-option > svg {
-    display: none;
-  }
-
-  .cultural-pro-route-main h3 {
-    font-size: var(--font-size-heading-md);
   }
 
   .cultural-pro-booking-card li {
     grid-template-columns: 1fr;
   }
-}
-
-/* =========================================================
-   FESTIVAL TOURS MERGED 2026 DATA SUPPORT
-   Add below your existing Festival Tours CSS if needed.
-   ========================================================= */
-
-.festival-pro-page .uh-festival-library-redesign-route-top em {
-  max-width: 190px;
-}
-
-.festival-pro-page .uh-festival-library-redesign-tag-row span {
-  white-space: normal;
-}
-
-.festival-pro-page .uh-festival-library-redesign-day-content li span {
-  line-height: 1.6;
 }
 
 .festival-pro-page .uh-festival-anchor-card {
@@ -32487,28 +29717,6 @@ a[href] {
 
 .festival-pro-page .uh-festival-booking-clarity-copy h3 {
   max-width: 760px;
-}
-
-.festival-pro-page .uh-festival-library-redesign-filter-row {
-  flex-wrap: wrap;
-}
-
-@media (max-width: 760px) {
-  .festival-pro-page .uh-festival-library-redesign-route-top {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-filter-row {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    padding-bottom: 8px;
-  }
-
-  .festival-pro-page .uh-festival-library-redesign-filter-btn {
-    flex: 0 0 auto;
-  }
 }
 
 /* =========================================================
@@ -32730,10 +29938,7 @@ body {
 .tour-pro-card,
 .journey-card,
 .destination-card,
-.uh-package-card,
-.uh-itinerary-redesign-route-card,
-.uh-festival-library-redesign-route-card,
-.cultural-pro-route-option {
+.uh-package-card{
   border-color: var(--color-border);
   box-shadow: var(--shadow-subtle);
 }
@@ -32744,51 +29949,24 @@ body {
 .tour-pro-card:hover,
 .journey-card:hover,
 .destination-card:hover,
-.uh-package-card:hover,
-.uh-itinerary-redesign-route-card:hover,
-.uh-itinerary-redesign-route-card:focus-visible,
-.uh-itinerary-redesign-route-card.is-active,
-.uh-festival-library-redesign-route-card:hover,
-.uh-festival-library-redesign-route-card:focus-visible,
-.uh-festival-library-redesign-route-card.is-active,
-.cultural-pro-route-option:hover,
-.cultural-pro-route-option:focus-visible,
-.cultural-pro-route-option.is-active {
+.uh-package-card:hover{
   transform: translateY(-2px);
   border-color: var(--color-border);
   box-shadow: var(--shadow-subtle);
 }
 
-.uh-itinerary-redesign-shell,
-.uh-festival-library-redesign-shell,
-.cultural-pro-route-panel,
-.uh-itinerary-redesign-panel,
-.uh-festival-library-redesign-panel,
 .uh-package-preview,
-.cta-contact-card {
+.cta-contact-card{
   border-color: var(--color-border);
   box-shadow: var(--shadow-subtle);
 }
 
-.uh-itinerary-redesign-panel-grid,
-.uh-festival-library-redesign-panel-grid,
-.cultural-pro-route-panel-grid {
-  gap: clamp(24px, 3vw, 38px);
-}
-
-.uh-itinerary-redesign-fact-grid > div,
-.uh-festival-library-redesign-fact-grid > div,
-.cultural-pro-route-facts > div,
-.uh-itinerary-redesign-media-stats div,
-.uh-festival-library-redesign-media-stats div,
-.uh-package-preview-meta div {
+.uh-package-preview-meta div{
   border-color: var(--color-border);
   background: var(--color-bg-card);
 }
 
-.uh-itinerary-redesign-day-item,
-.uh-festival-library-redesign-day-item,
-.cultural-pro-day-item {
+.cultural-pro-day-item{
   border-color: var(--color-divider);
   background: var(--color-bg-card);
 }
@@ -32954,26 +30132,6 @@ body {
   box-shadow: var(--shadow-subtle);
 }
 
-.cultural-pro-route-panel-list {
-  display: grid;
-  gap: 24px;
-  min-width: 0;
-}
-
-.cultural-pro-route-panel {
-  scroll-margin-top: 150px;
-}
-
-.cultural-pro-route-option {
-  text-decoration: none;
-}
-
-.cultural-pro-route-option[aria-current="true"] {
-  border-color: var(--color-border);
-  background: linear-gradient(145deg, var(--color-bg-card), var(--color-bg-card));
-  box-shadow: var(--shadow-subtle);
-}
-
 #uh-whychoose-feature-6:checked ~ .uh-whychoose-showcase .uh-whychoose-preview-panel-6 {
   display: block;
   animation: uhWhyChooseFade 0.28s ease both;
@@ -33014,10 +30172,6 @@ body {
   transform: translateX(4px);
 }
 
-.cultural-pro-route-option {
-  scroll-margin-top: 150px;
-}
-
 @media (max-width: 900px) {
   .site-header,
   .site-header-scrolled {
@@ -33047,177 +30201,6 @@ body {
   }
 }
 
-/* Mobile-only accordion behavior for Relevant Cultural Itineraries */
-.cultural-pro-route-mobile-panel {
-  display: none;
-}
-
-@media (max-width: 900px) {
-  .cultural-pro-route-shell {
-    display: block;
-  }
-
-  .cultural-pro-route-options {
-    display: grid;
-    gap: 14px;
-  }
-
-  .cultural-pro-route-option-group {
-    display: block;
-  }
-
-  /* Hide the separate desktop detail panel on mobile */
-  .cultural-pro-route-panel-list {
-    display: none;
-  }
-
-  /* Show details directly below the selected parent item */
-  .cultural-pro-route-mobile-panel {
-    display: block;
-    margin: 12px 0 18px;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-panel {
-    scroll-margin-top: 90px;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-panel-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-main,
-  .cultural-pro-route-mobile-panel .cultural-pro-route-media {
-    min-width: 0;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-facts {
-    grid-template-columns: 1fr;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-actions {
-    display: grid;
-    gap: 12px;
-  }
-
-  .cultural-pro-route-mobile-panel .tour-pro-btn-primary,
-  .cultural-pro-route-mobile-panel .tour-pro-btn-secondary {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 901px) {
-  .cultural-pro-route-panel-list {
-    display: block;
-  }
-}
-
-.cultural-pro-route-option {
-  appearance: none;
-  border: 0;
-  font: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-
-.cultural-pro-route-mobile-panel {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .cultural-pro-route-shell {
-    display: block;
-  }
-
-  .cultural-pro-route-options {
-    display: grid;
-    gap: 14px;
-  }
-
-  .cultural-pro-route-option-group {
-    overflow: hidden;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    background: var(--color-bg-card);
-    box-shadow: var(--shadow-subtle);
-  }
-
-  .cultural-pro-route-option {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 16px;
-    background: transparent;
-    color: inherit;
-  }
-
-  .cultural-pro-route-option-content {
-    flex: 1;
-  }
-
-  .cultural-pro-route-option svg {
-    flex: 0 0 auto;
-    transition: transform 0.25s ease;
-  }
-
-  .cultural-pro-route-option.is-active svg {
-    transform: rotate(90deg);
-  }
-
-  .cultural-pro-route-mobile-panel {
-    display: block;
-    padding: 0 14px 16px;
-    border-top: 1px solid var(--color-border);
-    animation: culturalAccordionOpen 0.22s ease;
-  }
-
-  .cultural-pro-route-panel-list {
-    display: none;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-panel {
-    margin-top: 14px;
-    padding: 0;
-    border: 0;
-    border-radius: var(--radius-none);
-    background: transparent;
-    box-shadow: var(--shadow-subtle);
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-panel-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-facts {
-    grid-template-columns: 1fr;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-day-item {
-    grid-template-columns: 1fr;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .cultural-pro-route-mobile-panel .cultural-pro-route-actions a {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 769px) {
-  .cultural-pro-route-mobile-panel {
-    display: none;
-  }
-}
-
 @keyframes culturalAccordionOpen {
   from {
     opacity: 0;
@@ -33230,53 +30213,6 @@ body {
   }
 }
 
-.uh-festival-library-accordion-layout {
-  display: block;
-}
-
-.uh-festival-library-accordion-list {
-  display: grid;
-  gap: 18px;
-}
-
-.uh-festival-library-accordion-group {
-  overflow: hidden;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background: var(--color-bg-card);
-  box-shadow: var(--shadow-subtle);
-}
-
-.uh-festival-library-accordion-group .uh-festival-library-redesign-route-card {
-  width: 100%;
-  border: 0;
-  border-radius: var(--radius-none);
-  box-shadow: var(--shadow-subtle);
-  background: transparent;
-  cursor: pointer;
-}
-
-.uh-festival-library-accordion-panel {
-  display: block;
-  padding: 0 18px 20px;
-  border-top: 1px solid var(--color-border);
-  animation: festivalAccordionOpen 0.24s ease;
-}
-
-.uh-festival-library-accordion-panel .uh-festival-library-redesign-panel {
-  margin-top: 18px;
-  border: 0;
-  box-shadow: var(--shadow-subtle);
-  background: transparent;
-}
-
-.uh-festival-library-accordion-panel
-  .uh-festival-library-redesign-panel-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
-  gap: 28px;
-}
-
 @keyframes festivalAccordionOpen {
   from {
     opacity: 0;
@@ -33286,49 +30222,6 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .uh-festival-library-accordion-list {
-    gap: 14px;
-  }
-
-  .uh-festival-library-accordion-group {
-    border-radius: var(--radius-sm);
-  }
-
-  .uh-festival-library-accordion-panel {
-    padding: 0 14px 16px;
-  }
-
-  .uh-festival-library-accordion-panel
-    .uh-festival-library-redesign-panel-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .uh-festival-library-accordion-panel
-    .uh-festival-library-redesign-fact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-festival-library-accordion-panel
-    .uh-festival-library-redesign-day-item {
-    grid-template-columns: 1fr;
-  }
-
-  .uh-festival-library-accordion-panel
-    .uh-festival-library-redesign-actions {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .uh-festival-library-accordion-panel
-    .uh-festival-library-redesign-actions
-    a {
-    width: 100%;
-    justify-content: center;
   }
 }
 
@@ -33347,25 +30240,19 @@ body {
   overflow-x: clip;
 }
 
-.uh-itinerary-redesign-topbar,
-.uh-festival-library-redesign-topbar,
 .festival-calendar-redesign-shell,
-.contact-pro-card {
+.contact-pro-card{
   min-width: 0;
 }
 
-.uh-itinerary-redesign-filter-row,
-.uh-festival-library-redesign-filter-row,
-.festival-calendar-redesign-month-tabs {
+.festival-calendar-redesign-month-tabs{
   width: 100%;
   max-width: 100%;
   min-width: 0;
 }
 
 @media (max-width: 900px) {
-  .uh-itinerary-redesign-filter-row,
-  .uh-festival-library-redesign-filter-row,
-  .festival-calendar-redesign-month-tabs {
+  .festival-calendar-redesign-month-tabs{
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -33375,14 +30262,7 @@ body {
     scrollbar-width: thin;
   }
 
-  .uh-itinerary-redesign-filter-row,
-  .uh-festival-library-redesign-filter-row {
-    padding-bottom: 8px;
-  }
-
-  .uh-itinerary-redesign-filter-btn,
-  .uh-festival-library-redesign-filter-btn,
-  .festival-calendar-redesign-month-tab {
+  .festival-calendar-redesign-month-tab{
     flex: 0 0 auto;
     white-space: nowrap;
   }
@@ -33411,80 +30291,6 @@ body {
   }
 }
 
-/* Text containment guardrails for high-density cards and tour price notes */
-:is(
-  .tour-pro-route-rate-note,
-  .tour-pro-route-rate-note strong,
-  .tour-pro-route-rate-note p,
-  .tour-pro-image-rate,
-  .tour-pro-image-rate strong,
-  .tour-pro-image-rate span,
-  .cultural-pro-route-note,
-  .cultural-pro-route-note strong,
-  .cultural-pro-route-note p,
-  .cultural-pro-route-main h3,
-  .cultural-pro-route-main > p,
-  .cultural-pro-route-option,
-  .cultural-pro-route-option-content,
-  .cultural-pro-route-option-content > span,
-  .cultural-pro-route-option-content strong,
-  .cultural-pro-route-option-content small,
-  .cultural-pro-route-facts > div,
-  .cultural-pro-route-facts span,
-  .cultural-pro-route-facts strong,
-  .cultural-pro-route-tags span,
-  .cultural-pro-day-item,
-  .cultural-pro-day-content,
-  .cultural-pro-day-content h4,
-  .cultural-pro-day-content li span,
-  .uh-package-card,
-  .uh-package-card-content,
-  .uh-package-card-content h3,
-  .uh-package-card-content p,
-  .uh-package-card-meta span,
-  .uh-package-card-footer,
-  .uh-package-preview,
-  .uh-package-preview h3,
-  .uh-package-preview p,
-  .contact-pro-card,
-  .contact-pro-card h3,
-  .contact-pro-card p,
-  .contact-pro-card span,
-  .contact-pro-form-card,
-  .contact-pro-form-card h2,
-  .contact-pro-form-card p,
-  .contact-pro-side-card,
-  .contact-pro-side-card h3,
-  .contact-pro-side-card p,
-  .tour-pro-stat-card,
-  .tour-pro-stat-card strong,
-  .tour-pro-stat-card span,
-  .uh-bhutan-custom-card,
-  .uh-bhutan-custom-card h3,
-  .uh-bhutan-custom-card p,
-  .faq-item,
-  .faq-item h3,
-  .faq-item p
-) {
-  min-width: 0;
-  max-width: 100%;
-  overflow-wrap: anywhere;
-  word-break: normal;
-}
-
-:is(
-  .cultural-pro-route-option-content > span,
-  .cultural-pro-route-tags span,
-  .tour-pro-filter-btn,
-  .uh-duration-filter-btn,
-  .uh-itinerary-redesign-filter-btn,
-  .uh-festival-library-redesign-filter-btn,
-  .festival-calendar-redesign-month-tab
-) {
-  max-width: 100%;
-  white-space: normal;
-}
-
 .tour-pro-route-rate-note strong {
   font-size: var(--font-size-lg);
 }
@@ -33508,15 +30314,6 @@ body {
     font-size: var(--font-size-xs);
   }
 
-  .cultural-pro-route-facts > div {
-    padding: 13px;
-  }
-
-  .cultural-pro-route-option-content > span {
-    width: 100%;
-    text-align: center;
-  }
-
   .contact-pro-cards-grid {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -33528,10 +30325,8 @@ body {
   background: var(--color-bg-card);
 }
 
-.cultural-pro-itinerary-section,
-.uh-itinerary-redesign-section,
 .uh-festival-accordion-section,
-.uh-bhutan-booking-clarity-section {
+.uh-bhutan-booking-clarity-section{
   display: none;
 }
 
@@ -33759,25 +30554,6 @@ body {
   gap: 2px;
 }
 
-.upcoming-events-footer-phone {
-  display: grid;
-  grid-template-columns: 18px minmax(0, 1fr);
-  gap: 9px;
-  align-items: start;
-}
-
-.upcoming-events-footer-phone span {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2px;
-}
-
-.upcoming-events-footer-phone a {
-  display: block;
-  grid-template-columns: none;
-  width: fit-content;
-}
-
 .uh-hb-detail-shell {
   margin-top: 52px;
   scroll-margin-top: 130px;
@@ -33978,17 +30754,6 @@ body {
   flex: 0 0 auto;
   margin-top: 4px;
   color: var(--gold, var(--color-accent));
-}
-
-.uh-itinerary-pricing-note {
-  margin: 18px 0 0;
-  border-left: 3px solid var(--gold, var(--color-accent));
-  padding: 11px 14px;
-  background: var(--color-accent-wash);
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  line-height: 1.55;
-  font-weight: 750;
 }
 
 .uh-hb-price-table-wrap {
@@ -36204,6 +32969,8 @@ textarea {
 .upcoming-events-poster-hero-shade {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .upcoming-events-poster-hero-image {
@@ -36840,87 +33607,6 @@ textarea {
   height: 16px;
 }
 
-.upcoming-events-poster-footer {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(150px, 0.72fr) minmax(150px, 0.82fr) minmax(0, 1fr);
-  gap: 26px;
-  margin-top: 44px;
-  padding: 34px clamp(18px, 4vw, 50px);
-  border-top: 1px solid var(--event-line);
-  background: var(--color-bg-page);
-}
-
-.upcoming-events-poster-footer div,
-.upcoming-events-poster-footer nav {
-  display: grid;
-  gap: 9px;
-  align-content: start;
-}
-
-.upcoming-events-footer-brand > a {
-  width: fit-content;
-}
-
-.upcoming-events-footer-brand img {
-  width: 76px;
-  height: 76px;
-  object-fit: contain;
-}
-
-.upcoming-events-poster-footer svg {
-  width: 18px;
-  height: 18px;
-  color: var(--event-gold);
-}
-
-.upcoming-events-poster-footer strong,
-.upcoming-events-poster-footer nav strong {
-  color: var(--color-text-primary);
-  font-size: var(--font-size-xl);
-  line-height: 1.1;
-  letter-spacing: 0;
-}
-
-.upcoming-events-poster-footer span,
-.upcoming-events-poster-footer a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 750;
-  line-height: 1.45;
-  text-decoration: none;
-}
-
-.upcoming-events-footer-social {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-top: 6px;
-}
-
-.upcoming-events-footer-social a {
-  width: 32px;
-  height: 32px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-round);
-  background: var(--color-bg-card);
-}
-
-.upcoming-events-footer-social svg {
-  width: 15px;
-  height: 15px;
-}
-
-.upcoming-events-poster-footer a:hover,
-.upcoming-events-poster-footer a:focus-visible {
-  color: var(--event-gold-soft);
-  outline: none;
-}
-
 @media (max-width: 980px) {
   .upcoming-events-poster {
     width: min(100% - 20px, 760px);
@@ -36928,7 +33614,6 @@ textarea {
 
   .upcoming-events-trust-strip,
   .upcoming-events-package-cards,
-  .upcoming-events-poster-footer,
   .upcoming-events-details-grid {
     grid-template-columns: 1fr;
   }
@@ -37038,8 +33723,7 @@ textarea {
   padding: clamp(22px, 3vw, 30px);
 }
 
-.upcoming-events-itinerary-pro-brief > span,
-.upcoming-events-footer-event-card > span {
+.upcoming-events-itinerary-pro-brief > span {
   display: inline-flex;
   width: fit-content;
   padding: 7px 10px;
@@ -37223,202 +33907,9 @@ textarea {
   color: var(--event-gold-soft);
 }
 
-.upcoming-events-poster-footer {
-  display: block;
-  margin-top: 48px;
-  padding: 0;
-  border-top: 1px solid var(--color-border);
-  background:
-    radial-gradient(circle at 14% 0%, var(--color-accent-wash), transparent 20rem),
-    linear-gradient(180deg, var(--color-text-secondary) 0%, var(--color-text-secondary) 100%);
-}
-
-.upcoming-events-footer-top {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.72fr);
-  gap: clamp(20px, 4vw, 46px);
-  align-items: stretch;
-  padding: clamp(30px, 5vw, 50px) clamp(18px, 4vw, 50px) clamp(24px, 4vw, 38px);
-  border-bottom: 1px solid var(--color-divider);
-}
-
-.upcoming-events-footer-brand {
-  display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 18px;
-  align-items: center;
-}
-
-.upcoming-events-footer-brand > a,
-.upcoming-events-footer-brand img {
-  width: 92px;
-  height: 92px;
-}
-
-.upcoming-events-footer-brand img {
-  object-fit: contain;
-}
-
-.upcoming-events-footer-brand strong,
-.upcoming-events-footer-event-card strong,
-.upcoming-events-footer-main strong {
-  color: var(--color-text-primary);
-  letter-spacing: 0;
-}
-
-.upcoming-events-footer-brand strong {
-  display: block;
-  font-size: var(--font-size-heading-md);
-  line-height: 1;
-}
-
-.upcoming-events-footer-brand span {
-  display: block;
-  max-width: 560px;
-  margin-top: 10px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 700;
-  line-height: 1.6;
-}
-
-.upcoming-events-footer-event-card {
-  display: grid;
-  align-content: center;
-  padding: clamp(22px, 3vw, 30px);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  background:
-    linear-gradient(135deg, var(--color-accent-wash), var(--color-bg-card)),
-    var(--color-overlay-medium);
-}
-
-.upcoming-events-footer-event-card strong {
-  display: block;
-  margin-top: 14px;
-  font-size: var(--font-size-heading-md);
-  line-height: 1.05;
-}
-
-.upcoming-events-footer-event-card small {
-  display: block;
-  margin-top: 10px;
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 850;
-  line-height: 1.45;
-  text-transform: uppercase;
-}
-
-.upcoming-events-footer-main {
-  display: grid;
-  grid-template-columns: minmax(150px, 0.75fr) minmax(160px, 0.85fr) minmax(220px, 1fr) minmax(220px, 1fr);
-  gap: clamp(18px, 3vw, 34px);
-  padding: clamp(26px, 4vw, 42px) clamp(18px, 4vw, 50px);
-}
-
-.upcoming-events-footer-main nav,
-.upcoming-events-footer-contact,
-.upcoming-events-footer-social-wrap {
-  display: grid;
-  align-content: start;
-  gap: 10px;
-}
-
-.upcoming-events-footer-main strong {
-  margin-bottom: 5px;
-  font-size: var(--font-size-xl);
-}
-
-.upcoming-events-footer-main a,
-.upcoming-events-footer-main span,
-.upcoming-events-footer-bottom span,
-.upcoming-events-footer-bottom a {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-sm);
-  font-weight: 750;
-  line-height: 1.45;
-  text-decoration: none;
-}
-
-.upcoming-events-footer-contact a,
-.upcoming-events-footer-contact span {
-  display: grid;
-  grid-template-columns: 18px minmax(0, 1fr);
-  gap: 9px;
-  align-items: start;
-}
-
-.upcoming-events-footer-main svg {
-  width: 16px;
-  height: 16px;
-  color: var(--event-gold);
-}
-
-.upcoming-events-footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 9px;
-}
-
-.upcoming-events-footer-social a {
-  width: 36px;
-  height: 36px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-round);
-  background: var(--color-bg-card);
-}
-
-.upcoming-events-footer-social a svg {
-  width: 16px;
-  height: 16px;
-}
-
-.upcoming-events-footer-cta {
-  width: fit-content;
-  min-height: 44px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-  padding: 11px 15px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  color: var(--color-text-primary);
-  background: var(--color-accent-wash);
-  text-transform: uppercase;
-}
-
-.upcoming-events-footer-main a:hover,
-.upcoming-events-footer-main a:focus-visible,
-.upcoming-events-footer-bottom a:hover,
-.upcoming-events-footer-bottom a:focus-visible {
-  color: var(--event-gold-soft);
-  outline: none;
-}
-
-.upcoming-events-footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 18px clamp(18px, 4vw, 50px);
-  border-top: 1px solid var(--color-divider);
-  background: var(--color-overlay-medium);
-}
-
-.upcoming-events-footer-bottom div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-}
-
 @media (max-width: 980px) {
   .upcoming-events-itinerary-pro-layout,
-  .upcoming-events-footer-top,
-  .upcoming-events-footer-main {
+  .upcoming-events-itinerary-pro-layout {
     grid-template-columns: 1fr;
   }
 
@@ -37433,8 +33924,7 @@ textarea {
     min-height: 300px;
   }
 
-  .upcoming-events-itinerary-pro-stats,
-  .upcoming-events-footer-brand {
+  .upcoming-events-itinerary-pro-stats {
     grid-template-columns: 1fr;
   }
 
@@ -37465,16 +33955,6 @@ textarea {
     width: fit-content;
   }
 
-  .upcoming-events-footer-top,
-  .upcoming-events-footer-main,
-  .upcoming-events-footer-bottom {
-    padding-right: 18px;
-    padding-left: 18px;
-  }
-
-  .upcoming-events-footer-bottom {
-    display: grid;
-  }
 }
 
 /* Reference-match compact content bands: keep all details without breaking poster flow. */
@@ -37737,13 +34217,6 @@ textarea {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .upcoming-events-footer-top {
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.72fr);
-  }
-
-  .upcoming-events-footer-main {
-    grid-template-columns: minmax(150px, 0.75fr) minmax(160px, 0.85fr) minmax(220px, 1fr) minmax(220px, 1fr);
-  }
 }
 
 @media (min-width: 1180px) {
@@ -37843,8 +34316,8 @@ textarea {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 760px) minmax(420px, 500px);
-  gap: clamp(48px, 6vw, 96px);
+  grid-template-columns: minmax(0, 760px) clamp(420px, 32vw, 500px);
+  gap: clamp(40px, 5vw, 86px);
   align-items: center;
   justify-content: space-between;
 }
@@ -37953,6 +34426,27 @@ textarea {
 }
 
 @media (max-width: 1320px) {
+  .home-hero {
+    padding-inline: clamp(48px, 5vw, 72px);
+  }
+
+  .home-hero-content {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: minmax(0, 1fr) clamp(340px, 36vw, 420px);
+    gap: clamp(32px, 4vw, 52px);
+  }
+
+  .home-hero h1 {
+    font-size: var(--font-size-heading-lg);
+  }
+
+  .home-hero h1 span {
+    font-size: var(--font-size-heading-md);
+  }
+}
+
+@media (max-width: 860px) {
   .home-hero-content {
     width: min(100%, 680px);
     max-width: 680px;
@@ -37973,15 +34467,12 @@ textarea {
   }
 
   .home-hero-content > .home-hero-trust {
-    order: 4;
+    order: 5;
   }
 
-  .home-hero h1 {
-    font-size: var(--font-size-heading-lg);
-  }
-
-  .home-hero h1 span {
-    font-size: var(--font-size-heading-md);
+  .home-hero-trust {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -38782,8 +35273,9 @@ textarea {
   grid-column: 2;
   grid-row: 1 / span 4;
   justify-self: end;
-  align-self: start;
-  margin: clamp(18px, 4vh, 48px) 0 0;
+  align-self: center;
+  width: 100%;
+  margin: 0;
 }
 
 .home-hero-gnr-link img {
@@ -38805,6 +35297,19 @@ textarea {
 @media (max-width: 1320px) {
   .home-hero-gnr-link,
   .home-event-notification {
+    max-width: 440px;
+  }
+
+  .home-hero-gnr-link {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 860px) {
+  .home-hero-gnr-link,
+  .home-event-notification {
     width: min(100%, 440px);
   }
 
@@ -38812,39 +35317,20 @@ textarea {
     grid-column: 1;
     grid-row: auto;
     justify-self: center;
-    order: 5;
+    order: 4;
     margin-top: 34px;
   }
 }
 
-.cultural-pro-page .cultural-pro-itinerary-section,
-.bhutantour-pro-page .uh-itinerary-redesign-section,
-.festival-pro-page .uh-festival-accordion-section {
+@media (max-width: 430px) {
+  .home-hero-gnr-link,
+  .home-event-notification {
+    width: min(calc(100% - 28px), 440px);
+  }
+}
+
+.festival-pro-page .uh-festival-accordion-section{
   display: block;
-}
-
-.bhutantour-pro-page .uh-itinerary-redesign-filter-row,
-.festival-pro-page .uh-festival-library-redesign-filter-row {
-  display: flex;
-}
-
-.bhutantour-pro-page .uh-itinerary-redesign-filter-btn,
-.festival-pro-page .uh-festival-library-redesign-filter-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: auto;
-}
-
-.cultural-pro-route-shell,
-.cultural-pro-route-options,
-.cultural-pro-route-panel-list {
-  min-width: 0;
-}
-
-.cultural-pro-route-option {
-  display: grid;
-  pointer-events: auto;
 }
 
 .uh-hb-package-card,

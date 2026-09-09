@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { getFallbackImage } from "./imageFallbacks";
-import { SectionHeading } from "./DesignSystem";
+import { ImageCredit, SectionHeading } from "./DesignSystem";
 
 const SDF_NOTE =
   "SDF: Foreign nationals pay USD 100 per night per person; Indian nationals pay Nu. 1,200 per night per person.";
@@ -38,6 +38,9 @@ export function TourImageSlot({
           loading="lazy"
           decoding="async"
         />
+        <ImageCredit className="tour-pro-image-credit">
+          © {image.copyrightName || "Unseen Himalayas Bhutan"}
+        </ImageCredit>
       </div>
 
       {formattedRate ? (
@@ -50,10 +53,6 @@ export function TourImageSlot({
           </span>
         </div>
       ) : null}
-
-      <figcaption className="tour-pro-image-credit">
-        © {image.copyrightName || "Unseen Himalayas Bhutan"}
-      </figcaption>
     </figure>
   );
 }

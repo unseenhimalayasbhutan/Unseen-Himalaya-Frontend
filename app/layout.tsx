@@ -3,6 +3,7 @@ import "./globals.css";
 import "./itinerary-alignment.css";
 import "./chatbot.css";
 import "./design-system.css";
+import "./home-theme.css";
 import { AiChatbot } from "./components/AiChatbot";
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 import { siteConfig } from "./siteConfig";

@@ -361,17 +361,6 @@ export default function GNHPhilosophiesPage() {
   );
 }
 
-/*
-  IMAGE SETUP:
-  Replace empty src values below with your real image path later.
-
-  Example:
-  src: "/images/gnh/bhutan-community.jpg",
-  credit: "Unseen Himalayas Bhutan / Photographer Name",
-  creditHref: "https://example.com/photo-source",
-  creditPosition: "overlay", // use "below" to show credit under image
-*/
-
 const heroImage: PageImage = {
   src: "/gnh.jpg",
   alt: "Bhutan landscape representing Gross National Happiness",

@@ -1,0 +1,272 @@
+/* Final homepage theme: black surfaces with gold accents. */
+.home-page {
+  --home-ink: var(--color-text-primary);
+  --home-muted: var(--color-text-secondary);
+  --home-subtle: rgba(243, 240, 232, 0.72);
+  --home-bg: var(--color-bg-page);
+  --home-bg-section: var(--color-bg-section);
+  --home-bg-elevated: var(--color-bg-elevated);
+  --home-card: rgba(21, 21, 21, 0.96);
+  --home-card-hover: rgba(24, 24, 24, 0.98);
+  --home-card-soft: rgba(243, 240, 232, 0.06);
+  --home-gold: var(--color-accent);
+  --home-gold-soft: var(--color-accent-light);
+  --home-border: rgba(223, 180, 96, 0.2);
+  --home-border-strong: rgba(223, 180, 96, 0.42);
+  --home-shadow: 0 20px 50px rgba(0, 0, 0, 0.24);
+  color: var(--home-ink);
+  background: var(--home-bg);
+}
+
+.home-page .home-hero {
+  background-color: var(--home-bg) !important;
+  box-shadow:
+    inset 0 0 0 9999px rgba(0, 0, 0, 0.58),
+    inset 0 -220px 180px rgba(0, 0, 0, 0.36) !important;
+}
+
+.home-page .uh-journeys-section,
+.home-page .uh-travel-section,
+.home-page .uh-whychoose-section,
+.home-page .cta-contact-section {
+  background-color: var(--home-bg) !important;
+  color: var(--home-ink) !important;
+}
+
+.home-page .uh-journeys-section,
+.home-page .uh-travel-section {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(201, 154, 74, 0.1), transparent 28rem),
+    linear-gradient(180deg, var(--home-bg) 0%, var(--home-bg-section) 52%, var(--home-bg) 100%) !important;
+}
+
+.home-page .uh-whychoose-section {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(201, 154, 74, 0.1), transparent 28rem),
+    linear-gradient(180deg, var(--home-bg-section) 0%, var(--home-bg) 54%, var(--home-bg-section) 100%) !important;
+}
+
+.home-page .cta-contact-section {
+  background:
+    radial-gradient(circle at 18% 0%, rgba(201, 154, 74, 0.1), transparent 26rem),
+    linear-gradient(180deg, var(--home-bg-section) 0%, var(--home-bg) 100%) !important;
+}
+
+.home-page .uh-journeys-section::before,
+.home-page .uh-journeys-section::after,
+.home-page .uh-travel-section::before,
+.home-page .uh-travel-section::after,
+.home-page .why-section::before,
+.home-page .why-section::after,
+.home-page .uh-journeys-bg-orb,
+.home-page .uh-travel-bg-orb,
+.home-page .why-bg-orb {
+  display: none !important;
+}
+
+.home-page :is(
+  .uh-journeys-heading h2,
+  .uh-packages-heading h2,
+  .uh-travel-heading h2,
+  .why-section .main-title,
+  .why-section .bottom-heading h2,
+  .showcase-left h2,
+  .uh-travel-panel h3,
+  .uh-destination-option-content h3,
+  .uh-package-card-content h3,
+  .uh-package-card-footer strong,
+  .uh-package-preview-text h3,
+  .uh-package-preview-meta strong,
+  .uh-travel-step-content h3,
+  .why-section .feature-title,
+  .why-section .bottom-title,
+  .cta-contact-card h2
+) {
+  color: var(--home-ink) !important;
+  letter-spacing: 0 !important;
+}
+
+.home-page :is(
+  .uh-journeys-heading p,
+  .uh-packages-heading p,
+  .uh-travel-heading p,
+  .uh-destination-option-content p,
+  .uh-package-card-content p,
+  .uh-package-card-footer div,
+  .uh-package-preview-text p,
+  .uh-travel-panel p,
+  .uh-travel-progress-meta span,
+  .uh-travel-step-content p,
+  .why-section .description,
+  .showcase-left p,
+  .why-section .bottom-heading p,
+  .why-section .bottom-text,
+  .stat-card span
+) {
+  color: var(--home-subtle) !important;
+}
+
+.home-page :is(
+  .uh-journeys-kicker,
+  .uh-packages-kicker,
+  .uh-travel-kicker,
+  .why-section .mini-text,
+  .showcase-badge,
+  .home-hero-btn-secondary,
+  .uh-travel-btn-secondary,
+  .cta-btn-email,
+  .uh-package-preview-meta div,
+  .uh-travel-progress,
+  .uh-travel-panel-icon,
+  .uh-travel-step-icon,
+  .why-section .feature-card,
+  .why-section .stat-card,
+  .why-section .uh-guidebook-image,
+  .cta-contact-card,
+  .cta-contact-note
+) {
+  border-color: var(--home-border) !important;
+  background: var(--home-card-soft) !important;
+}
+
+.home-page :is(
+  .uh-journeys-kicker,
+  .uh-packages-kicker,
+  .uh-travel-kicker,
+  .uh-destination-option-content span,
+  .uh-package-card-meta span,
+  .uh-package-card-footer > span,
+  .uh-package-preview-text span,
+  .uh-package-preview-meta small,
+  .uh-travel-panel-label,
+  .uh-travel-progress-meta strong,
+  .why-section .main-title span,
+  .why-section .bottom-icon,
+  .why-section .feature-icon,
+  .stat-card strong,
+  .cta-contact-label,
+  .cta-contact-note p
+) {
+  color: var(--home-gold-soft) !important;
+}
+
+.home-page .uh-destination-option,
+.home-page .uh-package-card,
+.home-page .uh-travel-step-card,
+.home-page .home-hero-trust-item {
+  border: 1px solid var(--home-border) !important;
+  background: var(--home-card) !important;
+  color: var(--home-ink) !important;
+  box-shadow: var(--home-shadow) !important;
+}
+
+.home-page .uh-package-preview,
+.home-page .uh-travel-panel {
+  border-color: var(--home-border) !important;
+  background:
+    linear-gradient(145deg, var(--home-card-hover), var(--home-card)) !important;
+  color: var(--home-ink) !important;
+  box-shadow: var(--home-shadow) !important;
+}
+
+.home-page :is(
+  .uh-destination-option:hover,
+  .uh-destination-option:focus-visible,
+  .uh-package-card:hover,
+  .uh-package-card:focus-visible,
+  .uh-travel-step-card:hover,
+  .uh-travel-step-card:focus-visible,
+  .uh-travel-step-card[aria-pressed="true"],
+  .home-hero-btn-secondary:hover,
+  .uh-travel-btn-secondary:hover,
+  .cta-btn-email:hover
+) {
+  border-color: var(--home-border-strong) !important;
+  background: var(--home-card-hover) !important;
+}
+
+.home-page .uh-package-card-image,
+.home-page .uh-destination-option-thumb {
+  border-color: var(--home-border) !important;
+  background: var(--home-bg-elevated) !important;
+}
+
+.home-page :is(
+  .home-hero-btn-primary,
+  .uh-journeys-btn-primary,
+  .uh-journeys-link-btn,
+  .uh-package-preview-btn,
+  .uh-travel-btn-primary,
+  .discover-btn,
+  .cta-btn
+) {
+  border-color: var(--home-gold) !important;
+  background: var(--home-gold) !important;
+  color: var(--home-bg) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22) !important;
+}
+
+.home-page :is(
+  .home-hero-btn-primary:hover,
+  .home-hero-btn-primary:focus-visible,
+  .uh-journeys-btn-primary:hover,
+  .uh-journeys-btn-primary:focus-visible,
+  .uh-journeys-link-btn:hover,
+  .uh-journeys-link-btn:focus-visible,
+  .uh-package-preview-btn:hover,
+  .uh-package-preview-btn:focus-visible,
+  .uh-travel-btn-primary:hover,
+  .uh-travel-btn-primary:focus-visible,
+  .discover-btn:hover,
+  .discover-btn:focus-visible,
+  .cta-btn:hover,
+  .cta-btn:focus-visible
+) {
+  border-color: var(--home-gold-soft) !important;
+  background: var(--home-gold-soft) !important;
+  color: var(--home-bg) !important;
+}
+
+.home-page .showcase-left {
+  border-color: var(--home-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.5)),
+    url("/MarcusWestbergBhutanHiRes-38.jpg") center / cover no-repeat !important;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24) !important;
+}
+
+.home-page .showcase-left::before {
+  border-color: var(--home-border) !important;
+}
+
+.home-page .showcase-left::after {
+  display: none !important;
+}
+
+.home-page .why-section .feature-card:hover,
+.home-page .why-section .feature-card:focus-visible,
+.home-page .why-section .feature-card.active,
+.home-page .why-section .feature-card[aria-pressed="true"],
+.home-page .why-section .stat-card:hover {
+  border-color: var(--home-border-strong) !important;
+  background: rgba(243, 240, 232, 0.1) !important;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18) !important;
+}
+
+.home-page .why-section .feature-icon,
+.home-page .why-section .bottom-icon {
+  border-color: var(--home-border) !important;
+  background: rgba(201, 154, 74, 0.14) !important;
+}
+
+.home-page .indicator,
+.home-page .indicator:hover,
+.home-page .indicator:focus-visible {
+  background: rgba(243, 240, 232, 0.24) !important;
+}
+
+.home-page .indicator[aria-pressed="true"],
+.home-page .indicator.active {
+  background: var(--home-gold-soft) !important;
+}

@@ -9,10 +9,10 @@ export const upcomingEvents = [
     duration: "5 Days / 4 Nights",
     price: "Starting at Nu. 26,214",
     priceNote: "per person",
-    notificationImage: "/concert/01_event_banner_guns_n_roses.jpg" as string | null,
+    notificationImage: "/gnr-ref-hero.png" as string | null,
     heroImage: "/concert/03_guns_n_roses_band_live.jpg" as string | null,
     brochureImage: "/concert/01_event_banner_guns_n_roses.jpg",
-    itineraryImage: "/concert/07_full_band_concert.jpg",
+    itineraryImage: "/concert/09_bhutan_thimphu_gate.jpg",
     experienceImage: null as string | null,
     experienceImageAlt: "Guns N' Roses Guwahati concert trip experience",
     galleryImages: [

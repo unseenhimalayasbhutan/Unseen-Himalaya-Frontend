@@ -1,22 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import {
   ArrowRight,
   CheckCircle,
-  ChevronRight,
-  Clock,
-  Hash,
   MapPin,
-  Users,
 } from "lucide-react";
 
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import {
   TourImageSlot as ImageSlot,
-  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -25,28 +19,13 @@ import {
   type PackageShowcaseItem,
 } from "../components/ItineraryPackageShowcase";
 import { landEntryItineraries as landEntryRoutes } from "../data/landEntryItineraries";
-import {
-  INTERNATIONAL_TRAVELER_PRICE_NOTE,
-  getB2cUsdPrice,
-} from "../data/tourPricing";
+import { getB2cUsdPrice } from "../data/tourPricing";
 import { sortPackages } from "../data/packageShowcases";
 
 type LandEntryValue = {
   title: string;
   description: string;
 };
-
-function getItineraryIndexFromHash() {
-  if (typeof window === "undefined") return -1;
-
-  const hashSlug = window.location.hash
-    .replace(/^#/, "")
-    .replace(/^itinerary-/, "");
-
-  if (!hashSlug) return -1;
-
-  return landEntryRoutes.findIndex((route) => route.slug === hashSlug);
-}
 
 const landEntryShowcasePackages: PackageShowcaseItem[] = landEntryRoutes.map(
   (route) => ({
@@ -70,23 +49,6 @@ const landEntryShowcasePackages: PackageShowcaseItem[] = landEntryRoutes.map(
 );
 
 export default function LandEntryToursPage() {
-  const [activeRoute, setActiveRoute] = useState(0);
-
-  useEffect(() => {
-    const syncRouteWithHash = () => {
-      const nextIndex = getItineraryIndexFromHash();
-
-      if (nextIndex >= 0) {
-        setActiveRoute(nextIndex);
-      }
-    };
-
-    syncRouteWithHash();
-    window.addEventListener("hashchange", syncRouteWithHash);
-
-    return () => window.removeEventListener("hashchange", syncRouteWithHash);
-  }, []);
-
   return (
     <>
       <Header />
@@ -172,224 +134,10 @@ export default function LandEntryToursPage() {
           detailBasePath="/land-entry-tours"
         />
 
-        <section
-          id="land-entry-itineraries"
-          className="tour-pro-section tour-pro-section-warm uh-itinerary-section cultural-pro-itinerary-section"
-        >
-          <div className="container">
-            <SectionHeader
-              eyebrow="Land-Entry Itinerary Library"
-              title="Choose a 4 to 8 day Bhutan route from Phuentsholing."
-              subtitle="Select a route below to preview the route flow, highlights, inclusions, exclusions, and full day-by-day journey."
-            />
-
-            <div className="cultural-pro-route-shell">
-              <aside
-                className="cultural-pro-route-options"
-                aria-label="Land-entry itineraries"
-              >
-                {landEntryRoutes.map((route, index) => {
-                  const isActive = activeRoute === index;
-                  const mobilePanelId = `mobile-itinerary-${route.slug}`;
-
-                  return (
-                    <div
-                      key={route.slug}
-                      className={`cultural-pro-route-option-group ${
-                        isActive ? "is-open" : ""
-                      }`}
-                    >
-                      <button
-                        type="button"
-                        className={`cultural-pro-route-option ${
-                          isActive ? "is-active" : ""
-                        }`}
-                        onClick={() => {
-                          setActiveRoute(index);
-
-                          if (typeof window !== "undefined") {
-                            window.history.replaceState(
-                              null,
-                              "",
-                              `#itinerary-${route.slug}`,
-                            );
-                          }
-                        }}
-                        aria-expanded={isActive}
-                        aria-controls={mobilePanelId}
-                      >
-                        <span className="cultural-pro-route-number">
-                          {String(index + 1).padStart(2, "0")}
-                        </span>
-
-                        <span className="cultural-pro-route-option-content">
-                          <span>{route.duration}</span>
-                          <strong>{route.name}</strong>
-                          <small>{route.route}</small>
-                        </span>
-
-                        <ChevronRight aria-hidden="true" />
-                      </button>
-
-                      {isActive ? (
-                        <div
-                          id={mobilePanelId}
-                          className="cultural-pro-route-mobile-panel"
-                        >
-                          <RoutePanel
-                            key={`mobile-${route.slug}`}
-                            route={route}
-                            routeIndex={index}
-                          />
-                        </div>
-                      ) : null}
-                    </div>
-                  );
-                })}
-              </aside>
-
-              <div className="cultural-pro-route-panel-list">
-                {landEntryRoutes[activeRoute] ? (
-                  <RoutePanel
-                    key={landEntryRoutes[activeRoute].slug}
-                    route={landEntryRoutes[activeRoute]}
-                    routeIndex={activeRoute}
-                  />
-                ) : null}
-              </div>
-            </div>
-          </div>
-        </section>
-
       </main>
 
       <Footer />
     </>
-  );
-}
-
-function RoutePanel({
-  route,
-  routeIndex,
-  panelId,
-}: {
-  route: (typeof landEntryRoutes)[number];
-  routeIndex: number;
-  panelId?: string;
-}) {
-  return (
-    <article
-      id={panelId ?? `itinerary-${route.slug}`}
-      className="cultural-pro-route-panel"
-    >
-      <div className="cultural-pro-route-panel-grid">
-        <div className="cultural-pro-route-main">
-          <div className="cultural-pro-route-kicker">
-            Land-Entry Route {String(routeIndex + 1).padStart(2, "0")}
-          </div>
-
-          <h3>{route.name}</h3>
-          <p>{route.summary}</p>
-
-          <div className="cultural-pro-route-facts">
-            <div>
-              <Clock aria-hidden="true" />
-              <span>Duration</span>
-              <strong>{route.duration}</strong>
-            </div>
-
-            <div>
-              <MapPin aria-hidden="true" />
-              <span>Route</span>
-              <strong>{route.route}</strong>
-            </div>
-
-            <div>
-              <Users aria-hidden="true" />
-              <span>Best For</span>
-              <strong>{route.bestFor}</strong>
-            </div>
-
-            {route.tourCode ? (
-              <div>
-                <Hash aria-hidden="true" />
-                <span>Tour Code</span>
-                <strong>{route.tourCode}</strong>
-              </div>
-            ) : null}
-          </div>
-
-          <div className="cultural-pro-route-tags">
-            {route.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
-          </div>
-
-          <div className="cultural-pro-day-heading">
-            <span>Day-by-day land-entry journey</span>
-            <strong>
-              {route.days.length}{" "}
-              {route.days.length === 1 ? "travel day" : "travel days"}
-            </strong>
-          </div>
-
-          <div className="cultural-pro-day-timeline">
-            {route.days.map((day, index) => (
-              <div key={day.title} className="cultural-pro-day-item">
-                <div className="cultural-pro-day-number">
-                  Day {String(index + 1).padStart(2, "0")}
-                </div>
-
-                <div className="cultural-pro-day-content">
-                  <h4>{day.title}</h4>
-
-                  <ul>
-                    {day.activities.map((activity) => (
-                      <li key={activity}>
-                        <CheckCircle aria-hidden="true" />
-                        <span>{activity}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="uh-itinerary-pricing-note">
-            {INTERNATIONAL_TRAVELER_PRICE_NOTE}
-          </p>
-
-          <div className="cultural-pro-route-actions">
-            <Link href="/contact" className="tour-pro-btn-primary">
-              Customize This Land-Entry Route
-              <ChevronRight aria-hidden="true" />
-            </Link>
-
-            <Link href="/optional-tours" className="tour-pro-btn-secondary">
-              Add Custom Experiences
-            </Link>
-          </div>
-        </div>
-
-        <aside className="cultural-pro-route-media">
-          <ImageSlot
-            image={route.image}
-            className="cultural-pro-route-image"
-          />
-
-          <div className="cultural-pro-route-note">
-            <span>Land-Entry Focus</span>
-            <RateNote startingRate={route.startingRate} />
-            <strong>{route.theme}</strong>
-            <p>
-              Border arrival timing, road conditions, sightseeing stops, and
-              exit formalities should be reconfirmed before the final quotation.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </article>
   );
 }
 

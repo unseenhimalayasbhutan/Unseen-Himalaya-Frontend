@@ -364,18 +364,6 @@ export default function SeasonsPage() {
   );
 }
 
-/*
-  IMAGE SETUP:
-  Replace empty src values with your real image paths.
-
-  Example:
-  src: "/images/seasons/spring-rhododendron.jpg"
-
-  Copyright example:
-  copyrightName: "Unseen Himalayas Bhutan"
-  copyrightName: "Passang Tenzin"
-*/
-
 const heroImage: ImageItem = {
   src: "/Marcus Westberg Bumthang 202318.jpg",
   alt: "Seasonal landscape in Bhutan",
@@ -427,7 +415,7 @@ const planningImages: ImageItem[] = [
 
 const activityImages: ImageItem[] = [
   {
-    src: "/Snowman Race48.jpg",
+    src: "/17Snowman Race Climate Conclave.jpg",
     alt: "Trekking route in Bhutan",
     label: "Trekking Season",
     copyrightName: "Scarlette DG",
@@ -439,7 +427,7 @@ const activityImages: ImageItem[] = [
     copyrightName: "Carissa Nimah",
   },
   {
-    src: "/Phobjikha-valley-by-Alicia-Warner-34.jpg",
+    src: "/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Gangtey_Phobjikha/14_Black_Necked_Crane_Conservation_Karma-optimized.jpg",
     alt: "Black-necked crane in Phobjikha Valley",
     label: "Bird Watching Season",
     copyrightName: "Carissa Nimah",

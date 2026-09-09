@@ -1,20 +1,13 @@
 "use client";
 
 
-import { useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
   CalendarDays,
   Camera,
-  CheckCircle,
-  ChevronRight,
-  Clock,
-  Hash,
-  MapPin,
   Mountain,
   ShieldCheck,
-  Users,
 } from "lucide-react";
 
 import { Header } from "../components/Header";
@@ -22,7 +15,6 @@ import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
 import {
   TourImageSlot as ImageSlot,
-  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -32,21 +24,11 @@ import {
 } from "../components/ItineraryPackageShowcase";
 import {
   customizableItems,
-  durationFilters,
   itineraries,
 } from "../data/tourItineraries";
 import { photographyTourCodes } from "../data/photographyTourCodes";
-import {
-  INTERNATIONAL_TRAVELER_PRICE_NOTE,
-  getB2cUsdPrice,
-} from "../data/tourPricing";
+import { getB2cUsdPrice } from "../data/tourPricing";
 import { sortPackages } from "../data/packageShowcases";
-
-const getDurationId = (duration: string) =>
-  duration.split(" ")[0].replace(/[^0-9]/g, "");
-
-const getDurationFilterId = (duration: string) =>
-  `${getDurationId(duration)}days`;
 
 const photographyShowcasePackages: PackageShowcaseItem[] = itineraries.map(
   (route) => ({
@@ -70,46 +52,6 @@ const photographyShowcasePackages: PackageShowcaseItem[] = itineraries.map(
 );
 
 export default function BhutanToursPage() {
-  const [activeDuration, setActiveDuration] = useState("all");
-  const [activeRouteSlug, setActiveRouteSlug] = useState(
-    itineraries[0]?.slug || ""
-  );
-
-  const filteredItineraries = useMemo(() => {
-    if (activeDuration === "all") return itineraries;
-
-    return itineraries.filter(
-      (route) => getDurationFilterId(route.duration) === activeDuration
-    );
-  }, [activeDuration]);
-
-  const handleDurationChange = (durationId: string) => {
-    const nextRoutes =
-      durationId === "all"
-        ? itineraries
-        : itineraries.filter(
-            (route) => getDurationFilterId(route.duration) === durationId
-          );
-
-    setActiveDuration(durationId);
-    setActiveRouteSlug(nextRoutes[0]?.slug || "");
-  };
-
-  const handleRouteSelect = (routeSlug: string) => {
-    // Keep one itinerary open at all times. This prevents the section from
-    // looking broken when a user clicks the active card again.
-    setActiveRouteSlug(routeSlug);
-  };
-
-  const activeRoute =
-    filteredItineraries.find((route) => route.slug === activeRouteSlug) ||
-    filteredItineraries[0] ||
-    null;
-
-  const selectedRoutePosition = activeRoute
-    ? filteredItineraries.findIndex((route) => route.slug === activeRoute.slug) + 1
-    : 0;
-
   return (
     <>
       <Header />
@@ -181,123 +123,6 @@ export default function BhutanToursPage() {
           detailBasePath="/bhutan-tours"
         />
 
-        <section
-          id="itinerary-library"
-          className="tour-pro-section tour-pro-section-warm uh-bhutan-library-section uh-itinerary-redesign-section"
-        >
-          <div className="container">
-            <SectionHeader
-              eyebrow="Photography Route Library"
-              title="Choose a ready route, then customize it around your photography interests." 
-              subtitle="Filter by duration, select a route, and view the full journey in one focused panel."
-            />
-
-            <div className="uh-itinerary-redesign-shell">
-              <div className="uh-itinerary-redesign-topbar">
-                <div className="uh-itinerary-redesign-topbar-copy">
-                  <span>Choose duration</span>
-                  <strong>
-                    {filteredItineraries.length}{" "}
-                    {filteredItineraries.length === 1 ? "route" : "routes"} available
-                  </strong>
-                </div>
-
-                <div
-                  className="uh-itinerary-redesign-filter-row"
-                  aria-label="Itinerary duration filters"
-                >
-                  {durationFilters.map((filter) => {
-                    const isActive = activeDuration === filter.id;
-
-                    return (
-                      <button
-                        key={filter.id}
-                        type="button"
-                        onClick={() => handleDurationChange(filter.id)}
-                        className={`uh-itinerary-redesign-filter-btn ${
-                          isActive ? "is-active" : ""
-                        }`}
-                        aria-pressed={isActive}
-                      >
-                        {filter.label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="cultural-pro-route-shell photography-pro-route-shell">
-                <aside
-                  className="cultural-pro-route-options"
-                  aria-label="Bhutan photography route list"
-                >
-                    {filteredItineraries.map((route, index) => {
-                      const isActive = activeRoute?.slug === route.slug;
-                      const mobilePanelId = `mobile-photography-route-${route.slug}`;
-
-                      return (
-                        <div
-                          key={route.slug}
-                          className={`cultural-pro-route-option-group ${
-                            isActive ? "is-open" : ""
-                          }`}
-                        >
-                          <button
-                            type="button"
-                            onClick={() => handleRouteSelect(route.slug)}
-                            className={`cultural-pro-route-option ${
-                              isActive ? "is-active" : ""
-                            }`}
-                            aria-expanded={isActive}
-                            aria-controls={mobilePanelId}
-                          >
-                            <span className="cultural-pro-route-number">
-                              {String(index + 1).padStart(2, "0")}
-                            </span>
-
-                            <span className="cultural-pro-route-option-content">
-                              <span>{route.duration}</span>
-                              <strong>{route.name}</strong>
-                              <small>{route.route}</small>
-                            </span>
-
-                            <ChevronRight aria-hidden="true" />
-                          </button>
-
-                          {isActive ? (
-                            <div
-                              id={mobilePanelId}
-                              className="cultural-pro-route-mobile-panel"
-                            >
-                              <PhotographyRoutePanel
-                                route={route}
-                                routePosition={index + 1}
-                              />
-                            </div>
-                          ) : null}
-                        </div>
-                      );
-                    })}
-                </aside>
-
-                <div className="cultural-pro-route-panel-list">
-                {activeRoute ? (
-                  <PhotographyRoutePanel
-                    key={activeRoute.slug}
-                    route={activeRoute}
-                    routePosition={selectedRoutePosition}
-                  />
-                ) : (
-                  <div className="uh-itinerary-redesign-empty-state">
-                    No itineraries found for this duration yet.
-                  </div>
-                )}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="tour-pro-section tour-pro-section-white">
           <div className="container">
             <SectionHeader
@@ -327,127 +152,6 @@ export default function BhutanToursPage() {
       <CtaSection />
       <Footer />
     </>
-  );
-}
-
-function PhotographyRoutePanel({
-  route,
-  routePosition,
-}: {
-  route: (typeof itineraries)[number];
-  routePosition: number;
-}) {
-  const displayTourCode = photographyTourCodes[route.slug] || route.tourCode;
-
-  return (
-    <article className="cultural-pro-route-panel photography-pro-route-panel" aria-live="polite">
-      <div className="cultural-pro-route-panel-grid">
-        <div className="cultural-pro-route-main">
-          <div className="cultural-pro-route-kicker">
-            Photography Route {String(routePosition).padStart(2, "0")}
-          </div>
-
-          <h3>{route.name}</h3>
-          <p>{route.summary}</p>
-
-          <div className="cultural-pro-route-facts">
-            <div>
-              <Clock aria-hidden="true" />
-              <span>Duration</span>
-              <strong>{route.duration}</strong>
-            </div>
-
-            <div>
-              <MapPin aria-hidden="true" />
-              <span>Route</span>
-              <strong>{route.route}</strong>
-            </div>
-
-            <div>
-              <Users aria-hidden="true" />
-              <span>Best For</span>
-              <strong>{route.bestFor}</strong>
-            </div>
-
-            {displayTourCode ? (
-              <div>
-                <Hash aria-hidden="true" />
-                <span>Tour Code</span>
-                <strong>{displayTourCode}</strong>
-              </div>
-            ) : null}
-          </div>
-
-          <div className="cultural-pro-route-tags">
-            {route.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
-          </div>
-
-          <div className="cultural-pro-day-heading">
-            <span>Day-by-day journey</span>
-            <strong>
-              {route.days.length} {route.days.length === 1 ? "travel day" : "travel days"}
-            </strong>
-          </div>
-
-          <div className="cultural-pro-day-timeline">
-            {route.days.map((day, index) => (
-              <div key={day.title} className="cultural-pro-day-item">
-                <div className="cultural-pro-day-number">
-                  Day {String(index + 1).padStart(2, "0")}
-                </div>
-
-                <div className="cultural-pro-day-content">
-                  <h4>{day.title}</h4>
-
-                  <ul>
-                    {day.activities.map((activity) => (
-                      <li key={activity}>
-                        <CheckCircle aria-hidden="true" />
-                        <span>{activity}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="uh-itinerary-pricing-note">
-            {INTERNATIONAL_TRAVELER_PRICE_NOTE}
-          </p>
-
-          <div className="cultural-pro-route-actions">
-            <Link href="/contact" className="tour-pro-btn-primary">
-              Enquire About This Route
-              <ChevronRight aria-hidden="true" />
-            </Link>
-
-            <Link href="/optional-tours" className="tour-pro-btn-secondary">
-              Add Experiences
-            </Link>
-          </div>
-        </div>
-
-        <aside className="cultural-pro-route-media">
-          <ImageSlot
-            image={route.image}
-            className="cultural-pro-route-image"
-          />
-
-          <div className="cultural-pro-route-note">
-            <span>Customizable</span>
-            <RateNote startingRate={route.startingRate} />
-            <strong>{route.theme}</strong>
-            <p>
-              Hotels, meals, activities, guide, vehicle, and travel pace can be
-              adjusted before confirmation.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </article>
   );
 }
 

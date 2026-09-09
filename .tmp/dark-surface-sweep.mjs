@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { chromium } from "playwright";
 
-const baseUrl = process.env.BASE_URL || "http://localhost:3000";
+const baseUrl = process.env.BASE_URL || "http://localhost:3009";
 const outDir = path.join(".tmp", "dark-surface-sweep");
 
 const allRoutes = [

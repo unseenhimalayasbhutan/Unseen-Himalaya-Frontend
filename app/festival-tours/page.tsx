@@ -1,21 +1,11 @@
 ﻿"use client";
 
-import { useMemo, useState } from "react";
 import Link from "next/link";
-import {
-  CheckCircle,
-  ChevronRight,
-  Clock,
-  Hash,
-  MapPin,
-  Users,
-} from "lucide-react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
 import {
   TourImageSlot as ImageSlot,
-  TourRateNote as RateNote,
   TourSectionHeader as SectionHeader,
   type ImageAsset,
 } from "../components/TourPagePrimitives";
@@ -25,12 +15,8 @@ import {
 } from "../components/ItineraryPackageShowcase";
 import {
   festivalPackages,
-  type FestivalPackage,
 } from "../data/festivalPackages";
-import {
-  INTERNATIONAL_TRAVELER_PRICE_NOTE,
-  getB2cUsdPrice,
-} from "../data/tourPricing";
+import { getB2cUsdPrice } from "../data/tourPricing";
 import { sortPackages } from "../data/packageShowcases";
 
 const removedFestivalPackageTitles = new Set([
@@ -80,67 +66,7 @@ type FestivalItem = {
   image: ImageAsset;
 };
 
-type FestivalFilter = {
-  id: string;
-  label: string;
-};
-
-const getFestivalPackageId = (duration: string) =>
-  duration.split(" ")[0].replace(/[^0-9]/g, "");
-
-const sortFestivalPackages = (packages: FestivalPackage[]) =>
-  [...packages].sort((first, second) => {
-    const firstDuration = Number(getFestivalPackageId(first.duration));
-    const secondDuration = Number(getFestivalPackageId(second.duration));
-
-    if (firstDuration !== secondDuration) {
-      return firstDuration - secondDuration;
-    }
-
-    return first.title.localeCompare(second.title);
-  });
-
 export default function FestivalToursPage() {
-  const [activeDuration, setActiveDuration] = useState("all");
-  const [activePackageTitle, setActivePackageTitle] = useState(
-    () => sortFestivalPackages(visibleFestivalPackages)[0]?.title || ""
-  );
-
-  const filteredPackages = useMemo(() => {
-    if (activeDuration === "all") {
-      return sortFestivalPackages(visibleFestivalPackages);
-    }
-
-    return sortFestivalPackages(
-      visibleFestivalPackages.filter(
-        (pkg) => getFestivalPackageId(pkg.duration) === activeDuration
-      )
-    );
-  }, [activeDuration]);
-
-  const handleDurationChange = (durationId: string) => {
-    const nextPackages =
-      durationId === "all"
-        ? sortFestivalPackages(visibleFestivalPackages)
-        : sortFestivalPackages(
-            visibleFestivalPackages.filter(
-              (pkg) => getFestivalPackageId(pkg.duration) === durationId
-            )
-          );
-
-    setActiveDuration(durationId);
-    setActivePackageTitle(nextPackages[0]?.title || "");
-  };
-
-  const activePackage =
-    filteredPackages.find((pkg) => pkg.title === activePackageTitle) ||
-    filteredPackages[0] ||
-    null;
-
-  const handlePackageSelect = (packageTitle: string) => {
-    setActivePackageTitle(packageTitle);
-  };
-
   return (
     <>
       <Header />
@@ -213,132 +139,6 @@ export default function FestivalToursPage() {
           detailBasePath="/festival-tours"
         />
 
-        <section
-          id="festival-itineraries"
-          className="tour-pro-section tour-pro-section-warm uh-festival-accordion-section uh-festival-library-redesign-section"
-        >
-          <div className="container">
-            <SectionHeader
-              eyebrow="Festival Itinerary Library"
-              title="Choose an updated festival route from the new itinerary library."
-              subtitle="Filter by duration, select a route, and view the full day-by-day journey."
-            />
-
-            <div className="uh-festival-library-redesign-shell">
-              <div className="uh-festival-library-redesign-topbar">
-                <div className="uh-festival-library-redesign-topbar-copy">
-                  <span>Choose duration</span>
-                  <strong>
-                    {filteredPackages.length}{" "}
-                    {filteredPackages.length === 1
-                      ? "festival route"
-                      : "festival routes"}{" "}
-                    available
-                  </strong>
-                </div>
-
-                <div
-                  className="uh-festival-library-redesign-filter-row"
-                  aria-label="Festival route duration filters"
-                >
-                  {festivalPackageFilters.map((filter) => {
-                    const isActive = activeDuration === filter.id;
-
-                    return (
-                      <button
-                        key={filter.id}
-                        type="button"
-                        onClick={() => handleDurationChange(filter.id)}
-                        className={`uh-festival-library-redesign-filter-btn ${
-                          isActive ? "is-active" : ""
-                        }`}
-                        aria-pressed={isActive}
-                      >
-                        {filter.label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="cultural-pro-route-shell festival-pro-route-shell">
-                <aside
-                  className="cultural-pro-route-options"
-                  aria-label="Curated Bhutan festival route list"
-                >
-                  {filteredPackages.length > 0 ? (
-                    filteredPackages.map((pkg, index) => {
-                      const isActive = activePackage?.title === pkg.title;
-                      const mobilePanelId = `mobile-festival-package-${index}`;
-
-                      return (
-                        <div
-                          key={pkg.title}
-                          className={`cultural-pro-route-option-group ${
-                            isActive ? "is-open" : ""
-                          }`}
-                        >
-                          <button
-                            type="button"
-                            onClick={() => handlePackageSelect(pkg.title)}
-                            className={`cultural-pro-route-option ${
-                              isActive ? "is-active" : ""
-                            }`}
-                            aria-expanded={isActive}
-                            aria-controls={mobilePanelId}
-                          >
-                            <span className="cultural-pro-route-number">
-                              {String(index + 1).padStart(2, "0")}
-                            </span>
-
-                            <span className="cultural-pro-route-option-content">
-                              <span>{pkg.duration}</span>
-                              <strong>{pkg.title}</strong>
-                              <small>{pkg.coverage}</small>
-                            </span>
-
-                            <ChevronRight aria-hidden="true" />
-                          </button>
-
-                          {isActive ? (
-                            <div
-                              id={mobilePanelId}
-                              className="cultural-pro-route-mobile-panel"
-                            >
-                              <FestivalPackagePanel
-                                pkg={pkg}
-                                packagePosition={index + 1}
-                              />
-                            </div>
-                          ) : null}
-                        </div>
-                      );
-                    })
-                  ) : (
-                    <div className="uh-festival-library-redesign-empty-state">
-                      No festival routes found for this duration yet.
-                    </div>
-                  )}
-                </aside>
-
-                <div className="cultural-pro-route-panel-list">
-                  {activePackage ? (
-                    <FestivalPackagePanel
-                      key={activePackage.title}
-                      pkg={activePackage}
-                      packagePosition={
-                        filteredPackages.findIndex(
-                          (pkg) => pkg.title === activePackage.title
-                        ) + 1
-                      }
-                    />
-                  ) : null}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="tour-pro-section tour-pro-section-white uh-festival-featured-section">
           <div className="container">
             <SectionHeader
@@ -387,140 +187,6 @@ export default function FestivalToursPage() {
   );
 }
 
-function FestivalPackagePanel({
-  pkg,
-  packagePosition,
-}: {
-  pkg: FestivalPackage;
-  packagePosition: number;
-}) {
-  return (
-    <article className="cultural-pro-route-panel festival-pro-route-panel" aria-live="polite">
-      <div className="cultural-pro-route-panel-grid">
-        <div className="cultural-pro-route-main">
-          <div className="cultural-pro-route-kicker">
-            Festival Route {String(packagePosition).padStart(2, "0")}
-          </div>
-
-          <h3>{pkg.title}</h3>
-
-          <p>{pkg.summary}</p>
-
-          <div className="cultural-pro-route-facts">
-            <div>
-              <Clock aria-hidden="true" />
-              <span>Duration</span>
-              <strong>{pkg.duration}</strong>
-            </div>
-
-            <div>
-              <MapPin aria-hidden="true" />
-              <span>Dates</span>
-              <strong>{pkg.dates}</strong>
-            </div>
-
-            <div>
-              <Users aria-hidden="true" />
-              <span>Coverage</span>
-              <strong>{pkg.coverage}</strong>
-            </div>
-
-            {pkg.tourCode ? (
-              <div>
-                <Hash aria-hidden="true" />
-                <span>Tour Code</span>
-                <strong>{pkg.tourCode}</strong>
-              </div>
-            ) : null}
-          </div>
-
-          <div className="cultural-pro-route-tags">
-            {pkg.festivals.map((festival) => (
-              <span key={festival}>{festival}</span>
-            ))}
-          </div>
-
-          <div className="cultural-pro-day-heading">
-            <span>Day-by-day festival journey</span>
-            <strong>
-              {pkg.days.length}{" "}
-              {pkg.days.length === 1 ? "travel day" : "travel days"}
-            </strong>
-          </div>
-
-          <div className="cultural-pro-day-timeline">
-            {pkg.days.map((day) => (
-              <div
-                key={`${pkg.title}-${day.day}`}
-                className="cultural-pro-day-item"
-              >
-                <div className="cultural-pro-day-number">
-                  Day {day.day}
-                </div>
-
-                <div className="cultural-pro-day-content">
-                  <h4>{day.title}</h4>
-
-                  <ul>
-                    {day.activities.map((activity) => (
-                      <li key={activity}>
-                        <CheckCircle aria-hidden="true" />
-                        <span>{activity}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="uh-itinerary-pricing-note">
-            {INTERNATIONAL_TRAVELER_PRICE_NOTE}
-          </p>
-
-          <div className="cultural-pro-route-actions">
-            <Link href="/contact" className="tour-pro-btn-primary">
-              Customize This Festival Tour
-              <ChevronRight aria-hidden="true" />
-            </Link>
-
-            <Link href="/cultural-tours" className="tour-pro-btn-secondary">
-              View Regular Tours
-            </Link>
-          </div>
-        </div>
-
-        <aside className="cultural-pro-route-media">
-          <ImageSlot
-            image={pkg.image}
-            className="cultural-pro-route-image"
-          />
-
-          <div className="cultural-pro-route-note">
-            <span>Festival routing note</span>
-            <RateNote startingRate={pkg.startingRate} />
-            <strong>{pkg.bestFor}</strong>
-            <p>
-              Hotel location, festival viewing time, road travel, domestic
-              flight timing, and local festival schedules should be reconfirmed
-              before final quotation.
-            </p>
-          </div>
-        </aside>
-      </div>
-    </article>
-  );
-}
-
-const festivalPackageFilters: FestivalFilter[] = [
-  { id: "all", label: "All Festival Routes" },
-  { id: "4", label: "4 Days Tour" },
-  { id: "5", label: "5 Days Tour" },
-  { id: "7", label: "7 Days Tour" },
-  { id: "9", label: "9 Days Tour" },
-  { id: "15", label: "15 Days Tour" },
-];
-
 const festivalQuickStats = [
   { value: "Oct-Nov", label: "Festival Season" },
   { value: "4-15", label: "Day Route Options" },
@@ -529,9 +195,9 @@ const festivalQuickStats = [
 ];
 
 const heroImage: ImageAsset = {
-  src: "",
-  alt: "Bhutan festival hero",
-  label: "Festival Hero Image",
+  src: "/Thimphu festival header2.jpg",
+  alt: "Crowds gathered for a Bhutan festival celebration",
+  label: "Bhutan Festival Hero Image",
   copyrightName: "Unseen Himalayas Bhutan",
 };
 
@@ -620,10 +286,10 @@ const featuredFestivals: FestivalItem[] = [
     ],
     slug: "black-necked-crane-festival",
     image: {
-      src: "/Phobjikha-valley-by-Alicia-Warner-6.jpg",
-      alt: "Black Necked Crane Festival route image",
+      src: "/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Gangtey_Phobjikha/13_Black_Necked_Crane_Festival.jpg",
+      alt: "Black Necked Crane Festival gathering at Gangtey Gonpa",
       label: "Black Necked Crane Festival Image",
-      copyrightName: "Alicia Warner",
+      copyrightName: "Shruti D.",
     },
   },
   {
