@@ -10,6 +10,7 @@ import {
   packageTerms,
   photographyShowcasePackages,
 } from "../../data/packageShowcases";
+import { createPackageMetadata } from "../../seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -17,6 +18,20 @@ type PageProps = {
 
 export function generateStaticParams() {
   return photographyShowcasePackages.map((pkg) => ({ slug: pkg.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const item = photographyShowcasePackages.find((pkg) => pkg.slug === slug);
+
+  if (!item) return {};
+
+  return createPackageMetadata({
+    item,
+    parentPath: "/bhutan-tours",
+    detailBasePath: "/bhutan-tours",
+    routeLabel: "Photography Tour",
+  });
 }
 
 export default async function BhutanTourDetailPage({ params }: PageProps) {

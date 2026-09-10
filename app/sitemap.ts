@@ -1,13 +1,19 @@
 import type { MetadataRoute } from "next";
+import {
+  culturalShowcasePackages,
+  cyclingShowcasePackages,
+  festivalShowcasePackages,
+  landEntryShowcasePackages,
+  photographyShowcasePackages,
+} from "./data/packageShowcases";
 import { pageSeo } from "./seo";
 import { siteConfig } from "./siteConfig";
 
-type IndexedPath = "/" | keyof typeof pageSeo;
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
-const lastModified = new Date("2026-07-19T00:00:00.000Z");
+const lastModified = new Date("2026-09-10T00:00:00.000Z");
 
-const highPriorityRoutes = new Set<IndexedPath>([
+const highPriorityRoutes = new Set<string>([
   "/",
   "/bhutan-tours",
   "/cultural-tours",
@@ -19,13 +25,13 @@ const highPriorityRoutes = new Set<IndexedPath>([
   "/contact",
 ]);
 
-const yearlyRoutes = new Set<IndexedPath>([
+const yearlyRoutes = new Set<string>([
   "/legal-documents",
   "/privacy-policy",
   "/terms",
 ]);
 
-const routeImages: Partial<Record<IndexedPath, string[]>> = {
+const routeImages: Record<string, string[]> = {
   "/": [siteConfig.defaultImage],
   "/about-bhutan": [
     "/village with rice paddy fields  DOT AA Original Bhutan Travels.jpg",
@@ -46,34 +52,62 @@ const routeImages: Partial<Record<IndexedPath, string[]>> = {
   "/places-to-visit": ["/Buddha-Dordenma-Statue-by-Alicia-Warner-16.jpg"],
   "/seasons": ["/Peach blossoms in front of the stunning Thimphu Dzong.JPG"],
   "/sdf": [siteConfig.defaultImage],
+  "/upcoming-events": ["/guns-n-roses-concert-tour-brochure.png"],
   "/why-visit": ["/IMG_20231021_170519.jpg"],
 };
+
+const packageDetailRoutes = [
+  ...getPackageRoutes("/bhutan-tours", photographyShowcasePackages),
+  ...getPackageRoutes("/cultural-tours", culturalShowcasePackages),
+  ...getPackageRoutes("/land-entry-tours", landEntryShowcasePackages),
+  ...getPackageRoutes("/cycling-tours", cyclingShowcasePackages),
+  ...getPackageRoutes("/festival-tours", festivalShowcasePackages),
+];
 
 function absoluteUrl(path: string) {
   return new URL(path.startsWith("/") ? path : `/${path}`, siteConfig.url).toString();
 }
 
-function getChangeFrequency(route: IndexedPath): SitemapEntry["changeFrequency"] {
+function getChangeFrequency(route: string): SitemapEntry["changeFrequency"] {
   if (route === "/" || route === "/festival-calendar") return "weekly";
   if (yearlyRoutes.has(route)) return "yearly";
   return "monthly";
 }
 
-function getPriority(route: IndexedPath) {
+function getPriority(route: string) {
   if (route === "/") return 1;
   if (highPriorityRoutes.has(route)) return 0.9;
+  if (packageDetailRoutes.some((entry) => entry.path === route)) return 0.65;
   if (yearlyRoutes.has(route)) return 0.4;
   return 0.7;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["/", ...Object.keys(pageSeo).sort()] as IndexedPath[];
+function getPackageRoutes(
+  basePath: string,
+  packages: { slug: string; image: { src: string } }[],
+) {
+  return packages.map((pkg) => ({
+    path: `${basePath}/${pkg.slug}`,
+    images: pkg.image.src ? [pkg.image.src] : undefined,
+  }));
+}
 
-  return routes.map((route) => ({
-    url: absoluteUrl(route),
+export default function sitemap(): MetadataRoute.Sitemap {
+  const routes = [
+    { path: "/", images: routeImages["/"] },
+    ...Object.keys(pageSeo)
+      .sort()
+      .map((path) => ({ path, images: routeImages[path] })),
+    ...packageDetailRoutes.sort((first, second) =>
+      first.path.localeCompare(second.path),
+    ),
+  ];
+
+  return routes.map(({ path, images }) => ({
+    url: absoluteUrl(path),
     lastModified,
-    changeFrequency: getChangeFrequency(route),
-    priority: getPriority(route),
-    images: routeImages[route]?.map(absoluteUrl),
+    changeFrequency: getChangeFrequency(path),
+    priority: getPriority(path),
+    images: images?.map(absoluteUrl),
   }));
 }

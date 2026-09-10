@@ -2091,3 +2091,333 @@ a:focus-visible {
     padding-inline: 0 !important;
   }
 }
+
+/* Facts page final polish */
+.facts-redesign-page {
+  background:
+    radial-gradient(circle at 14% 0%, rgba(201, 154, 74, 0.09), transparent 30rem),
+    linear-gradient(180deg, var(--color-bg-page) 0%, var(--color-bg-section) 50%, var(--color-bg-page) 100%) !important;
+  color: var(--color-text-secondary) !important;
+  overflow: visible !important;
+}
+
+.facts-redesign-page .tour-pro-section-white,
+.facts-redesign-page .tour-pro-section-warm {
+  background: transparent !important;
+}
+
+.facts-redesign-hero-grid,
+.facts-redesign-airport-layout,
+.facts-redesign-gmc-layout,
+.facts-redesign-split-grid,
+.facts-redesign-split-grid-reverse {
+  display: grid !important;
+  gap: clamp(24px, 4vw, 48px) !important;
+  align-items: center !important;
+}
+
+.facts-redesign-hero-grid {
+  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 0.85fr) !important;
+}
+
+.facts-redesign-hero-card,
+.facts-redesign-gallery-card,
+.facts-redesign-image-card,
+.facts-redesign-culture-image-card,
+.facts-redesign-image-panel,
+.facts-redesign-gmc-visual,
+.facts-redesign-airport-media {
+  overflow: hidden !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-card) !important;
+  box-shadow: var(--shadow-subtle) !important;
+}
+
+.facts-redesign-hero-card .tour-pro-image-frame {
+  min-height: clamp(320px, 34vw, 440px) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.facts-redesign-hero-note {
+  padding: clamp(20px, 3vw, 30px) !important;
+  border-top: 1px solid var(--color-border) !important;
+  background: var(--color-bg-elevated) !important;
+}
+
+.facts-redesign-stats-grid,
+.facts-redesign-story-grid,
+.facts-redesign-card-grid,
+.facts-redesign-dark-grid,
+.facts-redesign-gallery-grid,
+.facts-redesign-image-row,
+.facts-redesign-culture-image-grid,
+.facts-redesign-nature-grid,
+.facts-redesign-governance-grid {
+  display: grid !important;
+  gap: 18px !important;
+}
+
+.facts-redesign-stats-grid,
+.facts-redesign-nature-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+
+.facts-redesign-story-grid,
+.facts-redesign-card-grid,
+.facts-redesign-dark-grid,
+.facts-redesign-gallery-grid,
+.facts-redesign-image-row,
+.facts-redesign-culture-image-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.facts-redesign-governance-grid,
+.facts-redesign-gmc-layout,
+.facts-redesign-airport-layout,
+.facts-redesign-split-grid,
+.facts-redesign-split-grid-reverse {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.facts-redesign-story-card,
+.facts-redesign-number-card,
+.facts-redesign-gmc-card,
+.facts-redesign-airport-feature-card,
+.facts-redesign-airport-card,
+.facts-redesign-timeline-item,
+.facts-redesign-dark-card,
+.facts-redesign-food-item,
+.facts-redesign-philosophy-tab {
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-card) !important;
+  color: var(--color-text-secondary) !important;
+  box-shadow: var(--shadow-subtle) !important;
+}
+
+.facts-redesign-story-card,
+.facts-redesign-number-card,
+.facts-redesign-gmc-card,
+.facts-redesign-airport-feature-card {
+  padding: clamp(20px, 2.2vw, 28px) !important;
+}
+
+.facts-redesign-story-card:hover,
+.facts-redesign-number-card:hover,
+.facts-redesign-gmc-card:hover,
+.facts-redesign-philosophy-tab:hover,
+.facts-redesign-philosophy-tab:focus-visible {
+  height: auto !important;
+  transform: translateY(-3px) !important;
+  border-color: var(--color-border-strong) !important;
+  background: var(--color-bg-card-hover) !important;
+}
+
+.facts-redesign-story-icon,
+.facts-redesign-philosophy-number,
+.facts-redesign-neutral-number,
+.facts-redesign-airport-card > span {
+  width: 52px !important;
+  height: 52px !important;
+  display: grid !important;
+  place-items: center !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-elevated) !important;
+  color: var(--color-accent) !important;
+}
+
+.facts-redesign-page :is(
+  .facts-redesign-story-card h3,
+  .facts-redesign-number-card h3,
+  .facts-redesign-gmc-card h3,
+  .facts-redesign-airport-feature-card h3,
+  .facts-redesign-airport-card h4,
+  .facts-redesign-timeline-item h3,
+  .facts-redesign-dark-card h3,
+  .facts-redesign-food-item h3,
+  .facts-redesign-gallery-card strong
+) {
+  margin-top: 0;
+  color: var(--color-text-primary) !important;
+}
+
+.facts-redesign-page :is(
+  .facts-redesign-story-card p,
+  .facts-redesign-number-card p,
+  .facts-redesign-gmc-card p,
+  .facts-redesign-airport-feature-card p,
+  .facts-redesign-airport-card p,
+  .facts-redesign-timeline-item p,
+  .facts-redesign-dark-card p,
+  .facts-redesign-food-item p,
+  .facts-redesign-split-content > p
+) {
+  color: var(--color-text-secondary) !important;
+  line-height: 1.72 !important;
+}
+
+.facts-redesign-gallery-card {
+  padding: 0 !important;
+}
+
+.facts-redesign-gallery-card strong {
+  display: block !important;
+  padding: 16px 18px !important;
+}
+
+.facts-redesign-page .tour-pro-image-frame {
+  min-height: 260px !important;
+}
+
+.facts-redesign-gallery-card .tour-pro-image-frame,
+.facts-redesign-image-card .tour-pro-image-frame,
+.facts-redesign-culture-image-card .tour-pro-image-frame {
+  aspect-ratio: 4 / 3 !important;
+  min-height: 0 !important;
+}
+
+.facts-redesign-philosophy-layout {
+  display: grid !important;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr) !important;
+  gap: clamp(20px, 3vw, 34px) !important;
+  align-items: start !important;
+}
+
+.facts-redesign-philosophy-tabs {
+  display: grid !important;
+  gap: 12px !important;
+}
+
+.facts-redesign-philosophy-tab {
+  grid-template-columns: 52px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  padding: 14px !important;
+}
+
+.facts-redesign-philosophy-panel {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px) !important;
+  gap: clamp(20px, 3vw, 34px) !important;
+  min-height: auto !important;
+  padding: clamp(22px, 3vw, 34px) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--color-bg-elevated) !important;
+  box-shadow: var(--shadow-subtle) !important;
+}
+
+.facts-redesign-philosophy-image .tour-pro-image-frame {
+  min-height: 360px !important;
+}
+
+.facts-redesign-airport-media .tour-pro-image-frame,
+.facts-redesign-gmc-visual .tour-pro-image-frame {
+  min-height: 420px !important;
+}
+
+.facts-redesign-timeline-list,
+.facts-redesign-food-list,
+.facts-redesign-airport-detail-grid,
+.facts-redesign-gmc-grid,
+.facts-redesign-highlight-list,
+.facts-redesign-point-list {
+  display: grid !important;
+  gap: 14px !important;
+}
+
+.facts-redesign-timeline-item {
+  grid-template-columns: minmax(110px, 150px) minmax(0, 1fr) !important;
+  gap: 20px !important;
+  padding: 24px !important;
+}
+
+.facts-redesign-food-item,
+.facts-redesign-airport-card {
+  grid-template-columns: 58px minmax(0, 1fr) !important;
+  gap: 16px !important;
+  padding: 18px !important;
+}
+
+.facts-redesign-dark-section {
+  background: var(--color-bg-section) !important;
+}
+
+.facts-redesign-page .tour-pro-image-credit {
+  color: var(--color-text-primary) !important;
+}
+
+.uh-price-dual {
+  display: inline-grid;
+  gap: 2px;
+  line-height: 1.2;
+}
+
+.uh-price-dual small {
+  color: var(--color-text-secondary) !important;
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+}
+
+.uh-hb-price-conversion-note {
+  margin: 12px 0 24px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .facts-redesign-hero-grid,
+  .facts-redesign-governance-grid,
+  .facts-redesign-gmc-layout,
+  .facts-redesign-airport-layout,
+  .facts-redesign-split-grid,
+  .facts-redesign-split-grid-reverse,
+  .facts-redesign-philosophy-layout,
+  .facts-redesign-philosophy-panel {
+    grid-template-columns: 1fr !important;
+  }
+
+  .facts-redesign-stats-grid,
+  .facts-redesign-story-grid,
+  .facts-redesign-card-grid,
+  .facts-redesign-dark-grid,
+  .facts-redesign-gallery-grid,
+  .facts-redesign-image-row,
+  .facts-redesign-culture-image-grid,
+  .facts-redesign-nature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .facts-redesign-stats-grid,
+  .facts-redesign-story-grid,
+  .facts-redesign-card-grid,
+  .facts-redesign-dark-grid,
+  .facts-redesign-gallery-grid,
+  .facts-redesign-image-row,
+  .facts-redesign-culture-image-grid,
+  .facts-redesign-nature-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .facts-redesign-story-card,
+  .facts-redesign-number-card,
+  .facts-redesign-gmc-card,
+  .facts-redesign-airport-feature-card,
+  .facts-redesign-philosophy-panel {
+    padding: 20px !important;
+  }
+
+  .facts-redesign-timeline-item,
+  .facts-redesign-food-item,
+  .facts-redesign-airport-card {
+    grid-template-columns: 1fr !important;
+  }
+}

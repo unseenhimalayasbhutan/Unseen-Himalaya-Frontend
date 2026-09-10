@@ -15395,6 +15395,10 @@ img {
   line-height: 1;
 }
 
+.about-pro-stat-number {
+  color: var(--color-text-primary);
+}
+
 .about-pro-stat-label,
 .facts-pro-stat-label {
   margin-top: 10px;
@@ -30790,9 +30794,13 @@ body {
 }
 
 .uh-hb-price-table td {
-  color: var(--dark, var(--color-text-secondary));
+  color: var(--color-text-primary);
   font-size: var(--font-size-md);
   font-weight: 800;
+}
+
+.uh-hb-price-table td:first-child {
+  color: var(--color-text-primary);
 }
 
 .uh-hb-price-table tbody tr:last-child td {
@@ -34173,8 +34181,8 @@ textarea {
   display: block;
   z-index: 1;
   background:
-    linear-gradient(90deg, var(--color-overlay-medium) 0%, var(--color-overlay-medium) 33%, var(--color-overlay-medium) 58%, var(--color-overlay-medium) 100%),
-    linear-gradient(180deg, var(--color-overlay-medium) 0%, var(--color-overlay-medium) 100%);
+    linear-gradient(90deg, rgba(12, 10, 8, 0.38) 0%, rgba(12, 10, 8, 0.22) 34%, rgba(12, 10, 8, 0.08) 62%, transparent 100%),
+    linear-gradient(180deg, rgba(12, 10, 8, 0.18) 0%, rgba(12, 10, 8, 0.08) 48%, rgba(12, 10, 8, 0.18) 100%);
 }
 
 .upcoming-events-record-mark {

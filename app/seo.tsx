@@ -8,6 +8,18 @@ type PageSeo = {
   keywords: string[];
 };
 
+type PackageSeoItem = {
+  slug: string;
+  title: string;
+  duration: string;
+  route: string;
+  summary: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+};
+
 export const pageSeo = {
   "/about-bhutan": {
     title: "About Bhutan",
@@ -121,6 +133,17 @@ export const pageSeo = {
       "Personalize your Bhutan itinerary with hikes, wellness, food, photography, village visits, and other optional experiences.",
     keywords: ["Bhutan activities", "Bhutan experiences", "Bhutan tour add-ons"],
   },
+  "/upcoming-events": {
+    title: "Upcoming Bhutan Event Tours",
+    description:
+      "Explore upcoming Bhutan event tours, special departures, concert add-ons, festival journeys, and limited-date travel packages.",
+    keywords: [
+      "Bhutan upcoming events",
+      "Bhutan event tours",
+      "Bhutan special departures",
+      "Bhutan festival packages",
+    ],
+  },
   "/places-to-visit": {
     title: "Places to Visit in Bhutan | Thimphu & Paro Travel Guide",
     description:
@@ -207,6 +230,64 @@ export function createPageMetadata(path: SeoPath): Metadata {
       title: fullTitle,
       description: page.description,
       images: [siteConfig.defaultImage],
+    },
+  };
+}
+
+export function createPackageMetadata({
+  item,
+  parentPath,
+  detailBasePath,
+  routeLabel,
+}: {
+  item: PackageSeoItem;
+  parentPath: SeoPath;
+  detailBasePath: string;
+  routeLabel: string;
+}): Metadata {
+  const path = `${detailBasePath}/${item.slug}`;
+  const parentPage = pageSeo[parentPath];
+  const title = `${item.title} | ${siteConfig.name}`;
+  const description = [
+    item.summary,
+    `This ${item.duration.toLowerCase()} ${routeLabel.toLowerCase()} follows ${item.route}.`,
+  ].join(" ");
+  const image = item.image.src || siteConfig.defaultImage;
+
+  return {
+    title: {
+      absolute: title,
+    },
+    description,
+    keywords: [
+      item.title,
+      `${routeLabel} Bhutan`,
+      parentPage.title,
+      "private Bhutan itinerary",
+      "Bhutan tour package",
+    ],
+    alternates: { canonical: path },
+    openGraph: {
+      type: "website",
+      locale: siteConfig.locale,
+      url: path,
+      siteName: siteConfig.name,
+      title,
+      description,
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: item.image.alt || item.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
     },
   };
 }

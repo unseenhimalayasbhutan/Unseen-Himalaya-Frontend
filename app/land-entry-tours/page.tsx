@@ -132,6 +132,7 @@ export default function LandEntryToursPage() {
           routeLabel="Land-Entry Route"
           packages={sortPackages(landEntryShowcasePackages)}
           detailBasePath="/land-entry-tours"
+          showInrPrices
         />
 
       </main>

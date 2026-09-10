@@ -10,6 +10,7 @@ import {
   packageReservationNotes,
   packageTerms,
 } from "../../data/packageShowcases";
+import { createPackageMetadata } from "../../seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -17,6 +18,20 @@ type PageProps = {
 
 export function generateStaticParams() {
   return landEntryShowcasePackages.map((pkg) => ({ slug: pkg.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const item = landEntryShowcasePackages.find((pkg) => pkg.slug === slug);
+
+  if (!item) return {};
+
+  return createPackageMetadata({
+    item,
+    parentPath: "/land-entry-tours",
+    detailBasePath: "/land-entry-tours",
+    routeLabel: "Land-Entry Tour",
+  });
 }
 
 export default async function LandEntryTourDetailPage({ params }: PageProps) {
@@ -38,6 +53,7 @@ export default async function LandEntryTourDetailPage({ params }: PageProps) {
           reservationNotes={packageReservationNotes}
           terms={packageTerms}
           detailBasePath="/land-entry-tours"
+          showInrPrices
         />
       </main>
       <Footer />

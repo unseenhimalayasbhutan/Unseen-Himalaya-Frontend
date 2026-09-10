@@ -10,6 +10,7 @@ import {
   packageReservationNotes,
   packageTerms,
 } from "../../data/packageShowcases";
+import { createPackageMetadata } from "../../seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -17,6 +18,20 @@ type PageProps = {
 
 export function generateStaticParams() {
   return cyclingShowcasePackages.map((pkg) => ({ slug: pkg.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const item = cyclingShowcasePackages.find((pkg) => pkg.slug === slug);
+
+  if (!item) return {};
+
+  return createPackageMetadata({
+    item,
+    parentPath: "/cycling-tours",
+    detailBasePath: "/cycling-tours",
+    routeLabel: "Cycling Tour",
+  });
 }
 
 export default async function CyclingTourDetailPage({ params }: PageProps) {

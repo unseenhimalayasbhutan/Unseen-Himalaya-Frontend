@@ -10,6 +10,7 @@ import {
   packageReservationNotes,
   packageTerms,
 } from "../../data/packageShowcases";
+import { createPackageMetadata } from "../../seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -17,6 +18,20 @@ type PageProps = {
 
 export function generateStaticParams() {
   return culturalShowcasePackages.map((pkg) => ({ slug: pkg.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const item = culturalShowcasePackages.find((pkg) => pkg.slug === slug);
+
+  if (!item) return {};
+
+  return createPackageMetadata({
+    item,
+    parentPath: "/cultural-tours",
+    detailBasePath: "/cultural-tours",
+    routeLabel: "Cultural Tour",
+  });
 }
 
 export default async function CulturalTourDetailPage({ params }: PageProps) {

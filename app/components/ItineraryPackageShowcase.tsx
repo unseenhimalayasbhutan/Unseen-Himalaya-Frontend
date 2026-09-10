@@ -18,6 +18,8 @@ import {
 } from "./TourPagePrimitives";
 import {
   INTERNATIONAL_TRAVELER_PRICE_NOTE,
+  USD_TO_INR_RATE,
+  formatInrFromUsd,
   formatUsd,
   type TourPriceGroup,
 } from "../data/tourPricing";
@@ -54,6 +56,7 @@ type ItineraryPackageShowcaseProps = {
   packages: PackageShowcaseItem[];
   detailBasePath: string;
   showPrices?: boolean;
+  showInrPrices?: boolean;
 };
 
 type ItineraryPackageDetailProps = {
@@ -66,6 +69,7 @@ type ItineraryPackageDetailProps = {
   terms: string[];
   detailBasePath: string;
   showPrices?: boolean;
+  showInrPrices?: boolean;
 };
 
 const tabs: { id: ShowcaseTab; label: string }[] = [
@@ -83,6 +87,7 @@ export function ItineraryPackageShowcase({
   packages,
   detailBasePath,
   showPrices = true,
+  showInrPrices = false,
 }: ItineraryPackageShowcaseProps) {
   return (
     <section className="tour-pro-section tour-pro-section-white uh-package-showcase-section">
@@ -111,7 +116,7 @@ export function ItineraryPackageShowcase({
                   {showPrices && pkg.pricing ? (
                     <div className="uh-hb-package-price">
                       <span>Starting From</span>
-                      <strong>{formatUsd(pkg.pricing.fourSix)}</strong>
+                      <strong>{renderPrice(pkg.pricing.fourSix, showInrPrices)}</strong>
                     </div>
                   ) : (
                     <div className="uh-hb-package-meta">
@@ -153,6 +158,7 @@ export function ItineraryPackageDetail({
   terms,
   detailBasePath,
   showPrices = true,
+  showInrPrices = false,
 }: ItineraryPackageDetailProps) {
   const [activeTab, setActiveTab] = useState<ShowcaseTab>("itinerary");
 
@@ -216,6 +222,7 @@ export function ItineraryPackageDetail({
                 inclusions={inclusions}
                 exclusions={exclusions}
                 showPrices={showPrices}
+                showInrPrices={showInrPrices}
               />
             ) : null}
 
@@ -228,6 +235,7 @@ export function ItineraryPackageDetail({
                 packages={packages}
                 activeSlug={item.slug}
                 showPrices={showPrices}
+                showInrPrices={showInrPrices}
                 detailBasePath={detailBasePath}
               />
             ) : null}
@@ -316,11 +324,13 @@ function CostTab({
   inclusions,
   exclusions,
   showPrices,
+  showInrPrices,
 }: {
   item: PackageShowcaseItem;
   inclusions: string[];
   exclusions: string[];
   showPrices: boolean;
+  showInrPrices: boolean;
 }) {
   return (
     <>
@@ -346,7 +356,7 @@ function CostTab({
             </tr>
           </thead>
           <tbody>
-            {getPackageCostRows(item, showPrices).map((row) => (
+            {getPackageCostRows(item, showPrices, showInrPrices).map((row) => (
               <tr key={row.groupSize}>
                 <td>{row.groupSize}</td>
                 <td>{row.standard}</td>
@@ -367,6 +377,12 @@ function CostTab({
           </tbody>
         </table>
       </div>
+
+      {showPrices && showInrPrices ? (
+        <p className="uh-hb-price-conversion-note">
+          INR equivalents use 1 USD = INR {USD_TO_INR_RATE}.
+        </p>
+      ) : null}
 
       <div className="uh-hb-cost-grid">
         <div>
@@ -438,11 +454,13 @@ function MorePackagesTab({
   activeSlug,
   showPrices,
   detailBasePath,
+  showInrPrices,
 }: {
   packages: PackageShowcaseItem[];
   activeSlug: string;
   showPrices: boolean;
   detailBasePath: string;
+  showInrPrices: boolean;
 }) {
   return (
     <div className="uh-hb-more-grid">
@@ -458,7 +476,7 @@ function MorePackagesTab({
             <span>{pkg.duration}</span>
             <strong>{pkg.title}</strong>
             {showPrices && pkg.pricing ? (
-              <small>Starting From {formatUsd(pkg.pricing.fourSix)}</small>
+              <small>Starting From {formatPriceText(pkg.pricing.fourSix, showInrPrices)}</small>
             ) : null}
           </Link>
         ))}
@@ -472,29 +490,50 @@ function getDayCount(duration: string) {
   return days.padStart(2, "0");
 }
 
-function getPackageCostRows(item: PackageShowcaseItem, showPrices: boolean) {
+function getPackageCostRows(
+  item: PackageShowcaseItem,
+  showPrices: boolean,
+  showInrPrices: boolean,
+) {
   const pricing = showPrices ? item.pricing : undefined;
 
   return [
     {
       groupSize: "1 Person",
-      standard: pricing ? formatUsd(pricing.one) : (
+      standard: pricing ? renderPrice(pricing.one, showInrPrices) : (
         <a href={getWriteToUsHref(item.title, "3-star")}>write to us</a>
       ),
     },
     {
       groupSize: "2-3 Persons",
-      standard: pricing ? formatUsd(pricing.twoThree) : (
+      standard: pricing ? renderPrice(pricing.twoThree, showInrPrices) : (
         <a href={getWriteToUsHref(item.title, "3-star")}>write to us</a>
       ),
     },
     {
       groupSize: "4-6 Persons",
-      standard: pricing ? formatUsd(pricing.fourSix) : (
+      standard: pricing ? renderPrice(pricing.fourSix, showInrPrices) : (
         <a href={getWriteToUsHref(item.title, "3-star")}>write to us</a>
       ),
     },
   ];
+}
+
+function renderPrice(value: number, showInrPrices: boolean) {
+  if (!showInrPrices) return formatUsd(value);
+
+  return (
+    <span className="uh-price-dual">
+      <span>{formatUsd(value)}</span>
+      <small>{formatInrFromUsd(value)}</small>
+    </span>
+  );
+}
+
+function formatPriceText(value: number, showInrPrices: boolean) {
+  if (!showInrPrices) return formatUsd(value);
+
+  return `${formatUsd(value)} / ${formatInrFromUsd(value)}`;
 }
 
 function getWriteToUsHref(packageTitle: string, packageType: string) {

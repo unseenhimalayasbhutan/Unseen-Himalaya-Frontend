@@ -1,5 +1,4 @@
 "use client";
-/* eslint-disable @next/next/no-img-element */
 
 import { useState } from "react";
 import Link from "next/link";
@@ -25,9 +24,11 @@ import {
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
-import { getFallbackImage } from "../components/imageFallbacks";
+import {
+  TourImageSlot as ImageSlot,
+  type ImageAsset,
+} from "../components/TourPagePrimitives";
 
-type ImageAsset = { src: string; alt: string; label: string; copyrightName?: string };
 type StatItem = { icon: LucideIcon; value: string; label: string };
 type StoryCard = { icon: LucideIcon; title: string; description: string };
 type TabItem = {
@@ -51,18 +52,6 @@ type SymbolItem = {
 };
 type TimelineFact = { period: string; title: string; description: string };
 type SimpleFact = { title: string; description: string };
-
-function ImageSlot({ image, className = "" }: { image: ImageAsset; className?: string }) {
-  const resolvedSrc = image.src.trim() || getFallbackImage(image.label);
-  return (
-    <figure className={`tour-pro-image-slot has-image ${className}`.trim()}>
-      <div className="tour-pro-image-frame">
-        <img src={resolvedSrc} alt={image.alt} className="tour-pro-image" loading="lazy" />
-      </div>
-      <figcaption className="tour-pro-image-credit">© {image.copyrightName || "Unseen Himalayas Bhutan"}</figcaption>
-    </figure>
-  );
-}
 
 export default function FactsPage() {
   const [activeFact, setActiveFact] = useState(featureFacts[0]?.id || "druk-yul");

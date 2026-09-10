@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import { getFallbackImage } from "./imageFallbacks";
 import { ImageCredit, SectionHeading } from "./DesignSystem";
 
@@ -17,10 +16,12 @@ export function TourImageSlot({
   image,
   className = "",
   startingRate,
+  sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 640px",
 }: {
   image: ImageAsset;
   className?: string;
   startingRate?: number;
+  sizes?: string;
 }) {
   const resolvedSrc = image.src.trim() || getFallbackImage(image.label);
   const formattedRate =
@@ -31,9 +32,11 @@ export function TourImageSlot({
   return (
     <figure className={`tour-pro-image-slot has-image ${className}`.trim()}>
       <div className="tour-pro-image-frame">
-        <img
+        <Image
           src={resolvedSrc}
           alt={image.alt}
+          fill
+          sizes={sizes}
           className="tour-pro-image"
           loading="lazy"
           decoding="async"

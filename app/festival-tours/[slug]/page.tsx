@@ -10,6 +10,7 @@ import {
   packageExclusions,
   packageInclusions,
 } from "../../data/packageShowcases";
+import { createPackageMetadata } from "../../seo";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -17,6 +18,20 @@ type PageProps = {
 
 export function generateStaticParams() {
   return festivalShowcasePackages.map((pkg) => ({ slug: pkg.slug }));
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { slug } = await params;
+  const item = festivalShowcasePackages.find((pkg) => pkg.slug === slug);
+
+  if (!item) return {};
+
+  return createPackageMetadata({
+    item,
+    parentPath: "/festival-tours",
+    detailBasePath: "/festival-tours",
+    routeLabel: "Festival Tour",
+  });
 }
 
 export default async function FestivalTourDetailPage({ params }: PageProps) {
