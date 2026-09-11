@@ -48,6 +48,20 @@ type ExchangeRate = {
   rate: string;
 };
 
+type MonumentFee = {
+  attraction: string;
+  district: string;
+  feeNu: number;
+  usd?: string;
+  notes?: string;
+  href?: string;
+};
+
+type ClosureDay = {
+  date: string;
+  observance: string;
+};
+
 export default function CurrencyPage() {
   return (
     <>
@@ -66,13 +80,13 @@ export default function CurrencyPage() {
                 </div>
 
                 <h1 className="currency-hero-title">
-                  Currency, payments, and money tips for travelling in Bhutan.
+                  Currency, entrance fees, and money tips for travelling in Bhutan.
                 </h1>
 
                 <p className="currency-hero-description">
                   Understand Bhutanese Ngultrum, Indian Rupees, cash usage,
-                  cards, ATMs, tipping, digital payments, and how to prepare your
-                  travel money before arrival.
+                  cards, ATMs, monument fees, tipping, digital payments, and how
+                  to prepare your travel money before arrival.
                 </p>
 
                 <div className="currency-hero-actions">
@@ -103,8 +117,8 @@ export default function CurrencyPage() {
                 <h2>Carry both card and cash.</h2>
                 <p>
                   Cards work in many major hotels and shops, but cash is still
-                  important for small purchases, tips, markets, rural areas, and
-                  unexpected situations.
+                  important for monument fees, small purchases, tips, markets,
+                  rural areas, and unexpected situations.
                 </p>
                 <div className="currency-hero-card-pills">
                   <span>BTN Cash</span>
@@ -185,6 +199,8 @@ export default function CurrencyPage() {
 
               {/* Content */}
               <div className="currency-content">
+                <MuseumsFeesSection />
+
                 {/* Bhutanese Currency */}
                 <section id="currency" className="currency-section-card">
                   <div className="currency-card-header">
@@ -436,7 +452,14 @@ export default function CurrencyPage() {
                       planning ranges only and can be adjusted based on service.
                     </p>
 
-                  
+                    <ul className="currency-check-list">
+                      {tippingGuidelines.map((tip) => (
+                        <li key={tip}>
+                          <CheckCircle aria-hidden />
+                          <span>{tip}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </section>
 
@@ -555,6 +578,115 @@ export default function CurrencyPage() {
   );
 }
 
+function MuseumsFeesSection() {
+  return (
+    <section id="museum-fees" className="currency-section-card currency-fees-section">
+      <div className="currency-card-header">
+        <div className="currency-card-icon">
+          <Landmark aria-hidden />
+        </div>
+        <div>
+          <p>Entrance fees in Nu.</p>
+          <h2>Museums & Monument Fees</h2>
+        </div>
+      </div>
+
+      <p className="currency-text">
+        Fees are listed in Ngultrum, which is at par with Indian Rupees. The
+        fees collected support safe, clean sites and help with visitor management
+        and waste management.
+      </p>
+
+      <div className="currency-fees-summary" aria-label="Museums and monument fees summary">
+        <div className="currency-fee-stat">
+          <span>Reference</span>
+          <strong>January 2026</strong>
+        </div>
+        <div className="currency-fee-stat">
+          <span>Currency</span>
+          <strong>Nu. / INR 1:1</strong>
+        </div>
+        <div className="currency-fee-stat">
+          <span>Child concession</span>
+          <strong>50% for ages 6-17</strong>
+        </div>
+      </div>
+
+      <div className="currency-fees-table-wrap">
+        <table className="currency-fees-table">
+          <caption>
+            Entrance fees for selected museums, dzongs, lhakhangs, parks, and
+            sacred sites across Bhutan.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Museum / Monument</th>
+              <th scope="col">District / Area</th>
+              <th scope="col">Fee (Nu.)</th>
+              <th scope="col">Approx. USD</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {monumentFees.map((fee) => (
+              <tr key={`${fee.district}-${fee.attraction}`}>
+                <td>
+                  {fee.href ? (
+                    <a href={fee.href} target="_blank" rel="noreferrer">
+                      {fee.attraction}
+                    </a>
+                  ) : (
+                    fee.attraction
+                  )}
+                </td>
+                <td>{fee.district}</td>
+                <td>Nu. {fee.feeNu.toLocaleString("en-US")}</td>
+                <td>{fee.usd ?? "Confirm locally"}</td>
+                <td>{fee.notes ?? "Hours can vary by season and event."}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="currency-fees-notes">
+        <article>
+          <h3>Children</h3>
+          <p>
+            Children from 6 years old and below 18 years receive a 50%
+            exemption. Children 5 years old and below are not charged.
+          </p>
+        </article>
+
+        <article>
+          <h3>Local-only auspicious days</h3>
+          <p>
+            Designated monuments and sacred sites are open only to locals on the
+            following Bhutanese lunar calendar dates.
+          </p>
+          <ul>
+            {closureDays.map((day) => (
+              <li key={day.date}>
+                <strong>{day.date}</strong>
+                <span>{day.observance}</span>
+              </li>
+            ))}
+          </ul>
+        </article>
+      </div>
+
+      <div className="currency-soft-note">
+        <AlertCircle aria-hidden />
+        <p>
+          Fees, opening hours, and USD equivalents can change without notice.
+          Confirm final rates with your guide, ticket counter, or official
+          tourism contact before travel.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 const heroTrust = [
   "Cash and card planning",
   "Clear payment guidance",
@@ -585,6 +717,7 @@ const quickOverview: QuickOverviewItem[] = [
 ];
 
 const navItems: NavItem[] = [
+  { name: "Museum Fees", id: "museum-fees" },
   { name: "Bhutanese Currency", id: "currency" },
   { name: "Crypto Payments", id: "crypto-payments" },
   { name: "Indian Rupee", id: "indian-rupee" },
@@ -632,6 +765,316 @@ const cashRecommendations = [
   "Avoid relying only on cards outside Thimphu and Paro.",
 ];
 
+const tippingGuidelines = [
+  "Tip in cash when possible so guides, drivers, hotel staff, and porters can receive it directly.",
+  "Use smaller Nu. notes for hotel staff, cafés, and short transfers.",
+  "For longer guided tours, plan a separate tip envelope for your guide and driver.",
+  "Adjust the amount based on itinerary length, group size, and quality of service.",
+];
+
+const monumentFees: MonumentFee[] = [
+  {
+    attraction: "Bhutan Postal Museum",
+    district: "Thimphu",
+    feeNu: 250,
+    usd: "US$2.90",
+    notes: "Usually 9 AM-5 PM.",
+    href: "https://www.drukasia.com/bhutan/general-post-office-and-bhutan-postal-museum/",
+  },
+  {
+    attraction: "Folk Heritage Museum",
+    district: "Thimphu",
+    feeNu: 300,
+    usd: "US$3.60",
+    notes: "Usually 9 AM-5 PM.",
+    href: "https://www.drukasia.com/bhutan/thimphu/folk-heritage-museum/",
+  },
+  {
+    attraction: "Institute of Zorig Chusum",
+    district: "Thimphu",
+    feeNu: 500,
+    usd: "US$6.00",
+    notes: "Traditional arts and crafts school.",
+    href: "https://www.drukasia.com/bhutan/thimphu/national-institute-for-zorig-chusum/",
+  },
+  {
+    attraction: "Simply Bhutan",
+    district: "Thimphu",
+    feeNu: 1000,
+    usd: "US$12.00",
+    notes: "Usually 9 AM-5 PM.",
+    href: "https://www.drukasia.com/bhutan/thimphu/simply-bhutan-museum/",
+  },
+  {
+    attraction: "Takin Preserve",
+    district: "Thimphu",
+    feeNu: 300,
+    usd: "US$3.60",
+    href: "https://www.drukasia.com/bhutan/thimphu/takin-enclosure/",
+  },
+  {
+    attraction: "Buddha Dordenma",
+    district: "Thimphu",
+    feeNu: 300,
+    usd: "US$3.60",
+    href: "https://www.drukasia.com/bhutan/thimphu/buddha-dordenma-statue/",
+  },
+  {
+    attraction: "Changangkha Lhakhang",
+    district: "Thimphu",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/thimphu/changangkha-lhakhang/",
+  },
+  {
+    attraction: "Changyul Park",
+    district: "Thimphu",
+    feeNu: 100,
+    usd: "US$1.20",
+  },
+  {
+    attraction: "Choki Traditional Art School",
+    district: "Thimphu",
+    feeNu: 1000,
+    usd: "US$12.00",
+    href: "https://www.bhutantravelog.com/travel-guide/a-traveller-s-guide-to-choki-traditional-art-school",
+  },
+  {
+    attraction: "Institute of Traditional Medicine",
+    district: "Thimphu",
+    feeNu: 500,
+    usd: "US$6.00",
+  },
+  {
+    attraction: "National Memorial Chorten",
+    district: "Thimphu",
+    feeNu: 500,
+    usd: "US$6.00",
+    notes: "Usually 9 AM-5 PM.",
+    href: "https://www.drukasia.com/bhutan/thimphu/national-memorial-chorten/",
+  },
+  {
+    attraction: "Bhutan National Library",
+    district: "Thimphu",
+    feeNu: 100,
+    notes: "Confirm current rate locally.",
+  },
+  {
+    attraction: "Jungshi Handmade Paper Factory",
+    district: "Thimphu",
+    feeNu: 100,
+    notes: "Confirm current rate locally.",
+  },
+  {
+    attraction: "National Handicraft Emporium",
+    district: "Thimphu",
+    feeNu: 100,
+    notes: "Confirm current rate locally.",
+  },
+  {
+    attraction: "Royal Textile Academy",
+    district: "Thimphu",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/thimphu/the-national-textile-museum/",
+  },
+  {
+    attraction: "Simtokha Dzong",
+    district: "Thimphu",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/thimphu/simtokha-dzong/",
+  },
+  {
+    attraction: "Tashichho Dzong",
+    district: "Thimphu",
+    feeNu: 500,
+    usd: "US$6.00",
+    notes: "Tourist hours can be limited on working days.",
+    href: "https://www.drukasia.com/bhutan/thimphu/thimphu-dzong/",
+  },
+  {
+    attraction: "Zilukha Nunnery",
+    district: "Thimphu",
+    feeNu: 100,
+    notes: "Usually 9 AM-5 PM.",
+  },
+  {
+    attraction: "Dungtse Lhakhang",
+    district: "Paro",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/paro/jangtsa-dumgtseg-lhakhang/",
+  },
+  {
+    attraction: "Kyichu Lhakhang",
+    district: "Paro",
+    feeNu: 500,
+    usd: "US$6.00",
+    notes: "Usually 9 AM-12 PM and 1 PM-4:30 PM.",
+    href: "https://www.drukasia.com/bhutan/paro/kyichu-lhakhang/",
+  },
+  {
+    attraction: "National Museum (Ta Dzong)",
+    district: "Paro",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/paro/taa-dzong/",
+  },
+  {
+    attraction: "Taksang Monastery (Tiger's Nest)",
+    district: "Paro",
+    feeNu: 1000,
+    usd: "US$12.00",
+    notes: "Usually 9 AM-12 PM and 2 PM-5 PM.",
+    href: "https://www.bhutantravelog.com/travel-guide/essential-tips-for-hiking-tiger-s-nest-monastery-like-a-pro",
+  },
+  {
+    attraction: "Tachogang Lhakhang",
+    district: "Paro",
+    feeNu: 300,
+    usd: "US$3.60",
+    href: "https://www.drukasia.com/bhutan/paro/tachogang-lhakhang/",
+  },
+  {
+    attraction: "Chimi Lhakhang",
+    district: "Punakha",
+    feeNu: 500,
+    usd: "US$6.00",
+    notes: "Usually 9 AM-12 PM and 1 PM-4 PM.",
+    href: "https://www.drukasia.com/bhutan/punakha/chimi-lhakhang/",
+  },
+  {
+    attraction: "Khamsum Yulley Namgyal Chorten",
+    district: "Punakha",
+    feeNu: 100,
+    usd: "US$1.20",
+    href: "https://www.drukasia.com/bhutan/punakha/khamsum-yulley-namgyal-chorten/",
+  },
+  {
+    attraction: "Punakha Dzong",
+    district: "Punakha",
+    feeNu: 500,
+    usd: "US$6.00",
+    notes: "Usually 9 AM-5 PM.",
+    href: "https://www.drukasia.com/bhutan/punakha/punakha-dzong/",
+  },
+  {
+    attraction: "Sangchen Dorji Lhendrup Nunnery",
+    district: "Punakha",
+    feeNu: 200,
+    usd: "US$2.40",
+    href: "https://www.drukasia.com/bhutan/punakha/sangchhen-dorji-lhuendrup-nunnery/",
+  },
+  {
+    attraction: "Wangduephodrang Dzong",
+    district: "Wangdue Phodrang",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/wangdue-phodrang/wangdue-dzong/",
+  },
+  {
+    attraction: "Black Necked Crane Centre",
+    district: "Phobjikha",
+    feeNu: 200,
+    usd: "US$2.40",
+    notes: "Usually 9 AM-5 PM.",
+    href: "https://www.drukasia.com/bhutan/gangtey/black-necked-crane-centre/",
+  },
+  {
+    attraction: "Gangtey Monastery",
+    district: "Phobjikha",
+    feeNu: 100,
+    notes: "Confirm current rate locally.",
+  },
+  {
+    attraction: "Taa Dzong Museum",
+    district: "Trongsa",
+    feeNu: 500,
+    usd: "US$6.00",
+    notes: "Usually 9 AM-5 PM.",
+    href: "https://www.drukasia.com/bhutan/bagdogra/royal-heritage-museum/",
+  },
+  {
+    attraction: "Trongsa Dzong",
+    district: "Trongsa",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/trongsa/trongsa-dzong/",
+  },
+  {
+    attraction: "Jambay Lhakhang",
+    district: "Bumthang",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/bumthang/jambay-lhakhang/",
+  },
+  {
+    attraction: "Ogyen Choling Museum",
+    district: "Bumthang",
+    feeNu: 400,
+    usd: "US$4.80",
+  },
+  {
+    attraction: "Swiss Factory",
+    district: "Bumthang",
+    feeNu: 700,
+    notes: "Confirm current rate locally.",
+  },
+  {
+    attraction: "Wangduechholing Palace Museum",
+    district: "Bumthang",
+    feeNu: 500,
+    usd: "US$6.00",
+    href: "https://www.drukasia.com/bhutan/bumthang/wangduechhoeling-palace/",
+  },
+  {
+    attraction: "Royal Botanical Gardens",
+    district: "Lamperi",
+    feeNu: 100,
+    usd: "US$1.20",
+  },
+  {
+    attraction: "Institute of Zorig Chusum",
+    district: "Trashi Yangtse",
+    feeNu: 100,
+    usd: "US$1.20",
+    href: "https://www.drukasia.com/bhutan/thimphu/national-institute-for-zorig-chusum/",
+  },
+  {
+    attraction: "Palden Tashi Choling Shedra",
+    district: "Phuentsholing",
+    feeNu: 1000,
+    notes: "Confirm current rate locally.",
+  },
+];
+
+const closureDays: ClosureDay[] = [
+  {
+    date: "15th day of the 1st month",
+    observance: "Chotrul Duchen",
+  },
+  {
+    date: "10th day of the 3rd month",
+    observance: "Zhabdrung Kuchoe",
+  },
+  {
+    date: "15th day of the 4th month",
+    observance: "Saga Dawa Duchen / Lord Buddha Parinirvana",
+  },
+  {
+    date: "4th day of the 6th month",
+    observance: "Chokhor Duchen / First Sermon of Lord Buddha",
+  },
+  {
+    date: "10th day of the 5th month",
+    observance: "Birth Anniversary of Guru Rinpoche",
+  },
+  {
+    date: "22nd day of the 9th month",
+    observance: "Lha Bab Duchen / Descending Day of Lord Buddha",
+  },
+];
 
 
 const moneySavingTips = [

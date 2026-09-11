@@ -15821,6 +15821,179 @@ img {
   line-height: 1.75;
 }
 
+.currency-hero-title {
+  max-width: 780px;
+  letter-spacing: 0;
+  line-height: 1.04;
+}
+
+.currency-card-header {
+  align-items: flex-start;
+}
+
+.currency-card-header p {
+  margin: 0 0 7px;
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.currency-section-card {
+  overflow: hidden;
+}
+
+.currency-fees-section .currency-text {
+  max-width: 780px;
+}
+
+.currency-fees-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.currency-fee-stat {
+  padding: 16px 18px;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-sm);
+  background: var(--cream-2);
+}
+
+.currency-fee-stat span {
+  display: block;
+  color: var(--muted);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.currency-fee-stat strong {
+  display: block;
+  margin-top: 7px;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  line-height: 1.25;
+}
+
+.currency-fees-table-wrap {
+  overflow-x: auto;
+  margin-top: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-card);
+}
+
+.currency-fees-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+}
+
+.currency-fees-table caption {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.currency-fees-table th,
+.currency-fees-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-divider);
+  color: var(--muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.55;
+  text-align: left;
+  vertical-align: top;
+}
+
+.currency-fees-table th {
+  background: var(--cream-2);
+  color: var(--color-text-primary);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.currency-fees-table td:nth-child(3),
+.currency-fees-table td:nth-child(4) {
+  white-space: nowrap;
+  font-weight: 800;
+}
+
+.currency-fees-table td:nth-child(3) {
+  color: var(--color-text-primary);
+}
+
+.currency-fees-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.currency-fees-table a {
+  color: var(--color-accent);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.currency-fees-table a:hover,
+.currency-fees-table a:focus-visible {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  outline: none;
+}
+
+.currency-fees-notes {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.currency-fees-notes article {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--cream-2);
+}
+
+.currency-fees-notes h3 {
+  margin: 0 0 10px;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+}
+
+.currency-fees-notes p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.currency-fees-notes ul {
+  display: grid;
+  gap: 9px;
+  margin-top: 14px;
+}
+
+.currency-fees-notes li {
+  display: grid;
+  grid-template-columns: minmax(155px, 0.45fr) minmax(0, 1fr);
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-card);
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.currency-fees-notes li strong {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-sm);
+}
+
 .besttime-season-detail-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -16058,7 +16231,13 @@ img {
 .currency-converter {
   background:
     radial-gradient(circle at 90% 0%, var(--color-divider), transparent 18rem),
-    var(--color-text-primary);
+    var(--color-bg-card);
+}
+
+.currency-feature-card .currency-feature-item,
+.currency-feature-card .currency-step,
+.currency-converter .currency-converter-item {
+  background: var(--cream-2);
 }
 
 .currency-converter-item {
@@ -16134,6 +16313,19 @@ img {
 .currency-faq-item p {
   color: var(--muted);
   line-height: 1.7;
+}
+
+.currency-page :is(
+  .currency-sidebar-help,
+  .currency-subsection,
+  .currency-info-card,
+  .currency-feature-item,
+  .currency-converter-item,
+  .currency-faq-item,
+  .currency-fee-stat,
+  .currency-fees-notes article
+) :is(h3, strong) {
+  color: var(--color-text-primary);
 }
 
 .documents-info-card ul {
@@ -16407,6 +16599,7 @@ img {
 @media (max-width: 1000px) {
   .about-bhutan-pro-unique-layout,
   .about-bhutan-pro-butterfly-layout,
+  .currency-fees-notes,
   .besttime-cta-card,
   .currency-cta-card,
   .documents-cta-card,
@@ -16432,6 +16625,7 @@ img {
   .about-pro-responsible-grid,
   .about-bhutan-pro-unique-image-grid,
   .about-bhutan-pro-butterfly-image-grid,
+  .currency-fees-summary,
   .besttime-seasons-detail,
   .besttime-activities-grid,
   .besttime-comparison-grid,
@@ -16447,6 +16641,11 @@ img {
   .documents-fee-items,
   .besttime-season-detail-grid {
     grid-template-columns: 1fr;
+  }
+
+  .currency-fees-notes li {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .besttime-monthly-item,
