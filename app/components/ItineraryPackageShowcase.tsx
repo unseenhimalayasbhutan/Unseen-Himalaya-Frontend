@@ -90,7 +90,10 @@ export function ItineraryPackageShowcase({
   showInrPrices = false,
 }: ItineraryPackageShowcaseProps) {
   return (
-    <section className="tour-pro-section tour-pro-section-white uh-package-showcase-section">
+    <section
+      id="itinerary-library"
+      className="tour-pro-section tour-pro-section-white uh-package-showcase-section"
+    >
       <div className="container">
         <SectionHeader eyebrow={eyebrow} title={title} subtitle={subtitle} />
 

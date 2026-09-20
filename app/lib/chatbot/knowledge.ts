@@ -1,7 +1,7 @@
 import { cyclingItineraries } from "../../data/cyclingItineraries";
 import { festivalPackages } from "../../data/festivalPackages";
 import { landEntryItineraries } from "../../data/landEntryItineraries";
-import { photographyTourCodes } from "../../data/photographyTourCodes";
+import { photographyItineraries } from "../../data/photographyItineraries";
 import { upcomingEvents } from "../../data/upcomingEvents";
 import {
   customizableItems,
@@ -59,7 +59,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
     buildStaticRecord({
       id: "tour-inclusions-exclusions",
       title: "Tour inclusions, exclusions, and SDF notes",
-      sourceUrl: "/bhutan-tours",
+      sourceUrl: "/photography-tour",
       contentType: "policy",
       summary: "Common inclusions and exclusions for package quotations.",
       content: [
@@ -113,10 +113,8 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
 
   return [
     ...records,
-    ...itineraries.map((route) =>
-      buildTourRecord(route, "regular-tour", "/bhutan-tours", {
-        tourCode: photographyTourCodes[route.slug] || route.tourCode,
-      })
+    ...photographyItineraries.map((route) =>
+      buildTourRecord(route, "photography-tour", "/photography-tour")
     ),
     ...landEntryItineraries.map((route) =>
       buildTourRecord(route, "land-entry-tour", "/land-entry-tours", {

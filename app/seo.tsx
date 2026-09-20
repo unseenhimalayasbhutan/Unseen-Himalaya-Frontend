@@ -39,12 +39,6 @@ export const pageSeo = {
       "Compare Bhutan's seasons, weather, festivals, landscapes, and travel conditions to choose the best month for your trip.",
     keywords: ["best time to visit Bhutan", "Bhutan weather", "Bhutan travel season"],
   },
-  "/bhutan-tours": {
-    title: "Private Bhutan Tour Packages",
-    description:
-      "Explore private Bhutan tour packages from short cultural escapes to in-depth journeys through Paro, Thimphu, Punakha, and beyond.",
-    keywords: ["Bhutan tour packages", "private Bhutan tours", "Bhutan itinerary"],
-  },
   "/bhutan-trekkings": {
     title: "Bhutan Trekking Tours",
     description:
@@ -132,6 +126,17 @@ export const pageSeo = {
     description:
       "Personalize your Bhutan itinerary with hikes, wellness, food, photography, village visits, and other optional experiences.",
     keywords: ["Bhutan activities", "Bhutan experiences", "Bhutan tour add-ons"],
+  },
+  "/photography-tour": {
+    title: "Bhutan Photography Tours | Private Photo Journeys",
+    description:
+      "Explore Bhutan photography tours shaped around the best available light, local access, flexible pacing, and responsible visual storytelling.",
+    keywords: [
+      "Bhutan photography tours",
+      "Bhutan photo tour",
+      "Tiger's Nest photography tour",
+      "Bhutan photography itinerary",
+    ],
   },
   "/upcoming-events": {
     title: "Upcoming Bhutan Event Tours",

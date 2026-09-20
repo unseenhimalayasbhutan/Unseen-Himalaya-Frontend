@@ -20,7 +20,7 @@ const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
   { label: "About Bhutan", href: "/about-bhutan" },
-  { label: "Photography Tours", href: "/bhutan-tours" },
+  { label: "Photography Tours", href: "/photography-tour" },
   { label: "Festival Tours", href: "/festival-tours" },
   { label: "Contact", href: "/contact" },
 ];

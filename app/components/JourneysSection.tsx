@@ -230,7 +230,7 @@ export function JourneysSection() {
         </div>
 
         <div className="uh-journeys-action-row">
-          <Link href="/bhutan-tours" className="uh-journeys-btn-primary">
+          <Link href="/photography-tour" className="uh-journeys-btn-primary">
             Explore Destinations
             <ArrowRight aria-hidden="true" />
           </Link>

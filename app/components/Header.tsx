@@ -40,7 +40,7 @@ const navLinks = [
       },
       {
         label: "Photography Tours",
-        href: "/bhutan-tours",
+        href: "/photography-tour",
         description: "Scenic routes for photographers",
       },
       {

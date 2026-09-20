@@ -1,4 +1,17 @@
-import { createPageMetadata, createSeoLayout } from "../seo";
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
-export const metadata = createPageMetadata("/bhutan-tours");
-export default createSeoLayout("/bhutan-tours");
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
+
+export default function BhutanToursRedirectLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return children;
+}

@@ -203,7 +203,7 @@ export function WhyChooseUs() {
         </div>
 
         <div className="center-btn">
-          <Link href="/bhutan-tours" className="discover-btn">
+          <Link href="/photography-tour" className="discover-btn">
             Explore Photography Tours
             <ArrowRight aria-hidden="true" />
           </Link>

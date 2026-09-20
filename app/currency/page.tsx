@@ -563,7 +563,7 @@ export default function CurrencyPage() {
                   Contact Our Team
                   <ArrowRight aria-hidden />
                 </Link>
-                <Link href="/bhutan-tours" className="currency-btn-secondary">
+                <Link href="/photography-tour" className="currency-btn-secondary">
                   Browse Tours
                 </Link>
               </div>

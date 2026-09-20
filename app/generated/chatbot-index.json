@@ -1,5 +1,5 @@
 {
-  "lastIndexedAt": "2026-08-19T13:07:35.022Z",
+  "lastIndexedAt": "2026-09-11T08:38:29.884Z",
   "records": 42,
   "chunks": [
     {
@@ -39,12 +39,12 @@
       "recordId": "tour-inclusions-exclusions",
       "title": "Tour inclusions, exclusions, and SDF notes",
       "contentType": "policy",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
       "contentHash": "6100dbb9b4db8cb187fc5a19f9d463812ea50d9554a2ff81d5291e90935865d2",
       "metadata": {
         "id": "tour-inclusions-exclusions",
         "title": "Tour inclusions, exclusions, and SDF notes",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
         "contentType": "policy",
         "lastUpdated": "2026-08-19",
         "requiresVerification": true
@@ -115,20 +115,20 @@
       }
     },
     {
-      "id": "regular-tour:3-day-paro-thimphu-paro::chunk-1",
-      "recordId": "regular-tour:3-day-paro-thimphu-paro",
-      "title": "3-Day Paro & Thimphu Essentials",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "4c080c8f6dceaf63aeae1cc6d95600e9528daf4cc493410d73f72d1cb9afdaae",
+      "id": "photography-tour:3-day-paro-thimphu-paro::chunk-1",
+      "recordId": "photography-tour:3-day-paro-thimphu-paro",
+      "title": "3-Day Paro & Thimphu Photography Essentials",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "42981a135bcb70f0a49a8c06dea26f2560b71a23d661651f091157913916957d",
       "metadata": {
-        "id": "regular-tour:3-day-paro-thimphu-paro",
-        "title": "3-Day Paro & Thimphu Essentials",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:3-day-paro-thimphu-paro",
+        "title": "3-Day Paro & Thimphu Photography Essentials",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-001",
         "startingRate": 25910,
-        "tourCategory": "Short Cultural Tour",
+        "tourCategory": "Short Photography Tour",
         "durationDays": 3,
         "durationNights": 2,
         "destinations": [
@@ -138,7 +138,9 @@
         "entryPoint": "Paro",
         "exitPoint": "Thimphu",
         "interests": [
-          "culture"
+          "culture",
+          "photography",
+          "soft adventure"
         ],
         "travelSeason": [],
         "lastUpdated": "2026-08-19",
@@ -146,20 +148,53 @@
       }
     },
     {
-      "id": "regular-tour:3-day-paro-paro::chunk-1",
-      "recordId": "regular-tour:3-day-paro-paro",
-      "title": "3-Day Paro Valley Short Escape",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "dda46805aad2dd208ce4d336e3c2c2f98e3446f883a4da005275dd9b6732abb8",
+      "id": "photography-tour:3-day-paro-thimphu-paro::chunk-2",
+      "recordId": "photography-tour:3-day-paro-thimphu-paro",
+      "title": "3-Day Paro & Thimphu Photography Essentials",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "f088f8ee38b2811dca8832192492b8d0c963e8c553e97111ce7618e93d38f9f3",
       "metadata": {
-        "id": "regular-tour:3-day-paro-paro",
-        "title": "3-Day Paro Valley Short Escape",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:3-day-paro-thimphu-paro",
+        "title": "3-Day Paro & Thimphu Photography Essentials",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-001",
+        "startingRate": 25910,
+        "tourCategory": "Short Photography Tour",
+        "durationDays": 3,
+        "durationNights": 2,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "culture",
+          "photography",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:3-day-paro-paro::chunk-1",
+      "recordId": "photography-tour:3-day-paro-paro",
+      "title": "3-Day Paro Valley Photography Escape",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "36e01af8b9dea491285b854362c845c1bd24059b72ba1d926016f007bfc96851",
+      "metadata": {
+        "id": "photography-tour:3-day-paro-paro",
+        "title": "3-Day Paro Valley Photography Escape",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-002",
         "startingRate": 26833,
-        "tourCategory": "Short Paro Tour",
+        "tourCategory": "Short Photography Tour",
         "durationDays": 3,
         "durationNights": 2,
         "destinations": [
@@ -169,6 +204,7 @@
         "exitPoint": "Paro",
         "interests": [
           "culture",
+          "photography",
           "nature"
         ],
         "travelSeason": [],
@@ -177,24 +213,251 @@
       }
     },
     {
-      "id": "regular-tour:4-day-paro-punakha-paro::chunk-1",
-      "recordId": "regular-tour:4-day-paro-punakha-paro",
-      "title": "4-Day Punakha Quick Journey",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "024a2d7f84e7d3802fa2a3783d44598c1ab0dccc28e00ed91580ac44599edb26",
+      "id": "photography-tour:3-day-paro-paro::chunk-2",
+      "recordId": "photography-tour:3-day-paro-paro",
+      "title": "3-Day Paro Valley Photography Escape",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "2cff34c1b9fe1d7d92f61bdd8515caef6826ea6efc14d437e698298f003c8cb3",
       "metadata": {
-        "id": "regular-tour:4-day-paro-punakha-paro",
-        "title": "4-Day Punakha Quick Journey",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:3-day-paro-paro",
+        "title": "3-Day Paro Valley Photography Escape",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-002",
+        "startingRate": 26833,
+        "tourCategory": "Short Photography Tour",
+        "durationDays": 3,
+        "durationNights": 2,
+        "destinations": [
+          "Paro"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Paro",
+        "interests": [
+          "culture",
+          "photography",
+          "nature"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:4-day-paro-punakha-paro::chunk-1",
+      "recordId": "photography-tour:4-day-paro-punakha-paro",
+      "title": "4-Day Punakha & Paro Photography Journey",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "156fb7a427c1dd3f666b0dbf5ea3e65b2ddb91fd0b68c926b312443e623ad6ae",
+      "metadata": {
+        "id": "photography-tour:4-day-paro-punakha-paro",
+        "title": "4-Day Punakha & Paro Photography Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-003",
         "startingRate": 34500,
-        "tourCategory": "Scenic Valley Tour",
+        "tourCategory": "Photography Tour",
         "durationDays": 4,
         "durationNights": 3,
         "destinations": [
           "Paro",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "photography",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:4-day-paro-punakha-paro::chunk-2",
+      "recordId": "photography-tour:4-day-paro-punakha-paro",
+      "title": "4-Day Punakha & Paro Photography Journey",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "de87a66c7bfbdc18361239a0b507351798811d04d4d84e46444df5f856ea780c",
+      "metadata": {
+        "id": "photography-tour:4-day-paro-punakha-paro",
+        "title": "4-Day Punakha & Paro Photography Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-003",
+        "startingRate": 34500,
+        "tourCategory": "Photography Tour",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "photography",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:4-day-paro-thimphu-paro::chunk-1",
+      "recordId": "photography-tour:4-day-paro-thimphu-paro",
+      "title": "4-Day Thimphu & Paro Visual Storytelling Tour",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "6778f73ebd2ea7a7bb152f69fbbd685e6615aa9f1361277385440c593cb4e623",
+      "metadata": {
+        "id": "photography-tour:4-day-paro-thimphu-paro",
+        "title": "4-Day Thimphu & Paro Visual Storytelling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-004",
+        "startingRate": 36192,
+        "tourCategory": "Visual Storytelling",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "culture",
+          "photography"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:4-day-paro-thimphu-paro::chunk-2",
+      "recordId": "photography-tour:4-day-paro-thimphu-paro",
+      "title": "4-Day Thimphu & Paro Visual Storytelling Tour",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "2e61ce2253a0dca90d5eb0c4ec203793a7bae8c26be976ffe5bd927c247ffb47",
+      "metadata": {
+        "id": "photography-tour:4-day-paro-thimphu-paro",
+        "title": "4-Day Thimphu & Paro Visual Storytelling Tour",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-004",
+        "startingRate": 36192,
+        "tourCategory": "Visual Storytelling",
+        "durationDays": 4,
+        "durationNights": 3,
+        "destinations": [
+          "Paro",
+          "Thimphu"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Thimphu",
+        "interests": [
+          "culture",
+          "photography"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:5-day-classic-western-bhutan::chunk-1",
+      "recordId": "photography-tour:5-day-classic-western-bhutan",
+      "title": "5-Day Western Bhutan Photography Circuit",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "f9ba26071ff3fc3334d60aceb06c5669566843f33660c4f0fe963458a30f210b",
+      "metadata": {
+        "id": "photography-tour:5-day-classic-western-bhutan",
+        "title": "5-Day Western Bhutan Photography Circuit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-005",
+        "startingRate": 44859,
+        "tourCategory": "Photography Circuit",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "photography"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:5-day-classic-western-bhutan::chunk-2",
+      "recordId": "photography-tour:5-day-classic-western-bhutan",
+      "title": "5-Day Western Bhutan Photography Circuit",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "a86a1e756bda69dc5f9186775e8810501b6800c35f1a81c215f7ebd71fd81dc4",
+      "metadata": {
+        "id": "photography-tour:5-day-classic-western-bhutan",
+        "title": "5-Day Western Bhutan Photography Circuit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-005",
+        "startingRate": 44859,
+        "tourCategory": "Photography Circuit",
+        "durationDays": 5,
+        "durationNights": 4,
+        "destinations": [
+          "Paro",
+          "Thimphu",
+          "Punakha"
+        ],
+        "entryPoint": "Paro",
+        "exitPoint": "Punakha",
+        "interests": [
+          "photography"
+        ],
+        "travelSeason": [],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "photography-tour:6-day-punakha-depth::chunk-1",
+      "recordId": "photography-tour:6-day-punakha-depth",
+      "title": "6-Day Punakha Valley Photography Journey",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "b2f6d354634ee536b0a40f8321056316b7498a79c35d83e6e7c5c2a118ef9fd9",
+      "metadata": {
+        "id": "photography-tour:6-day-punakha-depth",
+        "title": "6-Day Punakha Valley Photography Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-006",
+        "startingRate": 53026,
+        "tourCategory": "Photography Tour",
+        "durationDays": 6,
+        "durationNights": 5,
+        "destinations": [
+          "Paro",
+          "Thimphu",
           "Punakha"
         ],
         "entryPoint": "Paro",
@@ -210,142 +473,20 @@
       }
     },
     {
-      "id": "regular-tour:4-day-paro-thimphu-paro::chunk-1",
-      "recordId": "regular-tour:4-day-paro-thimphu-paro",
-      "title": "4-Day Thimphu & Paro Cultural Intro",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "66277435e171fca83e7a861d75ae80f224b96a510a5899ea8fda5f3b4332b229",
+      "id": "photography-tour:6-day-punakha-depth::chunk-2",
+      "recordId": "photography-tour:6-day-punakha-depth",
+      "title": "6-Day Punakha Valley Photography Journey",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "087e06f75bd5570929d2db87e8ea8c03767e5e8f1fb387ba54147168e91a2406",
       "metadata": {
-        "id": "regular-tour:4-day-paro-thimphu-paro",
-        "title": "4-Day Thimphu & Paro Cultural Intro",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-004",
-        "startingRate": 36192,
-        "tourCategory": "Cultural Introduction",
-        "durationDays": 4,
-        "durationNights": 3,
-        "destinations": [
-          "Paro",
-          "Thimphu"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Thimphu",
-        "interests": [
-          "culture"
-        ],
-        "travelSeason": [],
-        "lastUpdated": "2026-08-19",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:4-day-paro-thimphu-paro::chunk-2",
-      "recordId": "regular-tour:4-day-paro-thimphu-paro",
-      "title": "4-Day Thimphu & Paro Cultural Intro",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "5cec0af3b8bcff22b7b9232e5225071975b05102fb84dd6c3085c5461844d0a5",
-      "metadata": {
-        "id": "regular-tour:4-day-paro-thimphu-paro",
-        "title": "4-Day Thimphu & Paro Cultural Intro",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-004",
-        "startingRate": 36192,
-        "tourCategory": "Cultural Introduction",
-        "durationDays": 4,
-        "durationNights": 3,
-        "destinations": [
-          "Paro",
-          "Thimphu"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Thimphu",
-        "interests": [
-          "culture"
-        ],
-        "travelSeason": [],
-        "lastUpdated": "2026-08-19",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:5-day-classic-western-bhutan::chunk-1",
-      "recordId": "regular-tour:5-day-classic-western-bhutan",
-      "title": "5-Day Classic Western Bhutan",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "8c0f43f54a2ac98299ae18975d9ae0f692f543689e79b429b5946328a31fd6b2",
-      "metadata": {
-        "id": "regular-tour:5-day-classic-western-bhutan",
-        "title": "5-Day Classic Western Bhutan",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-005",
-        "startingRate": 44859,
-        "tourCategory": "Classic Western Bhutan",
-        "durationDays": 5,
-        "durationNights": 4,
-        "destinations": [
-          "Paro",
-          "Thimphu",
-          "Punakha"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Punakha",
-        "interests": [],
-        "travelSeason": [],
-        "lastUpdated": "2026-08-19",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:5-day-classic-western-bhutan::chunk-2",
-      "recordId": "regular-tour:5-day-classic-western-bhutan",
-      "title": "5-Day Classic Western Bhutan",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "2642652798a47ab1e87e183a626aa1bfc27a29f7b6a916c4dae68b4f96c522da",
-      "metadata": {
-        "id": "regular-tour:5-day-classic-western-bhutan",
-        "title": "5-Day Classic Western Bhutan",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-005",
-        "startingRate": 44859,
-        "tourCategory": "Classic Western Bhutan",
-        "durationDays": 5,
-        "durationNights": 4,
-        "destinations": [
-          "Paro",
-          "Thimphu",
-          "Punakha"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Punakha",
-        "interests": [],
-        "travelSeason": [],
-        "lastUpdated": "2026-08-19",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:6-day-punakha-depth::chunk-1",
-      "recordId": "regular-tour:6-day-punakha-depth",
-      "title": "6-Day Punakha Culture & Valley Journey",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "e8306d91957de8e44c38264359e77a5673bbc998aa5d23e3c26717f152cff583",
-      "metadata": {
-        "id": "regular-tour:6-day-punakha-depth",
-        "title": "6-Day Punakha Culture & Valley Journey",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:6-day-punakha-depth",
+        "title": "6-Day Punakha Valley Photography Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-006",
         "startingRate": 53026,
-        "tourCategory": "Punakha Focus",
+        "tourCategory": "Photography Tour",
         "durationDays": 6,
         "durationNights": 5,
         "destinations": [
@@ -357,8 +498,8 @@
         "exitPoint": "Punakha",
         "interests": [
           "culture",
-          "nature",
-          "soft adventure"
+          "photography",
+          "nature"
         ],
         "travelSeason": [],
         "lastUpdated": "2026-08-19",
@@ -366,54 +507,20 @@
       }
     },
     {
-      "id": "regular-tour:6-day-punakha-depth::chunk-2",
-      "recordId": "regular-tour:6-day-punakha-depth",
-      "title": "6-Day Punakha Culture & Valley Journey",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "13aec6ca4d3c5897989e06e05da41f497562734788454e738da8b02abba87823",
+      "id": "photography-tour:6-day-thimphu-punakha-paro::chunk-1",
+      "recordId": "photography-tour:6-day-thimphu-punakha-paro",
+      "title": "6-Day Thimphu, Punakha & Paro Photography Classic",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "142e5d7b48a0d01030c0dab2fb65a921256d923161f38608cb70539b35d2d3ac",
       "metadata": {
-        "id": "regular-tour:6-day-punakha-depth",
-        "title": "6-Day Punakha Culture & Valley Journey",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-006",
-        "startingRate": 53026,
-        "tourCategory": "Punakha Focus",
-        "durationDays": 6,
-        "durationNights": 5,
-        "destinations": [
-          "Paro",
-          "Thimphu",
-          "Punakha"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Punakha",
-        "interests": [
-          "culture",
-          "nature",
-          "soft adventure"
-        ],
-        "travelSeason": [],
-        "lastUpdated": "2026-08-19",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:6-day-thimphu-punakha-paro::chunk-1",
-      "recordId": "regular-tour:6-day-thimphu-punakha-paro",
-      "title": "6-Day Thimphu, Punakha & Paro Classic",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "698a4fbf9b7b8705c5a39cb395ca9b365cb6efcce4f9243493b49b027fc38951",
-      "metadata": {
-        "id": "regular-tour:6-day-thimphu-punakha-paro",
-        "title": "6-Day Thimphu, Punakha & Paro Classic",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:6-day-thimphu-punakha-paro",
+        "title": "6-Day Thimphu, Punakha & Paro Photography Classic",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-007",
         "startingRate": 53218,
-        "tourCategory": "Classic Culture",
+        "tourCategory": "Photography Tour",
         "durationDays": 6,
         "durationNights": 5,
         "destinations": [
@@ -424,7 +531,7 @@
         "entryPoint": "Paro",
         "exitPoint": "Punakha",
         "interests": [
-          "culture"
+          "photography"
         ],
         "travelSeason": [],
         "lastUpdated": "2026-08-19",
@@ -432,20 +539,20 @@
       }
     },
     {
-      "id": "regular-tour:6-day-thimphu-punakha-paro::chunk-2",
-      "recordId": "regular-tour:6-day-thimphu-punakha-paro",
-      "title": "6-Day Thimphu, Punakha & Paro Classic",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "a99b162a51a4357d8628b717cc76be205ed7dddd0cf911e91f4ff67d2c9b4043",
+      "id": "photography-tour:6-day-thimphu-punakha-paro::chunk-2",
+      "recordId": "photography-tour:6-day-thimphu-punakha-paro",
+      "title": "6-Day Thimphu, Punakha & Paro Photography Classic",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "f9ccb4a57dd17bb03267d463dadcafaab130ba3e9c9ecdd6af4aafeaf486e357",
       "metadata": {
-        "id": "regular-tour:6-day-thimphu-punakha-paro",
-        "title": "6-Day Thimphu, Punakha & Paro Classic",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:6-day-thimphu-punakha-paro",
+        "title": "6-Day Thimphu, Punakha & Paro Photography Classic",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-007",
         "startingRate": 53218,
-        "tourCategory": "Classic Culture",
+        "tourCategory": "Photography Tour",
         "durationDays": 6,
         "durationNights": 5,
         "destinations": [
@@ -456,7 +563,7 @@
         "entryPoint": "Paro",
         "exitPoint": "Punakha",
         "interests": [
-          "culture"
+          "photography"
         ],
         "travelSeason": [],
         "lastUpdated": "2026-08-19",
@@ -464,20 +571,20 @@
       }
     },
     {
-      "id": "regular-tour:7-day-bhutan-valley-explorer::chunk-1",
-      "recordId": "regular-tour:7-day-bhutan-valley-explorer",
-      "title": "7-Day Bhutan Valley Explorer",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "b58b812110f683687bb7fc5d2798c518173963ff91a7e22124934eaf7718aa75",
+      "id": "photography-tour:7-day-bhutan-valley-explorer::chunk-1",
+      "recordId": "photography-tour:7-day-bhutan-valley-explorer",
+      "title": "7-Day Bhutan Valley Photography Explorer",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "ec3eeb52caa1216288ddf1b31c7abefa69346ce66c1b9bfb4f6bed1a273b687b",
       "metadata": {
-        "id": "regular-tour:7-day-bhutan-valley-explorer",
-        "title": "7-Day Bhutan Valley Explorer",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:7-day-bhutan-valley-explorer",
+        "title": "7-Day Bhutan Valley Photography Explorer",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-008",
         "startingRate": 62269,
-        "tourCategory": "Nature & Culture",
+        "tourCategory": "Photography Tour",
         "durationDays": 7,
         "durationNights": 6,
         "destinations": [
@@ -489,6 +596,7 @@
         "entryPoint": "Paro",
         "exitPoint": "Phobjikha",
         "interests": [
+          "photography",
           "nature",
           "birdwatching"
         ],
@@ -498,20 +606,20 @@
       }
     },
     {
-      "id": "regular-tour:7-day-bhutan-valley-explorer::chunk-2",
-      "recordId": "regular-tour:7-day-bhutan-valley-explorer",
-      "title": "7-Day Bhutan Valley Explorer",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "8d674fb7eaab2723c58471b4c5bd3cad93c124b7db0894fa5fdae9f00b1066fd",
+      "id": "photography-tour:7-day-bhutan-valley-explorer::chunk-2",
+      "recordId": "photography-tour:7-day-bhutan-valley-explorer",
+      "title": "7-Day Bhutan Valley Photography Explorer",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "d6135748a6b38c070960fd1f8da0702900876fa2f95143ce42eb94b967515d30",
       "metadata": {
-        "id": "regular-tour:7-day-bhutan-valley-explorer",
-        "title": "7-Day Bhutan Valley Explorer",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:7-day-bhutan-valley-explorer",
+        "title": "7-Day Bhutan Valley Photography Explorer",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-008",
         "startingRate": 62269,
-        "tourCategory": "Nature & Culture",
+        "tourCategory": "Photography Tour",
         "durationDays": 7,
         "durationNights": 6,
         "destinations": [
@@ -523,6 +631,7 @@
         "entryPoint": "Paro",
         "exitPoint": "Phobjikha",
         "interests": [
+          "photography",
           "nature",
           "birdwatching"
         ],
@@ -532,54 +641,20 @@
       }
     },
     {
-      "id": "regular-tour:7-day-bhutan-valley-explorer::chunk-3",
-      "recordId": "regular-tour:7-day-bhutan-valley-explorer",
-      "title": "7-Day Bhutan Valley Explorer",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "c27c50077faaacf37f85a66dc44cab0807f081a495817634fd843498e994f334",
+      "id": "photography-tour:8-day-gangtey-phobjikha::chunk-1",
+      "recordId": "photography-tour:8-day-gangtey-phobjikha",
+      "title": "8-Day Gangtey & Phobjikha Photography Journey",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "2ae1e2ec4e362bf5b6ae9fc07d8b404c42d445e2a555026dbb8f663b93844b5a",
       "metadata": {
-        "id": "regular-tour:7-day-bhutan-valley-explorer",
-        "title": "7-Day Bhutan Valley Explorer",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-008",
-        "startingRate": 62269,
-        "tourCategory": "Nature & Culture",
-        "durationDays": 7,
-        "durationNights": 6,
-        "destinations": [
-          "Paro",
-          "Thimphu",
-          "Punakha",
-          "Phobjikha"
-        ],
-        "entryPoint": "Paro",
-        "exitPoint": "Phobjikha",
-        "interests": [
-          "nature",
-          "birdwatching"
-        ],
-        "travelSeason": [],
-        "lastUpdated": "2026-08-19",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:8-day-gangtey-phobjikha::chunk-1",
-      "recordId": "regular-tour:8-day-gangtey-phobjikha",
-      "title": "8-Day Gangtey & Phobjikha Journey",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "7f7f60243bfaef0d62c5bd832a5e82efad7c6f74531f436983393f7904c1abdc",
-      "metadata": {
-        "id": "regular-tour:8-day-gangtey-phobjikha",
-        "title": "8-Day Gangtey & Phobjikha Journey",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:8-day-gangtey-phobjikha",
+        "title": "8-Day Gangtey & Phobjikha Photography Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-009",
         "startingRate": 71321,
-        "tourCategory": "Gangtey Focus",
+        "tourCategory": "Highland Photography",
         "durationDays": 8,
         "durationNights": 7,
         "destinations": [
@@ -591,6 +666,7 @@
         "entryPoint": "Paro",
         "exitPoint": "Gangtey",
         "interests": [
+          "photography",
           "nature"
         ],
         "travelSeason": [],
@@ -599,20 +675,20 @@
       }
     },
     {
-      "id": "regular-tour:8-day-gangtey-phobjikha::chunk-2",
-      "recordId": "regular-tour:8-day-gangtey-phobjikha",
-      "title": "8-Day Gangtey & Phobjikha Journey",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "62a912fa3f5ba9caa75dfd4e8bdd62abb7d4436cf64a6498fd99a360cbfd032c",
+      "id": "photography-tour:8-day-gangtey-phobjikha::chunk-2",
+      "recordId": "photography-tour:8-day-gangtey-phobjikha",
+      "title": "8-Day Gangtey & Phobjikha Photography Journey",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "f380b5b09d4442031a294ae385159427b10ce4ca41aed6529c5bd296a1feb7bc",
       "metadata": {
-        "id": "regular-tour:8-day-gangtey-phobjikha",
-        "title": "8-Day Gangtey & Phobjikha Journey",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:8-day-gangtey-phobjikha",
+        "title": "8-Day Gangtey & Phobjikha Photography Journey",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-009",
         "startingRate": 71321,
-        "tourCategory": "Gangtey Focus",
+        "tourCategory": "Highland Photography",
         "durationDays": 8,
         "durationNights": 7,
         "destinations": [
@@ -624,6 +700,7 @@
         "entryPoint": "Paro",
         "exitPoint": "Gangtey",
         "interests": [
+          "photography",
           "nature"
         ],
         "travelSeason": [],
@@ -632,31 +709,32 @@
       }
     },
     {
-      "id": "regular-tour:8-day-gangtey-phobjikha::chunk-3",
-      "recordId": "regular-tour:8-day-gangtey-phobjikha",
-      "title": "8-Day Gangtey & Phobjikha Journey",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "cfe7f43a3dedf2959674e32483506154376cea04e8e2b457b40b7770b769ddfc",
+      "id": "photography-tour:8-day-punakha-phobjikha-depth::chunk-1",
+      "recordId": "photography-tour:8-day-punakha-phobjikha-depth",
+      "title": "8-Day Punakha & Phobjikha Photography In-Depth",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "6f1ad277daccfe8f859fe05aadfe93aca1d1495e1f90ad4d93717896c2a7909b",
       "metadata": {
-        "id": "regular-tour:8-day-gangtey-phobjikha",
-        "title": "8-Day Gangtey & Phobjikha Journey",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-009",
-        "startingRate": 71321,
-        "tourCategory": "Gangtey Focus",
+        "id": "photography-tour:8-day-punakha-phobjikha-depth",
+        "title": "8-Day Punakha & Phobjikha Photography In-Depth",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
+        "tourCode": "UH-PT-010",
+        "startingRate": 69936,
+        "tourCategory": "In-Depth Photography",
         "durationDays": 8,
         "durationNights": 7,
         "destinations": [
           "Paro",
           "Thimphu",
           "Punakha",
-          "Gangtey"
+          "Phobjikha"
         ],
         "entryPoint": "Paro",
-        "exitPoint": "Gangtey",
+        "exitPoint": "Phobjikha",
         "interests": [
+          "photography",
           "nature"
         ],
         "travelSeason": [],
@@ -665,20 +743,20 @@
       }
     },
     {
-      "id": "regular-tour:8-day-punakha-phobjikha-depth::chunk-1",
-      "recordId": "regular-tour:8-day-punakha-phobjikha-depth",
-      "title": "8-Day Punakha & Phobjikha In-Depth",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "828f41aa31db578be433950e29859c5f71f2e011d94f8eb187ac525e44c95ee9",
+      "id": "photography-tour:8-day-punakha-phobjikha-depth::chunk-2",
+      "recordId": "photography-tour:8-day-punakha-phobjikha-depth",
+      "title": "8-Day Punakha & Phobjikha Photography In-Depth",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "e141e649ddc8d9a57c7699308aa60f388e4bebed8a11596887a0ac3bc0f5dcb6",
       "metadata": {
-        "id": "regular-tour:8-day-punakha-phobjikha-depth",
-        "title": "8-Day Punakha & Phobjikha In-Depth",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:8-day-punakha-phobjikha-depth",
+        "title": "8-Day Punakha & Phobjikha Photography In-Depth",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-010",
         "startingRate": 69936,
-        "tourCategory": "In-Depth Western Bhutan",
+        "tourCategory": "In-Depth Photography",
         "durationDays": 8,
         "durationNights": 7,
         "destinations": [
@@ -689,27 +767,30 @@
         ],
         "entryPoint": "Paro",
         "exitPoint": "Phobjikha",
-        "interests": [],
+        "interests": [
+          "photography",
+          "nature"
+        ],
         "travelSeason": [],
         "lastUpdated": "2026-08-19",
         "requiresVerification": false
       }
     },
     {
-      "id": "regular-tour:8-day-punakha-phobjikha-depth::chunk-2",
-      "recordId": "regular-tour:8-day-punakha-phobjikha-depth",
-      "title": "8-Day Punakha & Phobjikha In-Depth",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "43b19088a324b3ab228dc4b25f9ec2a3e18926549d19f3470a4a1505b27d5769",
+      "id": "photography-tour:8-day-punakha-phobjikha-depth::chunk-3",
+      "recordId": "photography-tour:8-day-punakha-phobjikha-depth",
+      "title": "8-Day Punakha & Phobjikha Photography In-Depth",
+      "contentType": "photography-tour",
+      "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+      "contentHash": "86025c06d088904b5626c8eb112ec68e16cb85838d2d174479570ffee4bc22ca",
       "metadata": {
-        "id": "regular-tour:8-day-punakha-phobjikha-depth",
-        "title": "8-Day Punakha & Phobjikha In-Depth",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
+        "id": "photography-tour:8-day-punakha-phobjikha-depth",
+        "title": "8-Day Punakha & Phobjikha Photography In-Depth",
+        "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
+        "contentType": "photography-tour",
         "tourCode": "UH-PT-010",
         "startingRate": 69936,
-        "tourCategory": "In-Depth Western Bhutan",
+        "tourCategory": "In-Depth Photography",
         "durationDays": 8,
         "durationNights": 7,
         "destinations": [
@@ -720,38 +801,10 @@
         ],
         "entryPoint": "Paro",
         "exitPoint": "Phobjikha",
-        "interests": [],
-        "travelSeason": [],
-        "lastUpdated": "2026-08-19",
-        "requiresVerification": false
-      }
-    },
-    {
-      "id": "regular-tour:8-day-punakha-phobjikha-depth::chunk-3",
-      "recordId": "regular-tour:8-day-punakha-phobjikha-depth",
-      "title": "8-Day Punakha & Phobjikha In-Depth",
-      "contentType": "regular-tour",
-      "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-      "contentHash": "b2b7860313b7d13fa88040250789a71728258eb70a0de10f185698047204f6f9",
-      "metadata": {
-        "id": "regular-tour:8-day-punakha-phobjikha-depth",
-        "title": "8-Day Punakha & Phobjikha In-Depth",
-        "sourceUrl": "https://www.theunseenhimalayas.com/bhutan-tours",
-        "contentType": "regular-tour",
-        "tourCode": "UH-PT-010",
-        "startingRate": 69936,
-        "tourCategory": "In-Depth Western Bhutan",
-        "durationDays": 8,
-        "durationNights": 7,
-        "destinations": [
-          "Paro",
-          "Thimphu",
-          "Punakha",
-          "Phobjikha"
+        "interests": [
+          "photography",
+          "nature"
         ],
-        "entryPoint": "Paro",
-        "exitPoint": "Phobjikha",
-        "interests": [],
         "travelSeason": [],
         "lastUpdated": "2026-08-19",
         "requiresVerification": false
@@ -2757,7 +2810,7 @@
     "policy": 2,
     "planning": 1,
     "travel-info": 2,
-    "regular-tour": 20,
+    "photography-tour": 21,
     "land-entry-tour": 23,
     "cycling-tour": 13,
     "festival-tour": 18,

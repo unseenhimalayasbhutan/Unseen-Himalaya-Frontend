@@ -15,7 +15,7 @@ const lastModified = new Date("2026-09-10T00:00:00.000Z");
 
 const highPriorityRoutes = new Set<string>([
   "/",
-  "/bhutan-tours",
+  "/photography-tour",
   "/cultural-tours",
   "/festival-tours",
   "/bhutan-trekkings",
@@ -38,7 +38,7 @@ const routeImages: Record<string, string[]> = {
   ],
   "/about-us": ["/logo.png"],
   "/best-time": ["/Marcus Westberg Bumthang 202318.jpg"],
-  "/bhutan-tours": ["/ppp-optimized.jpg"],
+  "/photography-tour": ["/ppp-optimized.jpg"],
   "/bhutan-trekkings": ["/High mountain treks.jpg"],
   "/contact": [siteConfig.defaultImage],
   "/cultural-tours": ["/Haa Summer Festival6.jpg"],
@@ -57,7 +57,7 @@ const routeImages: Record<string, string[]> = {
 };
 
 const packageDetailRoutes = [
-  ...getPackageRoutes("/bhutan-tours", photographyShowcasePackages),
+  ...getPackageRoutes("/photography-tour", photographyShowcasePackages),
   ...getPackageRoutes("/cultural-tours", culturalShowcasePackages),
   ...getPackageRoutes("/land-entry-tours", landEntryShowcasePackages),
   ...getPackageRoutes("/cycling-tours", cyclingShowcasePackages),

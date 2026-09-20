@@ -2,7 +2,10 @@ import type { PackageShowcaseItem } from "../components/ItineraryPackageShowcase
 import { cyclingItineraries } from "./cyclingItineraries";
 import { festivalPackages } from "./festivalPackages";
 import { landEntryItineraries } from "./landEntryItineraries";
-import { photographyTourCodes } from "./photographyTourCodes";
+import {
+  photographyItineraries,
+  photographyStandardDisclaimer,
+} from "./photographyItineraries";
 import {
   itineraries,
   reservationAndCancellation,
@@ -35,6 +38,11 @@ export const packageExclusions = mergeCostItems(
 
 export const packageReservationNotes = reservationAndCancellation;
 export const packageTerms = termsAndConditions;
+export const photographyPackageTerms = [
+  ...termsAndConditions,
+  photographyStandardDisclaimer,
+  "Drone use requires advance approval and is not included unless specifically confirmed in writing.",
+];
 
 export const festivalReservationNotes = [
   "Festival and race tours should be booked early because hotel demand rises around event dates.",
@@ -75,7 +83,7 @@ export const culturalShowcasePackages = sortPackages(
 );
 
 export const photographyShowcasePackages = sortPackages(
-  itineraries.map((route) => ({
+  photographyItineraries.map((route) => ({
     slug: route.slug,
     title: route.name,
     duration: route.duration,
@@ -85,7 +93,7 @@ export const photographyShowcasePackages = sortPackages(
     theme: route.theme,
     image: route.image,
     tags: route.tags,
-    tourCode: photographyTourCodes[route.slug] || route.tourCode,
+    tourCode: route.tourCode,
     pricing: getB2cUsdPrice(route.tourCode),
     days: route.days.map((day, index) => ({
       label: `Day ${String(index + 1).padStart(2, "0")}`,

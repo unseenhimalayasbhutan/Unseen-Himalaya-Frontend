@@ -248,7 +248,7 @@ export default function Contact() {
                   <FaWhatsapp aria-hidden />
                 </a>
 
-                <Link href="/bhutan-tours" className="contact-pro-btn-secondary">
+                <Link href="/photography-tour" className="contact-pro-btn-secondary">
                   View Tours
                 </Link>
               </div>
