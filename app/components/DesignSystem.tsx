@@ -7,7 +7,7 @@ import type {
 } from "react";
 
 type Align = "left" | "center";
-type EyebrowVariant = "editorial" | "utility";
+type EyebrowVariant = "display" | "utility";
 
 type EyebrowProps = HTMLAttributes<HTMLElement> & {
   as?: ElementType;
@@ -59,7 +59,7 @@ type ImageCreditProps = HTMLAttributes<HTMLElement> & {
 
 export function Eyebrow({
   as: Component = "span",
-  variant = "editorial",
+  variant = "display",
   className = "",
   children,
   ...props
@@ -108,7 +108,7 @@ export function PageHero({
 
 export function SectionHeading({
   eyebrow,
-  eyebrowVariant = "editorial",
+  eyebrowVariant = "display",
   title,
   description,
   align = "center",

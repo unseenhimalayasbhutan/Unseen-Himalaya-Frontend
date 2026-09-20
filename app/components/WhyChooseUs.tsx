@@ -209,7 +209,7 @@ export function WhyChooseUs() {
           </Link>
         </div>
 
-        <div className="uh-guidebook-editorial">
+        <div className="uh-guidebook-feature">
           <div className="uh-guidebook-layout">
             <div className="bottom-heading">
               <h2 className="section-title">Travel Beyond the Guidebooks</h2>

@@ -4,7 +4,7 @@ import type { ChatIntent, ChatMessage, TravelerProfile } from "./types";
 export function detectIntent(question: string): ChatIntent {
   const text = cleanText(question).toLowerCase();
 
-  if (matches(text, ["ignore your instructions", "ignore previous instructions", "system prompt", "hidden prompt", "developer instructions", "confidential", "supplier rate", "supplier rates", "internal cost", "internal hotel cost", "markup", "profit"])) return "unrelated";
+  if (matches(text, ["ignore your instructions", "ignore previous instructions", "system prompt", "hidden prompt", "private instructions", "hidden instructions", "confidential", "supplier rate", "supplier rates", "internal cost", "internal hotel cost", "markup", "profit"])) return "unrelated";
   if (matches(text, ["b2b", "travel agent", "travel agency", "operator rate"])) return "b2b";
   if (matches(text, ["human", "real person", "call me", "speak to"])) return "human_agent";
   if (matches(text, ["urgent", "emergency", "complaint", "problem", "stuck"])) return "urgent";

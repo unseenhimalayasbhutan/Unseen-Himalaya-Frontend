@@ -210,17 +210,17 @@ test("contact form controls and floating chat controls are usable", async ({ pag
   await page.getByLabel("Message").fill("Please help plan a cultural Bhutan journey.");
   await expect(page.getByRole("button", { name: /submit inquiry/i })).toBeEnabled();
 
-  await page.getByRole("button", { name: "Open Jarvis" }).click();
-  await expect(page.getByLabel("Jarvis travel chat")).toBeVisible();
-  await page.getByLabel("Ask Jarvis").fill("Do you offer cultural tours?");
+  await page.getByRole("button", { name: "Open AI Chat bot" }).click();
+  await expect(page.getByLabel("AI Chat bot travel chat")).toBeVisible();
+  await page.getByLabel("Ask AI Chat bot").fill("Do you offer cultural tours?");
   await expect(page.getByRole("button", { name: /send/i })).toBeEnabled();
   await page.getByRole("button", { name: /reset/i }).click();
-  await expect(page.getByLabel("Ask Jarvis")).toHaveValue("");
+  await expect(page.getByLabel("Ask AI Chat bot")).toHaveValue("");
   await page
-    .getByRole("region", { name: "Jarvis travel chat" })
-    .getByRole("button", { name: "Close Jarvis" })
+    .getByRole("region", { name: "AI Chat bot travel chat" })
+    .getByRole("button", { name: "Close AI Chat bot" })
     .click();
-  await expect(page.getByLabel("Jarvis travel chat")).toHaveCount(0);
+  await expect(page.getByLabel("AI Chat bot travel chat")).toHaveCount(0);
 });
 
 test("upcoming events package CTAs and footer buttons remain functional", async ({ page }) => {

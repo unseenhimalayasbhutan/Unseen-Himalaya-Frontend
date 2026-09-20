@@ -29979,7 +29979,7 @@ body {
   flex: 0 0 auto;
 }
 
-.bst-clock,
+.bhutan-time-clock,
 .language-selector {
   min-height: 34px;
   display: inline-flex;
@@ -29993,7 +29993,7 @@ body {
   box-shadow: var(--shadow-subtle);
 }
 
-.bst-clock {
+.bhutan-time-clock {
   font-size: var(--font-size-xs);
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -30001,7 +30001,7 @@ body {
   white-space: nowrap;
 }
 
-.bst-clock svg,
+.bhutan-time-clock svg,
 .language-selector svg {
   width: 14px;
   height: 14px;
@@ -30225,7 +30225,7 @@ body {
     --container: min(100% - 28px, 1200px);
   }
 
-  .bst-clock,
+  .bhutan-time-clock,
   .language-selector {
     min-height: 34px;
   }

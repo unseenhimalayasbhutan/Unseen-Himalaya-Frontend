@@ -59,7 +59,7 @@ const starterPrompts = [
 const welcomeMessage: ChatMessage = {
   role: "assistant",
   content:
-    "Hi, I am Jarvis. I can help you choose Bhutan routes, check starting rates, understand SDF exclusions, plan a custom itinerary, or review the Guns N' Roses Guwahati concert package. What would you like to know?",
+    "Hi, I am the AI Chat bot. I can help you choose Bhutan routes, check starting rates, understand SDF exclusions, plan a custom itinerary, or review the Guns N' Roses Guwahati concert package. What would you like to know?",
 };
 
 export function AiChatbot() {
@@ -186,7 +186,7 @@ export function AiChatbot() {
   return (
     <div className={`ai-chatbot ${isOpen ? "is-open" : ""}`}>
       {isOpen ? (
-        <section className="ai-chatbot-panel" aria-label="Jarvis travel chat">
+        <section className="ai-chatbot-panel" aria-label="AI Chat bot travel chat">
           <div className="ai-chatbot-header">
             <div className="ai-chatbot-title">
               <span className="ai-chatbot-avatar">
@@ -194,7 +194,7 @@ export function AiChatbot() {
               </span>
 
               <div>
-                <strong>Jarvis</strong>
+                <strong>AI Chat bot</strong>
                 <span>Bhutan tours, events, rates</span>
               </div>
             </div>
@@ -203,7 +203,7 @@ export function AiChatbot() {
               type="button"
               className="ai-chatbot-icon-btn"
               onClick={() => setIsOpen(false)}
-              aria-label="Close Jarvis"
+              aria-label="Close AI Chat bot"
             >
               <X aria-hidden />
             </button>
@@ -309,8 +309,8 @@ export function AiChatbot() {
             <input
               value={inputValue}
               onChange={(event) => setInputValue(event.target.value)}
-              placeholder="Ask Jarvis about tours, events, rates..."
-              aria-label="Ask Jarvis"
+              placeholder="Ask AI Chat bot about tours, events, rates..."
+              aria-label="Ask AI Chat bot"
               maxLength={500}
             />
 
@@ -342,10 +342,10 @@ export function AiChatbot() {
         className="ai-chatbot-toggle"
         onClick={() => setIsOpen((current) => !current)}
         aria-expanded={isOpen}
-        aria-label={isOpen ? "Close Jarvis" : "Open Jarvis"}
+        aria-label={isOpen ? "Close AI Chat bot" : "Open AI Chat bot"}
       >
         <MessageCircle aria-hidden />
-        <span>Jarvis</span>
+        <span>AI Chat bot</span>
       </button>
     </div>
   );

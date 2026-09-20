@@ -229,8 +229,8 @@ export default function DocumentsPage() {
                     </div>
 
                     <p className="documents-fee-note">
-                      Avoid publishing fixed fee amounts unless they are verified
-                      with current official sources.
+                      Fees should be verified with current official sources before
+                      travel.
                     </p>
                   </div>
                 </section>
@@ -517,7 +517,7 @@ const visaProcessing = [
 ];
 
 const feeNotes = [
-  { label: "Visa / Entry Fee", value: "$50" },
+  { label: "Visa / Entry Fee", value: "$40" },
   { label: "SDF", value: "$100 per person, per day" },
   { label: "Permits", value: "Depends on route" },
   { label: "Package Inclusions", value: "Shown in quotation" },

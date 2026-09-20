@@ -166,6 +166,8 @@ const navLinks = [
   },
 ];
 
+const BHUTAN_TIME_PLACEHOLDER = "Bhutan Time / BTT --:--:--";
+
 const socialLinks = [
   {
     icon: FaFacebook,
@@ -328,7 +330,7 @@ export function Header() {
   const [desktopOpenSubmenu, setDesktopOpenSubmenu] = useState<string | null>(
     null
   );
-  const [bstTime, setBstTime] = useState(() => `BST ${getBhutanTime()}`);
+  const [bhutanTime, setBhutanTime] = useState(BHUTAN_TIME_PLACEHOLDER);
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [isTranslatorReady, setIsTranslatorReady] = useState(false);
 
@@ -375,7 +377,7 @@ export function Header() {
 
   useEffect(() => {
     const updateBhutanTime = () => {
-      setBstTime(`BST ${getBhutanTime()}`);
+      setBhutanTime(`Bhutan Time / BTT ${getBhutanTime()}`);
     };
 
     updateBhutanTime();
@@ -493,9 +495,9 @@ export function Header() {
             </p>
 
             <div className="top-bar-tools">
-              <div className="bst-clock" aria-label="Bhutan Standard Time">
+              <div className="bhutan-time-clock" aria-label="Bhutan Time, BTT">
                 <Clock aria-hidden="true" />
-                <span suppressHydrationWarning>{bstTime}</span>
+                <span>{bhutanTime}</span>
               </div>
 
               <label className="language-selector">

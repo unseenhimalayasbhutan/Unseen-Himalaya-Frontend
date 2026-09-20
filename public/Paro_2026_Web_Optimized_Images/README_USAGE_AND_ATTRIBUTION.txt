@@ -19,8 +19,8 @@ IMPORTANT RIGHTS NOTES
 7. Haa Valley is not in Paro. Use the Haa image only under “Day Trips / Excursions from Paro.”
 8. If your website remains online for years, re-open the source page before major redesign/republication to preserve an audit trail of the license.
 
-EDITORIAL RECOMMENDATION
-Use the 'web_optimized' files on the website for faster loading. Keep 'originals' as your master archive. Do not unnecessarily upload the 20–30 MB originals to production.
+WEBSITE USE
+Use the 'web_optimized' files on the website for faster loading. Keep 'originals' as your master archive.
 
 ATTRIBUTION EXAMPLE
 Photo: Christopher J. Fynn / Wikimedia Commons — CC BY-SA 4.0

@@ -13,7 +13,7 @@ Records:
 - ATTRIBUTION_SNIPPETS.txt
 - Thimphu_Photo_Contact_Sheet.jpg
 
-Editorial rule:
+Website image rule:
 When an exact commercially reusable HD photograph could not be verified, this
 pack does not substitute an unrelated image. Review the image map for gaps.
 

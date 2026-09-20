@@ -519,12 +519,6 @@ export default function CurrencyPage() {
                     </div>
                   </div>
 
-                  <p className="currency-text">
-                    Exchange rates change frequently. Use the table below only
-                    as a layout reference and update the numbers before
-                    publishing.
-                  </p>
-
                   <div className="currency-converter-grid">
                     {exchangeRates.map((rate) => (
                       <div key={rate.currency} className="currency-converter-item">

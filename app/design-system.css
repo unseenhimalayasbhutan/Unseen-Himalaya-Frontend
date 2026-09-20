@@ -345,7 +345,7 @@ small {
   color: var(--color-accent-light);
 }
 
-.ds-eyebrow-editorial,
+.ds-eyebrow-display,
 .ds-section-heading-eyebrow {
   font-family: var(--font-script) !important;
   font-size: clamp(1.9rem, 3vw, 2.75rem);
@@ -762,7 +762,7 @@ a:focus-visible {
 .desktop-social-icon,
 .mobile-social-icon,
 .language-selector,
-.bst-clock {
+.bhutan-time-clock {
   border-color: var(--color-border) !important;
   background: var(--color-bg-card) !important;
   color: var(--color-accent-light) !important;

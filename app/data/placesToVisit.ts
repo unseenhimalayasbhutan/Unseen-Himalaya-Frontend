@@ -142,7 +142,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Motithang, Thimphu",
         summary:
           "A forested preserve above the city where visitors can see the takin, Bhutan's unusual national animal, in a semi-natural hillside setting. It works particularly well for families and travellers interested in wildlife.",
-        note: "Animal visibility varies; never promise staged sightings.",
+        note: "Animal visibility varies naturally throughout the day.",
         image: `${thimphuBase}/04_Motithang_Takin_Preserve.jpg`,
       },
       {
@@ -224,7 +224,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Thimphu",
         summary:
           "A working institute where students train in Bhutan's traditional arts including painting, carving, sculpture, embroidery, tailoring and weaving.",
-        note: "Do not advertise guaranteed classroom access; it remains a working educational institution.",
+        note: "Visitor access follows the institute's working academic schedule.",
         image: "/zorig chusum 4.jpg",
       },
       {
@@ -317,7 +317,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Thimphu",
         summary:
           "A chance to see Bhutan's national sport in a real competition or practice environment when archery is taking place.",
-        note: "Never promise a match and keep visitors well outside shooting lanes.",
+        note: "Archery activity depends on the local schedule; visitors should remain in safe viewing areas.",
         image: `${thimphuBase}/10_Changlimithang_Stadium.jpg`,
       },
       {
@@ -352,7 +352,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Above Thimphu",
         summary:
           "An active nunnery above the city offering a respectful introduction to women's monastic life.",
-        note: "Do not photograph residents or prayer sessions without permission.",
+        note: "Photography should be requested respectfully, especially around residents and prayer sessions.",
         image: "/Bhutan - Moshe Shai - 382.jpg",
       },
       {
@@ -364,7 +364,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "North of Thimphu",
         summary:
           "A historic monastic school north of Thimphu, best suited to visitors interested in Buddhist education and religious institutions.",
-        note: "Do not promise classroom access or interaction with students.",
+        note: "Access to classroom areas and student interaction depends on monastery permissions.",
         image: `${thimphuBase}/11_Dechen_Phodrang_Monastery.jpg`,
       },
       {
@@ -483,7 +483,7 @@ export const destinationChapters: DestinationChapter[] = [
       { name: "Jhomolhari Mountain Festival", date: "14-15 October 2026", note: "Tentative; reconfirm before booking." },
       { name: "Dechenphu Tshechu", date: "21 October 2026", note: "Tentative; reconfirm before booking." },
       { name: "Druk Wangyel Tshechu at Dochula", date: "13 December 2026", note: "Tentative; reconfirm before booking." },
-      { name: "Rhododendron Festival at Lamperi", date: "TBC", note: "Do not hard-code until confirmed." },
+      { name: "Rhododendron Festival at Lamperi", date: "TBC", note: "Dates are confirmed annually." },
     ],
     faqs: [
       { question: "How many days should I spend in Thimphu?", answer: "Two nights covers the major highlights; three nights allows a monastery hike and slower city experiences." },
@@ -531,7 +531,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Paro",
         summary:
           "A major fortress-monastery above the Paro Chhu and one of Bhutan's finest dzong ensembles. Its courtyards, timberwork and dramatic approach via the river create strong historical context.",
-        note: "Bhutanese dzongs are on the UNESCO Tentative List; do not label Rinpung Dzong an inscribed World Heritage Site.",
+        note: "Bhutanese dzongs are on the UNESCO Tentative List; Rinpung Dzong is not currently an inscribed World Heritage Site.",
         image: `${paroBase}/02_Rinpung_Dzong.jpg`,
       },
       {
@@ -623,7 +623,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Paro",
         summary:
           "A graceful private palace compound inspired by Zangto Pelri, the celestial paradise associated with Guru Rinpoche.",
-        note: "Do not advertise interior access; respect privacy and security.",
+        note: "Interior access is restricted; visits focus on exterior views and historical context.",
         image: "/Ben-Richards-Tourism-Bhutan-014.jpg",
       },
       {
@@ -783,7 +783,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Between Paro and Haa",
         summary:
           "A high road pass near 4,000 metres with prayer flags, alpine scenery and possible Himalayan views.",
-        note: "Avoid unsupported claims such as Bhutan's highest motorable pass; weather can change rapidly.",
+        note: "Weather can change rapidly at this altitude, so clear mountain views are not guaranteed.",
         image: `${paroBase}/12_Chele_La_Pass.jpg`,
       },
       {
@@ -972,7 +972,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Above Punakha Valley",
         summary:
           "A quieter monastic educational setting above the valley, appropriate for visitors interested in Buddhist study and monastic life.",
-        note: "Arrange in advance; do not promise classroom access.",
+        note: "Advance arrangement is recommended; classroom access depends on institute permissions.",
         image: `${punakhaBase}/12_Nalanda_Buddhist_Institute.jpg`,
       },
       {
@@ -1532,7 +1532,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa",
         summary:
           "A historic dzong complex whose current functions mean it should be presented primarily through exterior and historical context.",
-        note: "Do not promise unrestricted entry or photography.",
+        note: "Entry and photography may be restricted by current site operations.",
         image: `${haaBase}/04_Wangchuck_Lo_Dzong_Haa_Dzong.jpg`,
       },
       {
@@ -1669,7 +1669,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa",
         summary:
           "A seasonal celebration of Haa's food, culture and highland lifestyle when scheduled.",
-        note: "Do not confuse it with the October Haa Tshechu; confirm annual dates.",
+        note: "This is separate from the October Haa Tshechu; annual dates should be reconfirmed.",
         image: "/Haa Summer Festival6.jpg",
       },
       {
@@ -1692,7 +1692,7 @@ export const destinationChapters: DestinationChapter[] = [
         location: "Haa",
         summary:
           "Community-led interpretation of Haa's strong traditions associated with Ap Chundu and the relationship between sacred landscape and local identity.",
-        note: "Do not stage sacred rituals or promise restricted ceremonies.",
+        note: "Sacred rituals and restricted ceremonies are respected as community traditions.",
         image: "/Gentle eyes behind a wrathful mask.jpg",
       },
       {
@@ -1728,7 +1728,7 @@ export const destinationChapters: DestinationChapter[] = [
       "Spring and autumn are comfortable for walking and valley views. Summer is lush but wetter. Winter is quiet and atmospheric, while Chele La can receive snow or ice.",
     events: [
       { name: "Haa Tshechu", date: "19-21 October 2026", note: "Tentative; reconfirm before booking." },
-      { name: "Haa Summer Festival / seasonal cultural event", date: "Confirm annually", note: "Do not hard-code an unverified date." },
+      { name: "Haa Summer Festival / seasonal cultural event", date: "Confirm annually", note: "Dates are announced seasonally." },
     ],
     faqs: [
       { question: "Is Haa worth staying overnight?", answer: "Yes. A day trip shows the main temples, but an overnight stay allows food, villages and the quiet evening atmosphere." },
