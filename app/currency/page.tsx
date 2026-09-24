@@ -57,11 +57,6 @@ type MonumentFee = {
   href?: string;
 };
 
-type ClosureDay = {
-  date: string;
-  observance: string;
-};
-
 export default function CurrencyPage() {
   return (
     <>
@@ -652,29 +647,16 @@ function MuseumsFeesSection() {
           </p>
         </article>
 
-        <article>
-          <h3>Local-only auspicious days</h3>
-          <p>
-            Designated monuments and sacred sites are open only to locals on the
-            following Bhutanese lunar calendar dates.
-          </p>
-          <ul>
-            {closureDays.map((day) => (
-              <li key={day.date}>
-                <strong>{day.date}</strong>
-                <span>{day.observance}</span>
-              </li>
-            ))}
-          </ul>
-        </article>
       </div>
 
       <div className="currency-soft-note">
         <AlertCircle aria-hidden />
         <p>
-          Fees, opening hours, and USD equivalents can change without notice.
-          Confirm final rates with your guide, ticket counter, or official
-          tourism contact before travel.
+          Fees, opening hours, and USD equivalents can change without notice. As
+          of the latest official Bhutan Travel guidance checked for this update,
+          foreign visitors may visit monuments whenever they are open to the
+          general public. Confirm final rates with your guide, ticket counter,
+          or official tourism contact before travel.
         </p>
       </div>
     </section>
@@ -1042,34 +1024,6 @@ const monumentFees: MonumentFee[] = [
     notes: "Confirm current rate locally.",
   },
 ];
-
-const closureDays: ClosureDay[] = [
-  {
-    date: "15th day of the 1st month",
-    observance: "Chotrul Duchen",
-  },
-  {
-    date: "10th day of the 3rd month",
-    observance: "Zhabdrung Kuchoe",
-  },
-  {
-    date: "15th day of the 4th month",
-    observance: "Saga Dawa Duchen / Lord Buddha Parinirvana",
-  },
-  {
-    date: "4th day of the 6th month",
-    observance: "Chokhor Duchen / First Sermon of Lord Buddha",
-  },
-  {
-    date: "10th day of the 5th month",
-    observance: "Birth Anniversary of Guru Rinpoche",
-  },
-  {
-    date: "22nd day of the 9th month",
-    observance: "Lha Bab Duchen / Descending Day of Lord Buddha",
-  },
-];
-
 
 const moneySavingTips = [
   "Exchange money at banks or official counters instead of informal sources.",

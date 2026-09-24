@@ -229,8 +229,9 @@ export default function DocumentsPage() {
                     </div>
 
                     <p className="documents-fee-note">
-                      Fees should be verified with current official sources before
-                      travel.
+                      Concessionary/regional SDF rates may apply. See our{" "}
+                      <Link href="/sdf">detailed SDF guidance</Link>, and verify
+                      fees with current official sources before travel.
                     </p>
                   </div>
                 </section>
@@ -518,7 +519,11 @@ const visaProcessing = [
 
 const feeNotes = [
   { label: "Visa / Entry Fee", value: "$40" },
-  { label: "SDF", value: "$100 per person, per day" },
+  {
+    label: "SDF",
+    value:
+      "Varies by nationality and age; standard international adult rate USD 100 per night.",
+  },
   { label: "Permits", value: "Depends on route" },
   { label: "Package Inclusions", value: "Shown in quotation" },
 ];
@@ -622,7 +627,7 @@ const weProvide = [
   "Pre-arrival document checklist",
   "Travel confirmation assistance",
   "Entry document reminders",
-  "comprehensive assistance throughout your journey, ensuring every included service is delivered smoothly and every detail is taken care of.",
+  "Comprehensive journey assistance",
   "Emergency contact coordination in Bhutan",
 ];
 

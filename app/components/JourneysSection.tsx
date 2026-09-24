@@ -11,6 +11,7 @@ type Destination = {
   title: string;
   text: string;
   highlight: string;
+  href: string;
 };
 
 type TourPackage = {
@@ -33,30 +34,35 @@ const destinations: Destination[] = [
     title: "Thimphu",
     text: "Explore Bhutan’s capital city, ancient monasteries, museums, markets, and modern Bhutanese life.",
     highlight: "Capital culture • Museums • Cafés • Monasteries",
+    href: "/places-to-visit#thimphu",
   },
   {
     image: "/By Marcus Westberg _ Paro _ 2023_18.jpg",
     title: "Paro",
     text: "Visit the iconic Tiger’s Nest Monastery, beautiful valleys, sacred temples, and traditional villages.",
     highlight: "Tiger’s Nest • Valley views • Temples • Heritage",
+    href: "/places-to-visit#paro",
   },
   {
     image: "/Haa by Marcus Westberg26.jpg",
     title: "Haa",
     text: "Discover a peaceful hidden valley known for its untouched landscapes, village life, and quiet mountain charm.",
     highlight: "Hidden valley • Slow travel • Local life • Mountain air",
+    href: "/places-to-visit#haa",
   },
   {
     image: "/Punakha by Marcus Westberg29.jpg",
     title: "Punakha",
     text: "Experience the majestic Punakha Dzong, river valleys, suspension bridges, and warm scenic countryside.",
     highlight: "Dzong beauty • River valleys • Bridges • Scenic countryside",
+    href: "/places-to-visit#punakha",
   },
   {
     image: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
     title: "Gangtey",
     text: "Journey to the beautiful Phobjikha Valley, home to peaceful landscapes and the black-necked cranes.",
     highlight: "Phobjikha • Cranes • Nature • Serenity",
+    href: "/places-to-visit#gangtey-phobjikha",
   },
 ];
 
@@ -186,7 +192,7 @@ export function JourneysSection() {
                     <strong>{selectedDestination.highlight}</strong>
                   </div>
 
-                  <Link href="/cultural-tours" className="uh-journeys-link-btn">
+                  <Link href={selectedDestination.href} className="uh-journeys-link-btn">
                     Explore Destination
                     <ArrowRight aria-hidden="true" />
                   </Link>
@@ -230,7 +236,7 @@ export function JourneysSection() {
         </div>
 
         <div className="uh-journeys-action-row">
-          <Link href="/photography-tour" className="uh-journeys-btn-primary">
+          <Link href="/places-to-visit" className="uh-journeys-btn-primary">
             Explore Destinations
             <ArrowRight aria-hidden="true" />
           </Link>
@@ -275,7 +281,7 @@ export function JourneysSection() {
                 <Link
                   key={pkg.title}
                   className={`uh-package-card uh-package-card-${index + 1}`}
-                  href={`/cultural-tours#itinerary-${pkg.slug}`}
+                  href={`/cultural-tours/${pkg.slug}`}
                   onMouseEnter={() => setActivePackage(index)}
                   onFocus={() => setActivePackage(index)}
                   aria-current={activePackage === index ? "true" : undefined}
@@ -361,7 +367,7 @@ export function JourneysSection() {
                       <strong>{packages[activePackage].route}</strong>
                     </div>
                     <Link
-                      href={`/cultural-tours#itinerary-${packages[activePackage].slug}`}
+                      href={`/cultural-tours/${packages[activePackage].slug}`}
                       className="uh-package-preview-btn"
                     >
                       Enquire

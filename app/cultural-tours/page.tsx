@@ -74,7 +74,7 @@ export default function CulturalToursPage() {
               <p>
                 These cultural and nature journeys are designed for travelers who want more
                 than sightseeing: they want stories, rituals, architecture, food,
-                dress, arts, spiritual sites, breath taking views and meaningful encounters.
+                dress, arts, spiritual sites, breathtaking views, and meaningful encounters.
               </p>
 
               <div className="tour-pro-hero-actions">
@@ -108,7 +108,7 @@ export default function CulturalToursPage() {
             <SectionHeader
               eyebrow="The Bhutanese Way"
               title="Culture is not staged. It is part of daily life."
-              subtitle="From national dress and prayer flags to dzongs, local markets, archery, farmhouses, temple rituals, and Majestic mounatins. Bhutan's identity can be experienced in real community settings."
+              subtitle="From national dress and prayer flags to dzongs, local markets, archery, farmhouses, temple rituals, and majestic mountains, Bhutan's identity can be experienced in real community settings."
             />
 
             <div className="cultural-value-grid-clean">

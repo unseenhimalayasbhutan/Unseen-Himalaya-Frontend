@@ -19,6 +19,11 @@ type SdfSection = {
   points: string[];
 };
 
+type SdfRate = {
+  traveller: string;
+  rate: string;
+};
+
 export default function SdfPage() {
   return (
     <>
@@ -56,11 +61,50 @@ export default function SdfPage() {
               <span>Current official snapshot</span>
               <strong>USD 100 per adult per night for most international visitors.</strong>
               <p>
-                Children aged 6 to under 12 receive a 50% concession, children
-                under 6 are exempt, and Indian nationals follow the official
-                Nu./INR rate. We reconfirm applicable rules for your dates.
+                Rates vary by nationality and age. Children aged 6-11 receive a
+                50% concession, children under 6 are exempt, and regional rates
+                apply for guests from India and Bangladesh.
               </p>
             </aside>
+          </div>
+        </section>
+
+        <section className="tour-pro-section tour-pro-section-white" id="rates">
+          <div className="container sdf-rates-grid">
+            <div className="places-section-heading">
+              <span>2026 SDF rates</span>
+              <h2>One published government fee, applied by traveller category.</h2>
+              <p>
+                The SDF is charged per person, per night. For most international
+                visitors, the standard adult rate is USD 100 per night; children
+                and eligible regional guests follow the concessionary rates below.
+              </p>
+            </div>
+
+            <div className="sdf-rate-card" aria-label="SDF rates in 2026">
+              {sdfRates.map((item) => (
+                <div key={item.traveller}>
+                  <span>{item.traveller}</span>
+                  <strong>{item.rate}</strong>
+                </div>
+              ))}
+            </div>
+
+            <div className="sdf-rate-note">
+              <p>
+                The current USD 100 rate is a 50% discount on the USD 200 base
+                rate and is officially confirmed through 31 August 2027. We
+                itemise the SDF separately in quotations and confirm the rate
+                applicable to your travel dates in writing.
+              </p>
+              <a
+                href="https://bhutan.travel/faqs"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Check the official Bhutan Travel FAQ
+              </a>
+            </div>
           </div>
         </section>
 
@@ -176,6 +220,14 @@ const sdfPillars = [
     text: "Training, mentorship, skills development, and further education are part of the long-term value Bhutan aims to create.",
     icon: FileText,
   },
+];
+
+const sdfRates: SdfRate[] = [
+  { traveller: "Adults (12 and over)", rate: "USD 100" },
+  { traveller: "Children 6-11", rate: "USD 50" },
+  { traveller: "Children under 6", rate: "Free" },
+  { traveller: "Guests from India", rate: "Nu./INR 1,200; 600 for children under 12" },
+  { traveller: "Guests from Bangladesh", rate: "USD 15; visa fee waived" },
 ];
 
 const sdfSections: SdfSection[] = [

@@ -16279,6 +16279,7 @@ img {
 
 .documents-fee-item {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 14px;
   padding: 13px 14px;
@@ -16289,7 +16290,10 @@ img {
 }
 
 .documents-fee-item strong {
+  max-width: 62%;
   color: var(--dark);
+  line-height: 1.45;
+  text-align: right;
 }
 
 .documents-fee-note {
@@ -34819,6 +34823,65 @@ textarea {
   font-size: var(--font-size-md);
 }
 
+.sdf-rates-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1fr);
+  gap: clamp(22px, 4vw, 44px);
+  align-items: start;
+}
+
+.sdf-rate-card {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: clamp(18px, 2.5vw, 26px);
+  background: var(--color-bg-card);
+  box-shadow: var(--shadow-subtle);
+}
+
+.sdf-rate-card div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sdf-rate-card div:last-child {
+  border-bottom: 0;
+}
+
+.sdf-rate-card span {
+  color: var(--muted, var(--color-text-secondary));
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.sdf-rate-card strong {
+  max-width: 54%;
+  color: var(--dark, var(--color-text-secondary));
+  font-size: var(--font-size-base);
+  line-height: 1.45;
+  text-align: right;
+}
+
+.sdf-rate-note {
+  grid-column: 2;
+  color: var(--muted, var(--color-text-secondary));
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.sdf-rate-note a,
+.documents-fee-note a {
+  color: var(--color-accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .places-section-heading,
 .places-group-heading {
   max-width: 940px;
@@ -35384,10 +35447,15 @@ textarea {
   .sdf-hero-grid,
   .places-two-column,
   .sdf-content-grid,
+  .sdf-rates-grid,
   .places-paro-grid,
   .places-destination-hero,
   .places-destination-bottom {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sdf-rate-note {
+    grid-column: auto;
   }
 
   .places-destination-nav {
@@ -35424,9 +35492,22 @@ textarea {
   .sdf-info-card,
   .places-guidance-card,
   .sdf-pillar-card,
+  .sdf-rate-card,
   .places-hero-card,
   .sdf-quick-card {
     border-radius: var(--radius-sm);
+  }
+
+  .sdf-rate-card div,
+  .documents-fee-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sdf-rate-card strong,
+  .documents-fee-item strong {
+    max-width: none;
+    text-align: left;
   }
 }
 
@@ -35727,6 +35808,7 @@ textarea {
   .festival-event-card,
   .sdf-theme-card,
   .sdf-pillar-card,
+  .sdf-rate-card,
   .about-pro-hero-card,
   .about-pro-difference-item,
   .about-pro-process-item,

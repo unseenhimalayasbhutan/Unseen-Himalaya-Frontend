@@ -43,7 +43,8 @@ export default function AboutPage() {
 
                 <p className="about-pro-hero-description">
                   Unseen Himalayas Bhutan specializes in curated travel experiences
-                  across Bhutan. Backed by 4 years of experience in the tourism industry, we bring in in-depth local knowledge and reliable services.We are also committed to
+                  across Bhutan. Backed by four years of tourism experience, we bring
+                  in-depth local knowledge and reliable service. We are also committed to
                   showcasing Bhutan&apos;s rich culture, landscapes, spirituality,
                   hospitality, and local way of life through professional travel
                   planning and reliable ground handling.
@@ -70,7 +71,6 @@ export default function AboutPage() {
               </div>
 
               <div className="about-pro-hero-card">
-                
                 <p className="about-pro-hero-card-kicker">Our Promise</p>
                 <h2>Travel beyond sightseeing.</h2>
                 <p>
@@ -79,8 +79,7 @@ export default function AboutPage() {
                   everyday hospitality.
                 </p>
                 <div className="about-pro-hero-card-footer">
-                  
-                  <span aria-hidden="true">4 years of experience in tourism industry</span>
+                  <span aria-hidden="true">4 years of tourism industry experience</span>
                 </div>
               </div>
             </div>
@@ -106,7 +105,7 @@ export default function AboutPage() {
                 company specializing in curated travel experiences across
                 Bhutan. Our company focuses on creating meaningful travel
                 experiences for international travelers, travel partners, and
-                travel agents seeking professional ground handling services and
+                travel agencies seeking professional ground handling services and
                 reliable operational support in Bhutan.
               </p>
               <p>
@@ -139,7 +138,7 @@ export default function AboutPage() {
             </div>
 
             <h2 className="about-pro-section-title about-pro-center-title">
-              Complete Bhutan travel services for guests, partners, and travel agents.
+              Complete Bhutan travel services for guests, partners, and travel agencies.
             </h2>
 
             <div className="about-pro-assurance-grid">
@@ -173,9 +172,10 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="about-pro-section-text">
-                  We support international travelers, travel partners, and travel agents with responsive communication, personalized guest
-                  handling, flexible itinerary planning, and strong destination
-                  knowledge across Bhutan.
+                  We support international travelers, travel partners, and travel
+                  agencies with responsive communication, personalized guest handling,
+                  flexible itinerary planning, and strong destination knowledge across
+                  Bhutan.
                 </p>
 
                 <div className="about-pro-difference-list">
@@ -274,7 +274,7 @@ export default function AboutPage() {
                 <p className="about-pro-cta-kicker">Partner With Unseen Himalayas Bhutan</p>
                 <h2>Let&apos;s build memorable Bhutan journeys together.</h2>
                 <p>
-                  Whether you are a traveler, travel partner, or travel agents,
+                  Whether you are a traveler, travel partner, or travel agency,
                   our team is ready to support your Bhutan travel requirements
                   with reliable planning and professional ground handling.
                 </p>
@@ -301,7 +301,6 @@ export default function AboutPage() {
 
 const heroTrust = [
   "Bhutan-based destination management company",
-  
   "Professional ground handling and travel support",
 ];
 
@@ -309,7 +308,7 @@ const stats: StatItem[] = [
   {
     number: "GIT",
     label: "Group inclusive tour",
-    note: "Group inclusive tour brings traveler for expertly curated, hassel free journeys.",
+    note: "Professionally coordinated group journeys designed for smooth, hassle-free travel throughout Bhutan.",
   },
   {
     number: "DMC",
@@ -319,7 +318,7 @@ const stats: StatItem[] = [
   {
     number: "B2B",
     label: "Travel Partner Support",
-    note: "Ground handling and itinerary support for travel partners and travel agents.",
+    note: "Ground handling and itinerary support for travel partners and travel agencies.",
   },
   {
     number: "FIT",
@@ -375,7 +374,7 @@ const services: CardItem[] = [
     marker: "08",
     title: "Travel Consultation & Itinerary Planning",
     description:
-      "Professional itinerary planning for travelers, agencies, and travel agents seeking Bhutan expertise.",
+      "Professional itinerary planning for travelers and agencies seeking Bhutan expertise.",
   },
 ];
 
@@ -414,7 +413,7 @@ const partnerReasons: CardItem[] = [
     marker: "06",
     title: "Long-Term Partnership Approach",
     description:
-      "A relationship-focused approach for partners and travel agents seeking dependable collaboration.",
+      "A relationship-focused approach for partners and agencies seeking dependable collaboration.",
   },
 ];
 
@@ -435,8 +434,8 @@ const companyInfo: CompanyInfoItem[] = [
     value: "50001306",
   },
   {
-    label: "Experience in tourism industry",
-    value: "4 years ",
+    label: "Tourism Experience",
+    value: "4 years",
   },
   {
     label: "Office Address",

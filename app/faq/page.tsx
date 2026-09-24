@@ -180,9 +180,9 @@ const faqCategories: FAQCategory[] = [
       {
         id: "booking-0",
         question:
-          "What is the difference between booking directly with Unseen Himalaya and booking through an overseas travel agent?",
+          "What is the difference between booking directly with Unseen Himalayas Bhutan and booking through an overseas travel agent?",
         answer:
-          "Unseen Himalaya is based in Bhutan, so you work directly with the team that coordinates your hotels, guide, transport, route, and local arrangements. Overseas agents usually work through a local Bhutanese operator anyway, so direct booking can make communication faster and planning more transparent.",
+          "Unseen Himalayas Bhutan is based in Bhutan, so you work directly with the team that coordinates your hotels, guide, transport, route, and local arrangements. Overseas agents usually work through a local Bhutanese operator anyway, so direct booking can make communication faster and planning more transparent.",
       },
       {
         id: "booking-1",
@@ -310,11 +310,11 @@ const faqCategories: FAQCategory[] = [
         id: "health-0",
         question: "Do I need travel insurance?",
         answer:
-          "Yes. Comprehensive travel insurance is strongly recommended and may be required depending on your trip type. It should cover medical care, emergency evacuation, trip cancellation, lost luggage, and trekking if applicable.",
+          "Travel insurance is not currently a general entry requirement for Bhutan, but we strongly recommend comprehensive coverage. Certain activities, suppliers, or specialist trips may have their own insurance requirements.",
       },
       {
         id: "health-1",
-        question: "How is Unseen Himalaya different from other travel agencies?",
+        question: "How is Unseen Himalayas Bhutan different from other travel agencies?",
         answer:
           "We focus on personalized planning, local knowledge, realistic pacing, respectful cultural access, and responsive on-ground coordination. Our goal is to create a journey that feels authentic, smooth, and carefully handled.",
       },

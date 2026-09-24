@@ -262,7 +262,7 @@ export const itineraries: ItineraryRoute[] = [
           "Scenic drive to Punakha via Dochula Pass",
           "Stop at Dochula Pass for Himalayan views",
           "Optional short nature hike to Lungchutse",
-          "Visit Chimmi Lhakhang (Temple of the Divine Madman)",
+          "Visit Chimi Lhakhang (Temple of the Divine Madman)",
           "Check-in at hotel in Punakha",
           "Overnight stay in Punakha"
         ]
@@ -422,7 +422,7 @@ export const itineraries: ItineraryRoute[] = [
       {
         "title": "Day 03: Punakha – Drive to Paro",
         "activities": [
-          "Visit Chimmi Lhakhang (Fertility Temple)",
+          "Visit Chimi Lhakhang (Fertility Temple)",
           "Gentle village walk through Mesina village",
           "Drive back to Paro via Dochula Pass & Chuzom",
           "Visit Rinpung Dzong (Paro Dzong)",
@@ -504,7 +504,7 @@ export const itineraries: ItineraryRoute[] = [
           "Drive to Punakha via Dochula Pass (approx. 2 hrs)",
           "Stop at Dochula Pass – 108 Chortens & Himalayan views",
           "Optional short nature hike (subject to interest)",
-          "Visit Chimmi Lhakhang (Fertility Temple)",
+          "Visit Chimi Lhakhang (Fertility Temple)",
           "Village walk through Sopsokha / Metshina",
           "Overnight stay in Punakha"
         ]
@@ -713,7 +713,7 @@ export const itineraries: ItineraryRoute[] = [
       {
         "title": "Day 04: Punakha – Phobjikha (Gangtey)",
         "activities": [
-          "Visit Chimmi Lhakhang (Fertility Temple)",
+          "Visit Chimi Lhakhang (Fertility Temple)",
           "Gentle village walk through Sopsokha / Metsina Village",
           "Scenic drive via Wangdue & mountain landscapes",
           "Arrive in Phobjikha Valley (black-necked crane region)",
@@ -820,7 +820,7 @@ export const itineraries: ItineraryRoute[] = [
   {
     "title": "Day 04: Punakha – Drive to Gangtey",
     "activities": [
-      "Visit Chimmi Lhakhang (Fertility Temple)",
+      "Visit Chimi Lhakhang (Fertility Temple)",
       "Gentle village walk through Sopsokha / Metsina Village",
       "Brief stop at Wangdue Phodrang town & Dzong viewpoint",
       "Scenic drive to Gangtey / Phobjikha Valley",
@@ -921,7 +921,7 @@ export const itineraries: ItineraryRoute[] = [
       "Scenic drive to Punakha via Dochula Pass",
       "Stop at Dochula Pass (108 chortens & Himalayan views)",
       "Stop at Lamperi Botanical Garden (Rhododendrons, Birds & Zip Line Adventure)",
-      "Visit Chimmi Lhakhang (Fertility Temple)",
+      "Visit Chimi Lhakhang (Fertility Temple)",
       "Gentle village walk through Sopsokha / Metsina Village",
       "Visit Punakha Dzong (river confluence fortress)",
       "Overnight stay in Punakha (1,350 m)"
