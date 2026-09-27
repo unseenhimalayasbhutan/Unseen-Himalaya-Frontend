@@ -30,7 +30,7 @@ describe("shared interactive controls", () => {
     fireEvent.focus(tour);
     expect(tour).toHaveAttribute(
       "href",
-      "/cultural-tours#itinerary-5-day-classic-western-bhutan",
+      "/cultural-tours/5-day-classic-western-bhutan",
     );
     expect(tour).toHaveAttribute("aria-current", "true");
     expect(tour).toHaveTextContent(

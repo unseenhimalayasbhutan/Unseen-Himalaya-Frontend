@@ -19,19 +19,34 @@ import { siteConfig } from "../siteConfig";
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
-  { label: "About Bhutan", href: "/about-bhutan" },
+  { label: "Discover Bhutan", href: "/about-bhutan" },
+  { label: "Why Visit Bhutan", href: "/why-visit" },
+  { label: "Bhutan Facts", href: "/facts" },
+  { label: "Culture and Heritage", href: "/gnh-philosophies" },
+  { label: "Seasons in Bhutan", href: "/seasons" },
+  { label: "Places to Visit", href: "/places-to-visit" },
+  { label: "Bhutan Tour Packages", href: "/bhutan-tours" },
+  { label: "Cultural & Nature Tours", href: "/cultural-tours" },
   { label: "Photography Tours", href: "/photography-tour" },
   { label: "Festival Tours", href: "/festival-tours" },
+  { label: "Cycling Tours", href: "/cycling-tours" },
+  { label: "Land-Entry Tours", href: "/land-entry-tours" },
+  { label: "Customizable Tours", href: "/optional-tours" },
+  { label: "Upcoming Events", href: "/upcoming-events" },
   { label: "Contact", href: "/contact" },
 ];
 
 const travelLinks = [
-  { label: "Documents Required", href: "/documents" },
-  { label: "Best Time to Visit", href: "/best-time" },
-  { label: "Currency & Payments", href: "/currency" },
-  
-  { label: "Cultural & Nature Tours", href: "/cultural-tours" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Plan Your Trip", href: "/best-time" },
+  { label: "Visa and Entry", href: "/documents" },
+  { label: "SDF and Trip Costs", href: "/sdf" },
+  { label: "Currency and Payments", href: "/currency" },
+  { label: "Flights and Getting Around", href: "/flights-getting-around" },
+  { label: "Festival Calendar", href: "/festival-calendar" },
+  { label: "Travel FAQs", href: "/faq" },
+  { label: "Legal Documents", href: "/legal-documents" },
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms" },
 ];
 
 const socialLinks = [

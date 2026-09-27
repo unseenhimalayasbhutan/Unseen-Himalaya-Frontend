@@ -1,64 +1,65 @@
 import {
-  AlertTriangle,
-  CalendarDays,
   CheckCircle,
-  CreditCard,
   FileText,
-  Globe2,
+  Lock,
   Mail,
-  Plane,
-  RefreshCcw,
-  Scale,
+  Megaphone,
+  Share2,
   ShieldCheck,
-  Users,
+  UserCheck,
 } from "lucide-react";
+import Link from "next/link";
 
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { CtaSection } from "../components/CtaSection";
 import { siteConfig } from "../siteConfig";
 
-type PolicySection = {
+type PrivacyIcon = typeof FileText;
+
+type PrivacySection = {
   id: string;
-  icon: typeof FileText;
+  icon: PrivacyIcon;
   eyebrow: string;
   title: string;
   description: string;
   points: string[];
 };
 
-type PolicyHighlight = {
-  icon: typeof FileText;
+type PrivacyHighlight = {
+  icon: PrivacyIcon;
   title: string;
   description: string;
 };
 
-export default function PoliciesPage() {
+export default function PrivacyPolicyPage() {
   return (
     <>
       <Header />
 
       <main className="legal-pro-page policies-pro-page">
-        
         <section className="legal-pro-section legal-pro-section-white policies-pro-overview-section">
           <div className="legal-pro-section-heading">
-              <div className="legal-pro-section-label">
-                <span />
-                Policy Details
-                <span />
-              </div>
-
-              <h1>Important booking policies for Bhutan travel.</h1>
-
-              <p>
-                These policies are designed to help guests understand booking
-                confirmation, payments, cancellations, refunds, safety, privacy,
-                and responsible conduct before confirming a tour.
-              </p>
+            <div className="legal-pro-section-label">
+              <span />
+              Privacy Policy
+              <span />
             </div>
+
+            <h1>How we handle traveller and inquiry information.</h1>
+
+            <p>
+              This page explains how Unseen Himalayas Bhutan uses information
+              submitted through our website, email, WhatsApp, forms, quotation
+              process, and booking administration. Booking terms, payment rules,
+              cancellations, and refunds are handled separately on the{" "}
+              <Link href="/terms">Booking Terms & Conditions</Link> page.
+            </p>
+          </div>
+
           <div className="container">
             <div className="legal-pro-overview-grid policies-pro-overview-grid">
-              {policyHighlights.map((item) => (
+              {privacyHighlights.map((item) => (
                 <article key={item.title} className="legal-pro-overview-card">
                   <div className="legal-pro-overview-icon">
                     <item.icon aria-hidden="true" />
@@ -73,18 +74,19 @@ export default function PoliciesPage() {
         </section>
 
         <section
-          id="booking-policies"
+          id="privacy-details"
           className="legal-pro-section legal-pro-section-warm policies-pro-details-section"
         >
           <div className="container">
-            
-
             <div className="legal-pro-layout policies-pro-layout">
-              <aside className="legal-pro-nav-card policies-pro-nav-card" aria-label="Policy sections">
+              <aside
+                className="legal-pro-nav-card policies-pro-nav-card"
+                aria-label="Privacy policy sections"
+              >
                 <span>On this page</span>
 
                 <div>
-                  {policySections.map((section, index) => (
+                  {privacySections.map((section, index) => (
                     <a key={section.id} href={`#${section.id}`}>
                       <strong>{String(index + 1).padStart(2, "0")}</strong>
                       <span>{section.title}</span>
@@ -94,7 +96,7 @@ export default function PoliciesPage() {
               </aside>
 
               <div className="legal-pro-content-list policies-pro-content-list">
-                {policySections.map((section, index) => (
+                {privacySections.map((section, index) => (
                   <section
                     key={section.id}
                     id={section.id}
@@ -136,30 +138,31 @@ export default function PoliciesPage() {
           <div className="container">
             <div className="policies-pro-summary-card">
               <div>
-                <span>Policy Summary</span>
-                <h2>Bookings are confirmed in writing, not by inquiry alone.</h2>
+                <span>Privacy Summary</span>
+                <h2>Booking consent is not automatic marketing consent.</h2>
                 <p>
-                  A tour is confirmed only after written confirmation and receipt
-                  of the required deposit or full payment. Final terms may vary
-                  depending on hotels, airlines, government rules, supplier
-                  policies, travel dates, and the confirmed quotation.
+                  We use traveller information to answer inquiries, prepare
+                  quotations, support visa/permit guidance, coordinate booked
+                  services, communicate during travel, and meet legal or
+                  operational requirements. We do not sell personal information
+                  to unauthorised third parties.
                 </p>
               </div>
 
               <div className="policies-pro-summary-stats">
                 <div>
-                  <strong>{policySections.length}</strong>
-                  <span>Policies</span>
+                  <strong>{privacySections.length}</strong>
+                  <span>Privacy sections</span>
                 </div>
 
                 <div>
-                  <strong>14</strong>
-                  <span>Days complaint window</span>
+                  <strong>No</strong>
+                  <span>Automatic marketing consent</span>
                 </div>
 
                 <div>
-                  <strong>60</strong>
-                  <span>Days cancellation mark</span>
+                  <strong>Written</strong>
+                  <span>Photo/video permission</span>
                 </div>
               </div>
             </div>
@@ -169,12 +172,11 @@ export default function PoliciesPage() {
         <section className="legal-pro-contact-section policies-pro-contact-section">
           <div className="container legal-pro-contact-card">
             <div>
-              <span>Need clarification?</span>
-              <h2>Ask us before confirming your booking.</h2>
+              <span>Privacy requests</span>
+              <h2>Contact Unseen Himalayas Bhutan about your information.</h2>
               <p>
-                For booking policy questions, payment schedules, cancellation
-                clarification, or supplier-specific terms, contact Unseen
-                Himalayas by email.
+                Privacy, data, communication, correction, or marketing questions
+                may be sent to the official company email.
               </p>
             </div>
 
@@ -192,194 +194,124 @@ export default function PoliciesPage() {
   );
 }
 
-const policyHighlights: PolicyHighlight[] = [
+const privacyHighlights: PrivacyHighlight[] = [
   {
-    icon: CreditCard,
-    title: "Payment Clarity",
+    icon: UserCheck,
+    title: "Travel Administration",
     description:
-      "Payment schedules and deadlines are shared before confirmation, including deposit or full-payment requirements.",
+      "Information is used to respond to inquiries, prepare quotations, and coordinate confirmed travel services.",
   },
   {
-    icon: CalendarDays,
-    title: "Cancellation Rules",
+    icon: Share2,
+    title: "Service Sharing",
     description:
-      "Cancellation fees depend on timing, supplier policies, confirmed services, and the written booking terms.",
+      "Details may be shared with hotels, guides, drivers, airlines, government offices, payment processors, or suppliers where needed.",
   },
   {
-    icon: ShieldCheck,
-    title: "Guest Protection",
+    icon: Megaphone,
+    title: "Separate Consent",
     description:
-      "Guests are encouraged to arrange travel insurance and share health, safety, and special travel requirements early.",
+      "Booking a tour does not automatically approve marketing messages or identifiable guest photo/video use.",
   },
 ];
 
-const policySections: PolicySection[] = [
+const privacySections: PrivacySection[] = [
   {
-    id: "booking-policy",
+    id: "information-collected",
     icon: FileText,
-    eyebrow: "Reservations",
-    title: "Booking Policy",
+    eyebrow: "Information",
+    title: "Information We May Collect",
     description:
-      "All reservations are subject to availability and written confirmation by Unseen Himalayas Bhutan.",
+      "We collect only the information reasonably needed to respond to travel inquiries, prepare quotations, support booking administration, and deliver confirmed services.",
     points: [
-      "A booking is considered confirmed only after receipt of the required deposit or full payment.",
-      "Submitting an inquiry, requesting an itinerary, or receiving a quotation does not automatically confirm a booking.",
-      "Guests are responsible for ensuring that names, passport details, travel dates, arrival points, hotel preferences, rooming details, and other booking information are accurate.",
-      "Final services, inclusions, exclusions, payment terms, and supplier conditions are confirmed in the written quotation or booking confirmation.",
+      "Contact details such as name, email address, phone or WhatsApp number, country of residence, and preferred communication channel.",
+      "Travel details such as dates, group size, nationality, arrival and departure points, itinerary interests, hotel preferences, rooming needs, and budget or service category.",
+      "Traveller details needed for booking support, such as passport names, passport or permit information, dates of birth, flight details, dietary requirements, health or mobility needs, and emergency contacts.",
+      "Website or communication details such as messages sent through forms, email, WhatsApp, chatbot interactions, and ordinary technical information generated by website use.",
     ],
   },
   {
-    id: "payment-policy",
-    icon: CreditCard,
-    eyebrow: "Payments",
-    title: "Payment Policy",
+    id: "how-we-use",
+    icon: UserCheck,
+    eyebrow: "Use",
+    title: "How We Use Information",
     description:
-      "Payment requirements depend on the confirmed itinerary, travel dates, supplier terms, and services included in the quotation.",
+      "Personal information is used for inquiry handling, quotation preparation, booking coordination, visa or permit guidance, legal compliance, service delivery, and guest support.",
     points: [
-      "Payment schedules will be communicated at the time of booking.",
-      "Full payment must be received before travel unless otherwise agreed in writing.",
-      "Bank charges, transfer fees, payment gateway charges, and currency conversion fees are the responsibility of the guest unless stated otherwise.",
-      "Failure to complete payment by the agreed deadline may result in cancellation, release of hotel rooms, or changes to the confirmed services.",
+      "To answer questions, recommend suitable routes, prepare personalised itineraries, and issue quotations or invoices.",
+      "To coordinate services with guides, drivers, hotels, restaurants, airlines, activity providers, government offices, and other relevant suppliers.",
+      "To provide pre-arrival updates, during-tour assistance, emergency support, booking records, receipts, and post-travel follow-up.",
+      "To investigate service issues, process refunds or overpayments, preserve booking records, meet legal requirements, and protect the Company, guests, staff, and suppliers from misuse or fraud.",
     ],
   },
   {
-    id: "cancellation-policy",
-    icon: CalendarDays,
-    eyebrow: "Cancellation",
-    title: "Cancellation Policy",
+    id: "sharing",
+    icon: Share2,
+    eyebrow: "Sharing",
+    title: "When Information May Be Shared",
     description:
-      "Cancellation charges may apply depending on when the cancellation is made and which services have already been confirmed.",
+      "We share information only where reasonably required for travel planning, booking administration, service delivery, legal compliance, payment handling, or guest support.",
     points: [
-      "Cancellations made 60 days or more before arrival may be subject to charges of up to 50% of the total booking value.",
-      "Cancellations made less than 60 days before arrival may be subject to charges of up to 100% of the total booking value.",
-      "Additional hotel, airline, guide, transport, permit, payment, or supplier cancellation fees may apply.",
-      "Cancellation terms may differ during peak season, festival dates, special events, luxury hotel bookings, group bookings, or services with strict supplier policies.",
+      "Information may be shared with hotels, guides, drivers, airlines, restaurants, activity providers, payment processors, government offices, or suppliers where needed for the requested or confirmed service.",
+      "Passport, nationality, flight, visa, permit, and rooming details may be shared only where necessary for travel arrangements or official processes.",
+      "Information may be shared with professional advisers, authorities, or dispute-resolution bodies where legally required or reasonably necessary to protect legitimate rights.",
+      "We do not sell personal information to unauthorised third parties.",
     ],
   },
   {
-    id: "refund-policy",
-    icon: RefreshCcw,
-    eyebrow: "Refunds",
-    title: "Refund Policy",
+    id: "marketing-photos",
+    icon: Megaphone,
+    eyebrow: "Consent",
+    title: "Marketing, Photos, and Videos",
     description:
-      "Refunds, where applicable, are processed after deducting relevant charges and supplier penalties.",
+      "Booking a tour is not automatic consent to marketing or commercial use of identifiable traveller images.",
     points: [
-      "Approved refunds will be processed after deducting applicable cancellation charges, supplier penalties, banking fees, payment charges, and administrative costs.",
-      "No refunds will be provided for unused services, no-shows, missed transfers, late arrivals, early departures, unused meals, or voluntary itinerary changes by the guest.",
-      "Refund processing time may depend on banks, payment channels, suppliers, and documentation requirements.",
-      "Any refund approval must be confirmed in writing by Unseen Himalayas Bhutan.",
+      "We may send booking-related communications without separate marketing consent because they are needed for inquiry handling, quotation, booking, or travel administration.",
+      "Promotional newsletters, campaign messages, or marketing follow-ups are sent only where allowed by applicable law and communication preferences.",
+      "Identifiable guest photographs or videos will not be used for marketing without separate permission.",
+      "Travellers may ask us to stop non-essential marketing communication through the official contact email.",
     ],
   },
   {
-    id: "child-policy",
-    icon: Users,
-    eyebrow: "Children",
-    title: "Child Policy",
+    id: "security-retention",
+    icon: Lock,
+    eyebrow: "Protection",
+    title: "Security and Record Retention",
     description:
-      "Children are welcome on suitable itineraries but must be accompanied and supervised by responsible adults.",
+      "We take reasonable steps to protect personal information and keep appropriate booking records.",
     points: [
-      "Children must be accompanied by a parent, legal guardian, or responsible adult throughout the tour.",
-      "Child rates, room sharing, extra beds, meals, attraction access, and transport arrangements vary by supplier.",
-      "Age-based discounts or child rates will be advised at the time of booking where applicable.",
-      "Parents or guardians are responsible for the safety, behaviour, health needs, and travel documents of children in their care.",
+      "Booking records may include quotation versions, invoices, terms versions, acceptance or payment evidence, receipts, amendments, and relevant correspondence.",
+      "Records are retained for business, tax, legal, operational, dispute-resolution, and audit purposes where appropriate.",
+      "Access to traveller information is limited to people or service providers who reasonably need it for travel administration or support.",
+      "No online or electronic system can be guaranteed completely secure, so travellers should avoid sending unnecessary sensitive information unless it is needed for travel planning or booking.",
     ],
   },
   {
-    id: "travel-insurance-policy",
+    id: "traveller-rights",
     icon: ShieldCheck,
-    eyebrow: "Insurance",
-    title: "Travel Insurance Policy",
+    eyebrow: "Rights",
+    title: "Traveller Choices and Requests",
     description:
-      "Comprehensive travel insurance is strongly recommended for all travelers visiting Bhutan.",
+      "Travellers may contact us about their personal information, communication preferences, or correction needs.",
     points: [
-      "Travel insurance should cover medical emergencies, evacuation, trip cancellation, baggage loss, flight disruption, personal liability, and emergency assistance.",
-      "Guests should ensure their insurance covers the activities included in their itinerary, such as hiking, high-altitude travel, rafting, biking, or soft adventure experiences.",
-      "Unseen Himalayas Bhutan is not responsible for losses that could reasonably be covered by travel insurance.",
-      "Guests may be asked to provide insurance details for certain journeys, activities, or remote travel routes.",
+      "Travellers may request correction of inaccurate contact, passport, travel, rooming, dietary, or other booking information.",
+      "Travellers may ask questions about how their information is used or shared for a booking.",
+      "Some information may need to be retained where required for legal, tax, accounting, supplier, dispute, or booking-record reasons.",
+      "Privacy/data requests may be sent to info@theunseenhimalayas.com.",
     ],
   },
   {
-    id: "health-safety-policy",
-    icon: AlertTriangle,
-    eyebrow: "Safety",
-    title: "Health & Safety Policy",
+    id: "website-links",
+    icon: FileText,
+    eyebrow: "Website",
+    title: "Website Accuracy and Third-Party Links",
     description:
-      "Guest safety is important, especially because Bhutan travel may involve mountain roads, altitude changes, hikes, weather variation, and remote areas.",
+      "Our website may include general travel information, images, route descriptions, third-party links, and service references.",
     points: [
-      "Guests are responsible for ensuring they are medically fit to travel.",
-      "Guests must disclose relevant medical conditions, allergies, mobility concerns, dietary requirements, or special assistance needs before departure.",
-      "Guests should carry personal medication, prescriptions, and any required medical documentation.",
-      "Unseen Himalayas Bhutan may adjust itinerary pacing, activities, or routing if safety, weather, road conditions, health concerns, or operational issues require changes.",
-    ],
-  },
-  {
-    id: "itinerary-change-policy",
-    icon: Plane,
-    eyebrow: "Itinerary",
-    title: "Itinerary Change Policy",
-    description:
-      "Bhutan travel may require operational adjustments due to weather, roads, festivals, flights, safety, government rules, or supplier availability.",
-    points: [
-      "Unseen Himalayas Bhutan reserves the right to modify itineraries, accommodations, transportation, guides, and activities when necessary.",
-      "Changes may be made due to weather conditions, road conditions, operational requirements, safety concerns, government directives, supplier issues, or circumstances beyond reasonable control.",
-      "Where possible, suitable alternatives will be arranged to maintain the overall quality and purpose of the journey.",
-      "Guests will be informed of major changes as soon as reasonably possible.",
-    ],
-  },
-  {
-    id: "force-majeure-policy",
-    icon: Globe2,
-    eyebrow: "Force Majeure",
-    title: "Force Majeure Policy",
-    description:
-      "Some events are beyond the reasonable control of Unseen Himalayas Bhutan and may affect travel plans.",
-    points: [
-      "Unseen Himalayas Bhutan shall not be liable for delays, interruptions, cancellations, losses, or additional costs caused by force majeure events.",
-      "Force majeure may include natural disasters, severe weather, pandemics, government restrictions, political unrest, road closures, transportation disruption, flight disruption, strikes, or other events beyond reasonable control.",
-      "If such events occur, the company will make reasonable efforts to assist guests and suggest alternatives where possible.",
-      "Additional costs caused by force majeure events may be the responsibility of the guest unless covered by supplier policies or insurance.",
-    ],
-  },
-  {
-    id: "privacy-policy",
-    icon: Mail,
-    eyebrow: "Privacy",
-    title: "Privacy Policy",
-    description:
-      "Personal information collected during the inquiry and booking process is used to arrange and deliver travel services.",
-    points: [
-      "Personal information may be used for travel arrangements, communication, quotation preparation, visa support, legal compliance, and service delivery.",
-      "Information may need to be shared with hotels, guides, drivers, airlines, government offices, payment processors, or suppliers where required for travel arrangements.",
-      "Personal information will not be sold to unauthorized third parties.",
-      "Guests should avoid sharing unnecessary sensitive information unless it is relevant to travel planning or service delivery.",
-    ],
-  },
-  {
-    id: "complaint-resolution-policy",
-    icon: Scale,
-    eyebrow: "Complaints",
-    title: "Complaint Resolution Policy",
-    description:
-      "Unseen Himalayas Bhutan aims to resolve concerns quickly and fairly when they are reported in a timely manner.",
-    points: [
-      "Complaints should be reported immediately during the tour whenever possible so the guide or office can assist while the guest is still traveling.",
-      "Written complaints must be submitted within 14 days of tour completion for review and resolution.",
-      "Guests should provide clear details, dates, supporting evidence, and relevant communication records where applicable.",
-      "Issues not reported during the tour may be more difficult to investigate or resolve after completion.",
-    ],
-  },
-  {
-    id: "responsible-travel-policy",
-    icon: Globe2,
-    eyebrow: "Responsible Travel",
-    title: "Responsible Travel Policy",
-    description:
-      "Guests are expected to travel respectfully and follow Bhutanese culture, environmental values, community standards, and the law of the country.",
-    points: [
-      "Guests are encouraged to respect Bhutanese culture, traditions, local communities, wildlife, sacred sites, heritage places, and the natural environment.",
-      "Guests must follow temple etiquette, local customs, dress expectations, photography rules, waste guidelines, and guide instructions.",
-      "Conduct that negatively impacts local communities, wildlife, heritage sites, religious places, the environment, or the law of the country will not be tolerated.",
-      "Unseen Himalayas Bhutan may take appropriate action if guest behaviour risks safety, legal compliance, community respect, or the quality of the travel experience.",
+      "Website descriptions, photographs, travel times, festival dates, prices, hotel information, and third-party links are provided in good faith and may change.",
+      "Third-party websites are controlled by their operators and may have their own privacy practices.",
+      "The confirmed quotation and booking confirmation prevail for a specific booking.",
+      "Questions about website content or privacy can be sent to the official company email.",
     ],
   },
 ];

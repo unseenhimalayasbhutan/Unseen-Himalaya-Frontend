@@ -13,7 +13,6 @@ const staticRoutes = [
   "/about-us",
   "/best-time",
   "/bhutan-tours",
-  "/bhutan-trekkings",
   "/contact",
   "/cultural-tours",
   "/currency",

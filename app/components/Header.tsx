@@ -24,15 +24,15 @@ const navLinks = [
     href: "#",
     submenu: [
       {
+        label: "Bhutan Tour Packages",
+        href: "/bhutan-tours",
+        description: "Signature private Bhutan itineraries",
+      },
+      {
         label: "Cultural & Nature Tours",
         href: "/cultural-tours",
         description: "Immerse in Bhutanese culture",
       },
-      //{
-        // label: "Bhutan Trekkings",
-        // href: "/bhutan-trekkings",
-       // description: "Hike through the Himalayas",
-     // },
       {
         label: "Festival Tours",
         href: "/festival-tours",
@@ -53,7 +53,6 @@ const navLinks = [
         href: "/land-entry-tours",
         description: "Phuentsholing-entry Bhutan itineraries",
       },
-      
       {
         label: "Customizable Tours",
         href: "/optional-tours",
@@ -66,34 +65,34 @@ const navLinks = [
     href: "#",
     submenu: [
       {
-        label: "About Bhutan",
+        label: "Discover Bhutan",
         href: "/about-bhutan",
-        description: "Land of the Thunder Dragon",
-      },
-      {
-        label: "Seasons",
-        href: "/seasons",
-        description: "Best time to visit",
-      },
-      {
-        label: "GNH Philosophies",
-        href: "/gnh-philosophies",
-        description: "Gross National Happiness",
-      },
-      {
-        label: "Bhutan Facts",
-        href: "/facts",
-        description: "Interesting insights",
+        description: "Culture, nature, and travel inspiration",
       },
       {
         label: "Why Visit Bhutan",
         href: "/why-visit",
-        description: "Unique experiences await",
+        description: "Reasons travelers choose Bhutan",
+      },
+      {
+        label: "Bhutan Facts",
+        href: "/facts",
+        description: "Useful national facts and symbols",
+      },
+      {
+        label: "Culture and Heritage",
+        href: "/gnh-philosophies",
+        description: "History, GNH, food, and living traditions",
+      },
+      {
+        label: "Seasons in Bhutan",
+        href: "/seasons",
+        description: "Weather, scenery, festivals, and timing",
       },
       {
         label: "Places to Visit in Bhutan",
         href: "/places-to-visit",
-        description: "Thimphu, Paro, hikes, temples, and hidden gems",
+        description: "Valleys and route ideas",
       },
     ],
   },
@@ -102,19 +101,29 @@ const navLinks = [
     href: "#",
     submenu: [
       {
-        label: "Documents Required",
+        label: "Plan Your Trip",
+        href: "/best-time",
+        description: "Seasons, route pace, and timing",
+      },
+      {
+        label: "Visa and Entry",
         href: "/documents",
-        description: "Visa and passport info",
+        description: "Visas, permits, and documents",
+      },
+      {
+        label: "SDF and Trip Costs",
+        href: "/sdf",
+        description: "Fees, inclusions, and travel budget",
       },
       {
         label: "Currency and Payments",
         href: "/currency",
-        description: "Money matters",
+        description: "Money, cards, cash, and payment tips",
       },
       {
-        label: "Best Time to Travel",
-        href: "/best-time",
-        description: "Plan your visit",
+        label: "Flights and Getting Around",
+        href: "/flights-getting-around",
+        description: "Air, land entry, drivers, and delays",
       },
       {
         label: "Festival Calendar",
@@ -122,14 +131,9 @@ const navLinks = [
         description: "Plan around Bhutan festival dates",
       },
       {
-        label: "SDF",
-        href: "/sdf",
-        description: "Sustainable Development Fee explained",
-      },
-      {
-        label: "FAQ",
+        label: "Travel FAQs",
         href: "/faq",
-        description: "Frequently asked questions",
+        description: "Quick answers and planning links",
       },
     ],
   },
@@ -152,7 +156,12 @@ const navLinks = [
         description: "Get in touch with our team",
       },
       {
-        label: "Policy",
+        label: "Legal Documents",
+        href: "/legal-documents",
+        description: "Licenses and official operator documents",
+      },
+      {
+        label: "Privacy Policy",
         href: "/privacy-policy",
         description: "How we protect your information",
       },

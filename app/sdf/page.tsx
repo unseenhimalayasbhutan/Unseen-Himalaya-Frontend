@@ -39,11 +39,12 @@ export default function SdfPage() {
                 <span>Travel to Bhutan Responsibly</span>
               </div>
 
-              <h1>SDF - Sustainable Development Fee</h1>
+              <h1>SDF and Bhutan trip costs</h1>
               <p>
-                Bhutan asks every visitor to help protect the kingdom&apos;s culture,
-                environment, public services, infrastructure, and future
-                opportunities. The SDF is part of that national commitment.
+                Your Bhutan budget has several parts: the Sustainable
+                Development Fee, any applicable visa fee, flights,
+                accommodation, transport, guide services, meals, monument entry,
+                activities, and personal spending.
               </p>
 
               <div className="sdf-hero-actions">
@@ -61,9 +62,10 @@ export default function SdfPage() {
               <span>Current official snapshot</span>
               <strong>USD 100 per adult per night for most international visitors.</strong>
               <p>
-                Rates vary by nationality and age. Children aged 6-11 receive a
-                50% concession, children under 6 are exempt, and regional rates
-                apply for guests from India and Bangladesh.
+                Rates vary by nationality, age, and eligibility. Children aged
+                6-11 receive a 50% concession, children under 6 are exempt, and
+                different official categories apply for Indian nationals and
+                eligible Bangladeshi visitors.
               </p>
             </aside>
           </div>
@@ -72,12 +74,13 @@ export default function SdfPage() {
         <section className="tour-pro-section tour-pro-section-white" id="rates">
           <div className="container sdf-rates-grid">
             <div className="places-section-heading">
-              <span>2026 SDF rates</span>
-              <h2>One published government fee, applied by traveller category.</h2>
+              <span>SDF rates by traveller category</span>
+              <h2>One government fee, applied by nationality and age.</h2>
               <p>
                 The SDF is charged per person, per night. For most international
                 visitors, the standard adult rate is USD 100 per night; children
-                and eligible regional guests follow the concessionary rates below.
+                and eligible regional guests follow concessionary categories.
+                Confirm the latest category and rate before quoting or paying.
               </p>
             </div>
 
@@ -92,10 +95,9 @@ export default function SdfPage() {
 
             <div className="sdf-rate-note">
               <p>
-                The current USD 100 rate is a 50% discount on the USD 200 base
-                rate and is officially confirmed through 31 August 2027. We
-                itemise the SDF separately in quotations and confirm the rate
-                applicable to your travel dates in writing.
+                We itemise the SDF separately in quotations and confirm the rate
+                applicable to your nationality, ages, route, and travel dates in
+                writing before you book.
               </p>
               <a
                 href="https://bhutan.travel/faqs"
@@ -104,6 +106,31 @@ export default function SdfPage() {
               >
                 Check the official Bhutan Travel FAQ
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="tour-pro-section tour-pro-section-white">
+          <div className="container">
+            <div className="places-section-heading">
+              <span>Combined cost guide</span>
+              <h2>SDF and Trip Costs also carries the money and fee guidance.</h2>
+              <p>
+                The former stand-alone money guidance is connected here so
+                visitors can understand the full travel budget in one place:
+                SDF, visa charges, package inclusions, monument fees, cash,
+                cards, digital wallets, tipping, and personal spending.
+              </p>
+            </div>
+
+            <div className="places-guidance-grid">
+              {costGuideLinks.map((item) => (
+                <article key={item.title} className="places-guidance-card sdf-theme-card">
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                  <Link href={item.href}>{item.linkLabel}</Link>
+                </article>
+              ))}
             </div>
           </div>
         </section>
@@ -177,11 +204,11 @@ export default function SdfPage() {
             <div className="tour-pro-cta-card">
               <div>
                 <span>Clear Costs Before You Book</span>
-                <h2>We will show the SDF clearly in your Bhutan proposal.</h2>
-                <p>
-                  Share your dates, group size, and route. We will explain what
-                  is included, what is paid to the government, and how the fee
-                  applies to your travel party.
+              <h2>We will show the SDF clearly in your Bhutan proposal.</h2>
+              <p>
+                Share your dates, group size, and route. We will explain what
+                  is included, what is paid to the government, what remains
+                  separate, and how the fee applies to your travel party.
                 </p>
               </div>
               <Link href="/contact" className="tour-pro-btn-primary">
@@ -223,11 +250,11 @@ const sdfPillars = [
 ];
 
 const sdfRates: SdfRate[] = [
-  { traveller: "Adults (12 and over)", rate: "USD 100" },
-  { traveller: "Children 6-11", rate: "USD 50" },
-  { traveller: "Children under 6", rate: "Free" },
-  { traveller: "Guests from India", rate: "Nu./INR 1,200; 600 for children under 12" },
-  { traveller: "Guests from Bangladesh", rate: "USD 15; visa fee waived" },
+  { traveller: "Adults from countries other than India", rate: "USD 100 per night" },
+  { traveller: "Children 6-11 from countries other than India", rate: "USD 50 per night" },
+  { traveller: "Children under 6", rate: "No SDF" },
+  { traveller: "Indian nationals", rate: "Nu./INR 1,200 per adult per night; Nu./INR 600 for children 6-11" },
+  { traveller: "Eligible Bangladeshi visitors", rate: "Reduced category must be checked during application" },
 ];
 
 const sdfSections: SdfSection[] = [
@@ -274,6 +301,37 @@ const sdfSections: SdfSection[] = [
       "Cross-cutting issues are built into planning so development does not come at the cost of culture, people, or the environment.",
       "SDF contributions help provide resources for a thriving Bhutan for young people now and in the future.",
     ],
+  },
+];
+
+const costGuideLinks = [
+  {
+    title: "Currency and payments",
+    text:
+      "Ngultrum, Indian rupees, card use, ATMs, digital wallets, cash planning, and tipping remain available in the detailed money guide.",
+    href: "/currency",
+    linkLabel: "Open Money and Payment Guide",
+  },
+  {
+    title: "Monument and museum fees",
+    text:
+      "Some museums, dzongs, parks, and sacred sites charge admission. Use the dedicated fee table as a working reference and confirm locally.",
+    href: "/currency#museum-fees",
+    linkLabel: "Open Fee Reference",
+  },
+  {
+    title: "Visa and entry charges",
+    text:
+      "Visa fees, application timing, and entry documents depend on nationality and current official rules.",
+    href: "/documents",
+    linkLabel: "Open Visa and Entry",
+  },
+  {
+    title: "Quick cost questions",
+    text:
+      "Use the FAQ for short answers on SDF, guides, flights, payments, cancellation policies, and planning next steps.",
+    href: "/faq",
+    linkLabel: "Open Travel FAQs",
   },
 ];
 

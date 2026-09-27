@@ -171,7 +171,7 @@ export function AiChatbot() {
                 required: true,
                 reason: "inquiry handoff",
                 whatsappHref: data.delivery.whatsappHref,
-                emailHref: data.delivery.emailHref || "mailto:unseenhimalayasbhutan@gmail.com",
+                emailHref: data.delivery.emailHref || "mailto:info@theunseenhimalayas.com",
                 summary: lead.conversationSummary,
               }
             : undefined,

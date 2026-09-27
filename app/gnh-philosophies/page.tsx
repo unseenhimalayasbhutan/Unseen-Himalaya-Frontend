@@ -365,7 +365,7 @@ const heroImage: PageImage = {
   src: "/gnh.jpg",
   alt: "Bhutan landscape representing Gross National Happiness",
   label: "Hero Image",
-  credit: "Unseen Himalayas Bhutan / Photographer Name",
+  credit: "Unseen Himalayas Bhutan",
   creditHref: "",
   creditPosition: "overlay",
 };

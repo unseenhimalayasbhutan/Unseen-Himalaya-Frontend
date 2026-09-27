@@ -75,13 +75,13 @@ export default function CurrencyPage() {
                 </div>
 
                 <h1 className="currency-hero-title">
-                  Currency, entrance fees, and money tips for travelling in Bhutan.
+                  Currency, trip costs, and money tips for travelling in Bhutan.
                 </h1>
 
                 <p className="currency-hero-description">
-                  Understand Bhutanese Ngultrum, Indian Rupees, cash usage,
-                  cards, ATMs, monument fees, tipping, digital payments, and how
-                  to prepare your travel money before arrival.
+                  Understand Bhutanese Ngultrum, Indian rupees, cash usage,
+                  cards, ATMs, possible entrance fees, tipping, digital wallets,
+                  and how to prepare your travel money before arrival.
                 </p>
 
                 <div className="currency-hero-actions">
@@ -112,8 +112,8 @@ export default function CurrencyPage() {
                 <h2>Carry both card and cash.</h2>
                 <p>
                   Cards work in many major hotels and shops, but cash is still
-                  important for monument fees, small purchases, tips, markets,
-                  rural areas, and unexpected situations.
+                  important for small purchases, tips, markets, rural areas,
+                  some entrance fees, and unexpected situations.
                 </p>
                 <div className="currency-hero-card-pills">
                   <span>BTN Cash</span>
@@ -240,7 +240,7 @@ export default function CurrencyPage() {
                   </div>
                 </section>
 
-                {/* Crypto / Binance Pay */}
+                {/* Digital wallet guidance */}
                 <section id="crypto-payments" className="currency-section-card currency-feature-card">
                   <div className="currency-card-header">
                     <div className="currency-card-icon">
@@ -248,25 +248,25 @@ export default function CurrencyPage() {
                     </div>
                     <div>
                       <p>Digital and alternative payments</p>
-                      <h2>Crypto & Binance Pay</h2>
+                      <h2>Digital wallets and alternative payment options</h2>
                     </div>
                   </div>
 
                   <p className="currency-text">
-                    Some tourism-facing businesses may accept crypto or Binance
-                    Pay, especially in more developed visitor areas. However,
-                    acceptance is not universal and can change, so it should be
-                    confirmed before relying on it as your main payment method.
+                    Digital wallet access is improving in Bhutan, but acceptance
+                    varies by merchant, town, app setup, card network, and
+                    connectivity. Confirm options before relying on any wallet or
+                    alternative payment method as your main source of funds.
                   </p>
 
                   <div className="currency-feature-grid">
                     <article className="currency-feature-item">
                       <h3>Where it may be available</h3>
                       <ul>
-                        <li>Selected hotels</li>
+                        <li>Larger hotels and restaurants</li>
                         <li>Some handicraft or souvenir shops</li>
                         <li>Tourism-facing businesses in larger towns</li>
-                        <li>Merchants that display a supported QR payment option</li>
+                        <li>Merchants that display a supported QR or wallet option</li>
                       </ul>
                     </article>
 
@@ -274,9 +274,9 @@ export default function CurrencyPage() {
                       <h3>Before you use it</h3>
                       <ul>
                         <li>Confirm with the merchant first</li>
-                        <li>Check network, wallet, and exchange fees</li>
+                        <li>Check app setup, card network, wallet, and exchange fees</li>
                         <li>Keep cash or card as backup</li>
-                        <li>Do not rely on crypto for remote areas</li>
+                        <li>Do not rely on wallet payments in remote areas</li>
                       </ul>
                     </article>
                   </div>
@@ -296,9 +296,10 @@ export default function CurrencyPage() {
                   <div className="currency-warning-note">
                     <AlertCircle aria-hidden />
                     <p>
-                      <strong>Important:</strong> Availability of Binance Pay or
-                      crypto payment options should be verified directly before
-                      travel. Carry a regular payment backup.
+                      <strong>Important:</strong> Availability of any specific
+                      digital wallet, QR payment, or alternative payment method
+                      should be verified directly before travel. Carry a regular
+                      payment backup.
                     </p>
                   </div>
                 </section>
@@ -388,9 +389,9 @@ export default function CurrencyPage() {
                     <article className="currency-feature-item">
                       <h3>Local payment ecosystem</h3>
                       <ul>
-                        <li>mBoB</li>
-                        <li>DrukPNB mobile banking</li>
-                        <li>Local bank QR payments</li>
+                        <li>goBoB digital wallet</li>
+                        <li>MyPay digital wallet</li>
+                        <li>Local bank QR payments where available</li>
                         <li>Selected merchant payment apps</li>
                       </ul>
                     </article>
@@ -410,7 +411,8 @@ export default function CurrencyPage() {
                     <CheckCircle aria-hidden />
                     <p>
                       Most tour payments are usually arranged before arrival.
-                      We will clearly explain available payment methods before
+                      We will clearly explain available payment methods,
+                      inclusions, and any separate local costs before
                       confirmation.
                     </p>
                   </div>
@@ -581,15 +583,15 @@ function MuseumsFeesSection() {
       </div>
 
       <p className="currency-text">
-        Fees are listed in Ngultrum, which is at par with Indian Rupees. The
-        fees collected support safe, clean sites and help with visitor management
-        and waste management.
+        Some museums, dzongs, sacred sites, and parks charge admission, while
+        others do not. Fees are generally listed in Ngultrum, which is at par
+        with Indian rupees, and should be reconfirmed locally before travel.
       </p>
 
       <div className="currency-fees-summary" aria-label="Museums and monument fees summary">
         <div className="currency-fee-stat">
           <span>Reference</span>
-          <strong>January 2026</strong>
+          <strong>Confirm locally</strong>
         </div>
         <div className="currency-fee-stat">
           <span>Currency</span>
@@ -604,8 +606,9 @@ function MuseumsFeesSection() {
       <div className="currency-fees-table-wrap">
         <table className="currency-fees-table">
           <caption>
-            Entrance fees for selected museums, dzongs, lhakhangs, parks, and
-            sacred sites across Bhutan.
+            Working examples of entrance fees for selected museums, dzongs,
+            lhakhangs, parks, and sacred sites across Bhutan. Confirm current
+            rates, opening hours, and payment methods locally before travel.
           </caption>
           <thead>
             <tr>
@@ -652,11 +655,10 @@ function MuseumsFeesSection() {
       <div className="currency-soft-note">
         <AlertCircle aria-hidden />
         <p>
-          Fees, opening hours, and USD equivalents can change without notice. As
-          of the latest official Bhutan Travel guidance checked for this update,
-          foreign visitors may visit monuments whenever they are open to the
-          general public. Confirm final rates with your guide, ticket counter,
-          or official tourism contact before travel.
+          Fees, opening hours, and USD equivalents can change without notice.
+          Some monuments and dzongs require visitors to enter with a guide, and
+          some sites collect fees on arrival. Confirm final rates with your
+          guide, ticket counter, or official tourism contact before travel.
         </p>
       </div>
     </section>
@@ -695,7 +697,7 @@ const quickOverview: QuickOverviewItem[] = [
 const navItems: NavItem[] = [
   { name: "Museum Fees", id: "museum-fees" },
   { name: "Bhutanese Currency", id: "currency" },
-  { name: "Crypto Payments", id: "crypto-payments" },
+  { name: "Digital Wallets", id: "crypto-payments" },
   { name: "Indian Rupee", id: "indian-rupee" },
   { name: "Payment Methods", id: "payment-methods" },
   { name: "Digital Payments", id: "digital-payments" },
@@ -1056,23 +1058,19 @@ const currencyFaqs: FAQItem[] = [
       "No. INR is commonly accepted in many day-to-day situations, but Bhutanese Ngultrum is still the safest option for smooth local payments.",
   },
   {
-    question: "Can I rely on Binance Pay or crypto payments?",
+    question: "Can I rely on digital wallets or alternative payments?",
     answer:
-      "No, not as your only option. Some businesses may support it, but acceptance can change. Confirm directly before travel and keep cash or card backup.",
+      "No, not as your only option. Some businesses may support digital wallets or other options, but acceptance can change. Confirm directly before travel and keep cash or card backup.",
   },
 ];
 
 const exchangeRates: ExchangeRate[] = [
-  { currency: "1 USD", rate: "approximately Nu 95" },
-  { currency: "1 EUR", rate: "approximately Nu 108" },
-  { currency: "1 GBP", rate: "approximately Nu 125" },
-  { currency: "1 AUD", rate: "approximately Nu 65" },
-  { currency: "1 CAD", rate: "approximately Nu 66" },
-  { currency: "100 JPY", rate: "approximately Nu 59" },
-  { currency: "1 CNY", rate: "approximately Nu 14" },
-  { currency: "1 SGD", rate: "approximately Nu 73" },
-  { currency: "1 RUB", rate: "approximately Nu 1.5" },
-  { currency: "1 THB", rate: "approximately Nu 2.85" },
-  { currency: "1000 VND", rate: "approximately Nu 3.6" },
-  { currency: "1 AED", rate: "approximately Nu 26" },
+  { currency: "BTN and INR", rate: "linked 1:1" },
+  { currency: "USD", rate: "check bank or authorised counter" },
+  { currency: "EUR", rate: "check bank or authorised counter" },
+  { currency: "GBP", rate: "check bank or authorised counter" },
+  { currency: "AUD", rate: "check bank or authorised counter" },
+  { currency: "CAD", rate: "check bank or authorised counter" },
+  { currency: "JPY", rate: "check bank or authorised counter" },
+  { currency: "CNY", rate: "check bank or authorised counter" },
 ];

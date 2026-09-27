@@ -200,7 +200,7 @@ const faqCategories: FAQCategory[] = [
         id: "booking-3",
         question: "How do I book flights to Bhutan?",
         answer:
-          "Flights into Bhutan operate through Paro International Airport. Drukair and Bhutan Airlines are the main carriers. We can guide you on suitable routes, flight timing, and arrival planning based on your itinerary.",
+          "Drukair and Bhutan Airlines operate international services to Bhutan. Paro remains the best-known arrival point, and official travel guidance also lists Gelephu among Bhutan's international airports. We can guide you on suitable routes, flight timing, and arrival planning based on your itinerary.",
       },
     ],
   },
@@ -252,7 +252,7 @@ const faqCategories: FAQCategory[] = [
         id: "visa-1",
         question: "How will I receive my visa?",
         answer:
-          "Once approved, the visa clearance is usually shared before travel. You present it for boarding and again on arrival at Paro International Airport, where the visa is verified and stamped.",
+          "Once approved, the visa clearance is usually shared before travel. You present it for boarding and again on arrival at the relevant Bhutan entry point, where it is verified under the current immigration process.",
       },
       {
         id: "visa-2",

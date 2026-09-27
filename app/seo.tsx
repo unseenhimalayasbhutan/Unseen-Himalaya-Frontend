@@ -22,10 +22,10 @@ type PackageSeoItem = {
 
 export const pageSeo = {
   "/about-bhutan": {
-    title: "About Bhutan",
+    title: "About Bhutan | Culture, Nature and Travel Inspiration",
     description:
-      "Learn about Bhutan's culture, landscapes, people, traditions, and unique approach to responsible Himalayan travel.",
-    keywords: ["about Bhutan", "Bhutan culture", "Bhutan travel guide"],
+      "Meet Bhutan through its Himalayan landscapes, living culture and thoughtful approach to travel. Find the journey that fits you.",
+    keywords: ["about Bhutan", "Bhutan culture", "Bhutan travel inspiration"],
   },
   "/about-us": {
     title: "About Unseen Himalayas Bhutan | Licensed Bhutan DMC & Tour Operator",
@@ -34,16 +34,10 @@ export const pageSeo = {
     keywords: ["Unseen Himalayas Bhutan", "licensed Bhutan DMC", "Bhutan tour operator", "Bhutan travel company", "local Bhutan experts"],
   },
   "/best-time": {
-    title: "Best Time to Visit Bhutan",
+    title: "Plan Your Bhutan Trip",
     description:
-      "Compare Bhutan's seasons, weather, festivals, landscapes, and travel conditions to choose the best month for your trip.",
-    keywords: ["best time to visit Bhutan", "Bhutan weather", "Bhutan travel season"],
-  },
-  "/bhutan-trekkings": {
-    title: "Bhutan Trekking Tours",
-    description:
-      "Discover guided Bhutan trekking tours through Himalayan valleys, high passes, remote camps, and pristine mountain landscapes.",
-    keywords: ["Bhutan trekking", "Bhutan hiking tours", "Himalayan trek Bhutan"],
+      "Choose when to visit Bhutan, how long to stay and which valleys to explore with local help planning a trip at your own pace.",
+    keywords: ["plan Bhutan trip", "best time to visit Bhutan", "Bhutan travel season"],
   },
   "/contact": {
     title: "Contact Unseen Himalayas Bhutan | Licensed Bhutan Tour Operator",
@@ -74,16 +68,16 @@ export const pageSeo = {
     ],
   },
   "/currency": {
-    title: "Bhutan Currency & Travel Money Guide",
+    title: "Bhutan Money and Payment Guide",
     description:
-      "Understand the Bhutanese ngultrum, Indian rupee acceptance, cards, ATMs, tipping, and practical money advice for travelers.",
-    keywords: ["Bhutan currency", "Bhutan money", "Bhutan travel costs"],
+      "Understand the Bhutanese ngultrum, Indian rupee acceptance, cards, cash, digital wallets, tipping, and practical money advice for travelers.",
+    keywords: ["Bhutan currency", "Bhutan money", "Bhutan payment guide"],
   },
   "/documents": {
-    title: "Bhutan Travel Documents & Visa Guide",
+    title: "Bhutan Visa and Entry Requirements",
     description:
-      "Review the passport, visa, permit, insurance, and booking documents commonly needed for a trip to Bhutan.",
-    keywords: ["Bhutan visa", "Bhutan travel documents", "Bhutan permit"],
+      "Understand Bhutan visas, Indian visitor permits, passport documents and entry steps before travelling to Bhutan.",
+    keywords: ["Bhutan visa", "Bhutan entry requirements", "Bhutan permit"],
   },
   "/facts": {
     title: "Bhutan Facts for Travelers",
@@ -92,10 +86,10 @@ export const pageSeo = {
     keywords: ["Bhutan facts", "facts about Bhutan", "Bhutan national symbols"],
   },
   "/faq": {
-    title: "Bhutan Travel FAQ 2026 | Visa, SDF, Guide & Tour Questions",
+    title: "Bhutan Travel FAQs | Visa, SDF, Flights and Planning",
     description:
       "Get answers about Bhutan visas, costs, flights, guides, packing, connectivity, food, altitude, and trip planning.",
-    keywords: ["Bhutan travel FAQ 2026", "Bhutan visa FAQ", "Bhutan SDF", "Bhutan guide requirement", "Bhutan trip questions"],
+    keywords: ["Bhutan travel FAQ", "Bhutan visa FAQ", "Bhutan SDF", "Bhutan guide requirement", "Bhutan trip questions"],
   },
   "/festival-tours": {
     title: "Bhutan Festival Tours",
@@ -109,11 +103,17 @@ export const pageSeo = {
       "Browse Bhutan's festival calendar by month and plan your journey around tshechus, sacred ceremonies, and cultural celebrations.",
     keywords: ["Bhutan festival calendar", "Bhutan festival dates", "Bhutan tshechu calendar"],
   },
-  "/gnh-philosophies": {
-    title: "Gross National Happiness in Bhutan",
+  "/flights-getting-around": {
+    title: "Flights to Bhutan and Local Transport",
     description:
-      "Explore Bhutan's Gross National Happiness philosophy, its pillars, cultural roots, and influence on responsible travel.",
-    keywords: ["Gross National Happiness", "Bhutan GNH", "Bhutan philosophy"],
+      "Plan your flight or land entry and understand transport within Bhutan, including weather, mountain-road travel and local guide arrangements.",
+    keywords: ["flights to Bhutan", "Bhutan transport", "getting around Bhutan"],
+  },
+  "/gnh-philosophies": {
+    title: "Bhutanese Culture, History and Gross National Happiness",
+    description:
+      "Explore Bhutan's living traditions, Wangchuck monarchy, food, national identity and Gross National Happiness.",
+    keywords: ["Gross National Happiness", "Bhutan GNH", "Bhutan culture"],
   },
   "/legal-documents": {
     title: "Legal Documents",
@@ -150,28 +150,28 @@ export const pageSeo = {
     ],
   },
   "/places-to-visit": {
-    title: "Places to Visit in Bhutan | Thimphu & Paro Travel Guide",
+    title: "Places to Visit in Bhutan | Valleys and Route Ideas",
     description:
-      "Explore places to visit in Bhutan, including Thimphu attractions, Paro highlights, monasteries, museums, markets, hikes, hidden gems, and responsible access notes.",
+      "Compare Paro, Thimphu, Punakha, Wangdue, Phobjikha and Haa to choose the right Bhutan itinerary.",
     keywords: [
       "places to visit in Bhutan",
       "places to visit in Thimphu",
       "places to visit in Paro",
       "Bhutan attractions",
       "Bhutan sightseeing",
-      "Bhutan travel guide 2026",
+      "Bhutan travel guide",
     ],
   },
   "/privacy-policy": {
     title: "Privacy Policy",
     description:
-      "Read how Unseen Himalayas Bhutan handles personal information submitted through our Bhutan travel website and inquiry channels.",
+      "Read how Unseen Himalayas Bhutan handles traveller, inquiry, booking, communication, and website information.",
     keywords: ["Unseen Himalayas Bhutan privacy policy"],
   },
   "/sdf": {
-    title: "Bhutan SDF | Sustainable Development Fee Guide",
+    title: "Bhutan SDF and Travel Costs",
     description:
-      "Understand Bhutan's Sustainable Development Fee, what it supports, how it is allocated, and how it contributes to culture, environment, infrastructure, education, and public services.",
+      "See how the Sustainable Development Fee, visa charges, tours and personal spending affect your Bhutan travel budget.",
     keywords: [
       "Bhutan SDF",
       "Sustainable Development Fee Bhutan",
@@ -186,10 +186,10 @@ export const pageSeo = {
     keywords: ["Bhutan seasons", "Bhutan weather by month", "when to visit Bhutan"],
   },
   "/terms": {
-    title: "Travel Terms & Conditions",
+    title: "Booking Terms & Conditions",
     description:
-      "Review the booking, payment, cancellation, responsibility, and travel terms for journeys arranged by Unseen Himalayas Bhutan.",
-    keywords: ["Unseen Himalayas Bhutan terms", "Bhutan tour booking terms"],
+      "Review Unseen Himalayas Bhutan booking terms, payment policy, cancellation schedule, refund formula, responsibilities, and dispute process.",
+    keywords: ["Unseen Himalayas Bhutan terms", "Bhutan tour booking terms", "Bhutan tour payment policy"],
   },
   "/why-visit": {
     title: "Why Visit Bhutan",

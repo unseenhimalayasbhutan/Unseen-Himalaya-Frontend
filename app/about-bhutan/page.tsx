@@ -118,13 +118,13 @@ export default function AboutBhutanPage() {
         <section className="about-bhutan-hero">
           <div className="container about-bhutan-hero-grid">
             <div className="about-bhutan-hero-copy">
-              <h1>Discover Druk Yul, the Land of the Thunder Dragon.</h1>
+              <h1>About Bhutan: culture, nature, and travel inspiration.</h1>
 
               <p>
-                A Himalayan kingdom shaped by sacred monasteries, protected
-                forests, living Buddhism, mountain communities, festivals,
-                traditional architecture, and a national philosophy of
-                wellbeing.
+                Bhutan, known in Dzongkha as Druk Yul, the Land of the Thunder
+                Dragon, is a Himalayan kingdom between India and China where
+                mountain valleys, forests, monasteries, and communities invite
+                travellers to slow down and pay attention to place.
               </p>
 
               <div className="about-bhutan-hero-actions">
@@ -133,7 +133,7 @@ export default function AboutBhutanPage() {
                   <ArrowRight aria-hidden="true" />
                 </Link>
                 <a href="#bhutan-overview" className="about-bhutan-btn-secondary">
-                  Explore the Country
+                  Explore Bhutan
                 </a>
               </div>
 
@@ -151,7 +151,7 @@ export default function AboutBhutanPage() {
               <ImageSlot image={heroImage} />
               <div className="about-bhutan-hero-fact">
                 <span>Kingdom of Bhutan</span>
-                <strong>Culture, nature, spirituality, and slow travel.</strong>
+                <strong>Culture, nature, spirituality, and thoughtful travel.</strong>
               </div>
             </aside>
           </div>
@@ -174,7 +174,7 @@ export default function AboutBhutanPage() {
             <SectionHeader
               eyebrow="Bhutan in Brief"
               title="A small kingdom with a powerful national identity."
-              subtitle="Bhutan is known for mountain landscapes, spiritual rhythm, protected culture, and a development philosophy rooted in wellbeing."
+              subtitle="Bhutan is known for Himalayan landscapes, living culture, protected forests, and a development philosophy rooted in wellbeing."
             />
 
             <div className="about-bhutan-overview-grid">
@@ -237,7 +237,7 @@ export default function AboutBhutanPage() {
             <SectionHeader
               eyebrow="A Brief History"
               title="From sacred temples to a modern constitutional monarchy."
-              subtitle="Bhutan's history is shaped by Buddhism, valley kingdoms, fortress-monasteries, national unification, the Wangchuck dynasty, and the country's modern development journey."
+              subtitle="Bhutan's history is shaped by Buddhism, valley kingdoms, national unification, the Wangchuck dynasty, and the country's transition to constitutional democracy."
             />
 
             <div className="about-bhutan-timeline">
@@ -259,7 +259,7 @@ export default function AboutBhutanPage() {
             <SectionHeader
               eyebrow="Nature, People & Daily Life"
               title="The deeper layers that make Bhutan unique."
-              subtitle="Bhutan is rich in forests, wildlife, languages, food, faith, customs, and mountain travel experiences."
+              subtitle="Bhutan is rich in forests, wildlife, languages, food, faith, crafts, customs, and mountain travel experiences, with local variation from valley to valley."
             />
 
             <div className="about-bhutan-detail-grid">
@@ -346,8 +346,8 @@ export default function AboutBhutanPage() {
             <div>
               <SectionHeader
                 eyebrow="Flying to Bhutan"
-                title="Arriving in the Kingdom in the Clouds is part of the experience."
-                subtitle="Flying into Bhutan offers views of Himalayan peaks, forested valleys, glacier-fed rivers, and traditional architecture. Paro's mountain approach is one of the world's most memorable airport arrivals."
+              title="Arriving in the Kingdom in the Clouds is part of the experience."
+                subtitle="Flying into Bhutan offers views of Himalayan peaks, forested valleys, glacier-fed rivers, and traditional architecture. Flight routes, schedules, and arrival airports should be checked before finalising dates."
                 align="left"
               />
 
@@ -375,6 +375,29 @@ export default function AboutBhutanPage() {
                 pregnancy, or previous altitude concerns.
               </p>
             </aside>
+          </div>
+        </section>
+
+        <section className="about-bhutan-section about-bhutan-section-warm">
+          <div className="container">
+            <SectionHeader
+              eyebrow="Combined Overview"
+              title="The older Bhutan overview content is still here."
+              subtitle="Discover Bhutan now gathers the introduction, useful facts, reasons to visit, culture notes, seasons, and destination choices into one clearer overview path."
+            />
+
+            <div className="about-bhutan-overview-grid">
+              {overviewGuideLinks.map((item) => (
+                <article key={item.title} className="about-bhutan-overview-card">
+                  <div className="about-bhutan-icon">
+                    <item.icon aria-hidden="true" />
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <Link href={item.href}>{item.linkLabel}</Link>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -454,8 +477,8 @@ const heroTrust = [
 const quickStats: StatItem[] = [
   { icon: MapPin, value: "38,394 km2", label: "Total Area" },
   { icon: Landmark, value: "20", label: "Dzongkhags" },
-  { icon: Users, value: "820k", label: "2018 Population Reference" },
-  { icon: Leaf, value: "70%+", label: "Forest Coverage" },
+  { icon: Users, value: "Dzongkha", label: "National Language" },
+  { icon: Leaf, value: "60%+", label: "Constitutional Forest Minimum" },
 ];
 
 const overviewCards: InfoCard[] = [
@@ -469,7 +492,7 @@ const overviewCards: InfoCard[] = [
     icon: Mountain,
     title: "Geography & Neighbours",
     description:
-      "Bhutan sits on the southern edge of the Tibetan plateau, bordered by China to the north and India to the west and south. Its land area is close to Switzerland in size.",
+      "Bhutan sits in the eastern Himalayas, bordered by China to the north and India to the west, south, and east. Its valleys and roads change markedly by altitude and weather.",
   },
   {
     icon: Landmark,
@@ -481,7 +504,42 @@ const overviewCards: InfoCard[] = [
     icon: Users,
     title: "People & Languages",
     description:
-      "Bhutanese society includes Ngalops, Sharchops, Lhotshampa communities, and many local groups. Dzongkha is the national language, with many regional dialects still alive.",
+      "Dzongkha is the national language, English is widely used in education and tourism, and many regional languages and local traditions remain alive.",
+  },
+];
+
+const overviewGuideLinks = [
+  {
+    icon: Compass,
+    title: "Why visit Bhutan",
+    description:
+      "The travel-inspiration content remains available for guests choosing between culture, nature, soft adventure, and slower journeys.",
+    href: "/why-visit",
+    linkLabel: "Open Why Visit Bhutan",
+  },
+  {
+    icon: CheckCircle,
+    title: "Bhutan facts",
+    description:
+      "Quick national facts, symbols, environment notes, and memorable details are still available for visitors who want a concise reference.",
+    href: "/facts",
+    linkLabel: "Open Bhutan Facts",
+  },
+  {
+    icon: Heart,
+    title: "Culture and GNH",
+    description:
+      "History, monarchy, food, living traditions, and Gross National Happiness are combined under Culture and Heritage.",
+    href: "/gnh-philosophies",
+    linkLabel: "Open Culture and Heritage",
+  },
+  {
+    icon: MapPin,
+    title: "Valleys and route ideas",
+    description:
+      "Destination content is organized around Paro, Thimphu, Punakha, Wangdue, Phobjikha, and Haa to help visitors choose a route.",
+    href: "/places-to-visit",
+    linkLabel: "Open Places to Visit",
   },
 ];
 
@@ -540,10 +598,16 @@ const historyTimeline: TimelineItem[] = [
       "Under the Third King, Bhutan began modern reforms and development planning and joined the United Nations.",
   },
   {
-    period: "1972 onward",
-    title: "Gross National Happiness",
+    period: "2006",
+    title: "The Fifth King begins his reign",
     description:
-      "The Fourth King, Jigme Singye Wangchuck, became known globally for promoting Gross National Happiness.",
+      "Jigme Khesar Namgyel Wangchuck became Bhutan's fifth king, continuing the country's modern transition.",
+  },
+  {
+    period: "2008",
+    title: "Constitutional democracy",
+    description:
+      "Bhutan adopted its constitution and held parliamentary elections, becoming a democratic constitutional monarchy.",
   },
 ];
 
@@ -627,11 +691,12 @@ const detailSections: DetailSection[] = [
     eyebrow: "Wellbeing",
     title: "Gross National Happiness",
     description:
-      "Bhutan's development story is guided by a philosophy that values wellbeing alongside economic progress.",
+      "Bhutan's development story is guided by a policy framework that values wellbeing alongside economic progress.",
     points: [
-      "Gross National Happiness connects development with culture, environmental care, good governance, and quality of life.",
+      "Gross National Happiness connects development with sustainable socioeconomic progress, environmental conservation, cultural preservation, and good governance.",
+      "The framework also considers nine areas of wellbeing, including health, education, community, time use, and living standards.",
       "Visitors experience this through slower travel, community encounters, protected landscapes, and meaningful interpretation.",
-      "For Unseen Himalayas Bhutan, GNH is a principle for designing thoughtful itineraries rather than a slogan.",
+      "GNH is a policy approach and travel context, not a promise that every person is always happy.",
     ],
   },
   {
@@ -680,17 +745,17 @@ const flightNotes = [
   {
     title: "International Gateway",
     description:
-      "Paro International Airport is Bhutan's main international gateway, surrounded by mountains, valleys, and dramatic Himalayan scenery.",
+      "Paro remains the best-known international gateway, while official Bhutan travel guidance also lists Gelephu among the country's international airports.",
   },
   {
     title: "Airlines",
     description:
-      "Drukair and Bhutan Airlines operate international flights to and from Bhutan. Drukair also operates domestic services within the country.",
+      "Drukair and Bhutan Airlines operate international services to Bhutan. Compare current routes, prices, baggage rules, and arrival airports on official airline channels.",
   },
   {
-    title: "Domestic Airport",
+    title: "Domestic Airports",
     description:
-      "Bathpalathang Airport serves Bumthang and supports domestic travel to central Bhutan. Gelephu is undergoing major expansion to support the Gelephu Mindfulness City project.",
+      "Domestic airports can support longer routes to central, eastern, and southern Bhutan, subject to schedules, weather, and operational availability.",
   },
   {
     title: "Mountain Aviation",

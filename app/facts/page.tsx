@@ -69,7 +69,7 @@ export default function FactsPage() {
             <div className="tour-pro-hero-content">
               <div className="tour-pro-eyebrow"><Compass aria-hidden="true" /><span>Bhutan Travel Notes</span></div>
               <h1>Interesting facts that make Bhutan unlike anywhere else.</h1>
-              <p>Bhutan is shaped by sacred mountains, protected forests, living Buddhist culture, peaceful democratic transition, Paro’s dramatic mountain airport, and a development philosophy that places wellbeing at the centre.</p>
+              <p>Bhutan is shaped by sacred mountains, protected forests, living Buddhist culture, peaceful democratic transition, memorable Himalayan gateways, and a development philosophy that places wellbeing at the centre.</p>
               <div className="tour-pro-hero-actions">
                 <Link href="/contact" className="tour-pro-btn-primary">Plan Your Bhutan Trip <ArrowRight aria-hidden="true" /></Link>
                 <Link href="/cultural-tours" className="tour-pro-btn-secondary">Explore Tours</Link>
@@ -122,10 +122,10 @@ export default function FactsPage() {
 
         <section className="tour-pro-section tour-pro-section-warm facts-redesign-airport-section">
           <div className="container">
-            <SectionHeader eyebrow="Paro International Airport" title="One of the world’s most memorable airport arrivals." subtitle="Paro International Airport is Bhutan’s main international gateway and one of the first impressions many visitors have of the kingdom." />
+            <SectionHeader eyebrow="Bhutan Air Gateways" title="Arriving in Bhutan is part of the journey." subtitle="Paro remains Bhutan’s best-known international arrival experience, while official travel guidance also lists Gelephu among the country’s international airports. Always check current airline schedules and arrival airports before booking." />
             <div className="facts-redesign-airport-layout">
               <div className="facts-redesign-airport-media"><ImageSlot image={paroAirportImage} /></div>
-              <div className="facts-redesign-airport-content"><div className="facts-redesign-airport-feature-card"><div className="facts-redesign-panel-kicker">Gateway to Bhutan</div><h3>Why Paro Airport feels different</h3><p>Unlike large urban airports, Paro International Airport is part of the landscape itself. The mountain setting, valley approach, and short transfer to cultural sites make the arrival feel like the first chapter of the tour.</p></div><div className="facts-redesign-airport-detail-grid">{paroAirportFacts.map((fact, index) => <article key={fact.title} className="facts-redesign-airport-card"><span>{String(index + 1).padStart(2, "0")}</span><div><small>{fact.kicker}</small><h4>{fact.title}</h4><p>{fact.description}</p></div></article>)}</div></div>
+              <div className="facts-redesign-airport-content"><div className="facts-redesign-airport-feature-card"><div className="facts-redesign-panel-kicker">Gateway to Bhutan</div><h3>Why Paro Airport feels different</h3><p>Unlike large urban airports, Paro International Airport is part of the landscape itself. The mountain setting, valley approach, and short transfer to cultural sites make the arrival feel like the first chapter of many Bhutan tours.</p></div><div className="facts-redesign-airport-detail-grid">{paroAirportFacts.map((fact, index) => <article key={fact.title} className="facts-redesign-airport-card"><span>{String(index + 1).padStart(2, "0")}</span><div><small>{fact.kicker}</small><h4>{fact.title}</h4><p>{fact.description}</p></div></article>)}</div></div>
             </div>
           </div>
         </section>
@@ -202,7 +202,7 @@ const quickStats: StatItem[] = [
   { icon: TreePine, value: "60%", label: "Constitutional Forest Minimum" },
   { icon: ShieldCheck, value: "2008", label: "Democratic Constitutional Monarchy" },
   { icon: Users, value: "2", label: "Houses of Parliament" },
-  { icon: MapPin, value: "1", label: "International Airport at Paro" },
+  { icon: MapPin, value: "2", label: "International airports listed officially" },
   { icon: Globe2, value: "38,394 km²", label: "Total Area" },
   { icon: Heart, value: "GNH", label: "Wellbeing Philosophy" },
   { icon: Compass, value: "GMC", label: "Gelephu Mindfulness City Vision" },
@@ -244,7 +244,7 @@ const geographyFacts: StoryCard[] = [
   { icon: Globe2, title: "Diverse Landscapes", description: "The country ranges from subtropical valleys to alpine regions, creating rich biodiversity and varied travel experiences." },
 ];
 const paroAirportFacts: DetailCard[] = [
-  { icon: MapPin, kicker: "Gateway", title: "Bhutan’s main international arrival point", description: "Paro International Airport is the airport through which most international visitors enter Bhutan, making the Paro Valley the first chapter of many Bhutan journeys.", details: [] },
+  { icon: MapPin, kicker: "Gateway", title: "Bhutan’s best-known arrival point", description: "Paro International Airport is still the airport through which many visitors enter Bhutan, making the Paro Valley the first chapter of many Bhutan journeys.", details: [] },
   { icon: Mountain, kicker: "Mountain Approach", title: "A scenic and technically demanding landing", description: "The airport sits in a narrow Himalayan valley, so flights are closely connected to mountain weather, visibility, and daylight operating conditions.", details: [] },
   { icon: Compass, kicker: "Travel Planning", title: "Convenient for Paro and Thimphu itineraries", description: "Paro Airport is close to Paro town and connected by road to Thimphu, which is why most Bhutan itineraries begin or end with Paro and Tiger’s Nest.", details: [] },
 ];

@@ -59,15 +59,15 @@ export default function BestTimePage() {
                 </div>
 
                 <h1 className="besttime-hero-title">
-                  The best time to visit Bhutan depends on what you want to
-                  experience.
+                  Plan your Bhutan trip around time, route, and the experiences
+                  that matter most.
                 </h1>
 
                 <p className="besttime-hero-description">
-                  Spring and autumn are ideal for clear skies, festivals, and
-                  trekking. Winter is peaceful and beautiful for cultural travel,
-                  while summer offers lush valleys, fewer crowds, and excellent
-                  value.
+                  Bhutan invites you to travel with curiosity. A shorter journey
+                  can focus on Paro and Thimphu; with more time, add Punakha,
+                  Phobjikha, or central valleys. Choose your dates around the
+                  activities, pace, and weather conditions that matter most.
                 </p>
 
                 <div className="besttime-hero-actions">
@@ -90,11 +90,11 @@ export default function BestTimePage() {
 
               <div className="besttime-hero-card">
                 <p className="besttime-hero-card-kicker">Quick Answer</p>
-                <h2>Best overall months</h2>
+                <h2>Start with your travel style</h2>
                 <p>
-                  March to May and September to November are the most popular
-                  months for first-time travelers because the weather is
-                  comfortable and the views are usually clearer.
+                  Spring and autumn suit many outdoor itineraries. Summer is
+                  greener and wetter, while winter can be rewarding for quieter
+                  valley visits and black-necked crane viewing in Phobjikha.
                 </p>
                 <div className="besttime-hero-card-months">
                   <span>Mar-May</span>
@@ -165,6 +165,37 @@ export default function BestTimePage() {
 
               {/* Main Content */}
               <div className="besttime-content">
+                <section id="planning-hub" className="besttime-section-card">
+                  <div className="besttime-card-header">
+                    <div>
+                      <p>Combined travel planning hub</p>
+                      <h2>Plan the trip, then use the detailed guides when needed.</h2>
+                    </div>
+                  </div>
+
+                  <p className="besttime-season-detail-description">
+                    Plan Your Trip now brings together season choice, route
+                    pacing, trip length, festivals, practical culture notes, and
+                    onward links to the more detailed travel guides. The older
+                    content has not been removed; it is connected here so
+                    visitors can start simple and then go deeper.
+                  </p>
+
+                  <div className="besttime-activities-grid">
+                    {planningHubLinks.map((item) => (
+                      <article key={item.title} className="besttime-activity-card">
+                        <div>
+                          <h3>{item.title}</h3>
+                          <p>{item.description}</p>
+                          <div className="besttime-activity-seasons">
+                            <Link href={item.href}>{item.linkLabel}</Link>
+                          </div>
+                        </div>
+                      </article>
+                    ))}
+                  </div>
+                </section>
+
                 {/* Seasonal Breakdown */}
                 <section id="seasons" className="besttime-section-card">
                   <div className="besttime-card-header">
@@ -418,14 +449,43 @@ const seasonsOverview: SeasonOverview[] = [
 ];
 
 const navItems: NavItem[] = [
+  { name: "Planning Hub", id: "planning-hub" },
   { name: "Seasonal Breakdown", id: "seasons" },
   { name: "Monthly Guide", id: "monthly" },
   { name: "By Activity", id: "by-activity" },
   { name: "Peak vs Shoulder", id: "comparison" },
-  { name: "Regional Weather", id: "weather" },
-  { name: "Festival Calendar", id: "festivals" },
-  { name: "Packing Tips", id: "packing" },
   { name: "FAQs", id: "faq" },
+];
+
+const planningHubLinks = [
+  {
+    title: "Festival planning",
+    description:
+      "Festival dates change each year, so use the calendar as a dedicated planning reference when your trip depends on a specific event.",
+    href: "/festival-calendar",
+    linkLabel: "Open Festival Calendar",
+  },
+  {
+    title: "Flights and local transport",
+    description:
+      "Check air, land entry, driving time, guide requirements, and route pacing before locking in travel dates.",
+    href: "/flights-getting-around",
+    linkLabel: "Open Flights and Getting Around",
+  },
+  {
+    title: "Visa and entry",
+    description:
+      "Review nationality-specific entry steps, passport or ID needs, visa timing, and document preparation.",
+    href: "/documents",
+    linkLabel: "Open Visa and Entry",
+  },
+  {
+    title: "Costs and payment planning",
+    description:
+      "Use the cost guide for SDF, visa fee, quotation inclusions, money, monument fees, cash, cards, and tipping.",
+    href: "/sdf",
+    linkLabel: "Open SDF and Trip Costs",
+  },
 ];
 
 const seasonsDetail: SeasonDetail[] = [

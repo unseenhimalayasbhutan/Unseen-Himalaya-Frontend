@@ -32,9 +32,9 @@ export default function PlacesToVisitPage() {
               <h1>Places to Visit in Bhutan</h1>
               <p>
                 Western Bhutan destination guide for Thimphu, Paro, Punakha,
-                Wangdue Phodrang, Gangtey and Phobjikha, and Haa, built from
-                the 2026 destination notes with access-aware visitor guidance
-                and real destination imagery.
+                Wangdue Phodrang, Gangtey and Phobjikha, and Haa, shaped to
+                help travellers compare valleys, choose a realistic route, and
+                understand access-aware visitor guidance.
               </p>
 
               <div className="places-hero-actions">
@@ -81,7 +81,7 @@ export default function PlacesToVisitPage() {
         <section className="tour-pro-section tour-pro-section-warm">
           <div className="container">
             <div className="places-section-heading">
-              <span>Global 2026 Visitor Notes</span>
+              <span>Visitor Notes</span>
               <h2>Set expectations before visitors choose attractions.</h2>
             </div>
 

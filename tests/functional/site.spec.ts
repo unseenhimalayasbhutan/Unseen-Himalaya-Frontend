@@ -7,7 +7,6 @@ const publicRoutes = [
   "/about-us",
   "/best-time",
   "/bhutan-tours",
-  "/bhutan-trekkings",
   "/contact",
   "/cultural-tours",
   "/currency",

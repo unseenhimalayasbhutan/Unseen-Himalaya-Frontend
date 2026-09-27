@@ -54,17 +54,19 @@ export default function DocumentsPage() {
               <div className="documents-hero-content">
                 <div className="documents-eyebrow">
                   <FileText aria-hidden />
-                  <span>Bhutan Entry Guide</span>
+                  <span>Visa and Entry</span>
                 </div>
 
                 <h1 className="documents-hero-title">
-                  Documents, visa guidance, and entry requirements for Bhutan.
+                  Bhutan visa, permit, and entry requirements.
                 </h1>
 
                 <p className="documents-hero-description">
-                  Understand what documents you need before travelling to
-                  Bhutan, how the visa process works, what to prepare before
-                  arrival, and how we help make the paperwork smooth.
+                  Entry requirements depend on nationality, route, and current
+                  official rules. Most visitors need an approved visa before
+                  travel, Indian nationals need a permit, and visitors from
+                  Bangladesh and the Maldives follow their applicable visa
+                  process.
                 </p>
 
                 <div className="documents-hero-actions">
@@ -92,16 +94,16 @@ export default function DocumentsPage() {
                   <IdCard aria-hidden />
                 </div>
                 <p className="documents-hero-card-kicker">Before You Travel</p>
-                <h2>Prepare early, travel smoothly.</h2>
-                <p>
-                  A valid passport, clear document copies, travel confirmation,
-                  and correct visa guidance help avoid delays before your Bhutan
-                  journey.
+                  <h2>Prepare early, travel smoothly.</h2>
+                  <p>
+                  A valid travel document, clear digital copies, travel dates,
+                  and the right application path help avoid delays before your
+                  Bhutan journey.
                 </p>
                 <div className="documents-hero-card-pills">
-                  <span>Passport</span>
-                  <span>Visa Clearance</span>
-                  <span>Insurance</span>
+                  <span>Passport / ID</span>
+                  <span>Visa or Permit</span>
+                  <span>Travel Details</span>
                 </div>
               </div>
             </div>
@@ -185,7 +187,7 @@ export default function DocumentsPage() {
                     </div>
                     <div>
                       <p>Entry permission and visa support</p>
-                      <h2>Visa Requirements</h2>
+                      <h2>Visa and Permit Requirements</h2>
                     </div>
                   </div>
 
@@ -214,9 +216,10 @@ export default function DocumentsPage() {
                   <div className="documents-fee-box">
                     <h3>Fees & Inclusions</h3>
                     <p>
-                      Visa fees, Sustainable Development Fee, permits, hotels,
-                      meals, guide, transport, and activities should be clearly
-                      shown in your quotation before confirmation.
+                      Visa fees, Sustainable Development Fee, permits, flights,
+                      hotels, meals, guide, transport, monument entry, and
+                      activities should be clearly shown in your quotation before
+                      confirmation.
                     </p>
 
                     <div className="documents-fee-items">
@@ -261,7 +264,7 @@ export default function DocumentsPage() {
                     <AlertCircle aria-hidden />
                     <p>
                       <strong>Passport Validity Alert:</strong> Your passport
-                      should normally be valid for at least 6 months from your
+                      should normally be valid for at least six months from your
                       date of entry. Confirm before booking flights if your
                       passport is close to expiry.
                     </p>
@@ -276,7 +279,7 @@ export default function DocumentsPage() {
                     </div>
                     <div>
                       <p>Nationality-specific entry notes</p>
-                      <h2>Visa Exemptions</h2>
+                      <h2>Nationality-Specific Entry Notes</h2>
                     </div>
                   </div>
 
@@ -297,9 +300,10 @@ export default function DocumentsPage() {
                   <div className="documents-soft-note">
                     <AlertCircle aria-hidden />
                     <p>
-                      Entry permit and visa exemption rules can differ by
-                      nationality and entry route. We will help verify the correct
-                      process before your travel date.
+                      Indian nationals apply for a permit rather than a standard
+                      tourist visa. Visitors from Bangladesh and the Maldives
+                      require visas but may apply before travel or at entry;
+                      applying in advance helps avoid delays.
                     </p>
                   </div>
                 </section>
@@ -499,9 +503,9 @@ const quickOverview: QuickOverviewItem[] = [
 ];
 
 const navItems: NavItem[] = [
-  { name: "Visa Requirements", id: "visa" },
+  { name: "Visa and Permit Requirements", id: "visa" },
   { name: "Passport Requirements", id: "passport" },
-  { name: "Visa Exemptions", id: "exemptions" },
+  { name: "Nationality Entry Notes", id: "exemptions" },
   { name: "Entry Points", id: "entry-points" },
   { name: "Application Process", id: "process" },
   { name: "What We Provide", id: "we-provide" },
@@ -522,7 +526,7 @@ const feeNotes = [
   {
     label: "SDF",
     value:
-      "Varies by nationality and age; standard international adult rate USD 100 per night.",
+      "Depends on nationality and age; standard non-Indian adult rate is USD 100 per night.",
   },
   { label: "Permits", value: "Depends on route" },
   { label: "Package Inclusions", value: "Shown in quotation" },
@@ -550,10 +554,10 @@ const exemptionCards = [
   {
     title: "Bangladeshi & Maldivian Citizens",
     description:
-      "Visitors from Bangladesh and the Maldives are eligible for a visa on arrival, making entry to Bhutan more convenient.",
+      "Visitors from Bangladesh and the Maldives require a visa. They may apply in advance or at the point of entry, but advance application helps avoid delays.",
     items: [
       "Carry a valid passport.",
-      
+      "Prepare application details for each traveler.",
       "Check the latest immigration rules and regulations before travel dates.",
     ],
   },
@@ -562,7 +566,7 @@ const exemptionCards = [
     description:
       "Most other international travelers usually need visa or entry clearance arranged before arrival.",
     items: [
-      "Work with a licensed Bhutan travel operator.",
+      "Apply through Bhutan's official visa portal or use operator/hotel support where appropriate.",
       "Submit documents early.",
       "Carry printed and digital copies while travelling.",
     ],
@@ -573,7 +577,7 @@ const entryPoints = [
   {
     title: "By Air",
     description:
-      "Paro International Airport is Bhutan's main international air entry point.",
+      "International flights currently operate through Bhutan's approved international gateways, with Paro the best-known arrival point and Gelephu also listed in official travel guidance.",
     items: [
       "Air arrival is common for international tourists.",
       "Flight schedules can be affected by weather.",
@@ -596,12 +600,12 @@ const processSteps: ProcessStep[] = [
   {
     title: "Share Your Travel Details",
     description:
-      "Send your travel dates, nationality, passport details, route preference, and number of travelers.",
+      "Send your travel dates, nationality, passport or accepted ID details, route preference, and number of travelers.",
   },
   {
     title: "Prepare Required Documents",
     description:
-      "Provide a clear passport copy, photo if required, flight details, and any additional documents needed.",
+      "Provide a clear passport or accepted ID copy, recent photo where required, travel details, and any additional documents needed.",
   },
   {
     title: "Confirm Your Tour",
@@ -645,7 +649,7 @@ const visaFaqs: FAQItem[] = [
   {
     question: "Do children need separate documents?",
     answer:
-      "Yes. Every traveler, including children and infants, needs their own valid travel document and any required entry clearance.",
+      "Yes. Every traveler, including children and infants, needs their own valid travel document and the required visa, permit, or accepted identity document under the applicable process.",
   },
   {
     question: "Can I enter Bhutan by land?",

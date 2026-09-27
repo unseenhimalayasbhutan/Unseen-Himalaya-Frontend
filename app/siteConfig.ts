@@ -9,13 +9,13 @@ export const siteConfig = {
   locale: "en_US",
   defaultImage: "/cover/background.jpg",
   address: {
-    streetAddress: "Theengh's Apartments, Babesa",
+    streetAddress: "Theengh Apartments, Babesa",
     addressLocality: "Thimphu",
     addressCountry: "BT",
   },
   contact: {
-    email: "unseenhimalayasbhutan@gmail.com",
-    emailHref: "mailto:unseenhimalayasbhutan@gmail.com",
+    email: "info@theunseenhimalayas.com",
+    emailHref: "mailto:info@theunseenhimalayas.com",
     phoneDisplay: "+975 16168893",
     phoneDisplayAll: "+975 16168893 / +975 16192762",
     phoneHref: "tel:+97516168893",

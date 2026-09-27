@@ -431,7 +431,7 @@ const companyInfo: CompanyInfoItem[] = [
   },
   {
     label: "Business Registration No.",
-    value: "50001306",
+    value: "50001360",
   },
   {
     label: "Tourism Experience",
@@ -439,7 +439,7 @@ const companyInfo: CompanyInfoItem[] = [
   },
   {
     label: "Office Address",
-    value: "Theengh's Apartments, Babesa, Thimphu",
+    value: "Theengh Apartments, Babesa, Thimphu",
   },
   {
     label: "Phone",
@@ -447,6 +447,6 @@ const companyInfo: CompanyInfoItem[] = [
   },
   {
     label: "Email",
-    value: "Unseenhimalayasbhutan@gmail.com",
+    value: "info@theunseenhimalayas.com",
   },
 ];
