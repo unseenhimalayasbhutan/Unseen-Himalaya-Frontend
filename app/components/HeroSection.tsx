@@ -12,7 +12,7 @@ export function HeroSection() {
 
       <div className="home-hero-content">
         <Link
-          href="/upcoming-events"
+          href="/upcoming-events/gnr-concert"
           className="home-hero-gnr-link"
           aria-label="View Guns N' Roses concert trip packages"
         >

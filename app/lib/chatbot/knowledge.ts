@@ -265,7 +265,7 @@ function buildUpcomingEventRecord(event: (typeof upcomingEvents)[number]): Knowl
     summary: `${cleanText(event.duration)} concert escape from Bhutan to ${cleanText(
       event.location
     )}, starting at ${cleanText(event.price)} ${cleanText(event.priceNote)}.`,
-    sourceUrl: `${siteConfig.url}/upcoming-events`,
+    sourceUrl: `${siteConfig.url}/upcoming-events/gnr-concert`,
     contentType: "upcoming-event",
     startingRate: Number(cleanText(event.price).replace(/[^\d]/g, "")) || undefined,
     tourCategory: "event",

@@ -49,7 +49,7 @@ export default function LegalDocumentsPage() {
           </a>
 
           <div className="legal-documents-grid">
-            {legalDocuments.map((document) => (
+            {legalDocuments.map((document, index) => (
               <article key={document.title} className="legal-document-card">
                 <h2>{document.title}</h2>
                 <p>{document.description}</p>
@@ -61,6 +61,7 @@ export default function LegalDocumentsPage() {
                     width={1488}
                     height={2105}
                     sizes="(max-width: 768px) 100vw, 45vw"
+                    loading={index === 0 ? "eager" : "lazy"}
                     className="legal-document-preview-image"
                   />
                 </div>

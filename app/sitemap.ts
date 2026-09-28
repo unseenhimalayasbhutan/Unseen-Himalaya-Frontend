@@ -52,6 +52,10 @@ const routeImages: Record<string, string[]> = {
   "/seasons": ["/Peach blossoms in front of the stunning Thimphu Dzong.JPG"],
   "/sdf": [siteConfig.defaultImage],
   "/upcoming-events": ["/guns-n-roses-concert-tour-brochure.png"],
+  "/upcoming-events/gnr-concert": ["/guns-n-roses-concert-tour-brochure.png"],
+  "/upcoming-events/essence-of-bhutan-group-tour": [
+    "/66bf02f4ff8c371f83c79a4f_66bef5aab388dabf85692211_Paro-Taktsang-1.jpeg",
+  ],
   "/why-visit": ["/IMG_20231021_170519.jpg"],
 };
 

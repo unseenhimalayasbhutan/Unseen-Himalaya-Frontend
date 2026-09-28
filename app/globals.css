@@ -34448,9 +34448,7 @@ textarea {
 
 .upcoming-events-poster-hero {
   min-height: clamp(390px, 42vw, 520px);
-  background:
-    linear-gradient(90deg, var(--color-overlay-medium) 0%, var(--color-overlay-medium) 36%, var(--color-overlay-medium) 62%, var(--color-overlay-medium) 100%),
-    url("/concert/03_guns_n_roses_band_live.jpg") right center / cover no-repeat;
+  background: url("/concert/03_guns_n_roses_band_live.jpg") right center / cover no-repeat;
 }
 
 .upcoming-events-poster-hero .upcoming-events-poster-hero-image {
@@ -34465,11 +34463,9 @@ textarea {
 }
 
 .upcoming-events-poster-hero .upcoming-events-poster-hero-shade {
-  display: block;
+  display: none;
   z-index: 1;
-  background:
-    linear-gradient(90deg, rgba(12, 10, 8, 0.38) 0%, rgba(12, 10, 8, 0.22) 34%, rgba(12, 10, 8, 0.08) 62%, transparent 100%),
-    linear-gradient(180deg, rgba(12, 10, 8, 0.18) 0%, rgba(12, 10, 8, 0.08) 48%, rgba(12, 10, 8, 0.18) 100%);
+  background: none;
 }
 
 .upcoming-events-record-mark {
@@ -34584,8 +34580,116 @@ textarea {
 
 @media (max-width: 720px) {
 
-  .upcoming-events-package-inclusions-panel ul {
+.upcoming-events-package-inclusions-panel ul {
+  grid-template-columns: 1fr;
+  }
+}
+
+.essence-tour-page {
+  --event-red: #876739;
+  --event-red-dark: #5a3f24;
+  --event-gold: #d9b46f;
+  --event-gold-light: #f1d89a;
+}
+
+.essence-tour-page .upcoming-events-poster-hero-shade {
+  background: none;
+}
+
+.essence-tour-page .upcoming-events-poster-hero {
+  background: url("/66bf02f4ff8c371f83c79a4f_66bef5aab388dabf85692211_Paro-Taktsang-1.jpeg") right center / cover no-repeat;
+}
+
+.essence-glance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.essence-glance-card {
+  min-height: 128px;
+  padding: 18px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(180deg, var(--color-bg-card), var(--color-bg-card)),
+    var(--color-overlay-medium);
+  box-shadow: var(--shadow-subtle);
+}
+
+.essence-glance-card span {
+  display: block;
+  color: var(--event-gold-light);
+  font-size: var(--font-size-xs);
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.essence-glance-card strong {
+  display: block;
+  margin-top: 10px;
+  color: var(--color-text-primary);
+  font-size: var(--font-size-md);
+  line-height: 1.35;
+}
+
+.essence-tour-note {
+  margin: 18px 0 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.essence-reason-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.essence-reason-card {
+  min-height: 240px;
+}
+
+.essence-reason-card p {
+  margin-top: 14px;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.7;
+}
+
+.essence-experience-row {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.essence-experience-row .upcoming-events-icon-item {
+  min-height: 170px;
+}
+
+.essence-overnight {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--event-gold-light);
+  font-size: var(--font-size-xs);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1180px) {
+  .essence-glance-grid,
+  .essence-reason-grid,
+  .essence-experience-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .essence-glance-grid,
+  .essence-reason-grid,
+  .essence-experience-row {
     grid-template-columns: 1fr;
+  }
+
+  .essence-tour-page .upcoming-events-poster-hero-copy p {
+    max-width: 290px;
   }
 }
 

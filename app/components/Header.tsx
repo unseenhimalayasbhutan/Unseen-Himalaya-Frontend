@@ -24,11 +24,6 @@ const navLinks = [
     href: "#",
     submenu: [
       {
-        label: "Bhutan Tour Packages",
-        href: "/bhutan-tours",
-        description: "Signature private Bhutan itineraries",
-      },
-      {
         label: "Cultural & Nature Tours",
         href: "/cultural-tours",
         description: "Immerse in Bhutanese culture",
@@ -140,6 +135,18 @@ const navLinks = [
   {
     label: "Upcoming Events",
     href: "/upcoming-events",
+    submenu: [
+      {
+        label: "GNR Concert",
+        href: "/upcoming-events/gnr-concert",
+        description: "Guns N' Roses concert escape to Guwahati",
+      },
+      {
+        label: "Essence of Bhutan Group Tour",
+        href: "/upcoming-events/essence-of-bhutan-group-tour",
+        description: "20-26 October 2026 Bhutan group departure",
+      },
+    ],
   },
     {
     label: "Company",

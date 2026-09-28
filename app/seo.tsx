@@ -149,6 +149,28 @@ export const pageSeo = {
       "Bhutan festival packages",
     ],
   },
+  "/upcoming-events/gnr-concert": {
+    title: "GNR Concert Tour Package",
+    description:
+      "Book the Guns N' Roses Guwahati concert escape with coordinated travel from Bhutan, hotel stays, train tickets, transfers, and tour support.",
+    keywords: [
+      "GNR concert Bhutan package",
+      "Guns N' Roses Guwahati tour",
+      "Bhutan concert trip",
+      "upcoming Bhutan events",
+    ],
+  },
+  "/upcoming-events/essence-of-bhutan-group-tour": {
+    title: "Essence of Bhutan Group Tour",
+    description:
+      "Join the 20-26 October 2026 Essence of Bhutan Group Tour through Thimphu, Punakha, Phobjikha, Paro, and Tiger's Nest.",
+    keywords: [
+      "Essence of Bhutan Group Tour",
+      "Bhutan group tour October 2026",
+      "Bhutan scheduled departure",
+      "Phuentsholing Bhutan tour",
+    ],
+  },
   "/places-to-visit": {
     title: "Places to Visit in Bhutan | Valleys and Route Ideas",
     description:
