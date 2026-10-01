@@ -34,9 +34,15 @@ export default function UpcomingEventsPage() {
     <>
       <Header />
 
-      <main className="upcoming-events-page upcoming-events-poster-page">
+      <main className="upcoming-events-page upcoming-events-poster-page gnr-concert-page">
         <article className="upcoming-events-poster" aria-labelledby="event-title">
           <section className="upcoming-events-poster-hero">
+            <PosterImage
+              src={event.heroImage}
+              alt="Guns N' Roses performing live on stage"
+              className="upcoming-events-poster-hero-image"
+              priority
+            />
             <div className="upcoming-events-poster-hero-shade" aria-hidden="true" />
 
             <div className="upcoming-events-poster-hero-copy">

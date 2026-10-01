@@ -36120,3 +36120,771 @@ textarea {
 ) :is(p, li, small, dd) {
   color: var(--color-text-secondary);
 }
+
+/* Event reference refinements: GNR banner and Essence of Bhutan landing page. */
+.gnr-concert-page {
+  --event-gold: #d9aa55;
+  --event-gold-soft: #f4cf8a;
+  --event-line: rgba(244, 207, 138, 0.32);
+}
+
+.gnr-concert-page .upcoming-events-poster {
+  background: #05070a;
+}
+
+.gnr-concert-page .upcoming-events-poster-hero {
+  min-height: clamp(430px, 47vw, 620px);
+  align-items: center;
+  padding: clamp(34px, 6vw, 92px) clamp(28px, 6.6vw, 104px);
+  background: url("/concert/03_guns_n_roses_band_live.jpg") center center / cover no-repeat #05070a;
+}
+
+.gnr-concert-page .upcoming-events-poster-hero .upcoming-events-poster-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: block;
+  z-index: 0;
+  opacity: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.gnr-concert-page .upcoming-events-poster-hero .upcoming-events-poster-hero-image img {
+  object-fit: cover;
+  object-position: right center;
+}
+
+.gnr-concert-page .upcoming-events-poster-hero .upcoming-events-poster-hero-shade {
+  display: block;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(2, 6, 12, 0.98) 0%, rgba(2, 6, 12, 0.9) 34%, rgba(2, 6, 12, 0.55) 53%, rgba(2, 6, 12, 0.1) 76%, rgba(2, 6, 12, 0) 100%),
+    linear-gradient(180deg, rgba(2, 6, 12, 0.16), rgba(2, 6, 12, 0.42));
+}
+
+.gnr-concert-page .upcoming-events-poster-hero-copy {
+  width: min(690px, 56vw);
+}
+
+.gnr-concert-page .upcoming-events-red-label {
+  padding: 0;
+  background: transparent;
+  color: var(--event-gold-soft);
+  font-size: clamp(0.84rem, 1vw, 1rem);
+  letter-spacing: 0.06em;
+}
+
+.gnr-concert-page .upcoming-events-poster-hero h1 {
+  margin-top: 18px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 7.1vw, 7.7rem);
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.gnr-concert-page .upcoming-events-poster-hero h1 span {
+  margin-top: 6px;
+  color: var(--event-gold-soft);
+  font-size: clamp(2rem, 4.25vw, 4.9rem);
+  font-weight: 700;
+}
+
+.gnr-concert-page .upcoming-events-poster-meta {
+  margin-top: clamp(18px, 2vw, 28px);
+  gap: 12px 24px;
+}
+
+.gnr-concert-page .upcoming-events-poster-meta span {
+  color: #f7f3ea;
+  font-size: clamp(0.84rem, 1.1vw, 1rem);
+  letter-spacing: 0.04em;
+}
+
+.gnr-concert-page .upcoming-events-poster-meta svg {
+  color: var(--event-gold-soft);
+}
+
+.gnr-concert-page .upcoming-events-poster-hero-copy p {
+  max-width: 780px;
+  color: var(--event-gold-soft);
+  font-size: clamp(1rem, 1.9vw, 1.55rem);
+  letter-spacing: 0.03em;
+}
+
+.gnr-concert-page .upcoming-events-poster-actions {
+  gap: clamp(14px, 3vw, 40px);
+  margin-top: clamp(24px, 3vw, 34px);
+}
+
+.gnr-concert-page .upcoming-events-gold-btn {
+  min-width: min(280px, 100%);
+  background: linear-gradient(180deg, #f8d693, #dcae5b);
+  color: #07090d;
+}
+
+.gnr-concert-page .upcoming-events-outline-btn {
+  border-width: 0 0 2px;
+  border-color: var(--event-gold-soft);
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.essence-landing-page {
+  --essence-bg: #070907;
+  --essence-panel: rgba(255, 255, 255, 0.045);
+  --essence-panel-strong: rgba(255, 255, 255, 0.075);
+  --essence-line: rgba(217, 180, 111, 0.28);
+  --essence-line-soft: rgba(255, 255, 255, 0.11);
+  --essence-gold: #d9b46f;
+  --essence-gold-soft: #f1d58b;
+  --essence-text: #f7f2e8;
+  --essence-muted: rgba(247, 242, 232, 0.72);
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(217, 180, 111, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, #090b09 0%, #070907 100%);
+  background-size: 88px 88px, auto;
+  color: var(--essence-text);
+}
+
+.essence-shell {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.essence-hero,
+.essence-final-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.essence-hero {
+  min-height: clamp(480px, 58vw, 640px);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--essence-line);
+}
+
+.essence-hero-image,
+.essence-final-cta > img,
+.essence-overview-card img,
+.essence-highlight-image img,
+.essence-gallery-image img,
+.essence-itinerary-thumb img {
+  object-fit: cover;
+}
+
+.essence-hero-image {
+  object-position: 68% center;
+  z-index: -2;
+}
+
+.essence-hero-overlay,
+.essence-final-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.essence-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(7, 9, 7, 0.96) 0%, rgba(7, 9, 7, 0.82) 39%, rgba(7, 9, 7, 0.34) 63%, rgba(7, 9, 7, 0.14) 100%),
+    linear-gradient(180deg, rgba(7, 9, 7, 0.15), rgba(7, 9, 7, 0.5));
+}
+
+.essence-hero-content {
+  padding: clamp(34px, 6vw, 72px) 0;
+}
+
+.essence-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: clamp(30px, 5vw, 54px);
+  color: var(--essence-muted);
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+}
+
+.essence-breadcrumb svg {
+  width: 12px;
+  height: 12px;
+  color: var(--essence-gold);
+}
+
+.essence-breadcrumb a:hover,
+.essence-breadcrumb a:focus-visible {
+  color: var(--essence-gold-soft);
+}
+
+.essence-eyebrow {
+  display: block;
+  color: var(--essence-gold-soft);
+  font-size: var(--font-size-xs);
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.essence-hero h1,
+.essence-title h2,
+.essence-final-content h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.essence-hero h1 {
+  max-width: 500px;
+  margin: 16px 0 0;
+  color: #fff;
+  font-size: clamp(3rem, 6vw, 5.9rem);
+  line-height: 0.95;
+}
+
+.essence-hero-date {
+  display: block;
+  margin-top: 14px;
+  color: var(--essence-gold-soft);
+  font-size: clamp(1.1rem, 1.9vw, 1.55rem);
+  font-weight: 950;
+}
+
+.essence-hero-meta {
+  max-width: 610px;
+  margin: 8px 0 0;
+  color: var(--essence-text);
+  font-size: var(--font-size-md);
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.essence-hero-meta span {
+  color: var(--essence-gold);
+}
+
+.essence-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.essence-btn {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border: 1px solid var(--essence-line);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 950;
+  text-decoration: none;
+  transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.essence-btn svg {
+  width: 17px;
+  height: 17px;
+}
+
+.essence-btn-primary {
+  background: linear-gradient(180deg, #e6c274, #c99d4d);
+  color: #080907;
+}
+
+.essence-btn-secondary {
+  background: rgba(7, 9, 7, 0.62);
+  color: var(--essence-text);
+}
+
+.essence-btn:hover,
+.essence-btn:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--essence-gold-soft);
+  outline: none;
+}
+
+.essence-section {
+  padding: clamp(28px, 5vw, 58px) 0;
+}
+
+.essence-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.96fr) minmax(330px, 0.78fr);
+  gap: clamp(28px, 6vw, 72px);
+  align-items: center;
+}
+
+.essence-title {
+  display: grid;
+  justify-items: start;
+  gap: 14px;
+}
+
+.essence-title h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  line-height: 1.05;
+}
+
+.essence-title > span {
+  width: 34px;
+  height: 2px;
+  background: var(--essence-gold);
+}
+
+.essence-copy-block p {
+  max-width: 620px;
+  margin: 20px 0 0;
+  color: var(--essence-muted);
+  font-size: var(--font-size-md);
+  line-height: 1.75;
+}
+
+.essence-overview-card,
+.essence-highlight-image,
+.essence-gallery-image,
+.essence-itinerary-thumb {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: #10130f;
+}
+
+.essence-overview-card {
+  min-height: 300px;
+  border: 1px solid var(--essence-gold);
+  box-shadow: var(--shadow-subtle);
+}
+
+.essence-overview-card figcaption {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  width: min(330px, calc(100% - 36px));
+  padding: 14px 16px;
+  border-left: 2px solid var(--essence-gold);
+  background: rgba(7, 9, 7, 0.74);
+  color: var(--essence-text);
+  font-size: var(--font-size-sm);
+  font-weight: 850;
+  line-height: 1.45;
+}
+
+.essence-bordered-panel {
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid var(--essence-line);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--essence-panel), rgba(217, 180, 111, 0.025));
+}
+
+.essence-glance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.essence-info-card {
+  min-height: 124px;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--essence-line-soft);
+  border-radius: var(--radius-sm);
+  background: var(--essence-panel);
+}
+
+.essence-info-card svg {
+  width: 28px;
+  height: 28px;
+  color: var(--essence-gold-soft);
+}
+
+.essence-info-card span,
+.essence-highlight-card h2,
+.essence-itinerary-copy h2 {
+  display: block;
+  color: var(--essence-text);
+  font-size: var(--font-size-sm);
+  font-weight: 950;
+}
+
+.essence-info-card strong {
+  display: block;
+  margin-top: 7px;
+  color: var(--essence-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+}
+
+.essence-section-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.essence-section-head .essence-title {
+  margin-bottom: 0;
+}
+
+.essence-section-head > span {
+  color: var(--essence-gold-soft);
+  font-size: var(--font-size-sm);
+  font-weight: 850;
+}
+
+.essence-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.essence-highlight-image {
+  aspect-ratio: 1 / 0.74;
+  margin-bottom: 12px;
+}
+
+.essence-highlight-card h2 {
+  line-height: 1.2;
+}
+
+.essence-highlight-card p {
+  margin-top: 5px;
+  color: var(--essence-muted);
+  font-size: var(--font-size-xs);
+  line-height: 1.45;
+}
+
+.essence-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.essence-gallery-image {
+  aspect-ratio: 16 / 8.6;
+}
+
+.essence-itinerary-list {
+  display: grid;
+  gap: 2px;
+  margin-top: 24px;
+}
+
+.essence-itinerary-section {
+  scroll-margin-top: 150px;
+}
+
+.essence-itinerary-row {
+  min-height: 138px;
+  display: grid;
+  grid-template-columns: 82px 170px minmax(0, 1fr) 26px;
+  gap: 16px;
+  align-items: start;
+  padding: 10px 16px 10px 0;
+  border: 1px solid var(--essence-line-soft);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.essence-day-mark {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  border-right: 1px solid var(--essence-line-soft);
+  color: var(--essence-gold-soft);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.essence-day-mark span {
+  font-size: 0.68rem;
+  font-weight: 950;
+}
+
+.essence-day-mark strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+.essence-itinerary-thumb {
+  width: 170px;
+  height: 118px;
+  align-self: stretch;
+}
+
+.essence-itinerary-copy h2 {
+  font-size: var(--font-size-md);
+}
+
+.essence-itinerary-copy p {
+  margin-top: 4px;
+  color: var(--essence-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.45;
+}
+
+.essence-itinerary-copy ul {
+  display: grid;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.essence-itinerary-copy li {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  gap: 8px;
+  color: var(--essence-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.45;
+}
+
+.essence-itinerary-copy li svg {
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+  color: var(--essence-gold-soft);
+}
+
+.essence-itinerary-copy small {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 12px;
+  padding: 5px 8px;
+  border: 1px solid var(--essence-line);
+  border-radius: var(--radius-sm);
+  color: var(--essence-gold-soft);
+  font-size: var(--font-size-xs);
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.essence-itinerary-row > svg {
+  width: 18px;
+  height: 18px;
+  color: var(--essence-gold-soft);
+}
+
+.essence-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.essence-checklist {
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid var(--essence-line);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--essence-panel), rgba(217, 180, 111, 0.025));
+}
+
+.essence-checklist h2 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 500;
+}
+
+.essence-checklist h2 svg {
+  width: 28px;
+  height: 28px;
+  color: var(--essence-gold-soft);
+}
+
+.essence-checklist ul {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.essence-checklist li {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 10px;
+  color: var(--essence-muted);
+  font-size: var(--font-size-sm);
+  line-height: 1.45;
+}
+
+.essence-checklist li svg {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  color: var(--essence-gold-soft);
+}
+
+.essence-final-cta {
+  min-height: 330px;
+  display: flex;
+  align-items: center;
+  margin-top: clamp(12px, 2vw, 24px);
+}
+
+.essence-final-cta > img {
+  z-index: -2;
+  object-position: center 58%;
+}
+
+.essence-final-overlay {
+  background:
+    linear-gradient(90deg, rgba(7, 9, 7, 0.94), rgba(7, 9, 7, 0.62) 48%, rgba(7, 9, 7, 0.18)),
+    linear-gradient(180deg, rgba(7, 9, 7, 0.18), rgba(7, 9, 7, 0.78));
+}
+
+.essence-final-content {
+  padding: clamp(40px, 6vw, 74px) 0;
+}
+
+.essence-final-content h2 {
+  max-width: 520px;
+  margin: 12px 0 0;
+  color: #fff;
+  font-size: clamp(2.1rem, 4.6vw, 4rem);
+  line-height: 1.08;
+}
+
+.essence-final-content p {
+  margin: 16px 0 0;
+  color: var(--essence-text);
+  font-size: var(--font-size-md);
+}
+
+@media (min-width: 761px) {
+  .gnr-concert-page .upcoming-events-poster-hero h1 {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1180px) {
+  .essence-highlight-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .essence-glance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .essence-hero {
+    min-height: 620px;
+  }
+
+  .essence-hero-image {
+    object-position: 70% center;
+  }
+
+  .essence-hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(7, 9, 7, 0.94), rgba(7, 9, 7, 0.68)),
+      linear-gradient(180deg, rgba(7, 9, 7, 0.24), rgba(7, 9, 7, 0.7));
+  }
+
+  .essence-overview-grid,
+  .essence-list-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .essence-highlight-grid,
+  .essence-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .essence-itinerary-row {
+    grid-template-columns: 70px 128px minmax(0, 1fr);
+  }
+
+  .essence-itinerary-row > svg {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .gnr-concert-page .upcoming-events-poster-hero {
+    min-height: 540px;
+    align-items: end;
+  }
+
+  .gnr-concert-page .upcoming-events-poster-hero-copy {
+    width: 100%;
+  }
+
+  .gnr-concert-page .upcoming-events-poster-hero .upcoming-events-poster-hero-shade {
+    background:
+      linear-gradient(180deg, rgba(2, 6, 12, 0.3), rgba(2, 6, 12, 0.96) 56%, rgba(2, 6, 12, 0.98)),
+      linear-gradient(90deg, rgba(2, 6, 12, 0.86), rgba(2, 6, 12, 0.22));
+  }
+
+  .essence-shell {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .essence-hero {
+    min-height: 560px;
+  }
+
+  .essence-breadcrumb {
+    margin-bottom: 34px;
+  }
+
+  .essence-actions,
+  .essence-btn {
+    width: 100%;
+  }
+
+  .essence-section-head {
+    display: grid;
+  }
+
+  .essence-highlight-grid,
+  .essence-gallery-grid,
+  .essence-glance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .essence-itinerary-row {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .essence-itinerary-thumb {
+    display: none;
+  }
+
+  .essence-day-mark {
+    width: 56px;
+    height: auto;
+    align-self: start;
+    border: 1px solid var(--essence-line-soft);
+    border-radius: var(--radius-sm);
+    min-height: 64px;
+  }
+}

@@ -4,7 +4,7 @@ export const upcomingEvents = [
     label: "Upcoming Event",
     title: "Guns N' Roses Concert at Guwahati",
     subtitle: "Bhutan to Guns N' Roses Concert - Ultimate Rock Escape",
-    date: "17 November 2026",
+    date: "14 November 2026",
     location: "Guwahati, Assam, India",
     duration: "5 Days / 4 Nights",
     price: "Starting at Nu. 26,214",
