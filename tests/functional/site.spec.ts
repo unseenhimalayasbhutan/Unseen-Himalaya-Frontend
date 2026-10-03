@@ -92,6 +92,91 @@ test("all public routes render the shared shell without horizontal overflow", as
   }
 });
 
+test("all public routes keep the shared header visually consistent", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+
+  const snapshots: Array<{
+    route: string;
+    styles: Record<string, string>;
+  }> = [];
+
+  for (const route of publicRoutes) {
+    await page.goto(route, { waitUntil: "domcontentloaded" });
+    await expect(page.locator("header.site-header")).toHaveCount(1);
+
+    snapshots.push({
+      route,
+      styles: await page.locator("header.site-header").evaluate(() => {
+        const read = (selector: string) => {
+          const element = document.querySelector<HTMLElement>(selector);
+          if (!element) return {};
+
+          const style = getComputedStyle(element);
+          const rect = element.getBoundingClientRect();
+
+          return {
+            backgroundColor: style.backgroundColor,
+            color: style.color,
+            display: style.display,
+            fontFamily: style.fontFamily,
+            fontSize: style.fontSize,
+            fontWeight: style.fontWeight,
+            height: Math.round(rect.height).toString(),
+            letterSpacing: style.letterSpacing,
+            lineHeight: style.lineHeight,
+            minHeight: style.minHeight,
+            padding: style.padding,
+            textTransform: style.textTransform,
+            width: Math.round(rect.width).toString(),
+          };
+        };
+
+        return {
+          ...Object.fromEntries(
+            Object.entries(read(".site-header")).map(([key, value]) => [
+              `header.${key}`,
+              value,
+            ]),
+          ),
+          ...Object.fromEntries(
+            Object.entries(read(".top-bar")).map(([key, value]) => [
+              `topBar.${key}`,
+              value,
+            ]),
+          ),
+          ...Object.fromEntries(
+            Object.entries(read(".navbar")).map(([key, value]) => [
+              `navbar.${key}`,
+              value,
+            ]),
+          ),
+          ...Object.fromEntries(
+            Object.entries(read(".dropdown-btn, .nav-link")).map(([key, value]) => [
+              `navText.${key}`,
+              value,
+            ]),
+          ),
+          ...Object.fromEntries(
+            Object.entries(read(".logo-image")).map(([key, value]) => [
+              `logo.${key}`,
+              value,
+            ]),
+          ),
+        };
+      }),
+    });
+  }
+
+  const [baseline] = snapshots;
+  for (const snapshot of snapshots.slice(1)) {
+    expect(snapshot.styles, `${snapshot.route} header should match ${baseline.route}`).toEqual(
+      baseline.styles,
+    );
+  }
+});
+
 test("public contact links are consistent and contain no placeholders", async ({
   page,
 }) => {

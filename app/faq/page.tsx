@@ -237,6 +237,146 @@ const faqCategories: FAQCategory[] = [
     ],
   },
   {
+    id: "payments",
+    name: "Payments & Fund Transfers",
+    description: "Bank transfers, cards, UPI, deposits, receipts, and refunds",
+    icon: WalletCards,
+    faqs: [
+      {
+        id: "payments-0",
+        question: "How can I pay for my Bhutan tour?",
+        answer:
+          "We offer secure and convenient payment options for both international and regional travelers. Depending on your country and booking, payment can be made by international bank transfer, credit or debit card, UPI, or INR bank transfer. Once your booking is confirmed, our team will provide the appropriate payment instructions together with your invoice.",
+      },
+      {
+        id: "payments-1",
+        question: "How can travelers from India make payment?",
+        answer:
+          "Guests traveling from India can make payments through UPI or supported Indian payment apps, INR bank transfer, or international credit or debit card. For UPI payments, supported Indian UPI apps may be used with our authorized Bhutan merchant payment facility, depending on your bank and UPI provider. For larger tour payments, we may recommend an INR bank transfer.",
+      },
+      {
+        id: "payments-2",
+        question: "Can I pay using Google Pay, PhonePe, BHIM or other UPI apps?",
+        answer:
+          "Yes. Supported Indian UPI applications may be used for payments to compatible Bhutan merchant QR facilities. International UPI functionality must be supported and enabled by your Indian bank or payment application, and transaction limits and availability may vary. Please contact us before making payment so that we can provide the correct payment instructions.",
+      },
+      {
+        id: "payments-3",
+        question: "Can international travelers pay by bank transfer?",
+        answer:
+          "Yes. International guests can pay by SWIFT or international bank transfer directly to our designated business bank account in Bhutan. We will provide the required beneficiary details, SWIFT/BIC information, payment reference, and other instructions with your invoice. Please include your booking or invoice reference so that we can identify your payment correctly.",
+      },
+      {
+        id: "payments-4",
+        question: "Can I pay by credit or debit card?",
+        answer:
+          "Yes, where available for your booking, international credit and debit card payments can be made through our authorized secure payment facility. Supported cards and payment options may vary depending on the issuing bank, country, and payment gateway. For security, never send your full card number, CVV, PIN, or other sensitive card information by email, WhatsApp, or social media.",
+      },
+      {
+        id: "payments-5",
+        question: "Do you accept Visa and Mastercard?",
+        answer:
+          "Yes, supported Visa and Mastercard credit or debit cards can be used through our authorized payment facility, subject to your card issuer's approval and applicable international transaction settings.",
+      },
+      {
+        id: "payments-6",
+        question: "Do you accept American Express?",
+        answer:
+          "American Express availability depends on the payment facility being used. Please contact us before payment if you specifically wish to use an American Express card, and we will confirm the available options.",
+      },
+      {
+        id: "payments-7",
+        question: "Can I use Wise or another international money-transfer service?",
+        answer:
+          "Certain international transfer services may be able to send supported currencies to Bhutan through international banking networks. Availability varies by country, currency, and service provider, so please contact us before initiating the transfer. We will provide the correct beneficiary bank details for your booking.",
+      },
+      {
+        id: "payments-8",
+        question: "Can I pay through PayPal?",
+        answer:
+          "PayPal is not currently one of our standard payment methods. We recommend using one of our approved payment options, such as international bank transfer or supported credit or debit card payment.",
+      },
+      {
+        id: "payments-9",
+        question: "What currencies can I pay in?",
+        answer:
+          "The available payment currency depends on your country and payment method. Indian travelers may be able to pay in INR, while international travelers may use supported foreign currencies through international bank transfer or card payment. Your quotation or invoice will clearly state the applicable currency and amount payable.",
+      },
+      {
+        id: "payments-10",
+        question: "Are there any bank or card processing charges?",
+        answer:
+          "Banks, card issuers, payment gateways, or intermediary banks may apply transaction, foreign-exchange, or international transfer charges. Any applicable payment instructions will be communicated before payment. When making a bank transfer, please ensure that the amount received is sufficient to settle the amount shown as payable on your invoice.",
+      },
+      {
+        id: "payments-11",
+        question: "Is online payment secure?",
+        answer:
+          "Payments are processed through authorized banking or payment facilities. We do not ask guests to send sensitive card information such as their full card number, CVV, or PIN through WhatsApp, email, or social media. Always use the official payment instructions provided by Unseen Himalayas Bhutan.",
+      },
+      {
+        id: "payments-12",
+        question: "How much do I need to pay to confirm my booking?",
+        answer:
+          "The required deposit depends on the services included in your booking. Your quotation, invoice, or booking confirmation will clearly show the booking deposit required, Sustainable Development Fee where applicable, visa or permit-related payments where applicable, remaining tour balance, and final payment due date. Some government fees and confirmed third-party services may require full advance payment.",
+      },
+      {
+        id: "payments-13",
+        question: "When is my booking considered confirmed?",
+        answer:
+          "A quotation or itinerary alone does not constitute a confirmed booking. Your booking is considered confirmed once the required payment has been received and verified and we have issued your official booking confirmation. Hotel rooms and other services remain subject to availability until they are formally secured.",
+      },
+      {
+        id: "payments-14",
+        question: "Will I receive confirmation after making payment?",
+        answer:
+          "Yes. Once your payment has been received and verified, we will provide an acknowledgement or receipt and update you on the status of your booking. Please retain your payment confirmation or transaction reference until your booking has been fully confirmed.",
+      },
+      {
+        id: "payments-15",
+        question: "What should I put as the payment reference?",
+        answer:
+          "Whenever possible, use the booking reference, invoice number, or traveler name provided by our team. This allows us to identify and reconcile your payment quickly.",
+      },
+      {
+        id: "payments-16",
+        question: "Can I make payment in installments?",
+        answer:
+          "Depending on your booking and travel date, payment may be divided between an initial booking deposit and the remaining balance. Any installment arrangement and payment deadlines will be clearly stated in your quotation, invoice, or booking confirmation.",
+      },
+      {
+        id: "payments-17",
+        question: "Can I pay the remaining balance after arriving in Bhutan?",
+        answer:
+          "This depends on your booking. Certain costs must be settled in advance so that we can confirm hotels, transportation, documentation, permits, and other services. Government-related payments may also need to be completed before travel. If a balance can be paid upon arrival, this will be specifically stated in your booking confirmation.",
+      },
+      {
+        id: "payments-18",
+        question: "Can someone else make the payment on my behalf?",
+        answer:
+          "In some circumstances, yes. However, for payment verification and compliance purposes, we may request information identifying the payer and their relationship to the booking. Please inform us in advance if the payment will be made by someone other than the traveler or the person named on the booking.",
+      },
+      {
+        id: "payments-19",
+        question: "How are refunds handled?",
+        answer:
+          "Refund eligibility depends on our Booking, Cancellation & Refund Policy, the timing of cancellation, and the terms imposed by hotels, airlines, and other service providers. Where a refund is approved, it will normally be processed through an appropriate traceable payment channel. Bank, card, foreign-exchange, or third-party charges may apply where applicable. Please refer to our Terms & Conditions and Cancellation & Refund Policy for complete details.",
+      },
+      {
+        id: "payments-20",
+        question: "How do I know that I am paying the correct account?",
+        answer:
+          "For your security, only make payments using the official instructions issued by Unseen Himalayas Bhutan. If you receive unexpected payment instructions or notice a change in bank details, do not transfer the money immediately. Contact us through our official communication channels and verify the details first. We will never ask you to disclose your banking password, OTP, card PIN, or other confidential banking credentials.",
+      },
+      {
+        id: "payments-21",
+        question: "Who should I contact if I have difficulty making a payment?",
+        answer:
+          "Please contact Unseen Himalayas Bhutan and let us know your country, preferred payment method, and booking reference. Our team will provide the most suitable available payment option and guide you through the process.",
+      },
+    ],
+  },
+  {
     id: "visa",
     name: "Visas & Documents",
     description: "Passport, visa process, and required documents",

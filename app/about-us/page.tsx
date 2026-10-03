@@ -42,12 +42,7 @@ export default function AboutPage() {
                 </h1>
 
                 <p className="about-pro-hero-description">
-                  Unseen Himalayas Bhutan specializes in curated travel experiences
-                  across Bhutan. Backed by four years of tourism experience, we bring
-                  in-depth local knowledge and reliable service. We are also committed to
-                  showcasing Bhutan&apos;s rich culture, landscapes, spirituality,
-                  hospitality, and local way of life through professional travel
-                  planning and reliable ground handling.
+                  Unseen Himalayas Bhutan is a new Bhutanese travel company built on four years of hands-on experience in the tourism industry. We offer thoughtfully designed Bhutan tour packages while giving every guest the freedom to personalize their journey around their interests, preferences, pace, and travel style. Our goal is simple: to make travelling in Bhutan hassle-free, personal, well-organized, and genuinely worth what you pay, with carefully planned experiences and the best possible value for your journey.
                 </p>
 
                 <div className="about-pro-hero-actions">
@@ -74,8 +69,9 @@ export default function AboutPage() {
                 <p className="about-pro-hero-card-kicker">Our Promise</p>
                 <h2>Travel beyond sightseeing.</h2>
                 <p>
-                  We believe travel should create genuine connections with
-                  Bhutan&apos;s people, culture, nature, spirituality, and
+                  We believe a journey through Bhutan should leave space for
+                  real conversations, unhurried moments, and genuine connections
+                  with the country&apos;s people, culture, nature, spirituality, and
                   everyday hospitality.
                 </p>
                 <div className="about-pro-hero-card-footer">
@@ -101,18 +97,13 @@ export default function AboutPage() {
                 <span> Professional local support.</span>
               </h2>
               <p>
-                Unseen Himalayas Bhutan is a Bhutan-based destination management
-                company specializing in curated travel experiences across
-                Bhutan. Our company focuses on creating meaningful travel
-                experiences for international travelers, travel partners, and
-                travel agencies seeking professional ground handling services and
-                reliable operational support in Bhutan.
+               Unseen Himalayas Bhutan is a newly established Bhutanese travel company, built on four years of hands-on experience in the tourism industry. That experience has shaped how we plan every journey: with careful attention to each guest’s interests, comfort, pace, travel style, and expectations.
               </p>
               <p>
-                From cultural explorations and luxury escapes to customized
-                itineraries and immersive local experiences, we strive to
-                provide every guest with exceptional service standards and
-                memorable journeys.
+                We offer thoughtfully designed tour packages that make planning Bhutan simple, while giving our guests the flexibility to personalize their journey. Whether it is a cultural exploration, luxury escape, family holiday, soft adventure, or a more immersive local experience, our itineraries can be tailored to create a trip that feels right for each traveler.
+              </p>
+              <p>
+                Our goal is to make travelling in Bhutan as hassle-free, well-organized, and enjoyable as possible, from the first enquiry to the final day of the journey. We focus on thoughtful planning, reliable local support, quality services, and the best possible value for money, so our guests can spend less time worrying about arrangements and more time experiencing Bhutan.
               </p>
             </div>
 
@@ -175,7 +166,9 @@ export default function AboutPage() {
                   We support international travelers, travel partners, and travel
                   agencies with responsive communication, personalized guest handling,
                   flexible itinerary planning, and strong destination knowledge across
-                  Bhutan.
+                  Bhutan. Our role is to slow the planning down enough to get it
+                  right, then manage the ground arrangements carefully so the trip
+                  feels smooth once guests arrive.
                 </p>
 
                 <div className="about-pro-difference-list">
@@ -237,9 +230,12 @@ export default function AboutPage() {
 
                 <p className="about-pro-section-text">
                   Thank you for considering Unseen Himalayas Bhutan as your trusted
-                  travel partner in Bhutan. We look forward to building a
-                  long-term and mutually beneficial collaboration while
-                  delivering memorable experiences to travelers visiting Bhutan.
+                  travel partner in Bhutan. We are a new company with a clear
+                  point of view: Bhutan should not feel like a checklist. With
+                  four years of tourism experience behind our team, we look
+                  forward to building long-term collaborations while creating
+                  thoughtful, personal, and memorable journeys for travelers
+                  visiting Bhutan.
                 </p>
 
                 <Link href="/contact" className="about-pro-inline-link">
@@ -313,7 +309,7 @@ const stats: StatItem[] = [
   {
     number: "DMC",
     label: "Company Type",
-    note: "A Bhutan-based destination management company focused on personalized journeys.",
+    note: "A new Bhutan-based destination management company focused on personalized, well-paced journeys.",
   },
   {
     number: "B2B",
@@ -389,7 +385,7 @@ const partnerReasons: CardItem[] = [
     marker: "02",
     title: "Personalized Guest Handling",
     description:
-      "Operational support tailored to traveler profile, partner needs, and service expectations.",
+      "Operational support shaped around each traveler's interests, comfort, pace, and service expectations.",
   },
   {
     marker: "03",
