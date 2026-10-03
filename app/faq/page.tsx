@@ -301,6 +301,80 @@ const faqCategories: FAQCategory[] = [
     ],
   },
   {
+    id: "guides-languages",
+    name: "Guides & Languages",
+    description: "Guide requirements, language requests, and local etiquette",
+    icon: MessageCircle,
+    faqs: [
+      {
+        id: "guides-languages-0",
+        question: "Do I need a guide to travel in Bhutan?",
+        answer:
+          "According to current official Bhutan Travel guidance, visitors must be accompanied by a guide while travelling in Bhutan. A guide is also required for visitors entering by land who travel beyond the border towns, for entry to monuments and dzongs, and for treks with an accredited tour operator or guide.",
+      },
+      {
+        id: "guides-languages-1",
+        question: "Can I request a guide who speaks my preferred language?",
+        answer:
+          "Yes. Include your preferred language when enquiring. Availability and any additional charges should be confirmed before you book.",
+      },
+      {
+        id: "guides-languages-2",
+        question: "Will English be enough for travelling in Bhutan?",
+        answer:
+          "English is widely understood in Bhutan. An English-speaking guide can also help you communicate with people who prefer a local language.",
+      },
+      {
+        id: "guides-languages-3",
+        question: "Do guide wages differ by language?",
+        answer:
+          "Yes. As indicative planning ranges, English-speaking guides are commonly around Nu. 1,800-2,500 per day, and Hindi-speaking guides are often in a similar range unless a fully Hindi-dedicated guide is requested. Chinese-speaking guides may be around Nu. 4,800-6,400 per day because supply is limited. French, German, Japanese, or Spanish-speaking guides can be around Nu. 10,000-12,000 per day because these specialists are rarer. Final rates depend on availability, itinerary, services, and booking terms, so ask for written confirmation before you book.",
+      },
+      {
+        id: "guides-languages-4",
+        question: "Can I request a Hindi-speaking guide in Bhutan?",
+        answer:
+          "Yes. Mention whether you need the entire tour conducted in Hindi or only occasional assistance, so the appropriate level of language support can be checked.",
+      },
+      {
+        id: "guides-languages-5",
+        question: "Is a Chinese-speaking guide request specific enough?",
+        answer:
+          "No. Specify whether you need Mandarin, Cantonese, or another preferred language, and ask for it to be confirmed in your booking.",
+      },
+      {
+        id: "guides-languages-6",
+        question: "Are French, German, Japanese, or Spanish guides available?",
+        answer:
+          "Specialist-language guides may be possible, but availability must be checked for your travel dates, itinerary, and required level of communication before you confirm your trip.",
+      },
+      {
+        id: "guides-languages-7",
+        question: "How early should I request a specialist-language guide?",
+        answer:
+          "Make the request when you first enquire. There is no single booking deadline that guarantees availability, so confirming early gives you more time to consider alternatives.",
+      },
+      {
+        id: "guides-languages-8",
+        question: "Can I request a female guide in Bhutan?",
+        answer:
+          "You can include this preference in your enquiry. The arrangement will depend on availability and should be confirmed before booking.",
+      },
+      {
+        id: "guides-languages-9",
+        question: "Will my guide stay with me all day?",
+        answer:
+          "This depends on the services booked. Your itinerary should explain which transfers, sightseeing days, and activities include a guide. Accompaniment during scheduled services does not automatically mean round-the-clock personal assistance.",
+      },
+      {
+        id: "guides-languages-10",
+        question: "Can my guide help with etiquette and photography permission?",
+        answer:
+          "Yes. Ask your guide about appropriate behaviour, photography permissions, and local customs before visiting religious sites or meeting community members.",
+      },
+    ],
+  },
+  {
     id: "health",
     name: "Health & Safety",
     description: "Insurance, altitude, tobacco rules, and safety",
