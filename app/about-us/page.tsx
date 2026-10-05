@@ -37,8 +37,8 @@ export default function AboutPage() {
                 </div>
 
                 <h1 className="about-pro-hero-title">
-                  A Bhutan-based destination management company for authentic,
-                  seamless, and personalized journeys.
+                  A new Bhutan travel company built to make trips feel personal,
+                  not rushed.
                 </h1>
 
                 <p className="about-pro-hero-description">
@@ -47,7 +47,7 @@ export default function AboutPage() {
 
                 <div className="about-pro-hero-actions">
                   <Link href="/contact" className="about-pro-btn-primary">
-                    Partner With Us
+                    Plan With Us
                   </Link>
 
                   <Link href="/cultural-tours" className="about-pro-btn-secondary">
@@ -70,9 +70,8 @@ export default function AboutPage() {
                 <h2>Travel beyond sightseeing.</h2>
                 <p>
                   We believe a journey through Bhutan should leave space for
-                  real conversations, unhurried moments, and genuine connections
-                  with the country&apos;s people, culture, nature, spirituality, and
-                  everyday hospitality.
+                  real conversations, unhurried moments, and the small local
+                  details that disappear when an itinerary is packed too tightly.
                 </p>
                 <div className="about-pro-hero-card-footer">
                   <span aria-hidden="true">4 years of tourism industry experience</span>
@@ -93,17 +92,17 @@ export default function AboutPage() {
 
             <div className="about-pro-intro">
               <h2>
-                Curated Bhutan travel.
-                <span> Professional local support.</span>
+                Thoughtful Bhutan travel.
+                <span> Planned around real people.</span>
               </h2>
               <p>
-               Unseen Himalayas Bhutan is a newly established Bhutanese travel company, built on four years of hands-on experience in the tourism industry. That experience has shaped how we plan every journey: with careful attention to each guest’s interests, comfort, pace, travel style, and expectations.
+                Unseen Himalayas Bhutan is newly established, but our planning is shaped by four years of hands-on tourism experience in Bhutan. That experience taught us where trips often go wrong: long days with too many stops, unclear inclusions, rushed sightseeing, and packages that look polished on paper but do not match the traveler.
               </p>
               <p>
-                We offer thoughtfully designed tour packages that make planning Bhutan simple, while giving our guests the flexibility to personalize their journey. Whether it is a cultural exploration, luxury escape, family holiday, soft adventure, or a more immersive local experience, our itineraries can be tailored to create a trip that feels right for each traveler.
+                We still offer thoughtfully designed tour packages because they make planning easier. The difference is that we treat them as a starting point, not a script. Whether you want culture, festivals, soft adventure, family travel, comfort-focused stays, photography time, or quieter village moments, we adjust the route so the vacation feels like yours.
               </p>
               <p>
-                Our goal is to make travelling in Bhutan as hassle-free, well-organized, and enjoyable as possible, from the first enquiry to the final day of the journey. We focus on thoughtful planning, reliable local support, quality services, and the best possible value for money, so our guests can spend less time worrying about arrangements and more time experiencing Bhutan.
+                Our goal is to make travelling in Bhutan clear, well-paced, and genuinely enjoyable from the first enquiry to the final day. We focus on practical planning, reliable local support, quality services, and good value, so guests spend less time worrying about arrangements and more time experiencing Bhutan at a human pace.
               </p>
             </div>
 
@@ -129,7 +128,7 @@ export default function AboutPage() {
             </div>
 
             <h2 className="about-pro-section-title about-pro-center-title">
-              Complete Bhutan travel services for guests, partners, and travel agencies.
+              Complete Bhutan travel services for private guests, groups, and travel partners.
             </h2>
 
             <div className="about-pro-assurance-grid">
@@ -146,7 +145,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Why Partner With Us */}
+        {/* Why Travel With Us */}
         <section className="about-pro-section about-pro-section-white">
           <div className="container">
             <div className="about-pro-split-grid">
@@ -154,21 +153,21 @@ export default function AboutPage() {
                 <div className="about-pro-section-header">
                   <span className="about-pro-section-line" />
                   <span className="about-pro-section-label">
-                    Why Partner With Us
+                    Why Travel With Us
                   </span>
                 </div>
 
                 <h2 className="about-pro-section-title">
-                  Reliable local expertise with a long-term partnership approach.
+                  Local planning that keeps your vacation from becoming a checklist.
                 </h2>
 
                 <p className="about-pro-section-text">
-                  We support international travelers, travel partners, and travel
-                  agencies with responsive communication, personalized guest handling,
-                  flexible itinerary planning, and strong destination knowledge across
-                  Bhutan. Our role is to slow the planning down enough to get it
-                  right, then manage the ground arrangements carefully so the trip
-                  feels smooth once guests arrive.
+                  We support travelers with responsive communication, flexible
+                  itinerary planning, clear ground arrangements, and practical
+                  destination knowledge across Bhutan. Our role is to slow the
+                  planning down enough to understand what matters to you, then
+                  coordinate the trip carefully so each day feels manageable once
+                  you arrive.
                 </p>
 
                 <div className="about-pro-difference-list">
@@ -189,13 +188,13 @@ export default function AboutPage() {
               <div className="about-pro-feature-panel">
                 <div className="about-pro-feature-panel-inner">
                   <div className="about-pro-feature-badge">
-                    Partnership Focus
+                    Traveler Care
                   </div>
-                  <h3>Professional, responsive, and guest-focused.</h3>
+                  <h3>Planned clearly, paced honestly, supported locally.</h3>
                   <p>
-                    Our goal is to build long-term and mutually beneficial
-                    collaborations while delivering memorable Bhutan experiences
-                    for every guest.
+                    You work with a Bhutan-based team that understands the road
+                    times, seasonal limits, guide coordination, hotel realities,
+                    and small choices that make a trip smoother.
                   </p>
 
                   <div className="about-pro-feature-points">
@@ -225,17 +224,14 @@ export default function AboutPage() {
                 </div>
 
                 <h2 className="about-pro-section-title">
-                  Unseen Himalayas Bhutan company profile.
+                  Who looks after your trip.
                 </h2>
 
                 <p className="about-pro-section-text">
-                  Thank you for considering Unseen Himalayas Bhutan as your trusted
-                  travel partner in Bhutan. We are a new company with a clear
-                  point of view: Bhutan should not feel like a checklist. With
-                  four years of tourism experience behind our team, we look
-                  forward to building long-term collaborations while creating
-                  thoughtful, personal, and memorable journeys for travelers
-                  visiting Bhutan.
+                  Your trip is looked after by a Bhutan-based planning and
+                  operations team that handles enquiry support, itinerary design,
+                  hotel and transport coordination, guide assignment, document
+                  reminders, and on-trip support.
                 </p>
 
                 <Link href="/contact" className="about-pro-inline-link">
@@ -267,12 +263,12 @@ export default function AboutPage() {
           <div className="container">
             <div className="about-pro-cta-card">
               <div>
-                <p className="about-pro-cta-kicker">Partner With Unseen Himalayas Bhutan</p>
-                <h2>Let&apos;s build memorable Bhutan journeys together.</h2>
+                <p className="about-pro-cta-kicker">Plan With Unseen Himalayas Bhutan</p>
+                <h2>Let&apos;s shape a Bhutan journey around you.</h2>
                 <p>
-                  Whether you are a traveler, travel partner, or travel agency,
-                  our team is ready to support your Bhutan travel requirements
-                  with reliable planning and professional ground handling.
+                  Share your dates, travel style, must-see places, and preferred
+                  pace. Our team will help turn that into a clear, realistic
+                  Bhutan itinerary.
                 </p>
               </div>
 
@@ -302,24 +298,24 @@ const heroTrust = [
 
 const stats: StatItem[] = [
   {
-    number: "GIT",
-    label: "Group inclusive tour",
-    note: "Professionally coordinated group journeys designed for smooth, hassle-free travel throughout Bhutan.",
+    number: "4",
+    label: "Years Experience",
+    note: "Hands-on tourism experience behind a newly established Bhutanese travel company.",
   },
   {
-    number: "DMC",
-    label: "Company Type",
-    note: "A new Bhutan-based destination management company focused on personalized, well-paced journeys.",
+    number: "Private",
+    label: "Trip Planning",
+    note: "Routes are adjusted around interests, comfort level, pace, arrival timing, and travel style.",
   },
   {
-    number: "B2B",
-    label: "Travel Partner Support",
-    note: "Ground handling and itinerary support for travel partners and travel agencies.",
+    number: "Local",
+    label: "Ground Support",
+    note: "Bhutan-based coordination for guides, vehicles, hotels, routes, and day-to-day support.",
   },
   {
-    number: "FIT",
-    label: "Private & Group Travel",
-    note: "Flexible arrangements for independent travelers, families, groups, and special interests.",
+    number: "Clear",
+    label: "Communication",
+    note: "Straightforward planning, written confirmations, and practical advice before you travel.",
   },
 ];
 
@@ -332,13 +328,13 @@ const services: CardItem[] = [
   },
   {
     marker: "02",
-    title: "Luxury & Tailor-Made Travel Experiences",
+    title: "Tailor-Made Travel Experiences",
     description:
       "Personalized travel experiences shaped around comfort level, interests, pace, and guest profile.",
   },
   {
     marker: "03",
-    title: "FIT & Group Travel Arrangements",
+    title: "Private & Group Travel Arrangements",
     description:
       "Professional support for private travelers, families, groups, and travel partner requirements.",
   },
@@ -377,47 +373,47 @@ const services: CardItem[] = [
 const partnerReasons: CardItem[] = [
   {
     marker: "01",
-    title: "Professional and Responsive Communication",
+    title: "We Listen Before Planning",
     description:
-      "Clear communication from inquiry to confirmation and throughout the on-ground operation.",
+      "Your dates, arrival time, interests, hotel style, walking comfort, and travel rhythm guide the itinerary.",
   },
   {
     marker: "02",
-    title: "Personalized Guest Handling",
+    title: "Realistic Day Pacing",
     description:
-      "Operational support shaped around each traveler's interests, comfort, pace, and service expectations.",
+      "Long drives, flight timing, opening hours, and energy levels are considered before we promise a day.",
   },
   {
     marker: "03",
-    title: "Service Quality Commitment",
+    title: "Clear Local Coordination",
     description:
-      "A strong commitment to guest satisfaction, reliable coordination, and memorable journeys.",
+      "We coordinate guides, drivers, hotels, documents, and route details from Bhutan rather than treating them as afterthoughts.",
   },
   {
     marker: "04",
-    title: "Flexible Itinerary Planning",
+    title: "Flexible Route Choices",
     description:
-      "Customized routing based on timing, interests, budget, comfort level, and travel style.",
+      "Packages can be adjusted for festivals, culture, nature, photography, family travel, soft adventure, or rest time.",
   },
   {
     marker: "05",
-    title: "Reliable Local Expertise",
+    title: "Practical Bhutan Advice",
     description:
-      "Destination knowledge, local networks, and practical understanding of how travel works in Bhutan.",
+      "We help you understand travel documents, SDF guidance, payment preparation, road time, weather, and site access.",
   },
   {
     marker: "06",
-    title: "Long-Term Partnership Approach",
+    title: "Support During the Trip",
     description:
-      "A relationship-focused approach for partners and agencies seeking dependable collaboration.",
+      "Your arrangements are followed locally, with support available if timing, weather, or guest needs change.",
   },
 ];
 
 const featurePoints = [
-  "Professional and responsive communication",
-  "Personalized guest handling and operational support",
-  "Flexible and customized itinerary planning",
-  "Reliable local expertise and destination knowledge",
+  "Arrival-time-aware planning",
+  "Licensed guide and private vehicle coordination",
+  "Hotel, route, and activity support",
+  "Clear communication before and during travel",
 ];
 
 const companyInfo: CompanyInfoItem[] = [

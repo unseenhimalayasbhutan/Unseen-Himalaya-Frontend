@@ -100,9 +100,9 @@ export function Footer() {
               </Link>
 
               <p>
-                Authentic Bhutan journeys crafted by a licensed Bhutan tour
-                operator and DMC with local expertise, cultural respect, and
-                meaningful experiences beyond the usual guidebook route.
+                Bhutan journeys planned by a licensed local operator, with
+                private guides, route advice, document support, and practical
+                ground coordination from Thimphu.
               </p>
 
               <div className="site-footer-social" aria-label="Social media links">

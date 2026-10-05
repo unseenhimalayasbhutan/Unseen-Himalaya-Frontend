@@ -2,7 +2,6 @@ import { expect, test, type Page } from "@playwright/test";
 
 const routes = [
   "/",
-  "/bhutan-tours",
   "/cultural-tours",
   "/land-entry-tours",
   "/festival-tours",
@@ -23,10 +22,11 @@ async function findTextOverflow(page: Page) {
     const selectors = [
       ".tour-pro-route-rate-note",
       ".tour-pro-image-rate",
-      ".cultural-pro-route-note",
-      ".cultural-pro-route-facts > div",
-      ".cultural-pro-route-option",
-      ".cultural-pro-day-item",
+      ".uh-hb-package-card",
+      ".uh-hb-package-price",
+      ".uh-hb-package-price-note",
+      ".uh-hb-view-trip-btn",
+      ".uh-hb-detail-panel",
       ".uh-package-card",
       ".uh-package-preview",
       ".contact-pro-card",

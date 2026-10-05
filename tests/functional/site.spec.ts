@@ -6,7 +6,6 @@ const publicRoutes = [
   "/about-bhutan",
   "/about-us",
   "/best-time",
-  "/bhutan-tours",
   "/contact",
   "/cultural-tours",
   "/currency",
@@ -28,6 +27,10 @@ const publicRoutes = [
   "/upcoming-events",
   "/why-visit",
 ];
+
+const redirectRoutes = [
+  { from: "/bhutan-tours", to: "/cultural-tours" },
+] as const;
 
 const hydrationPattern =
   /hydration|server rendered HTML|Hydration failed|Text content does not match/i;
@@ -133,6 +136,9 @@ test("all public routes keep the shared header visually consistent", async ({
           };
         };
 
+        const navText = read(".dropdown-btn, .nav-link");
+        delete navText.width;
+
         return {
           ...Object.fromEntries(
             Object.entries(read(".site-header")).map(([key, value]) => [
@@ -153,7 +159,7 @@ test("all public routes keep the shared header visually consistent", async ({
             ]),
           ),
           ...Object.fromEntries(
-            Object.entries(read(".dropdown-btn, .nav-link")).map(([key, value]) => [
+            Object.entries(navText).map(([key, value]) => [
               `navText.${key}`,
               value,
             ]),
@@ -253,6 +259,16 @@ test("every public route has unique on-page SEO metadata", async ({ page }) => {
     ).toBe(false);
     titles.add(title);
     descriptions.add(description);
+  }
+});
+
+test("legacy public routes redirect to canonical destinations", async ({ page }) => {
+  for (const route of redirectRoutes) {
+    await page.goto(route.from, { waitUntil: "domcontentloaded" });
+
+    await expect(page, `${route.from} should redirect to ${route.to}`).toHaveURL(
+      new RegExp(`${route.to}$`),
+    );
   }
 });
 

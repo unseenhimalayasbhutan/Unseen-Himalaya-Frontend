@@ -247,36 +247,39 @@ export default function CurrencyPage() {
                       <Smartphone aria-hidden />
                     </div>
                     <div>
-                      <p>Digital and alternative payments</p>
-                      <h2>Digital wallets and alternative payment options</h2>
+                      <p>Official digital payment options</p>
+                      <h2>Binance Pay, digital wallets, and payment backups</h2>
                     </div>
                   </div>
 
                   <p className="currency-text">
-                    Digital wallet access is improving in Bhutan, but acceptance
-                    varies by merchant, town, app setup, card network, and
-                    connectivity. Confirm options before relying on any wallet or
-                    alternative payment method as your main source of funds.
+                    Bhutan has introduced a national tourism payment system with
+                    Binance Pay for international travelers, and local digital
+                    wallet access is improving. Acceptance still depends on the
+                    merchant, town, app setup, card network, and connectivity, so
+                    confirm options before relying on any digital method as your
+                    main source of funds.
                   </p>
 
                   <div className="currency-feature-grid">
                     <article className="currency-feature-item">
                       <h3>Where it may be available</h3>
                       <ul>
-                        <li>Larger hotels and restaurants</li>
-                        <li>Some handicraft or souvenir shops</li>
-                        <li>Tourism-facing businesses in larger towns</li>
-                        <li>Merchants that display a supported QR or wallet option</li>
+                        <li>Merchants displaying Binance Pay or DK Bank QR support</li>
+                        <li>Hotels, restaurants, shops, and tourism-facing vendors in larger towns</li>
+                        <li>Some travel-related payments where the provider confirms support</li>
+                        <li>Local wallets such as goBoB or MyPay where the traveler can use them</li>
                       </ul>
                     </article>
 
                     <article className="currency-feature-item">
                       <h3>Before you use it</h3>
                       <ul>
-                        <li>Confirm with the merchant first</li>
-                        <li>Check app setup, card network, wallet, and exchange fees</li>
+                        <li>Set up the app and complete account checks before travel</li>
+                        <li>Confirm with the merchant or provider before scanning any QR code</li>
+                        <li>Check wallet limits, supported assets, exchange rates, and fees</li>
                         <li>Keep cash or card as backup</li>
-                        <li>Do not rely on wallet payments in remote areas</li>
+                        <li>Do not rely on digital payments in remote areas or during connectivity issues</li>
                       </ul>
                     </article>
                   </div>
@@ -296,10 +299,10 @@ export default function CurrencyPage() {
                   <div className="currency-warning-note">
                     <AlertCircle aria-hidden />
                     <p>
-                      <strong>Important:</strong> Availability of any specific
-                      digital wallet, QR payment, or alternative payment method
-                      should be verified directly before travel. Carry a regular
-                      payment backup.
+                      <strong>Important:</strong> Binance Pay and QR acceptance is
+                      expanding, but individual merchants, service categories, and
+                      technical availability can change. Carry cash and a working
+                      international card as backup.
                     </p>
                   </div>
                 </section>
@@ -554,7 +557,7 @@ export default function CurrencyPage() {
                   Contact Our Team
                   <ArrowRight aria-hidden />
                 </Link>
-                <Link href="/photography-tour" className="currency-btn-secondary">
+                <Link href="/cultural-tours" className="currency-btn-secondary">
                   Browse Tours
                 </Link>
               </div>
@@ -584,8 +587,9 @@ function MuseumsFeesSection() {
 
       <p className="currency-text">
         Some museums, dzongs, sacred sites, and parks charge admission, while
-        others do not. Fees are generally listed in Ngultrum, which is at par
-        with Indian rupees, and should be reconfirmed locally before travel.
+        others do not. The figures below are indicative planning references, not
+        a live official tariff; fees are generally listed in Ngultrum, which is
+        at par with Indian rupees, and should be reconfirmed locally before travel.
       </p>
 
       <div className="currency-fees-summary" aria-label="Museums and monument fees summary">
@@ -655,10 +659,10 @@ function MuseumsFeesSection() {
       <div className="currency-soft-note">
         <AlertCircle aria-hidden />
         <p>
-          Fees, opening hours, and USD equivalents can change without notice.
-          Some monuments and dzongs require visitors to enter with a guide, and
-          some sites collect fees on arrival. Confirm final rates with your
-          guide, ticket counter, or official tourism contact before travel.
+          Fees, opening hours, and USD equivalents can change without notice. We
+          review this page during site content updates and before confirming guest
+          itineraries, but final rates should still be checked with your guide,
+          ticket counter, or official tourism contact before travel.
         </p>
       </div>
     </section>
@@ -716,9 +720,9 @@ const banknoteInfo: InfoCard[] = [
 ];
 
 const cryptoSteps = [
-  { number: "01", text: "Confirm the merchant accepts your payment method." },
-  { number: "02", text: "Check fees, exchange rate, and network requirements." },
-  { number: "03", text: "Keep cash or card as a backup before completing payment." },
+  { number: "01", text: "Enable your cards and set up any payment app before arriving in Bhutan." },
+  { number: "02", text: "Confirm Binance Pay, QR, wallet, or card acceptance with the merchant first." },
+  { number: "03", text: "Keep cash and a second payment method available before completing payment." },
 ];
 
 const indianRupeeRules = [
@@ -1060,7 +1064,7 @@ const currencyFaqs: FAQItem[] = [
   {
     question: "Can I rely on digital wallets or alternative payments?",
     answer:
-      "No, not as your only option. Some businesses may support digital wallets or other options, but acceptance can change. Confirm directly before travel and keep cash or card backup.",
+      "Do not rely on them as your only option. Bhutan has official Binance Pay support for international travelers and many merchants now display supported QR options, but acceptance, connectivity, account limits, and technical availability can change. Carry cash and a working card backup.",
   },
 ];
 

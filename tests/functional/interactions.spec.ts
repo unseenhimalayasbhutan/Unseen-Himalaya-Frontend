@@ -35,6 +35,20 @@ async function previewSecondPackage(page: import("@playwright/test").Page) {
   );
 }
 
+async function openSecondPackageFromListing(
+  page: import("@playwright/test").Page,
+  route: string,
+  expectedPath: RegExp,
+) {
+  await page.goto(route);
+  const secondPackage = page.locator(".uh-hb-view-trip-btn").nth(1);
+
+  await expect(secondPackage, `${route} should expose package links`).toBeVisible();
+  await secondPackage.click();
+  await expect(page).toHaveURL(expectedPath);
+  await expect(page.getByRole("tab")).toHaveCount(4);
+}
+
 test("home page selectors respond to clicks", async ({ page }) => {
   await page.goto("/");
 
@@ -59,23 +73,23 @@ test("information-page selectors respond to clicks", async ({ page }) => {
   await selectSecond(page, ".facts-redesign-philosophy-tab");
 
   await page.goto("/cultural-tours");
-  await selectSecond(page, ".cultural-pro-route-option", "active-class");
+  expect(await page.locator(".uh-hb-package-card").count()).toBeGreaterThan(1);
 });
 
 test("tour filters, route previews, and add-ons respond to clicks", async ({
   page,
 }) => {
-  await page.goto("/bhutan-tours");
-  await selectSecond(page, ".uh-itinerary-redesign-filter-btn");
-  const tourTrigger = page.locator(".cultural-pro-route-option").first();
-  await tourTrigger.click();
-  await expect(tourTrigger).toHaveClass(/is-active/);
+  await openSecondPackageFromListing(
+    page,
+    "/cultural-tours",
+    /\/cultural-tours\/3-day-paro-paro$/,
+  );
 
-  await page.goto("/festival-tours");
-  await selectSecond(page, ".uh-festival-library-redesign-filter-btn");
-  const festivalTrigger = page.locator(".cultural-pro-route-option").first();
-  await festivalTrigger.click();
-  await expect(festivalTrigger).toHaveClass(/is-active/);
+  await openSecondPackageFromListing(
+    page,
+    "/festival-tours",
+    /\/festival-tours\/5-day-black-necked-crane-festival-short-tour$/,
+  );
 
   await page.goto("/optional-tours");
   await selectSecond(page, ".uh-addon-category-button");

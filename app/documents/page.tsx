@@ -631,7 +631,7 @@ const weProvide = [
   "Pre-arrival document checklist",
   "Travel confirmation assistance",
   "Entry document reminders",
-  "Comprehensive journey assistance",
+  "Guidance on entry timing, route paperwork, and document follow-up",
   "Emergency contact coordination in Bhutan",
 ];
 

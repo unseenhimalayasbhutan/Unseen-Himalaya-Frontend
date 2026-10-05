@@ -1,11 +1,11 @@
 export const siteConfig = {
   name: "Unseen Himalayas Bhutan",
-  alternateName: "Unseen Himalayas ",
+  alternateName: "Unseen Himalayas Bhutan",
   url:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
     "https://www.theunseenhimalayas.com",
   description:
-    "Unseen Himalayas is a licensed Bhutan-based destination management company offering private Bhutan tours, cultural journeys, festival tours, hotel reservations, guides, transportation, and tailor-made travel experiences.",
+    "Unseen Himalayas Bhutan is a licensed Bhutan-based destination management company offering private Bhutan tours, cultural journeys, festival tours, hotel reservations, guides, transportation, and tailor-made travel experiences.",
   locale: "en_US",
   defaultImage: "/cover/background.jpg",
   address: {

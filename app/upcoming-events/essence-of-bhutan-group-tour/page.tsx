@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ElementType } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   CalendarDays,
   CheckCircle,
@@ -247,9 +248,9 @@ export default function EssenceOfBhutanGroupTourPage() {
 
           <div className="essence-shell essence-hero-content">
             <nav className="essence-breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <ChevronRight aria-hidden="true" />
-              <a href="/upcoming-events">Upcoming Events</a>
+              <Link href="/upcoming-events">Upcoming Events</Link>
               <ChevronRight aria-hidden="true" />
               <span>The Essence of Bhutan</span>
             </nav>

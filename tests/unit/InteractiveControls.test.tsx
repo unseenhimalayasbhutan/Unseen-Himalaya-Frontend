@@ -7,7 +7,7 @@ describe("shared interactive controls", () => {
   it("switches the active why-choose-us feature with a real button", () => {
     render(<WhyChooseUs />);
 
-    const button = screen.getByRole("button", { name: "Deeply Rooted" });
+    const button = screen.getByRole("button", { name: "Direct Planning" });
     fireEvent.click(button);
 
     expect(button).toHaveAttribute("aria-pressed", "true");

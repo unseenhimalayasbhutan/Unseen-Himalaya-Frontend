@@ -46,7 +46,6 @@ for (const width of widths) {
       };
     };
 
-    const hero = document.querySelector(".home-hero");
     const image = document.querySelector(".home-hero-gnr-link img");
     const card = document.querySelector(".home-hero-gnr-link");
     const styles = card ? getComputedStyle(card) : null;

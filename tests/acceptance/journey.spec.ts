@@ -46,20 +46,18 @@ test("a traveler can navigate from mobile menu to planning a journey", async ({
   ).toBeVisible();
 });
 
-test("a traveler can explore a tour and reach the inquiry page", async ({
+test("a traveler can explore a tour and reach the inquiry option", async ({
   page,
 }) => {
-  await page.goto("/bhutan-tours");
+  await page.goto("/cultural-tours");
 
-  const duration = page.locator(".uh-itinerary-redesign-filter-btn").nth(1);
-  await duration.click();
-  await expect(duration).toHaveAttribute("aria-pressed", "true");
+  const packageLink = page.locator(".uh-hb-view-trip-btn").first();
+  await expect(packageLink).toBeVisible();
+  await packageLink.click();
 
-  const route = page.locator(".cultural-pro-route-option").first();
-  await route.click();
-  await expect(route).toHaveClass(/is-active/);
+  await expect(page).toHaveURL(/\/cultural-tours\/[^/]+$/);
+  await expect(page.getByRole("tab")).toHaveCount(4);
 
-  await page.getByRole("link", { name: /enquire about this route/i }).first().click();
-  await expect(page).toHaveURL(/\/contact$/);
-  await expect(page.getByLabel("Full Name")).toBeVisible();
+  const inquiryLink = page.getByRole("link", { name: /plan this trip/i });
+  await expect(inquiryLink).toHaveAttribute("href", /^mailto:/);
 });

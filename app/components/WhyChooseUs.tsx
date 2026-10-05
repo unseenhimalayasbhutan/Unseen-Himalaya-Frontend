@@ -23,62 +23,62 @@ type FeatureItem = {
 
 const features: FeatureItem[] = [
   {
-    icon: Leaf,
-    title: "Sustainably Crafted",
-    text: "Our carefully curated experiences respect Bhutan's natural beauty.",
+    icon: Landmark,
+    title: "Licensed Local Operator",
+    text: "Plan with a Bhutan-based team that can show its business registration and operator documents.",
   },
   {
-    icon: Landmark,
-    title: "Deeply Rooted",
-    text: "Our local guides share authentic stories, traditions, and local wisdom.",
+    icon: UsersRound,
+    title: "Direct Planning",
+    text: "Speak with the team arranging your hotels, guide, transport, documents, and daily route details.",
   },
   {
     icon: Compass,
-    title: "Culturally Immersive",
-    text: "Connect deeply with Bhutanese culture, festivals, monasteries, and communities.",
+    title: "Flexible Pace",
+    text: "Itineraries are adjusted around arrival time, road distance, walking comfort, and what you care about most.",
   },
   {
     icon: Mountain,
-    title: "Peaceful Exploration",
-    text: "Discover serene landscapes, sacred valleys, and mindful travel experiences.",
+    title: "Private Guide & Vehicle",
+    text: "Travel with a licensed guide and dedicated vehicle instead of being pushed through a fixed group schedule.",
   },
   {
     icon: HeartHandshake,
-    title: "Meaningful Travel",
-    text: "Every journey leaves a positive impact on people, culture, and nature.",
+    title: "Clear Ground Support",
+    text: "Before arrival, we confirm key services and explain documents, payment timing, route limits, and local logistics.",
   },
   {
     icon: Star,
-    title: "Memories That Live",
-    text: "Every path creates moments worth remembering for a lifetime.",
+    title: "Better Value Choices",
+    text: "We help match hotels, activities, guide language, and route choices to your travel style and budget.",
   },
 ];
 
 const bottomFeatures: FeatureItem[] = [
   {
     icon: Compass,
-    title: "Curated Journeys",
-    text: "Personalized travel experiences designed for every explorer.",
+    title: "Tell Us Your Pace",
+    text: "We ask about dates, arrival time, walking comfort, hotel style, and must-see places before finalizing the route.",
   },
   {
     icon: UsersRound,
-    title: "Local Experts",
-    text: "Friendly Bhutan specialists with authentic knowledge and passion.",
+    title: "Match the Right Support",
+    text: "We align guide language, vehicle size, hotel category, and activity level with the people actually travelling.",
   },
   {
     icon: Mountain,
-    title: "Hidden Experiences",
-    text: "Venture beyond the ordinary into Bhutan's hidden gems.",
+    title: "Protect Unhurried Time",
+    text: "We mark secondary stops as flexible so the main experiences have enough breathing room.",
   },
   {
     icon: Landmark,
-    title: "Comfortable Stays",
-    text: "Stay in handpicked accommodations with warm hospitality.",
+    title: "Confirm the Details",
+    text: "Written confirmations make inclusions, document steps, payment timing, and local contacts easy to check.",
   },
   {
     icon: Leaf,
-    title: "Sustainable Tourism",
-    text: "Travel responsibly while preserving Bhutan's environment.",
+    title: "Travel Responsibly",
+    text: "Routes are planned with respect for local rules, sacred sites, communities, and Bhutan's environment.",
   },
 ];
 
@@ -104,12 +104,12 @@ export function WhyChooseUs() {
           <div className="mini-text section-eyebrow">WHY CHOOSE US</div>
 
           <h2 className="main-title section-title">
-            A Kingdom That Values <span>What Matters</span>
+            Bhutan Trips Planned Around <span>Your Pace</span>
           </h2>
 
           <p className="description section-description">
-            Experience authentic Himalayan journeys crafted with sustainability,
-            culture, comfort, and mindful travel at the heart of every adventure.
+            We turn standard routes into practical private journeys, with clearer
+            planning, realistic days, and local support from enquiry to departure.
           </p>
         </div>
 
@@ -188,23 +188,23 @@ export function WhyChooseUs() {
         <div className="stats-row">
           <div className="stat-card">
             <strong>100%</strong>
-            <span>Local Expertise</span>
+            <span>Bhutan-Based Planning</span>
           </div>
 
           <div className="stat-card">
             <strong>Tailor-Made</strong>
-            <span>Private Journeys</span>
+            <span>Route Adjustments</span>
           </div>
 
           <div className="stat-card">
-            <strong>Hidden</strong>
-            <span>Bhutan Experiences</span>
+            <strong>4 Years</strong>
+            <span>Tourism Experience</span>
           </div>
         </div>
 
         <div className="center-btn">
-          <Link href="/photography-tour" className="discover-btn">
-            Explore Photography Tours
+          <Link href="/contact" className="discover-btn">
+            Plan a Private Bhutan Trip
             <ArrowRight aria-hidden="true" />
           </Link>
         </div>
@@ -212,10 +212,10 @@ export function WhyChooseUs() {
         <div className="uh-guidebook-feature">
           <div className="uh-guidebook-layout">
             <div className="bottom-heading">
-              <h2 className="section-title">Travel Beyond the Guidebooks</h2>
+              <h2 className="section-title">How We Personalize the Route</h2>
               <p className="section-description">
-                Explore hidden stories, sacred valleys, meaningful encounters, and
-                unforgettable Himalayan adventures.
+                We keep the planning specific: who is travelling, how fast the
+                days should move, what matters most, and what should stay flexible.
               </p>
             </div>
 

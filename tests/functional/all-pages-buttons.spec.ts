@@ -12,7 +12,6 @@ const staticRoutes = [
   "/about-bhutan",
   "/about-us",
   "/best-time",
-  "/bhutan-tours",
   "/contact",
   "/cultural-tours",
   "/currency",
@@ -35,9 +34,21 @@ const staticRoutes = [
   "/why-visit",
 ] as const;
 
+const redirectRoutes = [
+  { from: "/bhutan-tours", to: "/cultural-tours" },
+] as const;
+
+const packageListingRoutes = [
+  { route: "/cultural-tours", name: "cultural tour package cards" },
+  { route: "/photography-tour", name: "photography tour package cards" },
+  { route: "/festival-tours", name: "festival tour package cards" },
+  { route: "/land-entry-tours", name: "land-entry tour package cards" },
+  { route: "/cycling-tours", name: "cycling tour package cards" },
+] as const;
+
 const detailRoutes = [
   ...culturalShowcasePackages.map((pkg) => `/cultural-tours/${pkg.slug}`),
-  ...photographyShowcasePackages.map((pkg) => `/bhutan-tours/${pkg.slug}`),
+  ...photographyShowcasePackages.map((pkg) => `/photography-tour/${pkg.slug}`),
   ...festivalShowcasePackages.map((pkg) => `/festival-tours/${pkg.slug}`),
   ...landEntryShowcasePackages.map((pkg) => `/land-entry-tours/${pkg.slug}`),
   ...cyclingShowcasePackages.map((pkg) => `/cycling-tours/${pkg.slug}`),
@@ -51,19 +62,9 @@ const pressedGroups = [
   { route: "/why-visit", selector: ".uh-whyvisit-style-button", name: "why visit travel style buttons" },
   { route: "/why-visit", selector: ".uh-whyvisit-moment-button", name: "why visit moment buttons" },
   { route: "/facts", selector: ".facts-redesign-philosophy-tab", name: "facts topic tabs" },
-  { route: "/bhutan-tours", selector: ".uh-itinerary-redesign-filter-btn", name: "Bhutan tours duration filters" },
-  { route: "/festival-tours", selector: ".uh-festival-library-redesign-filter-btn", name: "festival tours duration filters" },
   { route: "/optional-tours", selector: ".uh-addon-category-button", name: "optional tours category buttons" },
   { route: "/optional-tours", selector: ".uh-addon-experience-card", name: "optional tours add-on cards" },
   { route: "/festival-calendar", selector: ".festival-calendar-redesign-month-tab", name: "festival month tabs" },
-] as const;
-
-const activeRouteGroups = [
-  { route: "/cultural-tours", selector: ".cultural-pro-route-option", name: "cultural tour route selectors" },
-  { route: "/bhutan-tours", selector: ".cultural-pro-route-option", name: "Bhutan tour route selectors" },
-  { route: "/festival-tours", selector: ".cultural-pro-route-option", name: "festival tour route selectors" },
-  { route: "/land-entry-tours", selector: ".cultural-pro-route-option", name: "land-entry route selectors" },
-  { route: "/cycling-tours", selector: ".cultural-pro-route-option", name: "cycling route selectors" },
 ] as const;
 
 test.describe.configure({ mode: "serial" });
@@ -124,11 +125,16 @@ test("stateful component button groups work on listing and information pages", a
     await clickEveryPressedButton(page, group.selector, group.name);
   }
 
-  for (const group of activeRouteGroups) {
+  for (const group of packageListingRoutes) {
     await page.goto(group.route);
     await expect(page.locator("h1")).toBeVisible();
     await assertNoFrameworkOverlay(page, group.route);
-    await clickEveryActiveRouteButton(page, group.selector, group.name);
+    await verifyPackageListing(page, group.name);
+  }
+
+  for (const route of redirectRoutes) {
+    await page.goto(route.from, { waitUntil: "domcontentloaded" });
+    await expect(page).toHaveURL(new RegExp(`${route.to}$`));
   }
 });
 
@@ -248,11 +254,11 @@ test("upcoming events package CTAs and footer buttons remain functional", async 
     }
   }
 
-  await expect(page.getByRole("link", { name: /terms & conditions/i })).toHaveAttribute(
+  await expect(page.getByRole("link", { name: /terms & conditions/i }).first()).toHaveAttribute(
     "href",
     "/terms",
   );
-  await expect(page.getByRole("link", { name: /privacy policy/i })).toHaveAttribute(
+  await expect(page.getByRole("link", { name: /privacy policy/i }).first()).toHaveAttribute(
     "href",
     "/privacy-policy",
   );
@@ -277,26 +283,17 @@ async function clickEveryPressedButton(page: Page, selector: string, name: strin
   }
 }
 
-async function clickEveryActiveRouteButton(page: Page, selector: string, name: string) {
-  const buttons = page.locator(selector);
-  const count = await buttons.count();
+async function verifyPackageListing(page: Page, name: string) {
+  const cards = page.locator(".uh-hb-package-card");
+  const count = await cards.count();
 
-  expect(count, `${name} should have multiple route buttons`).toBeGreaterThan(1);
+  expect(count, `${name} should have multiple package cards`).toBeGreaterThan(1);
 
-  for (let index = 0; index < count; index += 1) {
-    const button = buttons.nth(index);
+  const secondLink = cards.nth(1).locator(".uh-hb-view-trip-btn");
+  const href = await secondLink.getAttribute("href");
 
-    await button.scrollIntoViewIfNeeded();
-    await button.click();
-    await expect(button, `${name} item ${index + 1} should become active`).toHaveClass(
-      /is-active/,
-    );
-    await expect(button, `${name} item ${index + 1} should expand`).toHaveAttribute(
-      "aria-expanded",
-      "true",
-    );
-    await assertNoFrameworkOverlay(page, name);
-  }
+  expect(href, `${name} second package should link to a detail page`).toMatch(/^\/[^#]+\/[^#]+$/);
+  await expect(secondLink, `${name} second package link should be visible`).toBeVisible();
 }
 
 async function assertNoFrameworkOverlay(page: Page, context: string) {

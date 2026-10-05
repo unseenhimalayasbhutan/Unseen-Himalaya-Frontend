@@ -172,6 +172,8 @@ export function JourneysSection() {
                     alt={`${selectedDestination.title} Bhutan`}
                     fill
                     sizes="(max-width: 960px) 100vw, 58vw"
+                    loading={activeDestination === 0 ? "eager" : "lazy"}
+                    fetchPriority={activeDestination === 0 ? "high" : "auto"}
                     className="uh-journey-image"
                   />
                 </div>

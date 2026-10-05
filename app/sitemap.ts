@@ -11,7 +11,7 @@ import { siteConfig } from "./siteConfig";
 
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
-const lastModified = new Date("2026-09-10T00:00:00.000Z");
+const lastModified = new Date("2026-10-03T00:00:00.000+06:00");
 
 const highPriorityRoutes = new Set<string>([
   "/",

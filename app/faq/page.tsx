@@ -200,7 +200,7 @@ const faqCategories: FAQCategory[] = [
         id: "booking-3",
         question: "How do I book flights to Bhutan?",
         answer:
-          "Drukair and Bhutan Airlines operate international services to Bhutan. Paro remains the best-known arrival point, and official travel guidance also lists Gelephu among Bhutan's international airports. We can guide you on suitable routes, flight timing, and arrival planning based on your itinerary.",
+          "You can book flights to Bhutan directly through Drukair or Bhutan Airlines, both operating flights to Paro International Airport (PBH) from regional hubs such as Bangkok, Delhi, Kolkata, Kathmandu, Singapore and other selected cities. If you book your trip with Unseen Himalayas Bhutan, we can help you choose suitable flight connections, coordinate them with your itinerary, and assist with your Bhutan visa and travel arrangements. We recommend confirming flight schedules before booking, as routes and timings may change seasonally.",
       },
     ],
   },
@@ -232,7 +232,7 @@ const faqCategories: FAQCategory[] = [
         id: "costs-3",
         question: "How secure is my advance payment?",
         answer:
-          "We provide written confirmation, receipts, and clear booking communication. Payment terms are shared before confirmation so you know exactly what is included, what is pending, and when the balance is due.",
+          "Your advance payment is handled securely and transparently. Payments are made to Unseen Himalayas Bhutan through our official business payment channels, and we provide confirmation and proper payment records for every deposit received. Your deposit is then used to secure confirmed services such as hotels, transportation, guides, visa processing and applicable government fees. As a licensed Bhutanese tour operator, we maintain clear booking records and keep you updated throughout the confirmation process. We understand that sending money internationally requires trust. We are always available for a video call before payment, and you can independently verify Unseen Himalayas Bhutan through the official Bhutan Tourism Services Portal of the Department of Tourism. We also provide booking confirmations, receipts and supporting documents for your peace of mind.",
       },
     ],
   },
@@ -348,7 +348,7 @@ const faqCategories: FAQCategory[] = [
         id: "payments-17",
         question: "Can I pay the remaining balance after arriving in Bhutan?",
         answer:
-          "This depends on your booking. Certain costs must be settled in advance so that we can confirm hotels, transportation, documentation, permits, and other services. Government-related payments may also need to be completed before travel. If a balance can be paid upon arrival, this will be specifically stated in your booking confirmation.",
+          "No. Certain costs must be settled in advance so that we can confirm hotels, transportation, documentation, permits, and other services. Government-related payments may also need to be completed before travel. If a balance can be paid upon arrival, this will be specifically stated in your booking confirmation.",
       },
       {
         id: "payments-18",
@@ -412,7 +412,7 @@ const faqCategories: FAQCategory[] = [
         id: "logistics-0",
         question: "What kind of travel guides can I expect?",
         answer:
-          "Guests are accompanied by licensed local guides who understand Bhutanese culture, Buddhism, history, etiquette, festivals, and regional differences. We match guides according to the nature of the journey wherever possible.",
+          "Guests are accompanied by licensed local guides who have a deep understanding of Bhutanese culture, Buddhism, history, etiquette, festivals, and regional differences. Wherever possible, we match guides according to the nature and interests of each journey. Guides fluent in different languages are also available upon request, helping ensure a comfortable and engaging experience for guests from different countries.",
       },
       {
         id: "logistics-1",
@@ -468,7 +468,7 @@ const faqCategories: FAQCategory[] = [
         id: "guides-languages-3",
         question: "Do guide wages differ by language?",
         answer:
-          "Yes. As indicative planning ranges, English-speaking guides are commonly around Nu. 1,800-2,500 per day, and Hindi-speaking guides are often in a similar range unless a fully Hindi-dedicated guide is requested. Chinese-speaking guides may be around Nu. 4,800-6,400 per day because supply is limited. French, German, Japanese, or Spanish-speaking guides can be around Nu. 10,000-12,000 per day because these specialists are rarer. Final rates depend on availability, itinerary, services, and booking terms, so ask for written confirmation before you book.",
+          "Yes. Guide fees can vary depending on the language required, as multilingual and specialist-language guides may have different availability and professional rates. English- and Hindi-speaking guides are generally more readily available, while guides fluent in languages such as Chinese, French, German, Japanese, and Spanish may be more limited in availability. We confirm the appropriate guide and applicable fee in advance based on the guest’s language preference, itinerary, and requirements.",
       },
       {
         id: "guides-languages-4",
@@ -504,7 +504,7 @@ const faqCategories: FAQCategory[] = [
         id: "guides-languages-9",
         question: "Will my guide stay with me all day?",
         answer:
-          "This depends on the services booked. Your itinerary should explain which transfers, sightseeing days, and activities include a guide. Accompaniment during scheduled services does not automatically mean round-the-clock personal assistance.",
+          "Yes. Your itinerary should explain which transfers, sightseeing days, and activities include a guide. Accompaniment during scheduled services does not automatically mean round-the-clock personal assistance.",
       },
       {
         id: "guides-languages-10",
@@ -530,13 +530,13 @@ const faqCategories: FAQCategory[] = [
         id: "health-1",
         question: "How is Unseen Himalayas Bhutan different from other travel agencies?",
         answer:
-          "We focus on personalized planning, local knowledge, realistic pacing, respectful cultural access, and responsive on-ground coordination. Our goal is to create a journey that feels authentic, smooth, and carefully handled.",
+          "We focus on personalized planning, local knowledge, realistic pacing, respectful cultural access, and responsive on-ground coordination. Our goal is to create a journey that feels authentic, smooth, and carefully handled. We combine professional planning with genuine Bhutanese hospitality rather than treating a journey as simply a series of bookings and sightseeing stops, the focus is on understanding the guest, taking care of the details and delivering an experience that feels personal from the very beginning. We get a special satisfaction in introducing guests to the country we call home — from its mountains and valleys to its villages, traditions, monasteries, people and peaceful way of life.",
       },
       {
         id: "health-2",
         question: "Are cigarettes available in Bhutan?",
         answer:
-          "Bhutan has strict tobacco rules, and smoking is restricted in public places. Travelers should follow local regulations and declare items where required.",
+          "Yes but Bhutan has strict tobacco rules, and smoking is restricted in public places. Travelers should follow local regulations and declare items where required.",
       },
       {
         id: "health-3",
@@ -568,7 +568,7 @@ const faqCategories: FAQCategory[] = [
         id: "cancellation-2",
         question: "When should I pay for my tour?",
         answer:
-          "Most bookings require a deposit to secure hotels, permits, and planning. The balance is usually due before arrival. Exact payment terms are shared clearly in your quotation.",
+          "All bookings require a 50% deposit to secure hotels, permits, and planning. The balance is usually due before arrival. Exact payment terms are shared clearly in your quotation.100% SDF payment is required in advance to process and secure your visa.",
       },
     ],
   },

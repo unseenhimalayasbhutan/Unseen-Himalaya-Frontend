@@ -66,17 +66,14 @@ test("itinerary libraries are usable and responsive on tour pages", async ({
     await previewSecondPackage(page);
     await expectNoHorizontalOverflow(page, `${viewport.name} home itinerary library`);
 
-    await page.goto("/bhutan-tours");
-    await page.locator(".uh-itinerary-redesign-filter-btn").nth(1).click();
-    await page.locator(".cultural-pro-route-option").first().click();
-    await expect(page.locator(".cultural-pro-route-panel:visible").first()).toBeVisible();
-    await expect(page.locator(".cultural-pro-route-actions:visible").first()).toBeVisible();
+    await page.goto("/cultural-tours");
+    await expect(page.locator(".uh-hb-package-card").first()).toBeVisible();
+    await expect(page.locator(".uh-hb-view-trip-btn").first()).toBeVisible();
     await expectNoHorizontalOverflow(page, `${viewport.name} Bhutan itinerary library`);
 
     await page.goto("/festival-tours");
-    await page.locator(".uh-festival-library-redesign-filter-btn").nth(1).click();
-    await page.locator(".cultural-pro-route-option").first().click();
-    await expect(page.locator(".cultural-pro-route-panel:visible").first()).toBeVisible();
+    await expect(page.locator(".uh-hb-package-card").first()).toBeVisible();
+    await expect(page.locator(".uh-hb-view-trip-btn").first()).toBeVisible();
     await expect(page.getByText("Festival planning")).toHaveCount(0);
     await expectNoHorizontalOverflow(page, `${viewport.name} festival itinerary library`);
   }

@@ -782,7 +782,7 @@ const topReasons: IconCard[] = [
     icon: Clock,
     title: "A Slower Kind of Luxury",
     description:
-      "The real luxury of Bhutan is time: space to breathe, fewer distractions, thoughtful service, and meaningful experiences.",
+      "The real luxury of Bhutan is time: quieter roads, fewer distractions, thoughtful service, and days that are not overloaded.",
   },
   {
     icon: BookOpen,

@@ -109,6 +109,7 @@ export const reservationAndCancellation = [
   "Cancellation charges depend on hotel, airline, government, and service-provider policies.",
   "Date changes are subject to availability and any supplier price difference.",
   "No-show, early departure, or unused services may not be refundable.",
+  "Daily sightseeing order is adjusted to flight arrival time, road conditions, opening hours, guest pace, and safety.",
 ];
 
 export const termsAndConditions = [
@@ -149,13 +150,13 @@ export const itineraries: ItineraryRoute[] = [
         "activities": [
           "Arrival at Paro International Airport",
           "Traditional welcome with khaddar",
-          "Transfer to Thimphu and Sightseeing",
+          "Transfer to Thimphu; sightseeing is adjusted to arrival time",
           "Visit Buddha Dordenma",
-          "Visit National Memorial Chorten",
-          "Visit Tashi Choed Dzong",
-          "Visit Simply Bhutan or Folk Heritage Museum",
-          "Outdoor cultural activities (traditional dress, archery, darts)",
-          "Explore Thimphu Town & handicraft shops",
+          "Visit National Memorial Chorten if timing allows",
+          "Visit Tashi Choed Dzong if open and timing allows",
+          "Visit Simply Bhutan or Folk Heritage Museum, time permitting",
+          "Outdoor cultural activities such as traditional dress, archery, or darts, time permitting",
+          "Explore Thimphu Town & handicraft shops if the arrival schedule allows",
           "Overnight stay in Thimphu (2,200 m)"
         ]
       },
@@ -206,10 +207,10 @@ export const itineraries: ItineraryRoute[] = [
           "Arrival at Paro International Airport",
           "Traditional welcome with khaddar",
           "Transfer to hotel and leisure time",
-          "Visit Rinpung Dzong (Paro Dzong)",
-          "Visit Ta Dzong – National Museum",
-          "Outdoor cultural activities (traditional dress, archery, darts)",
-          "Explore Paro Town & handicraft shops",
+          "Visit Rinpung Dzong (Paro Dzong) if arrival time allows",
+          "Visit Ta Dzong – National Museum, time permitting",
+          "Outdoor cultural activities such as traditional dress, archery, or darts, time permitting",
+          "Explore Paro Town & handicraft shops if the schedule allows",
           "Overnight stay in Paro (2,200 m)"
         ]
       },
@@ -400,9 +401,9 @@ export const itineraries: ItineraryRoute[] = [
           "Traditional welcome with khaddar",
           "Scenic drive to Thimphu (approx. 1.5 hrs)",
           "Drive along Paro River via Chuzom",
-          "En-route stop at Tachogang Lhakhang & suspension bridge",
-          "Visit Tashichho Dzong (evening visit, subject to access)",
-          "Leisure walk in Thimphu city & local markets",
+          "En-route stop at Tachogang Lhakhang & suspension bridge if arrival time allows",
+          "Visit Tashichho Dzong in the evening, subject to access and timing",
+          "Leisure walk in Thimphu city & local markets, time permitting",
           "Overnight stay in Thimphu (2,400 m)"
         ]
       },
@@ -413,9 +414,9 @@ export const itineraries: ItineraryRoute[] = [
           "Drive past National Memorial Chorten",
           "Scenic drive to Punakha via Dochula Pass",
           "Stop at Dochula Pass (108 chortens & Himalayan views)",
-          "Visit Lamperi Botanical Garden (Zip Line Adventure)",
+          "Visit Lamperi Botanical Garden or choose the zip line adventure if timing allows",
           "Visit Punakha Dzong",
-          "Walk across Punakha Suspension Bridge",
+          "Walk across Punakha Suspension Bridge, time permitting",
           "Overnight stay in Punakha (1,350 m)"
         ]
       },
@@ -425,9 +426,9 @@ export const itineraries: ItineraryRoute[] = [
           "Visit Chimi Lhakhang (Fertility Temple)",
           "Gentle village walk through Mesina village",
           "Drive back to Paro via Dochula Pass & Chuzom",
-          "Visit Rinpung Dzong (Paro Dzong)",
-          "Visit Ta Dzong – National Museum",
-          "Outdoor cultural activities (traditional dress, archery, darts)",
+          "Visit Rinpung Dzong (Paro Dzong) if timing allows",
+          "Visit Ta Dzong – National Museum, time permitting",
+          "Outdoor cultural activities such as traditional dress, archery, or darts, time permitting",
           "Overnight stay in Paro (2,200 m)"
         ]
       },
