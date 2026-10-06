@@ -1,6 +1,6 @@
 {
-  "lastIndexedAt": "2026-10-06T09:24:15.220Z",
-  "records": 42,
+  "lastIndexedAt": "2026-10-06T09:41:37.318Z",
+  "records": 63,
   "chunks": [
     {
       "id": "site-overview::chunk-1",
@@ -110,6 +110,637 @@
         "title": "Best time to visit and festival planning",
         "sourceUrl": "https://www.theunseenhimalayas.com/best-time",
         "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "about-bhutan-country-profile::chunk-1",
+      "recordId": "about-bhutan-country-profile",
+      "title": "About Bhutan country profile",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/about-bhutan",
+      "contentHash": "3d7840ba5cb5b49336908c6706530db0159f1f484a75fad1f585fc2f3dd6dcb9",
+      "metadata": {
+        "id": "about-bhutan-country-profile",
+        "title": "About Bhutan country profile",
+        "sourceUrl": "https://www.theunseenhimalayas.com/about-bhutan",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "about-us-company-founders::chunk-1",
+      "recordId": "about-us-company-founders",
+      "title": "Unseen Himalayas Bhutan company and founders",
+      "contentType": "company",
+      "sourceUrl": "https://www.theunseenhimalayas.com/about-us",
+      "contentHash": "51dbcfd3c463b84c12f6a952aa8aab9c672a7e130954a8c1b3c7ffa90a06c447",
+      "metadata": {
+        "id": "about-us-company-founders",
+        "title": "Unseen Himalayas Bhutan company and founders",
+        "sourceUrl": "https://www.theunseenhimalayas.com/about-us",
+        "contentType": "company",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "why-visit-bhutan::chunk-1",
+      "recordId": "why-visit-bhutan",
+      "title": "Why visit Bhutan",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/why-visit",
+      "contentHash": "8c987c1ffa39af0df120c9fa3611e61fa0af2238833014954f3ca5644e7830ef",
+      "metadata": {
+        "id": "why-visit-bhutan",
+        "title": "Why visit Bhutan",
+        "sourceUrl": "https://www.theunseenhimalayas.com/why-visit",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "gross-national-happiness::chunk-1",
+      "recordId": "gross-national-happiness",
+      "title": "Gross National Happiness philosophy",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/gnh-philosophies",
+      "contentHash": "4e56e97dca0faf7e733cb14d816c6614129bf37a558081103e77dbb8d15ea3ea",
+      "metadata": {
+        "id": "gross-national-happiness",
+        "title": "Gross National Happiness philosophy",
+        "sourceUrl": "https://www.theunseenhimalayas.com/gnh-philosophies",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "best-time-seasonal-guide::chunk-1",
+      "recordId": "best-time-seasonal-guide",
+      "title": "Best time to visit Bhutan",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/best-time",
+      "contentHash": "6236122c92de1e78a9c90d1eae001bf06610135399e7b72d054b3d640bcd6b1d",
+      "metadata": {
+        "id": "best-time-seasonal-guide",
+        "title": "Best time to visit Bhutan",
+        "sourceUrl": "https://www.theunseenhimalayas.com/best-time",
+        "contentType": "travel-info",
+        "travelSeason": [
+          "january",
+          "february",
+          "march",
+          "april",
+          "may",
+          "june",
+          "july",
+          "august",
+          "september",
+          "october",
+          "november",
+          "december"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "sdf-trip-costs::chunk-1",
+      "recordId": "sdf-trip-costs",
+      "title": "Sustainable Development Fee and trip costs",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/sdf",
+      "contentHash": "4b42df218422d2e80c8d13bdcaf249d140a02a5570569e82a70fe40d5585812d",
+      "metadata": {
+        "id": "sdf-trip-costs",
+        "title": "Sustainable Development Fee and trip costs",
+        "sourceUrl": "https://www.theunseenhimalayas.com/sdf",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "visa-documents-entry::chunk-1",
+      "recordId": "visa-documents-entry",
+      "title": "Visa, permits, and entry documents",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/documents",
+      "contentHash": "fdc8b280734c4c7830488b38e965ae3319f411ef4227e932a462f25b548d2981",
+      "metadata": {
+        "id": "visa-documents-entry",
+        "title": "Visa, permits, and entry documents",
+        "sourceUrl": "https://www.theunseenhimalayas.com/documents",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "flights-getting-around::chunk-1",
+      "recordId": "flights-getting-around",
+      "title": "Flights and getting around Bhutan",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/flights-getting-around",
+      "contentHash": "3ecd9b06831bea900784bfead695eb8f308cce345611b70e4c26dbeec2441efb",
+      "metadata": {
+        "id": "flights-getting-around",
+        "title": "Flights and getting around Bhutan",
+        "sourceUrl": "https://www.theunseenhimalayas.com/flights-getting-around",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "currency-payments-fees::chunk-1",
+      "recordId": "currency-payments-fees",
+      "title": "Currency, payments, ATMs, tipping, and monument fees",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/currency",
+      "contentHash": "ef9113bc6ff113755ca0693538b8fd9499113772dc851ddd96c8e4846bd839a0",
+      "metadata": {
+        "id": "currency-payments-fees",
+        "title": "Currency, payments, ATMs, tipping, and monument fees",
+        "sourceUrl": "https://www.theunseenhimalayas.com/currency",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "optional-experiences-add-ons::chunk-1",
+      "recordId": "optional-experiences-add-ons",
+      "title": "Optional tours and add-on experiences",
+      "contentType": "planning",
+      "sourceUrl": "https://www.theunseenhimalayas.com/optional-tours",
+      "contentHash": "6adb0d2c9cce2e70d543d956b5efa04ca2bee68c2a556a991710cbbdb88bbafd",
+      "metadata": {
+        "id": "optional-experiences-add-ons",
+        "title": "Optional tours and add-on experiences",
+        "sourceUrl": "https://www.theunseenhimalayas.com/optional-tours",
+        "contentType": "planning",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "festival-calendar-planning::chunk-1",
+      "recordId": "festival-calendar-planning",
+      "title": "Bhutan festival calendar planning",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/festival-calendar",
+      "contentHash": "697138f0c99b249572edd008a5da234e71b21b9ebe1fa0af8981430d97da0b34",
+      "metadata": {
+        "id": "festival-calendar-planning",
+        "title": "Bhutan festival calendar planning",
+        "sourceUrl": "https://www.theunseenhimalayas.com/festival-calendar",
+        "contentType": "travel-info",
+        "travelSeason": [
+          "february",
+          "march",
+          "april",
+          "may",
+          "june",
+          "july",
+          "august",
+          "september",
+          "october",
+          "november",
+          "december"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "faq-guides-payments-health::chunk-1",
+      "recordId": "faq-guides-payments-health",
+      "title": "Common Bhutan travel FAQs",
+      "contentType": "faq",
+      "sourceUrl": "https://www.theunseenhimalayas.com/faq",
+      "contentHash": "ed22279df227ce617f58a753ce181931f6706e2c0f8e3e6fd1137fdfd9667329",
+      "metadata": {
+        "id": "faq-guides-payments-health",
+        "title": "Common Bhutan travel FAQs",
+        "sourceUrl": "https://www.theunseenhimalayas.com/faq",
+        "contentType": "faq",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "legal-documents-trust::chunk-1",
+      "recordId": "legal-documents-trust",
+      "title": "Legal documents and company verification",
+      "contentType": "company",
+      "sourceUrl": "https://www.theunseenhimalayas.com/legal-documents",
+      "contentHash": "43883824563073ccec963fff3c717e566257098e6388d3e41239f9c9c46eeeb5",
+      "metadata": {
+        "id": "legal-documents-trust",
+        "title": "Legal documents and company verification",
+        "sourceUrl": "https://www.theunseenhimalayas.com/legal-documents",
+        "contentType": "company",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "privacy-policy::chunk-1",
+      "recordId": "privacy-policy",
+      "title": "Privacy policy",
+      "contentType": "policy",
+      "sourceUrl": "https://www.theunseenhimalayas.com/privacy-policy",
+      "contentHash": "2465be809d75a103458f9dcbe6d24180c2afca6001f15cbf4c55f23cc92bb489",
+      "metadata": {
+        "id": "privacy-policy",
+        "title": "Privacy policy",
+        "sourceUrl": "https://www.theunseenhimalayas.com/privacy-policy",
+        "contentType": "policy",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": false
+      }
+    },
+    {
+      "id": "places-visitor-guidance::chunk-1",
+      "recordId": "places-visitor-guidance",
+      "title": "Visitor guidance for places to visit",
+      "contentType": "travel-info",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit",
+      "contentHash": "0c218326f6262989099ed0a366ecac859001407e47957008b678d631908d6702",
+      "metadata": {
+        "id": "places-visitor-guidance",
+        "title": "Visitor guidance for places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit",
+        "contentType": "travel-info",
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:thimphu::chunk-1",
+      "recordId": "destination:thimphu",
+      "title": "Thimphu places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#thimphu",
+      "contentHash": "e183418e9ed9674641f2585d7d6f7165c2517c381977cf0bd82e63da3e818adf",
+      "metadata": {
+        "id": "destination:thimphu",
+        "title": "Thimphu places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#thimphu",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Thimphu"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "birdwatching",
+          "family",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "september",
+          "october",
+          "december"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:thimphu::chunk-2",
+      "recordId": "destination:thimphu",
+      "title": "Thimphu places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#thimphu",
+      "contentHash": "448c5c51b9733348bbae444f1d72a8e3f86b021aadbd4d183bdf7d200c0abd34",
+      "metadata": {
+        "id": "destination:thimphu",
+        "title": "Thimphu places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#thimphu",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Thimphu"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "birdwatching",
+          "family",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "september",
+          "october",
+          "december"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:thimphu::chunk-3",
+      "recordId": "destination:thimphu",
+      "title": "Thimphu places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#thimphu",
+      "contentHash": "78eb99129e4dccc6398fcb198c22242c79a83d9c81399f057d47f9887786042a",
+      "metadata": {
+        "id": "destination:thimphu",
+        "title": "Thimphu places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#thimphu",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Thimphu"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "birdwatching",
+          "family",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "september",
+          "october",
+          "december"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:paro::chunk-1",
+      "recordId": "destination:paro",
+      "title": "Paro places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#paro",
+      "contentHash": "e2fd9fabea6398249ee0cd2a193f4597d34e704fac54356dbb82e2327f267634",
+      "metadata": {
+        "id": "destination:paro",
+        "title": "Paro places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#paro",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Paro"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "march",
+          "april"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:paro::chunk-2",
+      "recordId": "destination:paro",
+      "title": "Paro places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#paro",
+      "contentHash": "2412d56756d17846188b82f51c5982e97515970d4b29c401ec24846b344afd44",
+      "metadata": {
+        "id": "destination:paro",
+        "title": "Paro places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#paro",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Paro"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "march",
+          "april"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:punakha::chunk-1",
+      "recordId": "destination:punakha",
+      "title": "Punakha places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#punakha",
+      "contentHash": "3d2fc8f1ded7b31e10d231d7a652cced839f21d933a3777b2d996429398c681e",
+      "metadata": {
+        "id": "destination:punakha",
+        "title": "Punakha places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#punakha",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Punakha"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "family",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "january",
+          "february",
+          "march"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:wangdue-phodrang::chunk-1",
+      "recordId": "destination:wangdue-phodrang",
+      "title": "Wangdue Phodrang places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#wangdue-phodrang",
+      "contentHash": "833133de958e197a9cfbcdceb4e3e9599059e804f06af2b822f01b9136f06206",
+      "metadata": {
+        "id": "destination:wangdue-phodrang",
+        "title": "Wangdue Phodrang places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#wangdue-phodrang",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Wangdue Phodrang",
+          "Wangdue"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "birdwatching",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "september"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:wangdue-phodrang::chunk-2",
+      "recordId": "destination:wangdue-phodrang",
+      "title": "Wangdue Phodrang places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#wangdue-phodrang",
+      "contentHash": "9cf606aea44b960711197e8426809e42832a772879f43d38fd9cdf0f2158780e",
+      "metadata": {
+        "id": "destination:wangdue-phodrang",
+        "title": "Wangdue Phodrang places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#wangdue-phodrang",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Wangdue Phodrang",
+          "Wangdue"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "birdwatching",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "september"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:gangtey-phobjikha::chunk-1",
+      "recordId": "destination:gangtey-phobjikha",
+      "title": "Gangtey & Phobjikha places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#gangtey-phobjikha",
+      "contentHash": "df4d720eca7a4ce15a83e4ce79ae8b429b18bd8b4b9f53cc9c321017c2443025",
+      "metadata": {
+        "id": "destination:gangtey-phobjikha",
+        "title": "Gangtey & Phobjikha places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#gangtey-phobjikha",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Gangtey & Phobjikha"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "birdwatching",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "february",
+          "may",
+          "september",
+          "october",
+          "november"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:gangtey-phobjikha::chunk-2",
+      "recordId": "destination:gangtey-phobjikha",
+      "title": "Gangtey & Phobjikha places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#gangtey-phobjikha",
+      "contentHash": "a4b4eff372151b404560a55df793e096f2e141b26731461d1e7f413b22c4d387",
+      "metadata": {
+        "id": "destination:gangtey-phobjikha",
+        "title": "Gangtey & Phobjikha places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#gangtey-phobjikha",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Gangtey & Phobjikha"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "birdwatching",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "february",
+          "may",
+          "september",
+          "october",
+          "november"
+        ],
+        "lastUpdated": "2026-08-19",
+        "requiresVerification": true
+      }
+    },
+    {
+      "id": "destination:haa::chunk-1",
+      "recordId": "destination:haa",
+      "title": "Haa places to visit",
+      "contentType": "destination",
+      "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#haa",
+      "contentHash": "be113eb0a6bb33fd10c58171f3f0e205618d1b1bbc756fa6e4036cbac3709d2f",
+      "metadata": {
+        "id": "destination:haa",
+        "title": "Haa places to visit",
+        "sourceUrl": "https://www.theunseenhimalayas.com/places-to-visit#haa",
+        "contentType": "destination",
+        "tourCategory": "places-to-visit",
+        "destinations": [
+          "Haa"
+        ],
+        "interests": [
+          "culture",
+          "festival",
+          "photography",
+          "nature",
+          "cycling",
+          "soft adventure"
+        ],
+        "travelSeason": [
+          "may",
+          "june",
+          "october"
+        ],
         "lastUpdated": "2026-08-19",
         "requiresVerification": true
       }
@@ -2805,11 +3436,13 @@
     }
   ],
   "contentTypes": {
-    "company": 1,
+    "company": 3,
     "contact": 1,
-    "policy": 2,
-    "planning": 1,
-    "travel-info": 2,
+    "policy": 3,
+    "planning": 2,
+    "travel-info": 12,
+    "faq": 1,
+    "destination": 11,
     "photography-tour": 21,
     "land-entry-tour": 23,
     "cycling-tour": 13,

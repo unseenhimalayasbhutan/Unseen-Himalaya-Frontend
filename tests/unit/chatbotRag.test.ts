@@ -21,9 +21,12 @@ describe("chatbot RAG pipeline", () => {
   it("extracts structured website records from local source data", () => {
     const records = buildKnowledgeRecords();
 
-    expect(records.length).toBeGreaterThan(20);
+    expect(records.length).toBeGreaterThan(60);
     expect(records.some((record) => record.tourCode === "UH-PT-005")).toBe(true);
     expect(records.some((record) => record.contentType === "festival-tour")).toBe(true);
+    expect(records.some((record) => record.id === "destination:paro")).toBe(true);
+    expect(records.some((record) => record.id === "currency-payments-fees")).toBe(true);
+    expect(records.some((record) => record.id === "about-us-company-founders")).toBe(true);
     expect(JSON.stringify(records)).not.toMatch(/supplier cost|profit margin|api key/i);
   });
 
@@ -43,6 +46,24 @@ describe("chatbot RAG pipeline", () => {
 
     expect(results.length).toBeGreaterThan(0);
     expect(results[0].chunk.content.toLowerCase()).toMatch(/phobjikha|gangtey|punakha|nature/);
+  });
+
+  it("retrieves destination and website information pages, not only tour packages", () => {
+    const paroResults = searchKnowledge("What are places to visit in Paro Tiger Nest Kyichu", {
+      limit: 3,
+    });
+    const paymentResults = searchKnowledge("Can I use INR cards ATM or cash in Bhutan", {
+      limit: 3,
+    });
+    const founderResults = searchKnowledge("Who founded Unseen Himalayas Bhutan", {
+      limit: 3,
+    });
+
+    expect(paroResults.some((result) => result.chunk.recordId === "destination:paro")).toBe(true);
+    expect(paymentResults.some((result) => result.chunk.recordId === "currency-payments-fees")).toBe(true);
+    expect(
+      founderResults.some((result) => result.chunk.recordId === "about-us-company-founders")
+    ).toBe(true);
   });
 
   it("matches tours using duration, interests, and land-entry context", () => {

@@ -156,17 +156,36 @@ export function searchKnowledge(
       )
         ? 0.08
         : 0;
+      const destinationBoost =
+        chunk.contentType === "destination" && isDestinationQuery(normalizedQuery) ? 0.16 : 0;
 
       return {
         chunk,
         vectorScore,
         keywordScore,
-        score: vectorScore * 0.7 + keywordScore * 0.3 + titleBoost,
+        score: vectorScore * 0.7 + keywordScore * 0.3 + titleBoost + destinationBoost,
       };
     })
     .filter((result) => result.score > 0.02)
     .sort((left, right) => right.score - left.score)
     .slice(0, limit);
+}
+
+function isDestinationQuery(query: string) {
+  const text = query.toLowerCase();
+
+  return [
+    "place",
+    "places",
+    "visit",
+    "attraction",
+    "attractions",
+    "sightseeing",
+    "destination",
+    "destinations",
+    "what should i see",
+    "what to see",
+  ].some((term) => text.includes(term));
 }
 
 export function summarizeIndex(index = getKnowledgeIndex()) {
