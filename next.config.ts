@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: [...new Set(localNetworkOrigins)],
   images: {
     formats: ["image/webp"],
-    minimumCacheTTL: 604800,
+    minimumCacheTTL: 0,
   },
   async headers() {
     return [
@@ -25,7 +25,7 @@ const nextConfig: NextConfig = {
         headers: [
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: "no-cache, no-store, must-revalidate",
           },
         ],
       },
