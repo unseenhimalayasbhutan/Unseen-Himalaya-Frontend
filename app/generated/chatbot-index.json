@@ -1,5 +1,5 @@
 {
-  "lastIndexedAt": "2026-09-11T08:38:29.884Z",
+  "lastIndexedAt": "2026-10-06T09:24:15.220Z",
   "records": 42,
   "chunks": [
     {
@@ -8,7 +8,7 @@
       "title": "Unseen Himalayas Bhutan overview",
       "contentType": "company",
       "sourceUrl": "https://www.theunseenhimalayas.com/",
-      "contentHash": "bb5ce9433f0cfd9ef7be487da92ba0571dcdce89f7836ee1875ca6483a8f5e11",
+      "contentHash": "e7efba7a5d79017ba14b09b575459a4689a2dd7fdfdb9d1ab86f2005dab2f49a",
       "metadata": {
         "id": "site-overview",
         "title": "Unseen Himalayas Bhutan overview",
@@ -24,7 +24,7 @@
       "title": "Contact and human handoff",
       "contentType": "contact",
       "sourceUrl": "https://www.theunseenhimalayas.com/contact",
-      "contentHash": "c150b567249bec786a1a2bca5ed508289c08acb3d2201750b3b6b3b4518eba42",
+      "contentHash": "346351bb0e306b8061317624d075158a056fd78ab683c2bae67e5286396934a6",
       "metadata": {
         "id": "contact-handoff",
         "title": "Contact and human handoff",
@@ -56,7 +56,7 @@
       "title": "Booking, reservation, and cancellation terms",
       "contentType": "policy",
       "sourceUrl": "https://www.theunseenhimalayas.com/terms",
-      "contentHash": "3bbc7e6ed7a3d5209b165745f7660d16b8805dd465d93beafbc96aa5e48a3443",
+      "contentHash": "f9afc580c292b45b1f174a20a16d9b98f9968214341e08b1bcab04e7436a57ed",
       "metadata": {
         "id": "booking-terms",
         "title": "Booking, reservation, and cancellation terms",
@@ -120,7 +120,7 @@
       "title": "3-Day Paro & Thimphu Photography Essentials",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "42981a135bcb70f0a49a8c06dea26f2560b71a23d661651f091157913916957d",
+      "contentHash": "349af57a50fb21b61773ccc7d48b4c37e8c3cf6d0193e1eea816f5653f5b4b61",
       "metadata": {
         "id": "photography-tour:3-day-paro-thimphu-paro",
         "title": "3-Day Paro & Thimphu Photography Essentials",
@@ -186,7 +186,7 @@
       "title": "3-Day Paro Valley Photography Escape",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "36e01af8b9dea491285b854362c845c1bd24059b72ba1d926016f007bfc96851",
+      "contentHash": "44632dfc2149bb6cba8d566f8134be2b3fc7b916bbb69a4e1547f1d9e22d6668",
       "metadata": {
         "id": "photography-tour:3-day-paro-paro",
         "title": "3-Day Paro Valley Photography Escape",
@@ -250,7 +250,7 @@
       "title": "4-Day Punakha & Paro Photography Journey",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "156fb7a427c1dd3f666b0dbf5ea3e65b2ddb91fd0b68c926b312443e623ad6ae",
+      "contentHash": "db1aa3a91aaba3b101527b06682c8429511e00502e69a67563acf80dd961012a",
       "metadata": {
         "id": "photography-tour:4-day-paro-punakha-paro",
         "title": "4-Day Punakha & Paro Photography Journey",
@@ -316,7 +316,7 @@
       "title": "4-Day Thimphu & Paro Visual Storytelling Tour",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "6778f73ebd2ea7a7bb152f69fbbd685e6615aa9f1361277385440c593cb4e623",
+      "contentHash": "07262e6c3b8613ba90350dd735740a41885bbd51620312c0373b4f31e82f48e6",
       "metadata": {
         "id": "photography-tour:4-day-paro-thimphu-paro",
         "title": "4-Day Thimphu & Paro Visual Storytelling Tour",
@@ -380,7 +380,7 @@
       "title": "5-Day Western Bhutan Photography Circuit",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "f9ba26071ff3fc3334d60aceb06c5669566843f33660c4f0fe963458a30f210b",
+      "contentHash": "ccf154598352a169b25f5fd36ccb1f0fdc10a0a6ab0bd0f441093cdeaf37d753",
       "metadata": {
         "id": "photography-tour:5-day-classic-western-bhutan",
         "title": "5-Day Western Bhutan Photography Circuit",
@@ -444,7 +444,7 @@
       "title": "6-Day Punakha Valley Photography Journey",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "b2f6d354634ee536b0a40f8321056316b7498a79c35d83e6e7c5c2a118ef9fd9",
+      "contentHash": "955bbc9e2aaf1329cdbe8e76a2d44d4ed9a78a0480314520a3b8397341ef0e23",
       "metadata": {
         "id": "photography-tour:6-day-punakha-depth",
         "title": "6-Day Punakha Valley Photography Journey",
@@ -512,7 +512,7 @@
       "title": "6-Day Thimphu, Punakha & Paro Photography Classic",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "142e5d7b48a0d01030c0dab2fb65a921256d923161f38608cb70539b35d2d3ac",
+      "contentHash": "aa760f91d8852e9c74ad134ba10d0dbc1f2e507db40f9260e461f4b3240ef32f",
       "metadata": {
         "id": "photography-tour:6-day-thimphu-punakha-paro",
         "title": "6-Day Thimphu, Punakha & Paro Photography Classic",
@@ -576,7 +576,7 @@
       "title": "7-Day Bhutan Valley Photography Explorer",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "ec3eeb52caa1216288ddf1b31c7abefa69346ce66c1b9bfb4f6bed1a273b687b",
+      "contentHash": "ff2648e9d1e825b593ec91986b88abe45d84812be245c482a23fbfbd9238f3f1",
       "metadata": {
         "id": "photography-tour:7-day-bhutan-valley-explorer",
         "title": "7-Day Bhutan Valley Photography Explorer",
@@ -646,7 +646,7 @@
       "title": "8-Day Gangtey & Phobjikha Photography Journey",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "2ae1e2ec4e362bf5b6ae9fc07d8b404c42d445e2a555026dbb8f663b93844b5a",
+      "contentHash": "7b9923df96d0b90c7c64f1ab3d048e87b9f9fdbb14a1e23d702b75d61ad443d6",
       "metadata": {
         "id": "photography-tour:8-day-gangtey-phobjikha",
         "title": "8-Day Gangtey & Phobjikha Photography Journey",
@@ -714,7 +714,7 @@
       "title": "8-Day Punakha & Phobjikha Photography In-Depth",
       "contentType": "photography-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/photography-tour",
-      "contentHash": "6f1ad277daccfe8f859fe05aadfe93aca1d1495e1f90ad4d93717896c2a7909b",
+      "contentHash": "c1732416b131fae15e50aa5869035d425a96de3b423024d2a4eb8108e10dc678",
       "metadata": {
         "id": "photography-tour:8-day-punakha-phobjikha-depth",
         "title": "8-Day Punakha & Phobjikha Photography In-Depth",
@@ -816,7 +816,7 @@
       "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "77afb98fe01e4bd080576b6986d3ccd083a80c12ab2aec8171277b275ff67867",
+      "contentHash": "902793444ac51b3469a0b07dd59cc9f93e2d3b7d0984ce800e98d10837019360",
       "metadata": {
         "id": "land-entry-tour:4-day-thimphu-paro-classic",
         "title": "4-Day Thimphu & Paro Classic Land-Entry Tour",
@@ -876,7 +876,7 @@
       "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "2125d82ce882e259b0ec8c8b88169c62804ab72fc69e328f954f78faba04176e",
+      "contentHash": "de0f25c18121084720d215bc5cded1366929b228b1e62a5d06be4f81439881fb",
       "metadata": {
         "id": "land-entry-tour:4-day-thimphu-paro-cultural",
         "title": "4-Day Thimphu & Paro Cultural Land-Entry Tour",
@@ -940,7 +940,7 @@
       "title": "4-Day Paro-Focused Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "739bbb5199b9234f382d0c3d1d5bc2a87501e3938239004ccfdf52ec3bdc28a3",
+      "contentHash": "10ef8925be1c0ffa1074b9404302413d5e938d33021122599ce3cc2f7665787c",
       "metadata": {
         "id": "land-entry-tour:4-day-paro-focus",
         "title": "4-Day Paro-Focused Land-Entry Tour",
@@ -1004,7 +1004,7 @@
       "title": "5-Day Punakha & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "c8e0be04093923e2cc61f2001bbadc0bf55cad9b4518ce0643a7a1ad25e80467",
+      "contentHash": "3b73fcf109ec30f098a560abb99a9e52fb66095ea78e7c900e4fdefea9e69167",
       "metadata": {
         "id": "land-entry-tour:5-day-punakha-paro",
         "title": "5-Day Punakha & Paro Land-Entry Tour",
@@ -1074,7 +1074,7 @@
       "title": "5-Day Punakha Standard Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "b2a2053c7ff9bce9c53a395c883d2c26e128a65cd0974ca7b4e4d820fa93740b",
+      "contentHash": "b9e38cd8c2283692002f1437c886375e3ba346d59a00140b6d9602e08260caa3",
       "metadata": {
         "id": "land-entry-tour:5-day-punakha-standard",
         "title": "5-Day Punakha Standard Land-Entry Tour",
@@ -1140,7 +1140,7 @@
       "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "b8f2e0a470ac0ff9521f3dcfb2f1056670e3b2b993645c968f8eb4941a6c9163",
+      "contentHash": "d58bd8865709e168edc7c3c62b5d7265b74fd5b1a2335a01b129a67384406341",
       "metadata": {
         "id": "land-entry-tour:6-day-thimphu-punakha-paro",
         "title": "6-Day Thimphu, Punakha & Paro Land-Entry Tour",
@@ -1208,7 +1208,7 @@
       "title": "7-Day Gangtey & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "f03e32206d71f0fcefd92e8c01044be4afc86c17662105863192608cad81dc6e",
+      "contentHash": "829e9b098f2b38b721b357706ac271426078c4606d4854416ee6b6d00b429bbc",
       "metadata": {
         "id": "land-entry-tour:7-day-gangtey-paro",
         "title": "7-Day Gangtey & Paro Land-Entry Tour",
@@ -1313,7 +1313,7 @@
       "title": "7-Day Punakha & Paro Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "6f09df66f1bcf67031f546a880a9e1e211a585bffd18ef8d4ca064a9d77019a5",
+      "contentHash": "d1308a47ec580737f6458f6d89c65f1e2b824708dff97fb5e70655f527868f45",
       "metadata": {
         "id": "land-entry-tour:7-day-punakha-paro",
         "title": "7-Day Punakha & Paro Land-Entry Tour",
@@ -1381,7 +1381,7 @@
       "title": "8-Day Gangtey Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "ae01f02e0aaf2141a93af09b3482e99badcc6135af59a75b0c8561301a8e5cf9",
+      "contentHash": "f96111567269f914614dcebd5145959b2a4a9f2c6502cb8938e3a1619946772c",
       "metadata": {
         "id": "land-entry-tour:8-day-gangtey",
         "title": "8-Day Gangtey Land-Entry Tour",
@@ -1483,7 +1483,7 @@
       "title": "8-Day Punakha & Gangtey Land-Entry Tour",
       "contentType": "land-entry-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/land-entry-tours",
-      "contentHash": "6bbd62ab2719991124cb21bd681edb1fb0789d0261494145a1dd2375729e1925",
+      "contentHash": "db18b7108ab1238b256259397a8f32b5ca24163e6c72aa191d95a52ae3b3f4b9",
       "metadata": {
         "id": "land-entry-tour:8-day-punakha-gangtey",
         "title": "8-Day Punakha & Gangtey Land-Entry Tour",
@@ -1998,7 +1998,7 @@
       "title": "5-Day Black Necked Crane Festival Short Tour",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "3f75ee713cdf52b9c306c289b38a0f269ec3cca819375fb59a218bb54329652d",
+      "contentHash": "366da848f7a301e69b87f546cacf0c447e97a4a9147ee69d6b53c1556dc12aa9",
       "metadata": {
         "id": "festival-tour:5-day-black-necked-crane-festival-short-tour",
         "title": "5-Day Black Necked Crane Festival Short Tour",
@@ -2080,7 +2080,7 @@
       "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "1e8031d549a63739d79dbba3286a4970595ceecb4adc32bc187b5fca271c2c9f",
+      "contentHash": "8aa911f730b46b33f1d7ebd0095b9fe89fbadc07ea7518226ead43fadf2bc80c",
       "metadata": {
         "id": "festival-tour:7-day-black-necked-crane-festival-with-tiger-s-nest",
         "title": "7-Day Black Necked Crane Festival with Tiger's Nest",
@@ -2320,7 +2320,7 @@
       "title": "4-Day Dechenphu Tshechu Short Festival Tour",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "b473f7c568003eb4ec70ae36f402cc5e17bac0ae2f9b3201104820d66e1cddc3",
+      "contentHash": "788aa7788f16cb4297df259aec77b35df86fbac213cc020a1483f3b906a62abb",
       "metadata": {
         "id": "festival-tour:4-day-dechenphu-tshechu-short-festival-tour",
         "title": "4-Day Dechenphu Tshechu Short Festival Tour",
@@ -2398,7 +2398,7 @@
       "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
       "contentType": "festival-tour",
       "sourceUrl": "https://www.theunseenhimalayas.com/festival-tours",
-      "contentHash": "6bd467df3766a158ed07119e245cb758aa538f1fef09b8ce7893d1905bc918e6",
+      "contentHash": "9c9f45b1d1f29d5169079daec21a0ae54083e2c9994936af2e518d2a6cfea781",
       "metadata": {
         "id": "festival-tour:5-day-dechenphu-tshechu-with-tiger-s-nest",
         "title": "5-Day Dechenphu Tshechu with Tiger's Nest",
@@ -2703,12 +2703,12 @@
       "recordId": "upcoming-event:guns-n-roses-guwahati-2026",
       "title": "Guns N' Roses Concert at Guwahati",
       "contentType": "upcoming-event",
-      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
-      "contentHash": "41915e6c909db1891e60d151a32c6cd511b4b9b16a76b78c4028e242b7d99ad3",
+      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events/gnr-concert",
+      "contentHash": "92275423e8e3f615474e9a84e6b30fc448d8ad9a9138d91173c60bb77a6fff59",
       "metadata": {
         "id": "upcoming-event:guns-n-roses-guwahati-2026",
         "title": "Guns N' Roses Concert at Guwahati",
-        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events/gnr-concert",
         "contentType": "upcoming-event",
         "startingRate": 26214,
         "tourCategory": "event",
@@ -2738,12 +2738,12 @@
       "recordId": "upcoming-event:guns-n-roses-guwahati-2026",
       "title": "Guns N' Roses Concert at Guwahati",
       "contentType": "upcoming-event",
-      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events/gnr-concert",
       "contentHash": "227adbddc90934cd0d31faad61e2780b01b62109a2d07c976eb997af6e33dea1",
       "metadata": {
         "id": "upcoming-event:guns-n-roses-guwahati-2026",
         "title": "Guns N' Roses Concert at Guwahati",
-        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events/gnr-concert",
         "contentType": "upcoming-event",
         "startingRate": 26214,
         "tourCategory": "event",
@@ -2773,12 +2773,12 @@
       "recordId": "upcoming-event:guns-n-roses-guwahati-2026",
       "title": "Guns N' Roses Concert at Guwahati",
       "contentType": "upcoming-event",
-      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+      "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events/gnr-concert",
       "contentHash": "df2a36b2f15a1572a62410f0b868f1ff068adf48cb13ec3f3394d636b3fe992b",
       "metadata": {
         "id": "upcoming-event:guns-n-roses-guwahati-2026",
         "title": "Guns N' Roses Concert at Guwahati",
-        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events",
+        "sourceUrl": "https://www.theunseenhimalayas.com/upcoming-events/gnr-concert",
         "contentType": "upcoming-event",
         "startingRate": 26214,
         "tourCategory": "event",

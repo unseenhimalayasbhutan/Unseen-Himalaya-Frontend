@@ -21,8 +21,6 @@ type TourPackage = {
   tag: string;
   title: string;
   text: string;
-  price: string;
-  startingRate: number;
   duration: string;
   route: string;
   ideal: string;
@@ -69,39 +67,33 @@ const destinations: Destination[] = [
 const packages: TourPackage[] = [
   {
     slug: "3-day-paro-thimphu-paro",
-    tourCode: "UH-NAC-001",
+    tourCode: "UH-CT-001",
     image: "/Thimphu_2026_Web_Optimized_Images/Thimphu_2026_Website_Photo_Pack/Thimphu/01_Buddha_Dordenma.jpg",
     tag: "Short Escape",
     title: "3-Day Paro & Thimphu Essentials",
     text: "For travelers with limited time who still want Thimphu highlights and Tiger’s Nest.",
-    price: "Nu. 25,910",
-    startingRate: 25910,
     duration: "3 Days / 2 Nights",
     route: "Paro • Thimphu • Paro",
     ideal: "Short-stay travelers",
   },
   {
     slug: "5-day-classic-western-bhutan",
-    tourCode: "UH-NAC-005",
+    tourCode: "UH-CT-005",
     image: "/Big Buddha with Thimphu City behind x DOT AA Original Bhutan Travels.jpg",
     tag: "Classic Route",
     title: "5-Day Classic Western Bhutan",
     text: "A strong first-time route with Thimphu, Punakha, Dochula, Paro, and Tiger’s Nest.",
-    price: "Nu. 44,859",
-    startingRate: 44859,
     duration: "5 Days / 4 Nights",
     route: "Paro • Thimphu • Punakha • Paro",
     ideal: "First-time Bhutan travelers",
   },
   {
     slug: "8-day-punakha-phobjikha-depth",
-    tourCode: "UH-NAC-010",
+    tourCode: "UH-CT-010",
     image: "/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Gangtey_Phobjikha/11_Phobjikha_Village.jpg",
     tag: "Deeper Journey",
     title: "8-Day Punakha & Phobjikha In-Depth",
     text: "A fuller route with additional Punakha sightseeing and a scenic Phobjikha extension.",
-    price: "Nu. 69,936",
-    startingRate: 69936,
     duration: "8 Days / 7 Nights",
     route: "Paro • Thimphu • Punakha • Phobjikha • Paro",
     ideal: "Nature, culture, and slow discovery",
@@ -113,6 +105,12 @@ const getImageSrc = (src: string): string => {
   if (src.startsWith("http")) return src;
 
   return src;
+};
+
+const getPackageStartingPrice = (tourCode: string) => {
+  const pricing = getB2cUsdPrice(tourCode);
+
+  return pricing ? formatUsd(pricing.fourSix) : "Rate on request";
 };
 
 export function JourneysSection() {
@@ -303,10 +301,7 @@ export function JourneysSection() {
                   <div className="tour-pro-image-rate uh-package-card-rate">
                     <strong>
                       Starting From{" "}
-                      {formatUsd(
-                        getB2cUsdPrice(pkg.tourCode)?.fourSix ??
-                          pkg.startingRate
-                      )}
+                      {getPackageStartingPrice(pkg.tourCode)}
                     </strong>
                   </div>
 

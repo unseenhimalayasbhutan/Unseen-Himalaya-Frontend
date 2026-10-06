@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { CtaSection } from "../components/CtaSection";
+import { siteConfig } from "../siteConfig";
 
 type StatItem = {
   number: string;
@@ -18,6 +19,13 @@ type CardItem = {
 type CompanyInfoItem = {
   label: string;
   value: string;
+};
+
+type FounderItem = {
+  name: string;
+  role: string;
+  initials: string;
+  paragraphs: string[];
 };
 
 export default function AboutPage() {
@@ -118,21 +126,89 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Services */}
+        {/* Our Story */}
         <section className="about-pro-section about-pro-section-warm">
+          <div className="container">
+            <div className="about-pro-split-grid">
+              <div>
+                <div className="about-pro-section-header">
+                  <span className="about-pro-section-line" />
+                  <span className="about-pro-section-label">Our Story</span>
+                </div>
+
+                <h2 className="about-pro-section-title">
+                  Built from hands-on tourism work and a friendship behind the company.
+                </h2>
+              </div>
+
+              <div className="about-pro-story-copy">
+                <p>
+                  Unseen Himalayas Bhutan was established to combine professional
+                  travel planning with genuine Bhutanese hospitality. The company
+                  grew from practical experience handling hotels, vehicles,
+                  guides, guest timing, route changes, and the small operational
+                  details that make a Bhutan trip feel smooth.
+                </p>
+                <p>
+                  Passang and Mamick started the company with the belief that a
+                  Bhutan journey should be personal, reliable, and easy to plan.
+                  Guests can begin with a ready-made itinerary, then shape it
+                  around their own interests, pace, comfort level, and budget.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Meet the Founders */}
+        <section className="about-pro-section about-pro-section-white">
           <div className="container">
             <div className="about-pro-section-header about-pro-section-header-center">
               <span className="about-pro-section-line" />
-              <span className="about-pro-section-label">Our Services</span>
+              <span className="about-pro-section-label">Meet the Founders</span>
               <span className="about-pro-section-line" />
             </div>
 
             <h2 className="about-pro-section-title about-pro-center-title">
-              Complete Bhutan travel services for private guests, groups, and travel partners.
+              The people planning and supporting your Bhutan journey.
+            </h2>
+
+            <div className="about-pro-founders-grid">
+              {founders.map((founder) => (
+                <article key={founder.name} className="about-pro-founder-card">
+                  <div className="about-pro-founder-photo" aria-label={`${founder.name} portrait frame`}>
+                    <span>{founder.initials}</span>
+                    <small>Unseen Himalayas Bhutan</small>
+                  </div>
+
+                  <div className="about-pro-founder-copy">
+                    <p className="about-pro-founder-role">{founder.role}</p>
+                    <h3>{founder.name}</h3>
+                    {founder.paragraphs.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* How We Plan */}
+        <section className="about-pro-section about-pro-section-warm">
+          <div className="container">
+            <div className="about-pro-section-header about-pro-section-header-center">
+              <span className="about-pro-section-line" />
+              <span className="about-pro-section-label">How We Plan Your Journey</span>
+              <span className="about-pro-section-line" />
+            </div>
+
+            <h2 className="about-pro-section-title about-pro-center-title">
+              A clear planning process from first enquiry to on-trip support.
             </h2>
 
             <div className="about-pro-assurance-grid">
-              {services.map((service) => (
+              {planningSteps.map((service) => (
                 <div key={service.title} className="about-pro-assurance-card">
                   <div className="about-pro-assurance-icon about-pro-text-icon">
                     {service.marker}
@@ -256,7 +332,54 @@ export default function AboutPage() {
           </div>
         </section>
 
-       
+        {/* Book With Confidence */}
+        <section className="about-pro-section about-pro-section-white">
+          <div className="container">
+            <div className="about-pro-section-header about-pro-section-header-center">
+              <span className="about-pro-section-line" />
+              <span className="about-pro-section-label">Book With Confidence</span>
+              <span className="about-pro-section-line" />
+            </div>
+
+            <h2 className="about-pro-section-title about-pro-center-title">
+              Practical trust signals for international and regional travelers.
+            </h2>
+
+            <div className="about-pro-trust-grid">
+              {trustItems.map((item) => (
+                <div key={item.title} className="about-pro-trust-card">
+                  <span>{item.marker}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="about-pro-verification-panel">
+              <div>
+                <h3>Licensed & registered in Bhutan</h3>
+                <p>
+                  Business Registration No. 50001360. Office at Theengh
+                  Apartments, Babesa, Thimphu. Written quotations, pro forma
+                  invoices, booking terms, and privacy policy are available
+                  before confirmation.
+                </p>
+              </div>
+
+              <div className="about-pro-verification-actions">
+                <Link href="/legal-documents" className="about-pro-btn-secondary">
+                  View Legal Documents
+                </Link>
+                <a href={siteConfig.contact.emailHref} className="about-pro-btn-secondary">
+                  {siteConfig.contact.email}
+                </a>
+                <a href={siteConfig.contact.whatsappHref} className="about-pro-btn-primary">
+                  WhatsApp Our Team
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* CTA */}
         <section className="about-pro-cta">
@@ -319,54 +442,69 @@ const stats: StatItem[] = [
   },
 ];
 
-const services: CardItem[] = [
+const founders: FounderItem[] = [
+  {
+    name: "Passang Tenzin Tamang",
+    role: "Founder & Managing Director, Unseen Himalayas Bhutan",
+    initials: "PT",
+    paragraphs: [
+      "Passang Tenzin Tamang is a 27-year-old Bhutanese entrepreneur and travel enthusiast with around four years of hands-on experience in Bhutan's tourism industry.",
+      "Before founding Unseen Himalayas Bhutan, Passang worked with different travel agents and tour operators across Bhutan, gaining practical experience in planning, coordinating and managing journeys for travelers from different countries and backgrounds.",
+      "His work involved handling group operations, arranging hotels, transport and guides, coordinating travel logistics, and making sure every journey was managed smoothly from arrival to departure.",
+      "Those years of working directly with guests gave him a clear understanding of what makes a Bhutan journey truly enjoyable. A well-designed itinerary is important, but so are the details behind it: choosing the right hotels, allowing comfortable travel times, working with reliable service providers, understanding each guest's interests, and being available when plans need to be adjusted.",
+      "Through Unseen Himalayas Bhutan, his approach remains simple: plan carefully, support every journey from start to finish, and make travelling through Bhutan as seamless and enjoyable as possible.",
+    ],
+  },
+  {
+    name: "Mamick Pradhan",
+    role: "Co-Founder, Unseen Himalayas Bhutan",
+    initials: "MP",
+    paragraphs: [
+      "Mamick Pradhan is a software developer by profession and a naturally curious traveler who has always enjoyed meeting new people, exploring unfamiliar places and learning through different cultures and experiences.",
+      "His interest in travel has always been closely connected to people. For him, travelling is not only about visiting new destinations, but also about the connections made along the way and the experiences that stay with you long after the journey ends.",
+      "As Co-Founder of Unseen Himalayas Bhutan, Mamick brings a different perspective to the company by combining his technology background with his interest in travel and people.",
+      "His experience as a software developer contributes to the company's focus on organization, efficiency and creating a smoother experience for travelers from the moment they begin planning their trip.",
+      "Together with Passang, he helped establish Unseen Himalayas Bhutan with the idea of creating a travel company that feels personal, reliable and easy to work with.",
+    ],
+  },
+];
+
+const planningSteps: CardItem[] = [
   {
     marker: "01",
-    title: "Cultural & Heritage Tours",
+    title: "Understand Your Trip",
     description:
-      "Curated journeys through Bhutan's dzongs, monasteries, villages, museums, and living traditions.",
+      "We begin with your dates, group size, arrival point, interests, hotel preference, pace, and budget.",
   },
   {
     marker: "02",
-    title: "Tailor-Made Travel Experiences",
+    title: "Shape the Route",
     description:
-      "Personalized travel experiences shaped around comfort level, interests, pace, and guest profile.",
+      "Ready-made itineraries are adjusted around culture, nature, festivals, photography, family travel, or rest time.",
   },
   {
     marker: "03",
-    title: "Private & Group Travel Arrangements",
+    title: "Confirm the Details",
     description:
-      "Professional support for private travelers, families, groups, and travel partner requirements.",
+      "Hotels, transport, guide arrangements, inclusions, exclusions, SDF, visa information, and payment terms are clarified in writing.",
   },
   {
     marker: "04",
-    title: "Hotel Reservations & Ground Handling",
+    title: "Coordinate Locally",
     description:
-      "Reliable coordination for accommodation, routes, logistics, and on-ground travel operations.",
+      "Our Bhutan-based team coordinates the ground operation with local partners before and during the journey.",
   },
   {
     marker: "05",
-    title: "Transportation & Professional Guide Services",
+    title: "Support Changes",
     description:
-      "Private transportation and professional guide services for smooth and well-managed journeys.",
+      "If weather, road timing, festival access, or guest needs change, we help adjust the plan practically.",
   },
   {
     marker: "06",
-    title: "Festival & Special Interest Tours",
+    title: "Follow Through",
     description:
-      "Festival journeys, cultural events, photography, wellness, spiritual visits, and special-interest routes.",
-  },
-  {
-    marker: "07",
-    title: "Hiking & Nature Experiences",
-    description:
-      "Soft hikes, nature walks, valley experiences, scenic viewpoints, and outdoor Bhutan experiences.",
-  },
-  {
-    marker: "08",
-    title: "Travel Consultation & Itinerary Planning",
-    description:
-      "Professional itinerary planning for travelers and agencies seeking Bhutan expertise.",
+      "Guests receive direct communication and support from planning through arrival, travel days, and departure.",
   },
 ];
 
@@ -440,5 +578,44 @@ const companyInfo: CompanyInfoItem[] = [
   {
     label: "Email",
     value: "info@theunseenhimalayas.com",
+  },
+];
+
+const trustItems: CardItem[] = [
+  {
+    marker: "01",
+    title: "Licensed Bhutan Tour Operator",
+    description:
+      "Company details and official documents are available for independent review before booking.",
+  },
+  {
+    marker: "02",
+    title: "Local Bhutan-Based Team",
+    description:
+      "Planning and ground coordination are handled from Bhutan, close to the guides, hotels, vehicles, and routes.",
+  },
+  {
+    marker: "03",
+    title: "Direct Communication",
+    description:
+      "Travelers can reach the team by domain email, phone, WhatsApp, and video call when needed.",
+  },
+  {
+    marker: "04",
+    title: "Written Quotations",
+    description:
+      "Trip costs, inclusions, exclusions, booking policy, and payment schedule are documented before confirmation.",
+  },
+  {
+    marker: "05",
+    title: "Support Before and During Travel",
+    description:
+      "The team remains available for document reminders, route questions, arrival timing, and on-trip coordination.",
+  },
+  {
+    marker: "06",
+    title: "Clear Policies",
+    description:
+      "Terms and conditions, privacy policy, and legal documents are linked from the site for easier review.",
   },
 ];

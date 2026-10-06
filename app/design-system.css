@@ -2814,3 +2814,542 @@ a:focus-visible {
     min-width: 148px !important;
   }
 }
+
+/* Last-pass page heading consistency. This file is imported after globals.css. */
+:is(
+  .home-hero h1,
+  .faq-hero-title,
+  .besttime-hero-title,
+  .currency-hero-title,
+  .documents-hero-title,
+  .about-pro-hero-title,
+  .whyvisit-pro-hero-title,
+  .facts-pro-hero-title,
+  .gnh-pro-hero-title,
+  .seasons-pro-hero-title,
+  .contact-pro-hero-title,
+  .about-bhutan-hero h1,
+  .tour-pro-hero-content h1,
+  .places-hero h1,
+  .sdf-hero h1,
+  .festival-calendar-redesign-hero h1,
+  .legal-documents-section > h1,
+  .legal-pro-section-heading h1,
+  .uh-hb-page-title h1,
+  .tour-detail-hero h1,
+  .upcoming-events-poster-hero h1,
+  .gnr-concert-page .upcoming-events-poster-hero h1,
+  .gnr-concert-page .upcoming-events-poster-hero h1 span,
+  .upcoming-events-poster-hero h1 span
+) {
+  font-family: var(--font-heading) !important;
+  font-size: clamp(3.2rem, 5.4vw, 4.9rem) !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  line-height: 1.06 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+:is(
+  .home-hero-eyebrow,
+  .faq-eyebrow,
+  .besttime-eyebrow,
+  .currency-eyebrow,
+  .documents-eyebrow,
+  .about-pro-eyebrow,
+  .whyvisit-pro-eyebrow,
+  .facts-pro-eyebrow,
+  .gnh-pro-eyebrow,
+  .seasons-pro-eyebrow,
+  .contact-pro-eyebrow,
+  .about-bhutan-label-left,
+  .tour-pro-eyebrow,
+  .festival-calendar-redesign-eyebrow,
+  .legal-pro-eyebrow,
+  .legal-pro-section-label,
+  .uh-hb-page-title span,
+  .tour-detail-eyebrow,
+  .upcoming-events-red-label
+) {
+  font-family: var(--font-body) !important;
+  font-size: var(--font-size-sm) !important;
+  font-style: normal !important;
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.gnr-concert-page .upcoming-events-poster-hero h1 {
+  white-space: normal !important;
+}
+
+/* Legal pages use the same hero rhythm as the rest of the site. */
+.legal-pro-section-label span {
+  display: none !important;
+}
+
+.legal-documents-eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  margin: 0 auto 18px !important;
+  color: var(--gold) !important;
+  font-family: var(--font-body) !important;
+  font-size: var(--font-size-sm) !important;
+  font-weight: 900 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+:is(.legal-documents-page, .legal-pro-page) {
+  background: var(--color-bg-page) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.legal-documents-page {
+  padding: 0 !important;
+}
+
+.legal-documents-section,
+.legal-pro-page > .legal-pro-section:first-child {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  max-width: none !important;
+  padding: clamp(38px, 4.5vw, 58px) 0 clamp(58px, 6vw, 84px) !important;
+  background:
+    linear-gradient(rgba(201, 154, 74, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 154, 74, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 18% 0%, rgba(201, 154, 74, 0.1), transparent 30rem),
+    var(--color-bg-page) !important;
+  background-size: 56px 56px, 56px 56px, auto, auto !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--color-divider) !important;
+}
+
+.legal-documents-section > :is(.legal-documents-eyebrow, h1, .legal-documents-intro, .legal-documents-grid),
+.legal-pro-page > .legal-pro-section:first-child > :is(.legal-pro-section-heading, .container),
+.legal-pro-page > .legal-pro-section:first-child > .container > .legal-pro-section-heading {
+  width: min(1200px, calc(100% - 48px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.legal-documents-section > h1,
+.legal-pro-page > .legal-pro-section:first-child .legal-pro-section-heading h1 {
+  max-width: 860px !important;
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+}
+
+.legal-documents-intro,
+.legal-pro-page > .legal-pro-section:first-child .legal-pro-section-heading p {
+  max-width: 740px !important;
+}
+
+.legal-documents-verify-link {
+  width: fit-content !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 26px !important;
+}
+
+.legal-documents-grid,
+.legal-pro-page > .legal-pro-section:first-child .legal-pro-overview-grid {
+  margin-top: clamp(34px, 4vw, 48px) !important;
+}
+
+@media (max-width: 620px) {
+  :is(
+    .home-hero h1,
+    .faq-hero-title,
+    .besttime-hero-title,
+    .currency-hero-title,
+    .documents-hero-title,
+    .about-pro-hero-title,
+    .whyvisit-pro-hero-title,
+    .facts-pro-hero-title,
+    .gnh-pro-hero-title,
+    .seasons-pro-hero-title,
+    .contact-pro-hero-title,
+    .about-bhutan-hero h1,
+    .tour-pro-hero-content h1,
+    .places-hero h1,
+    .sdf-hero h1,
+    .festival-calendar-redesign-hero h1,
+    .legal-documents-section > h1,
+    .legal-pro-section-heading h1,
+    .uh-hb-page-title h1,
+    .tour-detail-hero h1,
+    .upcoming-events-poster-hero h1,
+    .gnr-concert-page .upcoming-events-poster-hero h1,
+    .gnr-concert-page .upcoming-events-poster-hero h1 span,
+    .upcoming-events-poster-hero h1 span
+  ) {
+    font-size: clamp(2.65rem, 12vw, 3.8rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .legal-documents-section,
+  .legal-pro-page > .legal-pro-section:first-child {
+    padding-top: 34px !important;
+  }
+
+  .legal-documents-section > :is(.legal-documents-eyebrow, h1, .legal-documents-intro, .legal-documents-grid),
+  .legal-pro-page > .legal-pro-section:first-child > :is(.legal-pro-section-heading, .container),
+  .legal-pro-page > .legal-pro-section:first-child > .container > .legal-pro-section-heading {
+    width: min(100% - 30px, 1200px) !important;
+  }
+}
+
+/* Places-to-visit standard: every main page hero gets the same image-led treatment. */
+:is(
+  .faq-hero,
+  .besttime-hero,
+  .currency-hero,
+  .documents-hero,
+  .about-pro-hero,
+  .whyvisit-pro-hero,
+  .facts-redesign-hero,
+  .facts-pro-hero,
+  .gnh-pro-hero,
+  .seasons-pro-hero,
+  .contact-pro-hero,
+  .about-bhutan-hero,
+  .tour-pro-hero,
+  .places-hero,
+  .sdf-hero,
+  .festival-calendar-redesign-hero,
+  .legal-documents-section,
+  .legal-pro-page > .legal-pro-section:first-child
+) {
+  position: relative !important;
+  isolation: isolate !important;
+  overflow: hidden !important;
+  background:
+    linear-gradient(115deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.58)),
+    var(
+      --page-hero-image,
+      url("/Thimphu_2026_Web_Optimized_Images/Thimphu_2026_Website_Photo_Pack/Thimphu/19_Thimphu_City_Panorama.jpg")
+    ) center / cover !important;
+  color: var(--color-text-primary) !important;
+  border-bottom: 1px solid var(--color-divider) !important;
+}
+
+.faq-hero {
+  --page-hero-image: url("/Taktshang topdown  DOT AA Original Bhutan Travels.jpg");
+}
+
+.besttime-hero {
+  --page-hero-image: url("/Dochula by Marcus Westberg71.jpg");
+}
+
+.currency-hero {
+  --page-hero-image: url("/Paro_2026_Web_Optimized_Images/Paro/08_Paro_Town_and_Valley.jpg");
+}
+
+.documents-hero {
+  --page-hero-image: url("/Paro_2026_Web_Optimized_Images/Paro/10_Paro_International_Airport.jpg");
+}
+
+.about-pro-hero {
+  --page-hero-image: url("/By Marcus Westberg _Thimphu_2023_36.jpg");
+}
+
+.whyvisit-pro-hero {
+  --page-hero-image: url("/Punakha Dzong Twilight  DOT AA Original Bhutan Travels.jpg");
+}
+
+.facts-redesign-hero,
+.facts-pro-hero {
+  --page-hero-image: url("/Big Buddha with Thimphu City behind x DOT AA Original Bhutan Travels.jpg");
+}
+
+.gnh-pro-hero {
+  --page-hero-image: url("/gnh.jpg");
+}
+
+.seasons-pro-hero {
+  --page-hero-image: url("/Phobjikha-valley-by-Alicia-Warner-56.jpg");
+}
+
+.contact-pro-hero {
+  --page-hero-image: url("/Thimphu City Morning Light  DOT AA Original Bhutan Travels.jpg");
+}
+
+.about-bhutan-hero {
+  --page-hero-image: url("/Dochula by Marcus Westberg63.jpg");
+}
+
+.places-hero {
+  --page-hero-image: url("/Thimphu_2026_Web_Optimized_Images/Thimphu_2026_Website_Photo_Pack/Thimphu/19_Thimphu_City_Panorama.jpg");
+}
+
+.sdf-hero {
+  --page-hero-image: url("/Tree-Planting-3-1024x683.jpg");
+}
+
+.festival-calendar-redesign-hero {
+  --page-hero-image: url("/parofest4.jpg");
+}
+
+.tour-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/Taktshang topdown  DOT AA Original Bhutan Travels.jpg");
+}
+
+.facts-redesign-page > .tour-pro-hero {
+  --page-hero-image: url("/Big Buddha with Thimphu City behind x DOT AA Original Bhutan Travels.jpg");
+}
+
+.cultural-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/Gentle eyes behind a wrathful mask.jpg");
+}
+
+.cycling-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/cycling.jpg");
+}
+
+.festival-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/Thimphu festival header2.jpg");
+}
+
+.optional-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/rafting2.jpg");
+}
+
+.land-entry-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Wangdue_Phodrang/03_Chazam_Village_Landscape.jpg");
+}
+
+.bhutantour-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/MarcusWestbergBhutanHiRes-38.jpg");
+}
+
+.flights-pro-page > .tour-pro-hero {
+  --page-hero-image: url("/air-optimized.jpg");
+}
+
+.legal-documents-section {
+  --page-hero-image: url("/Paro Dzong  DOT AA Original Bhutan Travels.jpg");
+}
+
+.policies-pro-page > .legal-pro-section:first-child {
+  --page-hero-image: url("/National Memorial Chorten Thimphu  DOT AA Original Bhutan Travels.jpg");
+}
+
+.terms-pro-page > .legal-pro-section:first-child {
+  --page-hero-image: url("/Paro Dzong lit twilight  DOT AA Original Bhutan Travels.jpg");
+}
+
+:is(
+  .faq-hero-bg,
+  .besttime-hero-bg,
+  .currency-hero-bg,
+  .documents-hero-bg,
+  .about-pro-hero-bg,
+  .whyvisit-pro-hero-bg,
+  .facts-redesign-hero-bg,
+  .facts-pro-hero-bg,
+  .gnh-pro-hero-bg,
+  .seasons-pro-hero-bg,
+  .contact-pro-hero-bg,
+  .tour-pro-hero-bg,
+  .places-hero-bg,
+  .sdf-hero-bg,
+  .festival-calendar-redesign-hero-bg
+) {
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.54)),
+    radial-gradient(circle at 84% 18%, rgba(201, 154, 74, 0.16), transparent 34%) !important;
+  pointer-events: none !important;
+}
+
+:is(
+  .faq-hero,
+  .besttime-hero,
+  .currency-hero,
+  .documents-hero,
+  .about-pro-hero,
+  .whyvisit-pro-hero,
+  .facts-redesign-hero,
+  .facts-pro-hero,
+  .gnh-pro-hero,
+  .seasons-pro-hero,
+  .contact-pro-hero,
+  .about-bhutan-hero,
+  .tour-pro-hero,
+  .places-hero,
+  .sdf-hero,
+  .festival-calendar-redesign-hero,
+  .legal-documents-section,
+  .legal-pro-page > .legal-pro-section:first-child
+) > :is(.container, .legal-documents-eyebrow, h1, .legal-documents-intro, .legal-documents-verify-link, .legal-documents-grid, .legal-pro-section-heading) {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Essence-style hero pass: no right-side teaser cards in the first viewport. */
+:is(
+  .home-hero-grid,
+  .besttime-hero-grid,
+  .currency-hero-grid,
+  .documents-hero-grid,
+  .about-pro-hero-grid,
+  .whyvisit-pro-hero-grid,
+  .facts-pro-hero-grid,
+  .facts-redesign-hero-grid,
+  .gnh-pro-hero-grid,
+  .seasons-pro-hero-grid,
+  .contact-pro-hero-grid,
+  .about-bhutan-hero-grid,
+  .tour-pro-hero-grid,
+  .places-hero-grid,
+  .sdf-hero-grid,
+  .festival-calendar-redesign-hero-grid,
+  .legal-pro-hero-grid
+) {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+:is(
+  .home-hero-card,
+  .besttime-hero-card,
+  .currency-hero-card,
+  .documents-hero-card,
+  .about-pro-hero-card,
+  .whyvisit-pro-hero-card,
+  .facts-pro-hero-card,
+  .facts-redesign-hero-card,
+  .gnh-pro-hero-card,
+  .seasons-pro-hero-card,
+  .about-bhutan-pro-hero-card,
+  .about-bhutan-redesign-hero-card,
+  .contact-pro-hero-card,
+  .about-bhutan-hero-media,
+  .tour-pro-hero-card,
+  .places-hero-card,
+  .sdf-quick-card,
+  .festival-calendar-redesign-hero-card,
+  .legal-pro-hero-card
+) {
+  display: none !important;
+}
+
+:is(
+  .home-hero-stats,
+  .home-hero-trust,
+  .faq-hero-trust,
+  .besttime-hero-trust,
+  .currency-hero-trust,
+  .documents-hero-trust,
+  .about-pro-hero-trust,
+  .whyvisit-pro-hero-trust,
+  .gnh-pro-hero-trust,
+  .seasons-pro-hero-trust,
+  .contact-pro-hero-trust,
+  .tour-pro-trust-row,
+  .festival-calendar-redesign-hero-trust
+) {
+  display: none !important;
+}
+
+:is(
+  .faq-hero-content,
+  .besttime-hero-content,
+  .currency-hero-content,
+  .documents-hero-content,
+  .about-pro-hero-content,
+  .whyvisit-pro-hero-content,
+  .facts-pro-hero-content,
+  .facts-redesign-hero .tour-pro-hero-content,
+  .gnh-pro-hero-content,
+  .seasons-pro-hero-content,
+  .contact-pro-hero-content,
+  .about-bhutan-hero-copy,
+  .tour-pro-hero-content,
+  .places-hero-content,
+  .sdf-hero-content,
+  .festival-calendar-redesign-hero-content
+) {
+  max-width: 920px !important;
+}
+
+/* About Bhutan stat-card sizing guard. */
+.about-bhutan-stats-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: clamp(14px, 1.4vw, 18px) !important;
+}
+
+.about-bhutan-stat-card {
+  min-width: 0 !important;
+  overflow: hidden !important;
+  padding: clamp(20px, 2.4vw, 28px) !important;
+}
+
+.about-bhutan-stat-card strong {
+  display: block !important;
+  max-width: 100% !important;
+  color: var(--color-text-primary) !important;
+  font-size: clamp(2.9rem, 4vw, 4.25rem) !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  text-wrap: balance !important;
+}
+
+.about-bhutan-stat-card:nth-child(3) strong {
+  font-size: clamp(2.55rem, 2.8vw, 2.9rem) !important;
+}
+
+.about-bhutan-stat-card:nth-child(4) strong {
+  font-size: clamp(3rem, 4.25vw, 4.8rem) !important;
+  white-space: nowrap !important;
+}
+
+.about-bhutan-stat-card span {
+  max-width: 100% !important;
+  color: var(--color-text-secondary) !important;
+  font-size: clamp(0.7rem, 0.9vw, 0.86rem) !important;
+  line-height: 1.28 !important;
+  letter-spacing: 0.1em !important;
+  overflow-wrap: anywhere !important;
+}
+
+@media (max-width: 1080px) {
+  .about-bhutan-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-bhutan-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-bhutan-stat-card strong {
+    font-size: clamp(2.65rem, 16vw, 4.35rem) !important;
+  }
+}
+
+/* About Us founder cards sit on dark surfaces; keep names readable. */
+.about-pro-founder-copy h3 {
+  color: var(--color-text-primary) !important;
+}
+
+.about-pro-founder-copy p:not(.about-pro-founder-role) {
+  color: var(--color-text-secondary) !important;
+}

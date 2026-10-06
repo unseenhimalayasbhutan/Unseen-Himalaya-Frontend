@@ -140,7 +140,7 @@ export function buildKnowledgeRecords(): KnowledgeRecord[] {
           `Festival dates: ${cleanText(pkg.dates)}.`,
           `Best for: ${cleanText(pkg.bestFor)}.`,
           cleanText(pkg.summary),
-          `${formatRate(pkg.startingRate)}.`,
+          `${formatRate(pkg.startingRate, pkg.tourCode)}.`,
           `Festivals and interests: ${pkg.festivals.map(cleanText).join(", ")}.`,
           pkg.days
             .map(
@@ -195,7 +195,7 @@ function buildTourRecord(
     `Theme: ${cleanText(route.theme)}.`,
     `Best for: ${cleanText(route.bestFor)}.`,
     cleanText(route.summary),
-    `${formatRate(route.startingRate)}.`,
+    `${formatRate(route.startingRate, displayTourCode)}.`,
     `Tags: ${route.tags.map(cleanText).join(", ")}.`,
     route.days
       .map((day) => `${cleanText(day.title)}. ${day.activities.map(cleanText).join("; ")}.`)

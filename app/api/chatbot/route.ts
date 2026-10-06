@@ -369,7 +369,7 @@ function buildGuardedFallbackReply({
       ? recommendations
           .map((tour) => {
             const code = tour.tourCode ? `${tour.tourCode} - ` : "";
-            return `${code}${tour.title}: ${formatRate(tour.startingRate)}.`;
+            return `${code}${tour.title}: ${formatRate(tour.startingRate, tour.tourCode)}.`;
           })
           .join(" ")
       : "Displayed tour pages use starting rates, and final pricing must be confirmed.";

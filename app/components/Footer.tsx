@@ -25,7 +25,6 @@ const quickLinks = [
   { label: "Culture and Heritage", href: "/gnh-philosophies" },
   { label: "Seasons in Bhutan", href: "/seasons" },
   { label: "Places to Visit", href: "/places-to-visit" },
-  { label: "Bhutan Tour Packages", href: "/bhutan-tours" },
   { label: "Cultural & Nature Tours", href: "/cultural-tours" },
   { label: "Photography Tours", href: "/photography-tour" },
   { label: "Festival Tours", href: "/festival-tours" },

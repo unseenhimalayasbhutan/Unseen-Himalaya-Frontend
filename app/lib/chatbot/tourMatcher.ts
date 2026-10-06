@@ -78,7 +78,7 @@ export function formatRecommendations(recommendations: TourRecommendation[]) {
   return recommendations
     .map((tour, index) => {
       const code = tour.tourCode ? `${tour.tourCode} - ` : "";
-      const rate = formatRate(tour.startingRate);
+      const rate = formatRate(tour.startingRate, tour.tourCode);
       return `${index + 1}. ${code}${cleanText(tour.title)} (${tour.duration}) - ${tour.whyItMatches}. ${rate}.`;
     })
     .join("\n");

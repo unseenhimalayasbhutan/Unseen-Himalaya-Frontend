@@ -53,7 +53,7 @@ export default function CyclingToursPage() {
     <>
       <Header />
 
-      <main className="tour-pro-page cultural-pro-page cultural-pro-updated-page">
+      <main className="tour-pro-page cultural-pro-page cultural-pro-updated-page cycling-pro-page">
         <section className="tour-pro-hero">
           <div className="tour-pro-hero-bg" aria-hidden="true" />
 

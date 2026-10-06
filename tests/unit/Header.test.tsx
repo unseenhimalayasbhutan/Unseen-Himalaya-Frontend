@@ -7,7 +7,6 @@ const staticPublicRoutes = [
   "/about-bhutan",
   "/about-us",
   "/best-time",
-  "/bhutan-tours",
   "/contact",
   "/cultural-tours",
   "/currency",

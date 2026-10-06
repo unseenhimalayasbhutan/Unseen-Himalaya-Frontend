@@ -31,6 +31,7 @@ export default function LegalDocumentsPage() {
 
       <main className="legal-documents-page">
         <section className="legal-documents-section">
+          <div className="legal-documents-eyebrow">Company Documents</div>
           <h1>Legal Documents</h1>
           <p className="legal-documents-intro">
             View our official operator documents below, or verify Unseen

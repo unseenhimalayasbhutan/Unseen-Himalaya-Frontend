@@ -27,7 +27,7 @@ export default function FlightsGettingAroundPage() {
     <>
       <Header />
 
-      <main className="tour-pro-page">
+      <main className="tour-pro-page flights-pro-page">
         <section className="tour-pro-hero">
           <div className="tour-pro-hero-bg" aria-hidden="true" />
           <div className="container tour-pro-hero-grid">

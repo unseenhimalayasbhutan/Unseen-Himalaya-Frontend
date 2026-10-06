@@ -1,23 +1,25 @@
 import type { Metadata } from "next";
-import type { ElementType } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import {
   CalendarDays,
-  CheckCircle,
-  ChevronRight,
   Clock,
-  Download,
   Hotel,
   Mail,
+  MapPin,
   Route,
-  Tag,
   Users,
-  XCircle,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
+import {
+  TourDetailTemplate,
+  type TourDetailFact,
+  type TourDetailHighlight,
+  type TourDetailInfo,
+  type TourDetailItineraryDay,
+  type TourDetailPrice,
+} from "../../components/TourDetailTemplate";
 import { siteConfig } from "../../siteConfig";
 
 export const metadata: Metadata = {
@@ -43,90 +45,102 @@ export const metadata: Metadata = {
   },
 };
 
-const heroImage =
-  "/66bf02f4ff8c371f83c79a4f_66bef5aab388dabf85692211_Paro-Taktsang-1.jpeg";
+const heroImage = {
+  src: "/66bf02f4ff8c371f83c79a4f_66bef5aab388dabf85692211_Paro-Taktsang-1.jpeg",
+  alt: "Tiger's Nest monastery and prayer flags in Bhutan",
+};
 
-const overviewImage = "/Punakha Dzong Twilight  DOT AA Original Bhutan Travels.jpg";
+const routeText = "Phuentsholing - Thimphu - Punakha - Phobjikha - Paro";
 
-const glanceItems = [
-  { icon: CalendarDays, label: "Dates", value: "20 - 26 October 2026" },
+const facts: readonly TourDetailFact[] = [
+  { icon: CalendarDays, label: "Departure", value: "20 October 2026" },
   { icon: Clock, label: "Duration", value: "7 Days / 6 Nights" },
-  {
-    icon: Route,
-    label: "Route",
-    value: "Phuentsholing - Thimphu - Punakha - Phobjikha - Paro",
-  },
-  { icon: Users, label: "Group Size", value: "Minimum 12 participants" },
-  { icon: Tag, label: "Tour Code", value: "TUH-EOB-1026" },
-  { icon: Hotel, label: "Accommodation", value: "3-star hotels (twin sharing)" },
-  { icon: Tag, label: "India Price", value: "INR 36,104 per person" },
-  { icon: Tag, label: "Bangladesh Price", value: "BDT 48,000 per person" },
+  { icon: Route, label: "Route", value: "Phuentsholing - Paro" },
+  { icon: Users, label: "Group", value: "Minimum 12 guests" },
+  { icon: Hotel, label: "Accommodation", value: "Twin sharing + Phobjikha homestay" },
+  { icon: MapPin, label: "Travel Style", value: "Guided group journey" },
 ] as const;
 
-const highlights = [
+const prices: readonly TourDetailPrice[] = [
   {
-    image: "/Dochula by Marcus Westberg71.jpg",
+    market: "India",
+    amount: "INR 36,104 per person",
+    note: "Published India-market group tour rate.",
+  },
+  {
+    market: "Bangladesh",
+    amount: "Approx. BDT 48,000 per person",
+    note: "Approximate Bangladesh-market group tour rate.",
+  },
+] as const;
+
+const whyItems: readonly TourDetailHighlight[] = [
+  {
+    title: "Explore Bhutan Together",
+    text: "Travel through several of Bhutan's most beautiful valleys with a small scheduled group.",
+  },
+  {
+    title: "Guided From Start to Finish",
+    text: "A certified guide and professional driver support the journey from arrival to departure.",
+  },
+  {
+    title: "Fixed Departure, Easy Planning",
+    text: "One confirmed route, a clear travel window and a simple enquiry path for joining.",
+  },
+] as const;
+
+const highlights: readonly TourDetailHighlight[] = [
+  {
+    image: { src: "/Dochula by Marcus Westberg71.jpg", alt: "Dochula Pass in Bhutan" },
     title: "Dochula Pass",
-    text: "Panoramic Himalayan views and 108 chortens",
+    text: "Panoramic Himalayan views and 108 chortens.",
   },
   {
-    image: "/Punakha Dzong Twilight  DOT AA Original Bhutan Travels.jpg",
+    image: {
+      src: "/Punakha Dzong Twilight  DOT AA Original Bhutan Travels.jpg",
+      alt: "Punakha Dzong beside the river",
+    },
     title: "Punakha Dzong",
-    text: "A masterpiece of Bhutanese architecture",
+    text: "A masterpiece of Bhutanese architecture.",
   },
   {
-    image: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
+    image: {
+      src: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
+      alt: "Phobjikha Valley landscape",
+    },
     title: "Phobjikha Valley",
-    text: "A serene glacial valley and black-necked crane habitat",
+    text: "A serene glacial valley and black-necked crane habitat.",
   },
   {
-    image:
-      "/Wangdue_Gangtey_Phobjikha_2026_Web_Optimized_Images/Web_Optimized/Gangtey_Phobjikha/06_Gangtey_Monastery_Front.jpg",
-    title: "Gangtey Monastery",
-    text: "A spiritual centre in the heart of Phobjikha Valley",
+    image: {
+      src: "/Paro Dzong  DOT AA Original Bhutan Travels.jpg",
+      alt: "Paro Dzong in Bhutan",
+    },
+    title: "Paro",
+    text: "Dzongs, museums and valley views in Bhutan's western heartland.",
   },
   {
-    image: "/Paro Dzong  DOT AA Original Bhutan Travels.jpg",
-    title: "Paro Dzong & Museum",
-    text: "Rich history and cultural heritage",
+    image: {
+      src: "/Paro_2026_Web_Optimized_Images/Paro/01_Tigers_Nest_Paro_Taktsang.jpg",
+      alt: "Tiger's Nest monastery above Paro Valley",
+    },
+    title: "Tiger's Nest",
+    text: "An unforgettable hike to Bhutan's most iconic sacred monastery.",
   },
   {
-    image:
-      "/Paro_2026_Web_Optimized_Images/Paro/01_Tigers_Nest_Paro_Taktsang.jpg",
-    title: "Tiger's Nest Hike",
-    text: "An unforgettable hike to a sacred monastery",
-  },
-  {
-    image: "/IMG_20231021_170519.jpg",
-    title: "Complimentary Hot Stone Bath",
-    text: "A traditional Bhutanese wellness experience",
+    image: { src: "/IMG_20231021_170519.jpg", alt: "Traditional Bhutan hot stone bath" },
+    title: "Hot Stone Bath",
+    text: "A complimentary traditional Bhutanese wellness experience.",
   },
 ] as const;
 
-const journeyImages = [
-  {
-    image: "/National Memorial Chorten Thimphu  DOT AA Original Bhutan Travels.jpg",
-    alt: "National Memorial Chorten in Thimphu",
-  },
-  {
-    image:
-      "/Paro_2026_Web_Optimized_Images/Paro/03_National_Museum_Ta_Dzong.jpg",
-    alt: "National Museum of Bhutan",
-  },
-  {
-    image: "/Phobjikha-valley-by-Alicia-Warner-34.jpg",
-    alt: "Phobjikha Valley landscape",
-  },
-  {
-    image: "/Punakha_Website_Photos_2026/04_Khamsum_Yulley_Namgyal_Chorten.jpg",
-    alt: "Bhutanese temple and riverside landscape",
-  },
-] as const;
-
-const itinerary = [
+const itinerary: readonly TourDetailItineraryDay[] = [
   {
     day: "01",
-    image: "/Punakha Dzong Twilight  DOT AA Original Bhutan Travels.jpg",
+    image: {
+      src: "/Punakha Dzong Twilight  DOT AA Original Bhutan Travels.jpg",
+      alt: "Bhutan dzong and riverside valley",
+    },
     title: "Arrival in Phuentsholing",
     text: "Arrive in Phuentsholing and transfer to your hotel. Evening at leisure to relax and prepare for the journey ahead.",
     details: [
@@ -138,7 +152,10 @@ const itinerary = [
   },
   {
     day: "02",
-    image: "/Thimphu City Morning Light  DOT AA Original Bhutan Travels.jpg",
+    image: {
+      src: "/Thimphu City Morning Light  DOT AA Original Bhutan Travels.jpg",
+      alt: "Thimphu city in morning light",
+    },
     title: "Phuentsholing to Thimphu",
     text: "Drive to Thimphu. Explore key attractions in Bhutan's capital city.",
     details: [
@@ -150,7 +167,10 @@ const itinerary = [
   },
   {
     day: "03",
-    image: "/Punakha_Website_Photos_2026/01_Punakha_Dzong.jpg",
+    image: {
+      src: "/Punakha_Website_Photos_2026/01_Punakha_Dzong.jpg",
+      alt: "Punakha Dzong in Bhutan",
+    },
     title: "Thimphu to Punakha",
     text: "Drive to Punakha via Dochula Pass. Visit Punakha Dzong.",
     details: [
@@ -162,7 +182,10 @@ const itinerary = [
   },
   {
     day: "04",
-    image: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
+    image: {
+      src: "/Phobjikha-valley-by-Alicia-Warner-56.jpg",
+      alt: "Phobjikha Valley in Bhutan",
+    },
     title: "Punakha to Phobjikha",
     text: "Drive to Phobjikha Valley. Explore the valley and visit Gangtey Monastery.",
     details: [
@@ -174,7 +197,10 @@ const itinerary = [
   },
   {
     day: "05",
-    image: "/Paro Dzong  DOT AA Original Bhutan Travels.jpg",
+    image: {
+      src: "/Paro Dzong  DOT AA Original Bhutan Travels.jpg",
+      alt: "Paro Dzong and valley",
+    },
     title: "Phobjikha to Paro",
     text: "Drive to Paro. En route, enjoy scenic views and stop at key landmarks.",
     details: [
@@ -186,8 +212,10 @@ const itinerary = [
   },
   {
     day: "06",
-    image:
-      "/Paro_2026_Web_Optimized_Images/Paro/01_Tigers_Nest_Paro_Taktsang.jpg",
+    image: {
+      src: "/Paro_2026_Web_Optimized_Images/Paro/01_Tigers_Nest_Paro_Taktsang.jpg",
+      alt: "Tiger's Nest monastery in Paro",
+    },
     title: "Paro Sightseeing",
     text: "Visit Paro Dzong, National Museum and hike to the iconic Tiger's Nest Monastery.",
     details: [
@@ -229,293 +257,87 @@ const exclusions = [
   "Any services not mentioned in inclusions",
 ] as const;
 
+const importantInfo: readonly TourDetailInfo[] = [
+  {
+    title: "Payment",
+    body: "A confirmed booking and payment schedule will be shared during enquiry based on rooming, guest count and final travel arrangements.",
+  },
+  {
+    title: "Cancellation",
+    body: "Cancellation terms are confirmed before payment so guests understand applicable timelines, refunds and supplier conditions.",
+  },
+  {
+    title: "Hotels",
+    body: "The package is based on 3-star accommodation on twin sharing, with a Phobjikha homestay-style experience where applicable.",
+  },
+  {
+    title: "SDF",
+    body: "Any Sustainable Development Fee rules applicable to your nationality and travel dates will be confirmed before booking.",
+  },
+  {
+    title: "Travel Documents",
+    body: "Guests should carry valid travel documents required for Bhutan entry, along with any personal insurance documents.",
+  },
+  {
+    title: "Single Supplement",
+    body: "Single-room requests can be quoted separately depending on availability and the confirmed hotel plan.",
+  },
+] as const;
+
 export default function EssenceOfBhutanGroupTourPage() {
   return (
     <>
       <Header />
-
-      <main className="essence-landing-page">
-        <section className="essence-hero" aria-labelledby="essence-title">
-          <Image
-            src={heroImage}
-            alt="Tiger's Nest monastery and prayer flags in Bhutan"
-            fill
-            preload
-            sizes="100vw"
-            className="essence-hero-image"
-          />
-          <div className="essence-hero-overlay" aria-hidden="true" />
-
-          <div className="essence-shell essence-hero-content">
-            <nav className="essence-breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
-              <ChevronRight aria-hidden="true" />
-              <Link href="/upcoming-events">Upcoming Events</Link>
-              <ChevronRight aria-hidden="true" />
-              <span>The Essence of Bhutan</span>
-            </nav>
-
-            <span className="essence-eyebrow">Group Tour</span>
-            <h1 id="essence-title">The Essence of Bhutan</h1>
-            <strong className="essence-hero-date">20 - 26 October 2026</strong>
-            <p className="essence-hero-meta">
-              7 Days / 6 Nights <span aria-hidden="true">-</span> Phuentsholing{" "}
-              <span aria-hidden="true">-</span> Thimphu{" "}
-              <span aria-hidden="true">-</span> Punakha{" "}
-              <span aria-hidden="true">-</span> Phobjikha{" "}
-              <span aria-hidden="true">-</span> Paro
-            </p>
-
-            <div className="essence-actions">
-              <a
-                href={siteConfig.contact.whatsappHref}
-                className="essence-btn essence-btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Enquire Now
-                <ChevronRight aria-hidden="true" />
-              </a>
-              <a href="#itinerary" className="essence-btn essence-btn-secondary">
-                <Download aria-hidden="true" />
-                Download Itinerary
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="essence-section essence-overview-section">
-          <div className="essence-shell essence-overview-grid">
-            <div className="essence-copy-block">
-              <SectionTitle title="Tour Overview" />
-              <p>
-                Join our small group tour, The Essence of Bhutan, a carefully
-                curated 7-day journey that takes you through Bhutan&apos;s most
-                iconic destinations. From the bustling town of Phuentsholing to
-                the serene valleys of Phobjikha and the cultural heart of Paro,
-                this journey offers the perfect blend of culture, nature and
-                authentic Bhutanese experiences.
-              </p>
-              <p>
-                Travel with like-minded explorers, experience Bhutan&apos;s warm
-                hospitality, visit sacred monasteries and dzongs, and take in
-                breathtaking Himalayan landscapes, all in one unforgettable
-                journey.
-              </p>
-            </div>
-
-            <figure className="essence-overview-card">
-              <Image
-                src={overviewImage}
-                alt="Punakha Dzong beside the river and mountains"
-                fill
-                sizes="(max-width: 900px) 100vw, 460px"
-              />
-              <figcaption>
-                Iconic landmarks, serene valleys and authentic experiences
-              </figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section className="essence-section essence-glance-section">
-          <div className="essence-shell essence-bordered-panel">
-            <SectionTitle title="Tour at a Glance" />
-            <div className="essence-glance-grid">
-              {glanceItems.map((item) => (
-                <InfoCard key={item.label} {...item} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="essence-section">
-          <div className="essence-shell">
-            <div className="essence-section-head">
-              <SectionTitle title="Highlights & Experiences" />
-              <span>A journey through Bhutan&apos;s most iconic places</span>
-            </div>
-
-            <div className="essence-highlight-grid">
-              {highlights.map((highlight) => (
-                <article key={highlight.title} className="essence-highlight-card">
-                  <div className="essence-highlight-image">
-                    <Image
-                      src={highlight.image}
-                      alt={highlight.title}
-                      fill
-                      sizes="(max-width: 900px) 50vw, 160px"
-                    />
-                  </div>
-                  <h2>{highlight.title}</h2>
-                  <p>{highlight.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="essence-section essence-gallery-section">
-          <div className="essence-shell">
-            <SectionTitle title="A Glimpse of the Journey" />
-            <div className="essence-gallery-grid">
-              {journeyImages.map((item) => (
-                <div key={item.image} className="essence-gallery-image">
-                  <Image
-                    src={item.image}
-                    alt={item.alt}
-                    fill
-                    sizes="(max-width: 900px) 50vw, 280px"
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="itinerary" className="essence-section essence-itinerary-section">
-          <div className="essence-shell">
-            <SectionTitle title="Seven-Day Itinerary" />
-            <div className="essence-itinerary-list">
-              {itinerary.map((day) => (
-                <article key={day.day} className="essence-itinerary-row">
-                  <div className="essence-day-mark">
-                    <span>Day</span>
-                    <strong>{day.day}</strong>
-                  </div>
-                  <div className="essence-itinerary-thumb">
-                    <Image
-                      src={day.image}
-                      alt={day.title}
-                      fill
-                      sizes="(max-width: 720px) 110px, 170px"
-                    />
-                  </div>
-                  <div className="essence-itinerary-copy">
-                    <h2>{day.title}</h2>
-                    <p>{day.text}</p>
-                    <ul>
-                      {day.details.map((detail) => (
-                        <li key={detail}>
-                          <CheckCircle aria-hidden="true" />
-                          <span>{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <small>Overnight: {day.overnight}</small>
-                  </div>
-                  <ChevronRight aria-hidden="true" />
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="essence-section essence-lists-section">
-          <div className="essence-shell essence-list-grid">
-            <Checklist title="Inclusions" icon={CheckCircle} items={inclusions} />
-            <Checklist title="Exclusions" icon={XCircle} items={exclusions} />
-          </div>
-        </section>
-
-        <section className="essence-final-cta">
-          <Image
-            src="/Phobjikha-valley-by-Alicia-Warner-75.jpg"
-            alt="Bhutan mountain valley"
-            fill
-            sizes="100vw"
-          />
-          <div className="essence-final-overlay" aria-hidden="true" />
-          <div className="essence-shell essence-final-content">
-            <span className="essence-eyebrow">Ready to join?</span>
-            <h2>Your October journey starts with one enquiry.</h2>
-            <p>Limited spots available for this group departure.</p>
-
-            <div className="essence-actions">
-              <a
-                href={siteConfig.contact.whatsappHref}
-                className="essence-btn essence-btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Check Availability
-                <ChevronRight aria-hidden="true" />
-              </a>
-              <a href={siteConfig.contact.emailHref} className="essence-btn essence-btn-secondary">
-                <Mail aria-hidden="true" />
-                Email Us
-              </a>
-              <a
-                href={siteConfig.contact.whatsappHref}
-                className="essence-btn essence-btn-secondary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaWhatsapp aria-hidden="true" />
-                WhatsApp Us
-              </a>
-            </div>
-          </div>
-        </section>
-      </main>
-
+      <TourDetailTemplate
+        eyebrow="Group Departure"
+        title="Essence of Bhutan"
+        date="20 - 26 October 2026"
+        meta={`7 Days / 6 Nights | ${routeText}`}
+        description="Join a scheduled 7-day group journey through Bhutan's western valleys, sacred landmarks and mountain landscapes, with guided travel from Phuentsholing to Paro."
+        heroImage={heroImage}
+        actions={[
+          { href: "#itinerary", label: "View Itinerary", variant: "secondary" },
+          {
+            href: siteConfig.contact.whatsappHref,
+            label: "Enquire Now",
+            icon: FaWhatsapp,
+            external: true,
+          },
+        ]}
+        facts={facts}
+        prices={prices}
+        priceNote="Price is based on the scheduled group departure conditions and twin-sharing accommodation. Final quotation confirms rooming, inclusions and any applicable supplements."
+        whyItems={whyItems}
+        highlights={highlights}
+        itinerary={itinerary}
+        inclusions={inclusions}
+        exclusions={exclusions}
+        importantInfo={importantInfo}
+        finalCta={{
+          eyebrow: "Interested in this journey?",
+          title: "Tell us your travel dates and preferences.",
+          text: "Our Bhutan-based team will help you confirm availability, rooming and the next step for this October group departure.",
+          image: {
+            src: "/Phobjikha-valley-by-Alicia-Warner-75.jpg",
+            alt: "Bhutan mountain valley",
+          },
+          actions: [
+            {
+              href: siteConfig.contact.whatsappHref,
+              label: "WhatsApp Us",
+              icon: FaWhatsapp,
+              external: true,
+            },
+            {
+              href: siteConfig.contact.emailHref,
+              label: "Email Us",
+              icon: Mail,
+              variant: "secondary",
+            },
+          ],
+        }}
+      />
       <Footer />
     </>
-  );
-}
-
-function SectionTitle({ title }: { title: string }) {
-  return (
-    <div className="essence-title">
-      <h2>{title}</h2>
-      <span aria-hidden="true" />
-    </div>
-  );
-}
-
-function InfoCard({
-  icon: Icon,
-  label,
-  value,
-}: {
-  icon: ElementType;
-  label: string;
-  value: string;
-}) {
-  return (
-    <article className="essence-info-card">
-      <Icon aria-hidden="true" />
-      <div>
-        <span>{label}</span>
-        <strong>{value}</strong>
-      </div>
-    </article>
-  );
-}
-
-function Checklist({
-  title,
-  icon: Icon,
-  items,
-}: {
-  title: string;
-  icon: ElementType;
-  items: readonly string[];
-}) {
-  return (
-    <article className="essence-checklist">
-      <h2>
-        <Icon aria-hidden="true" />
-        {title}
-      </h2>
-      <ul>
-        {items.map((item) => (
-          <li key={item}>
-            <CheckCircle aria-hidden="true" />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </article>
   );
 }

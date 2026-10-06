@@ -71,15 +71,17 @@ type FoodBlock = {
 function ImageSlot({
   image,
   className = "",
+  loading = "lazy",
 }: {
   image: ImageAsset;
   className?: string;
+  loading?: "eager" | "lazy";
 }) {
   const resolvedSrc = image.src.trim() || getFallbackImage(image.label);
 
   return (
     <figure className={`about-bhutan-image ${className}`.trim()}>
-      <img src={resolvedSrc} alt={image.alt} loading="lazy" />
+      <img src={resolvedSrc} alt={image.alt} loading={loading} />
       <figcaption>Copyright {image.copyrightName || "Unseen Himalayas Bhutan"}</figcaption>
     </figure>
   );
@@ -118,6 +120,11 @@ export default function AboutBhutanPage() {
         <section className="about-bhutan-hero">
           <div className="container about-bhutan-hero-grid">
             <div className="about-bhutan-hero-copy">
+              <div className="about-bhutan-label about-bhutan-label-left">
+                <Compass aria-hidden="true" />
+                <strong>Bhutan Overview</strong>
+              </div>
+
               <h1>About Bhutan: culture, nature, and travel inspiration.</h1>
 
               <p>
@@ -148,7 +155,7 @@ export default function AboutBhutanPage() {
             </div>
 
             <aside className="about-bhutan-hero-media" aria-label="Bhutan overview image">
-              <ImageSlot image={heroImage} />
+              <ImageSlot image={heroImage} loading="eager" />
               <div className="about-bhutan-hero-fact">
                 <span>Kingdom of Bhutan</span>
                 <strong>Culture, nature, spirituality, and thoughtful travel.</strong>

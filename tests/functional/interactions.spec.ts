@@ -44,8 +44,10 @@ async function openSecondPackageFromListing(
   const secondPackage = page.locator(".uh-hb-view-trip-btn").nth(1);
 
   await expect(secondPackage, `${route} should expose package links`).toBeVisible();
-  await secondPackage.click();
-  await expect(page).toHaveURL(expectedPath);
+  await Promise.all([
+    page.waitForURL(expectedPath, { timeout: 15_000 }),
+    secondPackage.click(),
+  ]);
   await expect(page.getByRole("tab")).toHaveCount(4);
 }
 

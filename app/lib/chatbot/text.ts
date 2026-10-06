@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { formatUsd, getB2cUsdPrice } from "../../data/tourPricing";
 
 const TOKEN_SPLIT_PATTERN = /[^a-z0-9+]+/i;
 const MOJIBAKE_PATTERN = /[\u00c3\u00c2\u00e2]/;
@@ -68,7 +69,13 @@ export function splitRouteDestinations(route: string) {
     .filter((item, index, all) => all.indexOf(item) === index);
 }
 
-export function formatRate(rate?: number) {
+export function formatRate(rate?: number, tourCode?: string) {
+  const b2cUsdRate = getB2cUsdPrice(tourCode)?.fourSix;
+
+  if (typeof b2cUsdRate === "number") {
+    return `Starting from ${formatUsd(b2cUsdRate)}`;
+  }
+
   return typeof rate === "number"
     ? `Starting from Nu. ${rate.toLocaleString("en-US")}`
     : "Rate on request";
